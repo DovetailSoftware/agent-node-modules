@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      "iedriver@^2.52.2",
+      "C:\\Github\\agent"
+    ]
+  ],
+  "_from": "iedriver@>=2.52.2 <3.0.0",
+  "_id": "iedriver@2.53.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/iedriver",
+  "_nodeVersion": "4.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/iedriver-2.53.0.tgz_1458314866532_0.753245500382036"
+  },
+  "_npmUser": {
+    "email": "barrett@sosuke.com",
+    "name": "barretts"
+  },
+  "_npmVersion": "2.14.8",
+  "_phantomChildren": {
+    "abbrev": "1.0.7",
+    "config-chain": "1.1.10"
+  },
+  "_requested": {
+    "name": "iedriver",
+    "raw": "iedriver@^2.52.2",
+    "rawSpec": "^2.52.2",
+    "scope": null,
+    "spec": ">=2.52.2 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-2.53.0.tgz",
+  "_shasum": "90383396a5e2d4275840e8b5f0e89d2cfd38946b",
+  "_shrinkwrap": null,
+  "_spec": "iedriver@^2.52.2",
+  "_where": "C:\\Github\\agent",
+  "author": {
+    "email": "barrett@sosuke.com",
+    "name": "Barrett Sonntag",
+    "url": "http://www.sosuke.com"
+  },
+  "bin": {
+    "iedriver": "./bin/iedriver"
+  },
+  "bugs": {
+    "url": "https://github.com/barretts/node-iedriver/issues"
+  },
+  "dependencies": {
+    "adm-zip": "0.2.1",
+    "kew": "~0.1.7",
+    "md5-file": "^1.1.4",
+    "mkdirp": "0.3.5",
+    "npmconf": "0.0.24",
+    "rimraf": "~2.0.2"
+  },
+  "description": "IEDriver for Selenium",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "90383396a5e2d4275840e8b5f0e89d2cfd38946b",
+    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-2.53.0.tgz"
+  },
+  "gitHead": "60e79c8a61f706fea54534588c859d957a72e4a8",
+  "homepage": "https://github.com/barretts/node-iedriver",
+  "keywords": [
+    "iedriver",
+    "iedriverserver",
+    "selenium"
+  ],
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "main": "lib/iedriver",
+  "maintainers": [
+    {
+      "email": "barrett@sosuke.com",
+      "name": "barretts"
+    }
+  ],
+  "name": "iedriver",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/barretts/node-iedriver.git"
+  },
+  "scripts": {
+    "install": "node install.js"
+  },
+  "version": "2.53.0"
+}

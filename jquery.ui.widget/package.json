@@ -1,0 +1,77 @@
+{
+  "_args": [
+    [
+      "jquery.ui.widget@>=1.9",
+      "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
+    ]
+  ],
+  "_from": "jquery.ui.widget@>=1.9.0",
+  "_id": "jquery.ui.widget@1.10.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jquery.ui.widget",
+  "_npmUser": {
+    "email": "sebastian.tschan@gmail.com",
+    "name": "blueimp"
+  },
+  "_npmVersion": "1.2.24",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "jquery.ui.widget",
+    "raw": "jquery.ui.widget@>=1.9",
+    "rawSpec": ">=1.9",
+    "scope": null,
+    "spec": ">=1.9.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/blueimp-file-upload"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery.ui.widget/-/jquery.ui.widget-1.10.3.tgz",
+  "_shasum": "2ceecfc64995412643eeb9508d2197ea93c02fb3",
+  "_shrinkwrap": null,
+  "_spec": "jquery.ui.widget@>=1.9",
+  "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
+  "author": {
+    "name": "jQuery Foundation",
+    "url": "http://jqueryui.com"
+  },
+  "bugs": {
+    "url": "http://bugs.jqueryui.com/"
+  },
+  "dependencies": {},
+  "description": "Create stateful jQuery plugins using the same abstraction as all jQuery UI widgets.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2ceecfc64995412643eeb9508d2197ea93c02fb3",
+    "tarball": "http://registry.npmjs.org/jquery.ui.widget/-/jquery.ui.widget-1.10.3.tgz"
+  },
+  "homepage": "http://api.jqueryui.com/jQuery.widget/",
+  "keywords": [
+    "jquery",
+    "ui",
+    "widget"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "maintainers": [
+    {
+      "email": "sebastian.tschan@gmail.com",
+      "name": "blueimp"
+    }
+  ],
+  "name": "jquery.ui.widget",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jquery/jquery-ui.git"
+  },
+  "title": "jQuery UI Widget",
+  "version": "1.10.3"
+}

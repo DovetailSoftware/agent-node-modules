@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      "clipboard@1.5.8",
+      "C:\\Github\\agent"
+    ]
+  ],
+  "_from": "clipboard@1.5.8",
+  "_id": "clipboard@1.5.8",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/clipboard",
+  "_nodeVersion": "5.1.1",
+  "_npmOperationalInternal": {
+    "host": "packages-9-west.internal.npmjs.com",
+    "tmp": "tmp/clipboard-1.5.8.tgz_1454614408541_0.9606464353855699"
+  },
+  "_npmUser": {
+    "email": "zno.rocha@gmail.com",
+    "name": "zenorocha"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "clipboard",
+    "raw": "clipboard@1.5.8",
+    "rawSpec": "1.5.8",
+    "scope": null,
+    "spec": "1.5.8",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/clipboard/-/clipboard-1.5.8.tgz",
+  "_shasum": "e92650c6862a0812bb73f20a6d7a2f8d78726ee9",
+  "_shrinkwrap": null,
+  "_spec": "clipboard@1.5.8",
+  "_where": "C:\\Github\\agent",
+  "bugs": {
+    "url": "https://github.com/zenorocha/clipboard.js/issues"
+  },
+  "dependencies": {
+    "good-listener": "^1.1.6",
+    "select": "^1.0.6",
+    "tiny-emitter": "^1.0.0"
+  },
+  "description": "Modern copy to clipboard. No Flash. Just 2kb",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babelify": "^6.3.0",
+    "bannerify": "git+https://github.com/Vekat/bannerify.git#feature-option",
+    "browserify": "^11.2.0",
+    "chai": "^3.4.1",
+    "karma": "^0.13.10",
+    "karma-browserify": "^4.4.0",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sinon": "^1.0.4",
+    "mocha": "^2.3.3",
+    "phantomjs": "^1.9.18",
+    "phantomjs-polyfill": "0.0.1",
+    "sinon": "^1.17.2",
+    "uglify-js": "^2.4.24",
+    "watchify": "^3.4.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "e92650c6862a0812bb73f20a6d7a2f8d78726ee9",
+    "tarball": "https://registry.npmjs.org/clipboard/-/clipboard-1.5.8.tgz"
+  },
+  "gitHead": "7e37c9512116134dccf01620289888a252b3016f",
+  "homepage": "https://github.com/zenorocha/clipboard.js",
+  "keywords": [
+    "clipboard",
+    "copy",
+    "cut"
+  ],
+  "license": "MIT",
+  "main": "lib/clipboard.js",
+  "maintainers": [
+    {
+      "email": "zno.rocha@gmail.com",
+      "name": "zenorocha"
+    }
+  ],
+  "name": "clipboard",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenorocha/clipboard.js.git"
+  },
+  "scripts": {
+    "build": "npm run build-debug && npm run build-min",
+    "build-debug": "browserify src/clipboard.js -s Clipboard -t [babelify --loose all] -p [bannerify --file .banner ] -o dist/clipboard.js",
+    "build-min": "uglifyjs dist/clipboard.js --comments '/!/' -m screw_ie8=true -c screw_ie8=true,unused=false -o dist/clipboard.min.js",
+    "build-watch": "watchify src/clipboard.js -s Clipboard -t [babelify --loose all] -o dist/clipboard.js -v",
+    "prepublish": "babel src --out-dir lib --loose all",
+    "test": "karma start --single-run"
+  },
+  "version": "1.5.8"
+}

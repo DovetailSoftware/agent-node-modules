@@ -1,0 +1,124 @@
+{
+  "_args": [
+    [
+      "gulp-mocha-phantomjs@^0.10.1",
+      "C:\\Github\\agent"
+    ]
+  ],
+  "_from": "gulp-mocha-phantomjs@>=0.10.1 <0.11.0",
+  "_id": "gulp-mocha-phantomjs@0.10.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gulp-mocha-phantomjs",
+  "_nodeVersion": "0.10.32",
+  "_npmUser": {
+    "email": "ruihu.pvt@gmail.com",
+    "name": "mrhooray"
+  },
+  "_npmVersion": "2.11.3",
+  "_phantomChildren": {
+    "abbrev": "1.0.7",
+    "clone-stats": "0.0.1",
+    "config-chain": "1.1.10",
+    "core-util-is": "1.0.2",
+    "ctype": "0.5.3",
+    "dateformat": "1.0.12",
+    "escape-string-regexp": "1.0.5",
+    "inherits": "2.0.1",
+    "isarray": "0.0.1",
+    "json-stringify-safe": "5.0.1",
+    "lodash._escapehtmlchar": "2.4.1",
+    "lodash._escapestringchar": "2.4.1",
+    "lodash._isnative": "2.4.1",
+    "lodash._reunescapedhtml": "2.4.1",
+    "lodash._shimkeys": "2.4.1",
+    "lodash.defaults": "2.4.1",
+    "lodash.isobject": "2.4.1",
+    "lodash.values": "2.4.1",
+    "multipipe": "0.1.2",
+    "ncp": "0.4.2",
+    "node-uuid": "1.4.7",
+    "progress": "1.1.8",
+    "request-progress": "0.3.1",
+    "string_decoder": "0.10.31",
+    "tough-cookie": "2.2.2",
+    "tunnel-agent": "0.4.2",
+    "which": "1.0.9"
+  },
+  "_requested": {
+    "name": "gulp-mocha-phantomjs",
+    "raw": "gulp-mocha-phantomjs@^0.10.1",
+    "rawSpec": "^0.10.1",
+    "scope": null,
+    "spec": ">=0.10.1 <0.11.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gulp-mocha-phantomjs/-/gulp-mocha-phantomjs-0.10.1.tgz",
+  "_shasum": "ec97f566539a234fe8104ab32e64ea7264af8bc0",
+  "_shrinkwrap": null,
+  "_spec": "gulp-mocha-phantomjs@^0.10.1",
+  "_where": "C:\\Github\\agent",
+  "author": {
+    "email": "ruihu.pvt@gmail.com",
+    "name": "Rui Hu"
+  },
+  "bugs": {
+    "url": "https://github.com/mrhooray/gulp-mocha-phantomjs/issues"
+  },
+  "dependencies": {
+    "gulp-util": "^2.2.14",
+    "mocha-phantomjs-core": "^1.0.0",
+    "phantomjs": "1.9.1 - 1.9.7-15",
+    "through2": "^0.4.1"
+  },
+  "description": "run client-side Mocha tests with PhantomJS",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-jshint": "^1.5.0",
+    "gulp-mocha": "^0.4.1",
+    "mocha": "^1.18.2",
+    "should": "^3.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "ec97f566539a234fe8104ab32e64ea7264af8bc0",
+    "tarball": "https://registry.npmjs.org/gulp-mocha-phantomjs/-/gulp-mocha-phantomjs-0.10.1.tgz"
+  },
+  "gitHead": "3c57b09aad96710deec2397bc8b211b72542ff89",
+  "homepage": "https://github.com/mrhooray/gulp-mocha-phantomjs",
+  "keywords": [
+    "gulpplugin",
+    "mocha",
+    "phantomjs",
+    "test",
+    "testing",
+    "framework",
+    "runner",
+    "unit",
+    "spec",
+    "tdd",
+    "bdd"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "ruihu.pvt@gmail.com",
+      "name": "mrhooray"
+    }
+  ],
+  "name": "gulp-mocha-phantomjs",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrhooray/gulp-mocha-phantomjs.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "version": "0.10.1"
+}
