@@ -6,14 +6,14 @@
     ]
   ],
   "_from": "emojis-list@>=1.0.0 <2.0.0",
-  "_id": "emojis-list@1.0.1",
+  "_id": "emojis-list@1.0.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/emojis-list",
   "_nodeVersion": "5.9.0",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/emojis-list-1.0.1.tgz_1460542426465_0.9635178474709392"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/emojis-list-1.0.2.tgz_1462440092633_0.7450358234345913"
   },
   "_npmUser": {
     "email": "josefrancisco.verdu@gmail.com",
@@ -32,8 +32,8 @@
   "_requiredBy": [
     "/loader-utils"
   ],
-  "_resolved": "https://registry.npmjs.org/emojis-list/-/emojis-list-1.0.1.tgz",
-  "_shasum": "501365f8084c4d5e21b50c8d51ac780accd3ef78",
+  "_resolved": "https://registry.npmjs.org/emojis-list/-/emojis-list-1.0.2.tgz",
+  "_shasum": "c12a4dbfc44bf335a680e893f6f45aa353a4f633",
   "_shrinkwrap": null,
   "_spec": "emojis-list@^1.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\loader-utils",
@@ -62,13 +62,13 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "501365f8084c4d5e21b50c8d51ac780accd3ef78",
-    "tarball": "https://registry.npmjs.org/emojis-list/-/emojis-list-1.0.1.tgz"
+    "shasum": "c12a4dbfc44bf335a680e893f6f45aa353a4f633",
+    "tarball": "https://registry.npmjs.org/emojis-list/-/emojis-list-1.0.2.tgz"
   },
   "engines": {
     "node": ">= 0.10"
   },
-  "gitHead": "9a937b25ca102064be2bc3689fa91b6eca1f45fd",
+  "gitHead": "7ae3849dd3dd8ee548923ecdf157dac01d03b445",
   "homepage": "https://github.com/Kikobeats/emojis-list",
   "keywords": [
     "archive",
@@ -95,5 +95,5 @@
   "scripts": {
     "test": "echo 'YOLO'"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

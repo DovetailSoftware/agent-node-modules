@@ -38,11 +38,12 @@
     "multipipe": "0.1.2",
     "ncp": "0.4.2",
     "node-uuid": "1.4.7",
+    "object-keys": "0.4.0",
     "progress": "1.1.8",
     "request-progress": "0.3.1",
     "string_decoder": "0.10.31",
     "tough-cookie": "2.2.2",
-    "tunnel-agent": "0.4.2",
+    "tunnel-agent": "0.4.3",
     "which": "1.0.9"
   },
   "_requested": {

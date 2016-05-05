@@ -25,7 +25,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/accord/glob",
     "/bl/readable-stream",
     "/bufferstreams/readable-stream",
     "/chokidar",
@@ -43,7 +42,6 @@
     "/gulp-replace/readable-stream",
     "/http-browserify",
     "/http-errors",
-    "/inline-process-browser/readable-stream",
     "/memory-fs/readable-stream",
     "/merge-stream/readable-stream",
     "/mocha/glob",

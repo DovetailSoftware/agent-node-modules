@@ -26,7 +26,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/accord/glob",
     "/end-of-stream",
     "/findup-sync/glob",
     "/glob",

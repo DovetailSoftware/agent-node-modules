@@ -37,14 +37,14 @@
     "isexe": "1.1.2",
     "isstream": "0.1.2",
     "json-stringify-safe": "5.0.1",
-    "mime-types": "2.1.10",
+    "mime-types": "2.1.11",
     "node-uuid": "1.4.7",
-    "oauth-sign": "0.8.1",
-    "process-nextick-args": "1.0.6",
+    "oauth-sign": "0.8.2",
+    "process-nextick-args": "1.0.7",
     "string_decoder": "0.10.31",
     "stringstream": "0.0.5",
     "tough-cookie": "2.2.2",
-    "tunnel-agent": "0.4.2",
+    "tunnel-agent": "0.4.3",
     "util-deprecate": "1.0.2"
   },
   "_requested": {

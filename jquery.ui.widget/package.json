@@ -45,7 +45,7 @@
   "directories": {},
   "dist": {
     "shasum": "2ceecfc64995412643eeb9508d2197ea93c02fb3",
-    "tarball": "http://registry.npmjs.org/jquery.ui.widget/-/jquery.ui.widget-1.10.3.tgz"
+    "tarball": "https://registry.npmjs.org/jquery.ui.widget/-/jquery.ui.widget-1.10.3.tgz"
   },
   "homepage": "http://api.jqueryui.com/jQuery.widget/",
   "keywords": [

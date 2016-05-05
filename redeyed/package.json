@@ -52,7 +52,7 @@
   "directories": {},
   "dist": {
     "shasum": "37e990a6f2b21b2a11c2e6a48fd4135698cba97f",
-    "tarball": "http://registry.npmjs.org/redeyed/-/redeyed-0.4.4.tgz"
+    "tarball": "https://registry.npmjs.org/redeyed/-/redeyed-0.4.4.tgz"
   },
   "homepage": "https://github.com/thlorenz/redeyed",
   "keywords": [

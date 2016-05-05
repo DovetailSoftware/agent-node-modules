@@ -50,7 +50,7 @@
   "directories": {},
   "dist": {
     "shasum": "ae74653031d59e37b3c2fb2544ac61aeae3530a6",
-    "tarball": "http://registry.npmjs.org/imports-loader/-/imports-loader-0.6.5.tgz"
+    "tarball": "https://registry.npmjs.org/imports-loader/-/imports-loader-0.6.5.tgz"
   },
   "gitHead": "8e51c89a52b8cfb1fd5b46ee7c884e6f0350d050",
   "homepage": "https://github.com/webpack/imports-loader#readme",

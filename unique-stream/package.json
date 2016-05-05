@@ -49,7 +49,7 @@
   "directories": {},
   "dist": {
     "shasum": "d59a4a75427447d9aa6c91e70263f8d26a4b104b",
-    "tarball": "http://registry.npmjs.org/unique-stream/-/unique-stream-1.0.0.tgz"
+    "tarball": "https://registry.npmjs.org/unique-stream/-/unique-stream-1.0.0.tgz"
   },
   "homepage": "https://github.com/eugeneware/unique-stream",
   "keywords": [

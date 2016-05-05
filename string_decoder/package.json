@@ -33,7 +33,6 @@
     "/gulp-concat/readable-stream",
     "/gulp-mocha-phantomjs/readable-stream",
     "/gulp-replace/readable-stream",
-    "/inline-process-browser/readable-stream",
     "/memory-fs/readable-stream",
     "/merge-stream/readable-stream",
     "/node-libs-browser",

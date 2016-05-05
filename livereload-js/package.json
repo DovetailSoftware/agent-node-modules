@@ -54,7 +54,7 @@
   },
   "dist": {
     "shasum": "6c87257e648ab475bc24ea257457edcc1f8d0bc2",
-    "tarball": "http://registry.npmjs.org/livereload-js/-/livereload-js-2.2.2.tgz"
+    "tarball": "https://registry.npmjs.org/livereload-js/-/livereload-js-2.2.2.tgz"
   },
   "gitHead": "e1d943628005ad8d18a50ee1e8c29858ca748d10",
   "homepage": "https://github.com/zaius/livereload-js",

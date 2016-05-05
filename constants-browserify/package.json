@@ -46,7 +46,7 @@
   "directories": {},
   "dist": {
     "shasum": "92577db527ba6c4cf0a4568d84bc031f441e21f2",
-    "tarball": "http://registry.npmjs.org/constants-browserify/-/constants-browserify-0.0.1.tgz"
+    "tarball": "https://registry.npmjs.org/constants-browserify/-/constants-browserify-0.0.1.tgz"
   },
   "homepage": "https://github.com/juliangruber/constants-browserify",
   "keywords": [

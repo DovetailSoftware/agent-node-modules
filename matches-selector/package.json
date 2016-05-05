@@ -44,7 +44,7 @@
   "directories": {},
   "dist": {
     "shasum": "1df5262243ae341c1a0804dd302048267ac713bb",
-    "tarball": "http://registry.npmjs.org/matches-selector/-/matches-selector-0.0.1.tgz"
+    "tarball": "https://registry.npmjs.org/matches-selector/-/matches-selector-0.0.1.tgz"
   },
   "homepage": "https://github.com/ForbesLindesay/matches-selector#readme",
   "keywords": [

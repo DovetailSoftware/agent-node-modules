@@ -58,7 +58,7 @@
   },
   "dist": {
     "shasum": "62eaa4ab5e5ba35fdfc018275626e3c0f5e3fb0b",
-    "tarball": "http://registry.npmjs.org/watchpack/-/watchpack-0.2.9.tgz"
+    "tarball": "https://registry.npmjs.org/watchpack/-/watchpack-0.2.9.tgz"
   },
   "gitHead": "8f3ae3e9700ed68a690de6d19e3581d50bd02d3a",
   "homepage": "https://github.com/webpack/watchpack",

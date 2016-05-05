@@ -6,14 +6,14 @@
     ]
   ],
   "_from": "handlebars-loader@>=1.1.4 <2.0.0",
-  "_id": "handlebars-loader@1.2.0",
+  "_id": "handlebars-loader@1.3.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/handlebars-loader",
   "_nodeVersion": "5.4.0",
   "_npmOperationalInternal": {
-    "host": "packages-13-west.internal.npmjs.com",
-    "tmp": "tmp/handlebars-loader-1.2.0.tgz_1458074112769_0.34113361965864897"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/handlebars-loader-1.3.0.tgz_1461948239888_0.279487784486264"
   },
   "_npmUser": {
     "email": "paul@carduner.net",
@@ -32,8 +32,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/handlebars-loader/-/handlebars-loader-1.2.0.tgz",
-  "_shasum": "60d1c5bd112683dcad883a84302e7f05a5e9d937",
+  "_resolved": "https://registry.npmjs.org/handlebars-loader/-/handlebars-loader-1.3.0.tgz",
+  "_shasum": "491da7648d8f66cc9d05eb0e4ffc836134128cda",
   "_shrinkwrap": null,
   "_spec": "handlebars-loader@^1.1.4",
   "_where": "C:\\Github\\agent",
@@ -60,9 +60,11 @@
   "description": "handlebars loader module for webpack",
   "devDependencies": {
     "coveralls": "^2.11.8",
+    "eslint": "^2.8.0",
     "html-loader": "^0.3.0",
     "istanbul": "^0.4.2",
     "mocha": "^1.21.4",
+    "npm-release": "^1.0.0",
     "sinon": "^1.10.3"
   },
   "directories": {
@@ -70,14 +72,14 @@
     "test": "test"
   },
   "dist": {
-    "shasum": "60d1c5bd112683dcad883a84302e7f05a5e9d937",
-    "tarball": "https://registry.npmjs.org/handlebars-loader/-/handlebars-loader-1.2.0.tgz"
+    "shasum": "491da7648d8f66cc9d05eb0e4ffc836134128cda",
+    "tarball": "https://registry.npmjs.org/handlebars-loader/-/handlebars-loader-1.3.0.tgz"
   },
   "files": [
     "index.js",
     "lib"
   ],
-  "gitHead": "c95debfc0cc322ed197d4be6b89bc2a410c4b9bd",
+  "gitHead": "f061ea82ebe0dcd98b379fbcb8b1f38c87a15890",
   "homepage": "https://github.com/altano/handlebars-loader",
   "license": "MIT",
   "licenses": [
@@ -113,7 +115,8 @@
   },
   "scripts": {
     "coverage": "istanbul cover _mocha",
+    "lint": "eslint lib/ test/ index.js",
     "test": "mocha"
   },
-  "version": "1.2.0"
+  "version": "1.3.0"
 }

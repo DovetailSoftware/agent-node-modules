@@ -51,7 +51,7 @@
   "directories": {},
   "dist": {
     "shasum": "fd565a9af8eb4473ba69b6ed8a34352cb552f126",
-    "tarball": "http://registry.npmjs.org/ordered-read-streams/-/ordered-read-streams-0.1.0.tgz"
+    "tarball": "https://registry.npmjs.org/ordered-read-streams/-/ordered-read-streams-0.1.0.tgz"
   },
   "gitHead": "0a7e487d8734978c0cc29d4dc3bfbdb8e82f865b",
   "homepage": "https://github.com/armed/ordered-read-streams",

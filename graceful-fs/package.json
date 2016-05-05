@@ -32,6 +32,7 @@
   "_requiredBy": [
     "/enhanced-resolve",
     "/flat-cache",
+    "/fobject",
     "/fs-extra",
     "/less",
     "/load-json-file",
