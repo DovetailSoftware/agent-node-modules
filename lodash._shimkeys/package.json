@@ -73,7 +73,7 @@
   "directories": {},
   "dist": {
     "shasum": "6e9cc9666ff081f0b5a6c978b83e242e6949d203",
-    "tarball": "http://registry.npmjs.org/lodash._shimkeys/-/lodash._shimkeys-2.4.1.tgz"
+    "tarball": "https://registry.npmjs.org/lodash._shimkeys/-/lodash._shimkeys-2.4.1.tgz"
   },
   "homepage": "http://lodash.com/custom-builds",
   "license": "MIT",

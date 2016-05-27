@@ -1,49 +1,37 @@
 {
   "_args": [
     [
-      "through2@^2.0.0",
-      "C:\\Github\\agent\\node_modules\\gulp-util"
+      "through2@^0.5.1",
+      "C:\\Github\\agent\\node_modules\\gulp-bump"
     ]
   ],
-  "_from": "through2@>=2.0.0 <3.0.0",
-  "_id": "through2@2.0.1",
+  "_from": "through2@>=0.5.1 <0.6.0",
+  "_id": "through2@0.5.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/through2",
-  "_nodeVersion": "5.5.0",
-  "_npmOperationalInternal": {
-    "host": "packages-6-west.internal.npmjs.com",
-    "tmp": "tmp/through2-2.0.1.tgz_1454928418348_0.7339043114334345"
-  },
   "_npmUser": {
     "email": "rod@vagg.org",
     "name": "rvagg"
   },
-  "_npmVersion": "3.6.0",
-  "_phantomChildren": {
-    "core-util-is": "1.0.2",
-    "inherits": "2.0.1",
-    "process-nextick-args": "1.0.7",
-    "string_decoder": "0.10.31",
-    "util-deprecate": "1.0.2"
-  },
+  "_npmVersion": "1.4.3",
+  "_phantomChildren": {},
   "_requested": {
     "name": "through2",
-    "raw": "through2@^2.0.0",
-    "rawSpec": "^2.0.0",
+    "raw": "through2@^0.5.1",
+    "rawSpec": "^0.5.1",
     "scope": null,
-    "spec": ">=2.0.0 <3.0.0",
+    "spec": ">=0.5.1 <0.6.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/gulp-less",
-    "/gulp-util"
+    "/gulp-bump"
   ],
-  "_resolved": "https://registry.npmjs.org/through2/-/through2-2.0.1.tgz",
-  "_shasum": "384e75314d49f32de12eebb8136b8eb6b5d59da9",
+  "_resolved": "https://registry.npmjs.org/through2/-/through2-0.5.1.tgz",
+  "_shasum": "dfdd012eb9c700e2323fd334f38ac622ab372da7",
   "_shrinkwrap": null,
-  "_spec": "through2@^2.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-util",
+  "_spec": "through2@^0.5.1",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-bump",
   "author": {
     "email": "r@va.gg",
     "name": "Rod Vagg",
@@ -53,23 +41,22 @@
     "url": "https://github.com/rvagg/through2/issues"
   },
   "dependencies": {
-    "readable-stream": "~2.0.0",
-    "xtend": "~4.0.0"
+    "readable-stream": "~1.0.17",
+    "xtend": "~3.0.0"
   },
   "description": "A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise",
   "devDependencies": {
-    "bl": "~0.9.4",
-    "faucet": "0.0.1",
-    "stream-spigot": "~3.0.5",
-    "tape": "~4.0.0"
+    "bl": "~0.6.0",
+    "brtapsauce": "~0.2.2",
+    "stream-spigot": "~3.0.1",
+    "tape": "~2.3.0"
   },
   "directories": {},
   "dist": {
-    "shasum": "384e75314d49f32de12eebb8136b8eb6b5d59da9",
-    "tarball": "https://registry.npmjs.org/through2/-/through2-2.0.1.tgz"
+    "shasum": "dfdd012eb9c700e2323fd334f38ac622ab372da7",
+    "tarball": "https://registry.npmjs.org/through2/-/through2-0.5.1.tgz"
   },
-  "gitHead": "6d52a1b77db13a741f2708cd5854a198e4ae3072",
-  "homepage": "https://github.com/rvagg/through2#readme",
+  "homepage": "https://github.com/rvagg/through2",
   "keywords": [
     "stream",
     "streams2",
@@ -96,8 +83,8 @@
     "url": "git+https://github.com/rvagg/through2.git"
   },
   "scripts": {
-    "test": "node test/test.js | faucet",
+    "test": "node test/test.js",
     "test-local": "brtapsauce-local test/basic-test.js"
   },
-  "version": "2.0.1"
+  "version": "0.5.1"
 }

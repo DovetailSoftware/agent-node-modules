@@ -45,7 +45,7 @@
   "directories": {},
   "dist": {
     "shasum": "411ee89443aa682f8ea9d9111accf41bfd7e94d9",
-    "tarball": "http://registry.npmjs.org/expose-loader/-/expose-loader-0.7.1.tgz"
+    "tarball": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.1.tgz"
   },
   "gitHead": "999a157bb2c450bc48711e1852b032340801ea1f",
   "homepage": "https://github.com/webpack/expose-loader#readme",

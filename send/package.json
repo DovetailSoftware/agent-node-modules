@@ -69,7 +69,7 @@
   "directories": {},
   "dist": {
     "shasum": "518f921aeb0560aec7dcab2990b14cf6f3cce5de",
-    "tarball": "http://registry.npmjs.org/send/-/send-0.13.0.tgz"
+    "tarball": "https://registry.npmjs.org/send/-/send-0.13.0.tgz"
   },
   "engines": {
     "node": ">= 0.8.0"

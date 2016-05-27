@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "concat-with-sourcemaps@^1.0.0",
-      "C:\\Github\\agent\\node_modules\\gulp-concat"
+      "concat-with-sourcemaps@*",
+      "C:\\Github\\agent\\node_modules\\gulp-header"
     ]
   ],
-  "_from": "concat-with-sourcemaps@>=1.0.0 <2.0.0",
+  "_from": "concat-with-sourcemaps@*",
   "_id": "concat-with-sourcemaps@1.0.4",
   "_inCache": true,
   "_installable": true,
@@ -19,20 +19,21 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "concat-with-sourcemaps",
-    "raw": "concat-with-sourcemaps@^1.0.0",
-    "rawSpec": "^1.0.0",
+    "raw": "concat-with-sourcemaps@*",
+    "rawSpec": "*",
     "scope": null,
-    "spec": ">=1.0.0 <2.0.0",
+    "spec": "*",
     "type": "range"
   },
   "_requiredBy": [
-    "/gulp-concat"
+    "/gulp-concat",
+    "/gulp-header"
   ],
   "_resolved": "https://registry.npmjs.org/concat-with-sourcemaps/-/concat-with-sourcemaps-1.0.4.tgz",
   "_shasum": "f55b3be2aeb47601b10a2d5259ccfb70fd2f1dd6",
   "_shrinkwrap": null,
-  "_spec": "concat-with-sourcemaps@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-concat",
+  "_spec": "concat-with-sourcemaps@*",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-header",
   "author": {
     "email": "me@florianreiterer.com",
     "name": "Florian Reiterer"

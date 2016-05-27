@@ -30,7 +30,10 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/minimatch"
+    "/babel-core/minimatch",
+    "/glob-stream/minimatch",
+    "/minimatch",
+    "/readdirp/minimatch"
   ],
   "_resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.4.tgz",
   "_shasum": "464a204c77f482c085c2a36c456bbfbafb67a127",

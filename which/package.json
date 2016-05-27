@@ -2,7 +2,7 @@
   "_args": [
     [
       "which@~1.0.5",
-      "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs"
+      "C:\\Github\\agent\\node_modules\\grunt"
     ]
   ],
   "_from": "which@>=1.0.5 <1.1.0",
@@ -26,13 +26,15 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/grunt",
+    "/grunt-legacy-util",
     "/gulp-mocha-phantomjs/phantomjs"
   ],
   "_resolved": "https://registry.npmjs.org/which/-/which-1.0.9.tgz",
   "_shasum": "460c1da0f810103d0321a9b633af9e575e64486f",
   "_shrinkwrap": null,
   "_spec": "which@~1.0.5",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs",
+  "_where": "C:\\Github\\agent\\node_modules\\grunt",
   "author": {
     "email": "i@izs.me",
     "name": "Isaac Z. Schlueter",

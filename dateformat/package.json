@@ -2,7 +2,7 @@
   "_args": [
     [
       "dateformat@^1.0.11",
-      "C:\\Github\\agent\\node_modules\\gulp-util"
+      "C:\\Github\\agent\\node_modules\\plugin-log"
     ]
   ],
   "_from": "dateformat@>=1.0.11 <2.0.0",
@@ -27,13 +27,14 @@
   },
   "_requiredBy": [
     "/gulp-mocha-phantomjs/gulp-util",
-    "/gulp-util"
+    "/gulp-util",
+    "/plugin-log"
   ],
   "_resolved": "https://registry.npmjs.org/dateformat/-/dateformat-1.0.12.tgz",
   "_shasum": "9f124b67594c937ff706932e4a642cca8dbbfee9",
   "_shrinkwrap": null,
   "_spec": "dateformat@^1.0.11",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-util",
+  "_where": "C:\\Github\\agent\\node_modules\\plugin-log",
   "author": {
     "name": "Steven Levithan"
   },

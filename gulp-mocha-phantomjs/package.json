@@ -20,12 +20,9 @@
     "abbrev": "1.0.7",
     "clone-stats": "0.0.1",
     "config-chain": "1.1.10",
-    "core-util-is": "1.0.2",
     "ctype": "0.5.3",
     "dateformat": "1.0.12",
     "escape-string-regexp": "1.0.5",
-    "inherits": "2.0.1",
-    "isarray": "0.0.1",
     "json-stringify-safe": "5.0.1",
     "lodash._escapehtmlchar": "2.4.1",
     "lodash._escapestringchar": "2.4.1",
@@ -40,11 +37,13 @@
     "node-uuid": "1.4.7",
     "object-keys": "0.4.0",
     "progress": "1.1.8",
+    "readable-stream": "1.0.34",
     "request-progress": "0.3.1",
-    "string_decoder": "0.10.31",
+    "rimraf": "2.2.8",
     "tough-cookie": "2.2.2",
     "tunnel-agent": "0.4.3",
-    "which": "1.0.9"
+    "which": "1.0.9",
+    "xtend": "3.0.0"
   },
   "_requested": {
     "name": "gulp-mocha-phantomjs",

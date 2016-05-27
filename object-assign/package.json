@@ -34,9 +34,11 @@
     "/babel-loader",
     "/del",
     "/esrecurse",
+    "/figures",
     "/file-entry-cache",
     "/globby",
     "/gulp-eslint",
+    "/gulp-header",
     "/gulp-less",
     "/loader-utils",
     "/meow"

@@ -51,7 +51,7 @@
   "directories": {},
   "dist": {
     "shasum": "cc4074c7f4a4dfd03af54dd65c354b135132ce11",
-    "tarball": "http://registry.npmjs.org/faye-websocket/-/faye-websocket-0.7.3.tgz"
+    "tarball": "https://registry.npmjs.org/faye-websocket/-/faye-websocket-0.7.3.tgz"
   },
   "engines": {
     "node": ">=0.4.0"

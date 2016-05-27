@@ -6,20 +6,20 @@
     ]
   ],
   "_from": "backbone.wreqr@>=1.0.0 <2.0.0",
-  "_id": "backbone.wreqr@1.3.6",
+  "_id": "backbone.wreqr@1.3.7",
   "_inCache": true,
   "_installable": true,
   "_location": "/backbone.wreqr",
-  "_nodeVersion": "0.12.4",
+  "_nodeVersion": "6.0.0",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/backbone.wreqr-1.3.6.tgz_1458165518503_0.2907696096226573"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/backbone.wreqr-1.3.7.tgz_1464209773176_0.7696558651514351"
   },
   "_npmUser": {
     "email": "ahumphreys87@googlemail.com",
     "name": "ahumphreys87"
   },
-  "_npmVersion": "2.10.1",
+  "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
     "name": "backbone.wreqr",
@@ -32,8 +32,8 @@
   "_requiredBy": [
     "/backbone.marionette"
   ],
-  "_resolved": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.3.6.tgz",
-  "_shasum": "e49d1b6ab2f57716609e63e9bebe7abca23ad41f",
+  "_resolved": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.3.7.tgz",
+  "_shasum": "8e1c12776428806881f2770cd2535bde8923f067",
   "_shrinkwrap": null,
   "_spec": "backbone.wreqr@^1.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\backbone.marionette",
@@ -46,7 +46,7 @@
     "url": "https://github.com/marionettejs/backbone.wreqr/issues"
   },
   "dependencies": {
-    "backbone": ">=0.9.9 <=1.3.2",
+    "backbone": ">=0.9.9 <=1.3.x",
     "underscore": ">=1.3.3 <=1.8.3"
   },
   "description": "A Simple Service Bus For Backbone and Backbone.Marionette",
@@ -65,10 +65,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "e49d1b6ab2f57716609e63e9bebe7abca23ad41f",
-    "tarball": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.3.6.tgz"
+    "shasum": "8e1c12776428806881f2770cd2535bde8923f067",
+    "tarball": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.3.7.tgz"
   },
-  "gitHead": "06ceac3904cc338541ac288b6ae79c203a5c9a62",
+  "gitHead": "71a5bcdc411db51b94c35b6ce097a8bb7ea8a1f7",
   "github": "https://github.com/marionettejs/backbone.wreqr",
   "homepage": "https://github.com/marionettejs/backbone.wreqr",
   "jam": {
@@ -133,5 +133,5 @@
     "start": "grunt jasmine-server",
     "test": "grunt jasmine"
   },
-  "version": "1.3.6"
+  "version": "1.3.7"
 }

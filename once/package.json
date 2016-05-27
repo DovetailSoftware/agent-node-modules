@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "once@~1.3.0",
-      "C:\\Github\\agent\\node_modules\\npmconf"
+      "once@^1.3.0",
+      "C:\\Github\\agent\\node_modules\\glob"
     ]
   ],
-  "_from": "once@>=1.3.0 <1.4.0",
+  "_from": "once@>=1.3.0 <2.0.0",
   "_id": "once@1.3.3",
   "_inCache": true,
   "_installable": true,
@@ -19,15 +19,16 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "once",
-    "raw": "once@~1.3.0",
-    "rawSpec": "~1.3.0",
+    "raw": "once@^1.3.0",
+    "rawSpec": "^1.3.0",
     "scope": null,
-    "spec": ">=1.3.0 <1.4.0",
+    "spec": ">=1.3.0 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
+    "/accord/glob",
     "/end-of-stream",
-    "/findup-sync/glob",
+    "/eslint/glob",
     "/glob",
     "/glob-stream/glob",
     "/globby/glob",
@@ -38,8 +39,8 @@
   "_resolved": "https://registry.npmjs.org/once/-/once-1.3.3.tgz",
   "_shasum": "b2e261557ce4c314ec8304f3fa82663e4297ca20",
   "_shrinkwrap": null,
-  "_spec": "once@~1.3.0",
-  "_where": "C:\\Github\\agent\\node_modules\\npmconf",
+  "_spec": "once@^1.3.0",
+  "_where": "C:\\Github\\agent\\node_modules\\glob",
   "author": {
     "email": "i@izs.me",
     "name": "Isaac Z. Schlueter",

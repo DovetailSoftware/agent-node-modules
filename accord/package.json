@@ -20,7 +20,13 @@
     "name": "jenius"
   },
   "_npmVersion": "3.7.5",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "inflight": "1.0.5",
+    "inherits": "2.0.1",
+    "minimatch": "3.0.0",
+    "once": "1.3.3",
+    "path-is-absolute": "1.0.0"
+  },
   "_requested": {
     "name": "accord",
     "raw": "accord@^0.23.0",

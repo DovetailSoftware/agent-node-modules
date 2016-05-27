@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "gulp-util@^3.0.0",
-      "C:\\Github\\agent\\node_modules\\gulp"
+      "gulp-util@*",
+      "C:\\Github\\agent\\node_modules\\gulp-header"
     ]
   ],
-  "_from": "gulp-util@>=3.0.0 <4.0.0",
+  "_from": "gulp-util@*",
   "_id": "gulp-util@3.0.7",
   "_inCache": true,
   "_installable": true,
@@ -16,27 +16,34 @@
     "name": "phated"
   },
   "_npmVersion": "2.14.3",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "core-util-is": "1.0.2",
+    "inherits": "2.0.1",
+    "process-nextick-args": "1.0.7",
+    "string_decoder": "0.10.31",
+    "util-deprecate": "1.0.2"
+  },
   "_requested": {
     "name": "gulp-util",
-    "raw": "gulp-util@^3.0.0",
-    "rawSpec": "^3.0.0",
+    "raw": "gulp-util@*",
+    "rawSpec": "*",
     "scope": null,
-    "spec": ">=3.0.0 <4.0.0",
+    "spec": "*",
     "type": "range"
   },
   "_requiredBy": [
     "/gulp",
     "/gulp-concat",
     "/gulp-eslint",
+    "/gulp-header",
     "/gulp-less",
     "/gulp-livereload"
   ],
   "_resolved": "https://registry.npmjs.org/gulp-util/-/gulp-util-3.0.7.tgz",
   "_shasum": "78925c4b8f8b49005ac01a011c557e6218941cbb",
   "_shrinkwrap": null,
-  "_spec": "gulp-util@^3.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp",
+  "_spec": "gulp-util@*",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-header",
   "author": {
     "email": "contact@wearefractal.com",
     "name": "Fractal",

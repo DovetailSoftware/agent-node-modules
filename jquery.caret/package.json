@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      "jquery.caret@github:ichord/caret.js#v0.3.1",
+      "C:\\Github\\agent"
+    ]
+  ],
+  "_from": "ichord/caret.js#v0.3.1",
+  "_id": "jquery.caret@0.3.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jquery.caret",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/ichord/caret.js/v0.3.1/package.json",
+      "gitUrl": "git://github.com/ichord/caret.js.git#v0.3.1",
+      "httpsUrl": "git+https://github.com/ichord/caret.js.git#v0.3.1",
+      "shortcut": "github:ichord/caret.js#v0.3.1",
+      "ssh": "git@github.com:ichord/caret.js.git#v0.3.1",
+      "sshUrl": "git+ssh://git@github.com/ichord/caret.js.git#v0.3.1",
+      "type": "github"
+    },
+    "name": "jquery.caret",
+    "raw": "jquery.caret@github:ichord/caret.js#v0.3.1",
+    "rawSpec": "github:ichord/caret.js#v0.3.1",
+    "scope": null,
+    "spec": "github:ichord/caret.js#v0.3.1",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/ichord/caret.js.git#3bc79e41834fa96b54f52c4276562488de82e581",
+  "_shasum": "6578e00de72385426cb601234747359f7abcfe22",
+  "_shrinkwrap": null,
+  "_spec": "jquery.caret@github:ichord/caret.js#v0.3.1",
+  "_where": "C:\\Github\\agent",
+  "author": {
+    "email": "chord.luo@gmail.com",
+    "name": "Harold.luo"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "description": "Get caret position and offset from inputor",
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.6.4",
+    "grunt-contrib-jasmine": "~0.5.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-json-replace": "~0.1.2",
+    "grunt-umd": "^2.2.1"
+  },
+  "gitHead": "3bc79e41834fa96b54f52c4276562488de82e581",
+  "keywords": [
+    "jquery",
+    "caret",
+    "offset",
+    "position"
+  ],
+  "license": "MIT",
+  "main": "dist/jquery.caret.js",
+  "name": "jquery.caret",
+  "optionalDependencies": {},
+  "readme": "Caret.js\n========\n\nGet caret position or offset from inputor\n\nThis is the core function that working in [At.js](http://ichord.github.com/At.js).  \nNow, It just become an simple jquery plugin so that everybody can use it.  \nAnd, of course, **At.js** is using this plugin too.\n\n* support iframe context\n\nLive Demo\n=========\n\nhttp://ichord.github.com/Caret.js/\n\n\nUsage\n=====\n\n```javascript\n\n// Get caret position\n$('#inputor').caret('position'); // => {left: 15, top: 30, height: 20}\n\n// Get caret offset\n$('#inputor').caret('offset'); // => {left: 300, top: 400, height: 20}\n\nvar fixPos = 20\n// Get position of the 20th char in the inputor.\n// not working in `contentEditable` mode\n$('#inputor').caret('position', fixPos);\n\n// Get offset of the 20th char.\n// not working in `contentEditable` mode\n$('#inputor').caret('offset', fixPos);\n\n// more\n\n// Get caret position from the first char in the inputor.\n$('#inputor').caret('pos'); // => 15\n\n// Set caret position in the inputor\n$('#inputor').caret('pos', 15);\n\n// set iframe context\n// NOTE: Related to the iframe's cooridinate.\n//       You might want to get the iframe's offset/position on your own\n$('#inputor').caret('offset', {iframe: theIframe});\n$('#inputor').caret('position', {iframe: theIframe});\n$('#inputor').caret('pos', 15, {iframe: theIframe});\n\n```\n",
+  "readmeFilename": "README.md",
+  "repository": "",
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
+  "version": "0.3.1"
+}

@@ -53,7 +53,7 @@
   "directories": {},
   "dist": {
     "shasum": "17ddeddc5f722fb66501658895461977867315ba",
-    "tarball": "http://registry.npmjs.org/sha.js/-/sha.js-2.2.6.tgz"
+    "tarball": "https://registry.npmjs.org/sha.js/-/sha.js-2.2.6.tgz"
   },
   "gitHead": "f867e611f54d4dac371e0b247d72978ba26fca82",
   "homepage": "https://github.com/dominictarr/sha.js",

@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      "at.js@github:ichord/at.js#v1.5.0",
+      "C:\\Github\\agent"
+    ]
+  ],
+  "_from": "ichord/at.js#v1.5.0",
+  "_id": "at.js@1.5.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/at.js",
+  "_phantomChildren": {
+    "htmlparser": "1.7.6",
+    "jsdom": "0.2.19",
+    "location": "0.0.1",
+    "navigator": "1.0.1",
+    "xmlhttprequest": "1.4.2"
+  },
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/ichord/at.js/v1.5.0/package.json",
+      "gitUrl": "git://github.com/ichord/at.js.git#v1.5.0",
+      "httpsUrl": "git+https://github.com/ichord/at.js.git#v1.5.0",
+      "shortcut": "github:ichord/at.js#v1.5.0",
+      "ssh": "git@github.com:ichord/at.js.git#v1.5.0",
+      "sshUrl": "git+ssh://git@github.com/ichord/at.js.git#v1.5.0",
+      "type": "github"
+    },
+    "name": "at.js",
+    "raw": "at.js@github:ichord/at.js#v1.5.0",
+    "rawSpec": "github:ichord/at.js#v1.5.0",
+    "scope": null,
+    "spec": "github:ichord/at.js#v1.5.0",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/ichord/at.js.git#355b9e41af1ea0b28a10eb2b8791444e5ab0b57a",
+  "_shasum": "8821c369c6a16ad3624e1b8bc3f8710ddb662352",
+  "_shrinkwrap": null,
+  "_spec": "at.js@github:ichord/at.js#v1.5.0",
+  "_where": "C:\\Github\\agent",
+  "author": {
+    "email": "chord.luo@gmail.com",
+    "name": "chord.luo"
+  },
+  "bugs": {
+    "url": "https://github.com/ichord/At.js/issues"
+  },
+  "dependencies": {
+    "gulp-bump": "^1.0.0",
+    "gulp-header": "^1.7.1",
+    "jquery": "~1.7.0"
+  },
+  "description": "**An autocompletion library to autocomplete mentions, smileys etc. just like on Github!**   [![Build Status](https://travis-ci.org/ichord/At.js.png)](https://travis-ci.org/ichord/At.js)",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-debug": "^2.1.2",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-jasmine-phantom": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-umd": "^0.2.0",
+    "gulp-util": "^3.0.7",
+    "jasmine-ajax": "^3.2.0",
+    "jasmine-jquery": "^2.1.1",
+    "phantomjs": "^1.9.19"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "gitHead": "355b9e41af1ea0b28a10eb2b8791444e5ab0b57a",
+  "homepage": "http://ichord.github.com/At.js",
+  "license": "MIT",
+  "main": "dist/js/jquery.atwho.js",
+  "name": "at.js",
+  "optionalDependencies": {},
+  "readme": "**An autocompletion library to autocomplete mentions, smileys etc. just like on Github!**  \n[![Build Status](https://travis-ci.org/ichord/At.js.png)](https://travis-ci.org/ichord/At.js)\n\n#### Notice\n\nAt.js now **depends on** [Caret.js](https://github.com/ichord/Caret.js).  \nPlease read [**CHANGELOG.md**](CHANGELOG.md) for more details if you are going to update to new version.\n\n### Demo\nhttp://ichord.github.com/At.js\n\n### Documentation\nhttps://github.com/ichord/At.js/wiki\n\n### Compatibility\n\n* `textarea` - Chrome, Safari, Firefox, IE7+ (maybe IE6)\n* `contentEditable` - Chrome, Safari, Firefox, IE9+\n\n### Features Preview\n\n* Support IE 7+ for **textarea**.\n* Supports HTML5  [**contentEditable**](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Content_Editable) elements (NOT including IE 8)\n* Can listen to any character and not just '@'. Can set up multiple listeners for different characters with different behavior and data\n* Listener events can be bound to multiple inputors.\n* Format returned data using templates\n* Keyboard controls in addition to mouse\n    - `Tab` or `Enter` keys select the value\n    - `Up` and `Down` navigate between values (and `Ctrl-P` and `Ctrl-N` also)\n    - `Right` and `left` will re-search the keyword.\n* Custom data handlers and template renderers using a group of configurable callbacks\n* Supports AMD\n\n### Requirements\n\n* jQuery >= 1.7.0.\n* [Caret.js](https://github.com/ichord/Caret.js)\n    (You can use `Component` or `Bower` to install it.)\n\n### Integrating with your Application\n\nSimply include the following files in your HTML and you are good to go.\n\n```html\n<link href=\"css/jquery.atwho.css\" rel=\"stylesheet\">\n<script src=\"http://code.jquery.com/jquery.js\"></script>\n<script src=\"js/jquery.caret.js\"></script>\n<script src=\"js/jquery.atwho.js\"></script>\n```\n\n```javascript\n$('#inputor').atwho({\n    at: \"@\",\n    data:['Peter', 'Tom', 'Anne']\n})\n```\n\n#### Bower & Component\nFor installing using Bower you can use `jquery.atwho` and for Component please use `ichord/At.js`.\n\n#### Rails\nYou can include At.js in your `Rails` application using the gem [jquery-atwho-rails](https://github.com/ichord/jquery-atwho-rails).\n\n### Core Team Members\n\n* [@ichord](https://twitter.com/_ichord) (twitter)\n\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichord/At.js.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "spm": {
+    "dependencies": {
+      "caret.js": "~0.2.2",
+      "jquery": ">=1.7.2"
+    },
+    "ignore": [
+      "examples",
+      "spec",
+      "src"
+    ],
+    "main": "dist/js/jquery.atwho.js"
+  },
+  "version": "1.5.0"
+}

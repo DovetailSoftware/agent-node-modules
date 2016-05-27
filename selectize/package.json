@@ -70,7 +70,7 @@
   "directories": {},
   "dist": {
     "shasum": "5e88aa9a95f85ff196fce6da17f7f63a16d644c6",
-    "tarball": "http://registry.npmjs.org/selectize/-/selectize-0.12.1.tgz"
+    "tarball": "https://registry.npmjs.org/selectize/-/selectize-0.12.1.tgz"
   },
   "engines": {
     "node": "*"

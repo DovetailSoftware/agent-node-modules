@@ -69,7 +69,7 @@
   "directories": {},
   "dist": {
     "shasum": "c0d5a63b2718800ad8e1eb0fa5269c84dd41845e",
-    "tarball": "http://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz"
+    "tarball": "https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz"
   },
   "files": [
     "LICENSE-MIT.txt",

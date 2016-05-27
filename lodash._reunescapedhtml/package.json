@@ -75,7 +75,7 @@
   "directories": {},
   "dist": {
     "shasum": "747c4fc40103eb3bb8a0976e571f7a2659e93ba7",
-    "tarball": "http://registry.npmjs.org/lodash._reunescapedhtml/-/lodash._reunescapedhtml-2.4.1.tgz"
+    "tarball": "https://registry.npmjs.org/lodash._reunescapedhtml/-/lodash._reunescapedhtml-2.4.1.tgz"
   },
   "homepage": "http://lodash.com/custom-builds",
   "license": "MIT",

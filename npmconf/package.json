@@ -16,7 +16,9 @@
     "name": "isaacs"
   },
   "_npmVersion": "2.10.0",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "abbrev": "1.0.7"
+  },
   "_requested": {
     "name": "npmconf",
     "raw": "npmconf@^2.1.1",

@@ -49,7 +49,7 @@
   "directories": {},
   "dist": {
     "shasum": "212d5bfe1318306a420f6402b8e26ff39647a849",
-    "tarball": "http://registry.npmjs.org/proto-list/-/proto-list-1.2.4.tgz"
+    "tarball": "https://registry.npmjs.org/proto-list/-/proto-list-1.2.4.tgz"
   },
   "gitHead": "9e4af12d4dddee2fd531f0fe0c21c9cfacb78ac0",
   "homepage": "https://github.com/isaacs/proto-list#readme",

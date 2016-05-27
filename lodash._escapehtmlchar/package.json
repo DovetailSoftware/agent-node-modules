@@ -70,7 +70,7 @@
   "directories": {},
   "dist": {
     "shasum": "df67c3bb6b7e8e1e831ab48bfa0795b92afe899d",
-    "tarball": "http://registry.npmjs.org/lodash._escapehtmlchar/-/lodash._escapehtmlchar-2.4.1.tgz"
+    "tarball": "https://registry.npmjs.org/lodash._escapehtmlchar/-/lodash._escapehtmlchar-2.4.1.tgz"
   },
   "homepage": "http://lodash.com/custom-builds",
   "license": "MIT",

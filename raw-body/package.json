@@ -72,7 +72,7 @@
   "directories": {},
   "dist": {
     "shasum": "9c050737fe07ced6d94a4fd09c61b6ad874d310f",
-    "tarball": "http://registry.npmjs.org/raw-body/-/raw-body-2.1.6.tgz"
+    "tarball": "https://registry.npmjs.org/raw-body/-/raw-body-2.1.6.tgz"
   },
   "engines": {
     "node": ">= 0.8"

@@ -6,14 +6,14 @@
     ]
   ],
   "_from": "iedriver@>=2.52.2 <3.0.0",
-  "_id": "iedriver@2.53.0",
+  "_id": "iedriver@2.53.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/iedriver",
   "_nodeVersion": "4.2.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/iedriver-2.53.0.tgz_1458314866532_0.753245500382036"
+    "tmp": "tmp/iedriver-2.53.1.tgz_1464036010498_0.1991159627214074"
   },
   "_npmUser": {
     "email": "barrett@sosuke.com",
@@ -35,8 +35,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-2.53.0.tgz",
-  "_shasum": "90383396a5e2d4275840e8b5f0e89d2cfd38946b",
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-2.53.1.tgz",
+  "_shasum": "0fa5bfd1b748e82ce4d98192d2b943437fdb1350",
   "_shrinkwrap": null,
   "_spec": "iedriver@^2.52.2",
   "_where": "C:\\Github\\agent",
@@ -63,10 +63,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "90383396a5e2d4275840e8b5f0e89d2cfd38946b",
-    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-2.53.0.tgz"
+    "shasum": "0fa5bfd1b748e82ce4d98192d2b943437fdb1350",
+    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-2.53.1.tgz"
   },
-  "gitHead": "60e79c8a61f706fea54534588c859d957a72e4a8",
+  "gitHead": "e224f9fbb97f799383924b04bd333335d144a9cf",
   "homepage": "https://github.com/barretts/node-iedriver",
   "keywords": [
     "iedriver",
@@ -96,5 +96,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "2.53.0"
+  "version": "2.53.1"
 }

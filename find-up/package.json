@@ -20,9 +20,7 @@
     "name": "sindresorhus"
   },
   "_npmVersion": "2.14.12",
-  "_phantomChildren": {
-    "pinkie-promise": "2.0.1"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "name": "find-up",
     "raw": "find-up@^1.0.0",
