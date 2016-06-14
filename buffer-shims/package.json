@@ -30,7 +30,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/assert",
     "/bufferstreams/readable-stream",
     "/gulp-replace/readable-stream",
     "/memory-fs/readable-stream",

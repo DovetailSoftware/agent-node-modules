@@ -25,6 +25,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/es5-ext/es6-symbol",
     "/es6-iterator",
     "/es6-map",
     "/es6-set",
