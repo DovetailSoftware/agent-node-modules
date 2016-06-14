@@ -74,7 +74,7 @@
   "directories": {},
   "dist": {
     "shasum": "abf514436b3cb705001627978cbcf30b1280eea4",
-    "tarball": "http://registry.npmjs.org/lodash.values/-/lodash.values-2.4.1.tgz"
+    "tarball": "https://registry.npmjs.org/lodash.values/-/lodash.values-2.4.1.tgz"
   },
   "homepage": "http://lodash.com/custom-builds",
   "keywords": [

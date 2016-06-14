@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "lunr@^0.7.0",
+      "lunr@0.7.1",
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "lunr@>=0.7.0 <0.8.0",
+  "_from": "lunr@0.7.1",
   "_id": "lunr@0.7.1",
   "_inCache": true,
   "_installable": true,
@@ -23,19 +23,19 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "lunr",
-    "raw": "lunr@^0.7.0",
-    "rawSpec": "^0.7.0",
+    "raw": "lunr@0.7.1",
+    "rawSpec": "0.7.1",
     "scope": null,
-    "spec": ">=0.7.0 <0.8.0",
-    "type": "range"
+    "spec": "0.7.1",
+    "type": "version"
   },
   "_requiredBy": [
-    "#DEV:/"
+    "/"
   ],
   "_resolved": "https://registry.npmjs.org/lunr/-/lunr-0.7.1.tgz",
   "_shasum": "b5a2cff99555b7893f5f1a4a17af3f638373c4bb",
   "_shrinkwrap": null,
-  "_spec": "lunr@^0.7.0",
+  "_spec": "lunr@0.7.1",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Oliver Nightingale"

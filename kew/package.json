@@ -52,7 +52,7 @@
   "directories": {},
   "dist": {
     "shasum": "ece11cb5d8d01a81f8ce804c8d0bba06e6b25ca2",
-    "tarball": "http://registry.npmjs.org/kew/-/kew-0.5.0.tgz"
+    "tarball": "https://registry.npmjs.org/kew/-/kew-0.5.0.tgz"
   },
   "gitHead": "59659dba5423495c3837cd3c0c8c043597798b6d",
   "homepage": "https://github.com/Medium/kew",

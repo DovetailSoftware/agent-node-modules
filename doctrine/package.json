@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "doctrine@^1.2.1",
+      "doctrine@^1.2.2",
       "C:\\Github\\agent\\node_modules\\eslint"
     ]
   ],
-  "_from": "doctrine@>=1.2.1 <2.0.0",
+  "_from": "doctrine@>=1.2.2 <2.0.0",
   "_id": "doctrine@1.2.2",
   "_inCache": true,
   "_installable": true,
@@ -23,10 +23,10 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "doctrine",
-    "raw": "doctrine@^1.2.1",
-    "rawSpec": "^1.2.1",
+    "raw": "doctrine@^1.2.2",
+    "rawSpec": "^1.2.2",
     "scope": null,
-    "spec": ">=1.2.1 <2.0.0",
+    "spec": ">=1.2.2 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -35,7 +35,7 @@
   "_resolved": "https://registry.npmjs.org/doctrine/-/doctrine-1.2.2.tgz",
   "_shasum": "9e9867210149548b95ec51469dae4caad312308e",
   "_shrinkwrap": null,
-  "_spec": "doctrine@^1.2.1",
+  "_spec": "doctrine@^1.2.2",
   "_where": "C:\\Github\\agent\\node_modules\\eslint",
   "bugs": {
     "url": "https://github.com/eslint/doctrine/issues"

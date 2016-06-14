@@ -47,7 +47,7 @@
   "directories": {},
   "dist": {
     "shasum": "cfedf88e60c00dd9697b61fdd2a8343a9b680eaf",
-    "tarball": "http://registry.npmjs.org/throttleit/-/throttleit-0.0.2.tgz"
+    "tarball": "https://registry.npmjs.org/throttleit/-/throttleit-0.0.2.tgz"
   },
   "homepage": "https://github.com/component/throttle#readme",
   "keywords": [],

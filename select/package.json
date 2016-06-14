@@ -52,7 +52,7 @@
   "directories": {},
   "dist": {
     "shasum": "daabcc99009b2fb988944c8880f773265ef90e5e",
-    "tarball": "http://registry.npmjs.org/select/-/select-1.0.6.tgz"
+    "tarball": "https://registry.npmjs.org/select/-/select-1.0.6.tgz"
   },
   "gitHead": "c04fa7e0b0bc19fc4de69b307ef3e873ee1acb8a",
   "homepage": "https://github.com/zenorocha/select",
