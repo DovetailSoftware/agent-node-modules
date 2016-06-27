@@ -1,46 +1,40 @@
 {
   "_args": [
     [
-      "at.js@github:ichord/at.js#v1.5.0",
+      "at.js@github:ichord/At.js#2a369a8",
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "ichord/at.js#v1.5.0",
-  "_id": "at.js@1.5.0",
+  "_from": "ichord/At.js#2a369a8",
+  "_id": "at.js@1.5.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/at.js",
-  "_phantomChildren": {
-    "htmlparser": "1.7.6",
-    "jsdom": "0.2.19",
-    "location": "0.0.1",
-    "navigator": "1.0.1",
-    "xmlhttprequest": "1.4.2"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/ichord/at.js/v1.5.0/package.json",
-      "gitUrl": "git://github.com/ichord/at.js.git#v1.5.0",
-      "httpsUrl": "git+https://github.com/ichord/at.js.git#v1.5.0",
-      "shortcut": "github:ichord/at.js#v1.5.0",
-      "ssh": "git@github.com:ichord/at.js.git#v1.5.0",
-      "sshUrl": "git+ssh://git@github.com/ichord/at.js.git#v1.5.0",
+      "directUrl": "https://raw.githubusercontent.com/ichord/At.js/2a369a8/package.json",
+      "gitUrl": "git://github.com/ichord/At.js.git#2a369a8",
+      "httpsUrl": "git+https://github.com/ichord/At.js.git#2a369a8",
+      "shortcut": "github:ichord/At.js#2a369a8",
+      "ssh": "git@github.com:ichord/At.js.git#2a369a8",
+      "sshUrl": "git+ssh://git@github.com/ichord/At.js.git#2a369a8",
       "type": "github"
     },
     "name": "at.js",
-    "raw": "at.js@github:ichord/at.js#v1.5.0",
-    "rawSpec": "github:ichord/at.js#v1.5.0",
+    "raw": "at.js@github:ichord/At.js#2a369a8",
+    "rawSpec": "github:ichord/At.js#2a369a8",
     "scope": null,
-    "spec": "github:ichord/at.js#v1.5.0",
+    "spec": "github:ichord/At.js#2a369a8",
     "type": "hosted"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git://github.com/ichord/at.js.git#355b9e41af1ea0b28a10eb2b8791444e5ab0b57a",
-  "_shasum": "0a38ebfe01ae5df43a1ce2342902da0b070c7b93",
+  "_resolved": "git://github.com/ichord/At.js.git#2a369a8614dea5b4bf2346d2ba536a5025dfdcb4",
+  "_shasum": "74ba80328b53bd58e0029e7a5225ddd90336b30f",
   "_shrinkwrap": null,
-  "_spec": "at.js@github:ichord/at.js#v1.5.0",
+  "_spec": "at.js@github:ichord/At.js#2a369a8",
   "_where": "C:\\Github\\agent",
   "author": {
     "email": "chord.luo@gmail.com",
@@ -52,7 +46,7 @@
   "dependencies": {
     "gulp-bump": "^1.0.0",
     "gulp-header": "^1.7.1",
-    "jquery": "~1.7.0"
+    "jquery": "^1.7.0"
   },
   "description": "**An autocompletion library to autocomplete mentions, smileys etc. just like on Github!**   [![Build Status](https://travis-ci.org/ichord/At.js.png)](https://travis-ci.org/ichord/At.js)",
   "devDependencies": {
@@ -74,7 +68,7 @@
   "engines": {
     "node": ">= 0.6.0"
   },
-  "gitHead": "355b9e41af1ea0b28a10eb2b8791444e5ab0b57a",
+  "gitHead": "2a369a8614dea5b4bf2346d2ba536a5025dfdcb4",
   "homepage": "http://ichord.github.com/At.js",
   "license": "MIT",
   "main": "dist/js/jquery.atwho.js",
@@ -101,5 +95,5 @@
     ],
     "main": "dist/js/jquery.atwho.js"
   },
-  "version": "1.5.0"
+  "version": "1.5.1"
 }

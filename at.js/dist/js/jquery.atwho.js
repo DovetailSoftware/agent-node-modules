@@ -1,5 +1,5 @@
 /**
- * at.js - 1.5.0
+ * at.js - 1.5.1
  * Copyright (c) 2016 chord.luo <chord.luo@gmail.com>;
  * Homepage: http://ichord.github.com/At.js
  * License: MIT
@@ -114,7 +114,7 @@ DEFAULT_CALLBACKS = {
       return '> ' + $1 + '<strong>' + $2 + '</strong>' + $3 + ' <';
     });
   },
-  beforeInsert: function(value, $li) {
+  beforeInsert: function(value, $li, e) {
     return value;
   },
   beforeReposition: function(offset) {
@@ -217,6 +217,9 @@ App = (function() {
     })(this)).on('compositionend', (function(_this) {
       return function(e) {
         _this.isComposing = false;
+        setTimeout(function(e) {
+          return _this.dispatch(e);
+        });
         return null;
       };
     })(this)).on('keyup.atwhoInner', (function(_this) {
@@ -572,7 +575,7 @@ TextareaController = (function(superClass) {
       iframe: this.app.iframe
     });
     subtext = content.slice(0, caretPos);
-    query = this.callbacks("matcher").call(this, this.at, subtext, this.getOpt('startWithSpace'));
+    query = this.callbacks("matcher").call(this, this.at, subtext, this.getOpt('startWithSpace'), this.getOpt("acceptSpaceBar"));
     isString = typeof query === 'string';
     if (isString && query.length < this.getOpt('minLen', 0)) {
       return;
@@ -762,7 +765,7 @@ EditableController = (function(superClass) {
     }
     _range = range.cloneRange();
     _range.setStart(range.startContainer, 0);
-    matched = this.callbacks("matcher").call(this, this.at, _range.toString(), this.getOpt('startWithSpace'));
+    matched = this.callbacks("matcher").call(this, this.at, _range.toString(), this.getOpt('startWithSpace'), this.getOpt("acceptSpaceBar"));
     isString = typeof matched === 'string';
     if ($query.length === 0 && isString && (index = range.startOffset - this.at.length - matched.length) >= 0) {
       range.setStart(range.startContainer, index);
@@ -976,7 +979,7 @@ View = (function() {
     if (($li = this.$el.find(".cur")).length) {
       content = this.context.insertContentFor($li);
       this.context._stopDelayedCall();
-      this.context.insert(this.context.callbacks("beforeInsert").call(this.context, content, $li), $li);
+      this.context.insert(this.context.callbacks("beforeInsert").call(this.context, content, $li, e), $li);
       this.context.trigger("inserted", [$li, e]);
       this.hide(e);
     }
@@ -1179,6 +1182,7 @@ $.fn.atwho["default"] = {
   suffix: void 0,
   hideWithoutSuffix: false,
   startWithSpace: true,
+  acceptSpaceBar: false,
   highlightFirst: true,
   limit: 5,
   maxLen: 20,

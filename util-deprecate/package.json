@@ -36,7 +36,6 @@
     "/gulp-util/readable-stream",
     "/memory-fs/readable-stream",
     "/merge-stream/readable-stream",
-    "/phantomjs-prebuilt/readable-stream",
     "/readdirp/readable-stream",
     "/replacestream/readable-stream"
   ],

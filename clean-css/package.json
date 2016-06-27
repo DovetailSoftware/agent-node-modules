@@ -6,14 +6,14 @@
     ]
   ],
   "_from": "clean-css@>=3.0.1 <4.0.0",
-  "_id": "clean-css@3.4.17",
+  "_id": "clean-css@3.4.18",
   "_inCache": true,
   "_installable": true,
   "_location": "/clean-css",
   "_nodeVersion": "5.10.1",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/clean-css-3.4.17.tgz_1465020523368_0.1823174888268113"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/clean-css-3.4.18.tgz_1465972482897_0.4637693043332547"
   },
   "_npmUser": {
     "email": "jakub@goalsmashers.com",
@@ -35,8 +35,8 @@
   "_requiredBy": [
     "/less-plugin-clean-css"
   ],
-  "_resolved": "https://registry.npmjs.org/clean-css/-/clean-css-3.4.17.tgz",
-  "_shasum": "199c3926b224761b9fc890d2354c9ce0db678669",
+  "_resolved": "https://registry.npmjs.org/clean-css/-/clean-css-3.4.18.tgz",
+  "_shasum": "295e2dec9dfabc7c9d82b13df268b93afd2e84cb",
   "_shrinkwrap": null,
   "_spec": "clean-css@^3.0.1",
   "_where": "C:\\Github\\agent\\node_modules\\less-plugin-clean-css",
@@ -67,8 +67,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "199c3926b224761b9fc890d2354c9ce0db678669",
-    "tarball": "https://registry.npmjs.org/clean-css/-/clean-css-3.4.17.tgz"
+    "shasum": "295e2dec9dfabc7c9d82b13df268b93afd2e84cb",
+    "tarball": "https://registry.npmjs.org/clean-css/-/clean-css-3.4.18.tgz"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -80,7 +80,7 @@
     "index.js",
     "LICENSE"
   ],
-  "gitHead": "1865ef07c40d72c57292935af71e4cbc4db6f341",
+  "gitHead": "76520d5096d53109b8d958636e95a3a4c38d45f2",
   "homepage": "https://github.com/jakubpawlowicz/clean-css",
   "keywords": [
     "css",
@@ -112,5 +112,5 @@
     "prepublish": "npm run check",
     "test": "vows"
   },
-  "version": "3.4.17"
+  "version": "3.4.18"
 }

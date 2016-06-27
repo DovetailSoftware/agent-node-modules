@@ -21,7 +21,7 @@
   },
   "_npmVersion": "2.14.8",
   "_phantomChildren": {
-    "abbrev": "1.0.7",
+    "abbrev": "1.0.9",
     "config-chain": "1.1.10"
   },
   "_requested": {

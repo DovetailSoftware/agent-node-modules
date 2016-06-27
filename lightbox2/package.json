@@ -56,7 +56,7 @@
   "directories": {},
   "dist": {
     "shasum": "be73d986f070136307b623d30ac05b2c06d31bb3",
-    "tarball": "http://registry.npmjs.org/lightbox2/-/lightbox2-2.8.2.tgz"
+    "tarball": "https://registry.npmjs.org/lightbox2/-/lightbox2-2.8.2.tgz"
   },
   "gitHead": "e1e6aa4f1b09bdf313b386841490b6d2ad1ccedc",
   "homepage": "http://lokeshdhakar.com/projects/lightbox2/",

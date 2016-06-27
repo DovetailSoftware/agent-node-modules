@@ -39,7 +39,6 @@
     "/multiparty/readable-stream",
     "/node-libs-browser",
     "/node-libs-browser/readable-stream",
-    "/phantomjs-prebuilt/readable-stream",
     "/readable-stream",
     "/readdirp/readable-stream",
     "/replacestream/readable-stream",
