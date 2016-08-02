@@ -27,7 +27,6 @@
   "_requiredBy": [
     "/chromedriver",
     "/del",
-    "/fs-extra",
     "/grunt",
     "/gulp-mocha-phantomjs/phantomjs"
   ],

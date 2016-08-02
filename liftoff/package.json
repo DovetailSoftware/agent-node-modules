@@ -6,14 +6,14 @@
     ]
   ],
   "_from": "liftoff@>=2.1.0 <3.0.0",
-  "_id": "liftoff@2.2.4",
+  "_id": "liftoff@2.3.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/liftoff",
   "_nodeVersion": "0.10.41",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/liftoff-2.2.4.tgz_1466544733455_0.21330511290580034"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/liftoff-2.3.0.tgz_1469646196567_0.8871160212438554"
   },
   "_npmUser": {
     "email": "blaine.bublitz@gmail.com",
@@ -21,7 +21,10 @@
   },
   "_npmVersion": "2.15.2",
   "_phantomChildren": {
-    "glob": "5.0.15"
+    "detect-file": "0.1.0",
+    "is-glob": "2.0.1",
+    "micromatch": "2.3.11",
+    "resolve-dir": "0.1.1"
   },
   "_requested": {
     "name": "liftoff",
@@ -34,8 +37,8 @@
   "_requiredBy": [
     "/gulp"
   ],
-  "_resolved": "https://registry.npmjs.org/liftoff/-/liftoff-2.2.4.tgz",
-  "_shasum": "443adf282706e2ae2553cc7e3660f97688e37bad",
+  "_resolved": "https://registry.npmjs.org/liftoff/-/liftoff-2.3.0.tgz",
+  "_shasum": "a98f2ff67183d8ba7cfaca10548bd7ff0550b385",
   "_shrinkwrap": null,
   "_spec": "liftoff@^2.1.0",
   "_where": "C:\\Github\\agent\\node_modules\\gulp",
@@ -48,8 +51,12 @@
   },
   "dependencies": {
     "extend": "^3.0.0",
-    "findup-sync": "^0.3.0",
+    "findup-sync": "^0.4.2",
+    "fined": "^1.0.1",
     "flagged-respawn": "^0.3.2",
+    "lodash.isplainobject": "^4.0.4",
+    "lodash.isstring": "^4.0.1",
+    "lodash.mapvalues": "^4.4.0",
     "rechoir": "^0.6.2",
     "resolve": "^1.1.7"
   },
@@ -65,13 +72,13 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "443adf282706e2ae2553cc7e3660f97688e37bad",
-    "tarball": "https://registry.npmjs.org/liftoff/-/liftoff-2.2.4.tgz"
+    "shasum": "a98f2ff67183d8ba7cfaca10548bd7ff0550b385",
+    "tarball": "https://registry.npmjs.org/liftoff/-/liftoff-2.3.0.tgz"
   },
   "engines": {
     "node": ">= 0.8"
   },
-  "gitHead": "51d1232c69706b07b82ee398d132bdcf2d0bef51",
+  "gitHead": "be40ec3a3fa5854b4ab496a97f3d5877bf747b0b",
   "homepage": "https://github.com/js-cli/js-liftoff",
   "keywords": [
     "command line"
@@ -79,6 +86,10 @@
   "license": "MIT",
   "main": "index.js",
   "maintainers": [
+    {
+      "email": "github@sellside.com",
+      "name": "jonschlinkert"
+    },
     {
       "email": "blaine.bublitz@gmail.com",
       "name": "phated"
@@ -88,7 +99,7 @@
       "name": "tkellen"
     },
     {
-      "email": "b@pk.am",
+      "email": "bertrand.marron@gmail.com",
       "name": "tusbar"
     }
   ],
@@ -102,5 +113,5 @@
   "scripts": {
     "test": "jshint lib index.js && jscs lib index.js && mocha -t 5000 -b -R spec test/index"
   },
-  "version": "2.2.4"
+  "version": "2.3.0"
 }

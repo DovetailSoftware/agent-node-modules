@@ -32,8 +32,6 @@
   "_requiredBy": [
     "/accepts",
     "/errorhandler/accepts",
-    "/phantomjs-prebuilt/form-data",
-    "/phantomjs-prebuilt/request",
     "/serve-index",
     "/type-is"
   ],

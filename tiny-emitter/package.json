@@ -6,16 +6,20 @@
     ]
   ],
   "_from": "tiny-emitter@>=1.0.0 <2.0.0",
-  "_id": "tiny-emitter@1.0.2",
+  "_id": "tiny-emitter@1.1.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/tiny-emitter",
-  "_nodeVersion": "5.1.1",
+  "_nodeVersion": "6.1.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/tiny-emitter-1.1.0.tgz_1467208205044_0.9086456855293363"
+  },
   "_npmUser": {
     "email": "scottcorgan@gmail.com",
     "name": "scottcorgan"
   },
-  "_npmVersion": "2.14.14",
+  "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
     "name": "tiny-emitter",
@@ -28,8 +32,8 @@
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-1.0.2.tgz",
-  "_shasum": "8e49470d3f55f89e247210368a6bb9fb51aa1601",
+  "_resolved": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-1.1.0.tgz",
+  "_shasum": "ab405a21ffed814a76c19739648093d70654fecb",
   "_shrinkwrap": null,
   "_spec": "tiny-emitter@^1.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
@@ -50,10 +54,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "8e49470d3f55f89e247210368a6bb9fb51aa1601",
-    "tarball": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-1.0.2.tgz"
+    "shasum": "ab405a21ffed814a76c19739648093d70654fecb",
+    "tarball": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-1.1.0.tgz"
   },
-  "gitHead": "cc88f1cd3a97258d9f81f44f1fb28f0d3e40fab4",
+  "gitHead": "6cd3cef4872e45fac5195b1912deeb2b30da1ce1",
   "homepage": "https://github.com/scottcorgan/tiny-emitter#readme",
   "keywords": [
     "event",
@@ -100,5 +104,5 @@
       "test/index.js"
     ]
   },
-  "version": "1.0.2"
+  "version": "1.1.0"
 }

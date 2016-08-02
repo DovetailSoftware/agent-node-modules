@@ -27,6 +27,7 @@
   },
   "_requiredBy": [
     "/eslint/user-home",
+    "/expand-tilde",
     "/osenv",
     "/tildify"
   ],

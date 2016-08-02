@@ -25,11 +25,9 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/bl/readable-stream",
     "/bufferstreams/readable-stream",
     "/concat-stream/readable-stream",
     "/duplexer2/readable-stream",
-    "/extract-zip/readable-stream",
     "/gulp-header/readable-stream",
     "/gulp-less/readable-stream",
     "/gulp-replace/readable-stream",

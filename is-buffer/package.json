@@ -2,7 +2,7 @@
   "_args": [
     [
       "is-buffer@^1.0.2",
-      "C:\\Github\\agent\\node_modules\\align-text\\node_modules\\kind-of"
+      "C:\\Github\\agent\\node_modules\\is-number\\node_modules\\kind-of"
     ]
   ],
   "_from": "is-buffer@>=1.0.2 <2.0.0",
@@ -39,7 +39,7 @@
   "_shasum": "db897fc3f7aca2d50de94b6c8c2896a4771627af",
   "_shrinkwrap": null,
   "_spec": "is-buffer@^1.0.2",
-  "_where": "C:\\Github\\agent\\node_modules\\align-text\\node_modules\\kind-of",
+  "_where": "C:\\Github\\agent\\node_modules\\is-number\\node_modules\\kind-of",
   "author": {
     "email": "feross@feross.org",
     "name": "Feross Aboukhadijeh",

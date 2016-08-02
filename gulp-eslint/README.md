@@ -44,8 +44,8 @@ Or use the plugin API to do things like:
 gulp.src(['**/*.js','!node_modules/**'])
 	.pipe(eslint({
 		extends: 'eslint:recommended',
-		ecmaFeatures: {
-		    'modules': true
+		parserOptions: {
+			sourceType: 'module'
 		},
 		rules: {
 			'my-custom-rule': 1,
@@ -71,6 +71,7 @@ For additional examples, look through the [example directory](https://github.com
 *No explicit configuration.* A `.eslintrc` file may be resolved relative to each linted file.
 
 ### eslint(options)
+See [ESlint CLIEngine options](http://eslint.org/docs/developer-guide/nodejs-api#cliengine).
 
 #### options.rules
 
@@ -130,6 +131,8 @@ Specify a list of [environments](http://eslint.org/docs/user-guide/configuring#s
 Type: `Object`
 
 Specify [environments](http://eslint.org/docs/user-guide/configuring#specifying-environments). Each key must match an existing env definition, and the key determines whether the env’s rules are applied (`true`) or not (`false`).
+
+Note that setting an env to `false` will not override an env that is set to `true` in the _.eslintrc_ being extended.
 
 Alias: `env` *(deprecated)*
 
@@ -254,7 +257,7 @@ eslint.format('checkstyle')
 
 // use the "eslint-path-formatter" module formatter
 // (@see https://github.com/Bartvds/eslint-path-formatter)
-eslint.format('eslint-path-formatter')
+eslint.format('node_modules/eslint-path-formatter')
 ```
 
 The `output` argument may be a `WritableStream`, `Function`, or `undefined`. As a `WritableStream`, the formatter results will be written to the stream. If `undefined`, the formatter results will be written to [gulp’s log](https://github.com/gulpjs/gulp-util#logmsg). A `Function` will be called with the formatter results as the only parameter.
@@ -265,7 +268,7 @@ eslint.format();
 
 // write messages to stdout
 eslint.format('junit', process.stdout)
-``` 
+```
 
 ### eslint.formatEach(formatter, output)
 
@@ -286,7 +289,8 @@ ESLint will also detect an `.eslintignore` file at the cwd or a parent directory
 
 ## Extensions
 
-ESLint results are attached as an "eslint" property to the vinyl files that pass through a Gulp.js stream pipeline. This is available to streams that follow the initial `eslint` stream. The [eslint.result](#result) and [eslint.results](#results) methods are made available to support extensions and custom handling of ESLint results. 
+ESLint results are attached as an "eslint" property to the vinyl files that pass through a Gulp.js stream pipeline. This is available to streams that follow the initial `eslint` stream. The [eslint.result](#result) and [eslint.results](#results) methods are made available to support extensions and custom handling of ESLint results.
 
 #### Gulp-Eslint Extensions:
+* [gulp-eslint-if-fixed](https://github.com/lukeapage/gulp-eslint-if-fixed)
 * [gulp-eslint-threshold](https://github.com/krmbkt/gulp-eslint-threshold)

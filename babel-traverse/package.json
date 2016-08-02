@@ -1,32 +1,32 @@
 {
   "_args": [
     [
-      "babel-traverse@^6.10.4",
+      "babel-traverse@^6.11.4",
       "C:\\Github\\agent\\node_modules\\babel-core"
     ]
   ],
-  "_from": "babel-traverse@>=6.10.4 <7.0.0",
-  "_id": "babel-traverse@6.10.4",
+  "_from": "babel-traverse@>=6.11.4 <7.0.0",
+  "_id": "babel-traverse@6.12.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/babel-traverse",
-  "_nodeVersion": "5.9.0",
+  "_nodeVersion": "5.11.1",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/babel-traverse-6.10.4.tgz_1466527417697_0.9045669895131141"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/babel-traverse-6.12.0.tgz_1469647399647_0.3270771431270987"
   },
   "_npmUser": {
-    "email": "loganfsmyth@gmail.com",
-    "name": "loganfsmyth"
+    "email": "hi@henryzoo.com",
+    "name": "hzoo"
   },
-  "_npmVersion": "3.9.3",
+  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
     "name": "babel-traverse",
-    "raw": "babel-traverse@^6.10.4",
-    "rawSpec": "^6.10.4",
+    "raw": "babel-traverse@^6.11.4",
+    "rawSpec": "^6.11.4",
     "scope": null,
-    "spec": ">=6.10.4 <7.0.0",
+    "spec": ">=6.11.4 <7.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -41,10 +41,10 @@
     "/babel-template",
     "/babel-types"
   ],
-  "_resolved": "https://registry.npmjs.org/babel-traverse/-/babel-traverse-6.10.4.tgz",
-  "_shasum": "dbcf41ff1f32eb614859cead4871160f1f120d78",
+  "_resolved": "https://registry.npmjs.org/babel-traverse/-/babel-traverse-6.12.0.tgz",
+  "_shasum": "f22f54fa0d6eeb7f63585246bab6e637858f5d94",
   "_shrinkwrap": null,
-  "_spec": "babel-traverse@^6.10.4",
+  "_spec": "babel-traverse@^6.11.4",
   "_where": "C:\\Github\\agent\\node_modules\\babel-core",
   "author": {
     "email": "sebmck@gmail.com",
@@ -65,8 +65,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "dbcf41ff1f32eb614859cead4871160f1f120d78",
-    "tarball": "https://registry.npmjs.org/babel-traverse/-/babel-traverse-6.10.4.tgz"
+    "shasum": "f22f54fa0d6eeb7f63585246bab6e637858f5d94",
+    "tarball": "https://registry.npmjs.org/babel-traverse/-/babel-traverse-6.12.0.tgz"
   },
   "homepage": "https://babeljs.io/",
   "license": "MIT",
@@ -105,5 +105,5 @@
     "url": "https://github.com/babel/babel/tree/master/packages/babel-traverse"
   },
   "scripts": {},
-  "version": "6.10.4"
+  "version": "6.12.0"
 }

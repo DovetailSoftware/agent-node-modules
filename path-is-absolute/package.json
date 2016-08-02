@@ -31,7 +31,6 @@
     "/chokidar",
     "/eslint",
     "/eslint/glob",
-    "/fs-extra",
     "/glob",
     "/globby/glob"
   ],

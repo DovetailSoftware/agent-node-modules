@@ -37,6 +37,7 @@
     "url": "https://github.com/segmentio/to-iso-string/issues"
   },
   "dependencies": {},
+  "deprecated": "to-iso-string has been deprecated, use @segment/to-iso-string instead.",
   "description": "Cross-browser toISOString support.",
   "devDependencies": {
     "mocha": "*"

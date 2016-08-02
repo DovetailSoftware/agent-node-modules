@@ -6,37 +6,21 @@
     ]
   ],
   "_from": "phantomjs-prebuilt@>=2.1.4 <2.2.0",
-  "_id": "phantomjs-prebuilt@2.1.7",
+  "_id": "phantomjs-prebuilt@2.1.9",
   "_inCache": true,
   "_installable": true,
   "_location": "/phantomjs-prebuilt",
-  "_nodeVersion": "4.3.1",
+  "_nodeVersion": "4.4.3",
   "_npmOperationalInternal": {
     "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/phantomjs-prebuilt-2.1.7.tgz_1458942357363_0.61007817578502"
+    "tmp": "tmp/phantomjs-prebuilt-2.1.9.tgz_1469830726888_0.6057602446526289"
   },
   "_npmUser": {
     "email": "nicholas.j.santos@gmail.com",
     "name": "nicks"
   },
-  "_npmVersion": "2.14.12",
-  "_phantomChildren": {
-    "bl": "1.0.3",
-    "caseless": "0.11.0",
-    "extend": "3.0.0",
-    "har-validator": "2.0.6",
-    "is-typedarray": "1.0.0",
-    "isexe": "1.1.2",
-    "isstream": "0.1.2",
-    "json-stringify-safe": "5.0.1",
-    "jsprim": "1.3.0",
-    "mime-types": "2.1.11",
-    "node-uuid": "1.4.7",
-    "sshpk": "1.8.3",
-    "stringstream": "0.0.5",
-    "tough-cookie": "2.2.2",
-    "tunnel-agent": "0.4.3"
-  },
+  "_npmVersion": "2.15.1",
+  "_phantomChildren": {},
   "_requested": {
     "name": "phantomjs-prebuilt",
     "raw": "phantomjs-prebuilt@~2.1.4",
@@ -48,8 +32,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.7.tgz",
-  "_shasum": "c90bf1b9772fa197994331fcf3f67099a96853ca",
+  "_resolved": "https://registry.npmjs.org/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.9.tgz",
+  "_shasum": "00dec63785a6ee1dcc415d9f6f6c5aea889b6f1d",
   "_shrinkwrap": null,
   "_spec": "phantomjs-prebuilt@~2.1.4",
   "_where": "C:\\Github\\agent",
@@ -64,27 +48,37 @@
   "bugs": {
     "url": "https://github.com/Medium/phantomjs/issues"
   },
+  "bundleDependencies": [
+    "extract-zip",
+    "fs-extra",
+    "hasha",
+    "kew",
+    "progress",
+    "request",
+    "request-progress",
+    "which"
+  ],
   "dependencies": {
     "extract-zip": "~1.5.0",
-    "fs-extra": "~0.26.4",
+    "fs-extra": "~0.30.0",
     "hasha": "^2.2.0",
     "kew": "~0.7.0",
     "progress": "~1.1.8",
-    "request": "~2.67.0",
+    "request": "~2.74.0",
     "request-progress": "~2.0.1",
-    "which": "~1.2.2"
+    "which": "~1.2.10"
   },
   "description": "Headless WebKit with JS API",
   "devDependencies": {
-    "eslint": "1.10.3",
+    "eslint": "2.7.0",
     "nodeunit": "0.9.1"
   },
   "directories": {},
   "dist": {
-    "shasum": "c90bf1b9772fa197994331fcf3f67099a96853ca",
-    "tarball": "https://registry.npmjs.org/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.7.tgz"
+    "shasum": "00dec63785a6ee1dcc415d9f6f6c5aea889b6f1d",
+    "tarball": "https://registry.npmjs.org/phantomjs-prebuilt/-/phantomjs-prebuilt-2.1.9.tgz"
   },
-  "gitHead": "0719f5d1e09597b4f6ed695f15347443a5b880f4",
+  "gitHead": "08dd985f703533d6c26455315d7c5200afbdcc95",
   "homepage": "https://github.com/Medium/phantomjs",
   "keywords": [
     "phantomjs",
@@ -116,7 +110,7 @@
   },
   "scripts": {
     "install": "node install.js",
-    "test": "nodeunit --reporter=minimal test/tests.js && eslint install.js"
+    "test": "nodeunit --reporter=minimal test/tests.js && eslint ."
   },
-  "version": "2.1.7"
+  "version": "2.1.9"
 }

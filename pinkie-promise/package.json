@@ -33,8 +33,6 @@
     "/del",
     "/find-up",
     "/globby",
-    "/har-validator",
-    "/hasha",
     "/load-json-file",
     "/path-exists",
     "/path-type"

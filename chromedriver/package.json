@@ -6,16 +6,20 @@
     ]
   ],
   "_from": "chromedriver@>=2.18.0 <3.0.0",
-  "_id": "chromedriver@2.21.2",
+  "_id": "chromedriver@2.22.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/chromedriver",
-  "_nodeVersion": "5.3.0",
+  "_nodeVersion": "6.3.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/chromedriver-2.22.1.tgz_1470018225444_0.1490584381390363"
+  },
   "_npmUser": {
     "email": "giggio@giggio.net",
     "name": "giggio"
   },
-  "_npmVersion": "3.3.12",
+  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
     "name": "chromedriver",
@@ -28,8 +32,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.21.2.tgz",
-  "_shasum": "f4dab2ab58b35f70209ffcd1d2bc13e26fb2ed64",
+  "_resolved": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.22.1.tgz",
+  "_shasum": "c3ee7a4ac852598029ae5c4944bdbe4421b9744d",
   "_shrinkwrap": null,
   "_spec": "chromedriver@^2.18.0",
   "_where": "C:\\Github\\agent",
@@ -55,10 +59,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "f4dab2ab58b35f70209ffcd1d2bc13e26fb2ed64",
-    "tarball": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.21.2.tgz"
+    "shasum": "c3ee7a4ac852598029ae5c4944bdbe4421b9744d",
+    "tarball": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.22.1.tgz"
   },
-  "gitHead": "0447b5d116b8cfb527e02205a398a395920f7016",
+  "gitHead": "1e05226962fcaaa112e1ede784c88a28bf5fef76",
   "homepage": "https://github.com/giggio/node-chromedriver",
   "keywords": [
     "chromedriver",
@@ -87,5 +91,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "2.21.2"
+  "version": "2.22.1"
 }

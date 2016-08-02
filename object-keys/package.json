@@ -50,7 +50,7 @@
   "directories": {},
   "dist": {
     "shasum": "28a6aae7428dd2c3a92f3d95f21335dd204e0336",
-    "tarball": "http://registry.npmjs.org/object-keys/-/object-keys-0.4.0.tgz"
+    "tarball": "https://registry.npmjs.org/object-keys/-/object-keys-0.4.0.tgz"
   },
   "homepage": "https://github.com/ljharb/object-keys#readme",
   "keywords": [

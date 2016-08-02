@@ -6,20 +6,20 @@
     ]
   ],
   "_from": "lodash.isarguments@>=3.0.0 <4.0.0",
-  "_id": "lodash.isarguments@3.0.8",
+  "_id": "lodash.isarguments@3.0.9",
   "_inCache": true,
   "_installable": true,
   "_location": "/lodash.isarguments",
-  "_nodeVersion": "5.5.0",
+  "_nodeVersion": "4.2.4",
   "_npmOperationalInternal": {
-    "host": "packages-13-west.internal.npmjs.com",
-    "tmp": "tmp/lodash.isarguments-3.0.8.tgz_1456896618197_0.925266777863726"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/lodash.isarguments-3.0.9.tgz_1469457929550_0.754293778911233"
   },
   "_npmUser": {
     "email": "john.david.dalton@gmail.com",
     "name": "jdalton"
   },
-  "_npmVersion": "2.14.17",
+  "_npmVersion": "2.15.9",
   "_phantomChildren": {},
   "_requested": {
     "name": "lodash.isarguments",
@@ -32,8 +32,8 @@
   "_requiredBy": [
     "/lodash.keys"
   ],
-  "_resolved": "https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.0.8.tgz",
-  "_shasum": "5bf8da887f01f2a9e49c0a175cdaeb318a0e43dc",
+  "_resolved": "https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.0.9.tgz",
+  "_shasum": "3c4994a4210f340d49ccfafa62176296207d8675",
   "_shrinkwrap": null,
   "_spec": "lodash.isarguments@^3.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\lodash.keys",
@@ -67,8 +67,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "5bf8da887f01f2a9e49c0a175cdaeb318a0e43dc",
-    "tarball": "https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.0.8.tgz"
+    "shasum": "3c4994a4210f340d49ccfafa62176296207d8675",
+    "tarball": "https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.0.9.tgz"
   },
   "homepage": "https://lodash.com/",
   "icon": "https://lodash.com/icon.svg",
@@ -101,5 +101,5 @@
   "scripts": {
     "test": "echo \"See https://travis-ci.org/lodash/lodash-cli for testing details.\""
   },
-  "version": "3.0.8"
+  "version": "3.0.9"
 }
