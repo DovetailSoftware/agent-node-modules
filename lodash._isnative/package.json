@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "lodash._isnative@~2.4.1",
+      {
+        "raw": "lodash._isnative@~2.4.1",
+        "scope": null,
+        "escapedName": "lodash._isnative",
+        "name": "lodash._isnative",
+        "rawSpec": "~2.4.1",
+        "spec": ">=2.4.1 <2.5.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\lodash.defaults\\node_modules\\lodash.keys"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/lodash._isnative",
   "_npmUser": {
-    "email": "john.david.dalton@gmail.com",
-    "name": "jdalton"
+    "name": "jdalton",
+    "email": "john.david.dalton@gmail.com"
   },
   "_npmVersion": "1.3.14",
   "_phantomChildren": {},
   "_requested": {
-    "name": "lodash._isnative",
     "raw": "lodash._isnative@~2.4.1",
-    "rawSpec": "~2.4.1",
     "scope": null,
+    "escapedName": "lodash._isnative",
+    "name": "lodash._isnative",
+    "rawSpec": "~2.4.1",
     "spec": ">=2.4.1 <2.5.0",
     "type": "range"
   },
@@ -36,8 +45,8 @@
   "_spec": "lodash._isnative@~2.4.1",
   "_where": "C:\\Github\\agent\\node_modules\\lodash.defaults\\node_modules\\lodash.keys",
   "author": {
-    "email": "john.david.dalton@gmail.com",
     "name": "John-David Dalton",
+    "email": "john.david.dalton@gmail.com",
     "url": "http://allyoucanleet.com/"
   },
   "bugs": {
@@ -45,23 +54,23 @@
   },
   "contributors": [
     {
-      "email": "john.david.dalton@gmail.com",
       "name": "John-David Dalton",
+      "email": "john.david.dalton@gmail.com",
       "url": "http://allyoucanleet.com/"
     },
     {
-      "email": "blaine@iceddev.com",
       "name": "Blaine Bublitz",
+      "email": "blaine@iceddev.com",
       "url": "http://www.iceddev.com/"
     },
     {
-      "email": "github@kitcambridge.be",
       "name": "Kit Cambridge",
+      "email": "github@kitcambridge.be",
       "url": "http://kitcambridge.be/"
     },
     {
-      "email": "mathias@qiwi.be",
       "name": "Mathias Bynens",
+      "email": "mathias@qiwi.be",
       "url": "http://mathiasbynens.be/"
     }
   ],
@@ -77,8 +86,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "john.david.dalton@gmail.com",
-      "name": "jdalton"
+      "name": "jdalton",
+      "email": "john.david.dalton@gmail.com"
     }
   ],
   "name": "lodash._isnative",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "jstimezonedetect@1.0.6",
+      {
+        "raw": "jstimezonedetect@1.0.6",
+        "scope": null,
+        "escapedName": "jstimezonedetect",
+        "name": "jstimezonedetect",
+        "rawSpec": "1.0.6",
+        "spec": "1.0.6",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/jstimezonedetect",
   "_nodeVersion": "0.12.2",
   "_npmUser": {
-    "email": "pellepim@gmail.com",
-    "name": "pellepim"
+    "name": "pellepim",
+    "email": "pellepim@gmail.com"
   },
   "_npmVersion": "2.7.5",
   "_phantomChildren": {},
   "_requested": {
-    "name": "jstimezonedetect",
     "raw": "jstimezonedetect@1.0.6",
-    "rawSpec": "1.0.6",
     "scope": null,
+    "escapedName": "jstimezonedetect",
+    "name": "jstimezonedetect",
+    "rawSpec": "1.0.6",
     "spec": "1.0.6",
     "type": "version"
   },
@@ -34,8 +43,8 @@
   "_spec": "jstimezonedetect@1.0.6",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "pellepim@gmail.com",
-    "name": "Jon Nylander"
+    "name": "Jon Nylander",
+    "email": "pellepim@gmail.com"
   },
   "dependencies": {},
   "description": "This script gives you the zone info key representing your device's time zone setting. The return value is an IANA zone info key (aka the Olson time zone database).",
@@ -72,12 +81,12 @@
   "main": "./dist/jstz.js",
   "maintainers": [
     {
-      "email": "me@benng.me",
-      "name": "benng"
+      "name": "benng",
+      "email": "me@benng.me"
     },
     {
-      "email": "pellepim@gmail.com",
-      "name": "pellepim"
+      "name": "pellepim",
+      "email": "pellepim@gmail.com"
     }
   ],
   "name": "jstimezonedetect",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "ansi-wrap@0.1.0",
+      {
+        "raw": "ansi-wrap@0.1.0",
+        "scope": null,
+        "escapedName": "ansi-wrap",
+        "name": "ansi-wrap",
+        "rawSpec": "0.1.0",
+        "spec": "0.1.0",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\ansi-cyan"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/ansi-wrap",
   "_nodeVersion": "0.12.0",
   "_npmUser": {
-    "email": "github@sellside.com",
-    "name": "jonschlinkert"
+    "name": "jonschlinkert",
+    "email": "github@sellside.com"
   },
   "_npmVersion": "2.5.1",
   "_phantomChildren": {},
   "_requested": {
-    "name": "ansi-wrap",
     "raw": "ansi-wrap@0.1.0",
-    "rawSpec": "0.1.0",
     "scope": null,
+    "escapedName": "ansi-wrap",
+    "name": "ansi-wrap",
+    "rawSpec": "0.1.0",
     "spec": "0.1.0",
     "type": "version"
   },
@@ -64,8 +73,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "github@sellside.com",
-      "name": "jonschlinkert"
+      "name": "jonschlinkert",
+      "email": "github@sellside.com"
     }
   ],
   "name": "ansi-wrap",

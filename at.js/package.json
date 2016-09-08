@@ -1,7 +1,24 @@
 {
   "_args": [
     [
-      "at.js@github:ichord/At.js#2a369a8",
+      {
+        "raw": "at.js@github:ichord/At.js#2a369a8",
+        "scope": null,
+        "escapedName": "at.js",
+        "name": "at.js",
+        "rawSpec": "github:ichord/At.js#2a369a8",
+        "spec": "github:ichord/At.js#2a369a8",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:ichord/At.js.git#2a369a8",
+          "sshUrl": "git+ssh://git@github.com/ichord/At.js.git#2a369a8",
+          "httpsUrl": "git+https://github.com/ichord/At.js.git#2a369a8",
+          "gitUrl": "git://github.com/ichord/At.js.git#2a369a8",
+          "shortcut": "github:ichord/At.js#2a369a8",
+          "directUrl": "https://raw.githubusercontent.com/ichord/At.js/2a369a8/package.json"
+        }
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,33 +29,34 @@
   "_location": "/at.js",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "at.js@github:ichord/At.js#2a369a8",
+    "scope": null,
+    "escapedName": "at.js",
+    "name": "at.js",
+    "rawSpec": "github:ichord/At.js#2a369a8",
+    "spec": "github:ichord/At.js#2a369a8",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/ichord/At.js/2a369a8/package.json",
-      "gitUrl": "git://github.com/ichord/At.js.git#2a369a8",
-      "httpsUrl": "git+https://github.com/ichord/At.js.git#2a369a8",
-      "shortcut": "github:ichord/At.js#2a369a8",
+      "type": "github",
       "ssh": "git@github.com:ichord/At.js.git#2a369a8",
       "sshUrl": "git+ssh://git@github.com/ichord/At.js.git#2a369a8",
-      "type": "github"
-    },
-    "name": "at.js",
-    "raw": "at.js@github:ichord/At.js#2a369a8",
-    "rawSpec": "github:ichord/At.js#2a369a8",
-    "scope": null,
-    "spec": "github:ichord/At.js#2a369a8",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/ichord/At.js.git#2a369a8",
+      "gitUrl": "git://github.com/ichord/At.js.git#2a369a8",
+      "shortcut": "github:ichord/At.js#2a369a8",
+      "directUrl": "https://raw.githubusercontent.com/ichord/At.js/2a369a8/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "git://github.com/ichord/At.js.git#2a369a8614dea5b4bf2346d2ba536a5025dfdcb4",
-  "_shasum": "5ebb6214345e9986cfab0cdbfcf8cfde126ec9b3",
+  "_shasum": "9f254d7e069621555602948f491489cfa16e4186",
   "_shrinkwrap": null,
   "_spec": "at.js@github:ichord/At.js#2a369a8",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "chord.luo@gmail.com",
-    "name": "chord.luo"
+    "name": "chord.luo",
+    "email": "chord.luo@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/ichord/At.js/issues"
@@ -84,16 +102,16 @@
     "test": "gulp test"
   },
   "spm": {
+    "main": "dist/js/jquery.atwho.js",
     "dependencies": {
-      "caret.js": "~0.2.2",
-      "jquery": ">=1.7.2"
+      "jquery": ">=1.7.2",
+      "caret.js": "~0.2.2"
     },
     "ignore": [
       "examples",
       "spec",
       "src"
-    ],
-    "main": "dist/js/jquery.atwho.js"
+    ]
   },
   "version": "1.5.1"
 }

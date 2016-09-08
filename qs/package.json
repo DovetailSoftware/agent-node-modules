@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "qs@4.0.0",
+      {
+        "raw": "qs@4.0.0",
+        "scope": null,
+        "escapedName": "qs",
+        "name": "qs",
+        "rawSpec": "4.0.0",
+        "spec": "4.0.0",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\connect"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/qs",
   "_nodeVersion": "0.12.4",
   "_npmUser": {
-    "email": "quitlahok@gmail.com",
-    "name": "nlf"
+    "name": "nlf",
+    "email": "quitlahok@gmail.com"
   },
   "_npmVersion": "2.12.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "qs",
     "raw": "qs@4.0.0",
-    "rawSpec": "4.0.0",
     "scope": null,
+    "escapedName": "qs",
+    "name": "qs",
+    "rawSpec": "4.0.0",
     "spec": "4.0.0",
     "type": "version"
   },
@@ -59,12 +68,12 @@
   "main": "lib/index.js",
   "maintainers": [
     {
-      "email": "quitlahok@gmail.com",
-      "name": "nlf"
+      "name": "nlf",
+      "email": "quitlahok@gmail.com"
     },
     {
-      "email": "eran@hueniverse.com",
-      "name": "hueniverse"
+      "name": "hueniverse",
+      "email": "eran@hueniverse.com"
     }
   ],
   "name": "qs",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "imports-loader@^0.6.4",
+      {
+        "raw": "imports-loader@^0.6.4",
+        "scope": null,
+        "escapedName": "imports-loader",
+        "name": "imports-loader",
+        "rawSpec": "^0.6.4",
+        "spec": ">=0.6.4 <0.7.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,18 +20,19 @@
   "_location": "/imports-loader",
   "_nodeVersion": "4.0.0",
   "_npmUser": {
-    "email": "tobias.koppers@googlemail.com",
-    "name": "sokra"
+    "name": "sokra",
+    "email": "tobias.koppers@googlemail.com"
   },
   "_npmVersion": "3.3.3",
   "_phantomChildren": {
     "amdefine": "1.0.0"
   },
   "_requested": {
-    "name": "imports-loader",
     "raw": "imports-loader@^0.6.4",
-    "rawSpec": "^0.6.4",
     "scope": null,
+    "escapedName": "imports-loader",
+    "name": "imports-loader",
+    "rawSpec": "^0.6.4",
     "spec": ">=0.6.4 <0.7.0",
     "type": "range"
   },
@@ -57,8 +66,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "tobias.koppers@googlemail.com",
-      "name": "sokra"
+      "name": "sokra",
+      "email": "tobias.koppers@googlemail.com"
     }
   ],
   "name": "imports-loader",

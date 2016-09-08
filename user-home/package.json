@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "user-home@^1.1.1",
+      {
+        "raw": "user-home@^1.1.1",
+        "scope": null,
+        "escapedName": "user-home",
+        "name": "user-home",
+        "rawSpec": "^1.1.1",
+        "spec": ">=1.1.1 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\home-or-tmp"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/user-home",
   "_nodeVersion": "0.10.32",
   "_npmUser": {
-    "email": "sindresorhus@gmail.com",
-    "name": "sindresorhus"
+    "name": "sindresorhus",
+    "email": "sindresorhus@gmail.com"
   },
   "_npmVersion": "2.1.16",
   "_phantomChildren": {},
   "_requested": {
-    "name": "user-home",
     "raw": "user-home@^1.1.1",
-    "rawSpec": "^1.1.1",
     "scope": null,
+    "escapedName": "user-home",
+    "name": "user-home",
+    "rawSpec": "^1.1.1",
     "spec": ">=1.1.1 <2.0.0",
     "type": "range"
   },
@@ -35,8 +44,8 @@
   "_spec": "user-home@^1.1.1",
   "_where": "C:\\Github\\agent\\node_modules\\home-or-tmp",
   "author": {
-    "email": "sindresorhus@gmail.com",
     "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
   "bin": {
@@ -78,8 +87,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "sindresorhus@gmail.com",
-      "name": "sindresorhus"
+      "name": "sindresorhus",
+      "email": "sindresorhus@gmail.com"
     }
   ],
   "name": "user-home",

@@ -1,39 +1,48 @@
 {
   "_args": [
     [
-      "blueimp-load-image@>=1.7.0",
+      {
+        "raw": "blueimp-load-image@>=1.7.0",
+        "scope": null,
+        "escapedName": "blueimp-load-image",
+        "name": "blueimp-load-image",
+        "rawSpec": ">=1.7.0",
+        "spec": ">=1.7.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
     ]
   ],
   "_from": "blueimp-load-image@>=1.7.0",
-  "_id": "blueimp-load-image@2.6.1",
+  "_id": "blueimp-load-image@2.6.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/blueimp-load-image",
-  "_nodeVersion": "4.4.0",
+  "_nodeVersion": "6.4.0",
   "_npmOperationalInternal": {
-    "host": "packages-13-west.internal.npmjs.com",
-    "tmp": "tmp/blueimp-load-image-2.6.1.tgz_1458575384383_0.6717721235472709"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/blueimp-load-image-2.6.2.tgz_1472473596356_0.7475189014803618"
   },
   "_npmUser": {
-    "email": "mail@blueimp.net",
-    "name": "blueimp"
+    "name": "blueimp",
+    "email": "mail@blueimp.net"
   },
-  "_npmVersion": "2.14.20",
+  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "blueimp-load-image",
     "raw": "blueimp-load-image@>=1.7.0",
-    "rawSpec": ">=1.7.0",
     "scope": null,
+    "escapedName": "blueimp-load-image",
+    "name": "blueimp-load-image",
+    "rawSpec": ">=1.7.0",
     "spec": ">=1.7.0",
     "type": "range"
   },
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.6.1.tgz",
-  "_shasum": "bdccc73572f38b342c8ff516c0b287be2924fdbc",
+  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.6.2.tgz",
+  "_shasum": "c7242ebaf5a364f7951fb782c28c70390da456ba",
   "_shrinkwrap": null,
   "_spec": "blueimp-load-image@>=1.7.0",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -53,10 +62,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "bdccc73572f38b342c8ff516c0b287be2924fdbc",
-    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.6.1.tgz"
+    "shasum": "c7242ebaf5a364f7951fb782c28c70390da456ba",
+    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.6.2.tgz"
   },
-  "gitHead": "da2e77837e81a2a0a143a77034dc01604173790a",
+  "gitHead": "5cae749216b942ae663a0daabf5dfde4afeaa355",
   "homepage": "https://github.com/blueimp/JavaScript-Load-Image",
   "keywords": [
     "javascript",
@@ -79,8 +88,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "sebastian.tschan@gmail.com",
-      "name": "blueimp"
+      "name": "blueimp",
+      "email": "sebastian.tschan@gmail.com"
     }
   ],
   "name": "blueimp-load-image",
@@ -98,5 +107,5 @@
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Load Image",
-  "version": "2.6.1"
+  "version": "2.6.2"
 }

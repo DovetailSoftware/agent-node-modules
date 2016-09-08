@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "closest@0.0.1",
+      {
+        "raw": "closest@0.0.1",
+        "scope": null,
+        "escapedName": "closest",
+        "name": "closest",
+        "rawSpec": "0.0.1",
+        "spec": "0.0.1",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\delegate"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/closest",
   "_npmUser": {
-    "email": "forbes@lindesay.co.uk",
-    "name": "forbeslindesay"
+    "name": "forbeslindesay",
+    "email": "forbes@lindesay.co.uk"
   },
   "_npmVersion": "1.2.10",
   "_phantomChildren": {},
   "_requested": {
-    "name": "closest",
     "raw": "closest@0.0.1",
-    "rawSpec": "0.0.1",
     "scope": null,
+    "escapedName": "closest",
+    "name": "closest",
+    "rawSpec": "0.0.1",
     "spec": "0.0.1",
     "type": "version"
   },
@@ -60,8 +69,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "forbes@lindesay.co.uk",
-      "name": "forbeslindesay"
+      "name": "forbeslindesay",
+      "email": "forbes@lindesay.co.uk"
     }
   ],
   "name": "closest",

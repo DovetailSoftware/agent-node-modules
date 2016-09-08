@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "blueimp-tmpl@>=2.1.0",
+      {
+        "raw": "blueimp-tmpl@>=2.1.0",
+        "scope": null,
+        "escapedName": "blueimp-tmpl",
+        "name": "blueimp-tmpl",
+        "rawSpec": ">=2.1.0",
+        "spec": ">=2.1.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/blueimp-tmpl-3.4.0.tgz_1460409981400_0.5953116891905665"
   },
   "_npmUser": {
-    "email": "mail@blueimp.net",
-    "name": "blueimp"
+    "name": "blueimp",
+    "email": "mail@blueimp.net"
   },
   "_npmVersion": "3.8.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "blueimp-tmpl",
     "raw": "blueimp-tmpl@>=2.1.0",
-    "rawSpec": ">=2.1.0",
     "scope": null,
+    "escapedName": "blueimp-tmpl",
+    "name": "blueimp-tmpl",
+    "rawSpec": ">=2.1.0",
     "spec": ">=2.1.0",
     "type": "range"
   },
@@ -71,8 +80,8 @@
   "main": "js/tmpl.js",
   "maintainers": [
     {
-      "email": "sebastian.tschan@gmail.com",
-      "name": "blueimp"
+      "name": "blueimp",
+      "email": "sebastian.tschan@gmail.com"
     }
   ],
   "name": "blueimp-tmpl",

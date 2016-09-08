@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "gulp-bump@^1.0.0",
+      {
+        "raw": "gulp-bump@^1.0.0",
+        "scope": null,
+        "escapedName": "gulp-bump",
+        "name": "gulp-bump",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\at.js"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/gulp-bump",
   "_nodeVersion": "2.5.0",
   "_npmUser": {
-    "email": "me@slacy.me",
-    "name": "stevelacy"
+    "name": "stevelacy",
+    "email": "me@slacy.me"
   },
   "_npmVersion": "2.13.2",
   "_phantomChildren": {},
   "_requested": {
-    "name": "gulp-bump",
     "raw": "gulp-bump@^1.0.0",
-    "rawSpec": "^1.0.0",
     "scope": null,
+    "escapedName": "gulp-bump",
+    "name": "gulp-bump",
+    "rawSpec": "^1.0.0",
     "spec": ">=1.0.0 <2.0.0",
     "type": "range"
   },
@@ -34,8 +43,8 @@
   "_spec": "gulp-bump@^1.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\at.js",
   "author": {
-    "email": "me@slacy.me",
     "name": "Steve Lacy",
+    "email": "me@slacy.me",
     "url": "http://slacy.me"
   },
   "bugs": {
@@ -78,8 +87,8 @@
   "main": "./index.js",
   "maintainers": [
     {
-      "email": "me@slacy.me",
-      "name": "stevelacy"
+      "name": "stevelacy",
+      "email": "me@slacy.me"
     }
   ],
   "name": "gulp-bump",

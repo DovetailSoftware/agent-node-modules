@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "gulp-less@^3.0.5",
+      {
+        "raw": "gulp-less@^3.0.5",
+        "scope": null,
+        "escapedName": "gulp-less",
+        "name": "gulp-less",
+        "rawSpec": "^3.0.5",
+        "spec": ">=3.0.5 <4.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,22 +24,23 @@
     "tmp": "tmp/gulp-less-3.1.0.tgz_1462407879501_0.6021997488569468"
   },
   "_npmUser": {
-    "email": "me@slacy.me",
-    "name": "stevelacy"
+    "name": "stevelacy",
+    "email": "me@slacy.me"
   },
   "_npmVersion": "3.8.8",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
-    "inherits": "2.0.1",
+    "inherits": "2.0.3",
     "process-nextick-args": "1.0.7",
     "string_decoder": "0.10.31",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
-    "name": "gulp-less",
     "raw": "gulp-less@^3.0.5",
-    "rawSpec": "^3.0.5",
     "scope": null,
+    "escapedName": "gulp-less",
+    "name": "gulp-less",
+    "rawSpec": "^3.0.5",
     "spec": ">=3.0.5 <4.0.0",
     "type": "range"
   },
@@ -82,20 +91,20 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "chris@chriscowan.us",
-      "name": "ccowan"
+      "name": "ccowan",
+      "email": "chris@chriscowan.us"
     },
     {
-      "email": "contra@wearefractal.com",
-      "name": "contra"
+      "name": "contra",
+      "email": "contra@wearefractal.com"
     },
     {
-      "email": "contact@wearefractal.com",
-      "name": "fractal"
+      "name": "fractal",
+      "email": "contact@wearefractal.com"
     },
     {
-      "email": "me@slacy.me",
-      "name": "stevelacy"
+      "name": "stevelacy",
+      "email": "me@slacy.me"
     }
   ],
   "name": "gulp-less",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "event-stream@^3.1.7",
+      {
+        "raw": "event-stream@^3.1.7",
+        "scope": null,
+        "escapedName": "event-stream",
+        "name": "event-stream",
+        "rawSpec": "^3.1.7",
+        "spec": ">=3.1.7 <4.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\gulp-livereload"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/event-stream-3.3.4.tgz_1468740248120_0.7839670591056347"
   },
   "_npmUser": {
-    "email": "dominic.tarr@gmail.com",
-    "name": "dominictarr"
+    "name": "dominictarr",
+    "email": "dominic.tarr@gmail.com"
   },
   "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
-    "name": "event-stream",
     "raw": "event-stream@^3.1.7",
-    "rawSpec": "^3.1.7",
     "scope": null,
+    "escapedName": "event-stream",
+    "name": "event-stream",
+    "rawSpec": "^3.1.7",
     "spec": ">=3.1.7 <4.0.0",
     "type": "range"
   },
@@ -38,8 +47,8 @@
   "_spec": "event-stream@^3.1.7",
   "_where": "C:\\Github\\agent\\node_modules\\gulp-livereload",
   "author": {
-    "email": "dominic.tarr@gmail.com",
     "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
     "url": "http://bit.ly/dominictarr"
   },
   "bugs": {
@@ -72,8 +81,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "dominic.tarr@gmail.com",
-      "name": "dominictarr"
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
     }
   ],
   "name": "event-stream",
@@ -89,25 +98,25 @@
     "test_tap": "set -e; for t in test/*.js; do node $t; done"
   },
   "testling": {
+    "files": "test/*.js",
     "browsers": {
-      "chrome": [
-        20
-      ],
-      "firefox": [
-        13
-      ],
       "ie": [
         8,
         9
       ],
-      "opera": [
-        12
+      "firefox": [
+        13
+      ],
+      "chrome": [
+        20
       ],
       "safari": [
         5.1
+      ],
+      "opera": [
+        12
       ]
-    },
-    "files": "test/*.js"
+    }
   },
   "version": "3.3.4"
 }

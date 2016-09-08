@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "lightbox2@2.8.2",
+      {
+        "raw": "lightbox2@2.8.2",
+        "scope": null,
+        "escapedName": "lightbox2",
+        "name": "lightbox2",
+        "rawSpec": "2.8.2",
+        "spec": "2.8.2",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/lightbox2",
   "_nodeVersion": "4.1.2",
   "_npmUser": {
-    "email": "lokesh.dhakar@gmail.com",
-    "name": "lokesh.dhakar"
+    "name": "lokesh.dhakar",
+    "email": "lokesh.dhakar@gmail.com"
   },
   "_npmVersion": "2.14.4",
   "_phantomChildren": {},
   "_requested": {
-    "name": "lightbox2",
     "raw": "lightbox2@2.8.2",
-    "rawSpec": "2.8.2",
     "scope": null,
+    "escapedName": "lightbox2",
+    "name": "lightbox2",
+    "rawSpec": "2.8.2",
     "spec": "2.8.2",
     "type": "version"
   },
@@ -34,8 +43,8 @@
   "_spec": "lightbox2@2.8.2",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "lokesh.dhakar@gmail.com",
-    "name": "Lokesh Dhakar"
+    "name": "Lokesh Dhakar",
+    "email": "lokesh.dhakar@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/lokesh/lightbox2/issues"
@@ -77,8 +86,8 @@
   "main": "./dist/js/lightbox.js",
   "maintainers": [
     {
-      "email": "lokesh.dhakar@gmail.com",
-      "name": "lokesh.dhakar"
+      "name": "lokesh.dhakar",
+      "email": "lokesh.dhakar@gmail.com"
     }
   ],
   "name": "lightbox2",

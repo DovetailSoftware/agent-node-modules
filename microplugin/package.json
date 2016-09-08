@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "microplugin@0.0.3",
+      {
+        "raw": "microplugin@0.0.3",
+        "scope": null,
+        "escapedName": "microplugin",
+        "name": "microplugin",
+        "rawSpec": "0.0.3",
+        "spec": "0.0.3",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\selectize"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/microplugin",
   "_npmUser": {
-    "email": "brian@thirdroute.com",
-    "name": "brianreavis"
+    "name": "brianreavis",
+    "email": "brian@thirdroute.com"
   },
   "_npmVersion": "1.1.69",
   "_phantomChildren": {},
   "_requested": {
-    "name": "microplugin",
     "raw": "microplugin@0.0.3",
-    "rawSpec": "0.0.3",
     "scope": null,
+    "escapedName": "microplugin",
+    "name": "microplugin",
+    "rawSpec": "0.0.3",
     "spec": "0.0.3",
     "type": "version"
   },
@@ -33,8 +42,8 @@
   "_spec": "microplugin@0.0.3",
   "_where": "C:\\Github\\agent\\node_modules\\selectize",
   "author": {
-    "email": "brian@thirdroute.com",
-    "name": "Brian Reavis"
+    "name": "Brian Reavis",
+    "email": "brian@thirdroute.com"
   },
   "bugs": {
     "url": "https://github.com/brianreavis/microplugin.js/issues"
@@ -45,7 +54,7 @@
   "directories": {},
   "dist": {
     "shasum": "1fc2e1bb7c9e19e82bd84bba9137bbe71250d8cd",
-    "tarball": "http://registry.npmjs.org/microplugin/-/microplugin-0.0.3.tgz"
+    "tarball": "https://registry.npmjs.org/microplugin/-/microplugin-0.0.3.tgz"
   },
   "engines": {
     "node": "*"
@@ -61,8 +70,8 @@
   "main": "src/microplugin.js",
   "maintainers": [
     {
-      "email": "brian@thirdroute.com",
-      "name": "brianreavis"
+      "name": "brianreavis",
+      "email": "brian@thirdroute.com"
     }
   ],
   "name": "microplugin",

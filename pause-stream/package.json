@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "pause-stream@0.0.11",
+      {
+        "raw": "pause-stream@0.0.11",
+        "scope": null,
+        "escapedName": "pause-stream",
+        "name": "pause-stream",
+        "rawSpec": "0.0.11",
+        "spec": "0.0.11",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\event-stream"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/pause-stream",
   "_npmUser": {
-    "email": "dominic.tarr@gmail.com",
-    "name": "dominictarr"
+    "name": "dominictarr",
+    "email": "dominic.tarr@gmail.com"
   },
   "_npmVersion": "1.3.6",
   "_phantomChildren": {},
   "_requested": {
-    "name": "pause-stream",
     "raw": "pause-stream@0.0.11",
-    "rawSpec": "0.0.11",
     "scope": null,
+    "escapedName": "pause-stream",
+    "name": "pause-stream",
+    "rawSpec": "0.0.11",
     "spec": "0.0.11",
     "type": "version"
   },
@@ -33,8 +42,8 @@
   "_spec": "pause-stream@0.0.11",
   "_where": "C:\\Github\\agent\\node_modules\\event-stream",
   "author": {
-    "email": "dominic.tarr@gmail.com",
     "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
     "url": "dominictarr.com"
   },
   "bugs": {
@@ -70,8 +79,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "dominic.tarr@gmail.com",
-      "name": "dominictarr"
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
     }
   ],
   "name": "pause-stream",

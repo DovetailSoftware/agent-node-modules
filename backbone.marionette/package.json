@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "backbone.marionette@2.4.4",
+      {
+        "raw": "backbone.marionette@2.4.4",
+        "scope": null,
+        "escapedName": "backbone.marionette",
+        "name": "backbone.marionette",
+        "rawSpec": "2.4.4",
+        "spec": "2.4.4",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/backbone.marionette",
   "_nodeVersion": "0.12.4",
   "_npmUser": {
-    "email": "ahumphreys87@googlemail.com",
-    "name": "ahumphreys87"
+    "name": "ahumphreys87",
+    "email": "ahumphreys87@googlemail.com"
   },
   "_npmVersion": "2.10.1",
   "_phantomChildren": {},
   "_requested": {
-    "name": "backbone.marionette",
     "raw": "backbone.marionette@2.4.4",
-    "rawSpec": "2.4.4",
     "scope": null,
+    "escapedName": "backbone.marionette",
+    "name": "backbone.marionette",
+    "rawSpec": "2.4.4",
     "spec": "2.4.4",
     "type": "version"
   },
@@ -34,8 +43,8 @@
   "_spec": "backbone.marionette@2.4.4",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "derickbailey@gmail.com",
     "name": "Derick Bailey",
+    "email": "derickbailey@gmail.com",
     "url": "http://derickbailey.lostechies.com"
   },
   "bugs": {
@@ -111,20 +120,20 @@
   "main": "lib/core/backbone.marionette.js",
   "maintainers": [
     {
-      "email": "efoster@firetaco.com",
-      "name": "elliotf"
+      "name": "elliotf",
+      "email": "efoster@firetaco.com"
     },
     {
-      "email": "derickbailey@gmail.com",
-      "name": "derickbailey"
+      "name": "derickbailey",
+      "email": "derickbailey@gmail.com"
     },
     {
-      "email": "sam@samx.it",
-      "name": "samccone"
+      "name": "samccone",
+      "email": "sam@samx.it"
     },
     {
-      "email": "ahumphreys87@googlemail.com",
-      "name": "ahumphreys87"
+      "name": "ahumphreys87",
+      "email": "ahumphreys87@googlemail.com"
     }
   ],
   "name": "backbone.marionette",

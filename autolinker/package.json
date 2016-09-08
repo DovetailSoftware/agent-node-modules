@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "autolinker@~0.15.0",
+      {
+        "raw": "autolinker@~0.15.0",
+        "scope": null,
+        "escapedName": "autolinker",
+        "name": "autolinker",
+        "rawSpec": "~0.15.0",
+        "spec": ">=0.15.0 <0.16.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\remarkable"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/autolinker",
   "_nodeVersion": "0.12.1",
   "_npmUser": {
-    "email": "greg@greg-jacobs.com",
-    "name": "gregjacobs"
+    "name": "gregjacobs",
+    "email": "greg@greg-jacobs.com"
   },
   "_npmVersion": "2.7.4",
   "_phantomChildren": {},
   "_requested": {
-    "name": "autolinker",
     "raw": "autolinker@~0.15.0",
-    "rawSpec": "~0.15.0",
     "scope": null,
+    "escapedName": "autolinker",
+    "name": "autolinker",
+    "rawSpec": "~0.15.0",
     "spec": ">=0.15.0 <0.16.0",
     "type": "range"
   },
@@ -34,8 +43,8 @@
   "_spec": "autolinker@~0.15.0",
   "_where": "C:\\Github\\agent\\node_modules\\remarkable",
   "author": {
-    "email": "greg@greg-jacobs.com",
-    "name": "Gregory Jacobs"
+    "name": "Gregory Jacobs",
+    "email": "greg@greg-jacobs.com"
   },
   "bugs": {
     "url": "https://github.com/gregjacobs/Autolinker.js/issues"
@@ -74,8 +83,8 @@
   "main": "dist/Autolinker.js",
   "maintainers": [
     {
-      "email": "greg@greg-jacobs.com",
-      "name": "gregjacobs"
+      "name": "gregjacobs",
+      "email": "greg@greg-jacobs.com"
     }
   ],
   "name": "autolinker",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "liftoff@^2.1.0",
+      {
+        "raw": "liftoff@^2.1.0",
+        "scope": null,
+        "escapedName": "liftoff",
+        "name": "liftoff",
+        "rawSpec": "^2.1.0",
+        "spec": ">=2.1.0 <3.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\gulp"
     ]
   ],
@@ -16,8 +24,8 @@
     "tmp": "tmp/liftoff-2.3.0.tgz_1469646196567_0.8871160212438554"
   },
   "_npmUser": {
-    "email": "blaine.bublitz@gmail.com",
-    "name": "phated"
+    "name": "phated",
+    "email": "blaine.bublitz@gmail.com"
   },
   "_npmVersion": "2.15.2",
   "_phantomChildren": {
@@ -27,10 +35,11 @@
     "resolve-dir": "0.1.1"
   },
   "_requested": {
-    "name": "liftoff",
     "raw": "liftoff@^2.1.0",
-    "rawSpec": "^2.1.0",
     "scope": null,
+    "escapedName": "liftoff",
+    "name": "liftoff",
+    "rawSpec": "^2.1.0",
     "spec": ">=2.1.0 <3.0.0",
     "type": "range"
   },
@@ -87,20 +96,20 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "github@sellside.com",
-      "name": "jonschlinkert"
+      "name": "jonschlinkert",
+      "email": "github@sellside.com"
     },
     {
-      "email": "blaine.bublitz@gmail.com",
-      "name": "phated"
+      "name": "phated",
+      "email": "blaine.bublitz@gmail.com"
     },
     {
-      "email": "tyler@sleekcode.net",
-      "name": "tkellen"
+      "name": "tkellen",
+      "email": "tyler@sleekcode.net"
     },
     {
-      "email": "bertrand.marron@gmail.com",
-      "name": "tusbar"
+      "name": "tusbar",
+      "email": "bertrand.marron@gmail.com"
     }
   ],
   "name": "liftoff",

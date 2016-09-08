@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "marked@>=0.2.9",
+      {
+        "raw": "marked@>=0.2.9",
+        "scope": null,
+        "escapedName": "marked",
+        "name": "marked",
+        "rawSpec": ">=0.2.9",
+        "spec": ">=0.2.9",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/marked-0.3.6.tgz_1469848215797_0.5454847207292914"
   },
   "_npmUser": {
-    "email": "chjjeffrey@gmail.com",
-    "name": "chjj"
+    "name": "chjj",
+    "email": "chjjeffrey@gmail.com"
   },
   "_npmVersion": "3.10.5",
   "_phantomChildren": {},
   "_requested": {
-    "name": "marked",
     "raw": "marked@>=0.2.9",
-    "rawSpec": ">=0.2.9",
     "scope": null,
+    "escapedName": "marked",
+    "name": "marked",
+    "rawSpec": ">=0.2.9",
     "spec": ">=0.2.9",
     "type": "range"
   },
@@ -71,8 +80,8 @@
   "main": "./lib/marked.js",
   "maintainers": [
     {
-      "email": "chjjeffrey@gmail.com",
-      "name": "chjj"
+      "name": "chjj",
+      "email": "chjjeffrey@gmail.com"
     }
   ],
   "man": [

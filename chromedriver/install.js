@@ -28,7 +28,12 @@ if (platform === 'linux') {
     platform += '32'
   }
 } else if (platform === 'darwin') {
-  platform = 'mac32'
+  if (process.arch === 'x64') {
+    platform = 'mac64'
+  } else {
+    console.log('Only Mac 64 bits supported.');
+    process.exit(1);
+  }
 } else if (platform !== 'win32') {
   console.log('Unexpected platform or architecture:', process.platform, process.arch)
   process.exit(1)
@@ -117,6 +122,8 @@ function getRequestOptions(proxyUrl) {
   } else {
     options = url.parse(downloadUrl)
   }
+
+  options.rejectUnauthorized = !!process.env.npm_config_strict_ssl
 
   // Use certificate authority settings from npm
   var ca = process.env.npm_config_ca

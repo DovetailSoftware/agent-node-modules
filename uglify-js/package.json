@@ -1,31 +1,40 @@
 {
   "_args": [
     [
-      "uglify-js@^2.6.0",
+      {
+        "raw": "uglify-js@^2.6.0",
+        "scope": null,
+        "escapedName": "uglify-js",
+        "name": "uglify-js",
+        "rawSpec": "^2.6.0",
+        "spec": ">=2.6.0 <3.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\accord"
     ]
   ],
   "_from": "uglify-js@>=2.6.0 <3.0.0",
-  "_id": "uglify-js@2.7.0",
+  "_id": "uglify-js@2.7.3",
   "_inCache": true,
   "_installable": true,
   "_location": "/uglify-js",
-  "_nodeVersion": "5.1.0",
+  "_nodeVersion": "6.3.0",
   "_npmOperationalInternal": {
     "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/uglify-js-2.7.0.tgz_1467575265276_0.09198796306736767"
+    "tmp": "tmp/uglify-js-2.7.3.tgz_1471458979095_0.08950572228059173"
   },
   "_npmUser": {
-    "email": "rvanvelzen1@gmail.com",
-    "name": "rvanvelzen1"
+    "name": "rvanvelzen1",
+    "email": "rvanvelzen1@gmail.com"
   },
-  "_npmVersion": "3.3.12",
+  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "uglify-js",
     "raw": "uglify-js@^2.6.0",
-    "rawSpec": "^2.6.0",
     "scope": null,
+    "escapedName": "uglify-js",
+    "name": "uglify-js",
+    "rawSpec": "^2.6.0",
     "spec": ">=2.6.0 <3.0.0",
     "type": "range"
   },
@@ -33,14 +42,14 @@
     "/accord",
     "/handlebars"
   ],
-  "_resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.0.tgz",
-  "_shasum": "f021e38ba2ca740860f5bd5c695c2a817345f0ec",
+  "_resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.3.tgz",
+  "_shasum": "39b3a7329b89f5ec507e344c6e22568698ef4868",
   "_shrinkwrap": null,
   "_spec": "uglify-js@^2.6.0",
   "_where": "C:\\Github\\agent\\node_modules\\accord",
   "author": {
-    "email": "mihai.bazon@gmail.com",
     "name": "Mihai Bazon",
+    "email": "mihai.bazon@gmail.com",
     "url": "http://lisperator.net/"
   },
   "bin": {
@@ -70,8 +79,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "f021e38ba2ca740860f5bd5c695c2a817345f0ec",
-    "tarball": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.0.tgz"
+    "shasum": "39b3a7329b89f5ec507e344c6e22568698ef4868",
+    "tarball": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.7.3.tgz"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -82,7 +91,7 @@
     "tools",
     "LICENSE"
   ],
-  "gitHead": "572b97b0bb48285497ffbffed9420468e1700956",
+  "gitHead": "1a78bbcd23e8db214872f1cd403f1b42503aaf9c",
   "homepage": "http://lisperator.net/uglifyjs",
   "keywords": [
     "uglify",
@@ -94,12 +103,12 @@
   "main": "tools/node.js",
   "maintainers": [
     {
-      "email": "mihai.bazon@gmail.com",
-      "name": "mishoo"
+      "name": "mishoo",
+      "email": "mihai.bazon@gmail.com"
     },
     {
-      "email": "rvanvelzen1@gmail.com",
-      "name": "rvanvelzen1"
+      "name": "rvanvelzen1",
+      "email": "rvanvelzen1@gmail.com"
     }
   ],
   "name": "uglify-js",
@@ -113,5 +122,5 @@
     "shrinkwrap": "rm ./npm-shrinkwrap.json; rm -rf ./node_modules; npm i && npm shrinkwrap && npm outdated",
     "test": "node test/run-tests.js"
   },
-  "version": "2.7.0"
+  "version": "2.7.3"
 }

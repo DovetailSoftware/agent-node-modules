@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "eslint-config-airbnb@^6.0.0",
+      {
+        "raw": "eslint-config-airbnb@^6.0.0",
+        "scope": null,
+        "escapedName": "eslint-config-airbnb",
+        "name": "eslint-config-airbnb",
+        "rawSpec": "^6.0.0",
+        "spec": ">=6.0.0 <7.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/eslint-config-airbnb-6.2.0.tgz_1458714943938_0.12330376333557069"
   },
   "_npmUser": {
-    "email": "ljharb@gmail.com",
-    "name": "ljharb"
+    "name": "ljharb",
+    "email": "ljharb@gmail.com"
   },
   "_npmVersion": "3.7.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "eslint-config-airbnb",
     "raw": "eslint-config-airbnb@^6.0.0",
-    "rawSpec": "^6.0.0",
     "scope": null,
+    "escapedName": "eslint-config-airbnb",
+    "name": "eslint-config-airbnb",
+    "rawSpec": "^6.0.0",
     "spec": ">=6.0.0 <7.0.0",
     "type": "range"
   },
@@ -50,8 +59,8 @@
       "url": "https://twitter.com/jitl"
     },
     {
-      "email": "ljharb@gmail.com",
       "name": "Jordan Harband",
+      "email": "ljharb@gmail.com",
       "url": "http://ljharb.codes"
     },
     {
@@ -87,16 +96,16 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "jordan.harband+npm@airbnb.com",
-      "name": "airbnb"
+      "name": "airbnb",
+      "email": "jordan.harband+npm@airbnb.com"
     },
     {
-      "email": "just.1.jake@gmail.com",
-      "name": "jitl"
+      "name": "jitl",
+      "email": "just.1.jake@gmail.com"
     },
     {
-      "email": "ljharb@gmail.com",
-      "name": "ljharb"
+      "name": "ljharb",
+      "email": "ljharb@gmail.com"
     }
   ],
   "name": "eslint-config-airbnb",

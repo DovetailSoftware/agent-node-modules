@@ -1,7 +1,24 @@
 {
   "_args": [
     [
-      "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
+      {
+        "raw": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
+        "scope": null,
+        "escapedName": "blueimp-file-upload",
+        "name": "blueimp-file-upload",
+        "rawSpec": "github:blueimp/jQuery-File-Upload#8.3.2",
+        "spec": "github:blueimp/jQuery-File-Upload#8.3.2",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:blueimp/jQuery-File-Upload.git#8.3.2",
+          "sshUrl": "git+ssh://git@github.com/blueimp/jQuery-File-Upload.git#8.3.2",
+          "httpsUrl": "git+https://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
+          "gitUrl": "git://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
+          "shortcut": "github:blueimp/jQuery-File-Upload#8.3.2",
+          "directUrl": "https://raw.githubusercontent.com/blueimp/jQuery-File-Upload/8.3.2/package.json"
+        }
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,27 +29,28 @@
   "_location": "/blueimp-file-upload",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
+    "scope": null,
+    "escapedName": "blueimp-file-upload",
+    "name": "blueimp-file-upload",
+    "rawSpec": "github:blueimp/jQuery-File-Upload#8.3.2",
+    "spec": "github:blueimp/jQuery-File-Upload#8.3.2",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/blueimp/jQuery-File-Upload/8.3.2/package.json",
-      "gitUrl": "git://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-      "httpsUrl": "git+https://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-      "shortcut": "github:blueimp/jQuery-File-Upload#8.3.2",
+      "type": "github",
       "ssh": "git@github.com:blueimp/jQuery-File-Upload.git#8.3.2",
       "sshUrl": "git+ssh://git@github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-      "type": "github"
-    },
-    "name": "blueimp-file-upload",
-    "raw": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
-    "rawSpec": "github:blueimp/jQuery-File-Upload#8.3.2",
-    "scope": null,
-    "spec": "github:blueimp/jQuery-File-Upload#8.3.2",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
+      "gitUrl": "git://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
+      "shortcut": "github:blueimp/jQuery-File-Upload#8.3.2",
+      "directUrl": "https://raw.githubusercontent.com/blueimp/jQuery-File-Upload/8.3.2/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "git://github.com/blueimp/jQuery-File-Upload.git#6afe968058cd4e3168a9d1f3871f28efff86f03c",
-  "_shasum": "591728f98d0936a9980bc4d53ecab18740dade28",
+  "_shasum": "354f3a16fdd58f27c7cc44c667bca36cc902f5ff",
   "_shrinkwrap": null,
   "_spec": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
   "_where": "C:\\Github\\agent",

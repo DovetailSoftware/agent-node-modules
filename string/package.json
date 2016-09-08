@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "string@>=1.5.0",
+      {
+        "raw": "string@>=1.5.0",
+        "scope": null,
+        "escapedName": "string",
+        "name": "string",
+        "rawSpec": ">=1.5.0",
+        "spec": ">=1.5.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/string",
   "_nodeVersion": "2.1.0",
   "_npmUser": {
-    "email": "az7arul@gmail.com",
-    "name": "az7arul"
+    "name": "az7arul",
+    "email": "az7arul@gmail.com"
   },
   "_npmVersion": "2.10.1",
   "_phantomChildren": {},
   "_requested": {
-    "name": "string",
     "raw": "string@>=1.5.0",
-    "rawSpec": ">=1.5.0",
     "scope": null,
+    "escapedName": "string",
+    "name": "string",
+    "rawSpec": ">=1.5.0",
     "spec": ">=1.5.0",
     "type": "range"
   },
@@ -34,8 +43,8 @@
   "_spec": "string@>=1.5.0",
   "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
-    "email": "jprichardson@gmail.com",
-    "name": "JP Richardson"
+    "name": "JP Richardson",
+    "email": "jprichardson@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/jprichardson/string.js/issues"
@@ -85,12 +94,12 @@
   "main": "lib/string",
   "maintainers": [
     {
-      "email": "jprichardson@gmail.com",
-      "name": "jprichardson"
+      "name": "jprichardson",
+      "email": "jprichardson@gmail.com"
     },
     {
-      "email": "az7arul@gmail.com",
-      "name": "az7arul"
+      "name": "az7arul",
+      "email": "az7arul@gmail.com"
     }
   ],
   "name": "string",

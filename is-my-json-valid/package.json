@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "is-my-json-valid@^2.10.0",
+      {
+        "raw": "is-my-json-valid@^2.10.0",
+        "scope": null,
+        "escapedName": "is-my-json-valid",
+        "name": "is-my-json-valid",
+        "rawSpec": "^2.10.0",
+        "spec": ">=2.10.0 <3.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\eslint"
     ]
   ],
@@ -16,21 +24,23 @@
     "tmp": "tmp/is-my-json-valid-2.13.1.tgz_1456180270224_0.17748022079467773"
   },
   "_npmUser": {
-    "email": "mathiasbuus@gmail.com",
-    "name": "mafintosh"
+    "name": "mafintosh",
+    "email": "mathiasbuus@gmail.com"
   },
   "_npmVersion": "2.14.7",
   "_phantomChildren": {},
   "_requested": {
-    "name": "is-my-json-valid",
     "raw": "is-my-json-valid@^2.10.0",
-    "rawSpec": "^2.10.0",
     "scope": null,
+    "escapedName": "is-my-json-valid",
+    "name": "is-my-json-valid",
+    "rawSpec": "^2.10.0",
     "spec": ">=2.10.0 <3.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/eslint"
+    "/eslint",
+    "/har-validator"
   ],
   "_resolved": "https://registry.npmjs.org/is-my-json-valid/-/is-my-json-valid-2.13.1.tgz",
   "_shasum": "d55778a82feb6b0963ff4be111d5d1684e890707",
@@ -70,20 +80,20 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "freeall@gmail.com",
-      "name": "freeall"
+      "name": "freeall",
+      "email": "freeall@gmail.com"
     },
     {
-      "email": "mathiasbuus@gmail.com",
-      "name": "mafintosh"
+      "name": "mafintosh",
+      "email": "mathiasbuus@gmail.com"
     },
     {
-      "email": "w@tson.dk",
-      "name": "watson"
+      "name": "watson",
+      "email": "w@tson.dk"
     },
     {
-      "email": "i@yoshuawuyts.com",
-      "name": "yoshuawuyts"
+      "name": "yoshuawuyts",
+      "email": "i@yoshuawuyts.com"
     }
   ],
   "name": "is-my-json-valid",

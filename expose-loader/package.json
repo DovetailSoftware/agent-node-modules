@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "expose-loader@^0.7.0",
+      {
+        "raw": "expose-loader@^0.7.0",
+        "scope": null,
+        "escapedName": "expose-loader",
+        "name": "expose-loader",
+        "rawSpec": "^0.7.0",
+        "spec": ">=0.7.0 <0.8.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/expose-loader",
   "_nodeVersion": "4.0.0",
   "_npmUser": {
-    "email": "tobias.koppers@googlemail.com",
-    "name": "sokra"
+    "name": "sokra",
+    "email": "tobias.koppers@googlemail.com"
   },
   "_npmVersion": "3.3.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "expose-loader",
     "raw": "expose-loader@^0.7.0",
-    "rawSpec": "^0.7.0",
     "scope": null,
+    "escapedName": "expose-loader",
+    "name": "expose-loader",
+    "rawSpec": "^0.7.0",
     "spec": ">=0.7.0 <0.8.0",
     "type": "range"
   },
@@ -57,8 +66,8 @@
   ],
   "maintainers": [
     {
-      "email": "tobias.koppers@googlemail.com",
-      "name": "sokra"
+      "name": "sokra",
+      "email": "tobias.koppers@googlemail.com"
     }
   ],
   "name": "expose-loader",

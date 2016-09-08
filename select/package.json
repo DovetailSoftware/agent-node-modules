@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "select@^1.0.6",
+      {
+        "raw": "select@^1.0.6",
+        "scope": null,
+        "escapedName": "select",
+        "name": "select",
+        "rawSpec": "^1.0.6",
+        "spec": ">=1.0.6 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\clipboard"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/select",
   "_nodeVersion": "0.12.7",
   "_npmUser": {
-    "email": "zno.rocha@gmail.com",
-    "name": "zenorocha"
+    "name": "zenorocha",
+    "email": "zno.rocha@gmail.com"
   },
   "_npmVersion": "2.11.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "select",
     "raw": "select@^1.0.6",
-    "rawSpec": "^1.0.6",
     "scope": null,
+    "escapedName": "select",
+    "name": "select",
+    "rawSpec": "^1.0.6",
     "spec": ">=1.0.6 <2.0.0",
     "type": "range"
   },
@@ -65,8 +74,8 @@
   "main": "src/select.js",
   "maintainers": [
     {
-      "email": "zno.rocha@gmail.com",
-      "name": "zenorocha"
+      "name": "zenorocha",
+      "email": "zno.rocha@gmail.com"
     }
   ],
   "name": "select",

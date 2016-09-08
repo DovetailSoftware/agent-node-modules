@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "espree@^3.1.6",
+      {
+        "raw": "espree@^3.1.6",
+        "scope": null,
+        "escapedName": "espree",
+        "name": "espree",
+        "rawSpec": "^3.1.6",
+        "spec": ">=3.1.6 <4.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\eslint"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/espree-3.1.7.tgz_1469818741131_0.25705570145510137"
   },
   "_npmUser": {
-    "email": "nicholas+eslint@nczconsulting.com",
-    "name": "eslint"
+    "name": "eslint",
+    "email": "nicholas+eslint@nczconsulting.com"
   },
   "_npmVersion": "2.15.8",
   "_phantomChildren": {},
   "_requested": {
-    "name": "espree",
     "raw": "espree@^3.1.6",
-    "rawSpec": "^3.1.6",
     "scope": null,
+    "escapedName": "espree",
+    "name": "espree",
+    "rawSpec": "^3.1.6",
     "spec": ">=3.1.6 <4.0.0",
     "type": "range"
   },
@@ -38,8 +47,8 @@
   "_spec": "espree@^3.1.6",
   "_where": "C:\\Github\\agent\\node_modules\\eslint",
   "author": {
-    "email": "nicholas+npm@nczconsulting.com",
-    "name": "Nicholas C. Zakas"
+    "name": "Nicholas C. Zakas",
+    "email": "nicholas+npm@nczconsulting.com"
   },
   "bugs": {
     "url": "http://github.com/eslint/espree.git"
@@ -92,12 +101,12 @@
   "main": "espree.js",
   "maintainers": [
     {
-      "email": "nicholas+eslint@nczconsulting.com",
-      "name": "eslint"
+      "name": "eslint",
+      "email": "nicholas+eslint@nczconsulting.com"
     },
     {
-      "email": "nicholas@nczconsulting.com",
-      "name": "nzakas"
+      "name": "nzakas",
+      "email": "nicholas@nczconsulting.com"
     }
   ],
   "name": "espree",

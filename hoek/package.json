@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "hoek@0.9.x",
+      {
+        "raw": "hoek@0.9.x",
+        "scope": null,
+        "escapedName": "hoek",
+        "name": "hoek",
+        "rawSpec": "0.9.x",
+        "spec": ">=0.9.0 <0.10.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\hawk"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/hoek",
   "_npmUser": {
-    "email": "eran@hueniverse.com",
-    "name": "hueniverse"
+    "name": "hueniverse",
+    "email": "eran@hueniverse.com"
   },
   "_npmVersion": "1.2.18",
   "_phantomChildren": {},
   "_requested": {
-    "name": "hoek",
     "raw": "hoek@0.9.x",
-    "rawSpec": "0.9.x",
     "scope": null,
+    "escapedName": "hoek",
+    "name": "hoek",
+    "rawSpec": "0.9.x",
     "spec": ">=0.9.0 <0.10.0",
     "type": "range"
   },
@@ -35,8 +44,8 @@
   "_spec": "hoek@0.9.x",
   "_where": "C:\\Github\\agent\\node_modules\\hawk",
   "author": {
-    "email": "eran@hueniverse.com",
     "name": "Eran Hammer",
+    "email": "eran@hueniverse.com",
     "url": "http://hueniverse.com"
   },
   "bugs": {
@@ -44,8 +53,8 @@
   },
   "contributors": [
     {
-      "email": "the.gol.effect@gmail.com",
-      "name": "Van Nguyen"
+      "name": "Van Nguyen",
+      "email": "the.gol.effect@gmail.com"
     }
   ],
   "dependencies": {},
@@ -75,12 +84,12 @@
   "main": "index",
   "maintainers": [
     {
-      "email": "eran@hueniverse.com",
-      "name": "hueniverse"
+      "name": "hueniverse",
+      "email": "eran@hueniverse.com"
     },
     {
-      "email": "thegoleffect@gmail.com",
-      "name": "thegoleffect"
+      "name": "thegoleffect",
+      "email": "thegoleffect@gmail.com"
     }
   ],
   "name": "hoek",

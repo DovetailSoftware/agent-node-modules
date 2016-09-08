@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "coffee-script@~1.3.3",
+      {
+        "raw": "coffee-script@~1.3.3",
+        "scope": null,
+        "escapedName": "coffee-script",
+        "name": "coffee-script",
+        "rawSpec": "~1.3.3",
+        "spec": ">=1.3.3 <1.4.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\grunt"
     ]
   ],
@@ -14,16 +22,17 @@
   "_location": "/coffee-script",
   "_nodeVersion": "v0.6.16",
   "_npmUser": {
-    "email": "jashkenas@gmail.com",
-    "name": "jashkenas"
+    "name": "jashkenas",
+    "email": "jashkenas@gmail.com"
   },
   "_npmVersion": "1.1.18",
   "_phantomChildren": {},
   "_requested": {
-    "name": "coffee-script",
     "raw": "coffee-script@~1.3.3",
-    "rawSpec": "~1.3.3",
     "scope": null,
+    "escapedName": "coffee-script",
+    "name": "coffee-script",
+    "rawSpec": "~1.3.3",
     "spec": ">=1.3.3 <1.4.0",
     "type": "range"
   },
@@ -40,8 +49,8 @@
     "name": "Jeremy Ashkenas"
   },
   "bin": {
-    "cake": "./bin/cake",
-    "coffee": "./bin/coffee"
+    "coffee": "./bin/coffee",
+    "cake": "./bin/cake"
   },
   "bugs": {
     "url": "https://github.com/jashkenas/coffee-script/issues"
@@ -78,8 +87,8 @@
   "main": "./lib/coffee-script/coffee-script",
   "maintainers": [
     {
-      "email": "jashkenas@gmail.com",
-      "name": "jashkenas"
+      "name": "jashkenas",
+      "email": "jashkenas@gmail.com"
     }
   ],
   "name": "coffee-script",

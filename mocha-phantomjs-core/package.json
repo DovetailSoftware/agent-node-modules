@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "mocha-phantomjs-core@^1.0.0",
+      {
+        "raw": "mocha-phantomjs-core@^1.0.0",
+        "scope": null,
+        "escapedName": "mocha-phantomjs-core",
+        "name": "mocha-phantomjs-core",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/mocha-phantomjs-core-1.3.1.tgz_1462207823837_0.7598905295599252"
   },
   "_npmUser": {
-    "email": "nathan@nathanblack.org",
-    "name": "nathanboktae"
+    "name": "nathanboktae",
+    "email": "nathan@nathanblack.org"
   },
   "_npmVersion": "2.14.20",
   "_phantomChildren": {},
   "_requested": {
-    "name": "mocha-phantomjs-core",
     "raw": "mocha-phantomjs-core@^1.0.0",
-    "rawSpec": "^1.0.0",
     "scope": null,
+    "escapedName": "mocha-phantomjs-core",
+    "name": "mocha-phantomjs-core",
+    "rawSpec": "^1.0.0",
     "spec": ">=1.0.0 <2.0.0",
     "type": "range"
   },
@@ -38,8 +47,8 @@
   "_spec": "mocha-phantomjs-core@^1.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs",
   "author": {
-    "email": "nathan@nathanblack.org",
     "name": "Nathan Black",
+    "email": "nathan@nathanblack.org",
     "url": "https://github.com/nathanboktae"
   },
   "bugs": {
@@ -47,8 +56,8 @@
   },
   "contributors": [
     {
-      "email": "ken@metaskills.net",
       "name": "Ken Collins",
+      "email": "ken@metaskills.net",
       "url": "http://metaskills.net/"
     }
   ],
@@ -85,8 +94,8 @@
   "main": "./mocha-phantomjs-core.js",
   "maintainers": [
     {
-      "email": "nathan@nathanblack.org",
-      "name": "nathanboktae"
+      "name": "nathanboktae",
+      "email": "nathan@nathanblack.org"
     }
   ],
   "name": "mocha-phantomjs-core",

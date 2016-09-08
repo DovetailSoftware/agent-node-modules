@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "eco@>=1.0.0",
+      {
+        "raw": "eco@>=1.0.0",
+        "scope": null,
+        "escapedName": "eco",
+        "name": "eco",
+        "rawSpec": ">=1.0.0",
+        "spec": ">=1.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
@@ -16,10 +24,11 @@
   "_npmVersion": "0.3.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "eco",
     "raw": "eco@>=1.0.0",
-    "rawSpec": ">=1.0.0",
     "scope": null,
+    "escapedName": "eco",
+    "name": "eco",
+    "rawSpec": ">=1.0.0",
     "spec": ">=1.0.0",
     "type": "range"
   },
@@ -48,7 +57,7 @@
   },
   "dist": {
     "shasum": "624eacd09c9795ed65d83da865375dc52464e56d",
-    "tarball": "http://registry.npmjs.org/eco/-/eco-1.0.3.tgz"
+    "tarball": "https://registry.npmjs.org/eco/-/eco-1.0.3.tgz"
   },
   "engines": {
     "node": "*"

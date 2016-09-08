@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "remarkable@1.6.2",
+      {
+        "raw": "remarkable@1.6.2",
+        "scope": null,
+        "escapedName": "remarkable",
+        "name": "remarkable",
+        "rawSpec": "1.6.2",
+        "spec": "1.6.2",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/remarkable-1.6.2.tgz_1454582572561_0.20990560995414853"
   },
   "_npmUser": {
-    "email": "fladset@gmail.com",
-    "name": "pkfladset"
+    "name": "pkfladset",
+    "email": "fladset@gmail.com"
   },
   "_npmVersion": "3.5.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "remarkable",
     "raw": "remarkable@1.6.2",
-    "rawSpec": "1.6.2",
     "scope": null,
+    "escapedName": "remarkable",
+    "name": "remarkable",
+    "rawSpec": "1.6.2",
     "spec": "1.6.2",
     "type": "version"
   },
@@ -85,24 +94,24 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "brian.woodward@gmail.com",
-      "name": "doowb"
+      "name": "doowb",
+      "email": "brian.woodward@gmail.com"
     },
     {
-      "email": "joey@byjoeybaker.com",
-      "name": "joeybaker"
+      "name": "joeybaker",
+      "email": "joey@byjoeybaker.com"
     },
     {
-      "email": "github@sellside.com",
-      "name": "jonschlinkert"
+      "name": "jonschlinkert",
+      "email": "github@sellside.com"
     },
     {
-      "email": "nikolas@gnu.org",
-      "name": "nikolas"
+      "name": "nikolas",
+      "email": "nikolas@gnu.org"
     },
     {
-      "email": "fladset@gmail.com",
-      "name": "pkfladset"
+      "name": "pkfladset",
+      "email": "fladset@gmail.com"
     }
   ],
   "name": "remarkable",

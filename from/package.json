@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "from@~0",
+      {
+        "raw": "from@~0",
+        "scope": null,
+        "escapedName": "from",
+        "name": "from",
+        "rawSpec": "~0",
+        "spec": ">=0.0.0 <1.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\event-stream"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/from",
   "_npmUser": {
-    "email": "dominic.tarr@gmail.com",
-    "name": "dominictarr"
+    "name": "dominictarr",
+    "email": "dominic.tarr@gmail.com"
   },
   "_npmVersion": "1.2.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "from",
     "raw": "from@~0",
-    "rawSpec": "~0",
     "scope": null,
+    "escapedName": "from",
+    "name": "from",
+    "rawSpec": "~0",
     "spec": ">=0.0.0 <1.0.0",
     "type": "range"
   },
@@ -33,8 +42,8 @@
   "_spec": "from@~0",
   "_where": "C:\\Github\\agent\\node_modules\\event-stream",
   "author": {
-    "email": "dominic.tarr@gmail.com",
     "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
     "url": "dominictarr.com"
   },
   "bugs": {
@@ -63,8 +72,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "dominic.tarr@gmail.com",
-      "name": "dominictarr"
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
     }
   ],
   "name": "from",

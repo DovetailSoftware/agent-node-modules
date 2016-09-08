@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "backbone@1.2.3",
+      {
+        "raw": "backbone@1.2.3",
+        "scope": null,
+        "escapedName": "backbone",
+        "name": "backbone",
+        "rawSpec": "1.2.3",
+        "spec": "1.2.3",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/backbone",
   "_npmUser": {
-    "email": "jashkenas@gmail.com",
-    "name": "jashkenas"
+    "name": "jashkenas",
+    "email": "jashkenas@gmail.com"
   },
   "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
-    "name": "backbone",
     "raw": "backbone@1.2.3",
-    "rawSpec": "1.2.3",
     "scope": null,
+    "escapedName": "backbone",
+    "name": "backbone",
+    "rawSpec": "1.2.3",
     "spec": "1.2.3",
     "type": "version"
   },
@@ -79,12 +88,12 @@
   "main": "backbone.js",
   "maintainers": [
     {
-      "email": "jashkenas@gmail.com",
-      "name": "jashkenas"
+      "name": "jashkenas",
+      "email": "jashkenas@gmail.com"
     },
     {
-      "email": "dunbarb2@gmail.com",
-      "name": "braddunbar"
+      "name": "braddunbar",
+      "email": "dunbarb2@gmail.com"
     }
   ],
   "name": "backbone",

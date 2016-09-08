@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "to-iso-string@0.0.2",
+      {
+        "raw": "to-iso-string@0.0.2",
+        "scope": null,
+        "escapedName": "to-iso-string",
+        "name": "to-iso-string",
+        "rawSpec": "0.0.2",
+        "spec": "0.0.2",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\mocha"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/to-iso-string",
   "_nodeVersion": "2.0.1",
   "_npmUser": {
-    "email": "nathan@nathanhoule.com",
-    "name": "ndhoule"
+    "name": "ndhoule",
+    "email": "nathan@nathanhoule.com"
   },
   "_npmVersion": "2.9.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "to-iso-string",
     "raw": "to-iso-string@0.0.2",
-    "rawSpec": "0.0.2",
     "scope": null,
+    "escapedName": "to-iso-string",
+    "name": "to-iso-string",
+    "rawSpec": "0.0.2",
     "spec": "0.0.2",
     "type": "version"
   },
@@ -60,8 +69,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "nathan@nathanhoule.com",
-      "name": "ndhoule"
+      "name": "ndhoule",
+      "email": "nathan@nathanhoule.com"
     }
   ],
   "name": "to-iso-string",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "pause@0.1.0",
+      {
+        "raw": "pause@0.1.0",
+        "scope": null,
+        "escapedName": "pause",
+        "name": "pause",
+        "rawSpec": "0.1.0",
+        "spec": "0.1.0",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\connect"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/pause",
   "_npmUser": {
-    "email": "doug@somethingdoug.com",
-    "name": "dougwilson"
+    "name": "dougwilson",
+    "email": "doug@somethingdoug.com"
   },
   "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
-    "name": "pause",
     "raw": "pause@0.1.0",
-    "rawSpec": "0.1.0",
     "scope": null,
+    "escapedName": "pause",
+    "name": "pause",
+    "rawSpec": "0.1.0",
     "spec": "0.1.0",
     "type": "version"
   },
@@ -33,16 +42,16 @@
   "_spec": "pause@0.1.0",
   "_where": "C:\\Github\\agent\\node_modules\\connect",
   "author": {
-    "email": "tj@vision-media.ca",
-    "name": "TJ Holowaychuk"
+    "name": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca"
   },
   "bugs": {
     "url": "https://github.com/stream-utils/pause/issues"
   },
   "contributors": [
     {
-      "email": "doug@somethingdoug.com",
-      "name": "Douglas Christopher Wilson"
+      "name": "Douglas Christopher Wilson",
+      "email": "doug@somethingdoug.com"
     }
   ],
   "dependencies": {},
@@ -71,16 +80,16 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "tj@vision-media.ca",
-      "name": "tjholowaychuk"
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
     },
     {
-      "email": "jonathanrichardong@gmail.com",
-      "name": "jongleberry"
+      "name": "jongleberry",
+      "email": "jonathanrichardong@gmail.com"
     },
     {
-      "email": "doug@somethingdoug.com",
-      "name": "dougwilson"
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
     }
   ],
   "name": "pause",

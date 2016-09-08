@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "deep-eql@^0.1.3",
+      {
+        "raw": "deep-eql@^0.1.3",
+        "scope": null,
+        "escapedName": "deep-eql",
+        "name": "deep-eql",
+        "rawSpec": "^0.1.3",
+        "spec": ">=0.1.3 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\chai"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/deep-eql",
   "_npmUser": {
-    "email": "jake@alogicalparadox.com",
-    "name": "jakeluer"
+    "name": "jakeluer",
+    "email": "jake@alogicalparadox.com"
   },
   "_npmVersion": "1.3.11",
   "_phantomChildren": {},
   "_requested": {
-    "name": "deep-eql",
     "raw": "deep-eql@^0.1.3",
-    "rawSpec": "^0.1.3",
     "scope": null,
+    "escapedName": "deep-eql",
+    "name": "deep-eql",
+    "rawSpec": "^0.1.3",
     "spec": ">=0.1.3 <0.2.0",
     "type": "range"
   },
@@ -33,8 +42,8 @@
   "_spec": "deep-eql@^0.1.3",
   "_where": "C:\\Github\\agent\\node_modules\\chai",
   "author": {
-    "email": "jake@alogicalparadox.com",
-    "name": "Jake Luer"
+    "name": "Jake Luer",
+    "email": "jake@alogicalparadox.com"
   },
   "bugs": {
     "url": "https://github.com/chaijs/deep-eql/issues"
@@ -72,8 +81,8 @@
   "main": "./index",
   "maintainers": [
     {
-      "email": "jake@alogicalparadox.com",
-      "name": "jakeluer"
+      "name": "jakeluer",
+      "email": "jake@alogicalparadox.com"
     }
   ],
   "name": "deep-eql",

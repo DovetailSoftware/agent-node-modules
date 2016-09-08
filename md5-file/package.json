@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "md5-file@^1.1.4",
+      {
+        "raw": "md5-file@^1.1.4",
+        "scope": null,
+        "escapedName": "md5-file",
+        "name": "md5-file",
+        "rawSpec": "^1.1.4",
+        "spec": ">=1.1.4 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\iedriver"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/md5-file",
   "_npmUser": {
-    "email": "roryrjb@gmail.com",
-    "name": "roryrjb"
+    "name": "roryrjb",
+    "email": "roryrjb@gmail.com"
   },
   "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
-    "name": "md5-file",
     "raw": "md5-file@^1.1.4",
-    "rawSpec": "^1.1.4",
     "scope": null,
+    "escapedName": "md5-file",
+    "name": "md5-file",
+    "rawSpec": "^1.1.4",
     "spec": ">=1.1.4 <2.0.0",
     "type": "range"
   },
@@ -33,13 +42,13 @@
   "_spec": "md5-file@^1.1.4",
   "_where": "C:\\Github\\agent\\node_modules\\iedriver",
   "author": {
-    "email": "roryrjb@gmail.com",
     "name": "Rory Bradford",
+    "email": "roryrjb@gmail.com",
     "url": "www.roryrjb.com"
   },
   "bugs": {
-    "email": "roryrjb@gmail.com",
-    "url": "http://github.com/roryrjb/md5-file/issues"
+    "url": "http://github.com/roryrjb/md5-file/issues",
+    "email": "roryrjb@gmail.com"
   },
   "dependencies": {},
   "description": "return an md5sum of a given file",
@@ -64,8 +73,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "roryrjb@gmail.com",
-      "name": "roryrjb"
+      "name": "roryrjb",
+      "email": "roryrjb@gmail.com"
     }
   ],
   "name": "md5-file",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "tiny-lr@^0.2.0",
+      {
+        "raw": "tiny-lr@^0.2.0",
+        "scope": null,
+        "escapedName": "tiny-lr",
+        "name": "tiny-lr",
+        "rawSpec": "^0.2.0",
+        "spec": ">=0.2.0 <0.3.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\webpack-livereload-plugin"
     ]
   ],
@@ -12,8 +20,8 @@
   "_location": "/tiny-lr",
   "_nodeVersion": "4.0.0",
   "_npmUser": {
-    "email": "kyle@dontkry.com",
-    "name": "shama"
+    "name": "shama",
+    "email": "kyle@dontkry.com"
   },
   "_npmVersion": "3.3.4",
   "_phantomChildren": {
@@ -26,10 +34,11 @@
     "websocket-driver": "0.6.5"
   },
   "_requested": {
-    "name": "tiny-lr",
     "raw": "tiny-lr@^0.2.0",
-    "rawSpec": "^0.2.0",
     "scope": null,
+    "escapedName": "tiny-lr",
+    "name": "tiny-lr",
+    "rawSpec": "^0.2.0",
     "spec": ">=0.2.0 <0.3.0",
     "type": "range"
   },
@@ -79,12 +88,12 @@
   "main": "./lib",
   "maintainers": [
     {
-      "email": "daniel.mickael@gmail.com",
-      "name": "mklabs"
+      "name": "mklabs",
+      "email": "daniel.mickael@gmail.com"
     },
     {
-      "email": "kyle@dontkry.com",
-      "name": "shama"
+      "name": "shama",
+      "email": "kyle@dontkry.com"
     }
   ],
   "name": "tiny-lr",

@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "tsscmp@1.0.5",
+      {
+        "raw": "tsscmp@1.0.5",
+        "scope": null,
+        "escapedName": "tsscmp",
+        "name": "tsscmp",
+        "rawSpec": "1.0.5",
+        "spec": "1.0.5",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\csrf"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/tsscmp-1.0.5.tgz_1464226502956_0.48576042777858675"
   },
   "_npmUser": {
-    "email": "surya.com@gmail.com",
-    "name": "suryagh"
+    "name": "suryagh",
+    "email": "surya.com@gmail.com"
   },
   "_npmVersion": "3.6.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "tsscmp",
     "raw": "tsscmp@1.0.5",
-    "rawSpec": "1.0.5",
     "scope": null,
+    "escapedName": "tsscmp",
+    "name": "tsscmp",
+    "rawSpec": "1.0.5",
     "spec": "1.0.5",
     "type": "version"
   },
@@ -66,8 +75,8 @@
   "main": "lib/index.js",
   "maintainers": [
     {
-      "email": "surya.com@gmail.com",
-      "name": "suryagh"
+      "name": "suryagh",
+      "email": "surya.com@gmail.com"
     }
   ],
   "name": "tsscmp",

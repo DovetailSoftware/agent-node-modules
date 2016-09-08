@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "iedriver@^2.52.2",
+      {
+        "raw": "iedriver@^2.52.2",
+        "scope": null,
+        "escapedName": "iedriver",
+        "name": "iedriver",
+        "rawSpec": "^2.52.2",
+        "spec": ">=2.52.2 <3.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,8 +24,8 @@
     "tmp": "tmp/iedriver-2.53.1.tgz_1464036010498_0.1991159627214074"
   },
   "_npmUser": {
-    "email": "barrett@sosuke.com",
-    "name": "barretts"
+    "name": "barretts",
+    "email": "barrett@sosuke.com"
   },
   "_npmVersion": "2.14.8",
   "_phantomChildren": {
@@ -25,10 +33,11 @@
     "config-chain": "1.1.10"
   },
   "_requested": {
-    "name": "iedriver",
     "raw": "iedriver@^2.52.2",
-    "rawSpec": "^2.52.2",
     "scope": null,
+    "escapedName": "iedriver",
+    "name": "iedriver",
+    "rawSpec": "^2.52.2",
     "spec": ">=2.52.2 <3.0.0",
     "type": "range"
   },
@@ -41,8 +50,8 @@
   "_spec": "iedriver@^2.52.2",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "barrett@sosuke.com",
     "name": "Barrett Sonntag",
+    "email": "barrett@sosuke.com",
     "url": "http://www.sosuke.com"
   },
   "bin": {
@@ -82,8 +91,8 @@
   "main": "lib/iedriver",
   "maintainers": [
     {
-      "email": "barrett@sosuke.com",
-      "name": "barretts"
+      "name": "barretts",
+      "email": "barrett@sosuke.com"
     }
   ],
   "name": "iedriver",

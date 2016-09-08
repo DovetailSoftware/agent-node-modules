@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "lunr@0.7.1",
+      {
+        "raw": "lunr@0.7.1",
+        "scope": null,
+        "escapedName": "lunr",
+        "name": "lunr",
+        "rawSpec": "0.7.1",
+        "spec": "0.7.1",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/lunr-0.7.1.tgz_1463594255733_0.2692086303140968"
   },
   "_npmUser": {
-    "email": "oliver.nightingale1@gmail.com",
-    "name": "olivernn"
+    "name": "olivernn",
+    "email": "oliver.nightingale1@gmail.com"
   },
   "_npmVersion": "2.12.1",
   "_phantomChildren": {},
   "_requested": {
-    "name": "lunr",
     "raw": "lunr@0.7.1",
-    "rawSpec": "0.7.1",
     "scope": null,
+    "escapedName": "lunr",
+    "name": "lunr",
+    "rawSpec": "0.7.1",
     "spec": "0.7.1",
     "type": "version"
   },
@@ -65,8 +74,8 @@
   "main": "lunr.js",
   "maintainers": [
     {
-      "email": "oliver.nightingale1@gmail.com",
-      "name": "olivernn"
+      "name": "olivernn",
+      "email": "oliver.nightingale1@gmail.com"
     }
   ],
   "name": "lunr",

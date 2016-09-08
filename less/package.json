@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "less@>=1.4.1",
+      {
+        "raw": "less@>=1.4.1",
+        "scope": null,
+        "escapedName": "less",
+        "name": "less",
+        "rawSpec": ">=1.4.1",
+        "spec": ">=1.4.1",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/less-2.7.1.tgz_1462826329455_0.6074283130001277"
   },
   "_npmUser": {
-    "email": "matthewdean.me@gmail.com",
-    "name": "matthew-dean"
+    "name": "matthew-dean",
+    "email": "matthewdean.me@gmail.com"
   },
   "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
-    "name": "less",
     "raw": "less@>=1.4.1",
-    "rawSpec": ">=1.4.1",
     "scope": null,
+    "escapedName": "less",
+    "name": "less",
+    "rawSpec": ">=1.4.1",
     "spec": ">=1.4.1",
     "type": "range"
   },
@@ -39,8 +48,8 @@
   "_spec": "less@>=1.4.1",
   "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
-    "email": "self@cloudhead.net",
-    "name": "Alexis Sellier"
+    "name": "Alexis Sellier",
+    "email": "self@cloudhead.net"
   },
   "bin": {
     "lessc": "./bin/lessc"
@@ -124,29 +133,29 @@
   "main": "index",
   "maintainers": [
     {
-      "email": "luke.a.page@gmail.com",
-      "name": "agatronic"
+      "name": "agatronic",
+      "email": "luke.a.page@gmail.com"
     },
     {
-      "email": "self@cloudhead.net",
-      "name": "cloudhead"
+      "name": "cloudhead",
+      "email": "self@cloudhead.net"
     },
     {
-      "email": "matthewdean.me@gmail.com",
-      "name": "matthew-dean"
+      "name": "matthew-dean",
+      "email": "matthewdean.me@gmail.com"
     },
     {
-      "email": "sommeridevel@gmail.com",
-      "name": "meri"
+      "name": "meri",
+      "email": "sommeridevel@gmail.com"
     },
     {
-      "email": "seven.phases.max@gmail.com",
-      "name": "seven-phases-max"
+      "name": "seven-phases-max",
+      "email": "seven.phases.max@gmail.com"
     }
   ],
   "master": {
-    "raw": "https://raw.githubusercontent.com/less/less.js/master/",
-    "url": "https://github.com/less/less.js/blob/master/"
+    "url": "https://github.com/less/less.js/blob/master/",
+    "raw": "https://raw.githubusercontent.com/less/less.js/master/"
   },
   "name": "less",
   "optionalDependencies": {

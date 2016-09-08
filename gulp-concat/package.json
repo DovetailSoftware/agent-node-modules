@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "gulp-concat@^2.5.2",
+      {
+        "raw": "gulp-concat@^2.5.2",
+        "scope": null,
+        "escapedName": "gulp-concat",
+        "name": "gulp-concat",
+        "rawSpec": "^2.5.2",
+        "spec": ">=2.5.2 <3.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,18 +20,19 @@
   "_location": "/gulp-concat",
   "_nodeVersion": "2.0.1",
   "_npmUser": {
-    "email": "contact@wearefractal.com",
-    "name": "fractal"
+    "name": "fractal",
+    "email": "contact@wearefractal.com"
   },
   "_npmVersion": "2.10.0",
   "_phantomChildren": {
     "readable-stream": "1.0.34"
   },
   "_requested": {
-    "name": "gulp-concat",
     "raw": "gulp-concat@^2.5.2",
-    "rawSpec": "^2.5.2",
     "scope": null,
+    "escapedName": "gulp-concat",
+    "name": "gulp-concat",
+    "rawSpec": "^2.5.2",
     "spec": ">=2.5.2 <3.0.0",
     "type": "range"
   },
@@ -36,8 +45,8 @@
   "_spec": "gulp-concat@^2.5.2",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "contact@wearefractal.com",
     "name": "Fractal",
+    "email": "contact@wearefractal.com",
     "url": "http://wearefractal.com/"
   },
   "bugs": {
@@ -78,8 +87,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "contact@wearefractal.com",
-      "name": "fractal"
+      "name": "fractal",
+      "email": "contact@wearefractal.com"
     }
   ],
   "name": "gulp-concat",

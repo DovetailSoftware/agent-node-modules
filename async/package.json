@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "async@~0.1.22",
+      {
+        "raw": "async@~0.1.22",
+        "scope": null,
+        "escapedName": "async",
+        "name": "async",
+        "rawSpec": "~0.1.22",
+        "spec": ">=0.1.22 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\grunt"
     ]
   ],
@@ -14,16 +22,17 @@
   "_location": "/async",
   "_nodeVersion": "v0.6.18",
   "_npmUser": {
-    "email": "caolan@caolanmcmahon.com",
-    "name": "caolan"
+    "name": "caolan",
+    "email": "caolan@caolanmcmahon.com"
   },
   "_npmVersion": "1.1.21",
   "_phantomChildren": {},
   "_requested": {
-    "name": "async",
     "raw": "async@~0.1.22",
-    "rawSpec": "~0.1.22",
     "scope": null,
+    "escapedName": "async",
+    "name": "async",
+    "rawSpec": "~0.1.22",
     "spec": ">=0.1.22 <0.2.0",
     "type": "range"
   },
@@ -67,8 +76,8 @@
   "main": "./index",
   "maintainers": [
     {
-      "email": "caolan@caolanmcmahon.com",
-      "name": "caolan"
+      "name": "caolan",
+      "email": "caolan@caolanmcmahon.com"
     }
   ],
   "name": "async",

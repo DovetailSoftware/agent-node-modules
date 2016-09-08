@@ -1,7 +1,24 @@
 {
   "_args": [
     [
-      "mousetrap@github:craigjennings11/mousetrap#e512911",
+      {
+        "raw": "mousetrap@github:craigjennings11/mousetrap#e512911",
+        "scope": null,
+        "escapedName": "mousetrap",
+        "name": "mousetrap",
+        "rawSpec": "github:craigjennings11/mousetrap#e512911",
+        "spec": "github:craigjennings11/mousetrap#e512911",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:craigjennings11/mousetrap.git#e512911",
+          "sshUrl": "git+ssh://git@github.com/craigjennings11/mousetrap.git#e512911",
+          "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#e512911",
+          "gitUrl": "git://github.com/craigjennings11/mousetrap.git#e512911",
+          "shortcut": "github:craigjennings11/mousetrap#e512911",
+          "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/e512911/package.json"
+        }
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,27 +29,28 @@
   "_location": "/mousetrap",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "mousetrap@github:craigjennings11/mousetrap#e512911",
+    "scope": null,
+    "escapedName": "mousetrap",
+    "name": "mousetrap",
+    "rawSpec": "github:craigjennings11/mousetrap#e512911",
+    "spec": "github:craigjennings11/mousetrap#e512911",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/e512911/package.json",
-      "gitUrl": "git://github.com/craigjennings11/mousetrap.git#e512911",
-      "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#e512911",
-      "shortcut": "github:craigjennings11/mousetrap#e512911",
+      "type": "github",
       "ssh": "git@github.com:craigjennings11/mousetrap.git#e512911",
       "sshUrl": "git+ssh://git@github.com/craigjennings11/mousetrap.git#e512911",
-      "type": "github"
-    },
-    "name": "mousetrap",
-    "raw": "mousetrap@github:craigjennings11/mousetrap#e512911",
-    "rawSpec": "github:craigjennings11/mousetrap#e512911",
-    "scope": null,
-    "spec": "github:craigjennings11/mousetrap#e512911",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#e512911",
+      "gitUrl": "git://github.com/craigjennings11/mousetrap.git#e512911",
+      "shortcut": "github:craigjennings11/mousetrap#e512911",
+      "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/e512911/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "git://github.com/craigjennings11/mousetrap.git#e5129117d910c2a9e9a5d948f6cfd87a7885fd08",
-  "_shasum": "c458a5d7d390ee34159831468234e3ec69bfec86",
+  "_shasum": "a9f3ec90a34b9e8336c62a0332c70f0110a299a0",
   "_shrinkwrap": null,
   "_spec": "mousetrap@github:craigjennings11/mousetrap#e512911",
   "_where": "C:\\Github\\agent",

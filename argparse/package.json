@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "argparse@~ 0.1.11",
+      {
+        "raw": "argparse@~ 0.1.11",
+        "scope": null,
+        "escapedName": "argparse",
+        "name": "argparse",
+        "rawSpec": "~ 0.1.11",
+        "spec": ">=0.1.11 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\js-yaml"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/argparse",
   "_npmUser": {
-    "email": "vitaly@rcdesign.ru",
-    "name": "vitaly"
+    "name": "vitaly",
+    "email": "vitaly@rcdesign.ru"
   },
   "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
-    "name": "argparse",
     "raw": "argparse@~ 0.1.11",
-    "rawSpec": "~ 0.1.11",
     "scope": null,
+    "escapedName": "argparse",
+    "name": "argparse",
+    "rawSpec": "~ 0.1.11",
     "spec": ">=0.1.11 <0.2.0",
     "type": "range"
   },
@@ -70,8 +79,8 @@
   "main": "./index.js",
   "maintainers": [
     {
-      "email": "vitaly@rcdesign.ru",
-      "name": "vitaly"
+      "name": "vitaly",
+      "email": "vitaly@rcdesign.ru"
     }
   ],
   "name": "argparse",

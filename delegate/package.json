@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "delegate@^3.0.0",
+      {
+        "raw": "delegate@^3.0.0",
+        "scope": null,
+        "escapedName": "delegate",
+        "name": "delegate",
+        "rawSpec": "^3.0.0",
+        "spec": ">=3.0.0 <4.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\good-listener"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/delegate",
   "_nodeVersion": "5.1.1",
   "_npmUser": {
-    "email": "zno.rocha@gmail.com",
-    "name": "zenorocha"
+    "name": "zenorocha",
+    "email": "zno.rocha@gmail.com"
   },
   "_npmVersion": "3.3.12",
   "_phantomChildren": {},
   "_requested": {
-    "name": "delegate",
     "raw": "delegate@^3.0.0",
-    "rawSpec": "^3.0.0",
     "scope": null,
+    "escapedName": "delegate",
+    "name": "delegate",
+    "rawSpec": "^3.0.0",
     "spec": ">=3.0.0 <4.0.0",
     "type": "range"
   },
@@ -66,8 +75,8 @@
   "main": "src/delegate.js",
   "maintainers": [
     {
-      "email": "zno.rocha@gmail.com",
-      "name": "zenorocha"
+      "name": "zenorocha",
+      "email": "zno.rocha@gmail.com"
     }
   ],
   "name": "delegate",

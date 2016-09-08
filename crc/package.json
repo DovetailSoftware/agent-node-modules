@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "crc@3.3.0",
+      {
+        "raw": "crc@3.3.0",
+        "scope": null,
+        "escapedName": "crc",
+        "name": "crc",
+        "rawSpec": "3.3.0",
+        "spec": "3.3.0",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\express-session"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/crc",
   "_nodeVersion": "0.12.2",
   "_npmUser": {
-    "email": "alex.gorbatchev@gmail.com",
-    "name": "alexgorbatchev"
+    "name": "alexgorbatchev",
+    "email": "alex.gorbatchev@gmail.com"
   },
   "_npmVersion": "2.7.4",
   "_phantomChildren": {},
   "_requested": {
-    "name": "crc",
     "raw": "crc@3.3.0",
-    "rawSpec": "3.3.0",
     "scope": null,
+    "escapedName": "crc",
+    "name": "crc",
+    "rawSpec": "3.3.0",
     "spec": "3.3.0",
     "type": "version"
   },
@@ -66,8 +75,8 @@
   "main": "./lib/index.js",
   "maintainers": [
     {
-      "email": "alex.gorbatchev@gmail.com",
-      "name": "alexgorbatchev"
+      "name": "alexgorbatchev",
+      "email": "alex.gorbatchev@gmail.com"
     }
   ],
   "name": "crc",

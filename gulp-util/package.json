@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "gulp-util@*",
+      {
+        "raw": "gulp-util@*",
+        "scope": null,
+        "escapedName": "gulp-util",
+        "name": "gulp-util",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\gulp-header"
     ]
   ],
@@ -12,22 +20,23 @@
   "_location": "/gulp-util",
   "_nodeVersion": "0.10.36",
   "_npmUser": {
-    "email": "blaine@iceddev.com",
-    "name": "phated"
+    "name": "phated",
+    "email": "blaine@iceddev.com"
   },
   "_npmVersion": "2.14.3",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
-    "inherits": "2.0.1",
+    "inherits": "2.0.3",
     "process-nextick-args": "1.0.7",
     "string_decoder": "0.10.31",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
-    "name": "gulp-util",
     "raw": "gulp-util@*",
-    "rawSpec": "*",
     "scope": null,
+    "escapedName": "gulp-util",
+    "name": "gulp-util",
+    "rawSpec": "*",
     "spec": "*",
     "type": "range"
   },
@@ -45,8 +54,8 @@
   "_spec": "gulp-util@*",
   "_where": "C:\\Github\\agent\\node_modules\\gulp-header",
   "author": {
-    "email": "contact@wearefractal.com",
     "name": "Fractal",
+    "email": "contact@wearefractal.com",
     "url": "http://wearefractal.com/"
   },
   "bugs": {
@@ -102,12 +111,12 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "contact@wearefractal.com",
-      "name": "fractal"
+      "name": "fractal",
+      "email": "contact@wearefractal.com"
     },
     {
-      "email": "blaine@iceddev.com",
-      "name": "phated"
+      "name": "phated",
+      "email": "blaine@iceddev.com"
     }
   ],
   "name": "gulp-util",

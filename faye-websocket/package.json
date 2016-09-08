@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "faye-websocket@~0.7.2",
+      {
+        "raw": "faye-websocket@~0.7.2",
+        "scope": null,
+        "escapedName": "faye-websocket",
+        "name": "faye-websocket",
+        "rawSpec": "~0.7.2",
+        "spec": ">=0.7.2 <0.8.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\mini-lr"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/faye-websocket",
   "_npmUser": {
-    "email": "jcoglan@gmail.com",
-    "name": "jcoglan"
+    "name": "jcoglan",
+    "email": "jcoglan@gmail.com"
   },
   "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
-    "name": "faye-websocket",
     "raw": "faye-websocket@~0.7.2",
-    "rawSpec": "~0.7.2",
     "scope": null,
+    "escapedName": "faye-websocket",
+    "name": "faye-websocket",
+    "rawSpec": "~0.7.2",
     "spec": ">=0.7.2 <0.8.0",
     "type": "range"
   },
@@ -33,8 +42,8 @@
   "_spec": "faye-websocket@~0.7.2",
   "_where": "C:\\Github\\agent\\node_modules\\mini-lr",
   "author": {
-    "email": "jcoglan@gmail.com",
     "name": "James Coglan",
+    "email": "jcoglan@gmail.com",
     "url": "http://jcoglan.com/"
   },
   "bugs": {
@@ -66,8 +75,8 @@
   "main": "./lib/faye/websocket",
   "maintainers": [
     {
-      "email": "jcoglan@gmail.com",
-      "name": "jcoglan"
+      "name": "jcoglan",
+      "email": "jcoglan@gmail.com"
     }
   ],
   "name": "faye-websocket",

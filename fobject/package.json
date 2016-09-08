@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "fobject@0.0.4",
+      {
+        "raw": "fobject@0.0.4",
+        "scope": null,
+        "escapedName": "fobject",
+        "name": "fobject",
+        "rawSpec": "0.0.4",
+        "spec": "0.0.4",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\accord"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/fobject-0.0.4.tgz_1462338152921_0.5107311552856117"
   },
   "_npmUser": {
-    "email": "slang800@gmail.com",
-    "name": "slang"
+    "name": "slang",
+    "email": "slang800@gmail.com"
   },
   "_npmVersion": "3.8.8",
   "_phantomChildren": {},
   "_requested": {
-    "name": "fobject",
     "raw": "fobject@0.0.4",
-    "rawSpec": "0.0.4",
     "scope": null,
+    "escapedName": "fobject",
+    "name": "fobject",
+    "rawSpec": "0.0.4",
     "spec": "0.0.4",
     "type": "version"
   },
@@ -38,8 +47,8 @@
   "_spec": "fobject@0.0.4",
   "_where": "C:\\Github\\agent\\node_modules\\accord",
   "author": {
-    "email": "slang800@gmail.com",
-    "name": "Sean Lang"
+    "name": "Sean Lang",
+    "email": "slang800@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/slang800/fobject/issues"
@@ -73,8 +82,8 @@
   "main": "./lib",
   "maintainers": [
     {
-      "email": "slang800@gmail.com",
-      "name": "slang"
+      "name": "slang",
+      "email": "slang800@gmail.com"
     }
   ],
   "name": "fobject",

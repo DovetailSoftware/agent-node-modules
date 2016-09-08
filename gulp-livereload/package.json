@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "gulp-livereload@^3.8.0",
+      {
+        "raw": "gulp-livereload@^3.8.0",
+        "scope": null,
+        "escapedName": "gulp-livereload",
+        "name": "gulp-livereload",
+        "rawSpec": "^3.8.0",
+        "spec": ">=3.8.0 <4.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,18 +20,19 @@
   "_location": "/gulp-livereload",
   "_nodeVersion": "2.3.3",
   "_npmUser": {
-    "email": "david@jcyr.us",
-    "name": "vohof"
+    "name": "vohof",
+    "email": "david@jcyr.us"
   },
   "_npmVersion": "2.11.3",
   "_phantomChildren": {
     "escape-string-regexp": "1.0.5"
   },
   "_requested": {
-    "name": "gulp-livereload",
     "raw": "gulp-livereload@^3.8.0",
-    "rawSpec": "^3.8.0",
     "scope": null,
+    "escapedName": "gulp-livereload",
+    "name": "gulp-livereload",
+    "rawSpec": "^3.8.0",
     "spec": ">=3.8.0 <4.0.0",
     "type": "range"
   },
@@ -66,8 +75,8 @@
   "main": "./index.js",
   "maintainers": [
     {
-      "email": "david@jcyr.us",
-      "name": "vohof"
+      "name": "vohof",
+      "email": "david@jcyr.us"
     }
   ],
   "name": "gulp-livereload",

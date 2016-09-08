@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "map-stream@~0.1.0",
+      {
+        "raw": "map-stream@~0.1.0",
+        "scope": null,
+        "escapedName": "map-stream",
+        "name": "map-stream",
+        "rawSpec": "~0.1.0",
+        "spec": ">=0.1.0 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\event-stream"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/map-stream",
   "_npmUser": {
-    "email": "dominic.tarr@gmail.com",
-    "name": "dominictarr"
+    "name": "dominictarr",
+    "email": "dominic.tarr@gmail.com"
   },
   "_npmVersion": "1.3.21",
   "_phantomChildren": {},
   "_requested": {
-    "name": "map-stream",
     "raw": "map-stream@~0.1.0",
-    "rawSpec": "~0.1.0",
     "scope": null,
+    "escapedName": "map-stream",
+    "name": "map-stream",
+    "rawSpec": "~0.1.0",
     "spec": ">=0.1.0 <0.2.0",
     "type": "range"
   },
@@ -33,8 +42,8 @@
   "_spec": "map-stream@~0.1.0",
   "_where": "C:\\Github\\agent\\node_modules\\event-stream",
   "author": {
-    "email": "dominic.tarr@gmail.com",
     "name": "Dominic Tarr",
+    "email": "dominic.tarr@gmail.com",
     "url": "http://dominictarr.com"
   },
   "bugs": {
@@ -58,8 +67,8 @@
   "homepage": "http://github.com/dominictarr/map-stream",
   "maintainers": [
     {
-      "email": "dominic.tarr@gmail.com",
-      "name": "dominictarr"
+      "name": "dominictarr",
+      "email": "dominic.tarr@gmail.com"
     }
   ],
   "name": "map-stream",

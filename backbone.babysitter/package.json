@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "backbone.babysitter@^0.1.0",
+      {
+        "raw": "backbone.babysitter@^0.1.0",
+        "scope": null,
+        "escapedName": "backbone.babysitter",
+        "name": "backbone.babysitter",
+        "rawSpec": "^0.1.0",
+        "spec": ">=0.1.0 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\backbone.marionette"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/backbone.babysitter-0.1.12.tgz_1464209950773_0.20693892682902515"
   },
   "_npmUser": {
-    "email": "ahumphreys87@googlemail.com",
-    "name": "ahumphreys87"
+    "name": "ahumphreys87",
+    "email": "ahumphreys87@googlemail.com"
   },
   "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
-    "name": "backbone.babysitter",
     "raw": "backbone.babysitter@^0.1.0",
-    "rawSpec": "^0.1.0",
     "scope": null,
+    "escapedName": "backbone.babysitter",
+    "name": "backbone.babysitter",
+    "rawSpec": "^0.1.0",
     "spec": ">=0.1.0 <0.2.0",
     "type": "range"
   },
@@ -38,8 +47,8 @@
   "_spec": "backbone.babysitter@^0.1.0",
   "_where": "C:\\Github\\agent\\node_modules\\backbone.marionette",
   "author": {
-    "email": "marionettejs@gmail.com",
     "name": "Derick Bailey",
+    "email": "marionettejs@gmail.com",
     "url": "http://derickbailey.lostechies.com"
   },
   "bugs": {
@@ -88,20 +97,20 @@
   "main": "lib/backbone.babysitter.js",
   "maintainers": [
     {
-      "email": "derickbailey@gmail.com",
-      "name": "derickbailey"
+      "name": "derickbailey",
+      "email": "derickbailey@gmail.com"
     },
     {
-      "email": "sam@samx.it",
-      "name": "samccone"
+      "name": "samccone",
+      "email": "sam@samx.it"
     },
     {
-      "email": "me@thejameskyle.com",
-      "name": "thejameskyle"
+      "name": "thejameskyle",
+      "email": "me@thejameskyle.com"
     },
     {
-      "email": "ahumphreys87@googlemail.com",
-      "name": "ahumphreys87"
+      "name": "ahumphreys87",
+      "email": "ahumphreys87@googlemail.com"
     }
   ],
   "name": "backbone.babysitter",

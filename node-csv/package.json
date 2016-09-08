@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "node-csv@https://github.com/voodootikigod/node-csv/tarball/master",
+      {
+        "raw": "node-csv@https://github.com/voodootikigod/node-csv/tarball/master",
+        "scope": null,
+        "escapedName": "node-csv",
+        "name": "node-csv",
+        "rawSpec": "https://github.com/voodootikigod/node-csv/tarball/master",
+        "spec": "https://github.com/voodootikigod/node-csv/tarball/master",
+        "type": "remote"
+      },
       "C:\\Github\\agent\\node_modules\\sifter"
     ]
   ],
@@ -12,10 +20,11 @@
   "_location": "/node-csv",
   "_phantomChildren": {},
   "_requested": {
-    "name": "node-csv",
     "raw": "node-csv@https://github.com/voodootikigod/node-csv/tarball/master",
-    "rawSpec": "https://github.com/voodootikigod/node-csv/tarball/master",
     "scope": null,
+    "escapedName": "node-csv",
+    "name": "node-csv",
+    "rawSpec": "https://github.com/voodootikigod/node-csv/tarball/master",
     "spec": "https://github.com/voodootikigod/node-csv/tarball/master",
     "type": "remote"
   },
@@ -28,13 +37,13 @@
   "_spec": "node-csv@https://github.com/voodootikigod/node-csv/tarball/master",
   "_where": "C:\\Github\\agent\\node_modules\\sifter",
   "author": {
-    "email": "chris@iterativedesigns.com",
-    "name": "Chris Williams"
+    "name": "Chris Williams",
+    "email": "chris@iterativedesigns.com"
   },
   "contributors": [
     {
-      "email": "sean.soper@gmail.com",
-      "name": "Sean Soper"
+      "name": "Sean Soper",
+      "email": "sean.soper@gmail.com"
     }
   ],
   "dependencies": {},

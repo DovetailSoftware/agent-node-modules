@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "strscan@>=1.0.1",
+      {
+        "raw": "strscan@>=1.0.1",
+        "scope": null,
+        "escapedName": "strscan",
+        "name": "strscan",
+        "rawSpec": ">=1.0.1",
+        "spec": ">=1.0.1",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\eco"
     ]
   ],
@@ -15,10 +23,11 @@
   "_npmVersion": "0.2.7-2",
   "_phantomChildren": {},
   "_requested": {
-    "name": "strscan",
     "raw": "strscan@>=1.0.1",
-    "rawSpec": ">=1.0.1",
     "scope": null,
+    "escapedName": "strscan",
+    "name": "strscan",
+    "rawSpec": ">=1.0.1",
     "spec": ">=1.0.1",
     "type": "range"
   },
@@ -43,8 +52,8 @@
     "lib": "./lib"
   },
   "dist": {
-    "shasum": "472d9bc00c68e906ef2fc22cdf762be7c61acc4d",
-    "tarball": "https://registry.npmjs.org/strscan/-/strscan-1.0.1.tgz"
+    "tarball": "https://registry.npmjs.org/strscan/-/strscan-1.0.1.tgz",
+    "shasum": "472d9bc00c68e906ef2fc22cdf762be7c61acc4d"
   },
   "engines": {
     "node": "*"

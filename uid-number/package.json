@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "uid-number@0.0.5",
+      {
+        "raw": "uid-number@0.0.5",
+        "scope": null,
+        "escapedName": "uid-number",
+        "name": "uid-number",
+        "rawSpec": "0.0.5",
+        "spec": "0.0.5",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\npmconf"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/uid-number",
   "_npmUser": {
-    "email": "i@izs.me",
-    "name": "isaacs"
+    "name": "isaacs",
+    "email": "i@izs.me"
   },
   "_npmVersion": "1.4.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "uid-number",
     "raw": "uid-number@0.0.5",
-    "rawSpec": "0.0.5",
     "scope": null,
+    "escapedName": "uid-number",
+    "name": "uid-number",
+    "rawSpec": "0.0.5",
     "spec": "0.0.5",
     "type": "version"
   },
@@ -33,8 +42,8 @@
   "_spec": "uid-number@0.0.5",
   "_where": "C:\\Github\\agent\\node_modules\\npmconf",
   "author": {
-    "email": "i@izs.me",
     "name": "Isaac Z. Schlueter",
+    "email": "i@izs.me",
     "url": "http://blog.izs.me/"
   },
   "bugs": {
@@ -56,8 +65,8 @@
   "main": "uid-number.js",
   "maintainers": [
     {
-      "email": "i@izs.me",
-      "name": "isaacs"
+      "name": "isaacs",
+      "email": "i@izs.me"
     }
   ],
   "name": "uid-number",

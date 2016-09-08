@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "when@3.x",
+      {
+        "raw": "when@3.x",
+        "scope": null,
+        "escapedName": "when",
+        "name": "when",
+        "rawSpec": "3.x",
+        "spec": ">=3.0.0 <4.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\accord"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/when",
   "_nodeVersion": "4.2.3",
   "_npmUser": {
-    "email": "info@cujojs.com",
-    "name": "cujojs"
+    "name": "cujojs",
+    "email": "info@cujojs.com"
   },
   "_npmVersion": "2.14.7",
   "_phantomChildren": {},
   "_requested": {
-    "name": "when",
     "raw": "when@3.x",
-    "rawSpec": "3.x",
     "scope": null,
+    "escapedName": "when",
+    "name": "when",
+    "rawSpec": "3.x",
     "spec": ">=3.0.0 <4.0.0",
     "type": "range"
   },
@@ -35,8 +44,8 @@
   "_spec": "when@3.x",
   "_where": "C:\\Github\\agent\\node_modules\\accord",
   "browser": {
-    "vertx": false,
-    "when": "./dist/browser/when.js"
+    "when": "./dist/browser/when.js",
+    "vertx": false
   },
   "bugs": {
     "url": "https://github.com/cujojs/when/issues"
@@ -108,8 +117,8 @@
   "main": "when.js",
   "maintainers": [
     {
-      "email": "info@cujojs.com",
-      "name": "cujojs"
+      "name": "cujojs",
+      "email": "info@cujojs.com"
     }
   ],
   "name": "when",

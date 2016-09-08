@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "good-listener@^1.1.6",
+      {
+        "raw": "good-listener@^1.1.6",
+        "scope": null,
+        "escapedName": "good-listener",
+        "name": "good-listener",
+        "rawSpec": "^1.1.6",
+        "spec": ">=1.1.6 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\clipboard"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/good-listener-1.1.7.tgz_1455227710234_0.6721981486771256"
   },
   "_npmUser": {
-    "email": "zno.rocha@gmail.com",
-    "name": "zenorocha"
+    "name": "zenorocha",
+    "email": "zno.rocha@gmail.com"
   },
   "_npmVersion": "3.3.12",
   "_phantomChildren": {},
   "_requested": {
-    "name": "good-listener",
     "raw": "good-listener@^1.1.6",
-    "rawSpec": "^1.1.6",
     "scope": null,
+    "escapedName": "good-listener",
+    "name": "good-listener",
+    "rawSpec": "^1.1.6",
     "spec": ">=1.1.6 <2.0.0",
     "type": "range"
   },
@@ -75,8 +84,8 @@
   "main": "src/listen.js",
   "maintainers": [
     {
-      "email": "zno.rocha@gmail.com",
-      "name": "zenorocha"
+      "name": "zenorocha",
+      "email": "zno.rocha@gmail.com"
     }
   ],
   "name": "good-listener",

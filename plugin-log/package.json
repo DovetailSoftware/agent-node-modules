@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "plugin-log@^0.1.0",
+      {
+        "raw": "plugin-log@^0.1.0",
+        "scope": null,
+        "escapedName": "plugin-log",
+        "name": "plugin-log",
+        "rawSpec": "^0.1.0",
+        "spec": ">=0.1.0 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\gulp-bump"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/plugin-log",
   "_nodeVersion": "2.5.0",
   "_npmUser": {
-    "email": "me@slacy.me",
-    "name": "stevelacy"
+    "name": "stevelacy",
+    "email": "me@slacy.me"
   },
   "_npmVersion": "2.13.2",
   "_phantomChildren": {},
   "_requested": {
-    "name": "plugin-log",
     "raw": "plugin-log@^0.1.0",
-    "rawSpec": "^0.1.0",
     "scope": null,
+    "escapedName": "plugin-log",
+    "name": "plugin-log",
+    "rawSpec": "^0.1.0",
     "spec": ">=0.1.0 <0.2.0",
     "type": "range"
   },
@@ -34,8 +43,8 @@
   "_spec": "plugin-log@^0.1.0",
   "_where": "C:\\Github\\agent\\node_modules\\gulp-bump",
   "author": {
-    "email": "contact@wearefractal.com",
     "name": "Fractal",
+    "email": "contact@wearefractal.com",
     "url": "http://wearefractal.com/"
   },
   "bugs": {
@@ -62,8 +71,8 @@
   "homepage": "https://github.com/stevelacy/plugin-log#readme",
   "maintainers": [
     {
-      "email": "me@slacy.me",
-      "name": "stevelacy"
+      "name": "stevelacy",
+      "email": "me@slacy.me"
     }
   ],
   "name": "plugin-log",

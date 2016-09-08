@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "jquery@2.2.1",
+      {
+        "raw": "jquery@2.2.1",
+        "scope": null,
+        "escapedName": "jquery",
+        "name": "jquery",
+        "rawSpec": "2.2.1",
+        "spec": "2.2.1",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/jquery-2.2.1.tgz_1456168325917_0.42471840139478445"
   },
   "_npmUser": {
-    "email": "timmywillisn@gmail.com",
-    "name": "timmywil"
+    "name": "timmywil",
+    "email": "timmywillisn@gmail.com"
   },
   "_npmVersion": "2.14.19",
   "_phantomChildren": {},
   "_requested": {
-    "name": "jquery",
     "raw": "jquery@2.2.1",
-    "rawSpec": "2.2.1",
     "scope": null,
+    "escapedName": "jquery",
+    "name": "jquery",
+    "rawSpec": "2.2.1",
     "spec": "2.2.1",
     "type": "version"
   },
@@ -118,20 +127,20 @@
   "main": "dist/jquery.js",
   "maintainers": [
     {
-      "email": "dave.methvin@gmail.com",
-      "name": "dmethvin"
+      "name": "dmethvin",
+      "email": "dave.methvin@gmail.com"
     },
     {
-      "email": "scott.gonzalez@gmail.com",
-      "name": "scott.gonzalez"
+      "name": "scott.gonzalez",
+      "email": "scott.gonzalez@gmail.com"
     },
     {
-      "email": "m.goleb@gmail.com",
-      "name": "m_gol"
+      "name": "m_gol",
+      "email": "m.goleb@gmail.com"
     },
     {
-      "email": "timmywillisn@gmail.com",
-      "name": "timmywil"
+      "name": "timmywil",
+      "email": "timmywillisn@gmail.com"
     }
   ],
   "name": "jquery",

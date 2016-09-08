@@ -1,7 +1,24 @@
 {
   "_args": [
     [
-      "jquery-form@github:malsup/form#3.51",
+      {
+        "raw": "jquery-form@github:malsup/form#3.51",
+        "scope": null,
+        "escapedName": "jquery-form",
+        "name": "jquery-form",
+        "rawSpec": "github:malsup/form#3.51",
+        "spec": "github:malsup/form#3.51",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:malsup/form.git#3.51",
+          "sshUrl": "git+ssh://git@github.com/malsup/form.git#3.51",
+          "httpsUrl": "git+https://github.com/malsup/form.git#3.51",
+          "gitUrl": "git://github.com/malsup/form.git#3.51",
+          "shortcut": "github:malsup/form#3.51",
+          "directUrl": "https://raw.githubusercontent.com/malsup/form/3.51/package.json"
+        }
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,27 +29,28 @@
   "_location": "/jquery-form",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "jquery-form@github:malsup/form#3.51",
+    "scope": null,
+    "escapedName": "jquery-form",
+    "name": "jquery-form",
+    "rawSpec": "github:malsup/form#3.51",
+    "spec": "github:malsup/form#3.51",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/malsup/form/3.51/package.json",
-      "gitUrl": "git://github.com/malsup/form.git#3.51",
-      "httpsUrl": "git+https://github.com/malsup/form.git#3.51",
-      "shortcut": "github:malsup/form#3.51",
+      "type": "github",
       "ssh": "git@github.com:malsup/form.git#3.51",
       "sshUrl": "git+ssh://git@github.com/malsup/form.git#3.51",
-      "type": "github"
-    },
-    "name": "jquery-form",
-    "raw": "jquery-form@github:malsup/form#3.51",
-    "rawSpec": "github:malsup/form#3.51",
-    "scope": null,
-    "spec": "github:malsup/form#3.51",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/malsup/form.git#3.51",
+      "gitUrl": "git://github.com/malsup/form.git#3.51",
+      "shortcut": "github:malsup/form#3.51",
+      "directUrl": "https://raw.githubusercontent.com/malsup/form/3.51/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "git://github.com/malsup/form.git#6bf24a5f6d8be65f4e5491863180c09356d9dadd",
-  "_shasum": "e3d1f1d577562fc88b298c4fb1f2c4cbc0188077",
+  "_shasum": "bbbbdb3a6f3e381abb956d2ef0af9d8247e494bc",
   "_shrinkwrap": null,
   "_spec": "jquery-form@github:malsup/form#3.51",
   "_where": "C:\\Github\\agent",
@@ -59,10 +77,10 @@
   "gitHead": "6bf24a5f6d8be65f4e5491863180c09356d9dadd",
   "homepage": "http://jquery.malsup.com/form/",
   "jam": {
+    "main": "jquery.form.js",
     "dependencies": {
       "jquery": ">=1.5.0"
-    },
-    "main": "jquery.form.js"
+    }
   },
   "keywords": [
     "form",

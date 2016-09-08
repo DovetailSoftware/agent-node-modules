@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "jade@0.26.3",
+      {
+        "raw": "jade@0.26.3",
+        "scope": null,
+        "escapedName": "jade",
+        "name": "jade",
+        "rawSpec": "0.26.3",
+        "spec": "0.26.3",
+        "type": "version"
+      },
       "C:\\Github\\agent\\node_modules\\mocha"
     ]
   ],
@@ -12,10 +20,11 @@
   "_location": "/jade",
   "_phantomChildren": {},
   "_requested": {
-    "name": "jade",
     "raw": "jade@0.26.3",
-    "rawSpec": "0.26.3",
     "scope": null,
+    "escapedName": "jade",
+    "name": "jade",
+    "rawSpec": "0.26.3",
     "spec": "0.26.3",
     "type": "version"
   },
@@ -28,8 +37,8 @@
   "_spec": "jade@0.26.3",
   "_where": "C:\\Github\\agent\\node_modules\\mocha",
   "author": {
-    "email": "tj@vision-media.ca",
-    "name": "TJ Holowaychuk"
+    "name": "TJ Holowaychuk",
+    "email": "tj@vision-media.ca"
   },
   "bin": {
     "jade": "./bin/jade"
@@ -66,8 +75,8 @@
   "main": "./index.js",
   "maintainers": [
     {
-      "email": "tj@vision-media.ca",
-      "name": "tjholowaychuk"
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
     }
   ],
   "man": [

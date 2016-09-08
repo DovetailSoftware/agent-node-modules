@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "throttleit@~0.0.2",
+      {
+        "raw": "throttleit@~0.0.2",
+        "scope": null,
+        "escapedName": "throttleit",
+        "name": "throttleit",
+        "rawSpec": "~0.0.2",
+        "spec": ">=0.0.2 <0.1.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\request-progress"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/throttleit",
   "_npmUser": {
-    "email": "nathan@tootallnate.net",
-    "name": "tootallnate"
+    "name": "tootallnate",
+    "email": "nathan@tootallnate.net"
   },
   "_npmVersion": "1.2.15",
   "_phantomChildren": {},
   "_requested": {
-    "name": "throttleit",
     "raw": "throttleit@~0.0.2",
-    "rawSpec": "~0.0.2",
     "scope": null,
+    "escapedName": "throttleit",
+    "name": "throttleit",
+    "rawSpec": "~0.0.2",
     "spec": ">=0.0.2 <0.1.0",
     "type": "range"
   },
@@ -54,12 +63,12 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "tj@vision-media.ca",
-      "name": "tjholowaychuk"
+      "name": "tjholowaychuk",
+      "email": "tj@vision-media.ca"
     },
     {
-      "email": "nathan@tootallnate.net",
-      "name": "tootallnate"
+      "name": "tootallnate",
+      "email": "nathan@tootallnate.net"
     }
   ],
   "name": "throttleit",

@@ -1,7 +1,24 @@
 {
   "_args": [
     [
-      "bootstrap@github:twbs/bootstrap#v2.3.2",
+      {
+        "raw": "bootstrap@github:twbs/bootstrap#v2.3.2",
+        "scope": null,
+        "escapedName": "bootstrap",
+        "name": "bootstrap",
+        "rawSpec": "github:twbs/bootstrap#v2.3.2",
+        "spec": "github:twbs/bootstrap#v2.3.2",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:twbs/bootstrap.git#v2.3.2",
+          "sshUrl": "git+ssh://git@github.com/twbs/bootstrap.git#v2.3.2",
+          "httpsUrl": "git+https://github.com/twbs/bootstrap.git#v2.3.2",
+          "gitUrl": "git://github.com/twbs/bootstrap.git#v2.3.2",
+          "shortcut": "github:twbs/bootstrap#v2.3.2",
+          "directUrl": "https://raw.githubusercontent.com/twbs/bootstrap/v2.3.2/package.json"
+        }
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,27 +29,28 @@
   "_location": "/bootstrap",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "bootstrap@github:twbs/bootstrap#v2.3.2",
+    "scope": null,
+    "escapedName": "bootstrap",
+    "name": "bootstrap",
+    "rawSpec": "github:twbs/bootstrap#v2.3.2",
+    "spec": "github:twbs/bootstrap#v2.3.2",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/twbs/bootstrap/v2.3.2/package.json",
-      "gitUrl": "git://github.com/twbs/bootstrap.git#v2.3.2",
-      "httpsUrl": "git+https://github.com/twbs/bootstrap.git#v2.3.2",
-      "shortcut": "github:twbs/bootstrap#v2.3.2",
+      "type": "github",
       "ssh": "git@github.com:twbs/bootstrap.git#v2.3.2",
       "sshUrl": "git+ssh://git@github.com/twbs/bootstrap.git#v2.3.2",
-      "type": "github"
-    },
-    "name": "bootstrap",
-    "raw": "bootstrap@github:twbs/bootstrap#v2.3.2",
-    "rawSpec": "github:twbs/bootstrap#v2.3.2",
-    "scope": null,
-    "spec": "github:twbs/bootstrap#v2.3.2",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/twbs/bootstrap.git#v2.3.2",
+      "gitUrl": "git://github.com/twbs/bootstrap.git#v2.3.2",
+      "shortcut": "github:twbs/bootstrap#v2.3.2",
+      "directUrl": "https://raw.githubusercontent.com/twbs/bootstrap/v2.3.2/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "git://github.com/twbs/bootstrap.git#b4c4072679943773a7582daa63f545ba818fa627",
-  "_shasum": "b76930a8909351bbd1502a008be3f062dfbaafbc",
+  "_shasum": "7bba8d45201c1e554dae3f6aad255fbdd0b876ea",
   "_shrinkwrap": null,
   "_spec": "bootstrap@github:twbs/bootstrap#v2.3.2",
   "_where": "C:\\Github\\agent",

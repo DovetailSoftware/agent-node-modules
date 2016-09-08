@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "grunt-legacy-log-utils@~0.1.1",
+      {
+        "raw": "grunt-legacy-log-utils@~0.1.1",
+        "scope": null,
+        "escapedName": "grunt-legacy-log-utils",
+        "name": "grunt-legacy-log-utils",
+        "rawSpec": "~0.1.1",
+        "spec": ">=0.1.1 <0.2.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\grunt-legacy-log"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/grunt-legacy-log-utils",
   "_nodeVersion": "0.12.2",
   "_npmUser": {
-    "email": "cowboy@rj3.net",
-    "name": "cowboy"
+    "name": "cowboy",
+    "email": "cowboy@rj3.net"
   },
   "_npmVersion": "2.7.6",
   "_phantomChildren": {},
   "_requested": {
-    "name": "grunt-legacy-log-utils",
     "raw": "grunt-legacy-log-utils@~0.1.1",
-    "rawSpec": "~0.1.1",
     "scope": null,
+    "escapedName": "grunt-legacy-log-utils",
+    "name": "grunt-legacy-log-utils",
+    "rawSpec": "~0.1.1",
     "spec": ">=0.1.1 <0.2.0",
     "type": "range"
   },
@@ -75,8 +84,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "cowboy@rj3.net",
-      "name": "cowboy"
+      "name": "cowboy",
+      "email": "cowboy@rj3.net"
     }
   ],
   "name": "grunt-legacy-log-utils",

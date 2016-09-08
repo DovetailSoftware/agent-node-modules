@@ -1,51 +1,60 @@
 {
   "_args": [
     [
-      "gulp-header@^1.7.1",
+      {
+        "raw": "gulp-header@^1.7.1",
+        "scope": null,
+        "escapedName": "gulp-header",
+        "name": "gulp-header",
+        "rawSpec": "^1.7.1",
+        "spec": ">=1.7.1 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\at.js"
     ]
   ],
   "_from": "gulp-header@>=1.7.1 <2.0.0",
-  "_id": "gulp-header@1.8.7",
+  "_id": "gulp-header@1.8.8",
   "_inCache": true,
   "_installable": true,
   "_location": "/gulp-header",
-  "_nodeVersion": "4.4.5",
+  "_nodeVersion": "4.4.7",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/gulp-header-1.8.7.tgz_1466536692775_0.6511960765346885"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/gulp-header-1.8.8.tgz_1470820645345_0.7174483358394355"
   },
   "_npmUser": {
-    "email": "tracker1@gmail.com",
-    "name": "tracker1"
+    "name": "tracker1",
+    "email": "tracker1@gmail.com"
   },
-  "_npmVersion": "2.15.5",
+  "_npmVersion": "2.15.8",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
-    "inherits": "2.0.1",
+    "inherits": "2.0.3",
     "process-nextick-args": "1.0.7",
     "string_decoder": "0.10.31",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
-    "name": "gulp-header",
     "raw": "gulp-header@^1.7.1",
-    "rawSpec": "^1.7.1",
     "scope": null,
+    "escapedName": "gulp-header",
+    "name": "gulp-header",
+    "rawSpec": "^1.7.1",
     "spec": ">=1.7.1 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/at.js"
   ],
-  "_resolved": "https://registry.npmjs.org/gulp-header/-/gulp-header-1.8.7.tgz",
-  "_shasum": "e456f9390e5c86102d8f9b1fc49ca8f2b8902e0c",
+  "_resolved": "https://registry.npmjs.org/gulp-header/-/gulp-header-1.8.8.tgz",
+  "_shasum": "4509c64677aab56b5ee8e4669a79b1655933a49e",
   "_shrinkwrap": null,
   "_spec": "gulp-header@^1.7.1",
   "_where": "C:\\Github\\agent\\node_modules\\at.js",
   "author": {
-    "email": "mxryan@godaddy.com",
     "name": "Michael J. Ryan",
+    "email": "mxryan@godaddy.com",
     "url": "http://github.com/tracker1"
   },
   "bugs": {
@@ -57,8 +66,8 @@
       "url": "http://github.com/godaddy"
     },
     {
-      "email": "douglasduteil@gmail.com",
       "name": "Douglas Duteil",
+      "email": "douglasduteil@gmail.com",
       "url": "http://github.com/douglasduteil"
     }
   ],
@@ -80,10 +89,10 @@
     "test": "test"
   },
   "dist": {
-    "shasum": "e456f9390e5c86102d8f9b1fc49ca8f2b8902e0c",
-    "tarball": "https://registry.npmjs.org/gulp-header/-/gulp-header-1.8.7.tgz"
+    "shasum": "4509c64677aab56b5ee8e4669a79b1655933a49e",
+    "tarball": "https://registry.npmjs.org/gulp-header/-/gulp-header-1.8.8.tgz"
   },
-  "gitHead": "42c61d89b151030a065f793d17ee14a494a47bc6",
+  "gitHead": "4d219649ba55069fe742195341fa3b71ae65976f",
   "homepage": "https://github.com/tracker1/gulp-header#readme",
   "https-proxy": null,
   "keywords": [
@@ -95,8 +104,8 @@
   "main": "./index.js",
   "maintainers": [
     {
-      "email": "tracker1@gmail.com",
-      "name": "tracker1"
+      "name": "tracker1",
+      "email": "tracker1@gmail.com"
     }
   ],
   "name": "gulp-header",
@@ -113,5 +122,5 @@
     "publish-patch": "npm version patch && git push origin master && git push --tags",
     "test": "mocha --reporter spec"
   },
-  "version": "1.8.7"
+  "version": "1.8.8"
 }

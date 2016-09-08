@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "fastparse@^1.0.0",
+      {
+        "raw": "fastparse@^1.0.0",
+        "scope": null,
+        "escapedName": "fastparse",
+        "name": "fastparse",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\handlebars-loader"
     ]
   ],
@@ -12,16 +20,17 @@
   "_location": "/fastparse",
   "_nodeVersion": "0.12.2",
   "_npmUser": {
-    "email": "tobias.koppers@googlemail.com",
-    "name": "sokra"
+    "name": "sokra",
+    "email": "tobias.koppers@googlemail.com"
   },
   "_npmVersion": "2.10.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "fastparse",
     "raw": "fastparse@^1.0.0",
-    "rawSpec": "^1.0.0",
     "scope": null,
+    "escapedName": "fastparse",
+    "name": "fastparse",
+    "rawSpec": "^1.0.0",
     "spec": ">=1.0.0 <2.0.0",
     "type": "range"
   },
@@ -63,8 +72,8 @@
   "main": "lib/Parser.js",
   "maintainers": [
     {
-      "email": "tobias.koppers@googlemail.com",
-      "name": "sokra"
+      "name": "sokra",
+      "email": "tobias.koppers@googlemail.com"
     }
   ],
   "name": "fastparse",

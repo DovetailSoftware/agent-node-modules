@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "serve-static@~1.10.0",
+      {
+        "raw": "serve-static@~1.10.0",
+        "scope": null,
+        "escapedName": "serve-static",
+        "name": "serve-static",
+        "rawSpec": "~1.10.0",
+        "spec": ">=1.10.0 <1.11.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\connect"
     ]
   ],
@@ -16,8 +24,8 @@
     "tmp": "tmp/serve-static-1.10.3.tgz_1464664781274_0.7150349044241011"
   },
   "_npmUser": {
-    "email": "doug@somethingdoug.com",
-    "name": "dougwilson"
+    "name": "dougwilson",
+    "email": "doug@somethingdoug.com"
   },
   "_npmVersion": "2.15.1",
   "_phantomChildren": {
@@ -32,10 +40,11 @@
     "range-parser": "1.0.3"
   },
   "_requested": {
-    "name": "serve-static",
     "raw": "serve-static@~1.10.0",
-    "rawSpec": "~1.10.0",
     "scope": null,
+    "escapedName": "serve-static",
+    "name": "serve-static",
+    "rawSpec": "~1.10.0",
     "spec": ">=1.10.0 <1.11.0",
     "type": "range"
   },
@@ -48,8 +57,8 @@
   "_spec": "serve-static@~1.10.0",
   "_where": "C:\\Github\\agent\\node_modules\\connect",
   "author": {
-    "email": "doug@somethingdoug.com",
-    "name": "Douglas Christopher Wilson"
+    "name": "Douglas Christopher Wilson",
+    "email": "doug@somethingdoug.com"
   },
   "bugs": {
     "url": "https://github.com/expressjs/serve-static/issues"
@@ -87,8 +96,8 @@
   "license": "MIT",
   "maintainers": [
     {
-      "email": "doug@somethingdoug.com",
-      "name": "dougwilson"
+      "name": "dougwilson",
+      "email": "doug@somethingdoug.com"
     }
   ],
   "name": "serve-static",

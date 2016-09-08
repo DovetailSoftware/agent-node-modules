@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "esprima@~ 1.0.2",
+      {
+        "raw": "esprima@~ 1.0.2",
+        "scope": null,
+        "escapedName": "esprima",
+        "name": "esprima",
+        "rawSpec": "~ 1.0.2",
+        "spec": ">=1.0.2 <1.1.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\js-yaml"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/esprima",
   "_npmUser": {
-    "email": "ariya.hidayat@gmail.com",
-    "name": "ariya"
+    "name": "ariya",
+    "email": "ariya.hidayat@gmail.com"
   },
   "_npmVersion": "1.1.61",
   "_phantomChildren": {},
   "_requested": {
-    "name": "esprima",
     "raw": "esprima@~ 1.0.2",
-    "rawSpec": "~ 1.0.2",
     "scope": null,
+    "escapedName": "esprima",
+    "name": "esprima",
+    "rawSpec": "~ 1.0.2",
     "spec": ">=1.0.2 <1.1.0",
     "type": "range"
   },
@@ -77,8 +86,8 @@
   "main": "esprima.js",
   "maintainers": [
     {
-      "email": "ariya.hidayat@gmail.com",
-      "name": "ariya"
+      "name": "ariya",
+      "email": "ariya.hidayat@gmail.com"
     }
   ],
   "name": "esprima",

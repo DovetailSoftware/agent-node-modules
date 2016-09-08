@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "grunt-legacy-util@~0.2.0",
+      {
+        "raw": "grunt-legacy-util@~0.2.0",
+        "scope": null,
+        "escapedName": "grunt-legacy-util",
+        "name": "grunt-legacy-util",
+        "rawSpec": "~0.2.0",
+        "spec": ">=0.2.0 <0.3.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\grunt"
     ]
   ],
@@ -11,16 +19,17 @@
   "_installable": true,
   "_location": "/grunt-legacy-util",
   "_npmUser": {
-    "email": "cowboy@rj3.net",
-    "name": "cowboy"
+    "name": "cowboy",
+    "email": "cowboy@rj3.net"
   },
   "_npmVersion": "1.4.4",
   "_phantomChildren": {},
   "_requested": {
-    "name": "grunt-legacy-util",
     "raw": "grunt-legacy-util@~0.2.0",
-    "rawSpec": "~0.2.0",
     "scope": null,
+    "escapedName": "grunt-legacy-util",
+    "name": "grunt-legacy-util",
+    "rawSpec": "~0.2.0",
     "spec": ">=0.2.0 <0.3.0",
     "type": "range"
   },
@@ -78,12 +87,12 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "tyler@sleekcode.net",
-      "name": "tkellen"
+      "name": "tkellen",
+      "email": "tyler@sleekcode.net"
     },
     {
-      "email": "cowboy@rj3.net",
-      "name": "cowboy"
+      "name": "cowboy",
+      "email": "cowboy@rj3.net"
     }
   ],
   "name": "grunt-legacy-util",

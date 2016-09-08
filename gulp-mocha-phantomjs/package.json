@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "gulp-mocha-phantomjs@^0.10.1",
+      {
+        "raw": "gulp-mocha-phantomjs@^0.10.1",
+        "scope": null,
+        "escapedName": "gulp-mocha-phantomjs",
+        "name": "gulp-mocha-phantomjs",
+        "rawSpec": "^0.10.1",
+        "spec": ">=0.10.1 <0.11.0",
+        "type": "range"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,8 +20,8 @@
   "_location": "/gulp-mocha-phantomjs",
   "_nodeVersion": "0.10.32",
   "_npmUser": {
-    "email": "ruihu.pvt@gmail.com",
-    "name": "mrhooray"
+    "name": "mrhooray",
+    "email": "ruihu.pvt@gmail.com"
   },
   "_npmVersion": "2.11.3",
   "_phantomChildren": {
@@ -42,10 +50,11 @@
     "xtend": "3.0.0"
   },
   "_requested": {
-    "name": "gulp-mocha-phantomjs",
     "raw": "gulp-mocha-phantomjs@^0.10.1",
-    "rawSpec": "^0.10.1",
     "scope": null,
+    "escapedName": "gulp-mocha-phantomjs",
+    "name": "gulp-mocha-phantomjs",
+    "rawSpec": "^0.10.1",
     "spec": ">=0.10.1 <0.11.0",
     "type": "range"
   },
@@ -58,8 +67,8 @@
   "_spec": "gulp-mocha-phantomjs@^0.10.1",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "ruihu.pvt@gmail.com",
-    "name": "Rui Hu"
+    "name": "Rui Hu",
+    "email": "ruihu.pvt@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/mrhooray/gulp-mocha-phantomjs/issues"
@@ -102,8 +111,8 @@
   "main": "index.js",
   "maintainers": [
     {
-      "email": "ruihu.pvt@gmail.com",
-      "name": "mrhooray"
+      "name": "mrhooray",
+      "email": "ruihu.pvt@gmail.com"
     }
   ],
   "name": "gulp-mocha-phantomjs",

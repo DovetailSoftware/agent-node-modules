@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "clipboard@1.5.8",
+      {
+        "raw": "clipboard@1.5.8",
+        "scope": null,
+        "escapedName": "clipboard",
+        "name": "clipboard",
+        "rawSpec": "1.5.8",
+        "spec": "1.5.8",
+        "type": "version"
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/clipboard-1.5.8.tgz_1454614408541_0.9606464353855699"
   },
   "_npmUser": {
-    "email": "zno.rocha@gmail.com",
-    "name": "zenorocha"
+    "name": "zenorocha",
+    "email": "zno.rocha@gmail.com"
   },
   "_npmVersion": "3.3.12",
   "_phantomChildren": {},
   "_requested": {
-    "name": "clipboard",
     "raw": "clipboard@1.5.8",
-    "rawSpec": "1.5.8",
     "scope": null,
+    "escapedName": "clipboard",
+    "name": "clipboard",
+    "rawSpec": "1.5.8",
     "spec": "1.5.8",
     "type": "version"
   },
@@ -81,8 +90,8 @@
   "main": "lib/clipboard.js",
   "maintainers": [
     {
-      "email": "zno.rocha@gmail.com",
-      "name": "zenorocha"
+      "name": "zenorocha",
+      "email": "zno.rocha@gmail.com"
     }
   ],
   "name": "clipboard",

@@ -1,7 +1,24 @@
 {
   "_args": [
     [
-      "bootstrap-timepicker@github:jdewit/bootstrap-timepicker#f6cef44",
+      {
+        "raw": "bootstrap-timepicker@github:jdewit/bootstrap-timepicker#f6cef44",
+        "scope": null,
+        "escapedName": "bootstrap-timepicker",
+        "name": "bootstrap-timepicker",
+        "rawSpec": "github:jdewit/bootstrap-timepicker#f6cef44",
+        "spec": "github:jdewit/bootstrap-timepicker#f6cef44",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:jdewit/bootstrap-timepicker.git#f6cef44",
+          "sshUrl": "git+ssh://git@github.com/jdewit/bootstrap-timepicker.git#f6cef44",
+          "httpsUrl": "git+https://github.com/jdewit/bootstrap-timepicker.git#f6cef44",
+          "gitUrl": "git://github.com/jdewit/bootstrap-timepicker.git#f6cef44",
+          "shortcut": "github:jdewit/bootstrap-timepicker#f6cef44",
+          "directUrl": "https://raw.githubusercontent.com/jdewit/bootstrap-timepicker/f6cef44/package.json"
+        }
+      },
       "C:\\Github\\agent"
     ]
   ],
@@ -12,33 +29,34 @@
   "_location": "/bootstrap-timepicker",
   "_phantomChildren": {},
   "_requested": {
+    "raw": "bootstrap-timepicker@github:jdewit/bootstrap-timepicker#f6cef44",
+    "scope": null,
+    "escapedName": "bootstrap-timepicker",
+    "name": "bootstrap-timepicker",
+    "rawSpec": "github:jdewit/bootstrap-timepicker#f6cef44",
+    "spec": "github:jdewit/bootstrap-timepicker#f6cef44",
+    "type": "hosted",
     "hosted": {
-      "directUrl": "https://raw.githubusercontent.com/jdewit/bootstrap-timepicker/f6cef44/package.json",
-      "gitUrl": "git://github.com/jdewit/bootstrap-timepicker.git#f6cef44",
-      "httpsUrl": "git+https://github.com/jdewit/bootstrap-timepicker.git#f6cef44",
-      "shortcut": "github:jdewit/bootstrap-timepicker#f6cef44",
+      "type": "github",
       "ssh": "git@github.com:jdewit/bootstrap-timepicker.git#f6cef44",
       "sshUrl": "git+ssh://git@github.com/jdewit/bootstrap-timepicker.git#f6cef44",
-      "type": "github"
-    },
-    "name": "bootstrap-timepicker",
-    "raw": "bootstrap-timepicker@github:jdewit/bootstrap-timepicker#f6cef44",
-    "rawSpec": "github:jdewit/bootstrap-timepicker#f6cef44",
-    "scope": null,
-    "spec": "github:jdewit/bootstrap-timepicker#f6cef44",
-    "type": "hosted"
+      "httpsUrl": "git+https://github.com/jdewit/bootstrap-timepicker.git#f6cef44",
+      "gitUrl": "git://github.com/jdewit/bootstrap-timepicker.git#f6cef44",
+      "shortcut": "github:jdewit/bootstrap-timepicker#f6cef44",
+      "directUrl": "https://raw.githubusercontent.com/jdewit/bootstrap-timepicker/f6cef44/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "git://github.com/jdewit/bootstrap-timepicker.git#f6cef44b5aecdf19704ea9b8c0af2b760ddef63b",
-  "_shasum": "b2fc06f76570975000c9dc06fee440021405280e",
+  "_shasum": "e3b70f3668b3b3340da8f9af1e43bd49fd38a8d1",
   "_shrinkwrap": null,
   "_spec": "bootstrap-timepicker@github:jdewit/bootstrap-timepicker#f6cef44",
   "_where": "C:\\Github\\agent",
   "author": {
-    "email": "joris.w.dewit@gmail.com",
     "name": "Joris de Wit",
+    "email": "joris.w.dewit@gmail.com",
     "url": "http://jorisdewit.ca"
   },
   "bugs": {

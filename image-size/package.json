@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "image-size@~0.5.0",
+      {
+        "raw": "image-size@~0.5.0",
+        "scope": null,
+        "escapedName": "image-size",
+        "name": "image-size",
+        "rawSpec": "~0.5.0",
+        "spec": ">=0.5.0 <0.6.0",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\less"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/image-size-0.5.0.tgz_1458683483601_0.9503235800657421"
   },
   "_npmUser": {
-    "email": "zeke@sikelianos.com",
-    "name": "zeke"
+    "name": "zeke",
+    "email": "zeke@sikelianos.com"
   },
   "_npmVersion": "3.7.3",
   "_phantomChildren": {},
   "_requested": {
-    "name": "image-size",
     "raw": "image-size@~0.5.0",
-    "rawSpec": "~0.5.0",
     "scope": null,
+    "escapedName": "image-size",
+    "name": "image-size",
+    "rawSpec": "~0.5.0",
     "spec": ">=0.5.0 <0.6.0",
     "type": "range"
   },
@@ -38,8 +47,8 @@
   "_spec": "image-size@~0.5.0",
   "_where": "C:\\Github\\agent\\node_modules\\less",
   "author": {
-    "email": "aditya@netroy.in",
     "name": "netroy",
+    "email": "aditya@netroy.in",
     "url": "http://netroy.in/"
   },
   "bin": {
@@ -93,16 +102,16 @@
   "main": "lib/index.js",
   "maintainers": [
     {
-      "email": "aditya@netroy.in",
-      "name": "netroy"
+      "name": "netroy",
+      "email": "aditya@netroy.in"
     },
     {
-      "email": "snnskwtnb@gmail.com",
-      "name": "shinnn"
+      "name": "shinnn",
+      "email": "snnskwtnb@gmail.com"
     },
     {
-      "email": "zeke@sikelianos.com",
-      "name": "zeke"
+      "name": "zeke",
+      "email": "zeke@sikelianos.com"
     }
   ],
   "name": "image-size",

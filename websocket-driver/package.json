@@ -1,7 +1,15 @@
 {
   "_args": [
     [
-      "websocket-driver@>=0.3.6",
+      {
+        "raw": "websocket-driver@>=0.3.6",
+        "scope": null,
+        "escapedName": "websocket-driver",
+        "name": "websocket-driver",
+        "rawSpec": ">=0.3.6",
+        "spec": ">=0.3.6",
+        "type": "range"
+      },
       "C:\\Github\\agent\\node_modules\\faye-websocket"
     ]
   ],
@@ -16,16 +24,17 @@
     "tmp": "tmp/websocket-driver-0.6.5.tgz_1463730072239_0.9899731166660786"
   },
   "_npmUser": {
-    "email": "jcoglan@gmail.com",
-    "name": "jcoglan"
+    "name": "jcoglan",
+    "email": "jcoglan@gmail.com"
   },
   "_npmVersion": "2.15.1",
   "_phantomChildren": {},
   "_requested": {
-    "name": "websocket-driver",
     "raw": "websocket-driver@>=0.3.6",
-    "rawSpec": ">=0.3.6",
     "scope": null,
+    "escapedName": "websocket-driver",
+    "name": "websocket-driver",
+    "rawSpec": ">=0.3.6",
     "spec": ">=0.3.6",
     "type": "range"
   },
@@ -39,8 +48,8 @@
   "_spec": "websocket-driver@>=0.3.6",
   "_where": "C:\\Github\\agent\\node_modules\\faye-websocket",
   "author": {
-    "email": "jcoglan@gmail.com",
     "name": "James Coglan",
+    "email": "jcoglan@gmail.com",
     "url": "http://jcoglan.com/"
   },
   "bugs": {
@@ -71,8 +80,8 @@
   "main": "./lib/websocket/driver",
   "maintainers": [
     {
-      "email": "jcoglan@gmail.com",
-      "name": "jcoglan"
+      "name": "jcoglan",
+      "email": "jcoglan@gmail.com"
     }
   ],
   "name": "websocket-driver",
