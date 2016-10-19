@@ -43,6 +43,7 @@
     "/babel-generator",
     "/concat-with-sourcemaps",
     "/less",
+    "/source-map-support",
     "/uglify-js",
     "/vinyl-sourcemaps-apply",
     "/webpack/uglify-js"

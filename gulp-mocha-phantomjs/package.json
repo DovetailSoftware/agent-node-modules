@@ -27,7 +27,7 @@
   "_phantomChildren": {
     "abbrev": "1.0.9",
     "clone-stats": "0.0.1",
-    "config-chain": "1.1.10",
+    "config-chain": "1.1.11",
     "dateformat": "1.0.12",
     "escape-string-regexp": "1.0.5",
     "lodash._escapehtmlchar": "2.4.1",

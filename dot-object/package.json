@@ -14,14 +14,14 @@
     ]
   ],
   "_from": "dot-object@>=1.2.0 <2.0.0",
-  "_id": "dot-object@1.5.1",
+  "_id": "dot-object@1.5.4",
   "_inCache": true,
   "_installable": true,
   "_location": "/dot-object",
   "_nodeVersion": "6.4.0",
   "_npmOperationalInternal": {
     "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/dot-object-1.5.1.tgz_1472758179076_0.9512828786391765"
+    "tmp": "tmp/dot-object-1.5.4.tgz_1475104873958_0.4286712296307087"
   },
   "_npmUser": {
     "name": "rhalff",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/gulp-bump"
   ],
-  "_resolved": "https://registry.npmjs.org/dot-object/-/dot-object-1.5.1.tgz",
-  "_shasum": "85254895fd10b48cdf70243ab0ca6d6fb7e60a79",
+  "_resolved": "https://registry.npmjs.org/dot-object/-/dot-object-1.5.4.tgz",
+  "_shasum": "af2b8df2626b65020cd6729d46c331bc30d3b487",
   "_shrinkwrap": null,
   "_spec": "dot-object@^1.2.0",
   "_where": "C:\\Github\\agent\\node_modules\\gulp-bump",
@@ -76,10 +76,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "85254895fd10b48cdf70243ab0ca6d6fb7e60a79",
-    "tarball": "https://registry.npmjs.org/dot-object/-/dot-object-1.5.1.tgz"
+    "shasum": "af2b8df2626b65020cd6729d46c331bc30d3b487",
+    "tarball": "https://registry.npmjs.org/dot-object/-/dot-object-1.5.4.tgz"
   },
-  "gitHead": "c25606e8514723bc45da2f2f65fb11a70ec655bf",
+  "gitHead": "dca30ff2c40b81a17213da65875bd670a56d912d",
   "homepage": "https://github.com/rhalff/dot-object#readme",
   "keywords": [
     "json",
@@ -115,5 +115,5 @@
       "beforeEach"
     ]
   },
-  "version": "1.5.1"
+  "version": "1.5.4"
 }

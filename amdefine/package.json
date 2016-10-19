@@ -10,7 +10,7 @@
         "spec": ">=0.0.4",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\source-map-support\\node_modules\\source-map"
+      "C:\\Github\\agent\\node_modules\\handlebars\\node_modules\\source-map"
     ]
   ],
   "_from": "amdefine@>=0.0.4",
@@ -38,14 +38,13 @@
     "/clean-css/source-map",
     "/handlebars/source-map",
     "/imports-loader/source-map",
-    "/source-map-support/source-map",
     "/webpack-core/source-map"
   ],
   "_resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz",
   "_shasum": "fd17474700cb5cc9c2b709f0be9d23ce3c198c33",
   "_shrinkwrap": null,
   "_spec": "amdefine@>=0.0.4",
-  "_where": "C:\\Github\\agent\\node_modules\\source-map-support\\node_modules\\source-map",
+  "_where": "C:\\Github\\agent\\node_modules\\handlebars\\node_modules\\source-map",
   "author": {
     "name": "James Burke",
     "email": "jrburke@gmail.com",

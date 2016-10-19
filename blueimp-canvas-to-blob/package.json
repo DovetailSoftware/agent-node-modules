@@ -14,20 +14,20 @@
     ]
   ],
   "_from": "blueimp-canvas-to-blob@>=2.0.5",
-  "_id": "blueimp-canvas-to-blob@3.3.0",
+  "_id": "blueimp-canvas-to-blob@3.4.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/blueimp-canvas-to-blob",
-  "_nodeVersion": "4.2.6",
+  "_nodeVersion": "6.7.0",
   "_npmOperationalInternal": {
-    "host": "packages-5-east.internal.npmjs.com",
-    "tmp": "tmp/blueimp-canvas-to-blob-3.3.0.tgz_1456345384266_0.32470800657756627"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/blueimp-canvas-to-blob-3.4.0.tgz_1475955329753_0.3388810951728374"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "2.14.12",
+  "_npmVersion": "3.10.7",
   "_phantomChildren": {},
   "_requested": {
     "raw": "blueimp-canvas-to-blob@>=2.0.5",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.3.0.tgz",
-  "_shasum": "8a4339b9a6cd464adab8c06a1a64afa3ad827451",
+  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.4.0.tgz",
+  "_shasum": "f18ca0bfc67ccd25d9deb447fe5f6a48a1416e5e",
   "_shrinkwrap": null,
   "_spec": "blueimp-canvas-to-blob@>=2.0.5",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -56,16 +56,17 @@
   "dependencies": {},
   "description": "Canvas to Blob is a polyfill for the standard JavaScript canvas.toBlob method. It can be used to create Blob objects from an HTML canvas element.",
   "devDependencies": {
-    "mocha-phantomjs": "4.0.1",
-    "standard": "6.0.7",
-    "uglify-js": "2.6.1"
+    "mocha-phantomjs-core": "1.3.1",
+    "phantomjs-prebuilt": "2.1.13",
+    "standard": "8.3.0",
+    "uglify-js": "2.7.3"
   },
   "directories": {},
   "dist": {
-    "shasum": "8a4339b9a6cd464adab8c06a1a64afa3ad827451",
-    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.3.0.tgz"
+    "shasum": "f18ca0bfc67ccd25d9deb447fe5f6a48a1416e5e",
+    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.4.0.tgz"
   },
-  "gitHead": "cb5add6fd18abba567c4824a601f57b9a9e30e04",
+  "gitHead": "4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d",
   "homepage": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
   "keywords": [
     "javascript",
@@ -91,11 +92,13 @@
   },
   "scripts": {
     "build": "cd js && uglifyjs canvas-to-blob.js -c -m -o canvas-to-blob.min.js --source-map canvas-to-blob.min.js.map",
+    "lint": "standard js/*.js test/*.js",
     "postversion": "git push --tags origin master master:gh-pages && npm publish",
     "preversion": "npm test",
-    "test": "standard js/*.js test/*.js && mocha-phantomjs test/index.html",
+    "test": "npm run lint && npm run unit",
+    "unit": "phantomjs node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Canvas to Blob",
-  "version": "3.3.0"
+  "version": "3.4.0"
 }

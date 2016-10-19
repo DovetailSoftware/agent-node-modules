@@ -14,20 +14,20 @@
     ]
   ],
   "_from": "blueimp-load-image@>=1.7.0",
-  "_id": "blueimp-load-image@2.6.2",
+  "_id": "blueimp-load-image@2.7.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/blueimp-load-image",
-  "_nodeVersion": "6.4.0",
+  "_nodeVersion": "6.7.0",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/blueimp-load-image-2.6.2.tgz_1472473596356_0.7475189014803618"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/blueimp-load-image-2.7.0.tgz_1475946777303_0.24211081233806908"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "3.10.3",
+  "_npmVersion": "3.10.7",
   "_phantomChildren": {},
   "_requested": {
     "raw": "blueimp-load-image@>=1.7.0",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.6.2.tgz",
-  "_shasum": "c7242ebaf5a364f7951fb782c28c70390da456ba",
+  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.7.0.tgz",
+  "_shasum": "697fab019f20b23efa6e8ae81ad3c188837c3f38",
   "_shrinkwrap": null,
   "_spec": "blueimp-load-image@>=1.7.0",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -56,16 +56,17 @@
   "dependencies": {},
   "description": "JavaScript Load Image is a library to load images provided as File or Blob objects or via URL. It returns an optionally scaled and/or cropped HTML img or canvas element. It also provides a method to parse image meta data to extract Exif tags and thumbnail",
   "devDependencies": {
-    "mocha-phantomjs": "4.0.1",
-    "standard": "6.0.7",
-    "uglify-js": "2.6.1"
+    "mocha-phantomjs-core": "1.3.1",
+    "phantomjs-prebuilt": "2.1.13",
+    "standard": "8.3.0",
+    "uglify-js": "2.7.3"
   },
   "directories": {},
   "dist": {
-    "shasum": "c7242ebaf5a364f7951fb782c28c70390da456ba",
-    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.6.2.tgz"
+    "shasum": "697fab019f20b23efa6e8ae81ad3c188837c3f38",
+    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.7.0.tgz"
   },
-  "gitHead": "5cae749216b942ae663a0daabf5dfde4afeaa355",
+  "gitHead": "133ef9b55cf9e620ad37120f643e15cfef9e581c",
   "homepage": "https://github.com/blueimp/JavaScript-Load-Image",
   "keywords": [
     "javascript",
@@ -100,12 +101,14 @@
     "url": "git://github.com/blueimp/JavaScript-Load-Image.git"
   },
   "scripts": {
-    "build": "cd js && uglifyjs load-image.js load-image-orientation.js load-image-meta.js load-image-exif.js load-image-exif-map.js -c -m -o load-image.all.min.js --source-map load-image.all.min.js.map",
+    "build": "cd js && uglifyjs load-image.js load-image-meta.js load-image-exif.js load-image-exif-map.js load-image-orientation.js -c -m -o load-image.all.min.js --source-map load-image.all.min.js.map",
+    "lint": "standard *.js js/*.js test/*.js",
     "postversion": "git push --tags origin master master:gh-pages && npm publish",
     "preversion": "npm test",
-    "test": "standard *.js js/*.js test/*.js && mocha-phantomjs test/index.html",
+    "test": "npm run lint && npm run unit",
+    "unit": "phantomjs node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html",
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Load Image",
-  "version": "2.6.2"
+  "version": "2.7.0"
 }

@@ -14,16 +14,20 @@
     ]
   ],
   "_from": "select@>=1.0.6 <2.0.0",
-  "_id": "select@1.0.6",
+  "_id": "select@1.1.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/select",
-  "_nodeVersion": "0.12.7",
+  "_nodeVersion": "5.1.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/select-1.1.0.tgz_1476670295593_0.6435531296301633"
+  },
   "_npmUser": {
     "name": "zenorocha",
     "email": "zno.rocha@gmail.com"
   },
-  "_npmVersion": "2.11.3",
+  "_npmVersion": "3.9.5",
   "_phantomChildren": {},
   "_requested": {
     "raw": "select@^1.0.6",
@@ -37,8 +41,8 @@
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "https://registry.npmjs.org/select/-/select-1.0.6.tgz",
-  "_shasum": "daabcc99009b2fb988944c8880f773265ef90e5e",
+  "_resolved": "https://registry.npmjs.org/select/-/select-1.1.0.tgz",
+  "_shasum": "a6c520cd9ab919ad81c7d1a273e0452f504dd7a2",
   "_shrinkwrap": null,
   "_spec": "select@^1.0.6",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
@@ -60,17 +64,18 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "daabcc99009b2fb988944c8880f773265ef90e5e",
-    "tarball": "https://registry.npmjs.org/select/-/select-1.0.6.tgz"
+    "shasum": "a6c520cd9ab919ad81c7d1a273e0452f504dd7a2",
+    "tarball": "https://registry.npmjs.org/select/-/select-1.1.0.tgz"
   },
-  "gitHead": "c04fa7e0b0bc19fc4de69b307ef3e873ee1acb8a",
-  "homepage": "https://github.com/zenorocha/select",
+  "gitHead": "14dfea00f4121b3d7995eb68fdbd9051e09b0b27",
+  "homepage": "https://github.com/zenorocha/select#readme",
   "keywords": [
     "range",
     "select",
     "selecting",
     "selection"
   ],
+  "license": "MIT",
   "main": "src/select.js",
   "maintainers": [
     {
@@ -89,5 +94,5 @@
     "build": "browserify src/select.js -s select -o dist/select.js",
     "test": "karma start --single-run"
   },
-  "version": "1.0.6"
+  "version": "1.1.0"
 }

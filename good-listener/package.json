@@ -14,20 +14,20 @@
     ]
   ],
   "_from": "good-listener@>=1.1.6 <2.0.0",
-  "_id": "good-listener@1.1.7",
+  "_id": "good-listener@1.1.8",
   "_inCache": true,
   "_installable": true,
   "_location": "/good-listener",
   "_nodeVersion": "5.1.1",
   "_npmOperationalInternal": {
-    "host": "packages-9-west.internal.npmjs.com",
-    "tmp": "tmp/good-listener-1.1.7.tgz_1455227710234_0.6721981486771256"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/good-listener-1.1.8.tgz_1474764892308_0.7432313829194754"
   },
   "_npmUser": {
     "name": "zenorocha",
     "email": "zno.rocha@gmail.com"
   },
-  "_npmVersion": "3.3.12",
+  "_npmVersion": "3.9.5",
   "_phantomChildren": {},
   "_requested": {
     "raw": "good-listener@^1.1.6",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "https://registry.npmjs.org/good-listener/-/good-listener-1.1.7.tgz",
-  "_shasum": "da0f2cbdfdbd5215ba3fe74730b627f88d928aa4",
+  "_resolved": "https://registry.npmjs.org/good-listener/-/good-listener-1.1.8.tgz",
+  "_shasum": "3554d23703e9e0fee70616373d74447bc8590bbf",
   "_shrinkwrap": null,
   "_spec": "good-listener@^1.1.6",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
@@ -50,7 +50,7 @@
     "url": "https://github.com/zenorocha/good-listener/issues"
   },
   "dependencies": {
-    "delegate": "^3.0.0"
+    "delegate": "^3.0.2"
   },
   "description": "A more versatile way of adding & removing event listeners",
   "devDependencies": {
@@ -71,11 +71,11 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "da0f2cbdfdbd5215ba3fe74730b627f88d928aa4",
-    "tarball": "https://registry.npmjs.org/good-listener/-/good-listener-1.1.7.tgz"
+    "shasum": "3554d23703e9e0fee70616373d74447bc8590bbf",
+    "tarball": "https://registry.npmjs.org/good-listener/-/good-listener-1.1.8.tgz"
   },
-  "gitHead": "08eb792497199acc4c8aed88f38d356a1f2fd012",
-  "homepage": "https://github.com/zenorocha/good-listener",
+  "gitHead": "13d53376880df2b3d7491ef927ce042b8b2c21b2",
+  "homepage": "https://github.com/zenorocha/good-listener#readme",
   "keywords": [
     "event",
     "listener"
@@ -99,5 +99,5 @@
     "build": "browserify src/listen.js -s listen -o dist/good-listener.js",
     "test": "karma start --single-run"
   },
-  "version": "1.1.7"
+  "version": "1.1.8"
 }

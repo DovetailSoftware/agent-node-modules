@@ -29,11 +29,11 @@
   },
   "_npmVersion": "3.7.5",
   "_phantomChildren": {
-    "inflight": "1.0.5",
+    "inflight": "1.0.6",
     "inherits": "2.0.3",
     "minimatch": "3.0.3",
     "once": "1.4.0",
-    "path-is-absolute": "1.0.0"
+    "path-is-absolute": "1.0.1"
   },
   "_requested": {
     "raw": "accord@^0.23.0",

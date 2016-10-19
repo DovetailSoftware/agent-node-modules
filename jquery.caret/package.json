@@ -50,7 +50,7 @@
     "/"
   ],
   "_resolved": "git://github.com/ichord/caret.js.git#3bc79e41834fa96b54f52c4276562488de82e581",
-  "_shasum": "51b0f9f523aa3b513d1b281ff141adef2ae8f248",
+  "_shasum": "c3320fe92ffe591d45171f52cc206a136e4bc17c",
   "_shrinkwrap": null,
   "_spec": "jquery.caret@github:ichord/caret.js#v0.3.1",
   "_where": "C:\\Github\\agent",
@@ -81,7 +81,7 @@
   "main": "dist/jquery.caret.js",
   "name": "jquery.caret",
   "optionalDependencies": {},
-  "readme": "Caret.js\n========\n\nGet caret position or offset from inputor\n\nThis is the core function that working in [At.js](http://ichord.github.com/At.js).  \nNow, It just become an simple jquery plugin so that everybody can use it.  \nAnd, of course, **At.js** is using this plugin too.\n\n* support iframe context\n\nLive Demo\n=========\n\nhttp://ichord.github.com/Caret.js/\n\n\nUsage\n=====\n\n```javascript\n\n// Get caret position\n$('#inputor').caret('position'); // => {left: 15, top: 30, height: 20}\n\n// Get caret offset\n$('#inputor').caret('offset'); // => {left: 300, top: 400, height: 20}\n\nvar fixPos = 20\n// Get position of the 20th char in the inputor.\n// not working in `contentEditable` mode\n$('#inputor').caret('position', fixPos);\n\n// Get offset of the 20th char.\n// not working in `contentEditable` mode\n$('#inputor').caret('offset', fixPos);\n\n// more\n\n// Get caret position from the first char in the inputor.\n$('#inputor').caret('pos'); // => 15\n\n// Set caret position in the inputor\n$('#inputor').caret('pos', 15);\n\n// set iframe context\n// NOTE: Related to the iframe's cooridinate.\n//       You might want to get the iframe's offset/position on your own\n$('#inputor').caret('offset', {iframe: theIframe});\n$('#inputor').caret('position', {iframe: theIframe});\n$('#inputor').caret('pos', 15, {iframe: theIframe});\n\n```\n",
+  "readme": "Caret.js\r\n========\r\n\r\nGet caret position or offset from inputor\r\n\r\nThis is the core function that working in [At.js](http://ichord.github.com/At.js).  \r\nNow, It just become an simple jquery plugin so that everybody can use it.  \r\nAnd, of course, **At.js** is using this plugin too.\r\n\r\n* support iframe context\r\n\r\nLive Demo\r\n=========\r\n\r\nhttp://ichord.github.com/Caret.js/\r\n\r\n\r\nUsage\r\n=====\r\n\r\n```javascript\r\n\r\n// Get caret position\r\n$('#inputor').caret('position'); // => {left: 15, top: 30, height: 20}\r\n\r\n// Get caret offset\r\n$('#inputor').caret('offset'); // => {left: 300, top: 400, height: 20}\r\n\r\nvar fixPos = 20\r\n// Get position of the 20th char in the inputor.\r\n// not working in `contentEditable` mode\r\n$('#inputor').caret('position', fixPos);\r\n\r\n// Get offset of the 20th char.\r\n// not working in `contentEditable` mode\r\n$('#inputor').caret('offset', fixPos);\r\n\r\n// more\r\n\r\n// Get caret position from the first char in the inputor.\r\n$('#inputor').caret('pos'); // => 15\r\n\r\n// Set caret position in the inputor\r\n$('#inputor').caret('pos', 15);\r\n\r\n// set iframe context\r\n// NOTE: Related to the iframe's cooridinate.\r\n//       You might want to get the iframe's offset/position on your own\r\n$('#inputor').caret('offset', {iframe: theIframe});\r\n$('#inputor').caret('position', {iframe: theIframe});\r\n$('#inputor').caret('pos', 15, {iframe: theIframe});\r\n\r\n```\r\n",
   "readmeFilename": "README.md",
   "repository": "",
   "scripts": {

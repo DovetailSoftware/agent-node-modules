@@ -2,52 +2,51 @@
   "_args": [
     [
       {
-        "raw": "babylon@^6.9.0",
+        "raw": "babylon@^6.11.0",
         "scope": null,
         "escapedName": "babylon",
         "name": "babylon",
-        "rawSpec": "^6.9.0",
-        "spec": ">=6.9.0 <7.0.0",
+        "rawSpec": "^6.11.0",
+        "spec": ">=6.11.0 <7.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\babel-core"
     ]
   ],
-  "_from": "babylon@>=6.9.0 <7.0.0",
-  "_id": "babylon@6.9.1",
+  "_from": "babylon@>=6.11.0 <7.0.0",
+  "_id": "babylon@6.12.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/babylon",
   "_nodeVersion": "5.11.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/babylon-6.9.1.tgz_1471989061214_0.22747287154197693"
+    "tmp": "tmp/babylon-6.12.0.tgz_1476476212454_0.3185418010689318"
   },
   "_npmUser": {
     "name": "hzoo",
     "email": "hi@henryzoo.com"
   },
-  "_npmVersion": "3.10.6",
+  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "babylon@^6.9.0",
+    "raw": "babylon@^6.11.0",
     "scope": null,
     "escapedName": "babylon",
     "name": "babylon",
-    "rawSpec": "^6.9.0",
-    "spec": ">=6.9.0 <7.0.0",
+    "rawSpec": "^6.11.0",
+    "spec": ">=6.11.0 <7.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/babel-core",
-    "/babel-plugin-transform-regenerator",
     "/babel-template",
     "/babel-traverse"
   ],
-  "_resolved": "https://registry.npmjs.org/babylon/-/babylon-6.9.1.tgz",
-  "_shasum": "b839f39009bfdb5d20e37677b1b7802c59fe32ee",
+  "_resolved": "https://registry.npmjs.org/babylon/-/babylon-6.12.0.tgz",
+  "_shasum": "953e6202e58062f7f5041fc8037e4bd4e17140a9",
   "_shrinkwrap": null,
-  "_spec": "babylon@^6.9.0",
+  "_spec": "babylon@^6.11.0",
   "_where": "C:\\Github\\agent\\node_modules\\babel-core",
   "author": {
     "name": "Sebastian McKenzie",
@@ -181,37 +180,38 @@
       "name": "zsjforcn"
     }
   ],
-  "dependencies": {
-    "babel-runtime": "^6.0.0"
-  },
+  "dependencies": {},
   "description": "A JavaScript parser",
   "devDependencies": {
     "ava": "^0.16.0",
-    "babel-cli": "^6.0.0",
-    "babel-helper-fixtures": "^6.6.5",
-    "babel-plugin-istanbul": "^2.0.0",
-    "babel-plugin-transform-class-properties": "^6.6.0",
-    "babel-plugin-transform-runtime": "^6.0.0",
-    "babel-preset-es2015": "^6.0.0",
-    "babel-preset-react": "^6.0.0",
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^7.0.0",
+    "babel-helper-fixtures": "^6.9.0",
+    "babel-plugin-istanbul": "^2.0.1",
+    "babel-plugin-transform-flow-strip-types": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
     "babel-preset-stage-0": "^6.5.0",
     "codecov": "^1.0.1",
-    "cross-env": "^2.0.0",
-    "kcheck": "^2.0.1",
-    "lodash": "^4.6.1",
-    "nyc": "^8.0.0",
+    "cross-env": "^2.0.1",
+    "eslint": "^3.7.1",
+    "eslint-config-babel": "^2.0.1",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-flowtype": "^2.20.0",
+    "flow-bin": "^0.33.0",
+    "lodash": "^4.15.0",
+    "nyc": "^8.1.0",
     "unicode-9.0.0": "~0.7.0"
   },
   "directories": {},
   "dist": {
-    "shasum": "b839f39009bfdb5d20e37677b1b7802c59fe32ee",
-    "tarball": "https://registry.npmjs.org/babylon/-/babylon-6.9.1.tgz"
+    "shasum": "953e6202e58062f7f5041fc8037e4bd4e17140a9",
+    "tarball": "https://registry.npmjs.org/babylon/-/babylon-6.12.0.tgz"
   },
   "files": [
     "bin",
     "lib"
   ],
-  "gitHead": "32d5c7195ea18c90d1148a9dafeb46c97bbfe661",
+  "gitHead": "a88a8e9c159b7a8880cc4cc636274e4cbbe43b95",
   "homepage": "https://babeljs.io/",
   "license": "MIT",
   "main": "lib/index.js",
@@ -262,13 +262,16 @@
   },
   "scripts": {
     "build": "babel src --out-dir lib",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "lint": "kcheck",
+    "changelog": "git log `git describe --tags --abbrev=0`..HEAD --pretty=format:' * %s (%an)' | grep -v 'Merge pull request'",
+    "coverage": "nyc report --reporter=json && codecov -f coverage/coverage-final.json",
+    "flow": "flow",
+    "lint": "eslint src bin",
     "prepublish": "cross-env BABEL_ENV=production npm run build",
-    "preversion": "npm run test",
-    "test": "npm run build && npm run lint && ava test/",
-    "test_cov": "cross-env BABEL_ENV=test npm run build && npm run lint && nyc ava test/",
+    "preversion": "npm run test && npm run changelog",
+    "test": "npm run lint && npm run flow && npm run build && npm run test-only",
+    "test-ci": "cross-env BABEL_ENV=test npm run build && nyc npm run test-only",
+    "test-only": "ava test",
     "watch": "babel src --out-dir lib --watch"
   },
-  "version": "6.9.1"
+  "version": "6.12.0"
 }
