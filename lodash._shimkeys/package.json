@@ -10,7 +10,7 @@
         "spec": ">=2.4.1 <2.5.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\lodash.defaults\\node_modules\\lodash.keys"
+      "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\lodash.keys"
     ]
   ],
   "_from": "lodash._shimkeys@>=2.4.1 <2.5.0",
@@ -36,14 +36,13 @@
   "_requiredBy": [
     "/gulp-mocha-phantomjs/lodash.keys",
     "/lodash._reunescapedhtml/lodash.keys",
-    "/lodash.defaults/lodash.keys",
     "/lodash.values/lodash.keys"
   ],
   "_resolved": "https://registry.npmjs.org/lodash._shimkeys/-/lodash._shimkeys-2.4.1.tgz",
   "_shasum": "6e9cc9666ff081f0b5a6c978b83e242e6949d203",
   "_shrinkwrap": null,
   "_spec": "lodash._shimkeys@~2.4.1",
-  "_where": "C:\\Github\\agent\\node_modules\\lodash.defaults\\node_modules\\lodash.keys",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\lodash.keys",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",

@@ -50,7 +50,7 @@
     "/"
   ],
   "_resolved": "git://github.com/blueimp/jQuery-File-Upload.git#6afe968058cd4e3168a9d1f3871f28efff86f03c",
-  "_shasum": "86c4fb8b6956aa88fa1fa1439c348936023de432",
+  "_shasum": "642c6e5f19254929d23aa5dffa16b82285b314da",
   "_shrinkwrap": null,
   "_spec": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
   "_where": "C:\\Github\\agent",

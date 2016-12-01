@@ -25,7 +25,7 @@
   },
   "_npmVersion": "3.3.3",
   "_phantomChildren": {
-    "amdefine": "1.0.0"
+    "amdefine": "1.0.1"
   },
   "_requested": {
     "raw": "imports-loader@^0.6.4",

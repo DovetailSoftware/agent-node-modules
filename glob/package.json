@@ -39,6 +39,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/accord",
     "/dot-object",
     "/eslint",
     "/globby"

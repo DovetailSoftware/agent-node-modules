@@ -35,7 +35,6 @@
   },
   "_requiredBy": [
     "/dateformat",
-    "/detect-indent",
     "/strip-indent"
   ],
   "_resolved": "https://registry.npmjs.org/get-stdin/-/get-stdin-4.0.1.tgz",

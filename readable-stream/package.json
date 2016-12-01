@@ -40,7 +40,6 @@
   },
   "_requiredBy": [
     "/glob-stream/through2",
-    "/gulp-concat/through2",
     "/gulp-mocha-phantomjs/gulp-util/through2",
     "/gulp-mocha-phantomjs/through2",
     "/stream-browserify",

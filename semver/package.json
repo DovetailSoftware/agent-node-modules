@@ -40,7 +40,6 @@
   },
   "_requiredBy": [
     "/accord",
-    "/fobject",
     "/gulp-bump",
     "/normalize-package-data"
   ],

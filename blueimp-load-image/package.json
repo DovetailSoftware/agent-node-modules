@@ -14,20 +14,20 @@
     ]
   ],
   "_from": "blueimp-load-image@>=1.7.0",
-  "_id": "blueimp-load-image@2.7.0",
+  "_id": "blueimp-load-image@2.10.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/blueimp-load-image",
-  "_nodeVersion": "6.7.0",
+  "_nodeVersion": "7.0.0",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/blueimp-load-image-2.7.0.tgz_1475946777303_0.24211081233806908"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/blueimp-load-image-2.10.0.tgz_1480075652079_0.6318128996063024"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "3.10.7",
+  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
     "raw": "blueimp-load-image@>=1.7.0",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.7.0.tgz",
-  "_shasum": "697fab019f20b23efa6e8ae81ad3c188837c3f38",
+  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.10.0.tgz",
+  "_shasum": "05f38a4975a8d003dae46c08d4d58d14a34c57da",
   "_shrinkwrap": null,
   "_spec": "blueimp-load-image@>=1.7.0",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -63,10 +63,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "697fab019f20b23efa6e8ae81ad3c188837c3f38",
-    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.7.0.tgz"
+    "shasum": "05f38a4975a8d003dae46c08d4d58d14a34c57da",
+    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.10.0.tgz"
   },
-  "gitHead": "133ef9b55cf9e620ad37120f643e15cfef9e581c",
+  "gitHead": "a9eb2ab1078b2e7d45eb215e1d4ff54134f709bf",
   "homepage": "https://github.com/blueimp/JavaScript-Load-Image",
   "keywords": [
     "javascript",
@@ -86,7 +86,7 @@
     "resizing"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "js/index.js",
   "maintainers": [
     {
       "name": "blueimp",
@@ -110,5 +110,5 @@
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Load Image",
-  "version": "2.7.0"
+  "version": "2.10.0"
 }

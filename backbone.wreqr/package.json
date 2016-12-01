@@ -14,20 +14,20 @@
     ]
   ],
   "_from": "backbone.wreqr@>=1.0.0 <2.0.0",
-  "_id": "backbone.wreqr@1.3.7",
+  "_id": "backbone.wreqr@1.4.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/backbone.wreqr",
-  "_nodeVersion": "6.0.0",
+  "_nodeVersion": "6.2.0",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/backbone.wreqr-1.3.7.tgz_1464209773176_0.7696558651514351"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/backbone.wreqr-1.4.0.tgz_1479143128134_0.5930415536276996"
   },
   "_npmUser": {
     "name": "ahumphreys87",
     "email": "ahumphreys87@googlemail.com"
   },
-  "_npmVersion": "3.8.6",
+  "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
     "raw": "backbone.wreqr@^1.0.0",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/backbone.marionette"
   ],
-  "_resolved": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.3.7.tgz",
-  "_shasum": "8e1c12776428806881f2770cd2535bde8923f067",
+  "_resolved": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.4.0.tgz",
+  "_shasum": "7682030c9aaf090ecd873b21dbf48501693b2696",
   "_shrinkwrap": null,
   "_spec": "backbone.wreqr@^1.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\backbone.marionette",
@@ -74,10 +74,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "8e1c12776428806881f2770cd2535bde8923f067",
-    "tarball": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.3.7.tgz"
+    "shasum": "7682030c9aaf090ecd873b21dbf48501693b2696",
+    "tarball": "https://registry.npmjs.org/backbone.wreqr/-/backbone.wreqr-1.4.0.tgz"
   },
-  "gitHead": "71a5bcdc411db51b94c35b6ce097a8bb7ea8a1f7",
+  "gitHead": "ce4665f7e13ec46d66fe9215f5a91199e29dff51",
   "github": "https://github.com/marionettejs/backbone.wreqr",
   "homepage": "https://github.com/marionettejs/backbone.wreqr",
   "jam": {
@@ -142,5 +142,5 @@
     "start": "grunt jasmine-server",
     "test": "grunt jasmine"
   },
-  "version": "1.3.7"
+  "version": "1.4.0"
 }

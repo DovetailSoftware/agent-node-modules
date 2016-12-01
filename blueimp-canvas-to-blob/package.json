@@ -14,20 +14,20 @@
     ]
   ],
   "_from": "blueimp-canvas-to-blob@>=2.0.5",
-  "_id": "blueimp-canvas-to-blob@3.4.0",
+  "_id": "blueimp-canvas-to-blob@3.6.0",
   "_inCache": true,
   "_installable": true,
   "_location": "/blueimp-canvas-to-blob",
-  "_nodeVersion": "6.7.0",
+  "_nodeVersion": "7.0.0",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/blueimp-canvas-to-blob-3.4.0.tgz_1475955329753_0.3388810951728374"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/blueimp-canvas-to-blob-3.6.0.tgz_1480074911897_0.20207680854946375"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "3.10.7",
+  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
     "raw": "blueimp-canvas-to-blob@>=2.0.5",
@@ -41,8 +41,8 @@
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.4.0.tgz",
-  "_shasum": "f18ca0bfc67ccd25d9deb447fe5f6a48a1416e5e",
+  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.6.0.tgz",
+  "_shasum": "e678c3f9fb918a470ce81772c69812573f8b2a6d",
   "_shrinkwrap": null,
   "_spec": "blueimp-canvas-to-blob@>=2.0.5",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -63,10 +63,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "f18ca0bfc67ccd25d9deb447fe5f6a48a1416e5e",
-    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.4.0.tgz"
+    "shasum": "e678c3f9fb918a470ce81772c69812573f8b2a6d",
+    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.6.0.tgz"
   },
-  "gitHead": "4ff69f17a93ff04f827ad651d598bdeb7ce5aa4d",
+  "gitHead": "39b96c11e60bd6be833866b1b5d92994fce1718c",
   "homepage": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
   "keywords": [
     "javascript",
@@ -100,5 +100,5 @@
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Canvas to Blob",
-  "version": "3.4.0"
+  "version": "3.6.0"
 }

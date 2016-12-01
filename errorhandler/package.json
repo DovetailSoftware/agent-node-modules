@@ -24,7 +24,7 @@
   },
   "_npmVersion": "1.4.28",
   "_phantomChildren": {
-    "mime-types": "2.1.12"
+    "mime-types": "2.1.13"
   },
   "_requested": {
     "raw": "errorhandler@~1.4.2",

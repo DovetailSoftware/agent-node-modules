@@ -39,7 +39,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/detect-indent/repeating",
     "/repeating"
   ],
   "_resolved": "https://registry.npmjs.org/is-finite/-/is-finite-1.0.2.tgz",

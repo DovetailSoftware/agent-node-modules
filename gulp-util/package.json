@@ -25,6 +25,7 @@
   },
   "_npmVersion": "2.14.3",
   "_phantomChildren": {
+    "buffer-shims": "1.0.0",
     "core-util-is": "1.0.2",
     "inherits": "2.0.3",
     "process-nextick-args": "1.0.7",
@@ -42,7 +43,6 @@
   },
   "_requiredBy": [
     "/gulp",
-    "/gulp-concat",
     "/gulp-eslint",
     "/gulp-header",
     "/gulp-less",

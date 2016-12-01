@@ -39,10 +39,11 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/accord/glob",
     "/bl/readable-stream",
     "/bufferstreams/readable-stream",
     "/chokidar",
+    "/cloneable-readable",
+    "/cloneable-readable/readable-stream",
     "/concat-stream",
     "/concat-stream/readable-stream",
     "/duplexer2/readable-stream",
@@ -51,6 +52,7 @@
     "/findup-sync/glob",
     "/glob",
     "/glob-stream/glob",
+    "/gulp-concat/readable-stream",
     "/gulp-header/readable-stream",
     "/gulp-less/readable-stream",
     "/gulp-replace/readable-stream",

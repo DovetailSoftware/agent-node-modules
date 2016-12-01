@@ -37,8 +37,10 @@
   "_requiredBy": [
     "/bl/readable-stream",
     "/bufferstreams/readable-stream",
+    "/cloneable-readable/readable-stream",
     "/concat-stream/readable-stream",
     "/extract-zip/readable-stream",
+    "/gulp-concat/readable-stream",
     "/gulp-header/readable-stream",
     "/gulp-less/readable-stream",
     "/gulp-replace/readable-stream",

@@ -39,6 +39,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/accord",
     "/fined"
   ],
   "_resolved": "https://registry.npmjs.org/lodash.pick/-/lodash.pick-4.4.0.tgz",

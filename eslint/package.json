@@ -29,7 +29,6 @@
   },
   "_npmVersion": "2.15.0",
   "_phantomChildren": {
-    "os-homedir": "1.0.2",
     "sprintf-js": "1.0.3"
   },
   "_requested": {

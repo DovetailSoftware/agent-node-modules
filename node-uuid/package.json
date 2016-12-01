@@ -64,6 +64,7 @@
     }
   ],
   "dependencies": {},
+  "deprecated": "use uuid module instead",
   "description": "Rigorous implementation of RFC4122 (v1 and v4) UUIDs.",
   "devDependencies": {
     "nyc": "^2.2.0"

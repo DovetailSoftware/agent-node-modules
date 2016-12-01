@@ -35,6 +35,7 @@
   },
   "_requiredBy": [
     "/defaults",
+    "/gulp-concat/vinyl",
     "/vinyl",
     "/webpack"
   ],
