@@ -16,7 +16,6 @@
   "_from": "config-chain@>=1.1.8 <1.2.0",
   "_id": "config-chain@1.1.11",
   "_inCache": true,
-  "_installable": true,
   "_location": "/config-chain",
   "_nodeVersion": "6.4.0",
   "_npmOperationalInternal": {

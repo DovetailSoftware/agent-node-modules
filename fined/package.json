@@ -16,7 +16,6 @@
   "_from": "fined@>=1.0.1 <2.0.0",
   "_id": "fined@1.0.2",
   "_inCache": true,
-  "_installable": true,
   "_location": "/fined",
   "_nodeVersion": "0.10.41",
   "_npmOperationalInternal": {

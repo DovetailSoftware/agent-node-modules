@@ -16,7 +16,6 @@
   "_from": "serve-index@>=1.7.2 <1.8.0",
   "_id": "serve-index@1.7.3",
   "_inCache": true,
-  "_installable": true,
   "_location": "/serve-index",
   "_nodeVersion": "4.2.3",
   "_npmUser": {

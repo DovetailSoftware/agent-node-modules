@@ -16,7 +16,6 @@
   "_from": "commander@>=2.9.0 <3.0.0",
   "_id": "commander@2.9.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/commander",
   "_nodeVersion": "0.12.7",
   "_npmUser": {

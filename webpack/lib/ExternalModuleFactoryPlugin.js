@@ -15,7 +15,7 @@ ExternalModuleFactoryPlugin.prototype.apply = function(normalModuleFactory) {
 	normalModuleFactory.plugin("factory", function(factory) {
 		return function(data, callback) {
 			var context = data.context;
-			var dependency = data.dependency;
+			var dependency = data.dependencies[0];
 
 			function handleExternal(value, type, callback) {
 				if(typeof type === "function") {
@@ -40,20 +40,22 @@ ExternalModuleFactoryPlugin.prototype.apply = function(normalModuleFactory) {
 				} else if(Array.isArray(externals)) {
 					var i = 0;
 					(function next() {
+						var handleExternalsAndCallback = function handleExternalsAndCallback(err, module) {
+							if(err) return callback(err);
+							if(!module) {
+								if(async) {
+									async = false;
+									return;
+								}
+								return next();
+							}
+							callback(null, module);
+						}
+
 						do {
 							var async = true;
 							if(i >= externals.length) return callback();
-							handleExternals(externals[i++], function(err, module) {
-								if(err) return callback(err);
-								if(!module) {
-									if(async) {
-										async = false;
-										return;
-									}
-									return next();
-								}
-								callback(null, module);
-							});
+							handleExternals(externals[i++], handleExternalsAndCallback);
 						} while (!async);
 						async = false;
 					}());

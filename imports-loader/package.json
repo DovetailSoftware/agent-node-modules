@@ -16,7 +16,6 @@
   "_from": "imports-loader@>=0.6.4 <0.7.0",
   "_id": "imports-loader@0.6.5",
   "_inCache": true,
-  "_installable": true,
   "_location": "/imports-loader",
   "_nodeVersion": "4.0.0",
   "_npmUser": {

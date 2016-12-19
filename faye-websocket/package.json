@@ -16,7 +16,6 @@
   "_from": "faye-websocket@>=0.7.2 <0.8.0",
   "_id": "faye-websocket@0.7.3",
   "_inCache": true,
-  "_installable": true,
   "_location": "/faye-websocket",
   "_npmUser": {
     "name": "jcoglan",

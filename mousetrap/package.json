@@ -25,7 +25,6 @@
   "_from": "craigjennings11/mousetrap#e512911",
   "_id": "mousetrap@1.4.6",
   "_inCache": true,
-  "_installable": true,
   "_location": "/mousetrap",
   "_phantomChildren": {},
   "_requested": {
@@ -50,7 +49,7 @@
     "/"
   ],
   "_resolved": "git://github.com/craigjennings11/mousetrap.git#e5129117d910c2a9e9a5d948f6cfd87a7885fd08",
-  "_shasum": "c80f4bad2198815045997aebb0a8b06e69d13e3f",
+  "_shasum": "00b105af3c405b5e450a39380c1972db3219410c",
   "_shrinkwrap": null,
   "_spec": "mousetrap@github:craigjennings11/mousetrap#e512911",
   "_where": "C:\\Github\\agent",

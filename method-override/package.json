@@ -16,7 +16,6 @@
   "_from": "method-override@>=2.3.5 <2.4.0",
   "_id": "method-override@2.3.7",
   "_inCache": true,
-  "_installable": true,
   "_location": "/method-override",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",
@@ -27,7 +26,9 @@
     "email": "doug@somethingdoug.com"
   },
   "_npmVersion": "1.4.28",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "ms": "0.7.2"
+  },
   "_requested": {
     "raw": "method-override@~2.3.5",
     "scope": null,

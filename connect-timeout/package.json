@@ -16,7 +16,6 @@
   "_from": "connect-timeout@>=1.6.2 <1.7.0",
   "_id": "connect-timeout@1.6.2",
   "_inCache": true,
-  "_installable": true,
   "_location": "/connect-timeout",
   "_npmUser": {
     "name": "dougwilson",

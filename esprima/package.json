@@ -16,7 +16,6 @@
   "_from": "esprima@>=1.0.2 <1.1.0",
   "_id": "esprima@1.0.4",
   "_inCache": true,
-  "_installable": true,
   "_location": "/esprima",
   "_npmUser": {
     "name": "ariya",

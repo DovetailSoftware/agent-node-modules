@@ -7,10 +7,11 @@ var async = require("async");
 var Tapable = require("tapable");
 var EntryModuleNotFoundError = require("./EntryModuleNotFoundError");
 var ModuleNotFoundError = require("./ModuleNotFoundError");
-var CriticalDependenciesWarning = require("./CriticalDependenciesWarning");
+var ModuleDependencyWarning = require("./ModuleDependencyWarning");
 var Module = require("./Module");
 var ArrayMap = require("./ArrayMap");
 var Chunk = require("./Chunk");
+var Entrypoint = require("./Entrypoint");
 var Stats = require("./Stats");
 var MainTemplate = require("./MainTemplate");
 var ChunkTemplate = require("./ChunkTemplate");
@@ -18,7 +19,7 @@ var HotUpdateChunkTemplate = require("./HotUpdateChunkTemplate");
 var ModuleTemplate = require("./ModuleTemplate");
 var Dependency = require("./Dependency");
 var ChunkRenderError = require("./ChunkRenderError");
-var CachedSource = require("webpack-core/lib/CachedSource");
+var CachedSource = require("webpack-sources").CachedSource;
 
 function Compilation(compiler) {
 	Tapable.call(this);
@@ -30,6 +31,7 @@ function Compilation(compiler) {
 	this.outputOptions = options && options.output;
 	this.bail = options && options.bail;
 	this.profile = options && options.profile;
+	this.performance = options && options.performance;
 
 	this.mainTemplate = new MainTemplate(this.outputOptions);
 	this.chunkTemplate = new ChunkTemplate(this.outputOptions, this.mainTemplate);
@@ -38,16 +40,15 @@ function Compilation(compiler) {
 
 	this.entries = [];
 	this.preparedChunks = [];
+	this.entrypoints = {};
 	this.chunks = [];
 	this.namedChunks = {};
 	this.modules = [];
 	this._modules = {};
 	this.cache = null;
 	this.records = null;
-	this.nextFreeModuleId = 1;
-	this.nextFreeChunkId = 0;
-	this.nextFreeModuleIndex = 0;
-	this.nextFreeModuleIndex2 = 0;
+	this.nextFreeModuleIndex = undefined;
+	this.nextFreeModuleIndex2 = undefined;
 	this.additionalChunkAssets = [];
 	this.assets = {};
 	this.errors = [];
@@ -95,6 +96,7 @@ Compilation.prototype.addModule = function(module, cacheGroup) {
 			module.lastId = cacheModule.id;
 		}
 	}
+	module.unbuild();
 	this._modules[identifier] = module;
 	if(this.cache) {
 		this.cache[cacheGroup + identifier] = module;
@@ -112,8 +114,9 @@ Compilation.prototype.findModule = function(identifier) {
 	return this._modules[identifier];
 };
 
-Compilation.prototype.buildModule = function(module, thisCallback) {
-	this.applyPlugins("build-module", module);
+Compilation.prototype.buildModule = function(module, optional, origin, dependencies, thisCallback) {
+	var _this = this;
+	_this.applyPlugins1("build-module", module);
 	if(module.building) return module.building.push(thisCallback);
 	var building = module.building = [thisCallback];
 
@@ -123,22 +126,28 @@ Compilation.prototype.buildModule = function(module, thisCallback) {
 			cb(err);
 		});
 	}
-	module.build(this.options, this, this.resolvers.normal, this.inputFileSystem, function(err) {
+	module.build(_this.options, this, _this.resolvers.normal, _this.inputFileSystem, function(err) {
 		module.errors.forEach(function(err) {
-			this.errors.push(err);
+			err.origin = origin;
+			err.dependencies = dependencies;
+			if(optional)
+				_this.warnings.push(err);
+			else
+				_this.errors.push(err);
 		}, this);
 		module.warnings.forEach(function(err) {
-			this.warnings.push(err);
+			err.origin = origin;
+			err.dependencies = dependencies;
+			_this.warnings.push(err);
 		}, this);
 		module.dependencies.sort(Dependency.compare);
 		if(err) {
-			module.error = err;
-			this.applyPlugins("failed-module", module);
+			_this.applyPlugins2("failed-module", module, err);
 			return callback(err);
 		}
-		this.applyPlugins("succeed-module", module);
+		_this.applyPlugins1("succeed-module", module);
 		return callback();
-	}.bind(this));
+	});
 };
 
 Compilation.prototype.processModuleDependencies = function(module, callback) {
@@ -182,19 +191,11 @@ Compilation.prototype.addModuleDependencies = function(module, dependencies, bai
 		}
 		factories[i] = [factory, dependencies[i]];
 	}
-	async.forEach(factories, function(item, callback) {
+	async.forEach(factories, function iteratorFactory(item, callback) {
 		var dependencies = item[1];
-		var criticalDependencies = dependencies.filter(function(d) {
-			return !!d.critical;
-		});
-		if(criticalDependencies.length > 0) {
-			_this.warnings.push(new CriticalDependenciesWarning(module, criticalDependencies));
-		}
 
 		var errorAndCallback = function errorAndCallback(err) {
-			err.dependencies = dependencies;
 			err.origin = module;
-			module.dependenciesErrors.push(err);
 			_this.errors.push(err);
 			if(bail) {
 				callback(err);
@@ -203,15 +204,19 @@ Compilation.prototype.addModuleDependencies = function(module, dependencies, bai
 			}
 		};
 		var warningAndCallback = function warningAndCallback(err) {
-			err.dependencies = dependencies;
 			err.origin = module;
-			module.dependenciesWarnings.push(err);
 			_this.warnings.push(err);
 			callback();
 		};
 
 		var factory = item[0];
-		factory.create(module.context, dependencies[0], function(err, dependantModule) {
+		factory.create({
+			contextInfo: {
+				issuer: module.nameForCondition && module.nameForCondition()
+			},
+			context: module.context,
+			dependencies: dependencies
+		}, function factoryCallback(err, dependentModule) {
 			function isOptional() {
 				return dependencies.filter(function(d) {
 					return !d.optional;
@@ -226,38 +231,32 @@ Compilation.prototype.addModuleDependencies = function(module, dependencies, bai
 				}
 			}
 			if(err) {
-				return errorOrWarningAndCallback(new ModuleNotFoundError(module, err));
+				return errorOrWarningAndCallback(new ModuleNotFoundError(module, err, dependencies));
 			}
-			if(!dependantModule) {
+			if(!dependentModule) {
 				return process.nextTick(callback);
 			}
 			if(_this.profile) {
-				if(!dependantModule.profile) {
-					dependantModule.profile = {};
+				if(!dependentModule.profile) {
+					dependentModule.profile = {};
 				}
 				var afterFactory = +new Date();
-				dependantModule.profile.factory = afterFactory - start;
+				dependentModule.profile.factory = afterFactory - start;
 			}
 
-			dependantModule.issuer = module.identifier();
-			var newModule = _this.addModule(dependantModule, cacheGroup);
+			dependentModule.issuer = module;
+			var newModule = _this.addModule(dependentModule, cacheGroup);
 
 			if(!newModule) { // from cache
-				dependantModule = _this.getModule(dependantModule);
+				dependentModule = _this.getModule(dependentModule);
 
-				if(dependantModule.optional) {
-					dependantModule.optional = isOptional();
-				}
-
-				if(dependantModule.id === 0) {
-					return errorOrWarningAndCallback(
-						new ModuleNotFoundError(module, new Error("a dependency to an entry point is not allowed"))
-					);
+				if(dependentModule.optional) {
+					dependentModule.optional = isOptional();
 				}
 
 				dependencies.forEach(function(dep) {
-					dep.module = dependantModule;
-					dependantModule.addReason(module, dep);
+					dep.module = dependentModule;
+					dependentModule.addReason(module, dep);
 				});
 
 				if(_this.profile) {
@@ -275,16 +274,16 @@ Compilation.prototype.addModuleDependencies = function(module, dependencies, bai
 
 			if(newModule instanceof Module) {
 				if(_this.profile) {
-					newModule.profile = dependantModule.profile;
+					newModule.profile = dependentModule.profile;
 				}
 
 				newModule.optional = isOptional();
-				newModule.issuer = dependantModule.issuer;
-				dependantModule = newModule;
+				newModule.issuer = dependentModule.issuer;
+				dependentModule = newModule;
 
 				dependencies.forEach(function(dep) {
-					dep.module = dependantModule;
-					dependantModule.addReason(module, dep);
+					dep.module = dependentModule;
+					dependentModule.addReason(module, dep);
 				});
 
 				if(_this.profile) {
@@ -293,43 +292,49 @@ Compilation.prototype.addModuleDependencies = function(module, dependencies, bai
 				}
 
 				if(recursive) {
-					return process.nextTick(_this.processModuleDependencies.bind(_this, dependantModule, callback));
+					return process.nextTick(_this.processModuleDependencies.bind(_this, dependentModule, callback));
 				} else {
 					return process.nextTick(callback);
 				}
 			}
 
-			dependantModule.optional = isOptional();
+			dependentModule.optional = isOptional();
 
 			dependencies.forEach(function(dep) {
-				dep.module = dependantModule;
-				dependantModule.addReason(module, dep);
+				dep.module = dependentModule;
+				dependentModule.addReason(module, dep);
 			});
 
-			_this.buildModule(dependantModule, function(err) {
+			_this.buildModule(dependentModule, isOptional(), module, dependencies, function(err) {
 				if(err) {
 					return errorOrWarningAndCallback(err);
 				}
 
 				if(_this.profile) {
 					var afterBuilding = +new Date();
-					dependantModule.profile.building = afterBuilding - afterFactory;
+					dependentModule.profile.building = afterBuilding - afterFactory;
 				}
 
 				if(recursive) {
-					_this.processModuleDependencies(dependantModule, callback);
+					_this.processModuleDependencies(dependentModule, callback);
 				} else {
 					return callback();
 				}
 			});
 
 		});
-	}, function(err) {
+	}, function finalCallbackAddModuleDependencies(err) {
+		// In V8, the Error objects keep a reference to the functions on the stack. These warnings &
+		// errors are created inside closures that keep a reference to the Compilation, so errors are
+		// leaking the Compilation object. Setting _this to null workarounds the following issue in V8.
+		// https://bugs.chromium.org/p/chromium/issues/detail?id=612191
+		_this = null;
+
 		if(err) {
 			return callback(err);
 		}
 
-		return callback();
+		return process.nextTick(callback);
 	});
 };
 
@@ -353,7 +358,10 @@ Compilation.prototype._addModuleChain = function process(context, dependency, on
 		throw new Error("No dependency factory available for this dependency type: " + dependency.constructor.name);
 	}
 
-	moduleFactory.create(context, dependency, function(err, module) {
+	moduleFactory.create({
+		context: context,
+		dependencies: [dependency]
+	}, function(err, module) {
 		if(err) {
 			return errorAndCallback(new EntryModuleNotFoundError(err));
 		}
@@ -395,7 +403,7 @@ Compilation.prototype._addModuleChain = function process(context, dependency, on
 
 		onModule(module);
 
-		this.buildModule(module, function(err) {
+		this.buildModule(module, false, null, null, function(err) {
 			if(err) {
 				return errorAndCallback(err);
 			}
@@ -421,12 +429,16 @@ Compilation.prototype._addModuleChain = function process(context, dependency, on
 };
 
 Compilation.prototype.addEntry = function process(context, entry, name, callback) {
+	var slot = {
+		name: name,
+		module: null
+	};
+	this.preparedChunks.push(slot);
 	this._addModuleChain(context, entry, function(module) {
 
 		entry.module = module;
 		this.entries.push(module);
 		module.issuer = null;
-		module.id = 0;
 
 	}.bind(this), function(err, module) {
 		if(err) {
@@ -434,13 +446,10 @@ Compilation.prototype.addEntry = function process(context, entry, name, callback
 		}
 
 		if(module) {
-			if(module.reasons.length > 0) {
-				return callback(new Error("module cannot be added as entry point, because it's already in the bundle"));
-			}
-			this.preparedChunks.push({
-				name: name,
-				module: module
-			});
+			slot.module = module;
+		} else {
+			var idx = this.preparedChunks.indexOf(slot);
+			this.preparedChunks.splice(idx, 1);
 		}
 		return callback();
 	}.bind(this));
@@ -470,7 +479,7 @@ Compilation.prototype.rebuildModule = function(module, thisCallback) {
 		});
 	}
 	var deps = module.dependencies.slice();
-	this.buildModule(module, function(err) {
+	this.buildModule(module, false, module, null, function(err) {
 		if(err) return callback(err);
 
 		this.processModuleDependencies(module, function(err) {
@@ -492,93 +501,131 @@ Compilation.prototype.rebuildModule = function(module, thisCallback) {
 	}.bind(this));
 };
 
-Compilation.prototype.seal = function seal(callback) {
-	this.applyPlugins("seal");
-	this.preparedChunks.sort(function(a, b) {
-		if(a.name < b.name) return -1;
-		if(a.name > b.name) return 1;
-		return 0;
+Compilation.prototype.finish = function finish() {
+	this.applyPlugins1("finish-modules", this.modules);
+	this.modules.forEach(function(m) {
+		this.reportDependencyWarnings(m, [m]);
+	}, this);
+};
+
+Compilation.prototype.unseal = function unseal() {
+	this.applyPlugins0("unseal");
+	this.chunks.length = 0;
+	this.namedChunks = {};
+	this.additionalChunkAssets.length = 0;
+	this.assets = {};
+	this.modules.forEach(function(module) {
+		module.unseal();
 	});
-	this.preparedChunks.forEach(function(preparedChunk) {
+};
+
+Compilation.prototype.seal = function seal(callback) {
+	var self = this;
+	self.applyPlugins0("seal");
+	self.nextFreeModuleIndex = 0;
+	self.nextFreeModuleIndex2 = 0;
+	self.preparedChunks.forEach(function(preparedChunk) {
 		var module = preparedChunk.module;
-		var chunk = this.addChunk(preparedChunk.name, module);
-		chunk.initial = chunk.entry = true;
+		var chunk = self.addChunk(preparedChunk.name, module);
+		var entrypoint = self.entrypoints[chunk.name] = new Entrypoint(chunk.name);
+		entrypoint.unshiftChunk(chunk);
+
 		chunk.addModule(module);
 		module.addChunk(chunk);
-		if(typeof module.index !== "number") {
-			module.index = this.nextFreeModuleIndex++;
-		}
-		this.processDependenciesBlockForChunk(module, chunk);
-		if(typeof module.index2 !== "number") {
-			module.index2 = this.nextFreeModuleIndex2++;
-		}
-	}, this);
-	this.sortModules(this.modules);
-	this.applyPlugins("optimize");
+		chunk.entryModule = module;
+		self.assignIndex(module);
+		self.processDependenciesBlockForChunk(module, chunk);
+	}, self);
+	self.sortModules(self.modules);
+	self.applyPlugins0("optimize");
 
-	this.applyPlugins("optimize-modules", this.modules);
-	this.applyPlugins("after-optimize-modules", this.modules);
+	while(self.applyPluginsBailResult1("optimize-modules-basic", self.modules) ||
+		self.applyPluginsBailResult1("optimize-modules", self.modules) ||
+		self.applyPluginsBailResult1("optimize-modules-advanced", self.modules)); // eslint-disable-line no-extra-semi
+	self.applyPlugins1("after-optimize-modules", self.modules);
 
-	this.applyPlugins("optimize-chunks", this.chunks);
-	this.applyPlugins("after-optimize-chunks", this.chunks);
+	while(self.applyPluginsBailResult1("optimize-chunks-basic", self.chunks) ||
+		self.applyPluginsBailResult1("optimize-chunks", self.chunks) ||
+		self.applyPluginsBailResult1("optimize-chunks-advanced", self.chunks)); // eslint-disable-line no-extra-semi
+	self.applyPlugins1("after-optimize-chunks", self.chunks);
 
-	this.applyPluginsAsync("optimize-tree", this.chunks, this.modules, function(err) {
+	self.applyPluginsAsyncSeries("optimize-tree", self.chunks, self.modules, function sealPart2(err) {
 		if(err) {
 			return callback(err);
 		}
 
-		this.applyPlugins("after-optimize-tree", this.chunks, this.modules);
+		self.applyPlugins2("after-optimize-tree", self.chunks, self.modules);
 
-		var shouldRecord = this.applyPluginsBailResult("should-record") !== false;
+		var shouldRecord = self.applyPluginsBailResult("should-record") !== false;
 
-		this.applyPlugins("revive-modules", this.modules, this.records);
-		this.applyPlugins("optimize-module-order", this.modules);
-		this.applyPlugins("before-module-ids", this.modules);
-		this.applyModuleIds();
-		this.applyPlugins("optimize-module-ids", this.modules);
-		this.applyPlugins("after-optimize-module-ids", this.modules);
+		self.sortItemsBeforeIds();
+
+		self.applyPlugins2("revive-modules", self.modules, self.records);
+		self.applyPlugins1("optimize-module-order", self.modules);
+		self.applyPlugins1("advanced-optimize-module-order", self.modules);
+		self.applyPlugins1("before-module-ids", self.modules);
+		self.applyPlugins1("module-ids", self.modules);
+		self.applyModuleIds();
+		self.applyPlugins1("optimize-module-ids", self.modules);
+		self.applyPlugins1("after-optimize-module-ids", self.modules);
+
+		self.sortItemsWithModuleIds();
+
+		self.applyPlugins2("revive-chunks", self.chunks, self.records);
+		self.applyPlugins1("optimize-chunk-order", self.chunks);
+		self.applyPlugins1("before-chunk-ids", self.chunks);
+		self.applyChunkIds();
+		self.applyPlugins1("optimize-chunk-ids", self.chunks);
+		self.applyPlugins1("after-optimize-chunk-ids", self.chunks);
+
+		self.sortItemsWithChunkIds();
+
 		if(shouldRecord)
-			this.applyPlugins("record-modules", this.modules, this.records);
-
-		this.applyPlugins("revive-chunks", this.chunks, this.records);
-		this.applyPlugins("optimize-chunk-order", this.chunks);
-		this.applyPlugins("before-chunk-ids", this.chunks);
-		this.applyChunkIds();
-		this.applyPlugins("optimize-chunk-ids", this.chunks);
-		this.applyPlugins("after-optimize-chunk-ids", this.chunks);
+			self.applyPlugins2("record-modules", self.modules, self.records);
 		if(shouldRecord)
-			this.applyPlugins("record-chunks", this.chunks, this.records);
+			self.applyPlugins2("record-chunks", self.chunks, self.records);
 
-		this.sortItems();
-		this.applyPlugins("before-hash");
-		this.createHash();
-		this.applyPlugins("after-hash");
-		this.applyPlugins("before-chunk-assets");
-		this.createChunkAssets();
-		this.applyPlugins("additional-chunk-assets", this.chunks);
-		this.summarizeDependencies();
+		self.applyPlugins0("before-hash");
+		self.createHash();
+		self.applyPlugins0("after-hash");
+
 		if(shouldRecord)
-			this.applyPlugins("record", this, this.records);
+			self.applyPlugins1("record-hash", self.records);
 
-		this.applyPluginsAsync("additional-assets", function(err) {
+		self.applyPlugins0("before-module-assets");
+		self.createModuleAssets();
+		if(self.applyPluginsBailResult("should-generate-chunk-assets") !== false) {
+			self.applyPlugins0("before-chunk-assets");
+			self.createChunkAssets();
+		}
+		self.applyPlugins1("additional-chunk-assets", self.chunks);
+		self.summarizeDependencies();
+		if(shouldRecord)
+			self.applyPlugins2("record", self, self.records);
+
+		self.applyPluginsAsync("additional-assets", function(err) {
 			if(err) {
 				return callback(err);
 			}
-			this.applyPluginsAsync("optimize-chunk-assets", this.chunks, function(err) {
+			self.applyPluginsAsync("optimize-chunk-assets", self.chunks, function(err) {
 				if(err) {
 					return callback(err);
 				}
-				this.applyPlugins("after-optimize-chunk-assets", this.chunks);
-				this.applyPluginsAsync("optimize-assets", this.assets, function(err) {
+				self.applyPlugins1("after-optimize-chunk-assets", self.chunks);
+				self.applyPluginsAsync("optimize-assets", self.assets, function(err) {
 					if(err) {
 						return callback(err);
 					}
-					this.applyPlugins("after-optimize-assets", this.assets);
-					return callback();
-				}.bind(this));
-			}.bind(this));
-		}.bind(this));
-	}.bind(this));
+					self.applyPlugins1("after-optimize-assets", self.assets);
+					if(self.applyPluginsBailResult("need-additional-seal")) {
+						self.unseal();
+						return self.seal(callback);
+					}
+					return self.applyPluginsAsync("after-seal", callback);
+				});
+			});
+		});
+	});
 };
 
 Compilation.prototype.sortModules = function sortModules(modules) {
@@ -586,6 +633,22 @@ Compilation.prototype.sortModules = function sortModules(modules) {
 		if(a.index < b.index) return -1;
 		if(a.index > b.index) return 1;
 		return 0;
+	});
+};
+
+Compilation.prototype.reportDependencyWarnings = function reportDependencyWarnings(module, blocks) {
+	var _this = this;
+	blocks.forEach(function(block) {
+		block.dependencies.forEach(function(d) {
+			var warnings = d.getWarnings();
+			if(warnings) {
+				warnings.forEach(function(w) {
+					var warning = new ModuleDependencyWarning(module, w, d.loc);
+					_this.warnings.push(warning);
+				});
+			}
+		});
+		_this.reportDependencyWarnings(module, block.blocks);
 	});
 };
 
@@ -608,51 +671,118 @@ Compilation.prototype.addChunk = function addChunk(name, module, loc) {
 	return chunk;
 };
 
+Compilation.prototype.assignIndex = function assignIndex(module) {
+	var _this = this;
+
+	function assignIndexToModule(module) {
+		// enter module
+		if(typeof module.index !== "number") {
+			module.index = _this.nextFreeModuleIndex++;
+
+			queue.push(function() {
+				// leave module
+				module.index2 = _this.nextFreeModuleIndex2++;
+			});
+
+			// enter it as block
+			assignIndexToDependencyBlock(module);
+		}
+	}
+
+	function assignIndexToDependency(dependency) {
+		if(dependency.module) {
+			queue.push(function() {
+				assignIndexToModule(dependency.module);
+			});
+		}
+	}
+
+	function assignIndexToDependencyBlock(block) {
+		var allDependencies = [];
+
+		function iteratorDependency(d) {
+			allDependencies.push(d);
+		}
+
+		function iteratorBlock(b) {
+			queue.push(function() {
+				assignIndexToDependencyBlock(b);
+			});
+		}
+
+		if(block.variables) {
+			block.variables.forEach(function(v) {
+				v.dependencies.forEach(iteratorDependency);
+			});
+		}
+		if(block.dependencies) {
+			block.dependencies.forEach(iteratorDependency);
+		}
+		if(block.blocks) {
+			block.blocks.slice().reverse().forEach(iteratorBlock, this);
+		}
+
+		allDependencies.reverse();
+		allDependencies.forEach(function(d) {
+			queue.push(function() {
+				assignIndexToDependency(d);
+			});
+		});
+	}
+
+	var queue = [function() {
+		assignIndexToModule(module);
+	}];
+	while(queue.length) {
+		queue.pop()();
+	}
+};
+
 Compilation.prototype.processDependenciesBlockForChunk = function processDependenciesBlockForChunk(block, chunk) {
-	if(block.variables) {
-		block.variables.forEach(function(v) {
-			v.dependencies.forEach(iteratorDependency, this);
-		}, this);
+	var queue = [
+		[block, chunk]
+	];
+	while(queue.length) {
+		var queueItem = queue.pop();
+		block = queueItem[0];
+		chunk = queueItem[1];
+		if(block.variables) {
+			block.variables.forEach(function(v) {
+				v.dependencies.forEach(iteratorDependency, this);
+			}, this);
+		}
+		if(block.dependencies) {
+			block.dependencies.forEach(iteratorDependency, this);
+		}
+		if(block.blocks) {
+			block.blocks.forEach(iteratorBlock, this);
+		}
 	}
-	if(block.dependencies) {
-		block.dependencies.forEach(iteratorDependency, this);
-	}
-	if(block.blocks) {
-		block.blocks.forEach(function(b) {
-			var c;
-			if(!b.chunks) {
-				c = this.addChunk(b.chunkName, b.module, b.loc);
-				b.chunks = [c];
-				c.addBlock(b);
-			} else {
-				c = b.chunks[0];
-			}
-			chunk.addChunk(c);
-			c.addParent(chunk);
-			this.processDependenciesBlockForChunk(b, c);
-		}, this);
+
+	function iteratorBlock(b) {
+		var c;
+		if(!b.chunks) {
+			c = this.addChunk(b.chunkName, b.module, b.loc);
+			b.chunks = [c];
+			c.addBlock(b);
+		} else {
+			c = b.chunks[0];
+		}
+		chunk.addChunk(c);
+		c.addParent(chunk);
+		queue.push([b, c]);
 	}
 
 	function iteratorDependency(d) {
 		if(!d.module) {
 			return;
 		}
-		if(typeof d.module.index !== "number") {
-			d.module.index = this.nextFreeModuleIndex++;
-		}
 		if(d.weak) {
-			return;
-		}
-		if(d.module.error) {
-			d.module = null;
 			return;
 		}
 		if(chunk.addModule(d.module)) {
 			d.module.addChunk(chunk);
-			this.processDependenciesBlockForChunk(d.module, chunk);
-		}
-		if(typeof d.module.index2 !== "number") {
-			d.module.index2 = this.nextFreeModuleIndex2++;
+			queue.push([d.module, chunk]);
 		}
 	}
 };
@@ -684,17 +814,73 @@ Compilation.prototype.removeChunkFromDependencies = function removeChunkFromDepe
 };
 
 Compilation.prototype.applyModuleIds = function applyModuleIds() {
+	var unusedIds = [];
+	var nextFreeModuleId = 0;
+	var usedIds = [];
+	var usedIdMap = {};
+	if(this.usedModuleIds) {
+		Object.keys(this.usedModuleIds).forEach(function(key) {
+			var id = this.usedModuleIds[key];
+			if(typeof usedIdMap[id] === "undefined") {
+				usedIds.push(id);
+				usedIdMap[id] = id;
+			}
+		}, this);
+	}
+	this.modules.forEach(function(module) {
+		if(module.id !== null && typeof usedIdMap[module.id] === "undefined") {
+			usedIds.push(module.id);
+			usedIdMap[module.id] = module.id;
+		}
+	});
+	if(usedIds.length > 0) {
+		var usedNumberIds = usedIds.filter(function(id) {
+			return typeof id === "number";
+		});
+		nextFreeModuleId = usedNumberIds.reduce(function(a, b) {
+			return Math.max(a, b);
+		}, -1) + 1;
+		for(var i = 0; i < nextFreeModuleId; i++) {
+			if(usedIdMap[i] !== i)
+				unusedIds.push(i);
+		}
+		unusedIds.reverse();
+	}
 	this.modules.forEach(function(module) {
 		if(module.id === null) {
-			module.id = this.nextFreeModuleId++;
+			if(unusedIds.length > 0)
+				module.id = unusedIds.pop();
+			else
+				module.id = nextFreeModuleId++;
 		}
 	}, this);
 };
 
 Compilation.prototype.applyChunkIds = function applyChunkIds() {
+	var unusedIds = [];
+	var nextFreeChunkId = 0;
+	if(this.usedChunkIds) {
+		var usedIds = Object.keys(this.usedChunkIds).map(function(key) {
+			return this.usedChunkIds[key];
+		}, this).sort();
+		var usedNumberIds = usedIds.filter(function(id) {
+			return typeof id === "number";
+		});
+		nextFreeChunkId = usedNumberIds.reduce(function(a, b) {
+			return Math.max(a, b);
+		}, -1) + 1;
+		for(var i = 0; i < nextFreeChunkId; i++) {
+			if(this.usedChunkIds[i] !== i)
+				unusedIds.push(i);
+		}
+		unusedIds.reverse();
+	}
 	this.chunks.forEach(function(chunk) {
 		if(chunk.id === null) {
-			chunk.id = this.nextFreeChunkId++;
+			if(unusedIds.length > 0)
+				chunk.id = unusedIds.pop();
+			else
+				chunk.id = nextFreeChunkId++;
 		}
 		if(!chunk.ids) {
 			chunk.ids = [chunk.id];
@@ -702,20 +888,33 @@ Compilation.prototype.applyChunkIds = function applyChunkIds() {
 	}, this);
 };
 
-Compilation.prototype.sortItems = function sortItems() {
-	function byId(a, b) {
-		return a.id - b.id;
-	}
-	this.chunks.sort(byId);
+function byId(a, b) {
+	if(a.id < b.id) return -1;
+	if(a.id > b.id) return 1;
+	return 0;
+}
+
+Compilation.prototype.sortItemsBeforeIds = function sortItemsBeforeIds() {
+
+};
+
+Compilation.prototype.sortItemsWithModuleIds = function sortItemsWithModuleIds() {
 	this.modules.sort(byId);
 	this.modules.forEach(function(module) {
-		module.chunks.sort(byId);
-		module.reasons.sort(function(a, b) {
-			return byId(a.module, b.module);
-		});
+		module.sortItems();
 	});
 	this.chunks.forEach(function(chunk) {
-		chunk.modules.sort(byId);
+		chunk.sortItems();
+	});
+};
+
+Compilation.prototype.sortItemsWithChunkIds = function sortItemsWithChunkIds() {
+	this.chunks.sort(byId);
+	this.modules.forEach(function(module) {
+		module.sortItems();
+	});
+	this.chunks.forEach(function(chunk) {
+		chunk.sortItems();
 	});
 };
 
@@ -728,7 +927,7 @@ Compilation.prototype.summarizeDependencies = function summarizeDependencies() {
 		}
 		return newArray;
 	}
-	this.fileDependencies = [];
+	this.fileDependencies = (this.compilationDependencies || []).slice();
 	this.contextDependencies = [];
 	this.missingDependencies = [];
 	this.children.forEach(function(child) {
@@ -769,26 +968,32 @@ Compilation.prototype.createHash = function createHash() {
 	var hashDigest = outputOptions.hashDigest;
 	var hashDigestLength = outputOptions.hashDigestLength;
 	var hash = require("crypto").createHash(hashFunction);
+	if(outputOptions.hashSalt)
+		hash.update(outputOptions.hashSalt);
 	this.mainTemplate.updateHash(hash);
 	this.chunkTemplate.updateHash(hash);
 	this.moduleTemplate.updateHash(hash);
 	var i, chunk;
 	var chunks = this.chunks.slice();
 	chunks.sort(function(a, b) {
-		if(a.entry && !b.entry) return 1;
-		if(!a.entry && b.entry) return -1;
+		var aEntry = a.hasRuntime();
+		var bEntry = b.hasRuntime();
+		if(aEntry && !bEntry) return 1;
+		if(!aEntry && bEntry) return -1;
 		return 0;
 	});
 	for(i = 0; i < chunks.length; i++) {
 		chunk = chunks[i];
 		var chunkHash = require("crypto").createHash(hashFunction);
+		if(outputOptions.hashSalt)
+			hash.update(outputOptions.hashSalt);
 		chunk.updateHash(chunkHash);
-		if(chunk.entry) {
+		if(chunk.hasRuntime()) {
 			this.mainTemplate.updateHashForChunk(chunkHash, chunk);
 		} else {
 			this.chunkTemplate.updateHashForChunk(chunkHash);
 		}
-		this.applyPlugins("chunk-hash", chunk, chunkHash);
+		this.applyPlugins2("chunk-hash", chunk, chunkHash);
 		chunk.hash = chunkHash.digest(hashDigest);
 		hash.update(chunk.hash);
 		chunk.renderedHash = chunk.hash.substr(0, hashDigestLength);
@@ -809,37 +1014,41 @@ Compilation.prototype.modifyHash = function modifyHash(update) {
 	this.hash = this.fullHash.substr(0, hashDigestLength);
 };
 
-Compilation.prototype.createChunkAssets = function createChunkAssets() {
-	var outputOptions = this.outputOptions;
-	var filename = outputOptions.filename || "bundle.js";
-	var chunkFilename = outputOptions.chunkFilename || "[id]." + filename;
-	var namedChunkFilename = outputOptions.namedChunkFilename || null;
+Compilation.prototype.createModuleAssets = function createModuleAssets() {
+	var cacheAssetsAndApplyPlugins = function cacheAssetsAndApplyPlugins(name) {
+		var file = this.getPath(name);
+		this.assets[file] = module.assets[name];
+		this.applyPlugins2("module-asset", module, file);
+	}
+
 	for(var i = 0; i < this.modules.length; i++) {
 		var module = this.modules[i];
 		if(module.assets) {
-			Object.keys(module.assets).forEach(function(name) {
-				var file = this.getPath(name);
-				this.assets[file] = module.assets[name];
-				this.applyPlugins("module-asset", module, file);
-			}, this);
+			Object.keys(module.assets).forEach(cacheAssetsAndApplyPlugins, this);
 		}
 	}
-	for(i = 0; i < this.chunks.length; i++) {
+};
+
+Compilation.prototype.createChunkAssets = function createChunkAssets() {
+	var outputOptions = this.outputOptions;
+	var filename = outputOptions.filename;
+	var chunkFilename = outputOptions.chunkFilename;
+	for(var i = 0; i < this.chunks.length; i++) {
 		var chunk = this.chunks[i];
 		chunk.files = [];
 		var chunkHash = chunk.hash;
 		var source;
 		var file;
 		var filenameTemplate = chunk.filenameTemplate ? chunk.filenameTemplate :
-			chunk.initial ? filename :
+			chunk.isInitial() ? filename :
 			chunkFilename;
 		try {
-			var useChunkHash = !chunk.entry || (this.mainTemplate.useChunkHash && this.mainTemplate.useChunkHash(chunk));
+			var useChunkHash = !chunk.hasRuntime() || (this.mainTemplate.useChunkHash && this.mainTemplate.useChunkHash(chunk));
 			var usedHash = useChunkHash ? chunkHash : this.fullHash;
 			if(this.cache && this.cache["c" + chunk.id] && this.cache["c" + chunk.id].hash === usedHash) {
 				source = this.cache["c" + chunk.id].source;
 			} else {
-				if(chunk.entry) {
+				if(chunk.hasRuntime()) {
 					source = this.mainTemplate.render(this.hash, chunk, this.moduleTemplate, this.dependencyTemplates);
 				} else {
 					source = this.chunkTemplate.render(chunk, this.moduleTemplate, this.dependencyTemplates);
@@ -851,25 +1060,15 @@ Compilation.prototype.createChunkAssets = function createChunkAssets() {
 					};
 				}
 			}
-			this.assets[
-				file = this.getPath(filenameTemplate, {
-					noChunkHash: !useChunkHash,
-					chunk: chunk
-				})
-			] = source;
+			file = this.getPath(filenameTemplate, {
+				noChunkHash: !useChunkHash,
+				chunk: chunk
+			});
+			if(this.assets[file])
+				throw new Error("Conflict: Multiple assets emit to the same filename '" + file + "'");
+			this.assets[file] = source;
 			chunk.files.push(file);
-			this.applyPlugins("chunk-asset", chunk, file);
-			file = undefined;
-			if(chunk.id !== 0 && namedChunkFilename && chunk.name) {
-				this.assets[
-					file = this.getPath(namedChunkFilename, {
-						noChunkHash: !useChunkHash,
-						chunk: chunk
-					})
-				] = source;
-				chunk.files.push(file);
-				this.applyPlugins("chunk-asset", chunk, file);
-			}
+			this.applyPlugins2("chunk-asset", chunk, file);
 		} catch(err) {
 			this.errors.push(new ChunkRenderError(chunk, file || filenameTemplate, err));
 		}
@@ -888,4 +1087,17 @@ Compilation.prototype.getStats = function() {
 
 Compilation.prototype.createChildCompiler = function(name, outputOptions) {
 	return this.compiler.createChildCompiler(this, name, outputOptions);
+};
+
+Compilation.prototype.checkConstraints = function() {
+	var usedIds = {};
+	this.modules.forEach(function(module) {
+		if(usedIds[module.id])
+			throw new Error("checkConstraints: duplicate module id " + module.id);
+	});
+	this.chunks.forEach(function(chunk, idx) {
+		if(this.chunks.indexOf(chunk) !== idx)
+			throw new Error("checkConstraints: duplicate chunk in compilation " + chunk.debugId);
+		chunk.checkConstraints();
+	}.bind(this));
 };

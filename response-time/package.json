@@ -16,7 +16,6 @@
   "_from": "response-time@>=2.3.1 <2.4.0",
   "_id": "response-time@2.3.2",
   "_inCache": true,
-  "_installable": true,
   "_location": "/response-time",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",

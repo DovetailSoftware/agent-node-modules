@@ -16,7 +16,6 @@
   "_from": "readable-stream@>=1.0.17 <1.1.0",
   "_id": "readable-stream@1.0.34",
   "_inCache": true,
-  "_installable": true,
   "_location": "/readable-stream",
   "_nodeVersion": "5.10.1",
   "_npmOperationalInternal": {
@@ -42,7 +41,6 @@
     "/glob-stream/through2",
     "/gulp-mocha-phantomjs/gulp-util/through2",
     "/gulp-mocha-phantomjs/through2",
-    "/stream-browserify",
     "/through2",
     "/vinyl-fs/through2"
   ],

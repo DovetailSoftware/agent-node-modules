@@ -16,7 +16,6 @@
   "_from": "gulp-mocha-phantomjs@>=0.10.1 <0.11.0",
   "_id": "gulp-mocha-phantomjs@0.10.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/gulp-mocha-phantomjs",
   "_nodeVersion": "0.10.32",
   "_npmUser": {

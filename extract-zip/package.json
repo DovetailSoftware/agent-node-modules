@@ -16,7 +16,6 @@
   "_from": "extract-zip@>=1.5.0 <1.6.0",
   "_id": "extract-zip@1.5.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/extract-zip",
   "_nodeVersion": "4.2.3",
   "_npmOperationalInternal": {

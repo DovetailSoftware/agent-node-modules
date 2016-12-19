@@ -25,7 +25,6 @@
   "_from": "malsup/form#3.51",
   "_id": "jquery-form@3.51.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/jquery-form",
   "_phantomChildren": {},
   "_requested": {
@@ -50,7 +49,7 @@
     "/"
   ],
   "_resolved": "git://github.com/malsup/form.git#6bf24a5f6d8be65f4e5491863180c09356d9dadd",
-  "_shasum": "0857c61d8a1bdb140c7cb77a1be3496aa2d2c3e1",
+  "_shasum": "10aff99728caea0317e57afc70835d9af4b8f7c7",
   "_shrinkwrap": null,
   "_spec": "jquery-form@github:malsup/form#3.51",
   "_where": "C:\\Github\\agent",

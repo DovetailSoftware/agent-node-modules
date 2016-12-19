@@ -16,7 +16,6 @@
   "_from": "serve-favicon@>=2.3.0 <2.4.0",
   "_id": "serve-favicon@2.3.2",
   "_inCache": true,
-  "_installable": true,
   "_location": "/serve-favicon",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",

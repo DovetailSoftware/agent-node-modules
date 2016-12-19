@@ -16,7 +16,6 @@
   "_from": "backbone.babysitter@>=0.1.0 <0.2.0",
   "_id": "backbone.babysitter@0.1.12",
   "_inCache": true,
-  "_installable": true,
   "_location": "/backbone.babysitter",
   "_nodeVersion": "6.0.0",
   "_npmOperationalInternal": {

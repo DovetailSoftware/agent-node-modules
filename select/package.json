@@ -16,7 +16,6 @@
   "_from": "select@>=1.0.6 <2.0.0",
   "_id": "select@1.1.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/select",
   "_nodeVersion": "5.1.1",
   "_npmOperationalInternal": {

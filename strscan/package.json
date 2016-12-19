@@ -16,7 +16,6 @@
   "_from": "strscan@>=1.0.1",
   "_id": "strscan@1.0.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/strscan",
   "_nodeSupported": true,
   "_nodeVersion": "v0.3.1-pre",

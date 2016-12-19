@@ -16,7 +16,6 @@
   "_from": "morgan@>=1.6.1 <1.7.0",
   "_id": "morgan@1.6.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/morgan",
   "_npmUser": {
     "name": "dougwilson",

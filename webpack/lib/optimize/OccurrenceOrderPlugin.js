@@ -14,27 +14,36 @@ OccurrenceOrderPlugin.prototype.apply = function(compiler) {
 	compiler.plugin("compilation", function(compilation) {
 		compilation.plugin("optimize-module-order", function(modules) {
 			function entryChunks(m) {
-				return m.chunks.filter(function(c) {
-					return c.initial;
-				}).length;
+				return m.chunks.map(function(c) {
+					var sum = (c.isInitial() ? 1 : 0) + (c.entryModule === m ? 1 : 0);
+					return sum;
+				}).reduce(function(a, b) {
+					return a + b;
+				}, 0);
 			}
 
 			function occursInEntry(m) {
-				return m.reasons.map(function(r) {
+				if(typeof m.__OccurenceOrderPlugin_occursInEntry === "number") return m.__OccurenceOrderPlugin_occursInEntry;
+				var result = m.reasons.map(function(r) {
 					if(!r.module) return 0;
 					return entryChunks(r.module);
 				}).reduce(function(a, b) {
 					return a + b;
 				}, 0) + entryChunks(m);
+				return m.__OccurenceOrderPlugin_occursInEntry = result;
 			}
 
 			function occurs(m) {
-				return m.reasons.map(function(r) {
+				if(typeof m.__OccurenceOrderPlugin_occurs === "number") return m.__OccurenceOrderPlugin_occurs;
+				var result = m.reasons.map(function(r) {
 					if(!r.module) return 0;
 					return r.module.chunks.length;
 				}).reduce(function(a, b) {
 					return a + b;
-				}, 0) + m.chunks.length;
+				}, 0) + m.chunks.length + m.chunks.filter(function(c) {
+					c.entryModule === m;
+				}).length;
+				return m.__OccurenceOrderPlugin_occurs = result;
 			}
 			modules.sort(function(a, b) {
 				if(preferEntry) {
@@ -51,16 +60,23 @@ OccurrenceOrderPlugin.prototype.apply = function(compiler) {
 				if(a.identifier() < b.identifier()) return -1;
 				return 0;
 			});
+			// TODO refactor to Map
+			modules.forEach(function(m) {
+				m.__OccurenceOrderPlugin_occursInEntry = undefined;
+				m.__OccurenceOrderPlugin_occurs = undefined;
+			});
 		});
 		compilation.plugin("optimize-chunk-order", function(chunks) {
 			function occursInEntry(c) {
-				return c.parents.filter(function(p) {
-					return p.initial;
-				}).length + (c.entry ? 1 : 0);
+				if(typeof c.__OccurenceOrderPlugin_occursInEntry === "number") return c.__OccurenceOrderPlugin_occursInEntry;
+				var result = c.parents.filter(function(p) {
+					return p.isInitial();
+				}).length;
+				return c.__OccurenceOrderPlugin_occursInEntry = result;
 			}
 
 			function occurs(c) {
-				return c.blocks.length + (c.entry ? 1 : 0);
+				return c.blocks.length;
 			}
 			chunks.forEach(function(c) {
 				c.modules.sort(function(a, b) {
@@ -85,6 +101,10 @@ OccurrenceOrderPlugin.prototype.apply = function(compiler) {
 					if(a.modules[i].identifier() < b.modules[i].identifier()) return 1;
 				}
 				return 0;
+			});
+			// TODO refactor to Map
+			chunks.forEach(function(c) {
+				c.__OccurenceOrderPlugin_occursInEntry = undefined;
 			});
 		});
 	});

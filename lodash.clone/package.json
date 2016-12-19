@@ -16,7 +16,6 @@
   "_from": "lodash.clone@>=4.3.2 <5.0.0",
   "_id": "lodash.clone@4.5.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/lodash.clone",
   "_nodeVersion": "4.4.7",
   "_npmOperationalInternal": {

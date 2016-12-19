@@ -16,7 +16,6 @@
   "_from": "type-detect@>=1.0.0 <2.0.0",
   "_id": "type-detect@1.0.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/type-detect",
   "_nodeVersion": "0.11.16",
   "_npmUser": {

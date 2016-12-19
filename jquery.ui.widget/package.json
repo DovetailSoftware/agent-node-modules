@@ -16,7 +16,6 @@
   "_from": "jquery.ui.widget@>=1.9.0",
   "_id": "jquery.ui.widget@1.10.3",
   "_inCache": true,
-  "_installable": true,
   "_location": "/jquery.ui.widget",
   "_npmUser": {
     "name": "blueimp",

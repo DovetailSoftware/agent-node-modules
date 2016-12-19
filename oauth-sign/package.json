@@ -16,7 +16,6 @@
   "_from": "oauth-sign@>=0.3.0 <0.4.0",
   "_id": "oauth-sign@0.3.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/oauth-sign",
   "_npmUser": {
     "name": "mikeal",

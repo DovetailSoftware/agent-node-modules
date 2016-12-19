@@ -16,7 +16,6 @@
   "_from": "csurf@>=1.8.3 <1.9.0",
   "_id": "csurf@1.8.3",
   "_inCache": true,
-  "_installable": true,
   "_location": "/csurf",
   "_npmUser": {
     "name": "dougwilson",

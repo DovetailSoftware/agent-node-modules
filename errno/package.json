@@ -16,7 +16,6 @@
   "_from": "errno@>=0.1.1 <0.2.0",
   "_id": "errno@0.1.4",
   "_inCache": true,
-  "_installable": true,
   "_location": "/errno",
   "_nodeVersion": "3.0.0",
   "_npmUser": {
@@ -35,6 +34,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/enhanced-resolve/memory-fs",
     "/less",
     "/memory-fs"
   ],

@@ -7,8 +7,15 @@ var MultiCompiler = require("./MultiCompiler");
 var NodeEnvironmentPlugin = require("./node/NodeEnvironmentPlugin");
 var WebpackOptionsApply = require("./WebpackOptionsApply");
 var WebpackOptionsDefaulter = require("./WebpackOptionsDefaulter");
+var validateSchema = require("./validateSchema");
+var WebpackOptionsValidationError = require("./WebpackOptionsValidationError");
+var webpackOptionsSchema = require("../schemas/webpackOptionsSchema.json");
 
 function webpack(options, callback) {
+	var webpackOptionsValidationErrors = validateSchema(webpackOptionsSchema, options);
+	if(webpackOptionsValidationErrors.length) {
+		throw new WebpackOptionsValidationError(webpackOptionsValidationErrors);
+	}
 	var compiler;
 	if(Array.isArray(options)) {
 		compiler = new MultiCompiler(options.map(function(options) {
@@ -18,11 +25,11 @@ function webpack(options, callback) {
 		new WebpackOptionsDefaulter().process(options);
 
 		compiler = new Compiler();
-		compiler.options = options;
-		compiler.options = new WebpackOptionsApply().process(options, compiler);
 		new NodeEnvironmentPlugin().apply(compiler);
 		compiler.applyPlugins("environment");
 		compiler.applyPlugins("after-environment");
+		compiler.options = options;
+		compiler.options = new WebpackOptionsApply().process(options, compiler);
 	} else {
 		throw new Error("Invalid argument: options");
 	}
@@ -33,12 +40,6 @@ function webpack(options, callback) {
 					return o.watch;
 				}))) {
 			var watchOptions = (!Array.isArray(options) ? options : options[0]).watchOptions || {};
-			// TODO remove this in next major version
-			var watchDelay = (!Array.isArray(options) ? options : options[0]).watchDelay;
-			if(watchDelay) {
-				console.warn("options.watchDelay is deprecated: Use 'options.watchOptions.aggregateTimeout' instead");
-				watchOptions.aggregateTimeout = watchDelay;
-			}
 			return compiler.watch(watchOptions, callback);
 		}
 		compiler.run(callback);
@@ -52,6 +53,9 @@ webpack.WebpackOptionsApply = WebpackOptionsApply;
 webpack.Compiler = Compiler;
 webpack.MultiCompiler = MultiCompiler;
 webpack.NodeEnvironmentPlugin = NodeEnvironmentPlugin;
+webpack.validate = validateSchema.bind(this, webpackOptionsSchema);
+webpack.validateSchema = validateSchema;
+webpack.WebpackOptionsValidationError = WebpackOptionsValidationError;
 
 function exportPlugins(exports, path, plugins) {
 	plugins.forEach(function(name) {
@@ -76,7 +80,6 @@ exportPlugins(exports, ".", [
 	"AutomaticPrefetchPlugin",
 	"ProvidePlugin",
 	"HotModuleReplacementPlugin",
-	"ResolverPlugin",
 	"SourceMapDevToolPlugin",
 	"EvalSourceMapDevToolPlugin",
 	"EvalDevToolModulePlugin",
@@ -92,22 +95,23 @@ exportPlugins(exports, ".", [
 	"UmdMainTemplatePlugin",
 	"NoErrorsPlugin",
 	"NewWatchingPlugin",
-	"OldWatchingPlugin",
 	"EnvironmentPlugin",
 	"DllPlugin",
 	"DllReferencePlugin",
-	"NamedModulesPlugin"
+	"LoaderOptionsPlugin",
+	"NamedModulesPlugin",
+	"HashedModuleIdsPlugin",
+	"ModuleFilenameHelpers"
 ]);
 exportPlugins(exports.optimize = {}, "./optimize", [
 	"AggressiveMergingPlugin",
+	"AggressiveSplittingPlugin",
 	"CommonsChunkPlugin",
+	"ChunkModuleIdRangePlugin",
 	"DedupePlugin",
 	"LimitChunkCountPlugin",
 	"MinChunkSizePlugin",
-	"OccurenceOrderPlugin",
 	"OccurrenceOrderPlugin",
 	"UglifyJsPlugin"
 ]);
-exportPlugins(exports.dependencies = {}, "./dependencies", [
-	"LabeledModulesPlugin"
-]);
+exportPlugins(exports.dependencies = {}, "./dependencies", []);

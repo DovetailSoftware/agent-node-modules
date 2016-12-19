@@ -18,7 +18,6 @@
   "_from": "async@>=0.1.22 <0.2.0",
   "_id": "async@0.1.22",
   "_inCache": true,
-  "_installable": true,
   "_location": "/async",
   "_nodeVersion": "v0.6.18",
   "_npmUser": {

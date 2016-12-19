@@ -16,7 +16,6 @@
   "_from": "serve-static@>=1.10.0 <1.11.0",
   "_id": "serve-static@1.10.3",
   "_inCache": true,
-  "_installable": true,
   "_location": "/serve-static",
   "_nodeVersion": "4.4.3",
   "_npmOperationalInternal": {

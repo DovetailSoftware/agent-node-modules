@@ -16,7 +16,6 @@
   "_from": "first-chunk-stream@>=1.0.0 <2.0.0",
   "_id": "first-chunk-stream@1.0.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/first-chunk-stream",
   "_npmUser": {
     "name": "sindresorhus",

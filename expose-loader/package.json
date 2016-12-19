@@ -16,7 +16,6 @@
   "_from": "expose-loader@>=0.7.0 <0.8.0",
   "_id": "expose-loader@0.7.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/expose-loader",
   "_nodeVersion": "4.0.0",
   "_npmUser": {

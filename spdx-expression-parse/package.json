@@ -16,7 +16,6 @@
   "_from": "spdx-expression-parse@>=1.0.0 <1.1.0",
   "_id": "spdx-expression-parse@1.0.4",
   "_inCache": true,
-  "_installable": true,
   "_location": "/spdx-expression-parse",
   "_nodeVersion": "4.6.0",
   "_npmOperationalInternal": {

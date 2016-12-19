@@ -16,7 +16,6 @@
   "_from": "private@>=0.1.6 <0.2.0",
   "_id": "private@0.1.6",
   "_inCache": true,
-  "_installable": true,
   "_location": "/private",
   "_npmUser": {
     "name": "benjamn",
@@ -35,7 +34,7 @@
   },
   "_requiredBy": [
     "/babel-core",
-    "/babel-plugin-transform-regenerator"
+    "/regenerator-transform"
   ],
   "_resolved": "https://registry.npmjs.org/private/-/private-0.1.6.tgz",
   "_shasum": "55c6a976d0f9bafb9924851350fe47b9b5fbb7c1",

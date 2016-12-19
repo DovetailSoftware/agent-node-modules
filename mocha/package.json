@@ -16,7 +16,6 @@
   "_from": "mocha@>=2.3.3 <3.0.0",
   "_id": "mocha@2.5.3",
   "_inCache": true,
-  "_installable": true,
   "_location": "/mocha",
   "_nodeVersion": "6.0.0",
   "_npmOperationalInternal": {

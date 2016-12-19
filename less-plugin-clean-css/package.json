@@ -16,7 +16,6 @@
   "_from": "less-plugin-clean-css@>=1.5.0 <2.0.0",
   "_id": "less-plugin-clean-css@1.5.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/less-plugin-clean-css",
   "_nodeVersion": "0.12.2",
   "_npmUser": {

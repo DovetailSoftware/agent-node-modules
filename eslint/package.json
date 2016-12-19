@@ -16,7 +16,6 @@
   "_from": "eslint@>=2.2.0 <3.0.0",
   "_id": "eslint@2.13.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/eslint",
   "_nodeVersion": "4.4.2",
   "_npmOperationalInternal": {

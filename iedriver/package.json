@@ -16,7 +16,6 @@
   "_from": "iedriver@>=2.52.2 <3.0.0",
   "_id": "iedriver@2.53.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/iedriver",
   "_nodeVersion": "4.2.1",
   "_npmOperationalInternal": {

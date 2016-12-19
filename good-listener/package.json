@@ -14,20 +14,19 @@
     ]
   ],
   "_from": "good-listener@>=1.1.6 <2.0.0",
-  "_id": "good-listener@1.2.0",
+  "_id": "good-listener@1.2.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/good-listener",
-  "_nodeVersion": "5.1.1",
+  "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/good-listener-1.2.0.tgz_1477187461558_0.26678913342766464"
+    "tmp": "tmp/good-listener-1.2.1.tgz_1481550160229_0.4323891382664442"
   },
   "_npmUser": {
     "name": "zenorocha",
     "email": "zno.rocha@gmail.com"
   },
-  "_npmVersion": "3.9.5",
+  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
     "raw": "good-listener@^1.1.6",
@@ -41,8 +40,8 @@
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "https://registry.npmjs.org/good-listener/-/good-listener-1.2.0.tgz",
-  "_shasum": "c473e31ba8c12cf82b6137cd867565beab5ba053",
+  "_resolved": "https://registry.npmjs.org/good-listener/-/good-listener-1.2.1.tgz",
+  "_shasum": "4c5b4681a3e8c91b00f1cb12d89a23b32473547b",
   "_shrinkwrap": null,
   "_spec": "good-listener@^1.1.6",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
@@ -50,7 +49,7 @@
     "url": "https://github.com/zenorocha/good-listener/issues"
   },
   "dependencies": {
-    "delegate": "^3.1.0"
+    "delegate": "^3.1.1"
   },
   "description": "A more versatile way of adding & removing event listeners",
   "devDependencies": {
@@ -71,10 +70,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "c473e31ba8c12cf82b6137cd867565beab5ba053",
-    "tarball": "https://registry.npmjs.org/good-listener/-/good-listener-1.2.0.tgz"
+    "shasum": "4c5b4681a3e8c91b00f1cb12d89a23b32473547b",
+    "tarball": "https://registry.npmjs.org/good-listener/-/good-listener-1.2.1.tgz"
   },
-  "gitHead": "ab08fd44067ba248f6bfedbb877d5a87447984ea",
+  "gitHead": "cbacac925b2518befde5071e78c505c3c1edec97",
   "homepage": "https://github.com/zenorocha/good-listener#readme",
   "keywords": [
     "event",
@@ -99,5 +98,5 @@
     "build": "browserify src/listen.js -s listen -o dist/good-listener.js",
     "test": "karma start --single-run"
   },
-  "version": "1.2.0"
+  "version": "1.2.1"
 }

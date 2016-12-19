@@ -14,14 +14,13 @@
     ]
   ],
   "_from": "babel-plugin-transform-regenerator@>=6.16.0 <7.0.0",
-  "_id": "babel-plugin-transform-regenerator@6.16.1",
+  "_id": "babel-plugin-transform-regenerator@6.21.0",
   "_inCache": true,
-  "_installable": true,
   "_location": "/babel-plugin-transform-regenerator",
-  "_nodeVersion": "5.11.1",
+  "_nodeVersion": "6.9.0",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/babel-plugin-transform-regenerator-6.16.1.tgz_1475097914225_0.827174331760034"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/babel-plugin-transform-regenerator-6.21.0.tgz_1481925358799_0.07746717380359769"
   },
   "_npmUser": {
     "name": "hzoo",
@@ -41,8 +40,8 @@
   "_requiredBy": [
     "/babel-preset-es2015"
   ],
-  "_resolved": "https://registry.npmjs.org/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.16.1.tgz",
-  "_shasum": "a75de6b048a14154aae14b0122756c5bed392f59",
+  "_resolved": "https://registry.npmjs.org/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.21.0.tgz",
+  "_shasum": "75d0c7e7f84f379358f508451c68a2c5fa5a9703",
   "_shrinkwrap": null,
   "_spec": "babel-plugin-transform-regenerator@^6.16.0",
   "_where": "C:\\Github\\agent\\node_modules\\babel-preset-es2015",
@@ -51,9 +50,7 @@
     "email": "bn@cs.stanford.edu"
   },
   "dependencies": {
-    "babel-runtime": "^6.9.0",
-    "babel-types": "^6.16.0",
-    "private": "~0.1.5"
+    "regenerator-transform": "0.9.8"
   },
   "description": "Explode async and generator functions into a state machine.",
   "devDependencies": {
@@ -61,11 +58,11 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "a75de6b048a14154aae14b0122756c5bed392f59",
-    "tarball": "https://registry.npmjs.org/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.16.1.tgz"
+    "shasum": "75d0c7e7f84f379358f508451c68a2c5fa5a9703",
+    "tarball": "https://registry.npmjs.org/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-6.21.0.tgz"
   },
   "homepage": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-regenerator",
-  "license": "BSD",
+  "license": "MIT",
   "main": "lib/index.js",
   "maintainers": [
     {
@@ -101,5 +98,5 @@
     "url": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-regenerator"
   },
   "scripts": {},
-  "version": "6.16.1"
+  "version": "6.21.0"
 }

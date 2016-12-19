@@ -16,7 +16,6 @@
   "_from": "isarray@0.0.1",
   "_id": "isarray@0.0.1",
   "_inCache": true,
-  "_installable": true,
   "_location": "/isarray",
   "_npmUser": {
     "name": "juliangruber",
@@ -36,7 +35,6 @@
   "_requiredBy": [
     "/duplexer2/readable-stream",
     "/multiparty/readable-stream",
-    "/node-libs-browser/readable-stream",
     "/readable-stream",
     "/stream-counter/readable-stream"
   ],

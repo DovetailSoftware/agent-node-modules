@@ -16,7 +16,6 @@
   "_from": "fs@>=0.0.2 <0.0.3",
   "_id": "fs@0.0.2",
   "_inCache": true,
-  "_installable": true,
   "_location": "/fs",
   "_nodeVersion": "0.0.0-fake",
   "_npmUser": {

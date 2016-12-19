@@ -25,7 +25,6 @@
   "_from": "jquery/jquery-ui#1.11.2",
   "_id": "jquery-ui@1.11.2",
   "_inCache": true,
-  "_installable": true,
   "_location": "/jquery-ui",
   "_phantomChildren": {},
   "_requested": {
@@ -50,7 +49,7 @@
     "/"
   ],
   "_resolved": "git://github.com/jquery/jquery-ui.git#16a3e63a7108dc7da34d7d52b4fccd9ada24308c",
-  "_shasum": "896ebeb645fa9832dd6ee6c1e29dbefc1f651779",
+  "_shasum": "3666a12e90421dec6dff0a3eea89a00a54d715e3",
   "_shrinkwrap": null,
   "_spec": "jquery-ui@github:jquery/jquery-ui#1.11.2",
   "_where": "C:\\Github\\agent",
