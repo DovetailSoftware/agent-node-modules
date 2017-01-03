@@ -35,7 +35,6 @@
   },
   "_requiredBy": [
     "/gulp-mocha-phantomjs/gulp-util",
-    "/gulp-util",
     "/plugin-log"
   ],
   "_resolved": "https://registry.npmjs.org/dateformat/-/dateformat-1.0.12.tgz",

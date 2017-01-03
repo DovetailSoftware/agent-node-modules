@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "es6-promise@~4.0.3",
+        "raw": "es6-promise@4.0.5",
         "scope": null,
         "escapedName": "es6-promise",
         "name": "es6-promise",
-        "rawSpec": "~4.0.3",
-        "spec": ">=4.0.3 <4.1.0",
-        "type": "range"
+        "rawSpec": "4.0.5",
+        "spec": "4.0.5",
+        "type": "version"
       },
-      "C:\\Github\\agent\\node_modules\\phantomjs-prebuilt"
+      "C:\\Github\\agent"
     ]
   ],
-  "_from": "es6-promise@>=4.0.3 <4.1.0",
+  "_from": "es6-promise@4.0.5",
   "_id": "es6-promise@4.0.5",
   "_inCache": true,
   "_location": "/es6-promise",
@@ -29,22 +29,23 @@
   "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "es6-promise@~4.0.3",
+    "raw": "es6-promise@4.0.5",
     "scope": null,
     "escapedName": "es6-promise",
     "name": "es6-promise",
-    "rawSpec": "~4.0.3",
-    "spec": ">=4.0.3 <4.1.0",
-    "type": "range"
+    "rawSpec": "4.0.5",
+    "spec": "4.0.5",
+    "type": "version"
   },
   "_requiredBy": [
+    "/",
     "/phantomjs-prebuilt"
   ],
   "_resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-4.0.5.tgz",
   "_shasum": "7882f30adde5b240ccfa7f7d78c548330951ae42",
   "_shrinkwrap": null,
-  "_spec": "es6-promise@~4.0.3",
-  "_where": "C:\\Github\\agent\\node_modules\\phantomjs-prebuilt",
+  "_spec": "es6-promise@4.0.5",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Yehuda Katz, Tom Dale, Stefan Penner and contributors",
     "url": "Conversion to ES6 API by Jake Archibald"

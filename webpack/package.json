@@ -14,13 +14,13 @@
     ]
   ],
   "_from": "webpack@>=2.2.0-rc.0 <3.0.0",
-  "_id": "webpack@2.2.0-rc.1",
+  "_id": "webpack@2.2.0-rc.3",
   "_inCache": true,
   "_location": "/webpack",
   "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/webpack-2.2.0-rc.1.tgz_1481962201339_0.21098467451520264"
+    "tmp": "tmp/webpack-2.2.0-rc.3.tgz_1482937462125_0.33254180662333965"
   },
   "_npmUser": {
     "name": "sokra",
@@ -41,7 +41,7 @@
     "which-module": "1.0.0",
     "wrap-ansi": "2.1.0",
     "y18n": "3.2.1",
-    "yargs-parser": "4.2.0"
+    "yargs-parser": "4.2.1"
   },
   "_requested": {
     "raw": "webpack@^2.2.0-rc.0",
@@ -55,8 +55,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/webpack/-/webpack-2.2.0-rc.1.tgz",
-  "_shasum": "5a85e73942b6ecc23ce6bc9e6d0883883e692e29",
+  "_resolved": "https://registry.npmjs.org/webpack/-/webpack-2.2.0-rc.3.tgz",
+  "_shasum": "ac072c06c88aae75abdfd33510e7c5fd965f843f",
   "_shrinkwrap": null,
   "_spec": "webpack@^2.2.0-rc.0",
   "_where": "C:\\Github\\agent",
@@ -87,7 +87,7 @@
     "source-map": "^0.5.3",
     "supports-color": "^3.1.0",
     "tapable": "~0.2.5",
-    "uglify-js": "~2.7.3",
+    "uglify-js": "^2.7.5",
     "watchpack": "^1.0.0",
     "webpack-sources": "^0.1.0",
     "yargs": "^6.0.0"
@@ -131,8 +131,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "5a85e73942b6ecc23ce6bc9e6d0883883e692e29",
-    "tarball": "https://registry.npmjs.org/webpack/-/webpack-2.2.0-rc.1.tgz"
+    "shasum": "ac072c06c88aae75abdfd33510e7c5fd965f843f",
+    "tarball": "https://registry.npmjs.org/webpack/-/webpack-2.2.0-rc.3.tgz"
   },
   "engines": {
     "node": ">=0.12"
@@ -145,7 +145,7 @@
     "web_modules/",
     "schemas/"
   ],
-  "gitHead": "27e604e23100274a8887a5acf0008376d2617071",
+  "gitHead": "92a8be23614f92bc5669bf43eb0ddf746b2477e7",
   "homepage": "https://github.com/webpack/webpack",
   "license": "MIT",
   "main": "lib/webpack.js",
@@ -185,6 +185,6 @@
     "travis:lint": "npm run lint-files && npm run nsp",
     "travis:test": "npm run cover -- --report lcovonly"
   },
-  "version": "2.2.0-rc.1",
+  "version": "2.2.0-rc.3",
   "web": "lib/webpack.web.js"
 }
