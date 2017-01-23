@@ -39,7 +39,8 @@
   },
   "_requiredBy": [
     "/array-union",
-    "/gulp-util"
+    "/gulp-util",
+    "/remap-istanbul/gulp-util"
   ],
   "_resolved": "https://registry.npmjs.org/array-uniq/-/array-uniq-1.0.3.tgz",
   "_shasum": "af6ac877a25cc7f74e058894753858dfdb24fdb6",

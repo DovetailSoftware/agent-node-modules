@@ -41,6 +41,8 @@
     "/glob",
     "/glob-stream/glob",
     "/inflight",
+    "/istanbul",
+    "/istanbul/glob",
     "/run-async"
   ],
   "_resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",

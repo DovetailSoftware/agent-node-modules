@@ -1,8 +1,8 @@
 // MarionetteJS (Backbone.Marionette)
 // ----------------------------------
-// v2.4.4
+// v2.4.7
 //
-// Copyright (c)2015 Derick Bailey, Muted Solutions, LLC.
+// Copyright (c)2016 Derick Bailey, Muted Solutions, LLC.
 // Distributed under MIT license
 //
 // http://marionettejs.com
@@ -31,7 +31,7 @@
 
   var Marionette = Backbone.Marionette = {};
 
-  Marionette.VERSION = '2.4.4';
+  Marionette.VERSION = '2.4.7';
 
   Marionette.noConflict = function() {
     root.Marionette = previousMarionette;
@@ -124,7 +124,7 @@
   // utility method for parsing @ui. syntax strings
   // into associated selector
   Marionette.normalizeUIString = function(uiString, ui) {
-    return uiString.replace(/@ui\.[a-zA-Z_$0-9]*/g, function(r) {
+    return uiString.replace(/@ui\.[a-zA-Z-_$0-9]*/g, function(r) {
       return ui[r.slice(4)];
     });
   };
@@ -196,7 +196,11 @@
     }
   };
   
-  deprecate._warn = typeof console !== 'undefined' && (console.warn || console.log) || function() {};
+  deprecate._console = typeof console !== 'undefined' ? console : {};
+  deprecate._warn = function() {
+    var warn = deprecate._console.warn || deprecate._console.log || function() {};
+    return warn.apply(deprecate._console, arguments);
+  };
   deprecate._cache = {};
   
   /* jshint maxstatements: 14, maxcomplexity: 7 */
@@ -661,7 +665,7 @@
         this.triggerMethod('before:swapOut', this.currentView, this, options);
       }
   
-      if (this.currentView) {
+      if (this.currentView && isDifferentView) {
         delete this.currentView._parent;
       }
   
@@ -1853,6 +1857,9 @@
     reorder: function() {
       var children = this.children;
       var models = this._filteredSortedModels();
+  
+      if (!models.length && this._showingEmptyView) { return this; }
+  
       var anyModelsAdded = _.some(models, function(model) {
         return !children.findByModel(model);
       });
@@ -2880,7 +2887,7 @@
   
             var eventKey  = eventName + selector;
             var handler   = _.isFunction(behaviour) ? behaviour : b[behaviour];
-  
+            if (!handler) { return; }
             _events[eventKey] = _.bind(handler, b);
           }, this);
   

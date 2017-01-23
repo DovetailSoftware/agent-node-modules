@@ -14,28 +14,20 @@
     ]
   ],
   "_from": "enhanced-resolve@>=3.0.0 <4.0.0",
-  "_id": "enhanced-resolve@3.0.2",
+  "_id": "enhanced-resolve@3.0.3",
   "_inCache": true,
   "_location": "/enhanced-resolve",
   "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/enhanced-resolve-3.0.2.tgz_1481845643602_0.8817655239254236"
+    "tmp": "tmp/enhanced-resolve-3.0.3.tgz_1484129345522_0.14447376737371087"
   },
   "_npmUser": {
     "name": "sokra",
     "email": "tobias.koppers@googlemail.com"
   },
   "_npmVersion": "3.10.8",
-  "_phantomChildren": {
-    "buffer-shims": "1.0.0",
-    "core-util-is": "1.0.2",
-    "errno": "0.1.4",
-    "inherits": "2.0.3",
-    "process-nextick-args": "1.0.7",
-    "string_decoder": "0.10.31",
-    "util-deprecate": "1.0.2"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "enhanced-resolve@^3.0.0",
     "scope": null,
@@ -48,8 +40,8 @@
   "_requiredBy": [
     "/webpack"
   ],
-  "_resolved": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-3.0.2.tgz",
-  "_shasum": "0fa709f29e59ee23e6bbcb070c85f992d6247cd1",
+  "_resolved": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-3.0.3.tgz",
+  "_shasum": "df14c06b5fc5eecade1094c9c5a12b4b3edc0b62",
   "_shrinkwrap": null,
   "_spec": "enhanced-resolve@^3.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\webpack",
@@ -79,8 +71,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "0fa709f29e59ee23e6bbcb070c85f992d6247cd1",
-    "tarball": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-3.0.2.tgz"
+    "shasum": "df14c06b5fc5eecade1094c9c5a12b4b3edc0b62",
+    "tarball": "https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-3.0.3.tgz"
   },
   "engines": {
     "node": ">=0.6"
@@ -88,7 +80,7 @@
   "files": [
     "lib"
   ],
-  "gitHead": "3d112c831e1aba5c8fad4846df9a13e7a2df6ec7",
+  "gitHead": "12ef0c4e8772f6787a5447bbddfaae58f83d39f2",
   "homepage": "http://github.com/webpack/enhanced-resolve",
   "licenses": [
     {
@@ -120,5 +112,5 @@
     "test": "mocha --full-trace --check-leaks",
     "travis": "npm run cover -- --report lcovonly"
   },
-  "version": "3.0.2"
+  "version": "3.0.3"
 }

@@ -34,7 +34,8 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/gulp-util"
+    "/gulp-util",
+    "/remap-istanbul/gulp-util"
   ],
   "_resolved": "https://registry.npmjs.org/lodash._reescape/-/lodash._reescape-3.0.0.tgz",
   "_shasum": "2b1d6f5dfe07c8a355753e5f27fac7f1cde1616a",

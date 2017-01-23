@@ -36,7 +36,8 @@
   "_requiredBy": [
     "/gulp-util",
     "/lodash.template",
-    "/lodash.templatesettings"
+    "/lodash.templatesettings",
+    "/remap-istanbul/gulp-util"
   ],
   "_resolved": "https://registry.npmjs.org/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz",
   "_shasum": "0ccf2d89166af03b3663c796538b75ac6e114d9d",

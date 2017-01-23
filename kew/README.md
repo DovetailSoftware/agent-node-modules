@@ -254,7 +254,7 @@ Q.fcall(someFn, arg1, arg2)
 
 You can also use ``Q.fcall()`` with functions that return promises.
 
-### `.nfcall()` for Node.js callbacks
+### `.ncall()` and `.nfcall()` for Node.js callbacks
 
 ``Q.nfcall()`` can be used to convert node-style callbacks into promises:
 
@@ -266,6 +266,28 @@ Q.nfcall(fs.writeFile, '/tmp/myFile', 'content')
   .fail(function (err) {
     console.log('Failed to write file', err)
   })
+```
+
+If your Node-style callback needs a `this` context, you can use `Q.ncall`:
+
+```js
+Q.ncall(redis.del, redis, 'my-key')
+  .then(function () { return true })
+  .fail(function () { return false })
+```
+
+
+### `.spread()` for arrays of promises
+
+``()`` can be used to convert node-style callbacks into promises:
+
+```javascript
+Q.nfcall(function () {
+  return ['a', Q.resolve('b')]
+})
+.spread(function (a, b) { 
+  // ...
+})
 ```
 
 

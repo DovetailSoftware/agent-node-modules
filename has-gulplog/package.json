@@ -34,7 +34,8 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/gulp-util"
+    "/gulp-util",
+    "/remap-istanbul/gulp-util"
   ],
   "_resolved": "https://registry.npmjs.org/has-gulplog/-/has-gulplog-0.1.0.tgz",
   "_shasum": "6414c82913697da51590397dafb12f22967811ce",

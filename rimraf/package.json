@@ -33,7 +33,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/chromedriver",
     "/del",
     "/grunt",
     "/gulp-mocha-phantomjs/phantomjs"

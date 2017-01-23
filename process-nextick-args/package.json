@@ -42,7 +42,6 @@
     "/cloneable-readable",
     "/cloneable-readable/readable-stream",
     "/concat-stream/readable-stream",
-    "/enhanced-resolve/readable-stream",
     "/extract-zip/readable-stream",
     "/gulp-concat/readable-stream",
     "/gulp-header/readable-stream",
@@ -53,6 +52,7 @@
     "/merge-stream/readable-stream",
     "/node-libs-browser/readable-stream",
     "/readdirp/readable-stream",
+    "/remap-istanbul/readable-stream",
     "/replacestream/readable-stream",
     "/stream-browserify/readable-stream",
     "/stream-http/readable-stream"

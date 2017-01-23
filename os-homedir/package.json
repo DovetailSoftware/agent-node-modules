@@ -40,7 +40,6 @@
   "_requiredBy": [
     "/expand-tilde",
     "/home-or-tmp",
-    "/osenv",
     "/tildify",
     "/user-home"
   ],

@@ -40,7 +40,8 @@
     "type": "range"
   },
   "_requiredBy": [
-    "#DEV:/"
+    "#DEV:/",
+    "/istanbul"
   ],
   "_resolved": "https://registry.npmjs.org/handlebars/-/handlebars-4.0.6.tgz",
   "_shasum": "2ce4484850537f9c97a8026d5399b935c4ed4ed7",

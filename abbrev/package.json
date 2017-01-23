@@ -38,8 +38,8 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/gulp-mocha-phantomjs/nopt",
-    "/iedriver/nopt",
+    "/istanbul",
+    "/istanbul/nopt",
     "/nopt",
     "/npmconf/nopt"
   ],

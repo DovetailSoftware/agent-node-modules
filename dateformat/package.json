@@ -35,7 +35,8 @@
   },
   "_requiredBy": [
     "/gulp-mocha-phantomjs/gulp-util",
-    "/plugin-log"
+    "/plugin-log",
+    "/remap-istanbul/gulp-util"
   ],
   "_resolved": "https://registry.npmjs.org/dateformat/-/dateformat-1.0.12.tgz",
   "_shasum": "9f124b67594c937ff706932e4a642cca8dbbfee9",

@@ -38,6 +38,7 @@
     "type": "range"
   },
   "_requiredBy": [
+    "/babel-plugin-istanbul",
     "/pkg-dir",
     "/read-pkg-up"
   ],

@@ -34,7 +34,6 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/enhanced-resolve/memory-fs",
     "/less",
     "/memory-fs"
   ],

@@ -14,20 +14,22 @@
     ]
   ],
   "_from": "chromedriver@>=2.18.0 <3.0.0",
-  "_id": "chromedriver@2.26.1",
+  "_id": "chromedriver@2.27.2",
   "_inCache": true,
   "_location": "/chromedriver",
   "_nodeVersion": "7.2.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/chromedriver-2.26.1.tgz_1482253176518_0.45788537501357496"
+    "tmp": "tmp/chromedriver-2.27.2.tgz_1484144759107_0.3507750672288239"
   },
   "_npmUser": {
     "name": "giggio",
     "email": "giggio@giggio.net"
   },
   "_npmVersion": "3.10.10",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "glob": "7.1.1"
+  },
   "_requested": {
     "raw": "chromedriver@^2.18.0",
     "scope": null,
@@ -40,8 +42,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.26.1.tgz",
-  "_shasum": "60036732224580d2699afd2626f5f26ea1f6c9fe",
+  "_resolved": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.27.2.tgz",
+  "_shasum": "fd8ee03e6f8dde47d83b951bf99ea268538179c3",
   "_shrinkwrap": null,
   "_spec": "chromedriver@^2.18.0",
   "_where": "C:\\Github\\agent",
@@ -58,19 +60,18 @@
   },
   "dependencies": {
     "adm-zip": "^0.4.7",
-    "kew": "^0.5.0",
-    "mkdirp": "^0.5.0",
-    "npmconf": "^2.1.1",
-    "rimraf": "^2.0.3"
+    "kew": "^0.7.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.5.4"
   },
   "description": "ChromeDriver for Selenium",
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "60036732224580d2699afd2626f5f26ea1f6c9fe",
-    "tarball": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.26.1.tgz"
+    "shasum": "fd8ee03e6f8dde47d83b951bf99ea268538179c3",
+    "tarball": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.27.2.tgz"
   },
-  "gitHead": "fd4dca8c98e931677bf6b72280f2d37b8b34a197",
+  "gitHead": "20a1f0d1b6a10d12d12a63ca3d7d6161ba9213c9",
   "homepage": "https://github.com/giggio/node-chromedriver",
   "keywords": [
     "chromedriver",
@@ -99,5 +100,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "2.26.1"
+  "version": "2.27.2"
 }

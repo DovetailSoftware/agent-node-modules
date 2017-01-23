@@ -41,7 +41,6 @@
     "/bufferstreams/readable-stream",
     "/cloneable-readable/readable-stream",
     "/concat-stream/readable-stream",
-    "/enhanced-resolve/readable-stream",
     "/gulp-concat/readable-stream",
     "/gulp-header/readable-stream",
     "/gulp-less/readable-stream",

@@ -27,10 +27,7 @@
     "email": "barrett@sosuke.com"
   },
   "_npmVersion": "2.14.8",
-  "_phantomChildren": {
-    "abbrev": "1.0.9",
-    "config-chain": "1.1.11"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "iedriver@^2.52.2",
     "scope": null,

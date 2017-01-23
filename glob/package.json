@@ -39,6 +39,7 @@
   },
   "_requiredBy": [
     "/accord",
+    "/chromedriver/rimraf",
     "/dot-object",
     "/eslint",
     "/globby"

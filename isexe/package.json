@@ -39,6 +39,7 @@
   },
   "_requiredBy": [
     "/global-prefix/which",
+    "/istanbul/which",
     "/phantomjs-prebuilt/which"
   ],
   "_resolved": "https://registry.npmjs.org/isexe/-/isexe-1.1.2.tgz",

@@ -10,7 +10,7 @@
         "spec": ">=1.2.1 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\phantomjs-prebuilt\\node_modules\\request"
+      "C:\\Github\\agent\\node_modules\\request"
     ]
   ],
   "_from": "aws4@>=1.2.1 <2.0.0",
@@ -38,13 +38,13 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/phantomjs-prebuilt/request"
+    "/request"
   ],
   "_resolved": "https://registry.npmjs.org/aws4/-/aws4-1.5.0.tgz",
   "_shasum": "0a29ffb79c31c9e712eeb087e8e7a64b4a56d755",
   "_shrinkwrap": null,
   "_spec": "aws4@^1.2.1",
-  "_where": "C:\\Github\\agent\\node_modules\\phantomjs-prebuilt\\node_modules\\request",
+  "_where": "C:\\Github\\agent\\node_modules\\request",
   "author": {
     "name": "Michael Hart",
     "email": "michael.hart.au@gmail.com",

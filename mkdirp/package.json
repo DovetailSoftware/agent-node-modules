@@ -40,9 +40,9 @@
     "/eslint",
     "/express",
     "/find-cache-dir",
+    "/istanbul",
     "/less",
     "/mocha",
-    "/npmconf",
     "/vinyl-fs",
     "/webpack",
     "/write"

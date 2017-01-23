@@ -10,15 +10,16 @@ var expectConf =
     'init.author.name = Isaac Z. Schlueter',
     'init.author.email = i@izs.me',
     'init.author.url = http://blog.izs.me/',
-    'init.version = 1.2.3',
     'proprietary-attribs = false',
     'npm:publishtest = true',
     '_npmjs.org:couch = https://admin:password@localhost:5984/registry',
+    '_auth = dXNlcm5hbWU6cGFzc3dvcmQ=',
     'npm-www:nocache = 1',
     'sign-git-tag = false',
     'message = v%s',
     'strict-ssl = false',
-    '_auth = dXNlcm5hbWU6cGFzc3dvcmQ=',
+    'username = username',
+    '_password = password',
     '',
     '[_token]',
     'AuthSession = yabba-dabba-doodle',
@@ -34,15 +35,14 @@ var expectFile =
     'init.author.name = Isaac Z. Schlueter',
     'init.author.email = i@izs.me',
     'init.author.url = http://blog.izs.me/',
-    'init.version = 1.2.3',
     'proprietary-attribs = false',
     'npm:publishtest = true',
     '_npmjs.org:couch = https://admin:password@localhost:5984/registry',
+    '_auth = dXNlcm5hbWU6cGFzc3dvcmQ=',
     'npm-www:nocache = 1',
     'sign-git-tag = false',
     'message = v%s',
     'strict-ssl = false',
-    '_auth = dXNlcm5hbWU6cGFzc3dvcmQ=',
     '',
     '[_token]',
     'AuthSession = yabba-dabba-doodle',
@@ -72,13 +72,3 @@ test('saving configs', function (t) {
   })
 })
 
-test('setting prefix', function (t) {
-  npmconf.load(function (er, conf) {
-    if (er)
-      throw er
-
-    conf.prefix = 'newvalue'
-    t.same(conf.prefix, 'newvalue');
-    t.end();
-  })
-})

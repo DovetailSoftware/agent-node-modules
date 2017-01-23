@@ -28,7 +28,7 @@ function nextTick (callback) {
   callback()
 }
 
-if (typeof process !== 'undefined') {
+if (typeof process !== 'undefined' && typeof process.nextTick === 'function') {
   nextTick = process.nextTick
 }
 
@@ -296,6 +296,36 @@ Promise.prototype.failBound = function (onFail, scope, var_args) {
   else this._chainPromise(promise)
 
   return promise
+}
+
+/**
+ * Spread a promises outputs to the functions arguments.
+ * @param {?function(this:void, ...): RESULT|undefined} onSuccess
+ * @return {!Promise.<RESULT>} returns a new promise with the output of the onSuccess or
+ *     onFail handler
+ * @template RESULT
+ */
+Promise.prototype.spread = function (onSuccess) {
+  return this.then(allInternal)
+  .then(function (array) {
+    return onSuccess.apply(null, array)
+  })
+}
+
+/**
+ * Spread a promises outputs to the functions arguments.
+ * @param {function(this:SCOPE, ...): RESULT} onSuccess
+ * @param {SCOPE} scope Object whose context callback will be executed in.
+ * @param {...*} var_args Additional arguments to be passed to the promise callback.
+ * @return {!Promise.<RESULT>} returns a new promise with the output of the onSuccess
+ * @template SCOPE, RESULT
+ */
+Promise.prototype.spreadBound = function (onSuccess, scope, var_args) {
+  var args = Array.prototype.slice.call(arguments, 2)
+  return this.then(allInternal)
+  .then(function (array) {
+    return onSuccess.apply(scope, args.concat(array))
+  })
 }
 
 /**
@@ -604,6 +634,16 @@ function all(promises) {
   if (arguments.length != 1 || !Array.isArray(promises)) {
     promises = Array.prototype.slice.call(arguments, 0)
   }
+  return allInternal(promises)
+}
+
+/**
+ * A version of all() that does not accept var_args
+ *
+ * @param {!Array.<!Promise>} promises
+ * @return {!Promise.<!Array>}
+ */
+function allInternal(promises) {
   if (!promises.length) return resolve([])
 
   var outputs = []
@@ -674,6 +714,15 @@ function allSettled(promises) {
   }
 
   return promise
+}
+
+/**
+ * Takes an array of results and spreads them to the arguments of a function.
+ * @param {!Array} array
+ * @param {!Function} fn
+ */
+function spread(array, fn) {
+  resolve(array).spread(fn)
 }
 
 /**
@@ -751,7 +800,20 @@ function nfcall(fn, var_args) {
   // Insert an undefined argument for scope and let bindPromise() do the work.
   var args = Array.prototype.slice.call(arguments, 0)
   args.splice(1, 0, undefined)
-  return bindPromise.apply(undefined, args)()
+  return ncall.apply(undefined, args)
+}
+
+
+/**
+ * Like `nfcall`, but permits passing a `this` context for the call.
+ *
+ * @param {function(...)} fn
+ * @param {Object} scope
+ * @param {...*} var_args
+ * @return {!Promise}
+ */
+function ncall(fn, scope, var_args) {
+  return bindPromise.apply(null, arguments)()
 }
 
 
@@ -778,19 +840,21 @@ function bindPromise(fn, scope, var_args) {
 }
 
 module.exports = {
-    all: all
-  , bindPromise: bindPromise
-  , defer: defer
-  , delay: delay
-  , fcall: fcall
-  , isPromise: isPromise
-  , isPromiseLike: isPromiseLike
-  , nfcall: nfcall
-  , resolve: resolve
-  , reject: reject
-  , stats: stats
-  , allSettled: allSettled
-  , Promise: Promise
-  , getNextTickFunction: getNextTickFunction
-  , setNextTickFunction: setNextTickFunction
+  all: all,
+  bindPromise: bindPromise,
+  defer: defer,
+  delay: delay,
+  fcall: fcall,
+  isPromise: isPromise,
+  isPromiseLike: isPromiseLike,
+  ncall: ncall,
+  nfcall: nfcall,
+  resolve: resolve,
+  reject: reject,
+  spread: spread,
+  stats: stats,
+  allSettled: allSettled,
+  Promise: Promise,
+  getNextTickFunction: getNextTickFunction,
+  setNextTickFunction: setNextTickFunction,
 }

@@ -39,8 +39,8 @@
   },
   "_requiredBy": [
     "/clean-css/source-map",
-    "/handlebars/source-map",
-    "/imports-loader/source-map"
+    "/escodegen/source-map",
+    "/handlebars/source-map"
   ],
   "_resolved": "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz",
   "_shasum": "4a5282ac164729e93619bcfd3ad151f817ce91f5",
