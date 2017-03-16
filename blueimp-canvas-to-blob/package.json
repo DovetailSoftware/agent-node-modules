@@ -14,19 +14,19 @@
     ]
   ],
   "_from": "blueimp-canvas-to-blob@>=2.0.5",
-  "_id": "blueimp-canvas-to-blob@3.6.0",
+  "_id": "blueimp-canvas-to-blob@3.7.0",
   "_inCache": true,
   "_location": "/blueimp-canvas-to-blob",
-  "_nodeVersion": "7.0.0",
+  "_nodeVersion": "7.5.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/blueimp-canvas-to-blob-3.6.0.tgz_1480074911897_0.20207680854946375"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/blueimp-canvas-to-blob-3.7.0.tgz_1487347794882_0.9906095801852643"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "3.10.8",
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
     "raw": "blueimp-canvas-to-blob@>=2.0.5",
@@ -40,8 +40,8 @@
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.6.0.tgz",
-  "_shasum": "e678c3f9fb918a470ce81772c69812573f8b2a6d",
+  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.7.0.tgz",
+  "_shasum": "6e985b935c0223410c3a2ad96c0ba3ea214c2b13",
   "_shrinkwrap": null,
   "_spec": "blueimp-canvas-to-blob@>=2.0.5",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -62,10 +62,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "e678c3f9fb918a470ce81772c69812573f8b2a6d",
-    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.6.0.tgz"
+    "shasum": "6e985b935c0223410c3a2ad96c0ba3ea214c2b13",
+    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.7.0.tgz"
   },
-  "gitHead": "39b96c11e60bd6be833866b1b5d92994fce1718c",
+  "gitHead": "10f6200baea6c7818f898a182760690d6d2c1cde",
   "homepage": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
   "keywords": [
     "javascript",
@@ -99,5 +99,5 @@
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Canvas to Blob",
-  "version": "3.6.0"
+  "version": "3.7.0"
 }

@@ -3,6 +3,8 @@
 	Author Tobias Koppers @sokra
 */
 
+var path = require('path');
+
 function accesorString(value) {
 	var childProperties = value.split(".");
 	var length = childProperties.length;
@@ -21,8 +23,15 @@ function accesorString(value) {
 
 module.exports = function() {};
 module.exports.pitch = function(remainingRequest) {
+	// Change the request from an /abolute/path.js to a relative ./path.js
+	// This prevents [chunkhash] values from changing when running webpack
+	// builds in different directories.
+	const newRequestPath = remainingRequest.replace(
+		this.resourcePath,
+		'.' + path.sep + path.relative(this.context, this.resourcePath)
+	);
 	this.cacheable && this.cacheable();
 	if(!this.query) throw new Error("query parameter is missing");
 	return accesorString(this.query.substr(1)) + " = " +
-		"require(" + JSON.stringify("-!" + remainingRequest) + ");";
+		"require(" + JSON.stringify("-!" + newRequestPath) + ");";
 };

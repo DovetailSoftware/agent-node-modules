@@ -28,7 +28,7 @@
   },
   "_npmVersion": "3.10.3",
   "_phantomChildren": {
-    "is-buffer": "1.1.4"
+    "is-buffer": "1.1.5"
   },
   "_requested": {
     "raw": "randomatic@^1.1.3",

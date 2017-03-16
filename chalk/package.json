@@ -43,8 +43,8 @@
     "/fancy-log",
     "/gulp",
     "/gulp-util",
-    "/har-validator",
     "/inquirer",
+    "/phantomjs-prebuilt/har-validator",
     "/plugin-log",
     "/remap-istanbul/gulp-util",
     "/table"

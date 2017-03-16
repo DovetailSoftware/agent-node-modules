@@ -41,6 +41,7 @@
     "/accepts",
     "/errorhandler/accepts",
     "/form-data",
+    "/phantomjs-prebuilt/request",
     "/request",
     "/serve-index",
     "/type-is"

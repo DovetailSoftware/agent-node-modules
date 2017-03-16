@@ -14,19 +14,19 @@
     ]
   ],
   "_from": "sortablejs@>=1.5.0-rc1 <2.0.0",
-  "_id": "sortablejs@1.5.0-rc1",
+  "_id": "sortablejs@1.5.1",
   "_inCache": true,
   "_location": "/sortablejs",
-  "_nodeVersion": "6.3.0",
+  "_nodeVersion": "6.9.1",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/sortablejs-1.5.0-rc1.tgz_1479151595948_0.02265141112729907"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/sortablejs-1.5.1.tgz_1487918611605_0.8055508281104267"
   },
   "_npmUser": {
     "name": "rubaxa",
     "email": "ibnRubaXa@gmail.com"
   },
-  "_npmVersion": "3.10.3",
+  "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
     "raw": "sortablejs@^1.5.0-rc1",
@@ -40,8 +40,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.5.0-rc1.tgz",
-  "_shasum": "c3407e9a6fc4a54b4d0804926a2e2993544d91b3",
+  "_resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.5.1.tgz",
+  "_shasum": "efae13b84c677f3b3d3f4f8e46c7e05fc6acb525",
   "_shrinkwrap": null,
   "_spec": "sortablejs@^1.5.0-rc1",
   "_where": "C:\\Github\\agent",
@@ -62,11 +62,15 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "c3407e9a6fc4a54b4d0804926a2e2993544d91b3",
-    "tarball": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.5.0-rc1.tgz"
+    "shasum": "efae13b84c677f3b3d3f4f8e46c7e05fc6acb525",
+    "tarball": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.5.1.tgz"
   },
   "exportName": "Sortable",
-  "gitHead": "8e48c2aa1e4f23b7f061caa3a6a276216fff0b67",
+  "files": [
+    "Sortable.js",
+    "Sortable.min.js"
+  ],
+  "gitHead": "473bd8fecfd2f2834e4187fb033dfa6912eb3b98",
   "homepage": "https://github.com/rubaxa/Sortable#readme",
   "keywords": [
     "sortable",
@@ -94,7 +98,8 @@
     "url": "git://github.com/rubaxa/Sortable.git"
   },
   "scripts": {
-    "test": "grunt"
+    "prepublish": "./node_modules/grunt/bin/grunt",
+    "test": "./node_modules/grunt/bin/grunt"
   },
   "spm": {
     "main": "Sortable.js",
@@ -103,5 +108,5 @@
       "st"
     ]
   },
-  "version": "1.5.0-rc1"
+  "version": "1.5.1"
 }

@@ -14,19 +14,19 @@
     ]
   ],
   "_from": "blueimp-load-image@>=1.7.0",
-  "_id": "blueimp-load-image@2.10.0",
+  "_id": "blueimp-load-image@2.12.2",
   "_inCache": true,
   "_location": "/blueimp-load-image",
-  "_nodeVersion": "7.0.0",
+  "_nodeVersion": "7.5.0",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/blueimp-load-image-2.10.0.tgz_1480075652079_0.6318128996063024"
+    "tmp": "tmp/blueimp-load-image-2.12.2.tgz_1487941934245_0.1497857824433595"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "3.10.8",
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
     "raw": "blueimp-load-image@>=1.7.0",
@@ -40,8 +40,8 @@
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.10.0.tgz",
-  "_shasum": "05f38a4975a8d003dae46c08d4d58d14a34c57da",
+  "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.12.2.tgz",
+  "_shasum": "6a17598aab858d4fbf01543e0631141b51057c87",
   "_shrinkwrap": null,
   "_spec": "blueimp-load-image@>=1.7.0",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
@@ -62,10 +62,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "05f38a4975a8d003dae46c08d4d58d14a34c57da",
-    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.10.0.tgz"
+    "shasum": "6a17598aab858d4fbf01543e0631141b51057c87",
+    "tarball": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.12.2.tgz"
   },
-  "gitHead": "a9eb2ab1078b2e7d45eb215e1d4ff54134f709bf",
+  "gitHead": "caf36d45d843b38b8763cb4a921d7ce51681a08c",
   "homepage": "https://github.com/blueimp/JavaScript-Load-Image",
   "keywords": [
     "javascript",
@@ -100,7 +100,7 @@
     "url": "git://github.com/blueimp/JavaScript-Load-Image.git"
   },
   "scripts": {
-    "build": "cd js && uglifyjs load-image.js load-image-meta.js load-image-exif.js load-image-exif-map.js load-image-orientation.js -c -m -o load-image.all.min.js --source-map load-image.all.min.js.map",
+    "build": "cd js && uglifyjs load-image.js load-image-scale.js load-image-meta.js load-image-fetch.js load-image-exif.js load-image-exif-map.js load-image-orientation.js -c -m -o load-image.all.min.js --source-map load-image.all.min.js.map",
     "lint": "standard *.js js/*.js test/*.js",
     "postversion": "git push --tags origin master master:gh-pages && npm publish",
     "preversion": "npm test",
@@ -109,5 +109,5 @@
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Load Image",
-  "version": "2.10.0"
+  "version": "2.12.2"
 }

@@ -2,48 +2,48 @@
   "_args": [
     [
       {
-        "raw": "delegate@^3.1.1",
+        "raw": "delegate@^3.1.2",
         "scope": null,
         "escapedName": "delegate",
         "name": "delegate",
-        "rawSpec": "^3.1.1",
-        "spec": ">=3.1.1 <4.0.0",
+        "rawSpec": "^3.1.2",
+        "spec": ">=3.1.2 <4.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\good-listener"
     ]
   ],
-  "_from": "delegate@>=3.1.1 <4.0.0",
-  "_id": "delegate@3.1.1",
+  "_from": "delegate@>=3.1.2 <4.0.0",
+  "_id": "delegate@3.1.2",
   "_inCache": true,
   "_location": "/delegate",
-  "_nodeVersion": "6.9.1",
+  "_nodeVersion": "7.5.0",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/delegate-3.1.1.tgz_1481549606809_0.3322497468907386"
+    "tmp": "tmp/delegate-3.1.2.tgz_1488304112104_0.6588371200487018"
   },
   "_npmUser": {
     "name": "zenorocha",
     "email": "zno.rocha@gmail.com"
   },
-  "_npmVersion": "3.10.8",
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "delegate@^3.1.1",
+    "raw": "delegate@^3.1.2",
     "scope": null,
     "escapedName": "delegate",
     "name": "delegate",
-    "rawSpec": "^3.1.1",
-    "spec": ">=3.1.1 <4.0.0",
+    "rawSpec": "^3.1.2",
+    "spec": ">=3.1.2 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/good-listener"
   ],
-  "_resolved": "https://registry.npmjs.org/delegate/-/delegate-3.1.1.tgz",
-  "_shasum": "22a0e3ea8776c7f89e02d5950942ef9cdfd019cf",
+  "_resolved": "https://registry.npmjs.org/delegate/-/delegate-3.1.2.tgz",
+  "_shasum": "1e1bc6f5cadda6cb6cbf7e6d05d0bcdd5712aebe",
   "_shrinkwrap": null,
-  "_spec": "delegate@^3.1.1",
+  "_spec": "delegate@^3.1.2",
   "_where": "C:\\Github\\agent\\node_modules\\good-listener",
   "bugs": {
     "url": "https://github.com/zenorocha/delegate/issues"
@@ -66,16 +66,17 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "22a0e3ea8776c7f89e02d5950942ef9cdfd019cf",
-    "tarball": "https://registry.npmjs.org/delegate/-/delegate-3.1.1.tgz"
+    "shasum": "1e1bc6f5cadda6cb6cbf7e6d05d0bcdd5712aebe",
+    "tarball": "https://registry.npmjs.org/delegate/-/delegate-3.1.2.tgz"
   },
-  "gitHead": "9df3022740c0bba64b234271e4576fcfc7d38f93",
+  "gitHead": "dc4abc8b2ac96aaa006bf2ab702513b54a77c067",
   "homepage": "https://github.com/zenorocha/delegate#readme",
   "keywords": [
     "event",
     "delegate",
     "delegation"
   ],
+  "license": "MIT",
   "main": "src/delegate.js",
   "maintainers": [
     {
@@ -94,5 +95,5 @@
     "build": "browserify src/delegate.js -s delegate -o dist/delegate.js",
     "test": "karma start --single-run"
   },
-  "version": "3.1.1"
+  "version": "3.1.2"
 }

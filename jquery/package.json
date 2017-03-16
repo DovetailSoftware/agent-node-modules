@@ -40,8 +40,7 @@
   "_requiredBy": [
     "/",
     "/blueimp-file-upload",
-    "/bootstrap-datepicker",
-    "/jquery-form"
+    "/bootstrap-datepicker"
   ],
   "_resolved": "https://registry.npmjs.org/jquery/-/jquery-2.2.1.tgz",
   "_shasum": "3c3e16854ad3d2ac44ac65021b17426d22ad803f",

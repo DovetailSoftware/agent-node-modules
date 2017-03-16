@@ -29,7 +29,7 @@
   "_npmVersion": "3.10.3",
   "_phantomChildren": {
     "arr-flatten": "1.0.1",
-    "is-buffer": "1.1.4"
+    "is-buffer": "1.1.5"
   },
   "_requested": {
     "raw": "micromatch@^2.3.11",

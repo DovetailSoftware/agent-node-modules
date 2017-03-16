@@ -46,7 +46,6 @@
     "request-progress": "0.3.1",
     "rimraf": "2.2.8",
     "tough-cookie": "2.3.2",
-    "tunnel-agent": "0.4.3",
     "which": "1.0.9",
     "xtend": "3.0.0"
   },

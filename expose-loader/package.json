@@ -14,15 +14,19 @@
     ]
   ],
   "_from": "expose-loader@>=0.7.0 <0.8.0",
-  "_id": "expose-loader@0.7.1",
+  "_id": "expose-loader@0.7.3",
   "_inCache": true,
   "_location": "/expose-loader",
-  "_nodeVersion": "4.0.0",
-  "_npmUser": {
-    "name": "sokra",
-    "email": "tobias.koppers@googlemail.com"
+  "_nodeVersion": "7.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/expose-loader-0.7.3.tgz_1487098646637_0.34655198897235096"
   },
-  "_npmVersion": "3.3.3",
+  "_npmUser": {
+    "name": "d3viant0ne",
+    "email": "wiens.joshua@gmail.com"
+  },
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
     "raw": "expose-loader@^0.7.0",
@@ -36,8 +40,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.1.tgz",
-  "_shasum": "411ee89443aa682f8ea9d9111accf41bfd7e94d9",
+  "_resolved": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.3.tgz",
+  "_shasum": "35fbd3659789e4faa81f59de8b7e9fc39e466d51",
   "_shrinkwrap": null,
   "_spec": "expose-loader@^0.7.0",
   "_where": "C:\\Github\\agent",
@@ -52,10 +56,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "411ee89443aa682f8ea9d9111accf41bfd7e94d9",
-    "tarball": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.1.tgz"
+    "shasum": "35fbd3659789e4faa81f59de8b7e9fc39e466d51",
+    "tarball": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.3.tgz"
   },
-  "gitHead": "999a157bb2c450bc48711e1852b032340801ea1f",
+  "gitHead": "9df856bf1f5ac81e06b82c12803b26786cc1bf6a",
   "homepage": "https://github.com/webpack/expose-loader#readme",
   "licenses": [
     {
@@ -65,8 +69,28 @@
   ],
   "maintainers": [
     {
+      "name": "bebraw",
+      "email": "bebraw@gmail.com"
+    },
+    {
+      "name": "d3viant0ne",
+      "email": "wiens.joshua@gmail.com"
+    },
+    {
+      "name": "ericclemmons",
+      "email": "eric@smarterspam.com"
+    },
+    {
+      "name": "jhnns",
+      "email": "mail@johannesewald.de"
+    },
+    {
       "name": "sokra",
       "email": "tobias.koppers@googlemail.com"
+    },
+    {
+      "name": "thelarkinn",
+      "email": "sean.larkin@cuw.edu"
     }
   ],
   "name": "expose-loader",
@@ -77,5 +101,5 @@
     "url": "git+ssh://git@github.com/webpack/expose-loader.git"
   },
   "scripts": {},
-  "version": "0.7.1"
+  "version": "0.7.3"
 }

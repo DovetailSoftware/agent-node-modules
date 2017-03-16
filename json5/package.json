@@ -39,6 +39,7 @@
   },
   "_requiredBy": [
     "/babel-core",
+    "/imports-loader/loader-utils",
     "/loader-utils"
   ],
   "_resolved": "https://registry.npmjs.org/json5/-/json5-0.5.1.tgz",

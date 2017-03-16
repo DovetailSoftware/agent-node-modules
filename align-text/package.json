@@ -28,7 +28,7 @@
   },
   "_npmVersion": "3.6.0",
   "_phantomChildren": {
-    "is-buffer": "1.1.4"
+    "is-buffer": "1.1.5"
   },
   "_requested": {
     "raw": "align-text@^0.1.3",
