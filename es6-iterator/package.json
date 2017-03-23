@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "es6-iterator@2",
+        "raw": "es6-iterator@~2.0.1",
         "scope": null,
         "escapedName": "es6-iterator",
         "name": "es6-iterator",
-        "rawSpec": "2",
-        "spec": ">=2.0.0 <3.0.0",
+        "rawSpec": "~2.0.1",
+        "spec": ">=2.0.1 <2.1.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\es6-map"
     ]
   ],
-  "_from": "es6-iterator@>=2.0.0 <3.0.0",
+  "_from": "es6-iterator@>=2.0.1 <2.1.0",
   "_id": "es6-iterator@2.0.1",
   "_inCache": true,
   "_location": "/es6-iterator",
@@ -27,16 +27,14 @@
     "email": "medikoo+npm@medikoo.com"
   },
   "_npmVersion": "4.1.2",
-  "_phantomChildren": {
-    "es5-ext": "0.10.14"
-  },
+  "_phantomChildren": {},
   "_requested": {
-    "raw": "es6-iterator@2",
+    "raw": "es6-iterator@~2.0.1",
     "scope": null,
     "escapedName": "es6-iterator",
     "name": "es6-iterator",
-    "rawSpec": "2",
-    "spec": ">=2.0.0 <3.0.0",
+    "rawSpec": "~2.0.1",
+    "spec": ">=2.0.1 <2.1.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -48,7 +46,7 @@
   "_resolved": "https://registry.npmjs.org/es6-iterator/-/es6-iterator-2.0.1.tgz",
   "_shasum": "8e319c9f0453bf575d374940a655920e59ca5512",
   "_shrinkwrap": null,
-  "_spec": "es6-iterator@2",
+  "_spec": "es6-iterator@~2.0.1",
   "_where": "C:\\Github\\agent\\node_modules\\es6-map",
   "author": {
     "name": "Mariusz Nowak",

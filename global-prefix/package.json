@@ -28,7 +28,7 @@
   },
   "_npmVersion": "3.7.5",
   "_phantomChildren": {
-    "isexe": "1.1.2"
+    "isexe": "2.0.0"
   },
   "_requested": {
     "raw": "global-prefix@^0.1.4",

@@ -14,19 +14,19 @@
     ]
   ],
   "_from": "istanbul-lib-instrument@>=1.1.4 <2.0.0",
-  "_id": "istanbul-lib-instrument@1.4.2",
+  "_id": "istanbul-lib-instrument@1.6.2",
   "_inCache": true,
   "_location": "/istanbul-lib-instrument",
   "_nodeVersion": "7.1.0",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/istanbul-lib-instrument-1.4.2.tgz_1483525376896_0.3232681602239609"
+    "tmp": "tmp/istanbul-lib-instrument-1.6.2.tgz_1490198154434_0.3805013168603182"
   },
   "_npmUser": {
     "name": "bcoe",
     "email": "ben@npmjs.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
     "raw": "istanbul-lib-instrument@^1.1.4",
@@ -40,8 +40,8 @@
   "_requiredBy": [
     "/babel-plugin-istanbul"
   ],
-  "_resolved": "https://registry.npmjs.org/istanbul-lib-instrument/-/istanbul-lib-instrument-1.4.2.tgz",
-  "_shasum": "0e2fdfac93c1dabf2e31578637dc78a19089f43e",
+  "_resolved": "https://registry.npmjs.org/istanbul-lib-instrument/-/istanbul-lib-instrument-1.6.2.tgz",
+  "_shasum": "dac644f358f51efd6113536d7070959a0111f73b",
   "_shrinkwrap": null,
   "_spec": "istanbul-lib-instrument@^1.1.4",
   "_where": "C:\\Github\\agent\\node_modules\\babel-plugin-istanbul",
@@ -75,16 +75,13 @@
     "js-yaml": "^3.3.1",
     "jshint": "^2.8.0",
     "mocha": "^3.1.2",
-    "nopt": "^3.0.6",
-    "nyc": "^8.3.1",
-    "standard-version": "^3.0.0"
+    "nopt": "^3.0.6"
   },
   "directories": {},
   "dist": {
-    "shasum": "0e2fdfac93c1dabf2e31578637dc78a19089f43e",
-    "tarball": "https://registry.npmjs.org/istanbul-lib-instrument/-/istanbul-lib-instrument-1.4.2.tgz"
+    "shasum": "dac644f358f51efd6113536d7070959a0111f73b",
+    "tarball": "https://registry.npmjs.org/istanbul-lib-instrument/-/istanbul-lib-instrument-1.6.2.tgz"
   },
-  "gitHead": "a2e013d72e3216bc460816ba9404be02ec38a2d5",
   "homepage": "https://github.com/istanbuljs/istanbul-lib-instrument",
   "keywords": [
     "coverage",
@@ -105,16 +102,6 @@
     }
   ],
   "name": "istanbul-lib-instrument",
-  "nyc": {
-    "include": [
-      "src/**/*.js"
-    ],
-    "require": [
-      "babel-register"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  },
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -122,12 +109,10 @@
     "url": "git+ssh://git@github.com/istanbuljs/istanbul-lib-instrument.git"
   },
   "scripts": {
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "prepublish": "npm test && npm run release",
+    "prepublish": "npm run release",
     "pretest": "jshint src/ test/",
     "release": "babel src --out-dir dist && documentation build -f md -o api.md src",
-    "test": "cross-env NODE_ENV=test nyc --check-coverage --statements 90 --branches 80 mocha --recursive test/",
-    "version": "standard-version"
+    "test": "mocha --require=babel-register --recursive test/"
   },
-  "version": "1.4.2"
+  "version": "1.6.2"
 }

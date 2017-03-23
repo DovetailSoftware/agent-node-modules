@@ -49,7 +49,7 @@
     "/"
   ],
   "_resolved": "git://github.com/ichord/caret.js.git#3bc79e41834fa96b54f52c4276562488de82e581",
-  "_shasum": "d68a1e9a856af825c886ba23f816b7efd5d313d0",
+  "_shasum": "ac6bfa42beae9d6a6345cbc7cf90df1ff1441c45",
   "_shrinkwrap": null,
   "_spec": "jquery.caret@github:ichord/caret.js#v0.3.1",
   "_where": "C:\\Github\\agent",

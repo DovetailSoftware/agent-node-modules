@@ -14,13 +14,13 @@
     ]
   ],
   "_from": "uglify-js@>=2.7.0 <3.0.0",
-  "_id": "uglify-js@2.8.12",
+  "_id": "uglify-js@2.8.15",
   "_inCache": true,
   "_location": "/uglify-js",
-  "_nodeVersion": "7.7.1",
+  "_nodeVersion": "8.0.0-nightly20170318c0297990ba",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/uglify-js-2.8.12.tgz_1489187373135_0.03850142704322934"
+    "tmp": "tmp/uglify-js-2.8.15.tgz_1490254820192_0.02559606870636344"
   },
   "_npmUser": {
     "name": "alexlamsl",
@@ -42,8 +42,8 @@
     "/handlebars",
     "/webpack"
   ],
-  "_resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.12.tgz",
-  "_shasum": "8a50f5d482243650b7108f6080aa3a6afe2a6c55",
+  "_resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.15.tgz",
+  "_shasum": "835dd4cd5872554756e6874508d0d0561704d94d",
   "_shrinkwrap": null,
   "_spec": "uglify-js@^2.7.0",
   "_where": "C:\\Github\\agent\\node_modules\\accord",
@@ -78,8 +78,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "8a50f5d482243650b7108f6080aa3a6afe2a6c55",
-    "tarball": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.12.tgz"
+    "shasum": "835dd4cd5872554756e6874508d0d0561704d94d",
+    "tarball": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.15.tgz"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -90,7 +90,7 @@
     "tools",
     "LICENSE"
   ],
-  "gitHead": "919d5e348249f7b8c5ef0581660817292b5308a6",
+  "gitHead": "6b2f34769a5572bdd9db034f19bbc2a0b6e6dabb",
   "homepage": "http://lisperator.net/uglifyjs",
   "keywords": [
     "uglify",
@@ -115,15 +115,16 @@
     }
   ],
   "name": "uglify-js",
-  "optionalDependencies": {},
+  "optionalDependencies": {
+    "uglify-to-browserify": "~1.0.0"
+  },
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mishoo/UglifyJS2.git"
   },
   "scripts": {
-    "shrinkwrap": "rm ./npm-shrinkwrap.json; rm -rf ./node_modules; npm i && npm shrinkwrap && npm outdated",
     "test": "node test/run-tests.js"
   },
-  "version": "2.8.12"
+  "version": "2.8.15"
 }

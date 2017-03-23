@@ -14,13 +14,13 @@
     ]
   ],
   "_from": "webpack@>=2.2.0 <3.0.0",
-  "_id": "webpack@2.2.1",
+  "_id": "webpack@2.3.1",
   "_inCache": true,
   "_location": "/webpack",
   "_nodeVersion": "7.4.0",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/webpack-2.2.1.tgz_1485810809909_0.843520789872855"
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/webpack-2.3.1.tgz_1490193675603_0.757849371759221"
   },
   "_npmUser": {
     "name": "sokra",
@@ -55,8 +55,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/webpack/-/webpack-2.2.1.tgz",
-  "_shasum": "7bb1d72ae2087dd1a4af526afec15eed17dda475",
+  "_resolved": "https://registry.npmjs.org/webpack/-/webpack-2.3.1.tgz",
+  "_shasum": "55bce8baffe7c1f9dc3029adc048643b448318a8",
   "_shrinkwrap": null,
   "_spec": "webpack@^2.2.0",
   "_where": "C:\\Github\\agent",
@@ -86,9 +86,9 @@
     "source-map": "^0.5.3",
     "supports-color": "^3.1.0",
     "tapable": "~0.2.5",
-    "uglify-js": "^2.7.5",
-    "watchpack": "^1.2.0",
-    "webpack-sources": "^0.1.4",
+    "uglify-js": "^2.8.5",
+    "watchpack": "^1.3.1",
+    "webpack-sources": "^0.2.0",
     "yargs": "^6.0.0"
   },
   "description": "Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.",
@@ -96,6 +96,7 @@
     "beautify-lint": "^1.0.3",
     "benchmark": "^2.1.1",
     "bundle-loader": "~0.5.0",
+    "codacy-coverage": "^2.0.1",
     "codecov.io": "^0.1.2",
     "coffee-loader": "~0.7.1",
     "coffee-script": "^1.10.0",
@@ -134,8 +135,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "7bb1d72ae2087dd1a4af526afec15eed17dda475",
-    "tarball": "https://registry.npmjs.org/webpack/-/webpack-2.2.1.tgz"
+    "shasum": "55bce8baffe7c1f9dc3029adc048643b448318a8",
+    "tarball": "https://registry.npmjs.org/webpack/-/webpack-2.3.1.tgz"
   },
   "engines": {
     "node": ">=4.3.0 <5.0.0 || >=5.10"
@@ -148,7 +149,7 @@
     "web_modules/",
     "schemas/"
   ],
-  "gitHead": "0445b156d2c958536b72036e68ca6bde0ad32055",
+  "gitHead": "4b9b660e8c4fe8ab6425014cb24dcec2d5df194b",
   "homepage": "https://github.com/webpack/webpack",
   "license": "MIT",
   "main": "lib/webpack.js",
@@ -191,6 +192,6 @@
     "travis:lint": "npm run lint-files && npm run nsp",
     "travis:test": "npm run cover:min"
   },
-  "version": "2.2.1",
+  "version": "2.3.1",
   "web": "lib/webpack.web.js"
 }

@@ -2,59 +2,54 @@
   "_args": [
     [
       {
-        "raw": "es5-ext@~0.10.11",
+        "raw": "es5-ext@~0.10.14",
         "scope": null,
         "escapedName": "es5-ext",
         "name": "es5-ext",
-        "rawSpec": "~0.10.11",
-        "spec": ">=0.10.11 <0.11.0",
+        "rawSpec": "~0.10.14",
+        "spec": ">=0.10.14 <0.11.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\es6-map"
     ]
   ],
-  "_from": "es5-ext@>=0.10.11 <0.11.0",
-  "_id": "es5-ext@0.10.14",
+  "_from": "es5-ext@>=0.10.14 <0.11.0",
+  "_id": "es5-ext@0.10.15",
   "_inCache": true,
   "_location": "/es5-ext",
-  "_nodeVersion": "7.7.3",
+  "_nodeVersion": "4.8.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/es5-ext-0.10.14.tgz_1489588138769_0.5899041632656008"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/es5-ext-0.10.15.tgz_1490027658480_0.23058239626698196"
   },
   "_npmUser": {
     "name": "medikoo",
     "email": "medikoo+npm@medikoo.com"
   },
-  "_npmVersion": "4.1.2",
+  "_npmVersion": "2.15.11",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "es5-ext@~0.10.11",
+    "raw": "es5-ext@~0.10.14",
     "scope": null,
     "escapedName": "es5-ext",
     "name": "es5-ext",
-    "rawSpec": "~0.10.11",
-    "spec": ">=0.10.11 <0.11.0",
+    "rawSpec": "~0.10.14",
+    "spec": ">=0.10.14 <0.11.0",
     "type": "range"
   },
   "_requiredBy": [
     "/d",
     "/es6-iterator",
-    "/es6-iterator/d",
     "/es6-map",
     "/es6-set",
-    "/es6-set/d",
     "/es6-symbol",
-    "/es6-symbol/d",
     "/es6-weak-map",
-    "/es6-weak-map/d",
-    "/event-emitter",
-    "/event-emitter/d"
+    "/event-emitter"
   ],
-  "_resolved": "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.14.tgz",
-  "_shasum": "625bc9ab9cac0f6fb9dc271525823d1800b3d360",
+  "_resolved": "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.15.tgz",
+  "_shasum": "c330a5934c1ee21284a7c081a86e5fd937c91ea6",
   "_shrinkwrap": null,
-  "_spec": "es5-ext@~0.10.11",
+  "_spec": "es5-ext@~0.10.14",
   "_where": "C:\\Github\\agent\\node_modules\\es6-map",
   "author": {
     "name": "Mariusz Nowak",
@@ -76,10 +71,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "625bc9ab9cac0f6fb9dc271525823d1800b3d360",
-    "tarball": "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.14.tgz"
+    "shasum": "c330a5934c1ee21284a7c081a86e5fd937c91ea6",
+    "tarball": "https://registry.npmjs.org/es5-ext/-/es5-ext-0.10.15.tgz"
   },
-  "gitHead": "a92dd4617294ebad5d938ae1245ccc0eed46a618",
+  "gitHead": "51091920f5e4bec719702011c358fb4a24b2e998",
   "homepage": "https://github.com/medikoo/es5-ext#readme",
   "keywords": [
     "ecmascript",
@@ -118,5 +113,5 @@
     "lint-console": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --watch",
     "test": "node ./node_modules/tad/bin/tad"
   },
-  "version": "0.10.14"
+  "version": "0.10.15"
 }
