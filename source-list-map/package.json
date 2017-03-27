@@ -2,25 +2,25 @@
   "_args": [
     [
       {
-        "raw": "source-list-map@^1.0.1",
+        "raw": "source-list-map@^1.1.1",
         "scope": null,
         "escapedName": "source-list-map",
         "name": "source-list-map",
-        "rawSpec": "^1.0.1",
-        "spec": ">=1.0.1 <2.0.0",
+        "rawSpec": "^1.1.1",
+        "spec": ">=1.1.1 <2.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\webpack-sources"
     ]
   ],
-  "_from": "source-list-map@>=1.0.1 <2.0.0",
-  "_id": "source-list-map@1.0.1",
+  "_from": "source-list-map@>=1.1.1 <2.0.0",
+  "_id": "source-list-map@1.1.1",
   "_inCache": true,
   "_location": "/source-list-map",
   "_nodeVersion": "7.4.0",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/source-list-map-1.0.1.tgz_1488914752346_0.11908297520130873"
+    "tmp": "tmp/source-list-map-1.1.1.tgz_1490398503976_0.7048284611664712"
   },
   "_npmUser": {
     "name": "sokra",
@@ -29,21 +29,21 @@
   "_npmVersion": "4.0.5",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "source-list-map@^1.0.1",
+    "raw": "source-list-map@^1.1.1",
     "scope": null,
     "escapedName": "source-list-map",
     "name": "source-list-map",
-    "rawSpec": "^1.0.1",
-    "spec": ">=1.0.1 <2.0.0",
+    "rawSpec": "^1.1.1",
+    "spec": ">=1.1.1 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/webpack-sources"
   ],
-  "_resolved": "https://registry.npmjs.org/source-list-map/-/source-list-map-1.0.1.tgz",
-  "_shasum": "cc1fc17122ae0a51978024c2cc0f8c35659026b8",
+  "_resolved": "https://registry.npmjs.org/source-list-map/-/source-list-map-1.1.1.tgz",
+  "_shasum": "1a33ac210ca144d1e561f906ebccab5669ff4cb4",
   "_shrinkwrap": null,
-  "_spec": "source-list-map@^1.0.1",
+  "_spec": "source-list-map@^1.1.1",
   "_where": "C:\\Github\\agent\\node_modules\\webpack-sources",
   "author": {
     "name": "Tobias Koppers @sokra"
@@ -59,13 +59,13 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "cc1fc17122ae0a51978024c2cc0f8c35659026b8",
-    "tarball": "https://registry.npmjs.org/source-list-map/-/source-list-map-1.0.1.tgz"
+    "shasum": "1a33ac210ca144d1e561f906ebccab5669ff4cb4",
+    "tarball": "https://registry.npmjs.org/source-list-map/-/source-list-map-1.1.1.tgz"
   },
   "files": [
     "lib"
   ],
-  "gitHead": "3d4e832abc5d8584f8998703f8e7bd940fc1246b",
+  "gitHead": "8a32dff698df50dd34324208338fb8d526796e65",
   "homepage": "https://github.com/webpack/source-list-map",
   "keywords": [
     "source-map"
@@ -88,5 +88,5 @@
   "scripts": {
     "test": "mocha -R spec"
   },
-  "version": "1.0.1"
+  "version": "1.1.1"
 }

@@ -14,21 +14,20 @@
     ]
   ],
   "_from": "method-override@>=2.3.5 <2.4.0",
-  "_id": "method-override@2.3.7",
+  "_id": "method-override@2.3.8",
   "_inCache": true,
   "_location": "/method-override",
+  "_nodeVersion": "4.7.3",
   "_npmOperationalInternal": {
     "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/method-override-2.3.7.tgz_1479612082134_0.94007871998474"
+    "tmp": "tmp/method-override-2.3.8.tgz_1490407516018_0.33541760384105146"
   },
   "_npmUser": {
     "name": "dougwilson",
     "email": "doug@somethingdoug.com"
   },
-  "_npmVersion": "1.4.28",
-  "_phantomChildren": {
-    "ms": "0.7.2"
-  },
+  "_npmVersion": "2.15.11",
+  "_phantomChildren": {},
   "_requested": {
     "raw": "method-override@~2.3.5",
     "scope": null,
@@ -41,8 +40,8 @@
   "_requiredBy": [
     "/connect"
   ],
-  "_resolved": "https://registry.npmjs.org/method-override/-/method-override-2.3.7.tgz",
-  "_shasum": "8e1d47ac480fb0cd8777083f11c896901166b2e5",
+  "_resolved": "https://registry.npmjs.org/method-override/-/method-override-2.3.8.tgz",
+  "_shasum": "178234bf4bab869f89df9444b06fc6147b44828c",
   "_shrinkwrap": null,
   "_spec": "method-override@~2.3.5",
   "_where": "C:\\Github\\agent\\node_modules\\connect",
@@ -61,26 +60,26 @@
     }
   ],
   "dependencies": {
-    "debug": "2.3.3",
+    "debug": "2.6.3",
     "methods": "~1.1.2",
     "parseurl": "~1.3.1",
     "vary": "~1.1.0"
   },
   "description": "Override HTTP verbs",
   "devDependencies": {
-    "eslint": "3.9.1",
-    "eslint-config-standard": "6.2.1",
-    "eslint-plugin-markdown": "1.0.0-beta.3",
-    "eslint-plugin-promise": "3.3.1",
-    "eslint-plugin-standard": "2.0.1",
+    "eslint": "3.18.0",
+    "eslint-config-standard": "7.1.0",
+    "eslint-plugin-markdown": "1.0.0-beta.4",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "2.1.1",
     "istanbul": "0.4.5",
     "mocha": "2.5.3",
     "supertest": "1.1.0"
   },
   "directories": {},
   "dist": {
-    "shasum": "8e1d47ac480fb0cd8777083f11c896901166b2e5",
-    "tarball": "https://registry.npmjs.org/method-override/-/method-override-2.3.7.tgz"
+    "shasum": "178234bf4bab869f89df9444b06fc6147b44828c",
+    "tarball": "https://registry.npmjs.org/method-override/-/method-override-2.3.8.tgz"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -90,8 +89,8 @@
     "HISTORY.md",
     "index.js"
   ],
-  "gitHead": "8d6d2900cc37718f8d788aa474033780385aa519",
-  "homepage": "https://github.com/expressjs/method-override",
+  "gitHead": "96422fdbc34d01d4d68624823aa71de345cea9da",
+  "homepage": "https://github.com/expressjs/method-override#readme",
   "license": "MIT",
   "maintainers": [
     {
@@ -132,5 +131,5 @@
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
     "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/"
   },
-  "version": "2.3.7"
+  "version": "2.3.8"
 }

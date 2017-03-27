@@ -42,6 +42,7 @@
     "/babel-traverse",
     "/eslint",
     "/gulp-livereload",
+    "/method-override",
     "/mini-lr"
   ],
   "_resolved": "https://registry.npmjs.org/debug/-/debug-2.6.3.tgz",

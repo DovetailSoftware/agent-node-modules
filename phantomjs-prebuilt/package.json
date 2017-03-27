@@ -43,7 +43,7 @@
     "isexe": "2.0.0",
     "isstream": "0.1.2",
     "json-stringify-safe": "5.0.1",
-    "mime-types": "2.1.14",
+    "mime-types": "2.1.15",
     "oauth-sign": "0.8.2",
     "pinkie-promise": "2.0.1",
     "stringstream": "0.0.5",
