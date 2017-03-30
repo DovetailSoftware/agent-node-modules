@@ -2,44 +2,48 @@
   "_args": [
     [
       {
-        "raw": "lightbox2@2.8.2",
+        "raw": "lightbox2@2.9.0",
         "scope": null,
         "escapedName": "lightbox2",
         "name": "lightbox2",
-        "rawSpec": "2.8.2",
-        "spec": "2.8.2",
+        "rawSpec": "2.9.0",
+        "spec": "2.9.0",
         "type": "version"
       },
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "lightbox2@2.8.2",
-  "_id": "lightbox2@2.8.2",
+  "_from": "lightbox2@2.9.0",
+  "_id": "lightbox2@2.9.0",
   "_inCache": true,
   "_location": "/lightbox2",
-  "_nodeVersion": "4.1.2",
+  "_nodeVersion": "6.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/lightbox2-2.9.0.tgz_1478483320313_0.9134495395701379"
+  },
   "_npmUser": {
     "name": "lokesh.dhakar",
     "email": "lokesh.dhakar@gmail.com"
   },
-  "_npmVersion": "2.14.4",
+  "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "lightbox2@2.8.2",
+    "raw": "lightbox2@2.9.0",
     "scope": null,
     "escapedName": "lightbox2",
     "name": "lightbox2",
-    "rawSpec": "2.8.2",
-    "spec": "2.8.2",
+    "rawSpec": "2.9.0",
+    "spec": "2.9.0",
     "type": "version"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/lightbox2/-/lightbox2-2.8.2.tgz",
-  "_shasum": "be73d986f070136307b623d30ac05b2c06d31bb3",
+  "_resolved": "https://registry.npmjs.org/lightbox2/-/lightbox2-2.9.0.tgz",
+  "_shasum": "f9a2fdb41ab3ca94bf0f769210b59bb14a5d5f62",
   "_shrinkwrap": null,
-  "_spec": "lightbox2@2.8.2",
+  "_spec": "lightbox2@2.9.0",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Lokesh Dhakar",
@@ -63,10 +67,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "be73d986f070136307b623d30ac05b2c06d31bb3",
-    "tarball": "https://registry.npmjs.org/lightbox2/-/lightbox2-2.8.2.tgz"
+    "shasum": "f9a2fdb41ab3ca94bf0f769210b59bb14a5d5f62",
+    "tarball": "https://registry.npmjs.org/lightbox2/-/lightbox2-2.9.0.tgz"
   },
-  "gitHead": "e1e6aa4f1b09bdf313b386841490b6d2ad1ccedc",
+  "gitHead": "fd8d8795476a2851b02fd93350fd659512a54699",
   "homepage": "http://lokeshdhakar.com/projects/lightbox2/",
   "keywords": [
     "lightbox",
@@ -97,5 +101,5 @@
     "url": "git+https://github.com/lokesh/lightbox2.git"
   },
   "scripts": {},
-  "version": "2.8.2"
+  "version": "2.9.0"
 }

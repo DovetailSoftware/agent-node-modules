@@ -23,9 +23,7 @@
     "email": "github@sellside.com"
   },
   "_npmVersion": "3.3.6",
-  "_phantomChildren": {
-    "is-buffer": "1.1.5"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "is-number@^2.1.0",
     "scope": null,

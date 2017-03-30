@@ -61,11 +61,11 @@ $ node my-program.js -fp --foofoo
 $ node my-program.js --foofoo -- -fp  # -- stops the flag parsing.
 { foo: "Mr. Foo", argv: { remain: ["-fp"] } }
 
-$ node my-program.js --blatzk 1000 -fp # unknown opts are ok.
-{ blatzk: 1000, flag: true, pick: true }
-
-$ node my-program.js --blatzk true -fp # but they need a value
+$ node my-program.js --blatzk -fp # unknown opts are ok.
 { blatzk: true, flag: true, pick: true }
+
+$ node my-program.js --blatzk=1000 -fp # but you need to use = if they have a value
+{ blatzk: 1000, flag: true, pick: true }
 
 $ node my-program.js --no-blatzk -fp # unless they start with "no-"
 { blatzk: false, flag: true, pick: true }
@@ -121,7 +121,9 @@ interpreted as a number.
 
 You can also mix types and values, or multiple types, in a list.  For
 instance `{ blah: [Number, null] }` would allow a value to be set to
-either a Number or null.
+either a Number or null.  When types are ordered, this implies a
+preference, and the first type that can be used to properly interpret
+the value will be used.
 
 To define a new type, add it to `nopt.typeDefs`.  Each item in that
 hash is an object with a `type` member and a `validate` method.  The

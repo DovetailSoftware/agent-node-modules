@@ -42,6 +42,7 @@
     "/figures",
     "/gulp-livereload/chalk",
     "/gulp-mocha-phantomjs/chalk",
+    "/mocha",
     "/replacestream"
   ],
   "_resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz",

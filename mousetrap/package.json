@@ -2,56 +2,56 @@
   "_args": [
     [
       {
-        "raw": "mousetrap@github:craigjennings11/mousetrap#e512911",
+        "raw": "mousetrap@github:craigjennings11/mousetrap#9f9f64c",
         "scope": null,
         "escapedName": "mousetrap",
         "name": "mousetrap",
-        "rawSpec": "github:craigjennings11/mousetrap#e512911",
-        "spec": "github:craigjennings11/mousetrap#e512911",
+        "rawSpec": "github:craigjennings11/mousetrap#9f9f64c",
+        "spec": "github:craigjennings11/mousetrap#9f9f64c",
         "type": "hosted",
         "hosted": {
           "type": "github",
-          "ssh": "git@github.com:craigjennings11/mousetrap.git#e512911",
-          "sshUrl": "git+ssh://git@github.com/craigjennings11/mousetrap.git#e512911",
-          "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#e512911",
-          "gitUrl": "git://github.com/craigjennings11/mousetrap.git#e512911",
-          "shortcut": "github:craigjennings11/mousetrap#e512911",
-          "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/e512911/package.json"
+          "ssh": "git@github.com:craigjennings11/mousetrap.git#9f9f64c",
+          "sshUrl": "git+ssh://git@github.com/craigjennings11/mousetrap.git#9f9f64c",
+          "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#9f9f64c",
+          "gitUrl": "git://github.com/craigjennings11/mousetrap.git#9f9f64c",
+          "shortcut": "github:craigjennings11/mousetrap#9f9f64c",
+          "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/9f9f64c/package.json"
         }
       },
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "craigjennings11/mousetrap#e512911",
-  "_id": "mousetrap@1.4.6",
+  "_from": "craigjennings11/mousetrap#9f9f64c",
+  "_id": "mousetrap@1.6.0",
   "_inCache": true,
   "_location": "/mousetrap",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "mousetrap@github:craigjennings11/mousetrap#e512911",
+    "raw": "mousetrap@github:craigjennings11/mousetrap#9f9f64c",
     "scope": null,
     "escapedName": "mousetrap",
     "name": "mousetrap",
-    "rawSpec": "github:craigjennings11/mousetrap#e512911",
-    "spec": "github:craigjennings11/mousetrap#e512911",
+    "rawSpec": "github:craigjennings11/mousetrap#9f9f64c",
+    "spec": "github:craigjennings11/mousetrap#9f9f64c",
     "type": "hosted",
     "hosted": {
       "type": "github",
-      "ssh": "git@github.com:craigjennings11/mousetrap.git#e512911",
-      "sshUrl": "git+ssh://git@github.com/craigjennings11/mousetrap.git#e512911",
-      "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#e512911",
-      "gitUrl": "git://github.com/craigjennings11/mousetrap.git#e512911",
-      "shortcut": "github:craigjennings11/mousetrap#e512911",
-      "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/e512911/package.json"
+      "ssh": "git@github.com:craigjennings11/mousetrap.git#9f9f64c",
+      "sshUrl": "git+ssh://git@github.com/craigjennings11/mousetrap.git#9f9f64c",
+      "httpsUrl": "git+https://github.com/craigjennings11/mousetrap.git#9f9f64c",
+      "gitUrl": "git://github.com/craigjennings11/mousetrap.git#9f9f64c",
+      "shortcut": "github:craigjennings11/mousetrap#9f9f64c",
+      "directUrl": "https://raw.githubusercontent.com/craigjennings11/mousetrap/9f9f64c/package.json"
     }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git://github.com/craigjennings11/mousetrap.git#e5129117d910c2a9e9a5d948f6cfd87a7885fd08",
-  "_shasum": "3393dc27590e267845b3856d677480eca2c91449",
+  "_resolved": "git://github.com/craigjennings11/mousetrap.git#9f9f64ca8c0326c102a4da1408207b604e7f3bd4",
+  "_shasum": "2fb56763fe429463acbba6d7ee75326e9cbfcaac",
   "_shrinkwrap": null,
-  "_spec": "mousetrap@github:craigjennings11/mousetrap#e512911",
+  "_spec": "mousetrap@github:craigjennings11/mousetrap#9f9f64c",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Craig Campbell"
@@ -80,7 +80,7 @@
   "main": "mousetrap.js",
   "name": "mousetrap",
   "optionalDependencies": {},
-  "readme": "# Mousetrap\r\n\r\nMousetrap is a simple library for handling keyboard shortcuts in Javascript.\r\n\r\nIt is licensed under the Apache 2.0 license.\r\n\r\nIt is around **1.9kb** minified and gzipped and **3.5kb** minified, has no external dependencies, and has been tested in the following browsers:\r\n\r\n- Internet Explorer 6+\r\n- Safari\r\n- Firefox\r\n- Chrome\r\n\r\nIt has support for ``keypress``, ``keydown``, and ``keyup`` events on specific keys, keyboard combinations, or key sequences.\r\n\r\nIf you would like to donate to help support Mousetrap development use [Gittip](https://www.gittip.com/ccampbell).\r\n\r\n## Getting started\r\n\r\n1.  Include mousetrap on your page before the closing ``</body>`` tag\r\n\r\n    ```html\r\n    <script src=\"/path/to/mousetrap.min.js\"></script>\r\n    ```\r\n\r\n2.  Add some keyboard events to listen for\r\n\r\n    ```html\r\n    <script>\r\n        // single keys\r\n        Mousetrap.bind('4', function() { console.log('4'); });\r\n        Mousetrap.bind(\"?\", function() { console.log('show shortcuts!'); });\r\n        Mousetrap.bind('esc', function() { console.log('escape'); }, 'keyup');\r\n\r\n        // combinations\r\n        Mousetrap.bind('command+shift+k', function() { console.log('command shift k'); });\r\n\r\n        // map multiple combinations to the same callback\r\n        Mousetrap.bind(['command+k', 'ctrl+k'], function() {\r\n            console.log('command k or control k');\r\n\r\n            // return false to prevent default browser behavior\r\n            // and stop event from bubbling\r\n            return false;\r\n        });\r\n\r\n        // gmail style sequences\r\n        Mousetrap.bind('g i', function() { console.log('go to inbox'); });\r\n        Mousetrap.bind('* a', function() { console.log('select all'); });\r\n\r\n        // konami code!\r\n        Mousetrap.bind('up up down down left right left right b a enter', function() {\r\n            console.log('konami code');\r\n        });\r\n    </script>\r\n    ```\r\n\r\n## Why Mousetrap?\r\n\r\nThere are a number of other similar libraries out there so what makes this one different?\r\n\r\n- There are no external dependencies, no framework is required\r\n- You are not limited to ``keydown`` events (You can specify ``keypress``, ``keydown``, or ``keyup`` or let Mousetrap choose for you).\r\n- You can bind key events directly to special keys such as ``?`` or ``*`` without having to specify ``shift+/`` or ``shift+8`` which are not consistent across all keyboards\r\n- It works with international keyboard layouts\r\n- You can bind Gmail like key sequences in addition to regular keys and key combinations\r\n- You can programatically trigger key events with the ``trigger()`` method\r\n- It works with the numeric keypad on your keyboard\r\n- The code is well documented/commented\r\n\r\n## Tests\r\n\r\nUnit tests run via <a href=\"http://visionmedia.github.io/mocha\" target=\"_blank\">mocha</a>.\r\n\r\n### Running in browser\r\n\r\nDownload the repo and go to `tests/mousetrap.html` in your browser.\r\n\r\n### Running with Grunt and PhantomJS\r\n\r\n1.  Install grunt-cli\r\n\r\n    ```bash\r\n    npm install -g grunt-cli\r\n    ```\r\n\r\n2.  Install npm packages\r\n\r\n    ```bash\r\n    cd /path/to/repo\r\n    npm install\r\n    ```\r\n\r\n3.  Run tests\r\n\r\n    ```bash\r\n    grunt mocha\r\n    ```\r\n\r\n## Documentation\r\n\r\nFull documentation can be found at http://craig.is/killing/mice\r\n",
+  "readme": "# Mousetrap\r\n\r\nMousetrap is a simple library for handling keyboard shortcuts in Javascript.\r\n\r\nIt is licensed under the Apache 2.0 license.\r\n\r\nIt is around **2kb** minified and gzipped and **4.5kb** minified, has no external dependencies, and has been tested in the following browsers:\r\n\r\n- Internet Explorer 6+\r\n- Safari\r\n- Firefox\r\n- Chrome\r\n\r\nIt has support for ``keypress``, ``keydown``, and ``keyup`` events on specific keys, keyboard combinations, or key sequences.\r\n\r\n## Getting started\r\n\r\n1.  Include mousetrap on your page before the closing ``</body>`` tag\r\n\r\n    ```html\r\n    <script src=\"/path/to/mousetrap.min.js\"></script>\r\n    ```\r\n\r\n2.  Add some keyboard events to listen for\r\n\r\n    ```html\r\n    <script>\r\n        // single keys\r\n        Mousetrap.bind('4', function() { console.log('4'); });\r\n        Mousetrap.bind(\"?\", function() { console.log('show shortcuts!'); });\r\n        Mousetrap.bind('esc', function() { console.log('escape'); }, 'keyup');\r\n\r\n        // combinations\r\n        Mousetrap.bind('command+shift+k', function() { console.log('command shift k'); });\r\n\r\n        // map multiple combinations to the same callback\r\n        Mousetrap.bind(['command+k', 'ctrl+k'], function() {\r\n            console.log('command k or control k');\r\n\r\n            // return false to prevent default browser behavior\r\n            // and stop event from bubbling\r\n            return false;\r\n        });\r\n\r\n        // gmail style sequences\r\n        Mousetrap.bind('g i', function() { console.log('go to inbox'); });\r\n        Mousetrap.bind('* a', function() { console.log('select all'); });\r\n\r\n        // konami code!\r\n        Mousetrap.bind('up up down down left right left right b a enter', function() {\r\n            console.log('konami code');\r\n        });\r\n    </script>\r\n    ```\r\n\r\n## Why Mousetrap?\r\n\r\nThere are a number of other similar libraries out there so what makes this one different?\r\n\r\n- There are no external dependencies, no framework is required\r\n- You are not limited to ``keydown`` events (You can specify ``keypress``, ``keydown``, or ``keyup`` or let Mousetrap choose for you).\r\n- You can bind key events directly to special keys such as ``?`` or ``*`` without having to specify ``shift+/`` or ``shift+8`` which are not consistent across all keyboards\r\n- It works with international keyboard layouts\r\n- You can bind Gmail like key sequences in addition to regular keys and key combinations\r\n- You can programatically trigger key events with the ``trigger()`` method\r\n- It works with the numeric keypad on your keyboard\r\n- The code is well documented/commented\r\n\r\n## Tests\r\n\r\nUnit tests run via <a href=\"http://mochajs.org/\" target=\"_blank\">mocha</a>.\r\n\r\n### Running in browser\r\n\r\n[View it online](http://rawgit.com/ccampbell/mousetrap/master/tests/mousetrap.html) to check your browser compatibility. You may also download the repo and open `tests/mousetrap.html` in your browser. \r\n\r\n### Running with Grunt and PhantomJS\r\n\r\n1.  Install grunt-cli\r\n\r\n    ```bash\r\n    npm install -g grunt-cli\r\n    ```\r\n\r\n2.  Install npm packages\r\n\r\n    ```bash\r\n    cd /path/to/repo\r\n    npm install\r\n    ```\r\n\r\n3.  Run tests\r\n\r\n    ```bash\r\n    grunt mocha\r\n    ```\r\n\r\n## Documentation\r\n\r\nFull documentation can be found at https://craig.is/killing/mice\r\n",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
@@ -89,5 +89,5 @@
   "scripts": {
     "test": "grunt mocha"
   },
-  "version": "1.4.6"
+  "version": "1.6.0"
 }

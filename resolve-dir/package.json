@@ -10,7 +10,7 @@
         "spec": ">=0.1.0 <0.2.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\liftoff\\node_modules\\findup-sync"
+      "C:\\Github\\agent\\node_modules\\findup-sync"
     ]
   ],
   "_from": "resolve-dir@>=0.1.0 <0.2.0",
@@ -38,13 +38,13 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/liftoff/findup-sync"
+    "/findup-sync"
   ],
   "_resolved": "https://registry.npmjs.org/resolve-dir/-/resolve-dir-0.1.1.tgz",
   "_shasum": "b219259a5602fac5c5c496ad894a6e8cc430261e",
   "_shrinkwrap": null,
   "_spec": "resolve-dir@^0.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\liftoff\\node_modules\\findup-sync",
+  "_where": "C:\\Github\\agent\\node_modules\\findup-sync",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"

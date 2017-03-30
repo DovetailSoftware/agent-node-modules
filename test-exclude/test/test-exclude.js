@@ -7,14 +7,24 @@ require('chai').should()
 describe('testExclude', function () {
   it('should exclude the node_modules folder by default', function () {
     exclude().shouldInstrument('./banana/node_modules/cat.js').should.equal(false)
+    exclude().shouldInstrument('node_modules/cat.js').should.equal(false)
   })
 
   it('ignores ./', function () {
     exclude().shouldInstrument('./test.js').should.equal(false)
+    exclude().shouldInstrument('./foo.test.js').should.equal(false)
+  })
+
+  it('matches files in root with **/', function () {
+    exclude().shouldInstrument('__tests__/**').should.equal(false)
   })
 
   it('does not instrument files outside cwd', function () {
     exclude().shouldInstrument('../foo.js').should.equal(false)
+  })
+
+  it('does not instrument files in the coverage folder by default', function () {
+    exclude().shouldInstrument('coverage/foo.js').should.equal(false)
   })
 
   it('applies exclude rule ahead of include rule', function () {
@@ -47,11 +57,29 @@ describe('testExclude', function () {
     e.shouldInstrument('src/foo/bar.js').should.equal(true)
   })
 
-  it('does not exclude anything if an empty array passed', function () {
+  it("handles folder '.' in path", function () {
+    const e = exclude()
+    e.shouldInstrument('test/fixtures/basic/.next/dist/pages/async-props.js').should.equal(false)
+  })
+
+  it('excludes node_modules folder, even when empty exclude group is provided', function () {
     const e = exclude({
       exclude: []
     })
 
+    e.shouldInstrument('./banana/node_modules/cat.js').should.equal(false)
+    e.shouldInstrument('node_modules/some/module/to/cover.js').should.equal(false)
+    e.shouldInstrument('__tests__/a-test.js').should.equal(true)
+    e.shouldInstrument('src/a.test.js').should.equal(true)
+    e.shouldInstrument('src/foo.js').should.equal(true)
+  })
+
+  it('allows node_modules folder to be included, if !node_modules is explicitly provided', function () {
+    const e = exclude({
+      exclude: ['!**/node_modules/**']
+    })
+
+    e.shouldInstrument('./banana/node_modules/cat.js').should.equal(true)
     e.shouldInstrument('node_modules/some/module/to/cover.js').should.equal(true)
     e.shouldInstrument('__tests__/a-test.js').should.equal(true)
     e.shouldInstrument('src/a.test.js').should.equal(true)
@@ -60,6 +88,7 @@ describe('testExclude', function () {
 
   it('exports defaultExclude', function () {
     exclude.defaultExclude.should.deep.equal([
+      'coverage/**',
       'test/**',
       'test{,-*}.js',
       '**/*.test.js',
@@ -158,5 +187,15 @@ describe('testExclude', function () {
         e.shouldInstrument('index.js').should.equal(true)
       })
     })
+  })
+
+  // see: https://github.com/istanbuljs/babel-plugin-istanbul/issues/71
+  it('allows exclude/include rule to be a string', function () {
+    const e = exclude({
+      exclude: 'src/**/*.spec.js',
+      include: 'src/**'
+    })
+    e.shouldInstrument('src/batman/robin/foo.spec.js').should.equal(false)
+    e.shouldInstrument('src/batman/robin/foo.js').should.equal(true)
   })
 })

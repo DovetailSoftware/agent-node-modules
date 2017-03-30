@@ -10,7 +10,7 @@
         "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\global-prefix\\node_modules\\which"
+      "C:\\Github\\agent\\node_modules\\which"
     ]
   ],
   "_from": "isexe@>=2.0.0 <3.0.0",
@@ -38,15 +38,13 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/global-prefix/which",
-    "/istanbul/which",
-    "/phantomjs-prebuilt/which"
+    "/which"
   ],
   "_resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
   "_shasum": "e8fbf374dc556ff8947a10dcb0572d633f2cfa10",
   "_shrinkwrap": null,
   "_spec": "isexe@^2.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\global-prefix\\node_modules\\which",
+  "_where": "C:\\Github\\agent\\node_modules\\which",
   "author": {
     "name": "Isaac Z. Schlueter",
     "email": "i@izs.me",

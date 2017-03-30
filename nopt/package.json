@@ -2,47 +2,44 @@
   "_args": [
     [
       {
-        "raw": "nopt@~1.0.10",
+        "raw": "nopt@2",
         "scope": null,
         "escapedName": "nopt",
         "name": "nopt",
-        "rawSpec": "~1.0.10",
-        "spec": ">=1.0.10 <1.1.0",
+        "rawSpec": "2",
+        "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\grunt"
+      "C:\\Github\\agent\\node_modules\\npmconf"
     ]
   ],
-  "_defaultsLoaded": true,
-  "_engineSupported": true,
-  "_from": "nopt@>=1.0.10 <1.1.0",
-  "_id": "nopt@1.0.10",
+  "_from": "nopt@>=2.0.0 <3.0.0",
+  "_id": "nopt@2.2.1",
   "_inCache": true,
   "_location": "/nopt",
-  "_nodeVersion": "v0.5.9-pre",
   "_npmUser": {
     "name": "isaacs",
     "email": "i@izs.me"
   },
-  "_npmVersion": "1.0.93",
+  "_npmVersion": "1.4.7",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "nopt@~1.0.10",
+    "raw": "nopt@2",
     "scope": null,
     "escapedName": "nopt",
     "name": "nopt",
-    "rawSpec": "~1.0.10",
-    "spec": ">=1.0.10 <1.1.0",
+    "rawSpec": "2",
+    "spec": ">=2.0.0 <3.0.0",
     "type": "range"
   },
   "_requiredBy": [
-    "/grunt"
+    "/npmconf"
   ],
-  "_resolved": "https://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz",
-  "_shasum": "6ddd21bd2a31417b92727dd585f8a6f37608ebee",
+  "_resolved": "https://registry.npmjs.org/nopt/-/nopt-2.2.1.tgz",
+  "_shasum": "2aa09b7d1768487b3b89a9c5aa52335bff0baea7",
   "_shrinkwrap": null,
-  "_spec": "nopt@~1.0.10",
-  "_where": "C:\\Github\\agent\\node_modules\\grunt",
+  "_spec": "nopt@2",
+  "_where": "C:\\Github\\agent\\node_modules\\npmconf",
   "author": {
     "name": "Isaac Z. Schlueter",
     "email": "i@izs.me",
@@ -58,16 +55,15 @@
     "abbrev": "1"
   },
   "description": "Option parsing for Node, supporting types, shorthands, etc. Used by npm.",
-  "devDependencies": {},
+  "devDependencies": {
+    "tap": "~0.4.8"
+  },
   "directories": {},
   "dist": {
-    "shasum": "6ddd21bd2a31417b92727dd585f8a6f37608ebee",
-    "tarball": "https://registry.npmjs.org/nopt/-/nopt-1.0.10.tgz"
+    "shasum": "2aa09b7d1768487b3b89a9c5aa52335bff0baea7",
+    "tarball": "https://registry.npmjs.org/nopt/-/nopt-2.2.1.tgz"
   },
-  "engines": {
-    "node": "*"
-  },
-  "homepage": "https://github.com/isaacs/nopt#readme",
+  "homepage": "https://github.com/isaacs/nopt",
   "license": {
     "type": "MIT",
     "url": "https://github.com/isaacs/nopt/raw/master/LICENSE"
@@ -84,10 +80,10 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git://github.com/isaacs/nopt.git"
+    "url": "git+ssh://git@github.com/isaacs/nopt.git"
   },
   "scripts": {
-    "test": "node lib/nopt.js"
+    "test": "tap test/*.js"
   },
-  "version": "1.0.10"
+  "version": "2.2.1"
 }

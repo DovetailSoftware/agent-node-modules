@@ -27,9 +27,7 @@
     "email": "snnskwtnb@gmail.com"
   },
   "_npmVersion": "3.6.0",
-  "_phantomChildren": {
-    "is-buffer": "1.1.5"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "align-text@^0.1.3",
     "scope": null,

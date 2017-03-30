@@ -4,7 +4,7 @@ Mousetrap is a simple library for handling keyboard shortcuts in Javascript.
 
 It is licensed under the Apache 2.0 license.
 
-It is around **1.9kb** minified and gzipped and **3.5kb** minified, has no external dependencies, and has been tested in the following browsers:
+It is around **2kb** minified and gzipped and **4.5kb** minified, has no external dependencies, and has been tested in the following browsers:
 
 - Internet Explorer 6+
 - Safari
@@ -12,8 +12,6 @@ It is around **1.9kb** minified and gzipped and **3.5kb** minified, has no exter
 - Chrome
 
 It has support for ``keypress``, ``keydown``, and ``keyup`` events on specific keys, keyboard combinations, or key sequences.
-
-If you would like to donate to help support Mousetrap development use [Gittip](https://www.gittip.com/ccampbell).
 
 ## Getting started
 
@@ -70,11 +68,11 @@ There are a number of other similar libraries out there so what makes this one d
 
 ## Tests
 
-Unit tests run via <a href="http://visionmedia.github.io/mocha" target="_blank">mocha</a>.
+Unit tests run via <a href="http://mochajs.org/" target="_blank">mocha</a>.
 
 ### Running in browser
 
-Download the repo and go to `tests/mousetrap.html` in your browser.
+[View it online](http://rawgit.com/ccampbell/mousetrap/master/tests/mousetrap.html) to check your browser compatibility. You may also download the repo and open `tests/mousetrap.html` in your browser. 
 
 ### Running with Grunt and PhantomJS
 
@@ -99,4 +97,4 @@ Download the repo and go to `tests/mousetrap.html` in your browser.
 
 ## Documentation
 
-Full documentation can be found at http://craig.is/killing/mice
+Full documentation can be found at https://craig.is/killing/mice

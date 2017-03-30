@@ -2,56 +2,48 @@
   "_args": [
     [
       {
-        "raw": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
+        "raw": "blueimp-file-upload@9.18.0",
         "scope": null,
         "escapedName": "blueimp-file-upload",
         "name": "blueimp-file-upload",
-        "rawSpec": "github:blueimp/jQuery-File-Upload#8.3.2",
-        "spec": "github:blueimp/jQuery-File-Upload#8.3.2",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:blueimp/jQuery-File-Upload.git#8.3.2",
-          "sshUrl": "git+ssh://git@github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-          "httpsUrl": "git+https://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-          "gitUrl": "git://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-          "shortcut": "github:blueimp/jQuery-File-Upload#8.3.2",
-          "directUrl": "https://raw.githubusercontent.com/blueimp/jQuery-File-Upload/8.3.2/package.json"
-        }
+        "rawSpec": "9.18.0",
+        "spec": "9.18.0",
+        "type": "version"
       },
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "blueimp/jQuery-File-Upload#8.3.2",
-  "_id": "blueimp-file-upload@8.3.2",
+  "_from": "blueimp-file-upload@9.18.0",
+  "_id": "blueimp-file-upload@9.18.0",
   "_inCache": true,
   "_location": "/blueimp-file-upload",
+  "_nodeVersion": "7.7.4",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/blueimp-file-upload-9.18.0.tgz_1490712256833_0.9510509457904845"
+  },
+  "_npmUser": {
+    "name": "blueimp",
+    "email": "mail@blueimp.net"
+  },
+  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
+    "raw": "blueimp-file-upload@9.18.0",
     "scope": null,
     "escapedName": "blueimp-file-upload",
     "name": "blueimp-file-upload",
-    "rawSpec": "github:blueimp/jQuery-File-Upload#8.3.2",
-    "spec": "github:blueimp/jQuery-File-Upload#8.3.2",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:blueimp/jQuery-File-Upload.git#8.3.2",
-      "sshUrl": "git+ssh://git@github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-      "httpsUrl": "git+https://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-      "gitUrl": "git://github.com/blueimp/jQuery-File-Upload.git#8.3.2",
-      "shortcut": "github:blueimp/jQuery-File-Upload#8.3.2",
-      "directUrl": "https://raw.githubusercontent.com/blueimp/jQuery-File-Upload/8.3.2/package.json"
-    }
+    "rawSpec": "9.18.0",
+    "spec": "9.18.0",
+    "type": "version"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git://github.com/blueimp/jQuery-File-Upload.git#6afe968058cd4e3168a9d1f3871f28efff86f03c",
-  "_shasum": "9ea3dcf4ac8cd5ab3577ca78a0dd9b4217020a76",
+  "_resolved": "https://registry.npmjs.org/blueimp-file-upload/-/blueimp-file-upload-9.18.0.tgz",
+  "_shasum": "944281956740a15e4aca86e3b2088889af60809c",
   "_shrinkwrap": null,
-  "_spec": "blueimp-file-upload@github:blueimp/jQuery-File-Upload#8.3.2",
+  "_spec": "blueimp-file-upload@9.18.0",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Sebastian Tschan",
@@ -61,15 +53,21 @@
     "url": "https://github.com/blueimp/jQuery-File-Upload/issues"
   },
   "dependencies": {
-    "blueimp-canvas-to-blob": ">=2.0.5",
-    "blueimp-load-image": ">=1.7.0",
-    "blueimp-tmpl": ">=2.1.0",
-    "jquery": ">=1.6",
-    "jquery.ui.widget": ">=1.9"
+    "blueimp-canvas-to-blob": "3.5.0",
+    "blueimp-load-image": "2.12.2",
+    "blueimp-tmpl": "3.6.0"
   },
-  "description": "File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads. Works with any server-side platform (Google App Engine, PHP, Python, Ruby on Rails, Java, etc.) that supports standard HTML form file uploads.",
-  "devDependencies": {},
-  "gitHead": "6afe968058cd4e3168a9d1f3871f28efff86f03c",
+  "description": "File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads. Works with any server-side platform (Google App Engine,",
+  "devDependencies": {
+    "bower-json": "0.8.1",
+    "jshint": "2.9.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "944281956740a15e4aca86e3b2088889af60809c",
+    "tarball": "https://registry.npmjs.org/blueimp-file-upload/-/blueimp-file-upload-9.18.0.tgz"
+  },
+  "gitHead": "0b4af3c57b86b3c7147c4d7c75deb71a0133f0e3",
   "homepage": "https://github.com/blueimp/jQuery-File-Upload",
   "keywords": [
     "jquery",
@@ -92,26 +90,33 @@
     "php",
     "bootstrap"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ],
+  "license": "MIT",
+  "main": "js/jquery.fileupload.js",
   "maintainers": [
     {
-      "name": "Sebastian Tschan",
-      "url": "https://blueimp.net"
+      "name": "blueimp",
+      "email": "sebastian.tschan@gmail.com"
     }
   ],
   "name": "blueimp-file-upload",
-  "optionalDependencies": {},
-  "readme": "# jQuery File Upload Plugin\r\n\r\n## Demo\r\n[Demo File Upload](http://blueimp.github.io/jQuery-File-Upload/)\r\n\r\n## Setup\r\n* [How to setup the plugin on your website](https://github.com/blueimp/jQuery-File-Upload/wiki/Setup)\r\n* [How to use only the basic plugin (minimal setup guide).](https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin)\r\n\r\n## Support\r\n\r\n* **[Support Forum](https://groups.google.com/d/forum/jquery-fileupload)**  \r\n**Support requests** and **general discussions** about the File Upload plugin can be posted to the official\r\n[Support Forum](https://groups.google.com/d/forum/jquery-fileupload).  \r\nIf your question is not directly related to the File Upload plugin, you might have a better chance to get a reply by posting to [Stack Overflow](http://stackoverflow.com/questions/tagged/blueimp+jquery+file-upload).\r\n\r\n* Bugs and Feature requests  \r\n**Bugs** and **Feature requests** can be reported using the [issues tracker](https://github.com/blueimp/jQuery-File-Upload/issues).  \r\nPlease read the [issue guidelines](https://github.com/blueimp/jQuery-File-Upload/blob/master/CONTRIBUTING.md) before posting.\r\n\r\n## Features\r\n* **Multiple file upload:**  \r\n  Allows to select multiple files at once and upload them simultaneously.\r\n* **Drag & Drop support:**  \r\n  Allows to upload files by dragging them from your desktop or filemanager and dropping them on your browser window.\r\n* **Upload progress bar:**  \r\n  Shows a progress bar indicating the upload progress for individual files and for all uploads combined.\r\n* **Cancelable uploads:**  \r\n  Individual file uploads can be canceled to stop the upload progress.\r\n* **Resumable uploads:**  \r\n  Aborted uploads can be resumed with browsers supporting the Blob API.\r\n* **Chunked uploads:**  \r\n  Large files can be uploaded in smaller chunks with browsers supporting the Blob API.\r\n* **Client-side image resizing:**  \r\n  Images can be automatically resized on client-side with browsers supporting the required JS APIs.\r\n* **Preview images, audio and video:**  \r\n  A preview of image, audio and video files can be displayed before uploading with browsers supporting the required APIs.\r\n* **No browser plugins (e.g. Adobe Flash) required:**  \r\n  The implementation is based on open standards like HTML5 and JavaScript and requires no additional browser plugins.\r\n* **Graceful fallback for legacy browsers:**  \r\n  Uploads files via XMLHttpRequests if supported and uses iframes as fallback for legacy browsers.\r\n* **HTML file upload form fallback:**  \r\n  Allows progressive enhancement by using a standard HTML file upload form as widget element.\r\n* **Cross-site file uploads:**  \r\n  Supports uploading files to a different domain with cross-site XMLHttpRequests or iframe redirects.\r\n* **Multiple plugin instances:**  \r\n  Allows to use multiple plugin instances on the same webpage.\r\n* **Customizable and extensible:**  \r\n  Provides an API to set individual options and define callBack methods for various upload events.\r\n* **Multipart and file contents stream uploads:**  \r\n  Files can be uploaded as standard \"multipart/form-data\" or file contents stream (HTTP PUT file upload).\r\n* **Compatible with any server-side application platform:**  \r\n  Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.\r\n\r\n## Requirements\r\n* [jQuery](http://jquery.com/) v. 1.6+\r\n* [jQuery UI widget factory](http://api.jqueryui.com/jQuery.widget/) v. 1.9+ (included)\r\n* [jQuery Iframe Transport plugin](https://github.com/blueimp/jQuery-File-Upload/blob/master/js/jquery.iframe-transport.js) (included)\r\n* [JavaScript Templates engine](https://github.com/blueimp/JavaScript-Templates) v. 2.1.0+ (optional)\r\n* [JavaScript Load Image function](https://github.com/blueimp/JavaScript-Load-Image) v. 1.7.0+ (optional)\r\n* [JavaScript Canvas to Blob function](https://github.com/blueimp/JavaScript-Canvas-to-Blob) v. 2.0.5+ (optional)\r\n* [Bootstrap CSS Toolkit](https://github.com/twitter/bootstrap/) v. 2.3+ (optional)\r\n\r\nThe jQuery UI widget factory is a requirement for the basic File Upload plugin, but very lightweight without any other dependencies.  \r\nThe jQuery Iframe Transport is required for [browsers without XHR file upload support](https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support).  \r\nThe UI version of the File Upload plugin also requires the JavaScript Templates engine as well as the JavaScript Load Image and JavaScript Canvas to Blob functions (for the image previews and resizing functionality). These dependencies are marked as optional, as the basic File Upload plugin can be used without them and the UI version of the plugin can be extended to override these dependencies with alternative solutions.\r\n\r\nThe User Interface is built with Twitter's [Bootstrap](https://github.com/twitter/bootstrap/) Toolkit. This enables a CSS based, responsive layout and fancy transition effects on modern browsers. The demo also includes the [Bootstrap Image Gallery Plugin](https://github.com/blueimp/Bootstrap-Image-Gallery). Both of these components are optional and not required.\r\n\r\nThe repository also includes the [jQuery XDomainRequest Transport plugin](https://github.com/blueimp/jQuery-File-Upload/blob/master/js/cors/jquery.xdr-transport.js), which enables Cross-domain AJAX requests (GET and POST only) in Microsoft Internet Explorer >= 8. However, the XDomainRequest object doesn't support file uploads and the plugin is only used by the [Demo](http://blueimp.github.io/jQuery-File-Upload/) for Cross-domain requests to delete uploaded files from the demo file upload service.\r\n\r\n[Cross-domain File Uploads](https://github.com/blueimp/jQuery-File-Upload/wiki/Cross-domain-uploads) using the [Iframe Transport plugin](https://github.com/blueimp/jQuery-File-Upload/blob/master/js/jquery.iframe-transport.js) require a redirect back to the origin server to retrieve the upload results. The [example implementation](https://github.com/blueimp/jQuery-File-Upload/blob/master/js/main.js) makes use of [result.html](https://github.com/blueimp/jQuery-File-Upload/blob/master/cors/result.html) as a static redirect page for the origin server.\r\n\r\n## Browsers\r\n\r\n### Desktop browsers\r\nThe File Upload plugin is regularly tested with the latest browser versions and supports the following minimal versions:\r\n\r\n* Google Chrome\r\n* Apple Safari 4.0+\r\n* Mozilla Firefox 3.0+\r\n* Opera 11.0+\r\n* Microsoft Internet Explorer 6.0+\r\n\r\n### Mobile browsers\r\nThe File Upload plugin has been tested with and supports the following mobile browsers:\r\n\r\n* Apple Safari on iOS 6.0+\r\n* Google Chrome on iOS 6.0+\r\n* Google Chrome on Android 4.0+\r\n* Default Browser on Android 2.3+\r\n* Opera Mobile 12.0+\r\n\r\n### Supported features\r\nFor a detailed overview of the features supported by each browser version please have a look at the [Extended browser support information](https://github.com/blueimp/jQuery-File-Upload/wiki/Browser-support).\r\n\r\n## License\r\nReleased under the [MIT license](http://www.opensource.org/licenses/MIT).\r\n\r\n## Donations\r\njQuery File Upload is free software, but you can donate to support the developer, Sebastian Tschan:\r\n\r\nFlattr: [![Flattr](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/thing/286433/jQuery-File-Upload-Plugin)\r\n\r\nPayPal: [![PayPal](https://www.paypalobjects.com/WEBSCR-640-20110429-1/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PYWYSYP77KL54)\r\n",
-  "readmeFilename": "README.md",
+  "optionalDependencies": {
+    "blueimp-canvas-to-blob": "3.5.0",
+    "blueimp-load-image": "2.12.2",
+    "blueimp-tmpl": "3.6.0"
+  },
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/blueimp/jQuery-File-Upload.git"
   },
+  "scripts": {
+    "bower-version-update": "./bower-version-update.js",
+    "lint": "jshint *.js js/*.js js/cors/*.js",
+    "postversion": "git push --tags origin master && npm publish",
+    "preversion": "npm test",
+    "test": "npm run lint",
+    "version": "npm run bower-version-update && git add bower.json"
+  },
   "title": "jQuery File Upload",
-  "version": "8.3.2"
+  "version": "9.18.0"
 }

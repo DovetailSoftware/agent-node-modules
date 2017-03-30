@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "bufferstreams@^1.1.0",
+        "raw": "bufferstreams@^1.1.1",
         "scope": null,
         "escapedName": "bufferstreams",
         "name": "bufferstreams",
-        "rawSpec": "^1.1.0",
-        "spec": ">=1.1.0 <2.0.0",
+        "rawSpec": "^1.1.1",
+        "spec": ">=1.1.1 <2.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\gulp-eslint"
     ]
   ],
-  "_from": "bufferstreams@>=1.1.0 <2.0.0",
+  "_from": "bufferstreams@>=1.1.1 <2.0.0",
   "_id": "bufferstreams@1.1.1",
   "_inCache": true,
   "_location": "/bufferstreams",
@@ -31,17 +31,18 @@
     "buffer-shims": "1.0.0",
     "core-util-is": "1.0.2",
     "inherits": "2.0.3",
+    "isarray": "1.0.0",
     "process-nextick-args": "1.0.7",
     "string_decoder": "0.10.31",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
-    "raw": "bufferstreams@^1.1.0",
+    "raw": "bufferstreams@^1.1.1",
     "scope": null,
     "escapedName": "bufferstreams",
     "name": "bufferstreams",
-    "rawSpec": "^1.1.0",
-    "spec": ">=1.1.0 <2.0.0",
+    "rawSpec": "^1.1.1",
+    "spec": ">=1.1.1 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -50,7 +51,7 @@
   "_resolved": "https://registry.npmjs.org/bufferstreams/-/bufferstreams-1.1.1.tgz",
   "_shasum": "0161373060ac5988eff99058731114f6e195d51e",
   "_shrinkwrap": null,
-  "_spec": "bufferstreams@^1.1.0",
+  "_spec": "bufferstreams@^1.1.1",
   "_where": "C:\\Github\\agent\\node_modules\\gulp-eslint",
   "author": {
     "name": "Nicolas Froidure",

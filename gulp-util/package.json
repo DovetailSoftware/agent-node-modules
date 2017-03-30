@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "gulp-util@*",
+        "raw": "gulp-util@^3.0.0",
         "scope": null,
         "escapedName": "gulp-util",
         "name": "gulp-util",
-        "rawSpec": "*",
-        "spec": "*",
+        "rawSpec": "^3.0.0",
+        "spec": ">=3.0.0 <4.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\gulp-header"
+      "C:\\Github\\agent\\node_modules\\gulp"
     ]
   ],
-  "_from": "gulp-util@*",
+  "_from": "gulp-util@>=3.0.0 <4.0.0",
   "_id": "gulp-util@3.0.8",
   "_inCache": true,
   "_location": "/gulp-util",
@@ -27,35 +27,27 @@
     "email": "blaine.bublitz@gmail.com"
   },
   "_npmVersion": "2.15.2",
-  "_phantomChildren": {
-    "buffer-shims": "1.0.0",
-    "core-util-is": "1.0.2",
-    "inherits": "2.0.3",
-    "process-nextick-args": "1.0.7",
-    "string_decoder": "0.10.31",
-    "util-deprecate": "1.0.2"
-  },
+  "_phantomChildren": {},
   "_requested": {
-    "raw": "gulp-util@*",
+    "raw": "gulp-util@^3.0.0",
     "scope": null,
     "escapedName": "gulp-util",
     "name": "gulp-util",
-    "rawSpec": "*",
-    "spec": "*",
+    "rawSpec": "^3.0.0",
+    "spec": ">=3.0.0 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/gulp",
     "/gulp-eslint",
-    "/gulp-header",
     "/gulp-less",
     "/gulp-livereload"
   ],
   "_resolved": "https://registry.npmjs.org/gulp-util/-/gulp-util-3.0.8.tgz",
   "_shasum": "0054e1e744502e27c04c187c3ecc505dd54bbb4f",
   "_shrinkwrap": null,
-  "_spec": "gulp-util@*",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-header",
+  "_spec": "gulp-util@^3.0.0",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp",
   "author": {
     "name": "Fractal",
     "email": "contact@wearefractal.com",

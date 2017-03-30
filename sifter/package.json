@@ -2,44 +2,48 @@
   "_args": [
     [
       {
-        "raw": "sifter@^0.4.0",
+        "raw": "sifter@^0.5.1",
         "scope": null,
         "escapedName": "sifter",
         "name": "sifter",
-        "rawSpec": "^0.4.0",
-        "spec": ">=0.4.0 <0.5.0",
+        "rawSpec": "^0.5.1",
+        "spec": ">=0.5.1 <0.6.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\selectize"
     ]
   ],
-  "_from": "sifter@>=0.4.0 <0.5.0",
-  "_id": "sifter@0.4.5",
+  "_from": "sifter@>=0.5.1 <0.6.0",
+  "_id": "sifter@0.5.2",
   "_inCache": true,
   "_location": "/sifter",
   "_nodeVersion": "4.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/sifter-0.5.2.tgz_1473970832238_0.5469150154385716"
+  },
   "_npmUser": {
     "name": "brianreavis",
     "email": "brian@thirdroute.com"
   },
-  "_npmVersion": "2.14.7",
+  "_npmVersion": "3.10.5",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "sifter@^0.4.0",
+    "raw": "sifter@^0.5.1",
     "scope": null,
     "escapedName": "sifter",
     "name": "sifter",
-    "rawSpec": "^0.4.0",
-    "spec": ">=0.4.0 <0.5.0",
+    "rawSpec": "^0.5.1",
+    "spec": ">=0.5.1 <0.6.0",
     "type": "range"
   },
   "_requiredBy": [
     "/selectize"
   ],
-  "_resolved": "https://registry.npmjs.org/sifter/-/sifter-0.4.5.tgz",
-  "_shasum": "da2af6dfab41d6fe149ab5b37eecfb0b5fd1b987",
+  "_resolved": "https://registry.npmjs.org/sifter/-/sifter-0.5.2.tgz",
+  "_shasum": "4702e3cee3036903da1f194b29e6dc7a4fb59abe",
   "_shrinkwrap": null,
-  "_spec": "sifter@^0.4.0",
+  "_spec": "sifter@^0.5.1",
   "_where": "C:\\Github\\agent\\node_modules\\selectize",
   "author": {
     "name": "Brian Reavis",
@@ -54,9 +58,9 @@
   "dependencies": {
     "async": "0.2.x",
     "cardinal": "0.4.x",
+    "csv-parse": "^1.1.7",
     "humanize": "0.0.x",
-    "microtime": "2.0.x",
-    "node-csv": "https://github.com/voodootikigod/node-csv/tarball/master",
+    "microtime": "^2.1.0",
     "optimist": "0.6.x"
   },
   "description": "A library for textually searching arrays and hashes of objects by property (or multiple properties). Designed specifically for autocomplete.",
@@ -70,13 +74,13 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "da2af6dfab41d6fe149ab5b37eecfb0b5fd1b987",
-    "tarball": "https://registry.npmjs.org/sifter/-/sifter-0.4.5.tgz"
+    "shasum": "4702e3cee3036903da1f194b29e6dc7a4fb59abe",
+    "tarball": "https://registry.npmjs.org/sifter/-/sifter-0.5.2.tgz"
   },
   "engines": {
     "node": "*"
   },
-  "gitHead": "facff802f388feba9bc4c649fe5acd3ad53d84e9",
+  "gitHead": "4ba7422542bf188c1fdb4bbc341fc4fcc1ff0680",
   "homepage": "https://github.com/brianreavis/sifter.js#readme",
   "keywords": [
     "search",
@@ -94,11 +98,15 @@
     {
       "name": "brianreavis",
       "email": "brian@thirdroute.com"
+    },
+    {
+      "name": "holic",
+      "email": "kingersoll@gmail.com"
     }
   ],
   "name": "sifter",
   "optionalDependencies": {
-    "microtime": "2.0.x"
+    "microtime": "^2.1.0"
   },
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -108,5 +116,5 @@
   "scripts": {
     "test": "mocha -R list"
   },
-  "version": "0.4.5"
+  "version": "0.5.2"
 }

@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "ignore@^3.1.2",
+        "raw": "ignore@^3.2.0",
         "scope": null,
         "escapedName": "ignore",
         "name": "ignore",
-        "rawSpec": "^3.1.2",
-        "spec": ">=3.1.2 <4.0.0",
+        "rawSpec": "^3.2.0",
+        "spec": ">=3.2.0 <4.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\eslint"
     ]
   ],
-  "_from": "ignore@>=3.1.2 <4.0.0",
+  "_from": "ignore@>=3.2.0 <4.0.0",
   "_id": "ignore@3.2.6",
   "_inCache": true,
   "_location": "/ignore",
@@ -29,12 +29,12 @@
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "ignore@^3.1.2",
+    "raw": "ignore@^3.2.0",
     "scope": null,
     "escapedName": "ignore",
     "name": "ignore",
-    "rawSpec": "^3.1.2",
-    "spec": ">=3.1.2 <4.0.0",
+    "rawSpec": "^3.2.0",
+    "spec": ">=3.2.0 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -43,7 +43,7 @@
   "_resolved": "https://registry.npmjs.org/ignore/-/ignore-3.2.6.tgz",
   "_shasum": "26e8da0644be0bb4cb39516f6c79f0e0f4ffe48c",
   "_shrinkwrap": null,
-  "_spec": "ignore@^3.1.2",
+  "_spec": "ignore@^3.2.0",
   "_where": "C:\\Github\\agent\\node_modules\\eslint",
   "author": {
     "name": "kael"

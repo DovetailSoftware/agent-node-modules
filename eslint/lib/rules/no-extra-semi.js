@@ -6,6 +6,12 @@
 "use strict";
 
 //------------------------------------------------------------------------------
+// Requirements
+//------------------------------------------------------------------------------
+
+const FixTracker = require("../util/fix-tracker");
+
+//------------------------------------------------------------------------------
 // Rule Definition
 //------------------------------------------------------------------------------
 
@@ -21,8 +27,8 @@ module.exports = {
         schema: []
     },
 
-    create: function(context) {
-        var sourceCode = context.getSourceCode();
+    create(context) {
+        const sourceCode = context.getSourceCode();
 
         /**
          * Reports an unnecessary semicolon error.
@@ -33,8 +39,14 @@ module.exports = {
             context.report({
                 node: nodeOrToken,
                 message: "Unnecessary semicolon.",
-                fix: function(fixer) {
-                    return fixer.remove(nodeOrToken);
+                fix(fixer) {
+
+                    // Expand the replacement range to include the surrounding
+                    // tokens to avoid conflicting with semi.
+                    // https://github.com/eslint/eslint/issues/7928
+                    return new FixTracker(fixer, context.getSourceCode())
+                        .retainSurroundingTokens(nodeOrToken)
+                        .remove(nodeOrToken);
                 }
             });
         }
@@ -47,7 +59,7 @@ module.exports = {
          * @returns {void}
          */
         function checkForPartOfClassBody(firstToken) {
-            for (var token = firstToken;
+            for (let token = firstToken;
                 token.type === "Punctuator" && token.value !== "}";
                 token = sourceCode.getTokenAfter(token)
             ) {
@@ -64,8 +76,8 @@ module.exports = {
              * @param {Node} node - A EmptyStatement node to be reported.
              * @returns {void}
              */
-            EmptyStatement: function(node) {
-                var parent = node.parent,
+            EmptyStatement(node) {
+                const parent = node.parent,
                     allowedParentTypes = [
                         "ForStatement",
                         "ForInStatement",
@@ -87,7 +99,7 @@ module.exports = {
              * @param {Node} node - A ClassBody node to check.
              * @returns {void}
              */
-            ClassBody: function(node) {
+            ClassBody(node) {
                 checkForPartOfClassBody(sourceCode.getFirstToken(node, 1)); // 0 is `{`.
             },
 
@@ -96,7 +108,7 @@ module.exports = {
              * @param {Node} node - A MethodDefinition node of the start point.
              * @returns {void}
              */
-            MethodDefinition: function(node) {
+            MethodDefinition(node) {
                 checkForPartOfClassBody(sourceCode.getTokenAfter(node));
             }
         };

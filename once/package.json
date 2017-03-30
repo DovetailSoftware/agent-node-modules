@@ -43,6 +43,7 @@
     "/inflight",
     "/istanbul",
     "/istanbul/glob",
+    "/mocha/glob",
     "/run-async"
   ],
   "_resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",

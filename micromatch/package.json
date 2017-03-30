@@ -27,10 +27,7 @@
     "email": "github@sellside.com"
   },
   "_npmVersion": "3.10.3",
-  "_phantomChildren": {
-    "arr-flatten": "1.0.1",
-    "is-buffer": "1.1.5"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "micromatch@^2.3.11",
     "scope": null,
@@ -42,7 +39,7 @@
   },
   "_requiredBy": [
     "/anymatch",
-    "/liftoff/findup-sync",
+    "/findup-sync",
     "/test-exclude"
   ],
   "_resolved": "https://registry.npmjs.org/micromatch/-/micromatch-2.3.11.tgz",

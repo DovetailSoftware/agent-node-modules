@@ -10,7 +10,7 @@
 
 A package that provides the ability to remap [Istanbul](https://gotwarlost.github.io/istanbul/) code coverage information to its original source positions based on a JavaScript [Source Maps v3](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.djovrt4kdvga).
 
-`remap-istanbul` requires NodeJS 0.12 or later (which includes any version of io.js).
+`remap-istanbul` requires NodeJS 6 or later.
 
 ## How to get Help
 
@@ -147,7 +147,8 @@ The argument of `options` can contain the following properties:
 |Property|Type|Default|Description|
 |--------|----|-------|-----------|
 |basePath|String|Path found in source map|A string to use as the base path for the source locations|
-|exclude|String/RegEx|`undefined`|If the filename of the source coverage file matches, it will be skipped while mapping the coverage|
+|exclude|String/RegEx/Function|`undefined`|If the filename of the source coverage file matches the String or RegEx, it will be skipped while mapping the coverage. Optionally, you can use a function that accepts the filename as the argument, and returns true if the file should be skipped.|
+|mapFileName|Function|A function that takes a single string argument that is the remapped file name and returns a string which represents the filename that should be in the mapped coverage.|
 |readFile|Function|`fs.readFileSync`|A function that will synchronously read a file|
 |readJSON|Function|`JSON.parse(fs.readFileSync)`|A function that will synchronously read a file and return a POJO based on the JSON data in the file|
 |warn|Function|`console.warn`|A function that logs warning messages|
@@ -161,7 +162,7 @@ require([
 	'remap-istanbul/lib/loadCoverage',
 	'remap-istanbul/lib/remap',
 	'remap-istanbul/lib/writeReport'
-], function (remap, writeReport) {
+], function (loadCoverage, remap, writeReport) {
 	var collector = remap(loadCoverage('coverage-final.json'));
 	writeReport(collector, 'json', 'coverage-final.json').then(function () {
 		/* do something else now */
@@ -175,6 +176,7 @@ The `writeReport` function can take the following arguments:
 |--------|----|-----------|
 |collector|istanbul/lib/collector|This is an Istanbul coverage collector (usually returned from `remap` which is to be written out in a report)|
 |reportType|string|The type of the report. Valid values are: `clover`, `cobertura`, `html`, `json-summary`, `json`, `file`, `lcovonly`, `teamcity`, `text-lcov`, `text-summary` or `text`|
+|reportOptions|object|Options object of key/value pairs to pass to the reporter|
 |dest|string, Function|The destination file, directory or console logging function that is the destination of the report. Only `text-lcov` takes the logging function and will default to `console.log` if no value is passed.|
 |*returns*|Promise|A promise that is resolved when the report is written.|
 

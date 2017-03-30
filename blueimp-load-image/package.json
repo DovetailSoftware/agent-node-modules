@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "blueimp-load-image@>=1.7.0",
+        "raw": "blueimp-load-image@2.12.2",
         "scope": null,
         "escapedName": "blueimp-load-image",
         "name": "blueimp-load-image",
-        "rawSpec": ">=1.7.0",
-        "spec": ">=1.7.0",
-        "type": "range"
+        "rawSpec": "2.12.2",
+        "spec": "2.12.2",
+        "type": "version"
       },
       "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
     ]
   ],
-  "_from": "blueimp-load-image@>=1.7.0",
+  "_from": "blueimp-load-image@2.12.2",
   "_id": "blueimp-load-image@2.12.2",
   "_inCache": true,
   "_location": "/blueimp-load-image",
@@ -29,13 +29,13 @@
   "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "blueimp-load-image@>=1.7.0",
+    "raw": "blueimp-load-image@2.12.2",
     "scope": null,
     "escapedName": "blueimp-load-image",
     "name": "blueimp-load-image",
-    "rawSpec": ">=1.7.0",
-    "spec": ">=1.7.0",
-    "type": "range"
+    "rawSpec": "2.12.2",
+    "spec": "2.12.2",
+    "type": "version"
   },
   "_requiredBy": [
     "/blueimp-file-upload"
@@ -43,7 +43,7 @@
   "_resolved": "https://registry.npmjs.org/blueimp-load-image/-/blueimp-load-image-2.12.2.tgz",
   "_shasum": "6a17598aab858d4fbf01543e0631141b51057c87",
   "_shrinkwrap": null,
-  "_spec": "blueimp-load-image@>=1.7.0",
+  "_spec": "blueimp-load-image@2.12.2",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
   "author": {
     "name": "Sebastian Tschan",

@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "classnames@^2.2.3",
+        "raw": "classnames@2.2.5",
         "scope": null,
         "escapedName": "classnames",
         "name": "classnames",
-        "rawSpec": "^2.2.3",
-        "spec": ">=2.2.3 <3.0.0",
-        "type": "range"
+        "rawSpec": "2.2.5",
+        "spec": "2.2.5",
+        "type": "version"
       },
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "classnames@>=2.2.3 <3.0.0",
+  "_from": "classnames@2.2.5",
   "_id": "classnames@2.2.5",
   "_inCache": true,
   "_location": "/classnames",
@@ -29,13 +29,13 @@
   "_npmVersion": "3.3.6",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "classnames@^2.2.3",
+    "raw": "classnames@2.2.5",
     "scope": null,
     "escapedName": "classnames",
     "name": "classnames",
-    "rawSpec": "^2.2.3",
-    "spec": ">=2.2.3 <3.0.0",
-    "type": "range"
+    "rawSpec": "2.2.5",
+    "spec": "2.2.5",
+    "type": "version"
   },
   "_requiredBy": [
     "/"
@@ -43,7 +43,7 @@
   "_resolved": "https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz",
   "_shasum": "fb3801d453467649ef3603c7d61a02bd129bde6d",
   "_shrinkwrap": null,
-  "_spec": "classnames@^2.2.3",
+  "_spec": "classnames@2.2.5",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Jed Watson"

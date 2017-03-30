@@ -2,48 +2,48 @@
   "_args": [
     [
       {
-        "raw": "test-exclude@^2.1.1",
+        "raw": "test-exclude@^4.0.3",
         "scope": null,
         "escapedName": "test-exclude",
         "name": "test-exclude",
-        "rawSpec": "^2.1.1",
-        "spec": ">=2.1.1 <3.0.0",
+        "rawSpec": "^4.0.3",
+        "spec": ">=4.0.3 <5.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\babel-plugin-istanbul"
     ]
   ],
-  "_from": "test-exclude@>=2.1.1 <3.0.0",
-  "_id": "test-exclude@2.1.3",
+  "_from": "test-exclude@>=4.0.3 <5.0.0",
+  "_id": "test-exclude@4.0.3",
   "_inCache": true,
   "_location": "/test-exclude",
-  "_nodeVersion": "6.5.0",
+  "_nodeVersion": "7.1.0",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/test-exclude-2.1.3.tgz_1475270861719_0.9202085055876523"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/test-exclude-4.0.3.tgz_1490077602616_0.8311135193798691"
   },
   "_npmUser": {
     "name": "bcoe",
     "email": "ben@npmjs.com"
   },
-  "_npmVersion": "3.10.3",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "test-exclude@^2.1.1",
+    "raw": "test-exclude@^4.0.3",
     "scope": null,
     "escapedName": "test-exclude",
     "name": "test-exclude",
-    "rawSpec": "^2.1.1",
-    "spec": ">=2.1.1 <3.0.0",
+    "rawSpec": "^4.0.3",
+    "spec": ">=4.0.3 <5.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/babel-plugin-istanbul"
   ],
-  "_resolved": "https://registry.npmjs.org/test-exclude/-/test-exclude-2.1.3.tgz",
-  "_shasum": "a8d8968e1da83266f9864f2852c55e220f06434a",
+  "_resolved": "https://registry.npmjs.org/test-exclude/-/test-exclude-4.0.3.tgz",
+  "_shasum": "86a13ce3effcc60e6c90403cf31a27a60ac6c4e7",
   "_shrinkwrap": null,
-  "_spec": "test-exclude@^2.1.1",
+  "_spec": "test-exclude@^4.0.3",
   "_where": "C:\\Github\\agent\\node_modules\\babel-plugin-istanbul",
   "author": {
     "name": "Ben Coe",
@@ -62,18 +62,19 @@
   "description": "test for inclusion or exclusion of paths using pkg-conf and globs",
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.12",
-    "mocha": "^2.5.3",
-    "nyc": "^7.1.0",
-    "standard": "^7.1.2",
-    "standard-version": "^2.4.0"
+    "mocha": "^3.1.2",
+    "standard": "^9.0.0"
   },
   "directories": {},
   "dist": {
-    "shasum": "a8d8968e1da83266f9864f2852c55e220f06434a",
-    "tarball": "https://registry.npmjs.org/test-exclude/-/test-exclude-2.1.3.tgz"
+    "shasum": "86a13ce3effcc60e6c90403cf31a27a60ac6c4e7",
+    "tarball": "https://registry.npmjs.org/test-exclude/-/test-exclude-4.0.3.tgz"
   },
-  "gitHead": "74533000658fe836a104c1d24e7bbd46129355f2",
+  "greenkeeper": {
+    "ignore": [
+      "read-pkg-up"
+    ]
+  },
   "homepage": "https://github.com/istanbuljs/test-exclude#readme",
   "keywords": [
     "exclude",
@@ -88,20 +89,13 @@
     {
       "name": "bcoe",
       "email": "ben@npmjs.com"
+    },
+    {
+      "name": "jakxz",
+      "email": "jgkurian@me.com"
     }
   ],
   "name": "test-exclude",
-  "nyc": {
-    "check-coverage": true,
-    "statements": 100,
-    "branches": 96,
-    "lines": 100,
-    "functions": 100,
-    "reporter": [
-      "lcov",
-      "text"
-    ]
-  },
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -110,8 +104,7 @@
   },
   "scripts": {
     "pretest": "standard",
-    "release": "standard-version",
-    "test": "nyc mocha ./test/*.js"
+    "test": "mocha"
   },
-  "version": "2.1.3"
+  "version": "4.0.3"
 }

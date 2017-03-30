@@ -35,6 +35,7 @@
   },
   "_requiredBy": [
     "/lodash._createassigner",
+    "/lodash.create",
     "/lodash.template"
   ],
   "_resolved": "https://registry.npmjs.org/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz",

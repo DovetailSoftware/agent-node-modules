@@ -6,6 +6,12 @@
 "use strict";
 
 //------------------------------------------------------------------------------
+// Requirements
+//------------------------------------------------------------------------------
+
+const astUtils = require("../ast-utils");
+
+//------------------------------------------------------------------------------
 // Rule Definition
 //------------------------------------------------------------------------------
 
@@ -20,13 +26,13 @@ module.exports = {
         schema: []
     },
 
-    create: function(context) {
-        var sourceCode = context.getSourceCode();
+    create(context) {
+        const sourceCode = context.getSourceCode();
 
         /**
          * Parts of the grammar that are required to have parens.
          */
-        var parenthesized = {
+        const parenthesized = {
             DoWhileStatement: "test",
             IfStatement: "test",
             SwitchStatement: "discriminant",
@@ -57,12 +63,7 @@ module.exports = {
          * @returns {boolean} True if the node has a paren on each side.
          */
         function isParenthesised(node) {
-            var previousToken = sourceCode.getTokenBefore(node),
-                nextToken = sourceCode.getTokenAfter(node);
-
-            return previousToken && nextToken &&
-                previousToken.value === "(" && previousToken.range[1] <= node.range[0] &&
-                nextToken.value === ")" && nextToken.range[0] >= node.range[1];
+            return astUtils.isParenthesised(sourceCode, node);
         }
 
         /**
@@ -71,7 +72,7 @@ module.exports = {
          * @returns {boolean} True if two parens surround the node on each side.
          */
         function isParenthesisedTwice(node) {
-            var previousToken = sourceCode.getTokenBefore(node, 1),
+            const previousToken = sourceCode.getTokenBefore(node, 1),
                 nextToken = sourceCode.getTokenAfter(node, 1);
 
             return isParenthesised(node) && previousToken && nextToken &&
@@ -80,7 +81,7 @@ module.exports = {
         }
 
         return {
-            SequenceExpression: function(node) {
+            SequenceExpression(node) {
 
                 // Always allow sequences in for statement update
                 if (node.parent.type === "ForStatement" &&
@@ -99,9 +100,9 @@ module.exports = {
                     }
                 }
 
-                var child = sourceCode.getTokenAfter(node.expressions[0]);
+                const child = sourceCode.getTokenAfter(node.expressions[0]);
 
-                context.report(node, child.loc.start, "Unexpected use of comma operator.");
+                context.report({ node, loc: child.loc.start, message: "Unexpected use of comma operator." });
             }
         };
 

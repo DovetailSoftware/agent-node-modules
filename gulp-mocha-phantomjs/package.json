@@ -25,9 +25,11 @@
   "_npmVersion": "2.11.3",
   "_phantomChildren": {
     "clone-stats": "0.0.1",
+    "core-util-is": "1.0.2",
     "ctype": "0.5.3",
-    "dateformat": "1.0.12",
     "escape-string-regexp": "1.0.5",
+    "get-stdin": "4.0.1",
+    "inherits": "2.0.3",
     "json-stringify-safe": "5.0.1",
     "lodash._escapehtmlchar": "2.4.1",
     "lodash._escapestringchar": "2.4.1",
@@ -37,17 +39,15 @@
     "lodash._shimkeys": "2.4.1",
     "lodash.isobject": "2.4.1",
     "lodash.values": "2.4.1",
+    "meow": "3.7.0",
     "multipipe": "0.1.2",
     "ncp": "0.4.2",
     "npmconf": "0.0.24",
     "object-keys": "0.4.0",
     "progress": "1.1.8",
-    "readable-stream": "1.0.34",
     "request-progress": "0.3.1",
-    "rimraf": "2.2.8",
-    "tough-cookie": "2.3.2",
-    "which": "1.0.9",
-    "xtend": "3.0.0"
+    "string_decoder": "0.10.31",
+    "tough-cookie": "2.3.2"
   },
   "_requested": {
     "raw": "gulp-mocha-phantomjs@^0.10.1",

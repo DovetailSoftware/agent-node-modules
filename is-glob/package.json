@@ -35,9 +35,9 @@
   },
   "_requiredBy": [
     "/chokidar",
+    "/findup-sync",
     "/glob-base",
     "/glob-parent",
-    "/liftoff/findup-sync",
     "/micromatch",
     "/parse-glob"
   ],

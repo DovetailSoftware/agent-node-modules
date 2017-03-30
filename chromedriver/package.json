@@ -27,9 +27,7 @@
     "email": "giggio@giggio.net"
   },
   "_npmVersion": "3.10.10",
-  "_phantomChildren": {
-    "glob": "7.1.1"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "chromedriver@^2.18.0",
     "scope": null,

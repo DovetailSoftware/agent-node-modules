@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "good-listener@^1.1.6",
+        "raw": "good-listener@^1.2.0",
         "scope": null,
         "escapedName": "good-listener",
         "name": "good-listener",
-        "rawSpec": "^1.1.6",
-        "spec": ">=1.1.6 <2.0.0",
+        "rawSpec": "^1.2.0",
+        "spec": ">=1.2.0 <2.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\clipboard"
     ]
   ],
-  "_from": "good-listener@>=1.1.6 <2.0.0",
+  "_from": "good-listener@>=1.2.0 <2.0.0",
   "_id": "good-listener@1.2.2",
   "_inCache": true,
   "_location": "/good-listener",
@@ -29,12 +29,12 @@
   "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "good-listener@^1.1.6",
+    "raw": "good-listener@^1.2.0",
     "scope": null,
     "escapedName": "good-listener",
     "name": "good-listener",
-    "rawSpec": "^1.1.6",
-    "spec": ">=1.1.6 <2.0.0",
+    "rawSpec": "^1.2.0",
+    "spec": ">=1.2.0 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -43,7 +43,7 @@
   "_resolved": "https://registry.npmjs.org/good-listener/-/good-listener-1.2.2.tgz",
   "_shasum": "d53b30cdf9313dffb7dc9a0d477096aa6d145c50",
   "_shrinkwrap": null,
-  "_spec": "good-listener@^1.1.6",
+  "_spec": "good-listener@^1.2.0",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
   "bugs": {
     "url": "https://github.com/zenorocha/good-listener/issues"

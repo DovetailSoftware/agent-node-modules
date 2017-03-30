@@ -2,18 +2,18 @@
   "_args": [
     [
       {
-        "raw": "select@^1.0.6",
+        "raw": "select@^1.1.2",
         "scope": null,
         "escapedName": "select",
         "name": "select",
-        "rawSpec": "^1.0.6",
-        "spec": ">=1.0.6 <2.0.0",
+        "rawSpec": "^1.1.2",
+        "spec": ">=1.1.2 <2.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\clipboard"
     ]
   ],
-  "_from": "select@>=1.0.6 <2.0.0",
+  "_from": "select@>=1.1.2 <2.0.0",
   "_id": "select@1.1.2",
   "_inCache": true,
   "_location": "/select",
@@ -29,12 +29,12 @@
   "_npmVersion": "3.10.8",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "select@^1.0.6",
+    "raw": "select@^1.1.2",
     "scope": null,
     "escapedName": "select",
     "name": "select",
-    "rawSpec": "^1.0.6",
-    "spec": ">=1.0.6 <2.0.0",
+    "rawSpec": "^1.1.2",
+    "spec": ">=1.1.2 <2.0.0",
     "type": "range"
   },
   "_requiredBy": [
@@ -43,7 +43,7 @@
   "_resolved": "https://registry.npmjs.org/select/-/select-1.1.2.tgz",
   "_shasum": "0e7350acdec80b1108528786ec1d4418d11b396d",
   "_shrinkwrap": null,
-  "_spec": "select@^1.0.6",
+  "_spec": "select@^1.1.2",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
   "bugs": {
     "url": "https://github.com/zenorocha/select/issues"

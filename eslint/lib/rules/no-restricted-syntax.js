@@ -8,8 +8,6 @@
 // Rule Definition
 //------------------------------------------------------------------------------
 
-var nodeTypes = require("espree").Syntax;
-
 module.exports = {
     meta: {
         docs: {
@@ -20,34 +18,18 @@ module.exports = {
 
         schema: {
             type: "array",
-            items: [
-                {
-                    enum: Object.keys(nodeTypes).map(function(k) {
-                        return nodeTypes[k];
-                    })
-                }
-            ],
+            items: [{ type: "string" }],
             uniqueItems: true,
             minItems: 0
         }
     },
 
-    create: function(context) {
-
-        /**
-         * Generates a warning from the provided node, saying that node type is not allowed.
-         * @param {ASTNode} node The node to warn on
-         * @returns {void}
-         */
-        function warn(node) {
-            context.report(node, "Using '{{type}}' is not allowed.", node);
-        }
-
-        return context.options.reduce(function(result, nodeType) {
-            result[nodeType] = warn;
-
-            return result;
-        }, {});
+    create(context) {
+        return context.options.reduce((result, selector) => Object.assign(result, {
+            [selector](node) {
+                context.report({ node, message: "Using '{{selector}}' is not allowed.", data: { selector } });
+            }
+        }), {});
 
     }
 };

@@ -1,6 +1,7 @@
 # babel-plugin-istanbul
 
-[![Build Status](https://travis-ci.org/istanbuljs/babel-plugin-istanbul.svg)](https://travis-ci.org/istanbuljs/babel-plugin-istanbul)
+[![Greenkeeper badge](https://badges.greenkeeper.io/istanbuljs/babel-plugin-istanbul.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/istanbuljs/babel-plugin-istanbul.svg?branch=master)](https://travis-ci.org/istanbuljs/babel-plugin-istanbul)
 [![Coverage Status](https://coveralls.io/repos/github/istanbuljs/babel-plugin-istanbul/badge.svg?branch=master)](https://coveralls.io/github/istanbuljs/babel-plugin-istanbul?branch=master)
 [![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
 
@@ -87,6 +88,40 @@ You don't want to cover your test files as this will skew your coverage results.
 If you don't provide options in your Babel config, the plugin will look for `exclude`/`include` config under an `"nyc"` key in `package.json`.
 
 You can also use [istanbul's ignore hints](https://github.com/gotwarlost/istanbul/blob/master/ignoring-code-for-coverage.md#ignoring-code-for-coverage-purposes) to specify specific lines of code to skip instrumenting.
+
+## Source Maps
+
+By default, this plugin will pick up inline source maps and attach them to the instrumented code such that code coverage can be remapped back to the original source, even for multi-step build processes. This can be memory intensive. Set `useInlineSourceMaps` to prevent this behavior.
+
+```json
+{
+  "env": {
+    "test": {
+      "plugins": [
+        ["istanbul", {
+          "useInlineSourceMaps": false
+        }]
+      ]
+    }
+  }
+}
+```
+
+If you're instrumenting code programatically, you can pass a source map explicitly.
+```js
+import babelPluginIstanbul from 'babel-plugin-istanbul';
+
+function instrument(sourceCode, sourceMap, fileName) {
+  return babel.transform(sourceCode, {
+    filename,
+    plugins: [
+      [babelPluginIstanbul, {
+        inputSourceMap: sourceMap
+      }]
+    ]
+  })
+}
+```
 
 ## Credit where credit is due
 

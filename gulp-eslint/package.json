@@ -2,48 +2,48 @@
   "_args": [
     [
       {
-        "raw": "gulp-eslint@^2.0.0",
+        "raw": "gulp-eslint@^3.0.1",
         "scope": null,
         "escapedName": "gulp-eslint",
         "name": "gulp-eslint",
-        "rawSpec": "^2.0.0",
-        "spec": ">=2.0.0 <3.0.0",
+        "rawSpec": "^3.0.1",
+        "spec": ">=3.0.1 <4.0.0",
         "type": "range"
       },
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "gulp-eslint@>=2.0.0 <3.0.0",
-  "_id": "gulp-eslint@2.1.0",
+  "_from": "gulp-eslint@>=3.0.1 <4.0.0",
+  "_id": "gulp-eslint@3.0.1",
   "_inCache": true,
   "_location": "/gulp-eslint",
   "_nodeVersion": "6.2.2",
   "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/gulp-eslint-2.1.0.tgz_1467468761517_0.17455122689716518"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/gulp-eslint-3.0.1.tgz_1467651701605_0.5217461530119181"
   },
   "_npmUser": {
     "name": "shinnn",
     "email": "snnskwtnb@gmail.com"
   },
-  "_npmVersion": "3.10.2",
+  "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "gulp-eslint@^2.0.0",
+    "raw": "gulp-eslint@^3.0.1",
     "scope": null,
     "escapedName": "gulp-eslint",
     "name": "gulp-eslint",
-    "rawSpec": "^2.0.0",
-    "spec": ">=2.0.0 <3.0.0",
+    "rawSpec": "^3.0.1",
+    "spec": ">=3.0.1 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-2.1.0.tgz",
-  "_shasum": "3fd5fe0b7236651f15b8d4bfb1407c3b74d0136c",
+  "_resolved": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-3.0.1.tgz",
+  "_shasum": "04e57e3e18c6974267c12cf6855dc717d4a313bd",
   "_shrinkwrap": null,
-  "_spec": "gulp-eslint@^2.0.0",
+  "_spec": "gulp-eslint@^3.0.1",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Adametry"
@@ -59,16 +59,17 @@
     }
   ],
   "dependencies": {
-    "bufferstreams": "^1.1.0",
-    "eslint": "^2.10.0",
-    "gulp-util": "^3.0.6",
-    "object-assign": "^4.1.0"
+    "bufferstreams": "^1.1.1",
+    "eslint": "^3.0.0",
+    "gulp-util": "^3.0.6"
   },
   "description": "A gulp plugin for processing files with ESLint",
   "devDependencies": {
-    "babel-eslint": "^6.0.4",
+    "@shinnn/eslint-config-node": "^2.0.0",
+    "babel-eslint": "^6.1.0",
+    "from2-string": "^1.1.0",
     "gulp": "^3.9.0",
-    "istanbul": "^0.4.0",
+    "istanbul": "^0.4.4",
     "mocha": "^2.2.5",
     "should": "^9.0.2",
     "vinyl": "^1.0.0"
@@ -78,14 +79,14 @@
     "test": "test"
   },
   "dist": {
-    "shasum": "3fd5fe0b7236651f15b8d4bfb1407c3b74d0136c",
-    "tarball": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-2.1.0.tgz"
+    "shasum": "04e57e3e18c6974267c12cf6855dc717d4a313bd",
+    "tarball": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-3.0.1.tgz"
   },
   "files": [
     "index.js",
     "util.js"
   ],
-  "gitHead": "946e0e92d868c948c9226950cfd93a8cfe1fd2ea",
+  "gitHead": "6059c2245c677a48add3ca4bbe5912f601732826",
   "homepage": "https://github.com/adametry/gulp-eslint#readme",
   "keywords": [
     "gulpplugin",
@@ -128,5 +129,5 @@
     "pretest": "gulp test",
     "test": "mocha"
   },
-  "version": "2.1.0"
+  "version": "3.0.1"
 }

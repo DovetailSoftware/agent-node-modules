@@ -27,9 +27,7 @@
     "email": "brian.woodward@gmail.com"
   },
   "_npmVersion": "3.7.5",
-  "_phantomChildren": {
-    "isexe": "2.0.0"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "global-prefix@^0.1.4",
     "scope": null,

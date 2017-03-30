@@ -5,6 +5,12 @@
 "use strict";
 
 //------------------------------------------------------------------------------
+// Requirements
+//------------------------------------------------------------------------------
+
+const astUtils = require("../ast-utils");
+
+//------------------------------------------------------------------------------
 // Rule Definition
 //------------------------------------------------------------------------------
 
@@ -32,6 +38,9 @@ module.exports = {
                             },
                             named: {
                                 enum: ["always", "never", "ignore"]
+                            },
+                            asyncArrow: {
+                                enum: ["always", "never", "ignore"]
                             }
                         },
                         additionalProperties: false
@@ -41,14 +50,16 @@ module.exports = {
         ]
     },
 
-    create: function(context) {
+    create(context) {
 
-        var configuration = context.options[0],
-            sourceCode = context.getSourceCode(),
-            requireAnonymousFunctionSpacing = true,
+        const configuration = context.options[0],
+            sourceCode = context.getSourceCode();
+        let requireAnonymousFunctionSpacing = true,
             forbidAnonymousFunctionSpacing = false,
             requireNamedFunctionSpacing = true,
-            forbidNamedFunctionSpacing = false;
+            forbidNamedFunctionSpacing = false,
+            requireArrowFunctionSpacing = false,
+            forbidArrowFunctionSpacing = false;
 
         if (typeof configuration === "object") {
             requireAnonymousFunctionSpacing = (
@@ -57,6 +68,8 @@ module.exports = {
             requireNamedFunctionSpacing = (
                 !configuration.named || configuration.named === "always");
             forbidNamedFunctionSpacing = configuration.named === "never";
+            requireArrowFunctionSpacing = configuration.asyncArrow === "always";
+            forbidArrowFunctionSpacing = configuration.asyncArrow === "never";
         } else if (configuration === "never") {
             requireAnonymousFunctionSpacing = false;
             forbidAnonymousFunctionSpacing = true;
@@ -70,13 +83,12 @@ module.exports = {
          * @returns {boolean} Whether the function has a name.
          */
         function isNamedFunction(node) {
-            var parent;
-
             if (node.id) {
                 return true;
             }
 
-            parent = node.parent;
+            const parent = node.parent;
+
             return parent.type === "MethodDefinition" ||
                 (parent.type === "Property" &&
                     (
@@ -93,40 +105,53 @@ module.exports = {
          * @returns {void}
          */
         function validateSpacingBeforeParentheses(node) {
-            var isNamed = isNamedFunction(node),
-                leftToken,
-                rightToken,
-                location;
+            const isArrow = node.type === "ArrowFunctionExpression";
+            const isNamed = !isArrow && isNamedFunction(node);
+            const isAnonymousGenerator = node.generator && !isNamed;
+            const isNormalArrow = isArrow && !node.async;
+            const isArrowWithoutParens = isArrow && sourceCode.getFirstToken(node, 1).value !== "(";
+            let forbidSpacing, requireSpacing;
 
-            if (node.generator && !isNamed) {
+            // isAnonymousGenerator → `generator-star-spacing` should warn it. E.g. `function* () {}`
+            // isNormalArrow → ignore always.
+            // isArrowWithoutParens → ignore always. E.g. `async a => a`
+            if (isAnonymousGenerator || isNormalArrow || isArrowWithoutParens) {
                 return;
             }
 
-            rightToken = sourceCode.getFirstToken(node);
-            while (rightToken.value !== "(") {
-                rightToken = sourceCode.getTokenAfter(rightToken);
+            if (isArrow) {
+                forbidSpacing = forbidArrowFunctionSpacing;
+                requireSpacing = requireArrowFunctionSpacing;
+            } else if (isNamed) {
+                forbidSpacing = forbidNamedFunctionSpacing;
+                requireSpacing = requireNamedFunctionSpacing;
+            } else {
+                forbidSpacing = forbidAnonymousFunctionSpacing;
+                requireSpacing = requireAnonymousFunctionSpacing;
             }
-            leftToken = sourceCode.getTokenBefore(rightToken);
-            location = leftToken.loc.end;
+
+            const rightToken = sourceCode.getFirstToken(node, astUtils.isOpeningParenToken);
+            const leftToken = sourceCode.getTokenBefore(rightToken);
+            const location = leftToken.loc.end;
 
             if (sourceCode.isSpaceBetweenTokens(leftToken, rightToken)) {
-                if ((isNamed && forbidNamedFunctionSpacing) || (!isNamed && forbidAnonymousFunctionSpacing)) {
+                if (forbidSpacing) {
                     context.report({
-                        node: node,
+                        node,
                         loc: location,
                         message: "Unexpected space before function parentheses.",
-                        fix: function(fixer) {
+                        fix(fixer) {
                             return fixer.removeRange([leftToken.range[1], rightToken.range[0]]);
                         }
                     });
                 }
             } else {
-                if ((isNamed && requireNamedFunctionSpacing) || (!isNamed && requireAnonymousFunctionSpacing)) {
+                if (requireSpacing) {
                     context.report({
-                        node: node,
+                        node,
                         loc: location,
                         message: "Missing space before function parentheses.",
-                        fix: function(fixer) {
+                        fix(fixer) {
                             return fixer.insertTextAfter(leftToken, " ");
                         }
                     });
@@ -136,7 +161,8 @@ module.exports = {
 
         return {
             FunctionDeclaration: validateSpacingBeforeParentheses,
-            FunctionExpression: validateSpacingBeforeParentheses
+            FunctionExpression: validateSpacingBeforeParentheses,
+            ArrowFunctionExpression: validateSpacingBeforeParentheses
         };
     }
 };

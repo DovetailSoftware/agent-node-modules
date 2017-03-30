@@ -2,48 +2,48 @@
   "_args": [
     [
       {
-        "raw": "blueimp-canvas-to-blob@>=2.0.5",
+        "raw": "blueimp-canvas-to-blob@3.5.0",
         "scope": null,
         "escapedName": "blueimp-canvas-to-blob",
         "name": "blueimp-canvas-to-blob",
-        "rawSpec": ">=2.0.5",
-        "spec": ">=2.0.5",
-        "type": "range"
+        "rawSpec": "3.5.0",
+        "spec": "3.5.0",
+        "type": "version"
       },
       "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
     ]
   ],
-  "_from": "blueimp-canvas-to-blob@>=2.0.5",
-  "_id": "blueimp-canvas-to-blob@3.7.0",
+  "_from": "blueimp-canvas-to-blob@3.5.0",
+  "_id": "blueimp-canvas-to-blob@3.5.0",
   "_inCache": true,
   "_location": "/blueimp-canvas-to-blob",
-  "_nodeVersion": "7.5.0",
+  "_nodeVersion": "6.8.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/blueimp-canvas-to-blob-3.7.0.tgz_1487347794882_0.9906095801852643"
+    "tmp": "tmp/blueimp-canvas-to-blob-3.5.0.tgz_1478123737223_0.6592560615390539"
   },
   "_npmUser": {
     "name": "blueimp",
     "email": "mail@blueimp.net"
   },
-  "_npmVersion": "4.1.2",
+  "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "blueimp-canvas-to-blob@>=2.0.5",
+    "raw": "blueimp-canvas-to-blob@3.5.0",
     "scope": null,
     "escapedName": "blueimp-canvas-to-blob",
     "name": "blueimp-canvas-to-blob",
-    "rawSpec": ">=2.0.5",
-    "spec": ">=2.0.5",
-    "type": "range"
+    "rawSpec": "3.5.0",
+    "spec": "3.5.0",
+    "type": "version"
   },
   "_requiredBy": [
     "/blueimp-file-upload"
   ],
-  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.7.0.tgz",
-  "_shasum": "6e985b935c0223410c3a2ad96c0ba3ea214c2b13",
+  "_resolved": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.5.0.tgz",
+  "_shasum": "5679ac32f6a2835821f0c3ad661719ff85a9236b",
   "_shrinkwrap": null,
-  "_spec": "blueimp-canvas-to-blob@>=2.0.5",
+  "_spec": "blueimp-canvas-to-blob@3.5.0",
   "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
   "author": {
     "name": "Sebastian Tschan",
@@ -62,10 +62,10 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "6e985b935c0223410c3a2ad96c0ba3ea214c2b13",
-    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.7.0.tgz"
+    "shasum": "5679ac32f6a2835821f0c3ad661719ff85a9236b",
+    "tarball": "https://registry.npmjs.org/blueimp-canvas-to-blob/-/blueimp-canvas-to-blob-3.5.0.tgz"
   },
-  "gitHead": "10f6200baea6c7818f898a182760690d6d2c1cde",
+  "gitHead": "47fb9a775b079e54a3e08be35a988dfaafae5f77",
   "homepage": "https://github.com/blueimp/JavaScript-Canvas-to-Blob",
   "keywords": [
     "javascript",
@@ -99,5 +99,5 @@
     "version": "npm run build && git add -A js"
   },
   "title": "JavaScript Canvas to Blob",
-  "version": "3.7.0"
+  "version": "3.5.0"
 }

@@ -13,10 +13,10 @@ npm install gulp-eslint
 ## Usage
 
 ```javascript
-var gulp = require('gulp'),
-    eslint = require('gulp-eslint');
+const gulp = require('gulp');
+const eslint = require('gulp-eslint');
 
-gulp.task('lint', function () {
+gulp.task('lint', () => {
     // ESLint ignores files with "node_modules" paths.
     // So, it's best to have gulp ignore the directory as well.
     // Also, Be sure to return the stream from the task;
@@ -43,18 +43,14 @@ Or use the plugin API to do things like:
 ```javascript
 gulp.src(['**/*.js','!node_modules/**'])
 	.pipe(eslint({
-		extends: 'eslint:recommended',
-		parserOptions: {
-			sourceType: 'module'
-		},
 		rules: {
 			'my-custom-rule': 1,
 			'strict': 2
 		},
-		globals: {
-			'jQuery':false,
-			'$':true
-		},
+		globals: [
+			'jQuery',
+			'$'
+		],
 		envs: [
 			'browser'
 		]
@@ -128,25 +124,11 @@ Type: `Array`
 
 Specify a list of [environments](http://eslint.org/docs/user-guide/configuring#specifying-environments) to be applied.
 
-Type: `Object`
-
-Specify [environments](http://eslint.org/docs/user-guide/configuring#specifying-environments). Each key must match an existing env definition, and the key determines whether the env’s rules are applied (`true`) or not (`false`).
-
-Note that setting an env to `false` will not override an env that is set to `true` in the _.eslintrc_ being extended.
-
-Alias: `env` *(deprecated)*
-
 #### options.rulePaths
 
 Type: `Array`
 
 This option allows you to specify additional directories from which to load rules files. This is useful when you have custom rules that aren't suitable for being bundled with ESLint. This option works much like the ESLint CLI's [rulesdir option](http://eslint.org/docs/user-guide/command-line-interface#rulesdir).
-
-Type: `String` *(deprecated)*
-
-Load a single rules file.
-
-Alias: `rulesdir` *(deprecated)*
 
 #### options.configFile
 
@@ -166,8 +148,6 @@ Type: `Boolean`
 
 When `false`, ESLint will not load [.eslintrc files](http://eslint.org/docs/user-guide/configuring#using-configuration-files).
 
-Alias: `eslintrc` *(deprecated)*
-
 ### eslint(configFilePath)
 
 Type: `String`
@@ -183,12 +163,12 @@ Call a function for each ESLint file result. No returned value is expected. If a
 ```javascript
 gulp.src(['**/*.js','!node_modules/**'])
 	.pipe(eslint())
-	.pipe(eslint.result(function (result) {
+	.pipe(eslint.result(result => {
 	    // Called for each ESLint result.
-	    console.log('ESLint result: ' + result.filePath);
-	    console.log('# Messages: ' + result.messages.length);
-	    console.log('# Warnings: ' + result.warningCount);
-	    console.log('# Errors: ' + result.errorCount);
+	    console.log(`ESLint result: ${result.filePath}`);
+	    console.log(`# Messages: ${result.messages.length}`);
+	    console.log(`# Warnings: ${result.warningCount}`);
+	    console.log(`# Errors: ${result.errorCount}`);
 	}));
 ```
 
@@ -208,11 +188,11 @@ The results list has a "warningCount" property that is the sum of warnings in al
 ```javascript
 gulp.src(['**/*.js','!node_modules/**'])
 	.pipe(eslint())
-	.pipe(eslint.results(function (results) {
+	.pipe(eslint.results(results => {
     	// Called once for all ESLint results.
-	    console.log('Total Results: ' + results.length);
-	    console.log('Total Warnings: ' + results.warningCount);
-	    console.log('Total Errors: ' + results.errorCount);
+	    console.log(`Total Results: ${results.length}`);
+	    console.log(`Total Warnings: ${results.warningCount}`);
+	    console.log(`Total Errors: ${results.errorCount}`);
 	}));
 ```
 
@@ -292,5 +272,6 @@ ESLint will also detect an `.eslintignore` file at the cwd or a parent directory
 ESLint results are attached as an "eslint" property to the vinyl files that pass through a Gulp.js stream pipeline. This is available to streams that follow the initial `eslint` stream. The [eslint.result](#result) and [eslint.results](#results) methods are made available to support extensions and custom handling of ESLint results.
 
 #### Gulp-Eslint Extensions:
+
 * [gulp-eslint-if-fixed](https://github.com/lukeapage/gulp-eslint-if-fixed)
 * [gulp-eslint-threshold](https://github.com/krmbkt/gulp-eslint-threshold)

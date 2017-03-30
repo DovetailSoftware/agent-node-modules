@@ -27,12 +27,7 @@
     "email": "blaine.bublitz@gmail.com"
   },
   "_npmVersion": "2.15.2",
-  "_phantomChildren": {
-    "detect-file": "0.1.0",
-    "is-glob": "2.0.1",
-    "micromatch": "2.3.11",
-    "resolve-dir": "0.1.1"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "liftoff@^2.1.0",
     "scope": null,
