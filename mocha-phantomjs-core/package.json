@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-mocha-phantomjs"
     ]
   ],
   "_from": "mocha-phantomjs-core@>=1.0.0 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "586538c8d71fa8de90c41a46acc0481c1fb83e18",
   "_shrinkwrap": null,
   "_spec": "mocha-phantomjs-core@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-mocha-phantomjs",
   "author": {
     "name": "Nathan Black",
     "email": "nathan@nathanblack.org",

@@ -10,7 +10,7 @@
         "spec": "3.6.0",
         "type": "version"
       },
-      "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\blueimp-file-upload"
     ]
   ],
   "_from": "blueimp-tmpl@3.6.0",
@@ -44,7 +44,7 @@
   "_shasum": "a4910975d042e2bc03ba77f0e62d04f1548a524c",
   "_shrinkwrap": null,
   "_spec": "blueimp-tmpl@3.6.0",
-  "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\blueimp-file-upload",
   "author": {
     "name": "Sebastian Tschan",
     "url": "https://blueimp.net"

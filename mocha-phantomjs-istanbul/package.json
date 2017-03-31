@@ -10,7 +10,7 @@
         "spec": "0.0.2",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "mocha-phantomjs-istanbul@0.0.2",
@@ -39,7 +39,7 @@
   "_shasum": "626b4bb7f2b942308a5630c41c0b50c02d7ee460",
   "_shrinkwrap": null,
   "_spec": "mocha-phantomjs-istanbul@0.0.2",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Willem Bult",
     "email": "willem.bult@gmail.com"

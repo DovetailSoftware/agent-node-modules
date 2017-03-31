@@ -10,7 +10,7 @@
         "spec": "0.4.5",
         "type": "version"
       },
-      "C:\\Github\\agent\\node_modules\\remap-istanbul"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\remap-istanbul"
     ]
   ],
   "_from": "istanbul@0.4.5",
@@ -51,7 +51,7 @@
   "_shasum": "65c7d73d4c4da84d4f3ac310b918fb0b8033733b",
   "_shrinkwrap": null,
   "_spec": "istanbul@0.4.5",
-  "_where": "C:\\Github\\agent\\node_modules\\remap-istanbul",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\remap-istanbul",
   "author": {
     "name": "Krishnan Anantheswaran",
     "email": "kananthmail-github@yahoo.com"

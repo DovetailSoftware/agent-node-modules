@@ -10,7 +10,7 @@
         "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\eslint-plugin-import"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\eslint-plugin-import"
     ]
   ],
   "_from": "eslint-module-utils@>=2.0.0 <3.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "a6f8c21d901358759cdc35dbac1982ae1ee58bce",
   "_shrinkwrap": null,
   "_spec": "eslint-module-utils@^2.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\eslint-plugin-import",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\eslint-plugin-import",
   "author": {
     "name": "Ben Mosher",
     "email": "me@benmosher.com"

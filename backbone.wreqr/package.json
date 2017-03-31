@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\backbone.marionette"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\backbone.marionette"
     ]
   ],
   "_from": "backbone.wreqr@>=1.0.0 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "7682030c9aaf090ecd873b21dbf48501693b2696",
   "_shrinkwrap": null,
   "_spec": "backbone.wreqr@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\backbone.marionette",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\backbone.marionette",
   "author": {
     "name": "Derick Bailey",
     "email": "marionettejs@gmail.com",

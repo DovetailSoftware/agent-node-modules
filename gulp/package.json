@@ -10,7 +10,7 @@
         "spec": ">=3.8.11 <4.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "gulp@>=3.8.11 <4.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "571ce45928dd40af6514fc4011866016c13845b4",
   "_shrinkwrap": null,
   "_spec": "gulp@^3.8.11",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Fractal",
     "email": "contact@wearefractal.com",

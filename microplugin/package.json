@@ -10,7 +10,7 @@
         "spec": "0.0.3",
         "type": "version"
       },
-      "C:\\Github\\agent\\node_modules\\selectize"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\selectize"
     ]
   ],
   "_from": "microplugin@0.0.3",
@@ -39,7 +39,7 @@
   "_shasum": "1fc2e1bb7c9e19e82bd84bba9137bbe71250d8cd",
   "_shrinkwrap": null,
   "_spec": "microplugin@0.0.3",
-  "_where": "C:\\Github\\agent\\node_modules\\selectize",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\selectize",
   "author": {
     "name": "Brian Reavis",
     "email": "brian@thirdroute.com"

@@ -10,7 +10,7 @@
         "spec": ">=0.9.5 <0.10.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "remap-istanbul@>=0.9.5 <0.10.0",
@@ -68,7 +68,7 @@
   "_shasum": "a18617b1f31eec5a7dbee77538298b775606aaa8",
   "_shrinkwrap": null,
   "_spec": "remap-istanbul@^0.9.5",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "bin": {
     "remap-istanbul": "./bin/remap-istanbul.js"
   },

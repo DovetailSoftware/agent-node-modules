@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\shelljs"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\shelljs"
     ]
   ],
   "_from": "interpret@>=1.0.0 <2.0.0",
@@ -46,7 +46,7 @@
   "_shasum": "f4f623f0bb7122f15f5717c8e254b8161b5c5b2d",
   "_shrinkwrap": null,
   "_spec": "interpret@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\shelljs",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\shelljs",
   "author": {
     "name": "Tyler Kellen",
     "url": "http://goingslowly.com/"

@@ -10,7 +10,7 @@
         "spec": "1.5.1",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "sortablejs@1.5.1",
@@ -44,7 +44,7 @@
   "_shasum": "efae13b84c677f3b3d3f4f8e46c7e05fc6acb525",
   "_shrinkwrap": null,
   "_spec": "sortablejs@1.5.1",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Konstantin Lebedev",
     "email": "ibnRubaXa@gmail.com"

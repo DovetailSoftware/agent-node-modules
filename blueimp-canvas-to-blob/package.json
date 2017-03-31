@@ -10,7 +10,7 @@
         "spec": "3.5.0",
         "type": "version"
       },
-      "C:\\Github\\agent\\node_modules\\blueimp-file-upload"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\blueimp-file-upload"
     ]
   ],
   "_from": "blueimp-canvas-to-blob@3.5.0",
@@ -44,7 +44,7 @@
   "_shasum": "5679ac32f6a2835821f0c3ad661719ff85a9236b",
   "_shrinkwrap": null,
   "_spec": "blueimp-canvas-to-blob@3.5.0",
-  "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\blueimp-file-upload",
   "author": {
     "name": "Sebastian Tschan",
     "url": "https://blueimp.net"

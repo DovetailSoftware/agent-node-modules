@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\clipboard"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\clipboard"
     ]
   ],
   "_from": "tiny-emitter@>=1.0.0 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "ab405a21ffed814a76c19739648093d70654fecb",
   "_shrinkwrap": null,
   "_spec": "tiny-emitter@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\clipboard",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\clipboard",
   "author": {
     "name": "Scott Corgan"
   },

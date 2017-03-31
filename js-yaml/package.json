@@ -10,7 +10,7 @@
         "spec": ">=2.1.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\beautiful-docs"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_from": "js-yaml@>=2.1.0",
@@ -48,7 +48,7 @@
   "_shasum": "02d3e2c0f6beab20248d412c352203827d786721",
   "_shrinkwrap": null,
   "_spec": "js-yaml@>=2.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Vladimir Zapparov",
     "email": "dervus.grim@gmail.com"

@@ -10,7 +10,7 @@
         "spec": "4.17.4",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "lodash@4.17.4",
@@ -58,7 +58,7 @@
   "_shasum": "78203a4d1c328ae1d86dca6460e369b57f4055ae",
   "_shrinkwrap": null,
   "_spec": "lodash@4.17.4",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",

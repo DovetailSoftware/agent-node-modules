@@ -10,7 +10,7 @@
         "spec": "4.1.1",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "object-assign@4.1.1",
@@ -58,7 +58,7 @@
   "_shasum": "2109adc7965887cfc05cbbd442cac8bfbb360863",
   "_shrinkwrap": null,
   "_spec": "object-assign@4.1.1",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",

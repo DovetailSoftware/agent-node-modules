@@ -19,7 +19,7 @@
           "directUrl": "https://raw.githubusercontent.com/twbs/bootstrap/v2.3.2/package.json"
         }
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "twbs/bootstrap#v2.3.2",
@@ -49,10 +49,10 @@
     "/"
   ],
   "_resolved": "git://github.com/twbs/bootstrap.git#b4c4072679943773a7582daa63f545ba818fa627",
-  "_shasum": "e7de22747a346578c2d322d9aecdb44a952cedba",
+  "_shasum": "1e25e54080d1db3c0a7090d4fd878c85c9cf5845",
   "_shrinkwrap": null,
   "_spec": "bootstrap@github:twbs/bootstrap#v2.3.2",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Twitter Inc."
   },

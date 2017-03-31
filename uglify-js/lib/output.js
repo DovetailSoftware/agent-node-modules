@@ -510,8 +510,8 @@ function OutputStream(options) {
                 }));
             }
 
-            if (comments.length > 0 && output.pos() == 0) {
-                if (output.option("shebang") && comments[0].type == "comment5") {
+            if (output.pos() == 0) {
+                if (comments.length > 0 && output.option("shebang") && comments[0].type == "comment5") {
                     output.print("#!" + comments.shift().value + "\n");
                     output.indent();
                 }
@@ -590,6 +590,15 @@ function OutputStream(options) {
         var p = output.parent();
         return p instanceof AST_PropAccess && p.expression === this
             || p instanceof AST_Call && p.expression === this;
+    });
+
+    PARENS([ AST_Infinity, AST_NaN ], function(output){
+        var p = output.parent();
+        return p instanceof AST_PropAccess && p.expression === this
+            || p instanceof AST_Call && p.expression === this
+            || p instanceof AST_Unary && p.operator != "+" && p.operator != "-"
+            || p instanceof AST_Binary && p.right === this
+                && (p.operator == "/" || p.operator == "%");
     });
 
     PARENS(AST_Seq, function(output){
@@ -960,24 +969,24 @@ function OutputStream(options) {
             self.expression.print(output);
         });
         output.space();
-        if (self.body.length > 0) output.with_block(function(){
-            self.body.forEach(function(stmt, i){
-                if (i) output.newline();
+        var last = self.body.length - 1;
+        if (last < 0) output.print("{}");
+        else output.with_block(function(){
+            self.body.forEach(function(branch, i){
                 output.indent(true);
-                stmt.print(output);
+                branch.print(output);
+                if (i < last && branch.body.length > 0)
+                    output.newline();
             });
         });
-        else output.print("{}");
     });
     AST_SwitchBranch.DEFMETHOD("_do_print_body", function(output){
-        if (this.body.length > 0) {
+        output.newline();
+        this.body.forEach(function(stmt){
+            output.indent();
+            stmt.print(output);
             output.newline();
-            this.body.forEach(function(stmt){
-                output.indent();
-                stmt.print(output);
-                output.newline();
-            });
-        }
+        });
     });
     DEFPRINT(AST_Default, function(self, output){
         output.print("default:");
@@ -1254,10 +1263,18 @@ function OutputStream(options) {
     });
     DEFPRINT(AST_Hole, noop);
     DEFPRINT(AST_Infinity, function(self, output){
-        output.print("Infinity");
+        output.print("1");
+        output.space();
+        output.print("/");
+        output.space();
+        output.print("0");
     });
     DEFPRINT(AST_NaN, function(self, output){
-        output.print("NaN");
+        output.print("0");
+        output.space();
+        output.print("/");
+        output.space();
+        output.print("0");
     });
     DEFPRINT(AST_This, function(self, output){
         output.print("this");

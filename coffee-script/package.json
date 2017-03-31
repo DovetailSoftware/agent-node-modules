@@ -10,7 +10,7 @@
         "spec": ">=1.6.3",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\beautiful-docs"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_from": "coffee-script@>=1.6.3",
@@ -45,7 +45,7 @@
   "_shasum": "fe1bced97fe1fb3927b998f2b45616e0658be1ff",
   "_shrinkwrap": null,
   "_spec": "coffee-script@>=1.6.3",
-  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Jeremy Ashkenas"
   },

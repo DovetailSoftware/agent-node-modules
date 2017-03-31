@@ -10,7 +10,7 @@
         "spec": ">=0.10.1 <0.11.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "gulp-mocha-phantomjs@>=0.10.1 <0.11.0",
@@ -65,7 +65,7 @@
   "_shasum": "ec97f566539a234fe8104ab32e64ea7264af8bc0",
   "_shrinkwrap": null,
   "_spec": "gulp-mocha-phantomjs@^0.10.1",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Rui Hu",
     "email": "ruihu.pvt@gmail.com"

@@ -10,7 +10,7 @@
         "spec": ">=1.1.4 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "handlebars-loader@>=1.1.4 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "142b2c29bcb8e407554fbc8846feef9f90da3317",
   "_shrinkwrap": null,
   "_spec": "handlebars-loader@^1.1.4",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": "",
   "bugs": {
     "url": "https://github.com/pcardune/handlebars-loader/issues"

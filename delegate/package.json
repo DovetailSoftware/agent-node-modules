@@ -10,7 +10,7 @@
         "spec": ">=3.1.2 <4.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\good-listener"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\good-listener"
     ]
   ],
   "_from": "delegate@>=3.1.2 <4.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "1e1bc6f5cadda6cb6cbf7e6d05d0bcdd5712aebe",
   "_shrinkwrap": null,
   "_spec": "delegate@^3.1.2",
-  "_where": "C:\\Github\\agent\\node_modules\\good-listener",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\good-listener",
   "bugs": {
     "url": "https://github.com/zenorocha/delegate/issues"
   },

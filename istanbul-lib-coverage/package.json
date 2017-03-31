@@ -10,7 +10,7 @@
         "spec": ">=1.0.2 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\istanbul-lib-instrument"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\istanbul-lib-instrument"
     ]
   ],
   "_from": "istanbul-lib-coverage@>=1.0.2 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "87a0c015b6910651cb3b184814dfb339337e25e1",
   "_shrinkwrap": null,
   "_spec": "istanbul-lib-coverage@^1.0.2",
-  "_where": "C:\\Github\\agent\\node_modules\\istanbul-lib-instrument",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\istanbul-lib-instrument",
   "author": {
     "name": "Krishnan Anantheswaran",
     "email": "kananthmail-github@yahoo.com"

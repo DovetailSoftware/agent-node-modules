@@ -10,7 +10,7 @@
         "spec": ">=0.7.2 <0.8.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\mini-lr"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\mini-lr"
     ]
   ],
   "_from": "faye-websocket@>=0.7.2 <0.8.0",
@@ -39,7 +39,7 @@
   "_shasum": "cc4074c7f4a4dfd03af54dd65c354b135132ce11",
   "_shrinkwrap": null,
   "_spec": "faye-websocket@~0.7.2",
-  "_where": "C:\\Github\\agent\\node_modules\\mini-lr",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\mini-lr",
   "author": {
     "name": "James Coglan",
     "email": "jcoglan@gmail.com",

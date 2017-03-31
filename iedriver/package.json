@@ -2,49 +2,49 @@
   "_args": [
     [
       {
-        "raw": "iedriver@^3.0.0",
+        "raw": "iedriver@^3.3.0",
         "scope": null,
         "escapedName": "iedriver",
         "name": "iedriver",
-        "rawSpec": "^3.0.0",
-        "spec": ">=3.0.0 <4.0.0",
+        "rawSpec": "^3.3.0",
+        "spec": ">=3.3.0 <4.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
-  "_from": "iedriver@>=3.0.0 <4.0.0",
-  "_id": "iedriver@3.0.0",
+  "_from": "iedriver@>=3.3.0 <4.0.0",
+  "_id": "iedriver@3.3.0",
   "_inCache": true,
   "_location": "/iedriver",
-  "_nodeVersion": "4.2.1",
+  "_nodeVersion": "4.8.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/iedriver-3.0.0.tgz_1478896903320_0.9263050737790763"
+    "tmp": "tmp/iedriver-3.3.0.tgz_1490901632142_0.968796722125262"
   },
   "_npmUser": {
     "name": "barretts",
     "email": "barrett@sosuke.com"
   },
-  "_npmVersion": "3.10.9",
+  "_npmVersion": "4.4.4",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "iedriver@^3.0.0",
+    "raw": "iedriver@^3.3.0",
     "scope": null,
     "escapedName": "iedriver",
     "name": "iedriver",
-    "rawSpec": "^3.0.0",
-    "spec": ">=3.0.0 <4.0.0",
+    "rawSpec": "^3.3.0",
+    "spec": ">=3.3.0 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.0.0.tgz",
-  "_shasum": "feb41044c00f73123033994365232bbd1fec2135",
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.3.0.tgz",
+  "_shasum": "a485511186f2d9e2084b572980f35cef13cb96d6",
   "_shrinkwrap": null,
-  "_spec": "iedriver@^3.0.0",
-  "_where": "C:\\Github\\agent",
+  "_spec": "iedriver@^3.3.0",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Barrett Sonntag",
     "email": "barrett@sosuke.com",
@@ -68,10 +68,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "feb41044c00f73123033994365232bbd1fec2135",
-    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-3.0.0.tgz"
+    "shasum": "a485511186f2d9e2084b572980f35cef13cb96d6",
+    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-3.3.0.tgz"
   },
-  "gitHead": "32ca1602573618c8d76182c4f2a30aee379d6629",
+  "gitHead": "670bf3fda4f37012cf2126ae561ffd3714b39061",
   "homepage": "https://github.com/barretts/node-iedriver",
   "keywords": [
     "iedriver",
@@ -101,5 +101,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "3.0.0"
+  "version": "3.3.0"
 }

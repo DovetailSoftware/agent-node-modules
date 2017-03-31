@@ -10,7 +10,7 @@
         "spec": ">=6.24.0 <7.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\babel-core"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\babel-core"
     ]
   ],
   "_from": "babel-generator@>=6.24.0 <7.0.0",
@@ -45,7 +45,7 @@
   "_shasum": "eba270a8cc4ce6e09a61be43465d7c62c1f87c56",
   "_shrinkwrap": null,
   "_spec": "babel-generator@^6.24.0",
-  "_where": "C:\\Github\\agent\\node_modules\\babel-core",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\babel-core",
   "author": {
     "name": "Sebastian McKenzie",
     "email": "sebmck@gmail.com"

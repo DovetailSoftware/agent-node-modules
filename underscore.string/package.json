@@ -10,7 +10,7 @@
         "spec": ">=2.4.0 <2.5.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\argparse"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\argparse"
     ]
   ],
   "_from": "underscore.string@>=2.4.0 <2.5.0",
@@ -39,7 +39,7 @@
   "_shasum": "8cdd8fbac4e2d2ea1e7e2e8097c42f442280f85b",
   "_shrinkwrap": null,
   "_spec": "underscore.string@~2.4.0",
-  "_where": "C:\\Github\\agent\\node_modules\\argparse",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\argparse",
   "bugs": {
     "url": "https://github.com/epeli/underscore.string/issues"
   },

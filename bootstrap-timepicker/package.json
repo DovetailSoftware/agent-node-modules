@@ -19,7 +19,7 @@
           "directUrl": "https://raw.githubusercontent.com/jdewit/bootstrap-timepicker/f6cef44/package.json"
         }
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "jdewit/bootstrap-timepicker#f6cef44",
@@ -49,10 +49,10 @@
     "/"
   ],
   "_resolved": "git://github.com/jdewit/bootstrap-timepicker.git#f6cef44b5aecdf19704ea9b8c0af2b760ddef63b",
-  "_shasum": "47bcd8324135e866ccde20867422feec60040326",
+  "_shasum": "05526c875d89d6e8bc46bc44ed494fc83ed716a7",
   "_shrinkwrap": null,
   "_spec": "bootstrap-timepicker@github:jdewit/bootstrap-timepicker#f6cef44",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Joris de Wit",
     "email": "joris.w.dewit@gmail.com",

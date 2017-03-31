@@ -10,7 +10,7 @@
         "spec": "2.4.7",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "backbone.marionette@2.4.7",
@@ -44,7 +44,7 @@
   "_shasum": "a573d21b9c464741b80de18351faeacf1872e25f",
   "_shrinkwrap": null,
   "_spec": "backbone.marionette@2.4.7",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Derick Bailey",
     "email": "derickbailey@gmail.com",

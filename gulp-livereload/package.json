@@ -10,7 +10,7 @@
         "spec": ">=3.8.0 <4.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "gulp-livereload@>=3.8.0 <4.0.0",
@@ -42,7 +42,7 @@
   "_shasum": "00f744b2d749d3e9e3746589c8a44acac779b50f",
   "_shrinkwrap": null,
   "_spec": "gulp-livereload@^3.8.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "bugs": {
     "url": "https://github.com/vohof/gulp-livereload/issues"
   },

@@ -10,7 +10,7 @@
         "spec": "1.5.3",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "at.js@1.5.3",
@@ -44,7 +44,7 @@
   "_shasum": "8ec7324d924f0cfbd88dfceba7b2dcf2255e042c",
   "_shrinkwrap": null,
   "_spec": "at.js@1.5.3",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "chord.luo",
     "email": "chord.luo@gmail.com"

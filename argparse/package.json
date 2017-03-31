@@ -10,7 +10,7 @@
         "spec": ">=0.1.15 <0.2.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\remarkable"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\remarkable"
     ]
   ],
   "_from": "argparse@>=0.1.15 <0.2.0",
@@ -39,7 +39,7 @@
   "_shasum": "cfd01e0fbba3d6caed049fbd758d40f65196f57c",
   "_shrinkwrap": null,
   "_spec": "argparse@~0.1.15",
-  "_where": "C:\\Github\\agent\\node_modules\\remarkable",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\remarkable",
   "bugs": {
     "url": "https://github.com/nodeca/argparse/issues"
   },

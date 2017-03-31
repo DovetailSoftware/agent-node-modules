@@ -10,7 +10,7 @@
         "spec": ">=3.0.1 <4.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\less-plugin-clean-css"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\less-plugin-clean-css"
     ]
   ],
   "_from": "clean-css@>=3.0.1 <4.0.0",
@@ -47,7 +47,7 @@
   "_shasum": "9e9a52d5c1e6bc5123e1b2783fa65fe958946ede",
   "_shrinkwrap": null,
   "_spec": "clean-css@^3.0.1",
-  "_where": "C:\\Github\\agent\\node_modules\\less-plugin-clean-css",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\less-plugin-clean-css",
   "author": {
     "name": "Jakub Pawlowicz",
     "email": "contact@jakubpawlowicz.com",

@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\elliptic"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\elliptic"
     ]
   ],
   "_from": "hmac-drbg@>=1.0.0 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "3db471f45aae4a994a0688322171f51b8b91bee5",
   "_shrinkwrap": null,
   "_spec": "hmac-drbg@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\elliptic",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\elliptic",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"

@@ -10,7 +10,7 @@
         "spec": ">=2.1.0 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "sinon@>=2.1.0 <3.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "e057a9d2bf1b32f5d6dd62628ca9ee3961b0cafb",
   "_shrinkwrap": null,
   "_spec": "sinon@^2.1.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Christian Johansen"
   },

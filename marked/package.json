@@ -10,7 +10,7 @@
         "spec": ">=0.2.9",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\beautiful-docs"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_from": "marked@>=0.2.9",
@@ -44,7 +44,7 @@
   "_shasum": "b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7",
   "_shrinkwrap": null,
   "_spec": "marked@>=0.2.9",
-  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Christopher Jeffrey"
   },

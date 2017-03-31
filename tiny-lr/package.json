@@ -10,7 +10,7 @@
         "spec": ">=0.2.0 <0.3.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\webpack-livereload-plugin"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\webpack-livereload-plugin"
     ]
   ],
   "_from": "tiny-lr@>=0.2.0 <0.3.0",
@@ -47,7 +47,7 @@
   "_shasum": "b3fdba802e5d56a33c2f6f10794b32e477ac729d",
   "_shrinkwrap": null,
   "_spec": "tiny-lr@^0.2.0",
-  "_where": "C:\\Github\\agent\\node_modules\\webpack-livereload-plugin",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\webpack-livereload-plugin",
   "author": {
     "name": "mklabs"
   },

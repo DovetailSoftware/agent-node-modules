@@ -10,7 +10,7 @@
         "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\npmconf"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\npmconf"
     ]
   ],
   "_from": "nopt@>=2.0.0 <3.0.0",
@@ -39,7 +39,7 @@
   "_shasum": "2aa09b7d1768487b3b89a9c5aa52335bff0baea7",
   "_shrinkwrap": null,
   "_spec": "nopt@2",
-  "_where": "C:\\Github\\agent\\node_modules\\npmconf",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\npmconf",
   "author": {
     "name": "Isaac Z. Schlueter",
     "email": "i@izs.me",

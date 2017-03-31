@@ -10,7 +10,7 @@
         "spec": ">=2.3.2 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "webpack@>=2.3.2 <3.0.0",
@@ -60,7 +60,7 @@
   "_shasum": "7d521e6f0777a3a58985c69425263fdfe977b458",
   "_shrinkwrap": null,
   "_spec": "webpack@^2.3.2",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Tobias Koppers @sokra"
   },

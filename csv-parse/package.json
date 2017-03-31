@@ -10,7 +10,7 @@
         "spec": ">=1.1.7 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\sifter"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\sifter"
     ]
   ],
   "_from": "csv-parse@>=1.1.7 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "047b73868ab9a85746e885f637f9ed0fb645a425",
   "_shrinkwrap": null,
   "_spec": "csv-parse@^1.1.7",
-  "_where": "C:\\Github\\agent\\node_modules\\sifter",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\sifter",
   "contributors": [
     {
       "name": "David Worms",

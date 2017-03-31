@@ -10,7 +10,7 @@
         "spec": ">=0.2.0 <0.3.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\sifter"
+      "C:\\code\\DovetailSoftware\\agent\\node_modules\\sifter"
     ]
   ],
   "_from": "async@>=0.2.0 <0.3.0",
@@ -41,7 +41,7 @@
   "_shasum": "b6bbe0b0674b9d719708ca38de8c237cb526c3d1",
   "_shrinkwrap": null,
   "_spec": "async@0.2.x",
-  "_where": "C:\\Github\\agent\\node_modules\\sifter",
+  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\sifter",
   "author": {
     "name": "Caolan McMahon"
   },

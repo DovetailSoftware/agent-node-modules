@@ -10,7 +10,7 @@
         "spec": ">=2.5.2 <3.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "gulp-concat@>=2.5.2 <3.0.0",
@@ -50,7 +50,7 @@
   "_shasum": "633d16c95d88504628ad02665663cee5a4793353",
   "_shrinkwrap": null,
   "_spec": "gulp-concat@^2.5.2",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Contra",
     "email": "yo@contra.io",

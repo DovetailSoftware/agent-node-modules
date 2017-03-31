@@ -10,7 +10,7 @@
         "spec": ">=0.7.0 <0.8.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "expose-loader@>=0.7.0 <0.8.0",
@@ -44,7 +44,7 @@
   "_shasum": "35fbd3659789e4faa81f59de8b7e9fc39e466d51",
   "_shrinkwrap": null,
   "_spec": "expose-loader@^0.7.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Tobias Koppers @sokra"
   },

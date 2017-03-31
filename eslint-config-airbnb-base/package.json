@@ -10,7 +10,7 @@
         "spec": ">=11.1.2 <12.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "eslint-config-airbnb-base@>=11.1.2 <12.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "259209a7678bf693e31cbe8f953f206b6aa7ccc3",
   "_shrinkwrap": null,
   "_spec": "eslint-config-airbnb-base@^11.1.2",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Jake Teton-Landis",
     "url": "https://twitter.com/@jitl"

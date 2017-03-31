@@ -10,7 +10,7 @@
         "spec": "2.9.0",
         "type": "version"
       },
-      "C:\\Github\\agent"
+      "C:\\code\\DovetailSoftware\\agent"
     ]
   ],
   "_from": "lightbox2@2.9.0",
@@ -44,7 +44,7 @@
   "_shasum": "f9a2fdb41ab3ca94bf0f769210b59bb14a5d5f62",
   "_shrinkwrap": null,
   "_spec": "lightbox2@2.9.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\code\\DovetailSoftware\\agent",
   "author": {
     "name": "Lokesh Dhakar",
     "email": "lokesh.dhakar@gmail.com"
