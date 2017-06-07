@@ -21,7 +21,31 @@ function responseArray(handler) {
     return response;
 }
 
-var wloc = typeof window !== "undefined" ? window.location : { "host": "localhost", "protocol": "http"};
+function getDefaultWindowLocation() {
+    return { "host": "localhost", "protocol": "http" };
+}
+
+function getWindowLocation() {
+    if (typeof window === "undefined") {
+        // Fallback
+        return getDefaultWindowLocation();
+    }
+
+    if (typeof window.location !== "undefined") {
+        // Browsers place location on window
+        return window.location;
+    }
+
+    if ((typeof window.window !== "undefined") && (typeof window.window.location !== "undefined")) {
+        // React Native on Android places location on window.window
+        return window.window.location;
+    }
+
+    return getDefaultWindowLocation();
+}
+
+var wloc = getWindowLocation();
+
 var rCurrLoc = new RegExp("^" + wloc.protocol + "//" + wloc.host);
 
 function matchOne(response, reqMethod, reqUrl) {
@@ -76,6 +100,9 @@ var fakeServer = {
         this.xhr = fakeXhr.useFakeXMLHttpRequest();
         server.requests = [];
         server.requestCount = 0;
+        server.queue = [];
+        server.responses = [];
+
 
         this.xhr.onCreate = function (xhrObj) {
             xhrObj.unsafeHeadersEnabled = function () {
@@ -142,10 +169,6 @@ var fakeServer = {
 
     handleRequest: function handleRequest(xhr) {
         if (xhr.async) {
-            if (!this.queue) {
-                this.queue = [];
-            }
-
             push.call(this.queue, xhr);
         } else {
             this.processRequest(xhr);
@@ -173,10 +196,6 @@ var fakeServer = {
         if (arguments.length === 1 && typeof method !== "function") {
             this.response = responseArray(method);
             return;
-        }
-
-        if (!this.responses) {
-            this.responses = [];
         }
 
         if (arguments.length === 1) {

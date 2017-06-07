@@ -10,7 +10,7 @@
         "spec": "1.6.1",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "clipboard@1.6.1",
@@ -44,7 +44,7 @@
   "_shasum": "65c5b654812466b0faab82dc6ba0f1d2f8e4be53",
   "_shrinkwrap": null,
   "_spec": "clipboard@1.6.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "bugs": {
     "url": "https://github.com/zenorocha/clipboard.js/issues"
   },

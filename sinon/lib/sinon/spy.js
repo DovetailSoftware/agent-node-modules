@@ -133,7 +133,11 @@ var spyApi = {
         this.errorsWithCallStack = [];
         if (this.fakes) {
             this.fakes.forEach(function (fake) {
-                fake.reset();
+                if (fake.resetHistory) {
+                    fake.resetHistory();
+                } else {
+                    fake.reset();
+                }
             });
         }
 
@@ -264,7 +268,7 @@ var spyApi = {
             return false;
         }
 
-        return this.callIds[this.callCount - 1] > spyFn.callIds[spyFn.callCount - 1];
+        return this.callIds[this.callCount - 1] > spyFn.callIds[0];
     },
 
     calledImmediatelyBefore: function calledImmediatelyBefore(spyFn) {
@@ -410,6 +414,9 @@ delegateToCalls("callArgOn", false, "callArgOnWith", function () {
     throw new Error(this.toString() + " cannot call arg since it was not yet invoked.");
 });
 spyApi.callArgOnWith = spyApi.callArgOn;
+delegateToCalls("throwArg", false, "throwArg", function () {
+    throw new Error(this.toString() + " cannot throw arg since it was not yet invoked.");
+});
 delegateToCalls("yield", false, "yield", function () {
     throw new Error(this.toString() + " cannot yield since it was not yet invoked.");
 });

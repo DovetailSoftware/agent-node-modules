@@ -10,23 +10,23 @@
         "spec": ">=2.1.0 <3.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "sinon@>=2.1.0 <3.0.0",
-  "_id": "sinon@2.1.0",
+  "_id": "sinon@2.3.2",
   "_inCache": true,
   "_location": "/sinon",
-  "_nodeVersion": "6.7.0",
+  "_nodeVersion": "6.10.3",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/sinon-2.1.0.tgz_1490027684897_0.40515416860580444"
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/sinon-2.3.2.tgz_1495812362604_0.9976105920504779"
   },
   "_npmUser": {
-    "name": "fatso83",
-    "email": "carlerik@gmail.com"
+    "name": "mrgnrdrck",
+    "email": "morgan@roderick.dk"
   },
-  "_npmVersion": "3.10.3",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
     "raw": "sinon@^2.1.0",
@@ -40,11 +40,11 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/sinon/-/sinon-2.1.0.tgz",
-  "_shasum": "e057a9d2bf1b32f5d6dd62628ca9ee3961b0cafb",
+  "_resolved": "https://registry.npmjs.org/sinon/-/sinon-2.3.2.tgz",
+  "_shasum": "c43a9c570f32baac1159505cfeed19108855df89",
   "_shrinkwrap": null,
   "_spec": "sinon@^2.1.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Christian Johansen"
   },
@@ -109,16 +109,20 @@
       "email": "domenic@domenicdenicola.com"
     },
     {
-      "name": "Tim Perry",
-      "email": "pimterry@gmail.com"
-    },
-    {
       "name": "William Sears",
       "email": "MrBigDog2U@gmail.com"
     },
     {
+      "name": "Tim Perry",
+      "email": "pimterry@gmail.com"
+    },
+    {
       "name": "Mikhail Gusarov",
       "email": "mikhail@hola.org"
+    },
+    {
+      "name": "Felix Geisendörfer",
+      "email": "felix@debuggable.com"
     },
     {
       "name": "kpdecker",
@@ -129,8 +133,28 @@
       "email": "bdondo@gmail.com"
     },
     {
-      "name": "Felix Geisendörfer",
-      "email": "felix@debuggable.com"
+      "name": "Martin Sander",
+      "email": "forke@uni-bonn.de"
+    },
+    {
+      "name": "Cory",
+      "email": "seeflanigan@gmail.com"
+    },
+    {
+      "name": "Luis Cardoso",
+      "email": "luis.cardoso@feedzai.com"
+    },
+    {
+      "name": "Doug Orleans",
+      "email": "dougorleans@gmail.com"
+    },
+    {
+      "name": "Aleck Greenham",
+      "email": "greenhama13@gmail.com"
+    },
+    {
+      "name": "Andrew Gurinovich",
+      "email": "altmind@gmail.com"
     },
     {
       "name": "Tobias Ebnöther",
@@ -141,26 +165,6 @@
       "email": "github@keithcirkel.co.uk"
     },
     {
-      "name": "Doug Orleans",
-      "email": "dougorleans@gmail.com"
-    },
-    {
-      "name": "Andrew Gurinovich",
-      "email": "altmind@gmail.com"
-    },
-    {
-      "name": "Cory",
-      "email": "seeflanigan@gmail.com"
-    },
-    {
-      "name": "Martin Sander",
-      "email": "forke@uni-bonn.de"
-    },
-    {
-      "name": "Luis Cardoso",
-      "email": "luis.cardoso@feedzai.com"
-    },
-    {
       "name": "Tristan Koch",
       "email": "tristan.koch@1und1.de"
     },
@@ -169,36 +173,36 @@
       "email": "adam@hmlad.com"
     },
     {
-      "name": "Konrad Holowinski",
-      "email": "konrad.holowinski@gmail.com"
-    },
-    {
-      "name": "Garrick Cheung",
-      "email": "garrick@garrickcheung.com"
-    },
-    {
-      "name": "Benjamin Coe",
-      "email": "ben@yesware.com"
-    },
-    {
       "name": "Viktor Zozulyak",
       "email": "zozulyakviktor@gmail.com"
-    },
-    {
-      "name": "Marten Lienen",
-      "email": "marten.lienen@gmail.com"
-    },
-    {
-      "name": "Travis Kaufman",
-      "email": "travis.kaufman@gmail.com"
     },
     {
       "name": "ben fleis",
       "email": "ben.fleis@gmail.com"
     },
     {
+      "name": "Benjamin Coe",
+      "email": "ben@yesware.com"
+    },
+    {
       "name": "zcicala",
       "email": "zcicala@fitbit.com"
+    },
+    {
+      "name": "Marten Lienen",
+      "email": "marten.lienen@gmail.com"
+    },
+    {
+      "name": "Konrad Holowinski",
+      "email": "konrad.holowinski@gmail.com"
+    },
+    {
+      "name": "Travis Kaufman",
+      "email": "travis.kaufman@gmail.com"
+    },
+    {
+      "name": "Garrick Cheung",
+      "email": "garrick@garrickcheung.com"
     },
     {
       "name": "Gavin Huang",
@@ -225,12 +229,12 @@
       "email": "hello@dominykas.com"
     },
     {
-      "name": "Rae Liu",
-      "email": "happyaray@gmail.com"
-    },
-    {
       "name": "Jmeas",
       "email": "jellyes2@gmail.com"
+    },
+    {
+      "name": "Rae Liu",
+      "email": "happyaray@gmail.com"
     },
     {
       "name": "Robin Pedersen",
@@ -249,10 +253,6 @@
       "email": "matsumoto@soutaro.com"
     },
     {
-      "name": "August Lilleaas",
-      "email": "august.lilleaas@gmail.com"
-    },
-    {
       "name": "Florent Jaby",
       "email": "florent.jaby@gmail.com"
     },
@@ -269,6 +269,14 @@
       "email": "meyertee@gmail.com"
     },
     {
+      "name": "Tim Costa",
+      "email": "tcosta@2u.com"
+    },
+    {
+      "name": "Kir Chou",
+      "email": "note351@hotmail.com"
+    },
+    {
       "name": "Glen Mailer",
       "email": "glen.mailer@bskyb.com"
     },
@@ -277,28 +285,40 @@
       "email": "geries.handal@videoplaza.com"
     },
     {
-      "name": "Cormac Flynn",
-      "email": "cormac.flynn@viadeoteam.com"
+      "name": "August Lilleaas",
+      "email": "august.lilleaas@gmail.com"
     },
     {
-      "name": "Szymon Przybylski",
-      "email": "szymon.przybylski@gmail.com"
+      "name": "Cormac Flynn",
+      "email": "cormac.flynn@viadeoteam.com"
     },
     {
       "name": "Josh Greenberger",
       "email": "jdgreenb@usc.edu"
     },
     {
+      "name": "Alex Urbano",
+      "email": "asgaroth.belem@gmail.com"
+    },
+    {
+      "name": "vitalets",
+      "email": "vitalets@yandex-team.ru"
+    },
+    {
+      "name": "Brandon Heyer",
+      "email": "brandonheyer@gmail.com"
+    },
+    {
       "name": "Spencer Elliott",
       "email": "me@elliottsj.com"
     },
     {
-      "name": "Josh Graham",
-      "email": "josh@canva.com"
-    },
-    {
       "name": "Simen Bekkhus",
       "email": "sbekkhus91@gmail.com"
+    },
+    {
+      "name": "Aaron",
+      "email": "aaron.todd@gmail.com"
     },
     {
       "name": "Victor Costan",
@@ -309,20 +329,12 @@
       "email": "FaridN_SOAD@yahoo.com"
     },
     {
-      "name": "yoshimura-toshihide",
-      "email": "toshihide0105yoshimura@gmail.com"
+      "name": "Sebastian Van Sande",
+      "email": "sebastian@vansande.org"
     },
     {
-      "name": "Brandon Heyer",
-      "email": "brandonheyer@gmail.com"
-    },
-    {
-      "name": "Alex Urbano",
-      "email": "asgaroth.belem@gmail.com"
-    },
-    {
-      "name": "Alexander Schmidt",
-      "email": "alexanderschmidt1@gmail.com"
+      "name": "Martin Hansen",
+      "email": "martin@martinhansen.no"
     },
     {
       "name": "Satoshi Nakamura",
@@ -333,88 +345,108 @@
       "email": "freethejazz@gmail.com"
     },
     {
-      "name": "Andrzej Porebski",
-      "email": "fkuciapa@yahoo.com"
+      "name": "Daniel Rey Lopez",
+      "email": "daniel.rey.lopez@automattic.com"
     },
     {
       "name": "Jimmy Shimizu",
       "email": "jimmy.shimizu@springworks.se"
     },
     {
-      "name": "Marcus Hüsgen",
-      "email": "marcus.huesgen@lusini.com"
-    },
-    {
-      "name": "Max Calabrese",
-      "email": "max.calabrese@ymail.com"
-    },
-    {
-      "name": "gtothesquare",
-      "email": "me@gerieshandal.com"
-    },
-    {
-      "name": "なつき",
-      "email": "i@ntk.me"
-    },
-    {
-      "name": "Henry Tung",
-      "email": "henryptung@gmail.com"
-    },
-    {
-      "name": "Mark Stacey",
-      "email": "mark.stacey@amecfw.com"
+      "name": "blacksun1",
+      "email": "simon@blacksun.cx"
     },
     {
       "name": "Jeffrey Falgout",
       "email": "jfalgout@bloomberg.net"
     },
     {
+      "name": "yoshimura-toshihide",
+      "email": "toshihide0105yoshimura@gmail.com"
+    },
+    {
       "name": "Jason Karns",
       "email": "jason.karns@gmail.com"
     },
     {
-      "name": "mohayonao",
-      "email": "mohayonao@gmail.com"
-    },
-    {
-      "name": "Márton Salomváry",
-      "email": "salomvary@gmail.com"
-    },
-    {
-      "name": "James Barwell",
-      "email": "jb@jamesbarwell.co.uk"
-    },
-    {
-      "name": "Devin Weaver",
-      "email": "suki@tritarget.org"
-    },
-    {
-      "name": "Martin Hansen",
-      "email": "martin@martinhansen.no"
-    },
-    {
-      "name": "Daniel Rey Lopez",
-      "email": "daniel.rey.lopez@automattic.com"
-    },
-    {
-      "name": "Irina Dumitrascu",
-      "email": "me@dira.ro"
-    },
-    {
-      "name": "vitalets",
-      "email": "vitalets@yandex-team.ru"
+      "name": "gtothesquare",
+      "email": "me@gerieshandal.com"
     },
     {
       "name": "Matt Kern",
       "email": "matt@bloomcrush.com"
     },
     {
-      "name": "Tim Costa",
-      "email": "tcosta@2u.com"
+      "name": "なつき",
+      "email": "i@ntk.me"
+    },
+    {
+      "name": "Marcus Hüsgen",
+      "email": "marcus.huesgen@lusini.com"
+    },
+    {
+      "name": "Henry Tung",
+      "email": "henryptung@gmail.com"
+    },
+    {
+      "name": "Márton Salomváry",
+      "email": "salomvary@gmail.com"
+    },
+    {
+      "name": "Devin Weaver",
+      "email": "suki@tritarget.org"
+    },
+    {
+      "name": "mohayonao",
+      "email": "mohayonao@gmail.com"
+    },
+    {
+      "name": "James Barwell",
+      "email": "jb@jamesbarwell.co.uk"
+    },
+    {
+      "name": "Afnizar Nur Ghifari",
+      "email": "afnizarnur@users.noreply.github.com"
+    },
+    {
+      "name": "Mark Stacey",
+      "email": "mark.stacey@amecfw.com"
+    },
+    {
+      "name": "Alexander Schmidt",
+      "email": "alexanderschmidt1@gmail.com"
+    },
+    {
+      "name": "Max Calabrese",
+      "email": "max.calabrese@ymail.com"
+    },
+    {
+      "name": "Andrzej Porebski",
+      "email": "fkuciapa@yahoo.com"
     },
     {
       "name": "G.Serebryanskyi",
       "email": "x5x3x5x@gmail.com"
+    },
+    {
+      "name": "Irina Dumitrascu",
+      "email": "me@dira.ro"
+    },
+    {
+      "name": "Szymon Przybylski",
+      "email": "szymon.przybylski@gmail.com"
+    },
+    {
+      "name": "Josh Graham",
+      "email": "josh@canva.com"
+    },
+    {
+      "name": "Shawn Krisman",
+      "email": "telaviv@github"
+    },
+    {
+      "name": "Shinnosuke Watanabe",
+      "email": "snnskwtnb@gmail.com"
     },
     {
       "name": "Simone Fonda",
@@ -423,6 +455,10 @@
     {
       "name": "Stefan Weil",
       "email": "sw@weilnetz.de"
+    },
+    {
+      "name": "Stefan du Fresne",
+      "email": "stefan@sdufresne.info"
     },
     {
       "name": "Stephen Burrows",
@@ -477,12 +513,12 @@
       "email": "volkan.ozcelik@jivesoftware.com"
     },
     {
-      "name": "AJ Ortega",
-      "email": "ajo@google.com"
+      "name": "Will Butler",
+      "email": "will@butlerhq.com"
     },
     {
-      "name": "William Meleyal",
-      "email": "w.meleyal@wollzelle.com"
+      "name": "AJ Ortega",
+      "email": "ajo@google.com"
     },
     {
       "name": "Xiao Ma",
@@ -517,6 +553,10 @@
       "email": "kbackowski@gmail.com"
     },
     {
+      "name": "mareq",
+      "email": "mareq@balint.eu"
+    },
+    {
       "name": "ngryman",
       "email": "ngryman@gmail.com"
     },
@@ -541,20 +581,20 @@
       "email": "waw325@gmail.com"
     },
     {
-      "name": "Will Butler",
-      "email": "will@butlerhq.com"
+      "name": "William Meleyal",
+      "email": "w.meleyal@wollzelle.com"
     },
     {
       "name": "AdilKhn",
       "email": "AdilKhn@users.noreply.github.com"
     },
     {
-      "name": "Adrian Phinney",
-      "email": "adrian.phinney@bellaliant.net"
+      "name": "Aditya Vohra",
+      "email": "avohra@yelp.com"
     },
     {
-      "name": "Afnizar Nur Ghifari",
-      "email": "afnizarnur@users.noreply.github.com"
+      "name": "Adrian Phinney",
+      "email": "adrian.phinney@bellaliant.net"
     },
     {
       "name": "Akira Matsuda",
@@ -583,6 +623,10 @@
     {
       "name": "Ali Shakiba",
       "email": "ali@shakiba.me"
+    },
+    {
+      "name": "Andrew Shirley",
+      "email": "andrew@als-bi.com"
     },
     {
       "name": "Antonio D'Ettole",
@@ -629,6 +673,10 @@
       "email": "chentsulin@gmail.com"
     },
     {
+      "name": "Dan Bird",
+      "email": "danielsbird@gmail.com"
+    },
+    {
       "name": "Daryl Lau",
       "email": "daryl@goodeggs.com"
     },
@@ -651,6 +699,14 @@
     {
       "name": "Ericat",
       "email": "erica.salvaneschi@gmail.com"
+    },
+    {
+      "name": "Felipe Carasso",
+      "email": "felipe@carassonet.org"
+    },
+    {
+      "name": "GProst",
+      "email": "gprostmail@gmail.com"
     },
     {
       "name": "Gavin Boulton",
@@ -717,8 +773,16 @@
       "email": "jan.sandokan@gmail.com"
     },
     {
+      "name": "Jani Hartikainen",
+      "email": "jani.hartikainen@gmail.com"
+    },
+    {
       "name": "Jason Anderson",
       "email": "diurnalist@gmail.com"
+    },
+    {
+      "name": "Joakim Wimmerstedt",
+      "email": "joakim.wimmerstedt@gmail.com"
     },
     {
       "name": "Johann Hubert Sonntagbauer",
@@ -727,6 +791,10 @@
     {
       "name": "John Bernardo",
       "email": "jbernardo@linkedin.com"
+    },
+    {
+      "name": "Jonathan Roitgrund",
+      "email": "jroitgrund@gmail.com"
     },
     {
       "name": "Jordan Harband",
@@ -759,6 +827,10 @@
     {
       "name": "Kenneth Williams",
       "email": "scriptdaemon@gmail.com"
+    },
+    {
+      "name": "Kevin Ennis",
+      "email": "kennis84@gmail.com"
     },
     {
       "name": "Kevin Turner",
@@ -837,6 +909,10 @@
       "email": "d1sover@gmail.com"
     },
     {
+      "name": "MouseZero",
+      "email": "rm@mousezero.com"
+    },
+    {
       "name": "Mustafa Sak",
       "email": "mustafa.sak@1und1.de"
     },
@@ -897,24 +973,12 @@
       "email": "nchalleil@gmail.com"
     },
     {
-      "name": "Sebastian Van Sande",
-      "email": "sebastian@vansande.org"
-    },
-    {
       "name": "Sergio Cinos",
       "email": "scinos@atlassian.com"
     },
     {
       "name": "Shaine Hatch",
       "email": "shainehatch@overstock.com"
-    },
-    {
-      "name": "Shawn Krisman",
-      "email": "skrisman@nodelings"
-    },
-    {
-      "name": "Shinnosuke Watanabe",
-      "email": "snnskwtnb@gmail.com"
     }
   ],
   "dependencies": {
@@ -945,8 +1009,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "e057a9d2bf1b32f5d6dd62628ca9ee3961b0cafb",
-    "tarball": "https://registry.npmjs.org/sinon/-/sinon-2.1.0.tgz"
+    "shasum": "c43a9c570f32baac1159505cfeed19108855df89",
+    "tarball": "https://registry.npmjs.org/sinon/-/sinon-2.3.2.tgz"
   },
   "engines": {
     "node": ">=0.1.103"
@@ -963,26 +1027,26 @@
     "LICENSE",
     "README.md"
   ],
-  "gitHead": "9157d41cd95cb29ea1154083787df2406f2b37cc",
+  "gitHead": "2463d1030a786f8a5133686b79a0b6c3e0ff886c",
   "homepage": "http://sinonjs.org/",
   "license": "BSD-3-Clause",
   "main": "./lib/sinon.js",
   "maintainers": [
     {
-      "name": "cjohansen",
-      "email": "christian@cjohansen.no"
-    },
-    {
       "name": "fatso83",
       "email": "carlerik@gmail.com"
     },
     {
-      "name": "mantoni",
-      "email": "mail@maxantoni.de"
+      "name": "cjohansen",
+      "email": "christian@cjohansen.no"
     },
     {
       "name": "mrgnrdrck",
       "email": "morgan@roderick.dk"
+    },
+    {
+      "name": "mantoni",
+      "email": "mail@maxantoni.de"
     }
   ],
   "name": "sinon",
@@ -1003,11 +1067,11 @@
     "preversion": "./scripts/preversion.sh",
     "test": "npm run test-node && npm run test-headless && npm run test-webworker",
     "test-cloud": "npm run test-headless -- --wd",
-    "test-coverage": "mochify --recursive -R dot --grep WebWorker --invert --plugin [ mochify-istanbul --report text --report lcovonly --dir ./coverage ] test/",
+    "test-coverage": "mochify --recursive -R dot --grep WebWorker --invert --plugin [ mochify-istanbul --exclude '**/+(test|node_modules)/**/*' --report text --report lcovonly --dir ./coverage ] test/",
     "test-dev": "npm run test-node -- --watch -R min",
     "test-headless": "mochify --recursive -R dot --grep WebWorker --invert test/",
     "test-node": "mocha --recursive -R dot test/",
     "test-webworker": "browserify --no-commondir --full-paths -p [ mocaccino -R spec --color ] test/webworker/webworker-support-assessment.js | phantomic --web-security false"
   },
-  "version": "2.1.0"
+  "version": "2.3.2"
 }

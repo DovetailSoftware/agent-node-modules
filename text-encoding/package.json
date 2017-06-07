@@ -10,7 +10,7 @@
         "spec": "0.6.4",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\sinon"
+      "C:\\Github\\agent\\node_modules\\sinon"
     ]
   ],
   "_from": "text-encoding@0.6.4",
@@ -44,7 +44,7 @@
   "_shasum": "e399a982257a276dae428bb92845cb71bdc26d19",
   "_shrinkwrap": null,
   "_spec": "text-encoding@0.6.4",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\sinon",
+  "_where": "C:\\Github\\agent\\node_modules\\sinon",
   "author": {
     "name": "Joshua Bell",
     "email": "inexorabletash@gmail.com"

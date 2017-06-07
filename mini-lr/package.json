@@ -10,7 +10,7 @@
         "spec": ">=0.1.8 <0.2.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-livereload"
+      "C:\\Github\\agent\\node_modules\\gulp-livereload"
     ]
   ],
   "_from": "mini-lr@>=0.1.8 <0.2.0",
@@ -28,7 +28,7 @@
     "http-errors": "1.3.1",
     "on-finished": "2.3.0",
     "raw-body": "2.1.7",
-    "type-is": "1.6.14"
+    "type-is": "1.6.15"
   },
   "_requested": {
     "raw": "mini-lr@^0.1.8",
@@ -46,7 +46,7 @@
   "_shasum": "02199d27347953d1fd1d6dbded4261f187b2d0f6",
   "_shrinkwrap": null,
   "_spec": "mini-lr@^0.1.8",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-livereload",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-livereload",
   "author": {
     "name": "mklabs"
   },

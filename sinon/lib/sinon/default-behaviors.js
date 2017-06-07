@@ -1,5 +1,4 @@
 "use strict";
-
 var slice = [].slice;
 var useLeftMostCallback = -1;
 var useRightMostCallback = -2;
@@ -68,6 +67,10 @@ module.exports = {
         fake.callbackAsync = false;
     },
 
+    usingPromise: function usingPromise(fake, promiseLibrary) {
+        fake.promiseLibrary = promiseLibrary;
+    },
+
     yields: function (fake) {
         fake.callArgAt = useLeftMostCallback;
         fake.callbackArguments = slice.call(arguments, 1);
@@ -128,6 +131,14 @@ module.exports = {
         fake.returnArgAt = pos;
     },
 
+    throwsArg: function throwsArg(fake, pos) {
+        if (typeof pos !== "number") {
+            throw new TypeError("argument index is not number");
+        }
+
+        fake.throwArgAt = pos;
+    },
+
     returnsThis: function returnsThis(fake) {
         fake.returnThis = true;
     },
@@ -169,7 +180,8 @@ module.exports = {
         var rootStub = fake.stub || fake;
 
         Object.defineProperty(rootStub.rootObj, rootStub.propName, {
-            get: getterFunction
+            get: getterFunction,
+            configurable: true
         });
 
         return fake;
@@ -179,7 +191,20 @@ module.exports = {
         var rootStub = fake.stub || fake;
 
         Object.defineProperty(rootStub.rootObj, rootStub.propName, { // eslint-disable-line accessor-pairs
-            set: setterFunction
+            set: setterFunction,
+            configurable: true
+        });
+
+        return fake;
+    },
+
+    value: function value(fake, newVal) {
+        var rootStub = fake.stub || fake;
+
+        Object.defineProperty(rootStub.rootObj, rootStub.propName, {
+            value: newVal,
+            enumerable: true,
+            configurable: true
         });
 
         return fake;

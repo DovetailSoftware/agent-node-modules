@@ -10,7 +10,7 @@
         "spec": ">=0.8.1 <0.9.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\sinon"
+      "C:\\Github\\agent\\node_modules\\sinon"
     ]
   ],
   "_from": "native-promise-only@>=0.8.1 <0.9.0",
@@ -40,7 +40,7 @@
   "_shasum": "20a318c30cb45f71fe7adfbf7b21c99c1472ef11",
   "_shrinkwrap": null,
   "_spec": "native-promise-only@^0.8.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\sinon",
+  "_where": "C:\\Github\\agent\\node_modules\\sinon",
   "author": {
     "name": "Kyle Simpson",
     "email": "getify@gmail.com"

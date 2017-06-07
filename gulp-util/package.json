@@ -10,7 +10,7 @@
         "spec": ">=3.0.0 <4.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp"
+      "C:\\Github\\agent\\node_modules\\gulp"
     ]
   ],
   "_from": "gulp-util@>=3.0.0 <4.0.0",
@@ -39,6 +39,7 @@
   },
   "_requiredBy": [
     "/gulp",
+    "/gulp-append-prepend",
     "/gulp-eslint",
     "/gulp-less",
     "/gulp-livereload"
@@ -47,7 +48,7 @@
   "_shasum": "0054e1e744502e27c04c187c3ecc505dd54bbb4f",
   "_shrinkwrap": null,
   "_spec": "gulp-util@^3.0.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp",
   "author": {
     "name": "Fractal",
     "email": "contact@wearefractal.com",

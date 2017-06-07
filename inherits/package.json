@@ -10,7 +10,7 @@
         "spec": ">=2.0.1 <2.1.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\http-errors"
+      "C:\\Github\\agent\\node_modules\\http-errors"
     ]
   ],
   "_from": "inherits@>=2.0.1 <2.1.0",
@@ -60,6 +60,7 @@
     "/glob-stream/readable-stream",
     "/gulp-mocha-phantomjs/readable-stream",
     "/gulp-replace/readable-stream",
+    "/hash-base",
     "/hash.js",
     "/http-errors",
     "/istanbul/glob",
@@ -71,6 +72,7 @@
     "/readdirp/readable-stream",
     "/remap-istanbul/readable-stream",
     "/replacestream/readable-stream",
+    "/ripemd160",
     "/sha.js",
     "/stream-browserify",
     "/stream-browserify/readable-stream",
@@ -83,7 +85,7 @@
   "_shasum": "633c2c83e3da42a502f52466022480f4208261de",
   "_shrinkwrap": null,
   "_spec": "inherits@~2.0.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\http-errors",
+  "_where": "C:\\Github\\agent\\node_modules\\http-errors",
   "browser": "./inherits_browser.js",
   "bugs": {
     "url": "https://github.com/isaacs/inherits/issues"

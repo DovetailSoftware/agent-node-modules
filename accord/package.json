@@ -10,7 +10,7 @@
         "spec": ">=0.26.3 <0.27.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-less"
+      "C:\\Github\\agent\\node_modules\\gulp-less"
     ]
   ],
   "_from": "accord@>=0.26.3 <0.27.0",
@@ -44,7 +44,7 @@
   "_shasum": "fc4c8d3ebab406a07cb28819b859651c44a92e80",
   "_shrinkwrap": null,
   "_spec": "accord@^0.26.3",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-less",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-less",
   "author": {
     "name": "Jeff Escalante"
   },

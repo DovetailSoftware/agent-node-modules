@@ -10,7 +10,7 @@
         "spec": ">=3.0.1 <4.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "gulp-eslint@>=3.0.1 <4.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "04e57e3e18c6974267c12cf6855dc717d4a313bd",
   "_shrinkwrap": null,
   "_spec": "gulp-eslint@^3.0.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Adametry"
   },

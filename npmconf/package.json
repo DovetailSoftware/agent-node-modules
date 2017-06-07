@@ -10,7 +10,7 @@
         "spec": "0.0.24",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs"
+      "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs"
     ]
   ],
   "_from": "npmconf@0.0.24",
@@ -40,7 +40,7 @@
   "_shasum": "b78875b088ccc3c0afa3eceb3ce3244b1b52390c",
   "_shrinkwrap": null,
   "_spec": "npmconf@0.0.24",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs",
   "author": {
     "name": "Isaac Z. Schlueter",
     "email": "i@izs.me",

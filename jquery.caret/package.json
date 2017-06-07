@@ -10,7 +10,7 @@
         "spec": "0.3.1",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "jquery.caret@0.3.1",
@@ -44,7 +44,7 @@
   "_shasum": "9c093318faf327eff322e826ca9f3241368bc7b8",
   "_shrinkwrap": null,
   "_spec": "jquery.caret@0.3.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Harold.luo",
     "email": "chord.luo@gmail.com"

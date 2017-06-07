@@ -10,7 +10,7 @@
         "spec": ">=1.0.1",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\eco"
+      "C:\\Github\\agent\\node_modules\\eco"
     ]
   ],
   "_from": "strscan@>=1.0.1",
@@ -37,7 +37,7 @@
   "_shasum": "472d9bc00c68e906ef2fc22cdf762be7c61acc4d",
   "_shrinkwrap": null,
   "_spec": "strscan@>=1.0.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\eco",
+  "_where": "C:\\Github\\agent\\node_modules\\eco",
   "author": {
     "name": "Sam Stephenson"
   },

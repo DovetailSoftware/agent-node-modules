@@ -10,7 +10,7 @@
         "spec": "1.0.0",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "lunr@1.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "5c9276c92c91ac35a9241b5018d46723d92e2f5f",
   "_shrinkwrap": null,
   "_spec": "lunr@1.0.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Oliver Nightingale"
   },

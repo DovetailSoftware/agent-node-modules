@@ -10,7 +10,7 @@
         "spec": ">=2.0.0 <3.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\load-json-file"
+      "C:\\Github\\agent\\node_modules\\load-json-file"
     ]
   ],
   "_from": "pify@>=2.0.0 <3.0.0",
@@ -35,6 +35,8 @@
   },
   "_requiredBy": [
     "/del",
+    "/eslint-plugin-import/load-json-file",
+    "/eslint-plugin-import/path-type",
     "/globby",
     "/load-json-file",
     "/path-type"
@@ -43,7 +45,7 @@
   "_shasum": "ed141a6ac043a849ea588498e7dca8b15330e90c",
   "_shrinkwrap": null,
   "_spec": "pify@^2.0.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\load-json-file",
+  "_where": "C:\\Github\\agent\\node_modules\\load-json-file",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",

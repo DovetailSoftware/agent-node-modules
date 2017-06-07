@@ -10,23 +10,23 @@
         "spec": ">=11.1.2 <12.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "eslint-config-airbnb-base@>=11.1.2 <12.0.0",
-  "_id": "eslint-config-airbnb-base@11.1.2",
+  "_id": "eslint-config-airbnb-base@11.2.0",
   "_inCache": true,
   "_location": "/eslint-config-airbnb-base",
-  "_nodeVersion": "7.7.4",
+  "_nodeVersion": "7.10.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/eslint-config-airbnb-base-11.1.2.tgz_1490494815357_0.9947211313992739"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/eslint-config-airbnb-base-11.2.0.tgz_1494806269088_0.040532434126362205"
   },
   "_npmUser": {
     "name": "ljharb",
     "email": "ljharb@gmail.com"
   },
-  "_npmVersion": "4.1.2",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
     "raw": "eslint-config-airbnb-base@^11.1.2",
@@ -40,11 +40,11 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.1.2.tgz",
-  "_shasum": "259209a7678bf693e31cbe8f953f206b6aa7ccc3",
+  "_resolved": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.2.0.tgz",
+  "_shasum": "19a9dc4481a26f70904545ec040116876018f853",
   "_shrinkwrap": null,
   "_spec": "eslint-config-airbnb-base@^11.1.2",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Jake Teton-Landis",
     "url": "https://twitter.com/@jitl"
@@ -73,7 +73,7 @@
     "babel-preset-airbnb": "^2.2.3",
     "babel-tape-runner": "^2.0.1",
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-import": "^2.2.0",
     "in-publish": "^2.0.0",
@@ -82,8 +82,8 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "259209a7678bf693e31cbe8f953f206b6aa7ccc3",
-    "tarball": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.1.2.tgz"
+    "shasum": "19a9dc4481a26f70904545ec040116876018f853",
+    "tarball": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.2.0.tgz"
   },
   "engines": {
     "node": ">= 4"
@@ -112,7 +112,7 @@
   "name": "eslint-config-airbnb-base",
   "optionalDependencies": {},
   "peerDependencies": {
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-plugin-import": "^2.2.0"
   },
   "readme": "ERROR: No README data found!",
@@ -129,5 +129,5 @@
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "travis": "npm run --silent test"
   },
-  "version": "11.1.2"
+  "version": "11.2.0"
 }

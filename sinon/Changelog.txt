@@ -1,3 +1,31 @@
+
+2.3.2 / 2017-05-26
+==================
+
+  * Fix failing sandbox.resetBehavior() (#1428)
+  * Fix restoring getters/setters/values for previously unexisting props (#1419)
+  * Called in order takes callCount into account. Closes #1398.
+
+2.3.1 / 2017-05-23
+==================
+
+  * Make calledAfter symetric with calledBefore (#1407)
+
+2.3.0 / 2017-05-22
+==================
+
+  * Allow stubbing of accessors with and without sandbox (#1416)
+  * add throwsArg(index) to stubs (#1319)
+  * Fix: forEach() requires 'this' argument (#1356)
+  * Only reset history when calling resetHistory()
+
+2.2.0 / 2017-05-02
+==================
+
+  * Added `usingPromise` method to stub and sandbox.
+  * Added support for React Native window location format Fixes sinonjs/sinon#1362
+  * Fix error on call.toString() where stack has fewer than 4 lines.
+
 2.1.0 / 2017-03-20
 ==================
 

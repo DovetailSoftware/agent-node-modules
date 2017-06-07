@@ -19,7 +19,7 @@
           "directUrl": "https://raw.githubusercontent.com/styson/beautiful-docs/52ca509/package.json"
         }
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "styson/beautiful-docs#52ca509",
@@ -49,10 +49,10 @@
     "#DEV:/"
   ],
   "_resolved": "git://github.com/styson/beautiful-docs.git#52ca50988cbfb8552349bc9df0130b61f10b8697",
-  "_shasum": "38d6ea9840c6fa3c3ff8034c948e7ab85cd60d77",
+  "_shasum": "b1fcb4c90aaa3bcbfa16a89169acd1b103f63141",
   "_shrinkwrap": null,
   "_spec": "beautiful-docs@github:styson/beautiful-docs#52ca509",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Maxime Bouroumeau-Fuseau",
     "url": "http://maximebf.com"

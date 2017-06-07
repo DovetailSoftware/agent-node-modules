@@ -113,6 +113,7 @@ var proto = {
                 this.exception ||
                 typeof this.returnArgAt === "number" ||
                 this.returnThis ||
+                typeof this.throwArgAt === "number" ||
                 this.fakeFn ||
                 this.returnValueDefined);
     },
@@ -126,12 +127,21 @@ var proto = {
             return args[this.returnArgAt];
         } else if (this.returnThis) {
             return context;
+        } else if (typeof this.throwArgAt === "number") {
+            if (args.length < this.throwArgAt) {
+                throw new TypeError(
+                    "throwArgs failed: " + this.throwArgAt
+                    + " arguments required but only " + args.length
+                    + " present"
+                );
+            }
+            throw args[this.throwArgAt];
         } else if (this.fakeFn) {
             return this.fakeFn.apply(context, args);
         } else if (this.resolve) {
-            return Promise.resolve(this.returnValue);
+            return (this.promiseLibrary || Promise).resolve(this.returnValue);
         } else if (this.reject) {
-            return Promise.reject(this.returnValue);
+            return (this.promiseLibrary || Promise).reject(this.returnValue);
         } else if (this.callsThrough) {
             return this.stub.wrappedMethod.apply(context, args);
         }

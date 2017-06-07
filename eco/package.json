@@ -10,7 +10,7 @@
         "spec": ">=1.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
+      "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_defaultsLoaded": true,
@@ -38,7 +38,7 @@
   "_shasum": "624eacd09c9795ed65d83da865375dc52464e56d",
   "_shrinkwrap": null,
   "_spec": "eco@>=1.0.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Sam Stephenson"
   },

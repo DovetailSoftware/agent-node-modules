@@ -10,7 +10,7 @@
         "spec": ">=1.4.1",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
+      "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_from": "less@>=1.4.1",
@@ -45,7 +45,7 @@
   "_shasum": "368d6cc73e1fb03981183280918743c5dcf9b3df",
   "_shrinkwrap": null,
   "_spec": "less@>=1.4.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Alexis Sellier",
     "email": "self@cloudhead.net"

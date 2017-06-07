@@ -113,6 +113,18 @@ var callProto = {
         this.args[pos].apply(thisValue, args);
     },
 
+    throwArg: function (pos) {
+        if (pos > this.args.length) {
+            throw new TypeError(
+                "Not enough arguments: " + pos
+                + " required but only " + this.args.length
+                + " present"
+            );
+        }
+
+        throw this.args[pos];
+    },
+
     "yield": function () {
         this.yieldOn.apply(this, [null].concat(slice.call(arguments, 0)));
     },
@@ -176,7 +188,7 @@ var callProto = {
         }
         if (this.stack) {
             // Omit the error message and the two top stack frames in sinon itself:
-            callStr += this.stack.split("\n")[3].replace(/^\s*(?:at\s+|@)?/, " at ");
+            callStr += ( this.stack.split("\n")[3] || "unknown" ).replace(/^\s*(?:at\s+|@)?/, " at ");
         }
 
         return callStr;

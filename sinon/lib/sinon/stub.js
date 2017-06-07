@@ -45,7 +45,12 @@ function stub(object, property, descriptor) {
     s.rootObj = object;
     s.propName = property;
     s.restore = function restore() {
-        Object.defineProperty(object, property, actualDescriptor);
+        if (actualDescriptor !== undefined) {
+            Object.defineProperty(object, property, actualDescriptor);
+            return;
+        }
+
+        delete object[property];
     };
 
     return isStubbingNonFuncProperty ? s : wrapMethod(object, property, s);
@@ -107,6 +112,7 @@ var proto = {
 
         delete this.returnValue;
         delete this.returnArgAt;
+        delete this.throwArgAt;
         delete this.fakeFn;
         this.returnThis = false;
 

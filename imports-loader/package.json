@@ -10,7 +10,7 @@
         "spec": ">=0.7.0 <0.8.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "imports-loader@>=0.7.0 <0.8.0",
@@ -48,7 +48,7 @@
   "_shasum": "f204b5f34702a32c1db7d48d89d5e867a0441253",
   "_shrinkwrap": null,
   "_spec": "imports-loader@^0.7.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Tobias Koppers @sokra"
   },

@@ -10,7 +10,7 @@
         "spec": "0.2.0",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "nprogress@0.2.0",
@@ -40,7 +40,7 @@
   "_shasum": "cb8f34c53213d895723fcbab907e9422adbcafb1",
   "_shrinkwrap": null,
   "_spec": "nprogress@0.2.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Rico Sta. Cruz",
     "email": "hi@ricostacruz.com"

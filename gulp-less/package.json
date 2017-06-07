@@ -10,7 +10,7 @@
         "spec": ">=3.0.5 <4.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "gulp-less@>=3.0.5 <4.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "d085565da3c810307fde7c7874e86520dc503234",
   "_shrinkwrap": null,
   "_spec": "gulp-less@^3.0.5",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Chris Cowan"
   },

@@ -10,7 +10,7 @@
         "spec": "1.7.1",
         "type": "version"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "remarkable@1.7.1",
@@ -44,7 +44,7 @@
   "_shasum": "aaca4972100b66a642a63a1021ca4bac1be3bff6",
   "_shrinkwrap": null,
   "_spec": "remarkable@1.7.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "bin": {
     "remarkable": "./bin/remarkable.js"
   },

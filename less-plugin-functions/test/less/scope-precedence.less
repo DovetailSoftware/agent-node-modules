@@ -1,0 +1,24 @@
+
+@a: global;
+
+.scope {
+
+    @a: parent;
+
+    .function-foo() {
+        return: @a;
+    }
+
+    .function-bar() {
+        return: @b;
+    }
+
+    &-precedence {
+        @a: caller;
+        foo: foo();
+        @b: caller;
+        bar: bar();
+    }
+}
+
+@a: last global;

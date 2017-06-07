@@ -10,7 +10,7 @@
         "spec": ">=1.1.1 <2.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-eslint"
+      "C:\\Github\\agent\\node_modules\\gulp-eslint"
     ]
   ],
   "_from": "bufferstreams@>=1.1.1 <2.0.0",
@@ -28,12 +28,10 @@
   },
   "_npmVersion": "3.10.2",
   "_phantomChildren": {
-    "buffer-shims": "1.0.0",
     "core-util-is": "1.0.2",
     "inherits": "2.0.3",
     "isarray": "1.0.0",
     "process-nextick-args": "1.0.7",
-    "string_decoder": "0.10.31",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
@@ -52,7 +50,7 @@
   "_shasum": "0161373060ac5988eff99058731114f6e195d51e",
   "_shrinkwrap": null,
   "_spec": "bufferstreams@^1.1.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\gulp-eslint",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-eslint",
   "author": {
     "name": "Nicolas Froidure",
     "url": "http://www.insertafter.com/blog.html"

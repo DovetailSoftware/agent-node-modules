@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "less-plugin-functions@^1.0.0",
+        "scope": null,
+        "escapedName": "less-plugin-functions",
+        "name": "less-plugin-functions",
+        "rawSpec": "^1.0.0",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Github\\agent"
+    ]
+  ],
+  "_from": "less-plugin-functions@>=1.0.0 <2.0.0",
+  "_id": "less-plugin-functions@1.0.0",
+  "_inCache": true,
+  "_location": "/less-plugin-functions",
+  "_nodeVersion": "6.10.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/less-plugin-functions-1.0.0.tgz_1492957450471_0.7222434151917696"
+  },
+  "_npmUser": {
+    "name": "seven-phases-max",
+    "email": "seven.phases.max@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "less-plugin-functions@^1.0.0",
+    "scope": null,
+    "escapedName": "less-plugin-functions",
+    "name": "less-plugin-functions",
+    "rawSpec": "^1.0.0",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/less-plugin-functions/-/less-plugin-functions-1.0.0.tgz",
+  "_shasum": "c4fe10f681aae0a806daf9f412d20f013e10d247",
+  "_shrinkwrap": null,
+  "_spec": "less-plugin-functions@^1.0.0",
+  "_where": "C:\\Github\\agent",
+  "author": {
+    "name": "Max Mikhailov"
+  },
+  "bugs": {
+    "url": "https://github.com/seven-phases-max/less-plugin-functions/issues"
+  },
+  "dependencies": {},
+  "description": "write custom Less functions in Less itself",
+  "devDependencies": {
+    "diff": "^3.2.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "jit-grunt": "^0.10.0",
+    "time-grunt": "^1.4.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c4fe10f681aae0a806daf9f412d20f013e10d247",
+    "tarball": "https://registry.npmjs.org/less-plugin-functions/-/less-plugin-functions-1.0.0.tgz"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "gitHead": "44761d8431a476cd2e933d67091fd89ef47b7117",
+  "homepage": "https://github.com/seven-phases-max/less-plugin-functions",
+  "keywords": [
+    "less",
+    "less.js",
+    "lesscss",
+    "less plugin",
+    "less functions"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "seven-phases-max",
+      "email": "seven.phases.max@gmail.com"
+    }
+  ],
+  "name": "less-plugin-functions",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seven-phases-max/less-plugin-functions.git"
+  },
+  "scripts": {},
+  "version": "1.0.0"
+}

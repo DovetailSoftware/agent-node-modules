@@ -10,7 +10,7 @@
         "spec": ">=1.5.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
+      "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_from": "string@>=1.5.0",
@@ -44,7 +44,7 @@
   "_shasum": "5ea211cd92d228e184294990a6cc97b366a77cb0",
   "_shrinkwrap": null,
   "_spec": "string@>=1.5.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "JP Richardson",
     "email": "jprichardson@gmail.com"

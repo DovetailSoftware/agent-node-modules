@@ -10,7 +10,7 @@
         "spec": ">=0.5.1 <0.6.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\selectize"
+      "C:\\Github\\agent\\node_modules\\selectize"
     ]
   ],
   "_from": "sifter@>=0.5.1 <0.6.0",
@@ -44,7 +44,7 @@
   "_shasum": "4702e3cee3036903da1f194b29e6dc7a4fb59abe",
   "_shrinkwrap": null,
   "_spec": "sifter@^0.5.1",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\selectize",
+  "_where": "C:\\Github\\agent\\node_modules\\selectize",
   "author": {
     "name": "Brian Reavis",
     "email": "brian@thirdroute.com"

@@ -3,9 +3,8 @@
 var sinonSpy = require("./spy");
 var sinonStub = require("./stub");
 var sinonMock = require("./mock");
-var throwOnFalsyObject = require("./throw-on-falsy-object");
+var sandboxStub = require("./sandbox-stub");
 var collectOwnMethods = require("./collect-own-methods");
-var stubNonFunctionProperty = require("./stub-non-function-property");
 
 var push = [].push;
 
@@ -71,23 +70,34 @@ var collection = {
         return fake;
     },
 
+    addUsingPromise: function (fake) {
+        fake.usingPromise(this.promiseLibrary);
+        return fake;
+    },
+
     spy: function spy() {
         return this.add(sinonSpy.apply(sinonSpy, arguments));
     },
 
     stub: function stub(object, property/*, value*/) {
-        throwOnFalsyObject.apply(null, arguments);
+        if (arguments.length > 2) {
+            return sandboxStub.apply(this, arguments);
+        }
 
+        var stubbed = sinonStub.apply(null, arguments);
         var isStubbingEntireObject = typeof property === "undefined" && typeof object === "object";
-        var isStubbingNonFunctionProperty = property && typeof object[property] !== "function";
-        var stubbed = isStubbingNonFunctionProperty ?
-                        stubNonFunctionProperty.apply(null, arguments) :
-                        sinonStub.apply(null, arguments);
 
         if (isStubbingEntireObject) {
-            collectOwnMethods(stubbed).forEach(this.add.bind(this));
+            var ownMethods = collectOwnMethods(stubbed);
+            ownMethods.forEach(this.add.bind(this));
+            if (this.promiseLibrary) {
+                ownMethods.forEach(this.addUsingPromise.bind(this));
+            }
         } else {
             this.add(stubbed);
+            if (this.promiseLibrary) {
+                stubbed.usingPromise(this.promiseLibrary);
+            }
         }
 
         return stubbed;

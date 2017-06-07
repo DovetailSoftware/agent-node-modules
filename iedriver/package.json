@@ -10,23 +10,23 @@
         "spec": ">=3.3.0 <4.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "iedriver@>=3.3.0 <4.0.0",
-  "_id": "iedriver@3.3.0",
+  "_id": "iedriver@3.4.0",
   "_inCache": true,
   "_location": "/iedriver",
   "_nodeVersion": "4.8.1",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/iedriver-3.3.0.tgz_1490901632142_0.968796722125262"
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/iedriver-3.4.0.tgz_1496776639089_0.28865878307260573"
   },
   "_npmUser": {
     "name": "barretts",
     "email": "barrett@sosuke.com"
   },
-  "_npmVersion": "4.4.4",
+  "_npmVersion": "4.6.1",
   "_phantomChildren": {},
   "_requested": {
     "raw": "iedriver@^3.3.0",
@@ -40,11 +40,11 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.3.0.tgz",
-  "_shasum": "a485511186f2d9e2084b572980f35cef13cb96d6",
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.4.0.tgz",
+  "_shasum": "2e4671888ca23c0223462698eec82cc537343ee6",
   "_shrinkwrap": null,
   "_spec": "iedriver@^3.3.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Barrett Sonntag",
     "email": "barrett@sosuke.com",
@@ -68,10 +68,10 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "a485511186f2d9e2084b572980f35cef13cb96d6",
-    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-3.3.0.tgz"
+    "shasum": "2e4671888ca23c0223462698eec82cc537343ee6",
+    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-3.4.0.tgz"
   },
-  "gitHead": "670bf3fda4f37012cf2126ae561ffd3714b39061",
+  "gitHead": "674c2a1f0ed6f9165edf3baf6d21dc894f22e2ec",
   "homepage": "https://github.com/barretts/node-iedriver",
   "keywords": [
     "iedriver",
@@ -101,5 +101,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "3.3.0"
+  "version": "3.4.0"
 }

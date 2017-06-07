@@ -1,0 +1,4 @@
+.scope-precedence {
+  foo: parent;
+  bar: caller;
+}

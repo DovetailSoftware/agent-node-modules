@@ -10,7 +10,7 @@
         "spec": ">=1.2.0 <2.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\clipboard"
+      "C:\\Github\\agent\\node_modules\\clipboard"
     ]
   ],
   "_from": "good-listener@>=1.2.0 <2.0.0",
@@ -44,7 +44,7 @@
   "_shasum": "d53b30cdf9313dffb7dc9a0d477096aa6d145c50",
   "_shrinkwrap": null,
   "_spec": "good-listener@^1.2.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\clipboard",
+  "_where": "C:\\Github\\agent\\node_modules\\clipboard",
   "bugs": {
     "url": "https://github.com/zenorocha/good-listener/issues"
   },

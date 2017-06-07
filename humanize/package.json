@@ -10,7 +10,7 @@
         "spec": ">=0.0.0 <0.1.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\sifter"
+      "C:\\Github\\agent\\node_modules\\sifter"
     ]
   ],
   "_from": "humanize@>=0.0.0 <0.1.0",
@@ -39,7 +39,7 @@
   "_shasum": "1994ffaecdfe9c441ed2bdac7452b7bb4c9e41a4",
   "_shrinkwrap": null,
   "_spec": "humanize@0.0.x",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\sifter",
+  "_where": "C:\\Github\\agent\\node_modules\\sifter",
   "author": {
     "name": "Tai-Jin Lee",
     "email": "taijin@gmail.com"

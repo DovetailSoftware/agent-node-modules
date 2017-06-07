@@ -53,26 +53,26 @@ function is_some_comments(comment) {
 function OutputStream(options) {
 
     options = defaults(options, {
-        indent_start     : 0,
-        indent_level     : 4,
-        quote_keys       : false,
-        space_colon      : true,
         ascii_only       : false,
-        unescape_regexps : false,
-        inline_script    : false,
-        width            : 80,
-        max_line_len     : false,
         beautify         : false,
-        source_map       : null,
         bracketize       : false,
-        semicolons       : true,
         comments         : false,
-        shebang          : true,
-        preserve_line    : false,
-        screw_ie8        : true,
-        preamble         : null,
-        quote_style      : 0,
+        indent_level     : 4,
+        indent_start     : 0,
+        inline_script    : true,
         keep_quoted_props: false,
+        max_line_len     : false,
+        preamble         : null,
+        preserve_line    : false,
+        quote_keys       : false,
+        quote_style      : 0,
+        screw_ie8        : true,
+        semicolons       : true,
+        shebang          : true,
+        source_map       : null,
+        space_colon      : true,
+        unescape_regexps : false,
+        width            : 80,
         wrap_iife        : false,
     }, true);
 
@@ -190,11 +190,7 @@ function OutputStream(options) {
     var might_need_space = false;
     var might_need_semicolon = false;
     var might_add_newline = 0;
-    var last = null;
-
-    function last_char() {
-        return last.charAt(last.length - 1);
-    };
+    var last = "";
 
     var ensure_line_len = options.max_line_len ? function() {
         if (current_col > options.max_line_len) {
@@ -218,10 +214,11 @@ function OutputStream(options) {
     function print(str) {
         str = String(str);
         var ch = str.charAt(0);
+        var prev = last.charAt(last.length - 1);
         if (might_need_semicolon) {
             might_need_semicolon = false;
 
-            if ((!ch || ";}".indexOf(ch) < 0) && !/[;]$/.test(last)) {
+            if (prev == ":" && ch == "}" || (!ch || ";}".indexOf(ch) < 0) && prev != ";") {
                 if (options.semicolons || requireSemicolonChars(ch)) {
                     OUTPUT += ";";
                     current_col++;
@@ -258,7 +255,6 @@ function OutputStream(options) {
         }
 
         if (might_need_space) {
-            var prev = last_char();
             if ((is_identifier_char(prev)
                     && (is_identifier_char(ch) || ch == "\\"))
                 || (ch == "/" && ch == prev)
@@ -586,19 +582,10 @@ function OutputStream(options) {
         return first_in_statement(output);
     });
 
-    PARENS([ AST_Unary, AST_Undefined ], function(output){
+    PARENS(AST_Unary, function(output){
         var p = output.parent();
         return p instanceof AST_PropAccess && p.expression === this
             || p instanceof AST_Call && p.expression === this;
-    });
-
-    PARENS([ AST_Infinity, AST_NaN ], function(output){
-        var p = output.parent();
-        return p instanceof AST_PropAccess && p.expression === this
-            || p instanceof AST_Call && p.expression === this
-            || p instanceof AST_Unary && p.operator != "+" && p.operator != "-"
-            || p instanceof AST_Binary && p.right === this
-                && (p.operator == "/" || p.operator == "%");
     });
 
     PARENS(AST_Seq, function(output){
@@ -1220,9 +1207,8 @@ function OutputStream(options) {
         });
         else output.print("{}");
     });
-    DEFPRINT(AST_ObjectKeyVal, function(self, output){
-        var key = self.key;
-        var quote = self.quote;
+
+    function print_property_name(key, quote, output) {
         if (output.option("quote_keys")) {
             output.print_string(key + "");
         } else if ((typeof key == "number"
@@ -1239,43 +1225,30 @@ function OutputStream(options) {
         } else {
             output.print_string(key, quote);
         }
+    }
+
+    DEFPRINT(AST_ObjectKeyVal, function(self, output){
+        print_property_name(self.key, self.quote, output);
         output.colon();
         self.value.print(output);
     });
-    DEFPRINT(AST_ObjectSetter, function(self, output){
-        output.print("set");
+    AST_ObjectProperty.DEFMETHOD("_print_getter_setter", function(type, output) {
+        output.print(type);
         output.space();
-        self.key.print(output);
-        self.value._do_print(output, true);
+        print_property_name(this.key.name, this.quote, output);
+        this.value._do_print(output, true);
+    });
+    DEFPRINT(AST_ObjectSetter, function(self, output){
+        self._print_getter_setter("set", output);
     });
     DEFPRINT(AST_ObjectGetter, function(self, output){
-        output.print("get");
-        output.space();
-        self.key.print(output);
-        self.value._do_print(output, true);
+        self._print_getter_setter("get", output);
     });
     DEFPRINT(AST_Symbol, function(self, output){
         var def = self.definition();
         output.print_name(def ? def.mangled_name || def.name : self.name);
     });
-    DEFPRINT(AST_Undefined, function(self, output){
-        output.print("void 0");
-    });
     DEFPRINT(AST_Hole, noop);
-    DEFPRINT(AST_Infinity, function(self, output){
-        output.print("1");
-        output.space();
-        output.print("/");
-        output.space();
-        output.print("0");
-    });
-    DEFPRINT(AST_NaN, function(self, output){
-        output.print("0");
-        output.space();
-        output.print("/");
-        output.space();
-        output.print("0");
-    });
     DEFPRINT(AST_This, function(self, output){
         output.print("this");
     });

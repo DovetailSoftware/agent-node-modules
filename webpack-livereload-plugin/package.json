@@ -10,7 +10,7 @@
         "spec": ">=0.10.0 <0.11.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "webpack-livereload-plugin@>=0.10.0 <0.11.0",
@@ -44,7 +44,7 @@
   "_shasum": "61084d0bbb235a50a6211927be083bfb03db4dc3",
   "_shrinkwrap": null,
   "_spec": "webpack-livereload-plugin@^0.10.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Jason Staten"
   },

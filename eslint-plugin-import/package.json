@@ -10,26 +10,31 @@
         "spec": ">=2.2.0 <3.0.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent"
+      "C:\\Github\\agent"
     ]
   ],
   "_from": "eslint-plugin-import@>=2.2.0 <3.0.0",
-  "_id": "eslint-plugin-import@2.2.0",
+  "_id": "eslint-plugin-import@2.3.0",
   "_inCache": true,
   "_location": "/eslint-plugin-import",
-  "_nodeVersion": "4.2.5",
+  "_nodeVersion": "6.10.0",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/eslint-plugin-import-2.2.0.tgz_1478516749963_0.6698825382627547"
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/eslint-plugin-import-2.3.0.tgz_1495622322451_0.7237490636762232"
   },
   "_npmUser": {
     "name": "benmosher",
     "email": "me@benmosher.com"
   },
-  "_npmVersion": "3.10.8",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {
     "esutils": "2.0.2",
-    "isarray": "1.0.0"
+    "graceful-fs": "4.1.11",
+    "isarray": "1.0.0",
+    "locate-path": "2.0.0",
+    "normalize-package-data": "2.3.8",
+    "parse-json": "2.2.0",
+    "pify": "2.3.0"
   },
   "_requested": {
     "raw": "eslint-plugin-import@^2.2.0",
@@ -43,11 +48,11 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.2.0.tgz",
-  "_shasum": "72ba306fad305d67c4816348a4699a4229ac8b4e",
+  "_resolved": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.3.0.tgz",
+  "_shasum": "37c801e0ada0e296cbdf20c3f393acb5b52af36b",
   "_shrinkwrap": null,
   "_spec": "eslint-plugin-import@^2.2.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent",
+  "_where": "C:\\Github\\agent",
   "author": {
     "name": "Ben Mosher",
     "email": "me@benmosher.com"
@@ -65,17 +70,18 @@
     "has": "^1.0.1",
     "lodash.cond": "^4.3.0",
     "minimatch": "^3.0.3",
-    "pkg-up": "^1.0.0"
+    "read-pkg-up": "^2.0.0"
   },
   "description": "Import with sanity.",
   "devDependencies": {
     "babel-eslint": "next",
     "babel-plugin-istanbul": "^2.0.1",
     "babel-preset-es2015-argon": "latest",
-    "babel-register": "6.16.3",
+    "babel-register": "6.24.1",
+    "babylon": "6.15.0",
     "chai": "^3.4.0",
     "coveralls": "^2.11.4",
-    "cross-env": "^3.1.0",
+    "cross-env": "^4.0.0",
     "eslint": "3.x",
     "eslint-import-resolver-node": "file:./resolvers/node",
     "eslint-import-resolver-webpack": "file:./resolvers/webpack",
@@ -90,14 +96,14 @@
     "redux": "^3.0.4",
     "rimraf": "2.5.2",
     "typescript": "^2.0.3",
-    "typescript-eslint-parser": "^0.4.0"
+    "typescript-eslint-parser": "^2.1.0"
   },
   "directories": {
     "test": "tests"
   },
   "dist": {
-    "shasum": "72ba306fad305d67c4816348a4699a4229ac8b4e",
-    "tarball": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.2.0.tgz"
+    "shasum": "37c801e0ada0e296cbdf20c3f393acb5b52af36b",
+    "tarball": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.3.0.tgz"
   },
   "engines": {
     "node": ">=4"
@@ -107,7 +113,7 @@
     "config",
     "memo-parser"
   ],
-  "gitHead": "90ef48b3ade57c77526b285f75dc0cfc41537831",
+  "gitHead": "b79e08307f40b299811b333cdd5a8d9833e1a5e4",
   "homepage": "https://github.com/benmosher/eslint-plugin-import",
   "keywords": [
     "eslint",
@@ -124,6 +130,14 @@
     {
       "name": "benmosher",
       "email": "me@benmosher.com"
+    },
+    {
+      "name": "jfmengels",
+      "email": "jfm.engels@gmail.com"
+    },
+    {
+      "name": "ljharb",
+      "email": "ljharb@gmail.com"
     }
   ],
   "name": "eslint-plugin-import",
@@ -157,5 +171,5 @@
     "test-compiled": "npm run prepublish && NODE_PATH=./lib mocha --compilers js:babel-register --recursive tests/src",
     "watch": "cross-env NODE_PATH=./src mocha --watch --compilers js:babel-register --recursive tests/src"
   },
-  "version": "2.2.0"
+  "version": "2.3.0"
 }

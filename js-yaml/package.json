@@ -10,23 +10,23 @@
         "spec": ">=2.1.0",
         "type": "range"
       },
-      "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs"
+      "C:\\Github\\agent\\node_modules\\beautiful-docs"
     ]
   ],
   "_from": "js-yaml@>=2.1.0",
-  "_id": "js-yaml@3.8.2",
+  "_id": "js-yaml@3.8.4",
   "_inCache": true,
   "_location": "/js-yaml",
-  "_nodeVersion": "6.9.4",
+  "_nodeVersion": "7.8.0",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/js-yaml-3.8.2.tgz_1488473380123_0.05922025511972606"
+    "tmp": "tmp/js-yaml-3.8.4.tgz_1494256586834_0.47078769421204925"
   },
   "_npmUser": {
     "name": "vitaly",
     "email": "vitaly@rcdesign.ru"
   },
-  "_npmVersion": "3.10.10",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {
     "sprintf-js": "1.0.3"
   },
@@ -44,11 +44,11 @@
     "/eslint",
     "/istanbul"
   ],
-  "_resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.2.tgz",
-  "_shasum": "02d3e2c0f6beab20248d412c352203827d786721",
+  "_resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.4.tgz",
+  "_shasum": "520b4564f86573ba96662af85a8cafa7b4b5a6f6",
   "_shrinkwrap": null,
   "_spec": "js-yaml@>=2.1.0",
-  "_where": "C:\\code\\DovetailSoftware\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Vladimir Zapparov",
     "email": "dervus.grim@gmail.com"
@@ -82,19 +82,19 @@
   },
   "description": "YAML 1.2 parser and serializer",
   "devDependencies": {
-    "ansi": "*",
-    "benchmark": "*",
-    "browserify": "^13.0.0",
+    "ansi": "^0.3.1",
+    "benchmark": "^2.1.4",
+    "browserify": "^14.3.0",
     "codemirror": "^5.13.4",
     "eslint": "^3.10.0",
-    "istanbul": "*",
-    "mocha": "*",
-    "uglify-js": "^2.6.1"
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
+    "uglify-js": "^3.0.1"
   },
   "directories": {},
   "dist": {
-    "shasum": "02d3e2c0f6beab20248d412c352203827d786721",
-    "tarball": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.2.tgz"
+    "shasum": "520b4564f86573ba96662af85a8cafa7b4b5a6f6",
+    "tarball": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.4.tgz"
   },
   "files": [
     "index.js",
@@ -102,7 +102,7 @@
     "bin/",
     "dist/"
   ],
-  "gitHead": "7dd7254139804a0cd15683fd9e61ad949bd5ce14",
+  "gitHead": "3de650d4d6fd9e24052ffa7ae53439e36eb70cbb",
   "homepage": "https://github.com/nodeca/js-yaml",
   "keywords": [
     "yaml",
@@ -127,5 +127,5 @@
   "scripts": {
     "test": "make test"
   },
-  "version": "3.8.2"
+  "version": "3.8.4"
 }
