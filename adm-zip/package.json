@@ -2,45 +2,45 @@
   "_args": [
     [
       {
-        "raw": "adm-zip@^0.4.7",
+        "raw": "adm-zip@0.2.1",
         "scope": null,
         "escapedName": "adm-zip",
         "name": "adm-zip",
-        "rawSpec": "^0.4.7",
-        "spec": ">=0.4.7 <0.5.0",
-        "type": "range"
+        "rawSpec": "0.2.1",
+        "spec": "0.2.1",
+        "type": "version"
       },
-      "C:\\Github\\agent\\node_modules\\chromedriver"
+      "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs"
     ]
   ],
-  "_from": "adm-zip@>=0.4.7 <0.5.0",
-  "_id": "adm-zip@0.4.7",
+  "_from": "adm-zip@0.2.1",
+  "_id": "adm-zip@0.2.1",
   "_inCache": true,
   "_location": "/adm-zip",
-  "_nodeVersion": "0.12.0",
   "_npmUser": {
     "name": "cthackers",
-    "email": "iacob.campia@gmail.com"
+    "email": "sy@another-d-mention.ro"
   },
-  "_npmVersion": "2.5.1",
+  "_npmVersion": "1.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "adm-zip@^0.4.7",
+    "raw": "adm-zip@0.2.1",
     "scope": null,
     "escapedName": "adm-zip",
     "name": "adm-zip",
-    "rawSpec": "^0.4.7",
-    "spec": ">=0.4.7 <0.5.0",
-    "type": "range"
+    "rawSpec": "0.2.1",
+    "spec": "0.2.1",
+    "type": "version"
   },
   "_requiredBy": [
-    "/chromedriver"
+    "/gulp-mocha-phantomjs/phantomjs",
+    "/iedriver"
   ],
-  "_resolved": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.4.7.tgz",
-  "_shasum": "8606c2cbf1c426ce8c8ec00174447fd49b6eafc1",
+  "_resolved": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.2.1.tgz",
+  "_shasum": "e801cedeb5bd9a4e98d699c5c0f4239e2731dcbf",
   "_shrinkwrap": null,
-  "_spec": "adm-zip@^0.4.7",
-  "_where": "C:\\Github\\agent\\node_modules\\chromedriver",
+  "_spec": "adm-zip@0.2.1",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs",
   "author": {
     "name": "Nasca Iacob",
     "email": "sy@another-d-mention.ro",
@@ -55,21 +55,12 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "8606c2cbf1c426ce8c8ec00174447fd49b6eafc1",
-    "tarball": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.4.7.tgz"
+    "shasum": "e801cedeb5bd9a4e98d699c5c0f4239e2731dcbf",
+    "tarball": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.2.1.tgz"
   },
   "engines": {
     "node": ">=0.3.0"
   },
-  "files": [
-    "adm-zip.js",
-    "headers",
-    "methods",
-    "util",
-    "zipEntry.js",
-    "zipFile.js"
-  ],
-  "gitHead": "6708a3e5788ff9e67ddba288397f7788a5c02855",
   "homepage": "http://github.com/cthackers/adm-zip",
   "keywords": [
     "zip",
@@ -80,7 +71,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.github.com/cthackers/adm-zip/master/MIT-LICENSE.txt"
+      "url": "http://github.com/kriskowal/zip/raw/master/LICENSE"
     }
   ],
   "main": "adm-zip.js",
@@ -95,8 +86,7 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cthackers/adm-zip.git"
+    "url": "git+ssh://git@github.com/cthackers/adm-zip.git"
   },
-  "scripts": {},
-  "version": "0.4.7"
+  "version": "0.2.1"
 }

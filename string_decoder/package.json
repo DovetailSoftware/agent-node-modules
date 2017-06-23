@@ -33,10 +33,10 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/extract-zip/readable-stream",
     "/glob-stream/readable-stream",
     "/gulp-mocha-phantomjs/readable-stream",
     "/node-libs-browser",
+    "/phantomjs-prebuilt/readable-stream",
     "/readable-stream",
     "/remap-istanbul/readable-stream",
     "/vinyl-fs/readable-stream"

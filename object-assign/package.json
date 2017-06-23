@@ -39,17 +39,14 @@
   },
   "_requiredBy": [
     "/",
-    "/babel-loader",
     "/del",
     "/enhanced-resolve",
     "/eslint-import-resolver-node",
     "/esrecurse",
-    "/figures",
     "/file-entry-cache",
     "/globby",
     "/gulp-less",
     "/handlebars-loader",
-    "/loader-utils",
     "/meow",
     "/replacestream",
     "/test-exclude"

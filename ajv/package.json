@@ -39,8 +39,7 @@
   },
   "_requiredBy": [
     "/har-validator",
-    "/table",
-    "/webpack"
+    "/table"
   ],
   "_resolved": "https://registry.npmjs.org/ajv/-/ajv-4.11.8.tgz",
   "_shasum": "82ffb02b29e662ae53bdc20af15947706739c536",

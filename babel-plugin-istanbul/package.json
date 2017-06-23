@@ -27,9 +27,7 @@
     "email": "ben@npmjs.com"
   },
   "_npmVersion": "3.10.10",
-  "_phantomChildren": {
-    "locate-path": "2.0.0"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "raw": "babel-plugin-istanbul@^4.1.1",
     "scope": null,

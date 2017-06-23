@@ -10,7 +10,7 @@
         "spec": ">=1.0.0 <2.0.0",
         "type": "range"
       },
-      "C:\\Github\\agent\\node_modules\\shelljs"
+      "C:\\Github\\agent\\node_modules\\gulp"
     ]
   ],
   "_from": "interpret@>=1.0.0 <2.0.0",
@@ -39,14 +39,13 @@
   },
   "_requiredBy": [
     "/gulp",
-    "/shelljs",
     "/webpack"
   ],
   "_resolved": "https://registry.npmjs.org/interpret/-/interpret-1.0.3.tgz",
   "_shasum": "cbc35c62eeee73f19ab7b10a801511401afc0f90",
   "_shrinkwrap": null,
   "_spec": "interpret@^1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\shelljs",
+  "_where": "C:\\Github\\agent\\node_modules\\gulp",
   "author": {
     "name": "Tyler Kellen",
     "url": "http://goingslowly.com/"

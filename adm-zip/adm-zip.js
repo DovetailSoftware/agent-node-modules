@@ -1,4 +1,5 @@
 var fs = require("fs"),
+    buffer = require("buffer"),
     pth = require("path");
 
 fs.existsSync = fs.existsSync || pth.existsSync;
@@ -7,21 +8,21 @@ var ZipEntry = require("./zipEntry"),
     ZipFile =  require("./zipFile"),
     Utils = require("./util");
 
-module.exports = function(/*String*/input) {
+module.exports = function(/*String*/inPath) {
     var _zip = undefined,
         _filename = "";
 
-    if (input && typeof input === "string") { // load zip file
-        if (fs.existsSync(input)) {
-            _filename = input;
-            _zip = new ZipFile(input, Utils.Constants.FILE);
+    if (inPath && typeof inPath === "string") { // load zip file
+        if (fs.existsSync(inPath)) {
+            _filename = inPath;
+            _zip = new ZipFile(fs.readFileSync(inPath));
         } else {
            throw Utils.Errors.INVALID_FILENAME;
         }
-    } else if(input && Buffer.isBuffer(input)) { // load buffer
-        _zip = new ZipFile(input, Utils.Constants.BUFFER);
+    } else if(inPath && Buffer.isBuffer(inPath)) { // load buffer
+        _zip = new ZipFile(inPath);
     } else { // create new zip file
-        _zip = new ZipFile(null, Utils.Constants.NONE);
+        _zip = new ZipFile();
     }
 
     function getEntry(/*Object*/entry) {
@@ -41,6 +42,10 @@ module.exports = function(/*String*/input) {
         return null;
     }
 
+    //process.on('uncaughtException', function (err) {
+    //    console.log('Caught exception: ' + err);
+    //});
+
     return {
         /**
          * Extracts the given entry from the archive and returns the content as a Buffer object
@@ -52,7 +57,6 @@ module.exports = function(/*String*/input) {
             var item = getEntry(entry);
             return item && item.getData() || null;
         },
-
         /**
          * Asynchronous readFile
          * @param entry ZipEntry object or String with the full path of the entry
@@ -68,7 +72,6 @@ module.exports = function(/*String*/input) {
                 callback(null,"getEntry failed for:" + entry)
             }
         },
-
         /**
          * Extracts the given entry from the archive and returns the content as plain text in the given encoding
          * @param entry ZipEntry object or String with the full path of the entry
@@ -86,7 +89,6 @@ module.exports = function(/*String*/input) {
             }
             return "";
         },
-
         /**
          * Asynchronous readAsText
          * @param entry ZipEntry object or String with the full path of the entry
@@ -186,23 +188,17 @@ module.exports = function(/*String*/input) {
          *
          * @param localPath
          */
-        addLocalFile : function(/*String*/localPath, /*String*/zipPath, /*String*/zipName) {
+        addLocalFile : function(/*String*/localPath) {
              if (fs.existsSync(localPath)) {
-                if(zipPath){
-                    zipPath=zipPath.split("\\").join("/");
-                    if(zipPath.charAt(zipPath.length - 1) != "/"){
-                        zipPath += "/";
-                    }
-                }else{
-                    zipPath="";
-                }
-                 var p = localPath.split("\\").join("/").split("/").pop();
-                
-                 if(zipName){
-                    this.addFile(zipPath+zipName, fs.readFileSync(localPath), "", 0)
-                 }else{
-                    this.addFile(zipPath+p, fs.readFileSync(localPath), "", 0)
-                 }
+                 var entry = new ZipEntry();
+                 entry.entryName = localPath.split("\\").join("/"); //windows fix
+                 var stats = fs.statSync(localPath);
+                 entry.setData(fs.readFileSync(localPath));
+                 entry.header.inAttr = stats.mode;
+                 entry.header.attr = stats.mode;
+                 entry.attr = stats.mode;
+                 entry.header.time = stats.mtime;
+                 _zip.setEntry(entry);
              } else {
                  throw Utils.Errors.FILE_NOT_FOUND.replace("%s", localPath);
              }
@@ -212,49 +208,31 @@ module.exports = function(/*String*/input) {
          * Adds a local directory and all its nested files and directories to the archive
          *
          * @param localPath
-         * @param zipPath optional path inside zip
-         * @param filter optional RegExp or Function if files match will
-         *               be included.
          */
-        addLocalFolder : function(/*String*/localPath, /*String*/zipPath, /*RegExp|Function*/filter) {
-            if (filter === undefined) {
-              filter = function() { return true; };
-            } else if (filter instanceof RegExp) {
-              filter = function(filter) {
-                return function(filename) {
-                  return filter.test(filename);
-                }
-              }(filter);
-            }
-
-            if(zipPath){
-                zipPath=zipPath.split("\\").join("/");
-                if(zipPath.charAt(zipPath.length - 1) != "/"){
-                    zipPath += "/";
-                }
-            }else{
-                zipPath="";
-            }
+        addLocalFolder : function(/*String*/localPath) {
 			localPath = localPath.split("\\").join("/"); //windows fix
-            localPath = pth.normalize(localPath);
             if (localPath.charAt(localPath.length - 1) != "/")
                 localPath += "/";
 
             if (fs.existsSync(localPath)) {
-
-                var items = Utils.findFiles(localPath),
-                    self = this;
-
+                var items = Utils.findFiles(localPath);
                 if (items.length) {
                     items.forEach(function(path) {
-						var p = path.split("\\").join("/").replace( new RegExp(localPath, 'i'), ""); //windows fix
-                        if (filter(p)) {
-                            if (p.charAt(p.length - 1) !== "/") {
-                                self.addFile(zipPath+p, fs.readFileSync(path), "", 0)
-                            } else {
-                                self.addFile(zipPath+p, new Buffer(0), "", 0)
-                            }
+                        var entry = new ZipEntry();
+						entry.entryName = path.split("\\").join("/").replace(localPath, ""); //windows fix
+                        var stats = fs.statSync(path);
+                        if (stats.isDirectory()) {
+                            entry.setData("");
+                            entry.header.inAttr = stats.mode;
+                            entry.header.attr = stats.mode
+                        } else {
+                            entry.setData(fs.readFileSync(path));
+                            entry.header.inAttr = stats.mode;
+                            entry.header.attr = stats.mode
                         }
+                        entry.attr = stats.mode;
+                        entry.header.time = stats.mtime;
+                        _zip.setEntry(entry);
                     });
                 }
             } else {
@@ -276,11 +254,12 @@ module.exports = function(/*String*/input) {
             var entry = new ZipEntry();
             entry.entryName = entryName;
             entry.comment = comment || "";
-            entry.attr = attr || 438; //0666;
+            entry.attr = attr || 0666;
             if (entry.isDirectory && content.length) {
-               // throw Utils.Errors.DIRECTORY_CONTENT_ERROR;
+                throw Utils.Errors.DIRECTORY_CONTENT_ERROR;
             }
             entry.setData(content);
+            entry.header.time = new Date();
             _zip.setEntry(entry);
         },
 
@@ -348,7 +327,7 @@ module.exports = function(/*String*/input) {
             var content = item.getData();
             if (!content) throw Utils.Errors.CANT_EXTRACT_FILE;
 
-            if (fs.existsSync(target) && !overwrite) {
+            if (fs.existsSync(targetPath) && !overwrite) {
                 throw Utils.Errors.CANT_OVERRIDE;
             }
             Utils.writeFileTo(target, content, overwrite);
@@ -370,65 +349,12 @@ module.exports = function(/*String*/input) {
             }
 
             _zip.entries.forEach(function(entry) {
-                if (entry.isDirectory) {
-                    Utils.makeDir(pth.resolve(targetPath, entry.entryName.toString()));
-                    return;
-                }
+                if (entry.isDirectory) return;
                 var content = entry.getData();
                 if (!content) {
                     throw Utils.Errors.CANT_EXTRACT_FILE + "2";
                 }
-                Utils.writeFileTo(pth.resolve(targetPath, entry.entryName.toString()), content, overwrite);
-            })
-        },
-
-        /**
-         * Asynchronous extractAllTo
-         *
-         * @param targetPath Target location
-         * @param overwrite If the file already exists at the target path, the file will be overwriten if this is true.
-         *                  Default is FALSE
-         * @param callback
-         */
-        extractAllToAsync : function(/*String*/targetPath, /*Boolean*/overwrite, /*Function*/callback) {
-            overwrite = overwrite || false;
-            if (!_zip) {
-                callback(new Error(Utils.Errors.NO_ZIP));
-                return;
-            }
-
-            var entries = _zip.entries;
-            var i = entries.length; 
-            entries.forEach(function(entry) {
-                if(i <= 0) return; // Had an error already
-
-                if (entry.isDirectory) {
-                    Utils.makeDir(pth.resolve(targetPath, entry.entryName.toString()));
-                    if(--i == 0)
-                        callback(undefined);
-                    return;
-                }
-                entry.getDataAsync(function(content) {
-                    if(i <= 0) return;
-                    if (!content) {
-                        i = 0;
-                        callback(new Error(Utils.Errors.CANT_EXTRACT_FILE + "2"));
-                        return;
-                    }
-                    Utils.writeFileToAsync(pth.resolve(targetPath, entry.entryName.toString()), content, overwrite, function(succ) {
-                        if(i <= 0) return;
-
-                        if(!succ) {
-                            i = 0;
-                            callback(new Error('Unable to write'));
-                            return;
-                        }
-
-                        if(--i == 0)
-                            callback(undefined);
-                    });
-                    
-                });
+                Utils.writeFileTo(pth.resolve(targetPath, entry.entryName), content, overwrite);
             })
         },
 
@@ -436,7 +362,6 @@ module.exports = function(/*String*/input) {
          * Writes the newly created zip file to disk at the specified location or if a zip was opened and no ``targetFileName`` is provided, it will overwrite the opened zip
          *
          * @param targetFileName
-         * @param callback
          */
         writeZip : function(/*String*/targetFileName, /*Function*/callback) {
             if (arguments.length == 1) {
@@ -451,10 +376,9 @@ module.exports = function(/*String*/input) {
             }
             if (!targetFileName) return;
 
-            var zipData = _zip.compressToBuffer();
+            var zipData = _zip.toBuffer();
             if (zipData) {
-                var ok = Utils.writeFileTo(targetFileName, zipData, true);
-                if (typeof callback == 'function') callback(!ok? new Error("failed"): null, "");
+                Utils.writeFileTo(targetFileName, zipData, true);
             }
         },
 
@@ -463,13 +387,19 @@ module.exports = function(/*String*/input) {
          *
          * @return Buffer
          */
-        toBuffer : function(/*Function*/onSuccess,/*Function*/onFail,/*Function*/onItemStart,/*Function*/onItemEnd) {
+        toBuffer : function(/*Function*/callback) {
             this.valueOf = 2;
-            if (typeof onSuccess == "function") {
-                _zip.toAsyncBuffer(onSuccess,onFail,onItemStart,onItemEnd);
+            if (typeof callback == "function") {
+                _zip.toAsyncBuffer(callback);
                 return null;
             }
-            return _zip.compressToBuffer()
+            return _zip.toBuffer()
         }
+
+        /*get lastError () {
+            var x = function() { console.log("2", arguments); };
+            x.prototype = 2
+            return x; //
+        } */
     }
 };

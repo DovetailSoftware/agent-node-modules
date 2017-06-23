@@ -1,4 +1,19 @@
 
+2.3.5 / 2017-06-20
+==================
+
+  * Check configurable on a prop before creating (fixes #1456) (#1462)
+
+2.3.4 / 2017-06-10
+==================
+
+  * Fix #1372: make sandbox.resetHistory also reset spies (#1424)
+
+2.3.3 / 2017-06-10
+==================
+
+  * Fix #1445: make stubbing of static function properties possible
+
 2.3.2 / 2017-05-26
 ==================
 
@@ -929,7 +944,7 @@ v2.0.0-pre.5 / 2016-12-31
 * Switched indentation from 2 to 4 spaces :)
 * Node.js compatibility improvements
 * Remove magic booleans from sinon.assert.expose, replace with option object
-* Put QUnit adapter in it's own repository
+* Put QUnit adapter in its own repository
 * Update build script to build standalone timers and server files
 * Breaking change: thisObj -> thisValue
   Change brings consistency to the code-base, always use thisValue

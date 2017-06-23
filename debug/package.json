@@ -42,6 +42,7 @@
     "/babel-traverse",
     "/eslint",
     "/eslint-import-resolver-node",
+    "/eslint-module-utils",
     "/eslint-plugin-import",
     "/gulp-livereload",
     "/method-override",

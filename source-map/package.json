@@ -46,6 +46,7 @@
     "/remap-istanbul",
     "/source-map-support",
     "/uglify-js",
+    "/uglifyjs-webpack-plugin",
     "/vinyl-sourcemaps-apply",
     "/webpack",
     "/webpack-sources"

@@ -14,20 +14,22 @@
     ]
   ],
   "_from": "eslint-module-utils@>=2.0.0 <3.0.0",
-  "_id": "eslint-module-utils@2.0.0",
+  "_id": "eslint-module-utils@2.1.1",
   "_inCache": true,
   "_location": "/eslint-module-utils",
-  "_nodeVersion": "4.2.5",
+  "_nodeVersion": "6.10.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/eslint-module-utils-2.0.0.tgz_1478516660793_0.629490859573707"
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/eslint-module-utils-2.1.1.tgz_1498127113496_0.5392432750668377"
   },
   "_npmUser": {
     "name": "benmosher",
     "email": "me@benmosher.com"
   },
-  "_npmVersion": "3.10.8",
-  "_phantomChildren": {},
+  "_npmVersion": "5.0.3",
+  "_phantomChildren": {
+    "pinkie-promise": "2.0.1"
+  },
   "_requested": {
     "raw": "eslint-module-utils@^2.0.0",
     "scope": null,
@@ -40,8 +42,8 @@
   "_requiredBy": [
     "/eslint-plugin-import"
   ],
-  "_resolved": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.0.0.tgz",
-  "_shasum": "a6f8c21d901358759cdc35dbac1982ae1ee58bce",
+  "_resolved": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.1.1.tgz",
+  "_shasum": "abaec824177613b8a95b299639e1b6facf473449",
   "_shrinkwrap": null,
   "_spec": "eslint-module-utils@^2.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\eslint-plugin-import",
@@ -53,15 +55,16 @@
     "url": "https://github.com/benmosher/eslint-plugin-import/issues"
   },
   "dependencies": {
-    "debug": "2.2.0",
+    "debug": "^2.6.8",
     "pkg-dir": "^1.0.0"
   },
   "description": "Core utilities to support eslint-plugin-import and other module-related plugins.",
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "a6f8c21d901358759cdc35dbac1982ae1ee58bce",
-    "tarball": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.0.0.tgz"
+    "integrity": "sha512-jDI/X5l/6D1rRD/3T43q8Qgbls2nq5km5KSqiwlyUbGo5+04fXhMKdCPhjwbqAa6HXWaMxj8Q4hQDIh7IadJQw==",
+    "shasum": "abaec824177613b8a95b299639e1b6facf473449",
+    "tarball": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.1.1.tgz"
   },
   "engines": {
     "node": ">=4"
@@ -90,5 +93,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "2.0.0"
+  "version": "2.1.1"
 }

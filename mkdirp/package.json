@@ -39,7 +39,6 @@
     "/chromedriver",
     "/eslint",
     "/express",
-    "/find-cache-dir",
     "/istanbul",
     "/less",
     "/mocha",

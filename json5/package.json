@@ -40,7 +40,6 @@
   "_requiredBy": [
     "/babel-core",
     "/handlebars-loader/loader-utils",
-    "/imports-loader/loader-utils",
     "/loader-utils",
     "/webpack"
   ],

@@ -2,50 +2,50 @@
   "_args": [
     [
       {
-        "raw": "uglify-js@^2.7.0",
+        "raw": "uglify-js@^2.8.22",
         "scope": null,
         "escapedName": "uglify-js",
         "name": "uglify-js",
-        "rawSpec": "^2.7.0",
-        "spec": ">=2.7.0 <3.0.0",
+        "rawSpec": "^2.8.22",
+        "spec": ">=2.8.22 <3.0.0",
         "type": "range"
       },
       "C:\\Github\\agent\\node_modules\\accord"
     ]
   ],
-  "_from": "uglify-js@>=2.7.0 <3.0.0",
-  "_id": "uglify-js@2.8.28",
+  "_from": "uglify-js@>=2.8.22 <3.0.0",
+  "_id": "uglify-js@2.8.29",
   "_inCache": true,
   "_location": "/uglify-js",
-  "_nodeVersion": "9.0.0-nightly2017060211ead4bcaf",
+  "_nodeVersion": "6.10.3",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/uglify-js-2.8.28.tgz_1496498071507_0.8391572784166783"
+    "tmp": "tmp/uglify-js-2.8.29.tgz_1497411792713_0.252199525013566"
   },
   "_npmUser": {
     "name": "alexlamsl",
     "email": "alexlamsl@gmail.com"
   },
-  "_npmVersion": "5.0.0",
+  "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "uglify-js@^2.7.0",
+    "raw": "uglify-js@^2.8.22",
     "scope": null,
     "escapedName": "uglify-js",
     "name": "uglify-js",
-    "rawSpec": "^2.7.0",
-    "spec": ">=2.7.0 <3.0.0",
+    "rawSpec": "^2.8.22",
+    "spec": ">=2.8.22 <3.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/accord",
     "/handlebars",
-    "/webpack"
+    "/uglifyjs-webpack-plugin"
   ],
-  "_resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.28.tgz",
-  "_shasum": "e335032df9bb20dcb918f164589d5af47f38834a",
+  "_resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.29.tgz",
+  "_shasum": "29c5733148057bb4e1f75df35b7a9cb72e6a59dd",
   "_shrinkwrap": null,
-  "_spec": "uglify-js@^2.7.0",
+  "_spec": "uglify-js@^2.8.22",
   "_where": "C:\\Github\\agent\\node_modules\\accord",
   "author": {
     "name": "Mihai Bazon",
@@ -75,9 +75,8 @@
   },
   "directories": {},
   "dist": {
-    "integrity": "sha512-WqKNbmNJKzIdIEQu/U2ytgGBbhCy2PVks94GoetczOAJ/zCgVu2CuO7gguI5KPFGPtUtI1dmPQl6h0D4cPzypA==",
-    "shasum": "e335032df9bb20dcb918f164589d5af47f38834a",
-    "tarball": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.28.tgz"
+    "shasum": "29c5733148057bb4e1f75df35b7a9cb72e6a59dd",
+    "tarball": "https://registry.npmjs.org/uglify-js/-/uglify-js-2.8.29.tgz"
   },
   "engines": {
     "node": ">=0.8.0"
@@ -124,5 +123,5 @@
   "scripts": {
     "test": "node test/run-tests.js"
   },
-  "version": "2.8.28"
+  "version": "2.8.29"
 }

@@ -2,48 +2,48 @@
   "_args": [
     [
       {
-        "raw": "sortablejs@1.5.1",
+        "raw": "sortablejs@1.6.0",
         "scope": null,
         "escapedName": "sortablejs",
         "name": "sortablejs",
-        "rawSpec": "1.5.1",
-        "spec": "1.5.1",
+        "rawSpec": "1.6.0",
+        "spec": "1.6.0",
         "type": "version"
       },
       "C:\\Github\\agent"
     ]
   ],
-  "_from": "sortablejs@1.5.1",
-  "_id": "sortablejs@1.5.1",
+  "_from": "sortablejs@1.6.0",
+  "_id": "sortablejs@1.6.0",
   "_inCache": true,
   "_location": "/sortablejs",
-  "_nodeVersion": "6.9.1",
+  "_nodeVersion": "7.8.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/sortablejs-1.5.1.tgz_1487918611605_0.8055508281104267"
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/sortablejs-1.6.0.tgz_1496395171255_0.22604197706095874"
   },
   "_npmUser": {
     "name": "rubaxa",
     "email": "ibnRubaXa@gmail.com"
   },
-  "_npmVersion": "3.10.8",
+  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "sortablejs@1.5.1",
+    "raw": "sortablejs@1.6.0",
     "scope": null,
     "escapedName": "sortablejs",
     "name": "sortablejs",
-    "rawSpec": "1.5.1",
-    "spec": "1.5.1",
+    "rawSpec": "1.6.0",
+    "spec": "1.6.0",
     "type": "version"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.5.1.tgz",
-  "_shasum": "efae13b84c677f3b3d3f4f8e46c7e05fc6acb525",
+  "_resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.6.0.tgz",
+  "_shasum": "097cc19267218af2ca1cd455ed858f380136ab68",
   "_shrinkwrap": null,
-  "_spec": "sortablejs@1.5.1",
+  "_spec": "sortablejs@1.6.0",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Konstantin Lebedev",
@@ -62,15 +62,15 @@
   },
   "directories": {},
   "dist": {
-    "shasum": "efae13b84c677f3b3d3f4f8e46c7e05fc6acb525",
-    "tarball": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.5.1.tgz"
+    "shasum": "097cc19267218af2ca1cd455ed858f380136ab68",
+    "tarball": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.6.0.tgz"
   },
   "exportName": "Sortable",
   "files": [
     "Sortable.js",
     "Sortable.min.js"
   ],
-  "gitHead": "473bd8fecfd2f2834e4187fb033dfa6912eb3b98",
+  "gitHead": "91edeac12b9f1d84c0868d19d7e762f27f69e846",
   "homepage": "https://github.com/rubaxa/Sortable#readme",
   "keywords": [
     "sortable",
@@ -108,5 +108,5 @@
       "st"
     ]
   },
-  "version": "1.5.1"
+  "version": "1.6.0"
 }

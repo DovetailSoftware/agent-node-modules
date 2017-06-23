@@ -1,6 +1,5 @@
 'use strict';
 
-const BufferStreams = require('bufferstreams');
 const PluginError = require('gulp-util').PluginError;
 const CLIEngine = require('eslint').CLIEngine;
 const util = require('./util');
@@ -16,24 +15,16 @@ function gulpEslint(options) {
 	options = util.migrateOptions(options) || {};
 	const linter = new CLIEngine(options);
 
-	function verify(str, filePath) {
-		const result = linter.executeOnText(str, filePath).results[0];
-		// Note: Fixes are applied as part of "executeOnText".
-		// Any applied fix messages have been removed from the result.
-
-		if (options.quiet) {
-			// ignore warnings
-			return util.filterResult(result, options.quiet);
-		}
-
-		return result;
-	}
-
 	return util.transform((file, enc, cb) => {
 		const filePath = path.relative(process.cwd(), file.path);
 
 		if (file.isNull()) {
 			cb(null, file);
+			return;
+		}
+
+		if (file.isStream()) {
+			cb(new PluginError('gulp-eslint', 'gulp-eslint doesn\'t support vinyl files with Stream contents.'));
 			return;
 		}
 
@@ -53,24 +44,27 @@ function gulpEslint(options) {
 			return;
 		}
 
-		if (file.isStream()) {
-			file.contents = file.contents.pipe(new BufferStreams((err, buf, done) => {
-				file.eslint = verify(String(buf), filePath);
-				// Update the fixed output; otherwise, fixable messages are simply ignored.
-				if (file.eslint.hasOwnProperty('output')) {
-					buf = new Buffer(file.eslint.output);
-					file.eslint.fixed = true;
-				}
-				done(null, buf);
-				cb(null, file);
-			}));
+		let result;
+
+		try {
+			result = linter.executeOnText(file.contents.toString(), filePath).results[0];
+		} catch (e) {
+			cb(new PluginError('gulp-eslint', e));
 			return;
 		}
+		// Note: Fixes are applied as part of "executeOnText".
+		// Any applied fix messages have been removed from the result.
 
-		file.eslint = verify(file.contents.toString(), filePath);
+		if (options.quiet) {
+			// ignore warnings
+			file.eslint =  util.filterResult(result, options.quiet);
+		} else {
+			file.eslint = result;
+		}
+
 		// Update the fixed output; otherwise, fixable messages are simply ignored.
 		if (file.eslint.hasOwnProperty('output')) {
-			file.contents = new Buffer(file.eslint.output);
+			file.contents = Buffer.from(file.eslint.output);
 			file.eslint.fixed = true;
 		}
 		cb(null, file);

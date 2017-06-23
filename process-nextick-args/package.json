@@ -38,14 +38,13 @@
     "type": "range"
   },
   "_requiredBy": [
-    "/bufferstreams/readable-stream",
     "/cloneable-readable",
     "/concat-stream/readable-stream",
-    "/extract-zip/readable-stream",
     "/gulp-replace/readable-stream",
     "/memory-fs/readable-stream",
     "/merge-stream/readable-stream",
     "/node-libs-browser/readable-stream",
+    "/phantomjs-prebuilt/readable-stream",
     "/readdirp/readable-stream",
     "/remap-istanbul/readable-stream",
     "/replacestream/readable-stream",
