@@ -32,7 +32,7 @@ module.exports = {
         var nextToken = info.tokens[info.tokenIndex + 1];
 
         // show keys of object literals and json in different color
-        return (nextToken && nextToken.type === 'Punctuator' && nextToken.value === ':') 
+        return (nextToken && nextToken.type === 'Punctuator' && nextToken.value === ':')
           ? colors.green(s)
           : colors.brightGreen(s);
       }
@@ -43,6 +43,8 @@ module.exports = {
 
     , 'case'        :  undefined
     , 'catch'       :  colors.cyan
+    , 'class'       :  undefined
+    , 'const'       :  undefined
     , 'continue'    :  undefined
 
     , 'debugger'    :  undefined
@@ -51,17 +53,28 @@ module.exports = {
     , 'do'          :  undefined
 
     , 'else'        :  undefined
+    , 'enum'        :  undefined
+    , 'export'      :  undefined
+    , 'extends'     :  undefined
 
     , 'finally'     :  colors.cyan
     , 'for'         :  undefined
     , 'function'    :  undefined
 
     , 'if'          :  undefined
+    , 'implements'  :  undefined
+    , 'import'      :  undefined
     , 'in'          :  undefined
     , 'instanceof'  :  undefined
-
+    , 'let'         :  undefined
     , 'new'         :  colors.red
+    , 'package'     :  undefined
+    , 'private'     :  undefined
+    , 'protected'   :  undefined
+    , 'public'      :  undefined
     , 'return'      :  colors.red
+    , 'static'      :  undefined
+    , 'super'       :  undefined
     , 'switch'      :  undefined
 
     , 'this'        :  colors.brightRed
@@ -74,19 +87,20 @@ module.exports = {
 
     , 'while'       :  undefined
     , 'with'        :  undefined
+    , 'yield'       :  undefined
     , _default      :  colors.brightBlue
   }
   , 'Punctuator': {
       // setting semicolon's color to the same as the terminal background makes it invisible
       ';': colors.black
 
-    , '.': colors.green  
-    , ',': colors.green  
+    , '.': colors.green
+    , ',': colors.green
 
     , '{': colors.yellow
     , '}': colors.yellow
-    , '(': colors.brightBlack  
-    , ')': colors.brightBlack  
+    , '(': colors.brightBlack
+    , ')': colors.brightBlack
     , '[': colors.yellow
     , ']': colors.yellow
 
@@ -123,13 +137,15 @@ module.exports = {
     , '|=': undefined
     , '^=': undefined
     , '/=': undefined
+    , '=>': undefined
 
     , '===': undefined
     , '!==': undefined
     , '>>>': undefined
     , '<<=': undefined
     , '>>=': undefined
-    
+    , '...': undefined
+
     , '>>>=': undefined
 
     , _default: colors.brightYellow

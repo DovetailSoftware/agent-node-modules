@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "backbone.marionette@2.4.7",
-        "scope": null,
-        "escapedName": "backbone.marionette",
-        "name": "backbone.marionette",
-        "rawSpec": "2.4.7",
-        "spec": "2.4.7",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "backbone.marionette@2.4.7",
   "_id": "backbone.marionette@2.4.7",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-pXPSG5xGR0G4DeGDUfrqzxhy4l8=",
   "_location": "/backbone.marionette",
-  "_nodeVersion": "0.12.14",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/backbone.marionette-2.4.7.tgz_1464731915939_0.4268349159974605"
-  },
-  "_npmUser": {
-    "name": "ahumphreys87",
-    "email": "ahumphreys87@googlemail.com"
-  },
-  "_npmVersion": "2.15.1",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "backbone.marionette@2.4.7",
-    "scope": null,
-    "escapedName": "backbone.marionette",
     "name": "backbone.marionette",
+    "escapedName": "backbone.marionette",
     "rawSpec": "2.4.7",
-    "spec": "2.4.7",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "2.4.7"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/backbone.marionette/-/backbone.marionette-2.4.7.tgz",
   "_shasum": "a573d21b9c464741b80de18351faeacf1872e25f",
-  "_shrinkwrap": null,
   "_spec": "backbone.marionette@2.4.7",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -53,12 +30,14 @@
   "bugs": {
     "url": "https://github.com/marionettejs/backbone.marionette/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "backbone": "1.0.0 - 1.3.x",
     "backbone.babysitter": "^0.1.0",
     "backbone.wreqr": "^1.0.0",
     "underscore": "1.4.4 - 1.8.3"
   },
+  "deprecated": false,
   "description": "Make your Backbone.js apps dance!",
   "devDependencies": {
     "chai": "3.4.1",
@@ -94,12 +73,6 @@
     "sinon-chai": "2.8.0",
     "unwrap": "0.1.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "a573d21b9c464741b80de18351faeacf1872e25f",
-    "tarball": "https://registry.npmjs.org/backbone.marionette/-/backbone.marionette-2.4.7.tgz"
-  },
-  "gitHead": "e1a512a2f44fadfebe5c01e8966bdbe4fa5f9e51",
   "github": "https://github.com/marionettejs/backbone.marionette",
   "homepage": "https://github.com/marionettejs/backbone.marionette",
   "keywords": [
@@ -121,27 +94,7 @@
     }
   ],
   "main": "lib/core/backbone.marionette.js",
-  "maintainers": [
-    {
-      "name": "elliotf",
-      "email": "efoster@firetaco.com"
-    },
-    {
-      "name": "derickbailey",
-      "email": "derickbailey@gmail.com"
-    },
-    {
-      "name": "samccone",
-      "email": "sam@samx.it"
-    },
-    {
-      "name": "ahumphreys87",
-      "email": "ahumphreys87@googlemail.com"
-    }
-  ],
   "name": "backbone.marionette",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marionettejs/backbone.marionette.git"

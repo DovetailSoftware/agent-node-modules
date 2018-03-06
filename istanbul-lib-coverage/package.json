@@ -1,49 +1,26 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "istanbul-lib-coverage@^1.1.1",
-        "scope": null,
-        "escapedName": "istanbul-lib-coverage",
-        "name": "istanbul-lib-coverage",
-        "rawSpec": "^1.1.1",
-        "spec": ">=1.1.1 <2.0.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent\\node_modules\\istanbul-lib-instrument"
-    ]
-  ],
-  "_from": "istanbul-lib-coverage@>=1.1.1 <2.0.0",
-  "_id": "istanbul-lib-coverage@1.1.1",
-  "_inCache": true,
+  "_from": "istanbul-lib-coverage@^1.1.2",
+  "_id": "istanbul-lib-coverage@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-tZYA0v5A7qBSsOzcebJJ/z3lk3oSzH62puG78DbBA1+zupipX2CakDyiPV3pOb8He+jBwVimuwB0dTnh38hX0w==",
   "_location": "/istanbul-lib-coverage",
-  "_nodeVersion": "7.1.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/istanbul-lib-coverage-1.1.1.tgz_1495919577863_0.9000066665466875"
-  },
-  "_npmUser": {
-    "name": "bcoe",
-    "email": "ben@npmjs.com"
-  },
-  "_npmVersion": "5.0.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "istanbul-lib-coverage@^1.1.1",
-    "scope": null,
-    "escapedName": "istanbul-lib-coverage",
+    "type": "range",
+    "registry": true,
+    "raw": "istanbul-lib-coverage@^1.1.2",
     "name": "istanbul-lib-coverage",
-    "rawSpec": "^1.1.1",
-    "spec": ">=1.1.1 <2.0.0",
-    "type": "range"
+    "escapedName": "istanbul-lib-coverage",
+    "rawSpec": "^1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.2"
   },
   "_requiredBy": [
     "/istanbul-lib-instrument"
   ],
-  "_resolved": "https://registry.npmjs.org/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.1.tgz",
-  "_shasum": "73bfb998885299415c93d38a3e9adf784a77a9da",
-  "_shrinkwrap": null,
-  "_spec": "istanbul-lib-coverage@^1.1.1",
+  "_resolved": "https://registry.npmjs.org/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.2.tgz",
+  "_shasum": "4113c8ff6b7a40a1ef7350b01016331f63afde14",
+  "_spec": "istanbul-lib-coverage@^1.1.2",
   "_where": "C:\\Github\\agent\\node_modules\\istanbul-lib-instrument",
   "author": {
     "name": "Krishnan Anantheswaran",
@@ -52,18 +29,13 @@
   "bugs": {
     "url": "https://github.com/istanbuljs/istanbuljs/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Data library for istanbul coverage objects",
   "devDependencies": {
     "chai": "^3.0.0",
     "jshint": "^2.8.0",
     "mocha": "^3.2.0"
-  },
-  "directories": {},
-  "dist": {
-    "integrity": "sha512-0+1vDkmzxqJIn5rcoEqapSB4DmPxE31EtI2dF2aCkV5esN9EWHxZ0dwgDClivMXJqE7zaYQxq30hj5L0nlTN5Q==",
-    "shasum": "73bfb998885299415c93d38a3e9adf784a77a9da",
-    "tarball": "https://registry.npmjs.org/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.1.tgz"
   },
   "files": [
     "lib",
@@ -87,19 +59,7 @@
   ],
   "license": "BSD-3-Clause",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "bcoe",
-      "email": "ben@npmjs.com"
-    },
-    {
-      "name": "gotwarlost",
-      "email": "kananthmail-github@yahoo.com"
-    }
-  ],
   "name": "istanbul-lib-coverage",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/istanbuljs/istanbuljs.git"
@@ -108,5 +68,5 @@
     "pretest": "jshint index.js lib/ test/",
     "test": "mocha"
   },
-  "version": "1.1.1"
+  "version": "1.1.2"
 }

@@ -46,7 +46,7 @@ module.exports = {
         var nextToken = info.tokens[info.tokenIndex + 1];
 
         // show keys of object literals and json in different color
-        return (nextToken && nextToken.type === 'Punctuator' && nextToken.value === ':') 
+        return (nextToken && nextToken.type === 'Punctuator' && nextToken.value === ':')
           ? colors.green(s)
           : colors.brightGreen(s);
       }
@@ -57,6 +57,8 @@ module.exports = {
 
     , 'case'        :  colors.magenta
     , 'catch'       :  colors.magenta
+    , 'class'       :  undefined
+    , 'const'       :  undefined
     , 'continue'    :  colors.magenta
 
     , 'debugger'    :  colors.magenta
@@ -65,17 +67,28 @@ module.exports = {
     , 'do'          :  colors.magenta
 
     , 'else'        :  colors.magenta
+    , 'enum'        :  undefined
+    , 'export'      :  undefined
+    , 'extends'     :  undefined
 
     , 'finally'     :  colors.magenta
     , 'for'         :  colors.magenta
     , 'function'    :  colors.magenta
 
     , 'if'          :  colors.magenta
+    , 'implements'  :  undefined
+    , 'import'      :  undefined
     , 'in'          :  colors.cyan
     , 'instanceof'  :  colors.cyan
-
+    , 'let'         :  undefined
     , 'new'         :  colors.cyan
+    , 'package'     :  undefined
+    , 'private'     :  undefined
+    , 'protected'   :  undefined
+    , 'public'      :  undefined
     , 'return'      :  colors.magenta
+    , 'static'      :  undefined
+    , 'super'       :  undefined
     , 'switch'      :  colors.magenta
 
     , 'this'        :  colors.red
@@ -88,6 +101,7 @@ module.exports = {
 
     , 'while'       :  colors.magenta
     , 'with'        :  colors.cyan
+    , 'yield'       :  undefined
     , _default      :  colors.white
   }
   , 'Punctuator': {
@@ -135,13 +149,15 @@ module.exports = {
     , '|=': undefined
     , '^=': undefined
     , '/=': undefined
+    , '=>': undefined
 
     , '===': undefined
     , '!==': undefined
     , '>>>': undefined
     , '<<=': undefined
     , '>>=': undefined
-    
+    , '...': undefined
+
     , '>>>=': undefined
 
     , _default: colors.cyan

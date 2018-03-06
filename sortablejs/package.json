@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "sortablejs@1.6.0",
-        "scope": null,
-        "escapedName": "sortablejs",
-        "name": "sortablejs",
-        "rawSpec": "1.6.0",
-        "spec": "1.6.0",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "sortablejs@1.6.0",
   "_id": "sortablejs@1.6.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-CXzBkmchivLKHNRV7YWPOAE2q2g=",
   "_location": "/sortablejs",
-  "_nodeVersion": "7.8.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/sortablejs-1.6.0.tgz_1496395171255_0.22604197706095874"
-  },
-  "_npmUser": {
-    "name": "rubaxa",
-    "email": "ibnRubaXa@gmail.com"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "sortablejs@1.6.0",
-    "scope": null,
-    "escapedName": "sortablejs",
     "name": "sortablejs",
+    "escapedName": "sortablejs",
     "rawSpec": "1.6.0",
-    "spec": "1.6.0",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "1.6.0"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.6.0.tgz",
   "_shasum": "097cc19267218af2ca1cd455ed858f380136ab68",
-  "_shrinkwrap": null,
   "_spec": "sortablejs@1.6.0",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -52,7 +29,8 @@
   "bugs": {
     "url": "https://github.com/rubaxa/Sortable/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Minimalist JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports AngularJS and any CSS library, e.g. Bootstrap.",
   "devDependencies": {
     "grunt": "*",
@@ -60,17 +38,11 @@
     "grunt-contrib-uglify": "*",
     "grunt-version": "*"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "097cc19267218af2ca1cd455ed858f380136ab68",
-    "tarball": "https://registry.npmjs.org/sortablejs/-/sortablejs-1.6.0.tgz"
-  },
   "exportName": "Sortable",
   "files": [
     "Sortable.js",
     "Sortable.min.js"
   ],
-  "gitHead": "91edeac12b9f1d84c0868d19d7e762f27f69e846",
   "homepage": "https://github.com/rubaxa/Sortable#readme",
   "keywords": [
     "sortable",
@@ -84,15 +56,7 @@
   ],
   "license": "MIT",
   "main": "Sortable.js",
-  "maintainers": [
-    {
-      "name": "rubaxa",
-      "email": "ibnRubaXa@gmail.com"
-    }
-  ],
   "name": "sortablejs",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/rubaxa/Sortable.git"

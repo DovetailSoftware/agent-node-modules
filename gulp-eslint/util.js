@@ -1,7 +1,8 @@
 'use strict';
 
 const Transform = require('stream').Transform;
-const gutil = require('gulp-util');
+const PluginError = require('plugin-error');
+const fancyLog = require('fancy-log');
 const CLIEngine = require('eslint').CLIEngine;
 
 /**
@@ -74,8 +75,8 @@ exports.migrateOptions = function migrateOptions(options) {
  */
 exports.handleCallback = (callback, value) => {
 	return err => {
-		if (err != null && !(err instanceof gutil.PluginError)) {
-			err = new gutil.PluginError(err.plugin || 'gulp-eslint', err, {
+		if (err != null && !(err instanceof PluginError)) {
+			err = new PluginError(err.plugin || 'gulp-eslint', err, {
 				showStack: (err.showStack !== false)
 			});
 		}
@@ -146,7 +147,7 @@ exports.isErrorMessage = isErrorMessage;
  * @returns {Number} The number of errors, message included
  */
 function countErrorMessage(count, message) {
-	return count + isErrorMessage(message);
+	return count + Number(isErrorMessage(message));
 }
 
 /**
@@ -157,7 +158,29 @@ function countErrorMessage(count, message) {
  * @returns {Number} The number of warnings, message included
  */
 function countWarningMessage(count, message) {
-	return count + (message.severity === 1);
+	return count + Number(message.severity === 1);
+}
+
+/**
+ * Increment count if message is a fixable error
+ *
+ * @param {Number} count - count of errors
+ * @param {Object} message - an ESLint message
+ * @returns {Number} The number of errors, message included
+ */
+function countFixableErrorMessage(count, message) {
+	return count + Number(isErrorMessage(message) && message.fix !== undefined);
+}
+
+/**
+ * Increment count if message is a fixable warning
+ *
+ * @param {Number} count - count of errors
+ * @param {Object} message - an ESLint message
+ * @returns {Number} The number of errors, message included
+ */
+function countFixableWarningMessage(count, message) {
+	return count + Number(message.severity === 1 && message.fix !== undefined);
 }
 
 /**
@@ -172,12 +195,22 @@ exports.filterResult = (result, filter) => {
 		filter = isErrorMessage;
 	}
 	const messages = result.messages.filter(filter, result);
-	return {
+	const newResult = {
 		filePath: result.filePath,
 		messages: messages,
 		errorCount: messages.reduce(countErrorMessage, 0),
-		warningCount: messages.reduce(countWarningMessage, 0)
+		warningCount: messages.reduce(countWarningMessage, 0),
+		fixableErrorCount: messages.reduce(countFixableErrorMessage, 0),
+		fixableWarningCount: messages.reduce(countFixableWarningMessage, 0),
 	};
+
+  if (result.output !== undefined) {
+    newResult.output = result.output;
+  } else {
+    newResult.source = result.source;
+  }
+
+  return newResult;
 };
 
 /**
@@ -200,12 +233,12 @@ exports.resolveFormatter = (formatter) => {
 /**
  * Resolve writable
  *
- * @param {(Function|stream)} [writable=gulp-util.log] - A stream or function to resolve as a format writer
+ * @param {(Function|stream)} [writable=fancyLog] - A stream or function to resolve as a format writer
  * @returns {Function} A function that writes formatted messages
  */
 exports.resolveWritable = (writable) => {
 	if (!writable) {
-		writable = gutil.log;
+		writable = fancyLog;
 	} else if (typeof writable.write === 'function') {
 		writable = writable.write.bind(writable);
 	}

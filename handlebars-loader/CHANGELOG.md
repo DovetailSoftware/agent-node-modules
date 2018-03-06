@@ -1,5 +1,16 @@
 # Change Log
 
+## [Unreleased]
+
+### Fixed
+- Fixed resolving of inline partials and partial blocks with failover content (#106, #135)
+
+## [1.6.0] - 2017-09-01 ##
+
+### Added
+- Added `ignoreHelpers` option to skip automatic lookup/bundling of helpers
+- Added `precompileOptions` to pass options to handlebars precompile
+
 ## [1.5.0] - 2017-04-20
 
 ### Added
@@ -14,7 +25,6 @@
 - Fixed resolving relative helpers on first pass when helper directories are given
 - Added `ignorePartials` option to skip automatic lookup/bundling of partials
 - Added `compat` option to enable Mustache lookup compatibility.
-- Your feature here!
 - Added `config` option to query so that configs can be specified in webpack
   config object or the loader query. Defaults to `handlebarsLoader`
 - Added `partialResolver` config option to override the default partial

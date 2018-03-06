@@ -1,49 +1,26 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "webpack-livereload-plugin@^0.11.0",
-        "scope": null,
-        "escapedName": "webpack-livereload-plugin",
-        "name": "webpack-livereload-plugin",
-        "rawSpec": "^0.11.0",
-        "spec": ">=0.11.0 <0.12.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
-  "_from": "webpack-livereload-plugin@>=0.11.0 <0.12.0",
-  "_id": "webpack-livereload-plugin@0.11.0",
-  "_inCache": true,
+  "_from": "webpack-livereload-plugin@^1.0.0",
+  "_id": "webpack-livereload-plugin@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-T9w7gXB2FLR2NaspTUdG/Qfy0lUwcTwD27NzaHcAflUG1P2tdhOmS4yBbOUwJRSQ4vXxex910k5sx9wfe9nMGg==",
   "_location": "/webpack-livereload-plugin",
-  "_nodeVersion": "7.7.3",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/webpack-livereload-plugin-0.11.0.tgz_1491581392064_0.742656881455332"
-  },
-  "_npmUser": {
-    "name": "statianzo",
-    "email": "jstaten07+npm@gmail.com"
-  },
-  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "webpack-livereload-plugin@^0.11.0",
-    "scope": null,
-    "escapedName": "webpack-livereload-plugin",
+    "type": "range",
+    "registry": true,
+    "raw": "webpack-livereload-plugin@^1.0.0",
     "name": "webpack-livereload-plugin",
-    "rawSpec": "^0.11.0",
-    "spec": ">=0.11.0 <0.12.0",
-    "type": "range"
+    "escapedName": "webpack-livereload-plugin",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-0.11.0.tgz",
-  "_shasum": "7b90bb258286e6638b95394520b9da901611f571",
-  "_shrinkwrap": null,
-  "_spec": "webpack-livereload-plugin@^0.11.0",
+  "_resolved": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-1.0.0.tgz",
+  "_shasum": "c197397ebe2a922d91da81642e000eb52c949299",
+  "_spec": "webpack-livereload-plugin@^1.0.0",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Jason Staten"
@@ -51,20 +28,16 @@
   "bugs": {
     "url": "https://github.com/statianzo/webpack-livereload-plugin/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "tiny-lr": "^0.2.0"
   },
+  "deprecated": false,
   "description": "Livereload for webpack",
   "devDependencies": {
     "faucet": "0.0.1",
     "tape": "^4.4.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "7b90bb258286e6638b95394520b9da901611f571",
-    "tarball": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-0.11.0.tgz"
-  },
-  "gitHead": "57731dfa40621ab85091c569ae6cfb3ace9457b9",
   "homepage": "https://github.com/statianzo/webpack-livereload-plugin#readme",
   "keywords": [
     "webpack",
@@ -72,15 +45,7 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "statianzo",
-      "email": "jstaten07+npm@gmail.com"
-    }
-  ],
   "name": "webpack-livereload-plugin",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/statianzo/webpack-livereload-plugin.git"
@@ -88,5 +53,5 @@
   "scripts": {
     "test": "faucet test.js"
   },
-  "version": "0.11.0"
+  "version": "1.0.0"
 }

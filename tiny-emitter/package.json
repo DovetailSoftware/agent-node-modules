@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "tiny-emitter@^2.0.0",
-        "scope": null,
-        "escapedName": "tiny-emitter",
-        "name": "tiny-emitter",
-        "rawSpec": "^2.0.0",
-        "spec": ">=2.0.0 <3.0.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent\\node_modules\\clipboard"
-    ]
-  ],
-  "_from": "tiny-emitter@>=2.0.0 <3.0.0",
-  "_id": "tiny-emitter@2.0.0",
-  "_inCache": true,
+  "_from": "tiny-emitter@^2.0.0",
+  "_id": "tiny-emitter@2.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-2NM0auVBGft5tee/OxP4PI3d8WItkDM+fPnaRAVo6xTDI2knbz9eC5ArWGqtGlYqiH3RU5yMpdyTTO7MguC4ow==",
   "_location": "/tiny-emitter",
-  "_nodeVersion": "7.7.4",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/tiny-emitter-2.0.0.tgz_1492522522087_0.09058226319029927"
-  },
-  "_npmUser": {
-    "name": "scottcorgan",
-    "email": "scottcorgan@gmail.com"
-  },
-  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "tiny-emitter@^2.0.0",
-    "scope": null,
-    "escapedName": "tiny-emitter",
     "name": "tiny-emitter",
+    "escapedName": "tiny-emitter",
     "rawSpec": "^2.0.0",
-    "spec": ">=2.0.0 <3.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^2.0.0"
   },
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.0.0.tgz",
-  "_shasum": "bad327adb1804b42a231afa741532bd884cd09ad",
-  "_shrinkwrap": null,
+  "_resolved": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.0.2.tgz",
+  "_shasum": "82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c",
   "_spec": "tiny-emitter@^2.0.0",
   "_where": "C:\\Github\\agent\\node_modules\\clipboard",
   "author": {
@@ -51,7 +28,8 @@
   "bugs": {
     "url": "https://github.com/scottcorgan/tiny-emitter/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "A tiny (less than 1k) event emitter library",
   "devDependencies": {
     "@tap-format/spec": "0.2.0",
@@ -60,12 +38,6 @@
     "testling": "1.7.1",
     "uglify-js": "2.5.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "bad327adb1804b42a231afa741532bd884cd09ad",
-    "tarball": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.0.0.tgz"
-  },
-  "gitHead": "087f94b4b159e6e27ed5b6fb7552338e8067f6e2",
   "homepage": "https://github.com/scottcorgan/tiny-emitter#readme",
   "keywords": [
     "event",
@@ -77,15 +49,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "scottcorgan",
-      "email": "scottcorgan@gmail.com"
-    }
-  ],
   "name": "tiny-emitter",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scottcorgan/tiny-emitter.git"
@@ -113,5 +77,5 @@
       "android-browser/4.2..latest"
     ]
   },
-  "version": "2.0.0"
+  "version": "2.0.2"
 }

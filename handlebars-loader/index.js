@@ -21,7 +21,7 @@ function versionCheck(hbCompiler, hbRuntime) {
 function getLoaderConfig(loaderContext) {
   var query = loaderUtils.getOptions(loaderContext) || {};
   var configKey = query.config || 'handlebarsLoader';
-  var config = loaderContext.options[configKey] || {};
+  var config = loaderContext.rootContext[configKey] || {};
   delete query.config;
   return assign({}, config, query);
 }
@@ -35,6 +35,8 @@ module.exports = function(source) {
   if (!versionCheck(handlebars, require(runtimePath))) {
     throw new Error('Handlebars compiler version does not match runtime version');
   }
+
+  var precompileOptions = query.precompileOptions || {};
 
   // Possible extensions for partials
   var extensions = query.extensions;
@@ -55,12 +57,11 @@ module.exports = function(source) {
   var foundUnclearStuff = {};
   var knownHelpers = {};
 
-  var queryKnownHelpers = query.knownHelpers;
-  if (queryKnownHelpers) {
-    [].concat(queryKnownHelpers).forEach(function(k) {
+  [].concat(query.knownHelpers, precompileOptions.knownHelpers).forEach(function(k) {
+    if (k && typeof k === 'string') {
       knownHelpers[k] = true;
-    });
-  }
+    }
+  });
 
   var inlineRequires = query.inlineRequires;
   if (inlineRequires) {
@@ -135,6 +136,26 @@ module.exports = function(source) {
 
   hb.JavaScriptCompiler = MyJavaScriptCompiler;
 
+  // Define custom visitor for further template AST parsing
+  var Visitor = handlebars.Visitor;
+  function InternalBlocksVisitor() {
+    this.partialBlocks = [];
+    this.inlineBlocks = [];
+  }
+
+  InternalBlocksVisitor.prototype = new Visitor();
+  InternalBlocksVisitor.prototype.PartialBlockStatement = function(partial) {
+    this.partialBlocks.push(partial.name.original);
+    Visitor.prototype.PartialBlockStatement.call(this, partial);
+  };
+  InternalBlocksVisitor.prototype.DecoratorBlock = function(partial) {
+    if (partial.path.original === 'inline') {
+      this.inlineBlocks.push(partial.params[0].value);
+    }
+
+    Visitor.prototype.DecoratorBlock.call(this, partial);
+  };
+
   // This is an async loader
   var loaderAsyncCallback = this.async();
 
@@ -166,14 +187,23 @@ module.exports = function(source) {
     // Precompile template
     var template = '';
 
+    // AST holder for current template
+    var ast = null;
+
+    // Compile options
+    var opts = assign({
+      knownHelpersOnly: !firstCompile,
+      // TODO: Remove these in next major release
+      preventIndent: !!query.preventIndent,
+      compat: !!query.compat
+    }, precompileOptions, {
+      knownHelpers: knownHelpers,
+    });
+
     try {
       if (source) {
-        template = hb.precompile(source, {
-          knownHelpersOnly: firstCompile ? false : true,
-          knownHelpers: knownHelpers,
-          preventIndent: query.preventIndent,
-          compat: query.compat ? true : false
-        });
+        ast = hb.parse(source, opts);
+        template = hb.precompile(ast, opts);
       }
     } catch (err) {
       return loaderAsyncCallback(err);
@@ -235,15 +265,20 @@ module.exports = function(source) {
     var resolveUnclearStuffIterator = function(stuff, unclearStuffCallback) {
       if (foundUnclearStuff[stuff]) return unclearStuffCallback();
       var request = referenceToRequest(stuff.substr(1), 'unclearStuff');
-      resolve(request, 'unclearStuff', function(err, result) {
-        if (!err && result) {
-          knownHelpers[stuff.substr(1)] = true;
-          foundHelpers[stuff] = result;
-          needRecompile = true;
-        }
-        foundUnclearStuff[stuff] = true;
+
+      if (query.ignoreHelpers) {
         unclearStuffCallback();
-      });
+      } else {
+        resolve(request, 'unclearStuff', function(err, result) {
+          if (!err && result) {
+            knownHelpers[stuff.substr(1)] = true;
+            foundHelpers[stuff] = result;
+            needRecompile = true;
+          }
+          foundUnclearStuff[stuff] = true;
+          unclearStuffCallback();
+        });
+      }
     };
 
     var defaultPartialResolver = function defaultPartialResolver(request, callback){
@@ -278,7 +313,19 @@ module.exports = function(source) {
       } else {
         partialResolver(request, function(err, resolved){
           if(err) {
-            return partialCallback(err);
+            var visitor = new InternalBlocksVisitor();
+
+            visitor.accept(ast);
+
+            if (
+              visitor.inlineBlocks.indexOf(request) !== -1 ||
+              visitor.partialBlocks.indexOf(request) !== -1
+            ) {
+              return partialCallback();
+            } else {
+              return partialCallback(err);
+            }
+
           }
           foundPartials[partial] = resolved;
           needRecompile = true;
@@ -291,25 +338,29 @@ module.exports = function(source) {
       if (foundHelpers[helper]) return helperCallback();
       var request = referenceToRequest(helper.substr(1), 'helper');
 
-      var defaultHelperResolver = function(request, callback){
-        return resolve(request, 'helper', callback);
-      };
-
-      var helperResolver = query.helperResolver || defaultHelperResolver;
-
-      helperResolver(request, function(err, result) {
-        if (!err && result) {
-          knownHelpers[helper.substr(1)] = true;
-          foundHelpers[helper] = result;
-          needRecompile = true;
-          return helperCallback();
-        }
-
-        // We don't return an error: we just fail to resolve the helper.
-        // This is b/c Handlebars calls nameLookup with type=helper for non-helper
-        // template options, e.g. something that comes from the template data.
+      if (query.ignoreHelpers) {
         helperCallback();
-      });
+      } else {
+        var defaultHelperResolver = function(request, callback){
+          return resolve(request, 'helper', callback);
+        };
+
+        var helperResolver = query.helperResolver || defaultHelperResolver;
+
+        helperResolver(request, function(err, result) {
+          if (!err && result) {
+            knownHelpers[helper.substr(1)] = true;
+            foundHelpers[helper] = result;
+            needRecompile = true;
+            return helperCallback();
+          }
+
+          // We don't return an error: we just fail to resolve the helper.
+          // This is b/c Handlebars calls nameLookup with type=helper for non-helper
+          // template options, e.g. something that comes from the template data.
+          helperCallback();
+        });
+      }
     };
 
     var doneResolving = function(err) {

@@ -172,19 +172,47 @@ function bootstrap(esprima, exportFn) {
 
   function redeyed (code, config, opts) {
     opts = opts || {};
+    var parser = opts.parser || esprima;
+    var buildAst = !!opts.buildAst;
 
-    // remove shebang
-    code = code.replace(/^\#\!.*/, '');
-
-    var ast = esprima.parse(code, { tokens: true, comment: true, range: true, tolerant: true })
-      , tokens = ast.tokens
-      , comments = ast.comments
+    var hashbang =  ''
+      , ast
+      , tokens
+      , comments
       , lastSplitEnd = 0
       , splits = []
       , transformedCode
       , all
       , info
       ;
+
+    // Replace hashbang line with empty whitespaces to preserve token locations
+    if (code[0] === '#' && code[1] === '!') {
+      hashbang = code.substr(0, code.indexOf('\n') + 1);
+      code = Array.apply(0, Array(hashbang.length)).join(' ') + '\n' + code.substr(hashbang.length);
+    }
+
+    if (buildAst) {
+      ast = parser.parse(code, { tokens: true, comment: true, range: true, tolerant: true });
+      tokens = ast.tokens;
+      comments = ast.comments;
+    } else {
+      tokens = [];
+      comments = [];
+      parser.tokenize(code, { range: true, comment: true }, function (token) {
+        if (token.type === 'LineComment') {
+          token.type = 'Line';
+          comments.push(token)
+        } else if (token.type === 'BlockComment') {
+          token.type = 'Block';
+          comments.push(token)
+        } else {
+          // Optimistically upgrade 'static' to a keyword
+          if (token.type === 'Identifier' && token.value === 'static') token.type = 'Keyword';
+          tokens.push(token);
+        }
+      });
+    }
 
     normalize(config);
 
@@ -275,9 +303,14 @@ function bootstrap(esprima, exportFn) {
       addSplit(lastSplitEnd, code.length);
     }
 
-  transformedCode = opts.nojoin ? undefined : splits.join('');
+  if (!opts.nojoin) {
+    transformedCode = splits.join('');
+    if (hashbang.length > 0) {
+      transformedCode = hashbang + transformedCode.substr(hashbang.length);
+    }
+  }
 
-    return { 
+    return {
         ast      :  ast
       , tokens   :  tokens
       , comments :  comments

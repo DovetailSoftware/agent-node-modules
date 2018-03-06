@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "at.js@1.5.3",
-        "scope": null,
-        "escapedName": "at.js",
-        "name": "at.js",
-        "rawSpec": "1.5.3",
-        "spec": "1.5.3",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "at.js@1.5.3",
   "_id": "at.js@1.5.3",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-jscyTZJPDPvYjfzrp7Lc8iVeBCw=",
   "_location": "/at.js",
-  "_nodeVersion": "7.6.0",
-  "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/at.js-1.5.3.tgz_1488368554881_0.7340527924243361"
-  },
-  "_npmUser": {
-    "name": "ichord",
-    "email": "chord.luo@gmail.com"
-  },
-  "_npmVersion": "4.1.2",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "at.js@1.5.3",
-    "scope": null,
-    "escapedName": "at.js",
     "name": "at.js",
+    "escapedName": "at.js",
     "rawSpec": "1.5.3",
-    "spec": "1.5.3",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "1.5.3"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/at.js/-/at.js-1.5.3.tgz",
   "_shasum": "8ec7324d924f0cfbd88dfceba7b2dcf2255e042c",
-  "_shrinkwrap": null,
   "_spec": "at.js@1.5.3",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -52,7 +29,8 @@
   "bugs": {
     "url": "https://github.com/ichord/At.js/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "**An autocompletion library to autocomplete mentions, smileys etc. just like on Github!**   [![Build Status](https://travis-ci.org/ichord/At.js.png)](https://travis-ci.org/ichord/At.js)",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -72,30 +50,16 @@
     "jasmine-jquery": "^2.1.1",
     "phantomjs": "^1.9.19"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "8ec7324d924f0cfbd88dfceba7b2dcf2255e042c",
-    "tarball": "https://registry.npmjs.org/at.js/-/at.js-1.5.3.tgz"
-  },
   "engines": {
     "node": ">= 0.6.0"
   },
-  "gitHead": "e1c58592d49bd84fea4b0ec69e0a031c82da93f8",
   "homepage": "http://ichord.github.com/At.js",
   "license": "MIT",
   "main": "dist/js/jquery.atwho.js",
-  "maintainers": [
-    {
-      "name": "ichord",
-      "email": "chord.luo@gmail.com"
-    }
-  ],
   "name": "at.js",
-  "optionalDependencies": {},
   "peerDependencies": {
     "jquery": "^1.7.0"
   },
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ichord/At.js.git"

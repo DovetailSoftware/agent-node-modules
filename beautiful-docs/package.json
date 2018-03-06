@@ -1,56 +1,23 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "beautiful-docs@github:styson/beautiful-docs#52ca509",
-        "scope": null,
-        "escapedName": "beautiful-docs",
-        "name": "beautiful-docs",
-        "rawSpec": "github:styson/beautiful-docs#52ca509",
-        "spec": "github:styson/beautiful-docs#52ca509",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:styson/beautiful-docs.git#52ca509",
-          "sshUrl": "git+ssh://git@github.com/styson/beautiful-docs.git#52ca509",
-          "httpsUrl": "git+https://github.com/styson/beautiful-docs.git#52ca509",
-          "gitUrl": "git://github.com/styson/beautiful-docs.git#52ca509",
-          "shortcut": "github:styson/beautiful-docs#52ca509",
-          "directUrl": "https://raw.githubusercontent.com/styson/beautiful-docs/52ca509/package.json"
-        }
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
-  "_from": "styson/beautiful-docs#52ca509",
+  "_from": "github:styson/beautiful-docs#52ca509",
   "_id": "beautiful-docs@1.0.3",
-  "_inCache": true,
+  "_inBundle": false,
   "_location": "/beautiful-docs",
   "_phantomChildren": {},
   "_requested": {
+    "type": "git",
     "raw": "beautiful-docs@github:styson/beautiful-docs#52ca509",
-    "scope": null,
-    "escapedName": "beautiful-docs",
     "name": "beautiful-docs",
+    "escapedName": "beautiful-docs",
     "rawSpec": "github:styson/beautiful-docs#52ca509",
-    "spec": "github:styson/beautiful-docs#52ca509",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:styson/beautiful-docs.git#52ca509",
-      "sshUrl": "git+ssh://git@github.com/styson/beautiful-docs.git#52ca509",
-      "httpsUrl": "git+https://github.com/styson/beautiful-docs.git#52ca509",
-      "gitUrl": "git://github.com/styson/beautiful-docs.git#52ca509",
-      "shortcut": "github:styson/beautiful-docs#52ca509",
-      "directUrl": "https://raw.githubusercontent.com/styson/beautiful-docs/52ca509/package.json"
-    }
+    "saveSpec": "github:styson/beautiful-docs#52ca509",
+    "fetchSpec": null,
+    "gitCommittish": "52ca509"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "git://github.com/styson/beautiful-docs.git#52ca50988cbfb8552349bc9df0130b61f10b8697",
-  "_shasum": "52a6a80a9cf8ca35b2730314e8f1a54e613c2c81",
-  "_shrinkwrap": null,
+  "_resolved": "github:styson/beautiful-docs#52ca50988cbfb8552349bc9df0130b61f10b8697",
   "_spec": "beautiful-docs@github:styson/beautiful-docs#52ca509",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -63,6 +30,7 @@
   "bugs": {
     "url": "https://github.com/maximebf/beautiful-docs/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "async": ">=0.2.9",
     "coffee-script": ">=1.6.3",
@@ -74,12 +42,11 @@
     "string": ">=1.5.0",
     "underscore": ">=1.5.1"
   },
+  "deprecated": false,
   "description": "A documentation viewer based on markdown files",
-  "devDependencies": {},
   "engines": {
     "node": ">=0.10.0"
   },
-  "gitHead": "52ca50988cbfb8552349bc9df0130b61f10b8697",
   "homepage": "https://github.com/maximebf/beautiful-docs#readme",
   "keywords": [
     "docs markdown"
@@ -92,10 +59,7 @@
   ],
   "main": "./lib/index.js",
   "name": "beautiful-docs",
-  "optionalDependencies": {},
   "preferGlobal": "true",
-  "readme": "# Beautiful docs\r\n\r\nBeautiful docs is a documentation viewer based on markdown files.  \r\nDocumentation manuals can be described in a manifest file using JSON.\r\nIt can also generate static pages.\r\n\r\nFeatures:\r\n\r\n - [Markdown syntax](http://daringfireball.net/projects/markdown/syntax) (with support for [Github Flavored Markdown](http://github.github.com/github-flavored-markdown/))\r\n - The output is fully static and can be hosted on Github or S3\r\n - Uses files, no database (store them anywhere, in git for example)\r\n - Automatically generate the table of content\r\n - Very easy to create your custom theme\r\n - Generate static pages alongside your documentation (eg: easily create a presentation website for your project)\r\n - Clean and beautiful default theme with built-in search engine\r\n - Stylesheet for printing\r\n - Supports [embedly](http://embed.ly/)\r\n - Easy to customize (eg.: for organizations)\r\n - Support for multiple manifests with an index page\r\n\r\nCheckout [beautifuldocs.com](http://beautifuldocs.com) for an example or [github](https://github.com/maximebf/beautiful-docs) for the sources.  \r\nYou can find a screenshot of the generated doc [here](https://github.com/maximebf/beautiful-docs/raw/master/docs/screenshot.png).\r\n\r\nInstall using npm:\r\n\r\n    npm install beautiful-docs\r\n\r\n## Manifests\r\n\r\nManifests are not mandatory but they allow to specify custom options for your documentation.  \r\nA manifest file contains a JSON object with the following properties:\r\n\r\n - *title*: Title of the manual (optional, default \"Documentation\")\r\n - *files*: An array of files\r\n - *links*: An array of links, each item must be a tuple of the form: [title, link]\r\n - *rootDir*: Root directory where files are located. Relative to the manifest pathname\r\n - *home*: The file to display as the manual homepage (won't be used when computing the TOC)\r\n - *css*: Filename or URL of a CSS stylesheet that will be included in the page\r\n - *category*: Category of the manual (used on the index page) (optional, default none)\r\n - *maxTocLevel*: Maximum number of levels to display in the table of content (default 2)\r\n - *makeAssetsRelativeToGithub*: set this option to a github repo name (ie. username/reponame) to make assets urls relative to this repo\r\n\r\nFiles can be absolute URIs, relative to the rootDir option or relative to the manifest file.\r\nExample:\r\n\r\n    {\r\n        \"title\": \"Beautiful Docs\",\r\n        \"files\": [\"README.md\"]\r\n    }\r\n\r\n## Usage\r\n\r\n    bfdocs [--option1=value [--option2=value ...]] [/path/to/manifest.json] [/path/to/output/dir]\r\n\r\nAvailable options:\r\n\r\n - *--help* : Display the help information\r\n - *--server* : Create an HTTP server to access the generated documentation\r\n - *--port* : The port on which the HTTP server shoud listen\r\n - *--watch* : Watch files for modifications and reload them automatically\r\n - *--theme* : Name of bundled theme or path to custom theme\r\n - *--title* : Title of the index page\r\n - *--base-url* : Base url of all links\r\n - *--manifests-only* : Do not treat the last argument as the output dir but also as a manifest\r\n - *--index-only* : Only generate the index file. The last argument should be the filename of the index\r\n - *--version* : Display the installed version of beautiful-docs\r\n\r\nDefault output dir is *./out*.  \r\nYou can specify the path to a directory containing markdown files (\\*.md) instead of a manifest file\r\n\r\n## Default theme\r\n\r\nThe default theme adds the following options to your manifest.json file:\r\n\r\n - *codeHighlightTheme*: The highlightjs theme for code highlighting (http://softwaremaniacs.org/soft/highlight/en/)\r\n - *embedly*: Activate embedly with the specified api key. Links to embed must be placed alone in a paragraph.\r\n - *github*: Repository name on github (user/repo) used to display a \"Fork me on Github\" banner\r\n - *googleAnalytics*: Google Analytrics Trackind ID. Adds a Google Analytics Tracking code to the generated website\r\n - *disqus*: Disqus Shortname. Adds a Disqus comment thread to every documentation page\r\n\r\nThe theme has a search capability. It will generate a search index at compile time and\r\nyou will be able to search your documentation without the need of a server. Everything is done client side!\r\n\r\nYou can use the following css classes to style your documentation (suround a block with a div tag):\r\n\r\n - *note*: grey box\r\n - *warning*: orange box\r\n - *tip*: green box\r\n\r\nTables will be automatically formatted.\r\n\r\n## Theming and static pages generation\r\n\r\nBeautiful Docs makes it very easy for you to create your own theme.\r\nA theme is made of 2 templates:\r\n\r\n - *\\_page.html*: used to render each file in the files array. Will receive a `@content` variable with the content of the page\r\n - *\\_manifests.html*: used to render the index page of multiple manifests (optional if you don't plan on using this feature)\r\n\r\nA few variables are available inside your templates:\r\n\r\n - `@manifest`: the current `Manifest` object (unless for *_manifests.html* where it is an array of manifests and the variable is named `@manifests`)\r\n - `@baseUrl`: base url\r\n - `@title`: the title provided through the command line\r\n\r\nThe `Manifest` object has some interesting properties:\r\n\r\n - `options`: all the property used in the manifest.json file\r\n - `maxTocLevel`\r\n - `title`\r\n - `slug`: the name of the generated html file without the html extension\r\n\r\nSimilar to [Jekyll](http://jekyllrb.com), files can have a header enclosed\r\nin *---*. If such a header is found, the file will be rendered using [eco](https://github.com/sstephenson/eco),\r\nBeautiful Docs' rendering engine. The header is a YAML blurbs. All properties\r\nwill be available as variables when rendered.\r\n\r\nThe special *layout* property allows your to wrapped the rendered content\r\nof the current file inside a layout. It must be a filename relative to the\r\ntheme path.\r\n\r\nTemplates have access to the `@include(filename)` function to include files.\r\nThe filename must be relative to the current template filename.\r\n\r\nAll other files in the theme folder are copied over to the output directory.\r\nLess and Coffee files will be automatically converted.\r\nAll files starting with an underscore will be ignored.\r\n\r\nExample:\r\n\r\n    ---\r\n    layout: _layout.html\r\n    ---\r\n    My custom page for <%= @manifest.title %>\r\n\r\nBeautiful Docs comes with 2 themes: default and minimal. Have a look at them in the \r\n*src/themes* folder to learn more about creating your own theme.\r\n\r\n## Multiple manifests\r\n\r\nBeautiful docs can handle multiple manifests at once and generate and index file to\r\neasily access each of them.\r\n\r\n    bfdocs [options] [--manifests-only] /path/to/first/manifest.json /path/to/second/manifest.json /path/to/third/manifest.json [/path/to/output/dir]\r\n\r\nIf you have more than one manifest and you don't want to specify the output dir, you must use the *--manifests-only* option.\r\n\r\nWhen multiple manifests are specified, each generated ones will be located in its own subfolder.\r\n\r\nYou can also generate the index file on its own using *--index-only*:\r\n\r\n    bfdocs --index-only /path/to/manifest.json /path/to/manifest.json index.html\r\n\r\n\r\n## Grunt plugin\r\n\r\nYou can automate the documentation generation using [Grunt][grunt] and the [Beautiful Docs task][task]\r\n\r\n\r\n[grunt]: http://gruntjs.com\r\n[task]: https://github.com/h2non/grunt-beautiful-docs\r\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/maximebf/beautiful-docs.git"

@@ -1,5 +1,6 @@
 "use strict";
 
+var createBehavior = require("./behavior").create;
 var extend = require("./util/core/extend");
 var functionName = require("./util/core/function-name");
 var functionToString = require("./util/core/function-to-string");
@@ -39,18 +40,6 @@ function spy(object, property, types) {
     });
 
     return wrapMethod(object, property, descriptor);
-}
-
-function matchingFake(fakes, args, strict) {
-    if (!fakes) {
-        return undefined;
-    }
-
-    var matchingFakes = fakes.filter(function (fake) {
-        return fake.matches(args, strict);
-    });
-
-    return matchingFakes.pop();
 }
 
 function incrementCallCount() {
@@ -174,25 +163,31 @@ var spyApi = {
     },
 
     invoke: function invoke(func, thisValue, args) {
-        var matching = matchingFake(this.fakes, args);
+        var matchings = this.matchingFakes(args);
+        var currentCallId = callId++;
         var exception, returnValue;
 
         incrementCallCount.call(this);
         push.call(this.thisValues, thisValue);
         push.call(this.args, args);
-        push.call(this.callIds, callId++);
+        push.call(this.callIds, currentCallId);
+        matchings.forEach(function (matching) {
+            incrementCallCount.call(matching);
+            push.call(matching.thisValues, thisValue);
+            push.call(matching.args, args);
+            push.call(matching.callIds, currentCallId);
+        });
 
         // Make call properties available from within the spied function:
         createCallProperties.call(this);
+        matchings.forEach(function (matching) {
+            createCallProperties.call(matching);
+        });
 
         try {
             this.invoking = true;
 
-            if (matching) {
-                returnValue = matching.invoke(func, thisValue, args);
-            } else {
-                returnValue = (this.func || func).apply(thisValue, args);
-            }
+            returnValue = (this.func || func).apply(thisValue, args);
 
             var thisCall = this.getCall(this.callCount - 1);
             if (thisCall.calledWithNew() && typeof returnValue !== "object") {
@@ -206,6 +201,11 @@ var spyApi = {
 
         push.call(this.exceptions, exception);
         push.call(this.returnValues, returnValue);
+        matchings.forEach(function (matching) {
+            push.call(matching.exceptions, exception);
+            push.call(matching.returnValues, returnValue);
+        });
+
         var err = new ErrorConstructor();
         // 1. Please do not get stack at this point. It may be so very slow, and not actually used
         // 2. PhantomJS does not serialize the stack trace until the error has been thrown:
@@ -214,6 +214,9 @@ var spyApi = {
             throw err;
         } catch (e) {/* empty */}
         push.call(this.errorsWithCallStack, err);
+        matchings.forEach(function (matching) {
+            push.call(matching.errorsWithCallStack, err);
+        });
 
         // Make return value and exception available in the calls:
         createCallProperties.call(this);
@@ -291,10 +294,10 @@ var spyApi = {
         var args = slice.call(arguments);
 
         if (this.fakes) {
-            var match = matchingFake(this.fakes, args, true);
+            var matching = this.matchingFakes(args, true).pop();
 
-            if (match) {
-                return match;
+            if (matching) {
+                return matching;
             }
         } else {
             this.fakes = [];
@@ -305,6 +308,11 @@ var spyApi = {
         fake.matchingArguments = args;
         fake.parent = this;
         push.call(this.fakes, fake);
+
+        if (original.defaultBehavior && original.defaultBehavior.promiseLibrary) {
+            fake.defaultBehavior = fake.defaultBehavior || createBehavior(fake);
+            fake.defaultBehavior.promiseLibrary = original.defaultBehavior.promiseLibrary;
+        }
 
         fake.withArgs = function () {
             return original.withArgs.apply(original, arguments);
@@ -326,6 +334,12 @@ var spyApi = {
         createCallProperties.call(fake);
 
         return fake;
+    },
+
+    matchingFakes: function (args, strict) {
+        return (this.fakes || []).filter(function (fake) {
+            return fake.matches(args, strict);
+        });
     },
 
     matches: function (args, strict) {

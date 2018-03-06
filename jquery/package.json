@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "jquery@2.2.1",
-        "scope": null,
-        "escapedName": "jquery",
-        "name": "jquery",
-        "rawSpec": "2.2.1",
-        "spec": "2.2.1",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "jquery@2.2.1",
   "_id": "jquery@2.2.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-PD4WhUrT0qxErGUCGxdCbSKtgD8=",
   "_location": "/jquery",
-  "_nodeVersion": "0.10.42",
-  "_npmOperationalInternal": {
-    "host": "packages-9-west.internal.npmjs.com",
-    "tmp": "tmp/jquery-2.2.1.tgz_1456168325917_0.42471840139478445"
-  },
-  "_npmUser": {
-    "name": "timmywil",
-    "email": "timmywillisn@gmail.com"
-  },
-  "_npmVersion": "2.14.19",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "jquery@2.2.1",
-    "scope": null,
-    "escapedName": "jquery",
     "name": "jquery",
+    "escapedName": "jquery",
     "rawSpec": "2.2.1",
-    "spec": "2.2.1",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "2.2.1"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/jquery/-/jquery-2.2.1.tgz",
   "_shasum": "3c3e16854ad3d2ac44ac65021b17426d22ad803f",
-  "_shrinkwrap": null,
   "_spec": "jquery@2.2.1",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -52,6 +29,7 @@
   "bugs": {
     "url": "https://github.com/jquery/jquery/issues"
   },
+  "bundleDependencies": false,
   "commitplease": {
     "components": [
       "Docs",
@@ -79,6 +57,7 @@
     ]
   },
   "dependencies": {},
+  "deprecated": false,
   "description": "JavaScript library for DOM operations",
   "devDependencies": {
     "commitplease": "2.0.0",
@@ -106,12 +85,6 @@
     "testswarm": "1.1.0",
     "win-spawn": "2.0.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "3c3e16854ad3d2ac44ac65021b17426d22ad803f",
-    "tarball": "https://registry.npmjs.org/jquery/-/jquery-2.2.1.tgz"
-  },
-  "gitHead": "788eaba2f83e7b7445c7a83a50c81c0704423874",
   "homepage": "http://jquery.com",
   "keywords": [
     "jquery",
@@ -121,27 +94,7 @@
   ],
   "license": "MIT",
   "main": "dist/jquery.js",
-  "maintainers": [
-    {
-      "name": "dmethvin",
-      "email": "dave.methvin@gmail.com"
-    },
-    {
-      "name": "scott.gonzalez",
-      "email": "scott.gonzalez@gmail.com"
-    },
-    {
-      "name": "m_gol",
-      "email": "m.goleb@gmail.com"
-    },
-    {
-      "name": "timmywil",
-      "email": "timmywillisn@gmail.com"
-    }
-  ],
   "name": "jquery",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jquery/jquery.git"

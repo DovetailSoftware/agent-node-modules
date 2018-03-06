@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "eslint-config-airbnb-base@^11.1.2",
-        "scope": null,
-        "escapedName": "eslint-config-airbnb-base",
-        "name": "eslint-config-airbnb-base",
-        "rawSpec": "^11.1.2",
-        "spec": ">=11.1.2 <12.0.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
-  "_from": "eslint-config-airbnb-base@>=11.1.2 <12.0.0",
-  "_id": "eslint-config-airbnb-base@11.2.0",
-  "_inCache": true,
+  "_from": "eslint-config-airbnb-base@^11.1.2",
+  "_id": "eslint-config-airbnb-base@11.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-/fhjt/VqzBA2SRsx7ErDtv6Ayf+XLw9LIOqmpBuHFCVwyJo2EtzGWMB9fYRFBoWWQLxmNmCpenNiH0RxyeS41w==",
   "_location": "/eslint-config-airbnb-base",
-  "_nodeVersion": "7.10.0",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/eslint-config-airbnb-base-11.2.0.tgz_1494806269088_0.040532434126362205"
-  },
-  "_npmUser": {
-    "name": "ljharb",
-    "email": "ljharb@gmail.com"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "eslint-config-airbnb-base@^11.1.2",
-    "scope": null,
-    "escapedName": "eslint-config-airbnb-base",
     "name": "eslint-config-airbnb-base",
+    "escapedName": "eslint-config-airbnb-base",
     "rawSpec": "^11.1.2",
-    "spec": ">=11.1.2 <12.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^11.1.2"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.2.0.tgz",
-  "_shasum": "19a9dc4481a26f70904545ec040116876018f853",
-  "_shrinkwrap": null,
+  "_resolved": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.3.2.tgz",
+  "_shasum": "8703b11abe3c88ac7ec2b745b7fdf52e00ae680a",
   "_spec": "eslint-config-airbnb-base@^11.1.2",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -52,6 +29,7 @@
   "bugs": {
     "url": "https://github.com/airbnb/javascript/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Jake Teton-Landis",
@@ -67,23 +45,21 @@
       "url": "https://twitter.com/hshoff"
     }
   ],
-  "dependencies": {},
+  "dependencies": {
+    "eslint-restricted-globals": "^0.1.1"
+  },
+  "deprecated": false,
   "description": "Airbnb's base JS ESLint config, following our styleguide",
   "devDependencies": {
-    "babel-preset-airbnb": "^2.2.3",
+    "babel-preset-airbnb": "^2.4.0",
     "babel-tape-runner": "^2.0.1",
     "editorconfig-tools": "^0.1.1",
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-import": "^2.2.0",
+    "eslint": "^4.5.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
     "in-publish": "^2.0.0",
     "safe-publish-latest": "^1.1.1",
-    "tape": "^4.6.3"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "19a9dc4481a26f70904545ec040116876018f853",
-    "tarball": "https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-11.2.0.tgz"
+    "tape": "^4.8.0"
   },
   "engines": {
     "node": ">= 4"
@@ -99,35 +75,25 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "airbnb",
-      "email": "jordan.harband+npm@airbnb.com"
-    },
-    {
-      "name": "ljharb",
-      "email": "ljharb@gmail.com"
-    }
-  ],
   "name": "eslint-config-airbnb-base",
-  "optionalDependencies": {},
   "peerDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint": "^3.19.0 || ^4.5.0",
+    "eslint-plugin-import": "^2.7.0"
   },
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/airbnb/javascript.git"
   },
   "scripts": {
     "lint": "eslint .",
+    "posttravis": ":",
     "prelint": "editorconfig-tools check * rules/* test/*",
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
+    "pretravis": ":",
     "test": "npm run --silent tests-only",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "travis": "npm run --silent test"
   },
-  "version": "11.2.0"
+  "version": "11.3.2"
 }

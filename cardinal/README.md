@@ -112,7 +112,8 @@ opts is an {Object} with the following properties:
 - `theme` {Object} is used to optionally override the theme used to highlight
 - `linenos` {Boolean} if `true` line numbers are included in the highlighted code
 - `firstline` {Integer} sets line number of the first line when line numbers are printed
-- `json` {Boolean} if `true` highlights JSON in addition to JavaScript (`true` by default if file extension is `.json`)
+
+**Note** The `json` option is obsoleted and not necessary anymore as cardinal properly understands both JSON and JavaScript.
 
 ## Examples ([*browse*](https://github.com/thlorenz/cardinal/tree/master/examples))
 
@@ -124,9 +125,3 @@ opts is an {Object} with the following properties:
 - [file that highlights itself hiding all
   semicolons](https://github.com/thlorenz/cardinal/blob/master/examples/highlight-self-hide-semicolons.js) via
   ***highlightFileSync()***
-
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/thlorenz/cardinal/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

@@ -1,43 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "md5-file@^1.1.4",
-        "scope": null,
-        "escapedName": "md5-file",
-        "name": "md5-file",
-        "rawSpec": "^1.1.4",
-        "spec": ">=1.1.4 <2.0.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent\\node_modules\\iedriver"
-    ]
-  ],
-  "_from": "md5-file@>=1.1.4 <2.0.0",
+  "_from": "md5-file@^1.1.4",
   "_id": "md5-file@1.1.10",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-2PT852ySyyC30UOln1jKSbTPMXQ=",
   "_location": "/md5-file",
-  "_npmUser": {
-    "name": "roryrjb",
-    "email": "roryrjb@gmail.com"
-  },
-  "_npmVersion": "1.4.28",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "md5-file@^1.1.4",
-    "scope": null,
-    "escapedName": "md5-file",
     "name": "md5-file",
+    "escapedName": "md5-file",
     "rawSpec": "^1.1.4",
-    "spec": ">=1.1.4 <2.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^1.1.4"
   },
   "_requiredBy": [
     "/iedriver"
   ],
   "_resolved": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.10.tgz",
   "_shasum": "d8f4fce76c92cb20b7d143a59f58ca49b4cf3174",
-  "_shrinkwrap": null,
   "_spec": "md5-file@^1.1.4",
   "_where": "C:\\Github\\agent\\node_modules\\iedriver",
   "author": {
@@ -49,19 +31,13 @@
     "url": "http://github.com/roryrjb/md5-file/issues",
     "email": "roryrjb@gmail.com"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "return an md5sum of a given file",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "d8f4fce76c92cb20b7d143a59f58ca49b4cf3174",
-    "tarball": "https://registry.npmjs.org/md5-file/-/md5-file-1.1.10.tgz"
-  },
   "files": [
     "index.js",
     "test.js"
   ],
-  "gitHead": "d00f008b84b40f8212695579f34a2257b919d136",
   "homepage": "https://github.com/roryrjb/md5-file",
   "keywords": [
     "md5",
@@ -70,15 +46,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "maintainers": [
-    {
-      "name": "roryrjb",
-      "email": "roryrjb@gmail.com"
-    }
-  ],
   "name": "md5-file",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roryrjb/md5-file.git"

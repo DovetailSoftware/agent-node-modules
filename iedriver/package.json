@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "iedriver@^3.3.0",
-        "scope": null,
-        "escapedName": "iedriver",
-        "name": "iedriver",
-        "rawSpec": "^3.3.0",
-        "spec": ">=3.3.0 <4.0.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
-  "_from": "iedriver@>=3.3.0 <4.0.0",
-  "_id": "iedriver@3.4.0",
-  "_inCache": true,
+  "_from": "iedriver@^3.3.0",
+  "_id": "iedriver@3.9.1",
+  "_inBundle": false,
+  "_integrity": "sha512-+h+Dd3PLu/UHznErBWEF3kFwWf/vTo9ThDKNsmdef6NCkYDtJTHrHSH7tpt2DwjPb+7PO4UKVLOi7J9MSRFeQA==",
   "_location": "/iedriver",
-  "_nodeVersion": "4.8.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/iedriver-3.4.0.tgz_1496776639089_0.28865878307260573"
-  },
-  "_npmUser": {
-    "name": "barretts",
-    "email": "barrett@sosuke.com"
-  },
-  "_npmVersion": "4.6.1",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "iedriver@^3.3.0",
-    "scope": null,
-    "escapedName": "iedriver",
     "name": "iedriver",
+    "escapedName": "iedriver",
     "rawSpec": "^3.3.0",
-    "spec": ">=3.3.0 <4.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^3.3.0"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.4.0.tgz",
-  "_shasum": "2e4671888ca23c0223462698eec82cc537343ee6",
-  "_shrinkwrap": null,
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.9.1.tgz",
+  "_shasum": "7ae10db5cec7651c86aa380fdb3859bac47d405a",
   "_spec": "iedriver@^3.3.0",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -56,22 +33,18 @@
   "bugs": {
     "url": "https://github.com/barretts/node-iedriver/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "adm-zip": "0.2.1",
     "kew": "~0.1.7",
     "md5-file": "^1.1.4",
     "mkdirp": "0.3.5",
     "npmconf": "0.0.24",
+    "request": "^2.81.0",
     "rimraf": "~2.0.2"
   },
+  "deprecated": false,
   "description": "IEDriver for Selenium",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "2e4671888ca23c0223462698eec82cc537343ee6",
-    "tarball": "https://registry.npmjs.org/iedriver/-/iedriver-3.4.0.tgz"
-  },
-  "gitHead": "674c2a1f0ed6f9165edf3baf6d21dc894f22e2ec",
   "homepage": "https://github.com/barretts/node-iedriver",
   "keywords": [
     "iedriver",
@@ -85,15 +58,7 @@
     }
   ],
   "main": "lib/iedriver",
-  "maintainers": [
-    {
-      "name": "barretts",
-      "email": "barrett@sosuke.com"
-    }
-  ],
   "name": "iedriver",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/barretts/node-iedriver.git"
@@ -101,5 +66,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "3.4.0"
+  "version": "3.9.1"
 }

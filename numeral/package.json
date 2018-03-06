@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "numeral@2.0.6",
-        "scope": null,
-        "escapedName": "numeral",
-        "name": "numeral",
-        "rawSpec": "2.0.6",
-        "spec": "2.0.6",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "numeral@2.0.6",
   "_id": "numeral@2.0.6",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-StCAk21EPCVhrtnyGX7//iX05QY=",
   "_location": "/numeral",
-  "_nodeVersion": "6.9.2",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/numeral-2.0.6.tgz_1490598307717_0.2810824813786894"
-  },
-  "_npmUser": {
-    "name": "adamwdraper",
-    "email": "adamwdraper@gmail.com"
-  },
-  "_npmVersion": "3.10.9",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "numeral@2.0.6",
-    "scope": null,
-    "escapedName": "numeral",
     "name": "numeral",
+    "escapedName": "numeral",
     "rawSpec": "2.0.6",
-    "spec": "2.0.6",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "2.0.6"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/numeral/-/numeral-2.0.6.tgz",
   "_shasum": "4ad080936d443c2561aed9f2197efffe25f4e506",
-  "_shrinkwrap": null,
   "_spec": "numeral@2.0.6",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -53,7 +30,8 @@
   "bugs": {
     "url": "https://github.com/adamwdraper/Numeral-js/issues"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Format and manipulate numbers.",
   "devDependencies": {
     "chai": "^3.5.0",
@@ -77,16 +55,10 @@
     "mocha": "^3.1.2",
     "uglify-js": "latest"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "4ad080936d443c2561aed9f2197efffe25f4e506",
-    "tarball": "https://registry.npmjs.org/numeral/-/numeral-2.0.6.tgz"
-  },
   "ender": "./ender.js",
   "engines": {
     "node": "*"
   },
-  "gitHead": "30956925463d19d4cf84488dcd8005da40cf9728",
   "homepage": "http://numeraljs.com",
   "keywords": [
     "numeral",
@@ -98,15 +70,7 @@
   ],
   "license": "MIT",
   "main": "./numeral.js",
-  "maintainers": [
-    {
-      "name": "adamwdraper",
-      "email": "adamwdraper@gmail.com"
-    }
-  ],
   "name": "numeral",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adamwdraper/Numeral-js.git"

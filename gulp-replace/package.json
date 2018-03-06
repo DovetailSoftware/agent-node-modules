@@ -1,55 +1,32 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "gulp-replace@^0.6.1",
-        "scope": null,
-        "escapedName": "gulp-replace",
-        "name": "gulp-replace",
-        "rawSpec": "^0.6.1",
-        "spec": ">=0.6.1 <0.7.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
-  "_from": "gulp-replace@>=0.6.1 <0.7.0",
+  "_from": "gulp-replace@^0.6.1",
   "_id": "gulp-replace@0.6.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-Eb+Mj85TPjPi9qjy9DC5VboL4GY=",
   "_location": "/gulp-replace",
-  "_nodeVersion": "6.6.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/gulp-replace-0.6.1.tgz_1498001441791_0.9813022138550878"
-  },
-  "_npmUser": {
-    "name": "lazd",
-    "email": "lazdnet@gmail.com"
-  },
-  "_npmVersion": "3.10.3",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
     "inherits": "2.0.3",
     "isarray": "1.0.0",
-    "process-nextick-args": "1.0.7",
+    "process-nextick-args": "2.0.0",
     "safe-buffer": "5.1.1",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "gulp-replace@^0.6.1",
-    "scope": null,
-    "escapedName": "gulp-replace",
     "name": "gulp-replace",
+    "escapedName": "gulp-replace",
     "rawSpec": "^0.6.1",
-    "spec": ">=0.6.1 <0.7.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^0.6.1"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
   "_resolved": "https://registry.npmjs.org/gulp-replace/-/gulp-replace-0.6.1.tgz",
   "_shasum": "11bf8c8fce533e33e2f6a8f2f430b955ba0be066",
-  "_shrinkwrap": null,
   "_spec": "gulp-replace@^0.6.1",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -59,11 +36,13 @@
   "bugs": {
     "url": "https://github.com/lazd/gulp-replace/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "istextorbinary": "1.0.2",
     "readable-stream": "^2.0.1",
     "replacestream": "^4.0.0"
   },
+  "deprecated": false,
   "description": "A string replace plugin for gulp",
   "devDependencies": {
     "concat-stream": "^1.5.2",
@@ -71,30 +50,16 @@
     "should": "^7.0.1",
     "vinyl": "^0.5.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "11bf8c8fce533e33e2f6a8f2f430b955ba0be066",
-    "tarball": "https://registry.npmjs.org/gulp-replace/-/gulp-replace-0.6.1.tgz"
-  },
   "engines": {
     "node": ">=0.10"
   },
-  "gitHead": "534ccc9ae30c1a3f3c108c7be0ab4fcc51e3ddf4",
   "homepage": "https://github.com/lazd/gulp-replace#readme",
   "keywords": [
     "gulpplugin",
     "replace"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "lazd",
-      "email": "lazdnet@gmail.com"
-    }
-  ],
   "name": "gulp-replace",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/lazd/gulp-replace.git"

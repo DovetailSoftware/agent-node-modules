@@ -1,58 +1,37 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "clipboard@1.7.1",
-        "scope": null,
-        "escapedName": "clipboard",
-        "name": "clipboard",
-        "rawSpec": "1.7.1",
-        "spec": "1.7.1",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "clipboard@1.7.1",
   "_id": "clipboard@1.7.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-Ng1taUbpmnof7zleQrqStem1oWs=",
   "_location": "/clipboard",
-  "_nodeVersion": "7.10.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/clipboard-1.7.1.tgz_1496102284338_0.21156074409373105"
-  },
-  "_npmUser": {
-    "name": "zenorocha",
-    "email": "zno.rocha@gmail.com"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "clipboard@1.7.1",
-    "scope": null,
-    "escapedName": "clipboard",
     "name": "clipboard",
+    "escapedName": "clipboard",
     "rawSpec": "1.7.1",
-    "spec": "1.7.1",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "1.7.1"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/clipboard/-/clipboard-1.7.1.tgz",
   "_shasum": "360d6d6946e99a7a1fef395e42ba92b5e9b5a16b",
-  "_shrinkwrap": null,
   "_spec": "clipboard@1.7.1",
   "_where": "C:\\Github\\agent",
   "bugs": {
     "url": "https://github.com/zenorocha/clipboard.js/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "good-listener": "^1.2.2",
     "select": "^1.1.2",
     "tiny-emitter": "^2.0.0"
   },
+  "deprecated": false,
   "description": "Modern copy to clipboard. No Flash. Just 2kb",
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -76,12 +55,6 @@
     "uglify-js": "^2.8.22",
     "watchify": "^3.9.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "360d6d6946e99a7a1fef395e42ba92b5e9b5a16b",
-    "tarball": "https://registry.npmjs.org/clipboard/-/clipboard-1.7.1.tgz"
-  },
-  "gitHead": "b6e6b80ab07eab03ce0d277515b3ed540773a330",
   "homepage": "https://github.com/zenorocha/clipboard.js#readme",
   "keywords": [
     "clipboard",
@@ -90,15 +63,7 @@
   ],
   "license": "MIT",
   "main": "lib/clipboard.js",
-  "maintainers": [
-    {
-      "name": "zenorocha",
-      "email": "zno.rocha@gmail.com"
-    }
-  ],
   "name": "clipboard",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zenorocha/clipboard.js.git"

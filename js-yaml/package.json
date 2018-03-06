@@ -1,52 +1,29 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "js-yaml@>=2.1.0",
-        "scope": null,
-        "escapedName": "js-yaml",
-        "name": "js-yaml",
-        "rawSpec": ">=2.1.0",
-        "spec": ">=2.1.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent\\node_modules\\beautiful-docs"
-    ]
-  ],
   "_from": "js-yaml@>=2.1.0",
-  "_id": "js-yaml@3.8.4",
-  "_inCache": true,
+  "_id": "js-yaml@3.11.0",
+  "_inBundle": false,
+  "_integrity": "sha512-saJstZWv7oNeOyBh3+Dx1qWzhW0+e6/8eDzo7p5rDFqxntSztloLtuKu+Ejhtq82jsilwOIZYsCz+lIjthg1Hw==",
   "_location": "/js-yaml",
-  "_nodeVersion": "7.8.0",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/js-yaml-3.8.4.tgz_1494256586834_0.47078769421204925"
-  },
-  "_npmUser": {
-    "name": "vitaly",
-    "email": "vitaly@rcdesign.ru"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {
     "sprintf-js": "1.0.3"
   },
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "js-yaml@>=2.1.0",
-    "scope": null,
-    "escapedName": "js-yaml",
     "name": "js-yaml",
+    "escapedName": "js-yaml",
     "rawSpec": ">=2.1.0",
-    "spec": ">=2.1.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": ">=2.1.0"
   },
   "_requiredBy": [
     "/beautiful-docs",
     "/eslint",
     "/istanbul"
   ],
-  "_resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.4.tgz",
-  "_shasum": "520b4564f86573ba96662af85a8cafa7b4b5a6f6",
-  "_shrinkwrap": null,
+  "_resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.11.0.tgz",
+  "_shasum": "597c1a8bd57152f26d622ce4117851a51f5ebaef",
   "_spec": "js-yaml@>=2.1.0",
   "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
   "author": {
@@ -59,6 +36,7 @@
   "bugs": {
     "url": "https://github.com/nodeca/js-yaml/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Aleksey V Zapparov",
@@ -78,23 +56,19 @@
   ],
   "dependencies": {
     "argparse": "^1.0.7",
-    "esprima": "^3.1.1"
+    "esprima": "^4.0.0"
   },
+  "deprecated": false,
   "description": "YAML 1.2 parser and serializer",
   "devDependencies": {
     "ansi": "^0.3.1",
     "benchmark": "^2.1.4",
     "browserify": "^14.3.0",
     "codemirror": "^5.13.4",
-    "eslint": "^3.10.0",
+    "eslint": "^4.1.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.3.0",
     "uglify-js": "^3.0.1"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "520b4564f86573ba96662af85a8cafa7b4b5a6f6",
-    "tarball": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.4.tgz"
   },
   "files": [
     "index.js",
@@ -102,7 +76,6 @@
     "bin/",
     "dist/"
   ],
-  "gitHead": "3de650d4d6fd9e24052ffa7ae53439e36eb70cbb",
   "homepage": "https://github.com/nodeca/js-yaml",
   "keywords": [
     "yaml",
@@ -111,15 +84,7 @@
     "pyyaml"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "vitaly",
-      "email": "vitaly@rcdesign.ru"
-    }
-  ],
   "name": "js-yaml",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodeca/js-yaml.git"
@@ -127,5 +92,5 @@
   "scripts": {
     "test": "make test"
   },
-  "version": "3.8.4"
+  "version": "3.11.0"
 }

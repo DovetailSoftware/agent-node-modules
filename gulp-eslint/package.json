@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "gulp-eslint@^4.0.0",
-        "scope": null,
-        "escapedName": "gulp-eslint",
-        "name": "gulp-eslint",
-        "rawSpec": "^4.0.0",
-        "spec": ">=4.0.0 <5.0.0",
-        "type": "range"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
-  "_from": "gulp-eslint@>=4.0.0 <5.0.0",
-  "_id": "gulp-eslint@4.0.0",
-  "_inCache": true,
+  "_from": "gulp-eslint@^4.0.0",
+  "_id": "gulp-eslint@4.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-fcFUQzFsN6dJ6KZlG+qPOEkqfcevRUXgztkYCvhNvJeSvOicC8ucutN4qR/ID8LmNZx9YPIkBzazTNnVvbh8wg==",
   "_location": "/gulp-eslint",
-  "_nodeVersion": "8.1.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/gulp-eslint-4.0.0.tgz_1497265362240_0.86873758607544"
-  },
-  "_npmUser": {
-    "name": "shinnn",
-    "email": "snnskwtnb@gmail.com"
-  },
-  "_npmVersion": "5.0.3",
   "_phantomChildren": {},
   "_requested": {
+    "type": "range",
+    "registry": true,
     "raw": "gulp-eslint@^4.0.0",
-    "scope": null,
-    "escapedName": "gulp-eslint",
     "name": "gulp-eslint",
+    "escapedName": "gulp-eslint",
     "rawSpec": "^4.0.0",
-    "spec": ">=4.0.0 <5.0.0",
-    "type": "range"
+    "saveSpec": null,
+    "fetchSpec": "^4.0.0"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-4.0.0.tgz",
-  "_shasum": "16d9ea4d696e7b7a9d65eeb1aa5bc4ba0a22c7f7",
-  "_shrinkwrap": null,
+  "_resolved": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-4.0.2.tgz",
+  "_shasum": "18a2a6768e4404cbf3e203239cb57474168fa606",
   "_spec": "gulp-eslint@^4.0.0",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -51,6 +28,7 @@
   "bugs": {
     "url": "https://github.com/adametry/gulp-eslint/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Shinnosuke Watanabe",
@@ -60,33 +38,29 @@
   ],
   "dependencies": {
     "eslint": "^4.0.0",
-    "gulp-util": "^3.0.8"
+    "fancy-log": "^1.3.2",
+    "plugin-error": "^1.0.0"
   },
+  "deprecated": false,
   "description": "A gulp plugin for processing files with ESLint",
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^3.0.0",
-    "babel-eslint": "^7.2.3",
+    "@shinnn/eslint-config-node": "^5.0.0",
+    "babel-eslint": "^8.0.1",
     "from2-string": "^1.1.0",
     "gulp": "^3.9.0",
     "istanbul": "^0.4.4",
-    "mocha": "^3.4.2",
-    "should": "^11.2.1",
+    "mocha": "^5.0.0",
+    "should": "^13.1.2",
     "vinyl": "^2.0.2"
   },
   "directories": {
     "example": "example",
     "test": "test"
   },
-  "dist": {
-    "integrity": "sha512-+qsePo04v1O3JshpNvww9+bOgZEJ6Cc2/w3mEktfKz0NL0zsh1SWzjyIL2FIM2zzy6IYQYv+j8REZORF8dKX4g==",
-    "shasum": "16d9ea4d696e7b7a9d65eeb1aa5bc4ba0a22c7f7",
-    "tarball": "https://registry.npmjs.org/gulp-eslint/-/gulp-eslint-4.0.0.tgz"
-  },
   "files": [
     "index.js",
     "util.js"
   ],
-  "gitHead": "a3988386f0159516e7b56f38442d5f59ff57bf2c",
   "homepage": "https://github.com/adametry/gulp-eslint#readme",
   "keywords": [
     "gulpplugin",
@@ -105,19 +79,7 @@
     "plugin"
   ],
   "license": "MIT",
-  "maintainers": [
-    {
-      "name": "shinnn",
-      "email": "snnskwtnb@gmail.com"
-    },
-    {
-      "name": "adametry",
-      "email": "dark.account@gmail.com"
-    }
-  ],
   "name": "gulp-eslint",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adametry/gulp-eslint.git"
@@ -129,5 +91,5 @@
     "pretest": "gulp test",
     "test": "mocha"
   },
-  "version": "4.0.0"
+  "version": "4.0.2"
 }

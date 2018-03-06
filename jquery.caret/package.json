@@ -1,55 +1,33 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "jquery.caret@0.3.1",
-        "scope": null,
-        "escapedName": "jquery.caret",
-        "name": "jquery.caret",
-        "rawSpec": "0.3.1",
-        "spec": "0.3.1",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "jquery.caret@0.3.1",
   "_id": "jquery.caret@0.3.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-nAkzGPrzJ+/zIugmyp8yQTaLx7g=",
   "_location": "/jquery.caret",
-  "_nodeVersion": "6.2.0",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/jquery.caret-0.3.1.tgz_1466837420868_0.5460515073500574"
-  },
-  "_npmUser": {
-    "name": "ichord",
-    "email": "chord.luo@gmail.com"
-  },
-  "_npmVersion": "3.8.9",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "jquery.caret@0.3.1",
-    "scope": null,
-    "escapedName": "jquery.caret",
     "name": "jquery.caret",
+    "escapedName": "jquery.caret",
     "rawSpec": "0.3.1",
-    "spec": "0.3.1",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "0.3.1"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/jquery.caret/-/jquery.caret-0.3.1.tgz",
   "_shasum": "9c093318faf327eff322e826ca9f3241368bc7b8",
-  "_shrinkwrap": null,
   "_spec": "jquery.caret@0.3.1",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Harold.luo",
     "email": "chord.luo@gmail.com"
   },
-  "dependencies": {},
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Get caret position and offset from inputor",
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -61,12 +39,6 @@
     "grunt-json-replace": "~0.1.2",
     "grunt-umd": "^2.2.1"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "9c093318faf327eff322e826ca9f3241368bc7b8",
-    "tarball": "https://registry.npmjs.org/jquery.caret/-/jquery.caret-0.3.1.tgz"
-  },
-  "gitHead": "341fb20b6126220192b2cd226836cd5d614b3e09",
   "keywords": [
     "jquery",
     "caret",
@@ -75,19 +47,7 @@
   ],
   "license": "MIT",
   "main": "dist/jquery.caret.js",
-  "maintainers": [
-    {
-      "name": "rifat",
-      "email": "to.rifat@gmail.com"
-    },
-    {
-      "name": "ichord",
-      "email": "chord.luo@gmail.com"
-    }
-  ],
   "name": "jquery.caret",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": "",
   "scripts": {
     "test": "grunt test --verbose"

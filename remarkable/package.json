@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "remarkable@1.7.1",
-        "scope": null,
-        "escapedName": "remarkable",
-        "name": "remarkable",
-        "rawSpec": "1.7.1",
-        "spec": "1.7.1",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "remarkable@1.7.1",
   "_id": "remarkable@1.7.1",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-qspJchALZqZCpjoQIcpLrBvjv/Y=",
   "_location": "/remarkable",
-  "_nodeVersion": "6.0.0",
-  "_npmOperationalInternal": {
-    "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/remarkable-1.7.1.tgz_1475517695993_0.8667815863154829"
-  },
-  "_npmUser": {
-    "name": "spicyj",
-    "email": "ben@benalpert.com"
-  },
-  "_npmVersion": "3.8.6",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "remarkable@1.7.1",
-    "scope": null,
-    "escapedName": "remarkable",
     "name": "remarkable",
+    "escapedName": "remarkable",
     "rawSpec": "1.7.1",
-    "spec": "1.7.1",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "1.7.1"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/remarkable/-/remarkable-1.7.1.tgz",
   "_shasum": "aaca4972100b66a642a63a1021ca4bac1be3bff6",
-  "_shrinkwrap": null,
   "_spec": "remarkable@1.7.1",
   "_where": "C:\\Github\\agent",
   "bin": {
@@ -51,6 +28,7 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/remarkable/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "url": "https://github.com/dohliam"
@@ -186,6 +164,7 @@
     "argparse": "~0.1.15",
     "autolinker": "~0.15.0"
   },
+  "deprecated": false,
   "description": "Markdown parser, done right. 100% Commonmark support, extensions, syntax plugins, high speed - all in one.",
   "devDependencies": {
     "ansi": "^0.3.0",
@@ -195,11 +174,6 @@
     "highlight.js": "^9.7.0",
     "marked": "0.3.2",
     "mocha": "*"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "aaca4972100b66a642a63a1021ca4bac1be3bff6",
-    "tarball": "https://registry.npmjs.org/remarkable/-/remarkable-1.7.1.tgz"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -228,36 +202,14 @@
   "maintainers": [
     {
       "name": "doowb",
-      "email": "brian.woodward@gmail.com"
-    },
-    {
-      "name": "joeybaker",
-      "email": "joey@byjoeybaker.com"
+      "email": "brian.woodward@sellside.com"
     },
     {
       "name": "jonschlinkert",
       "email": "github@sellside.com"
-    },
-    {
-      "name": "matthewmueller",
-      "email": "mattmuelle@gmail.com"
-    },
-    {
-      "name": "nikolas",
-      "email": "nikolas@gnu.org"
-    },
-    {
-      "name": "pkfladset",
-      "email": "fladset@gmail.com"
-    },
-    {
-      "name": "spicyj",
-      "email": "ben@benalpert.com"
     }
   ],
   "name": "remarkable",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonschlinkert/remarkable.git"

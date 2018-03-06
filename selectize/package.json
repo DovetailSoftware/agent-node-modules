@@ -1,48 +1,25 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "selectize@0.12.4",
-        "scope": null,
-        "escapedName": "selectize",
-        "name": "selectize",
-        "rawSpec": "0.12.4",
-        "spec": "0.12.4",
-        "type": "version"
-      },
-      "C:\\Github\\agent"
-    ]
-  ],
   "_from": "selectize@0.12.4",
   "_id": "selectize@0.12.4",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha1-UMaXUmtgneoR2hU89yUrmJSPTA4=",
   "_location": "/selectize",
-  "_nodeVersion": "6.7.0",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/selectize-0.12.4.tgz_1476303787739_0.19396805576980114"
-  },
-  "_npmUser": {
-    "name": "joallard",
-    "email": "jonathan@allard.io"
-  },
-  "_npmVersion": "3.10.7",
   "_phantomChildren": {},
   "_requested": {
+    "type": "version",
+    "registry": true,
     "raw": "selectize@0.12.4",
-    "scope": null,
-    "escapedName": "selectize",
     "name": "selectize",
+    "escapedName": "selectize",
     "rawSpec": "0.12.4",
-    "spec": "0.12.4",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "0.12.4"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/selectize/-/selectize-0.12.4.tgz",
   "_shasum": "50c697526b609dea11da153cf7252b98948f4c0e",
-  "_shrinkwrap": null,
   "_spec": "selectize@0.12.4",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -52,10 +29,12 @@
   "bugs": {
     "url": "https://github.com/selectize/selectize.js/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "microplugin": "0.0.3",
     "sifter": "^0.5.1"
   },
+  "deprecated": false,
   "description": "Selectize is a jQuery-based custom <select> UI control. Useful for tagging, contact lists, country selectors, etc.",
   "devDependencies": {
     "chai": "^3.5.0",
@@ -84,15 +63,9 @@
     "karma-sauce-launcher": "^0.2.10",
     "mocha": "^3.1.0"
   },
-  "directories": {},
-  "dist": {
-    "shasum": "50c697526b609dea11da153cf7252b98948f4c0e",
-    "tarball": "https://registry.npmjs.org/selectize/-/selectize-0.12.4.tgz"
-  },
   "engines": {
     "node": "*"
   },
-  "gitHead": "47e048662d865c4f1ea3b2337de5e06e92fd9530",
   "homepage": "https://github.com/selectize/selectize.js#readme",
   "keywords": [
     "select",
@@ -106,19 +79,7 @@
   ],
   "license": "Apache-2.0",
   "main": "dist/js/selectize.js",
-  "maintainers": [
-    {
-      "name": "brianreavis",
-      "email": "brian@thirdroute.com"
-    },
-    {
-      "name": "joallard",
-      "email": "jonathan@allard.io"
-    }
-  ],
   "name": "selectize",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/selectize/selectize.js.git"

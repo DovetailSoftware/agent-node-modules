@@ -22,6 +22,7 @@ A collection of common interactive command line user interfaces.
   4. [News](#news)
   5. [Contributing](#contributing)
   6. [License](#license)
+  7. [Plugins](#plugins)
 
 
 ## Goal and Philosophy
@@ -86,7 +87,7 @@ Register prompt plugins under `name`.
 
 #### `inquirer.createPromptModule() -> prompt function`
 
-Create a self contained inquirer module. If don't want to affect other libraries that also rely on inquirer when you overwrite or add new prompt types.
+Create a self contained inquirer module. If you don't want to affect other libraries that also rely on inquirer when you overwrite or add new prompt types.
 
 ```js
 var prompt = inquirer.createPromptModule();
@@ -112,6 +113,8 @@ Array values can be simple `strings`, or `objects` containing a `name` (to displ
 - **filter**: (Function) Receive the user input and return the filtered value to be used inside the program. The value returned will be added to the _Answers_ hash.
 - **when**: (Function, Boolean) Receive the current user answers hash and should return `true` or `false` depending on whether or not this question should be asked. The value can also be a simple boolean.
 - **pageSize**: (Number) Change the number of lines that will be rendered when using `list`, `rawList`, `expand` or `checkbox`.
+- **prefix**: (String) Change the default _prefix_ message.
+- **suffix**: (String) Change the default _suffix_ message.
 
 `default`, `choices`(if defined as functions), `validate`, `filter` and `when` functions can be called asynchronous. Either return a promise or use `this.async()` to get a callback you'll call with the final value.
 
@@ -352,3 +355,32 @@ to [@vaxilart](https://twitter.com/Vaxilart)) or just add your name to [the wiki
 
 Copyright (c) 2016 Simon Boudrias (twitter: [@vaxilart](https://twitter.com/Vaxilart))
 Licensed under the MIT license.
+
+## Plugins
+<a name="plugins"></a>
+
+### Prompts ###
+
+[__autocomplete__](https://github.com/mokkabonna/inquirer-autocomplete-prompt)<br>
+Presents a list of options as the user types, compatible with other packages such as fuzzy (for search)<br>
+<br>
+![autocomplete prompt](https://github.com/mokkabonna/inquirer-autocomplete-prompt/raw/master/inquirer.gif)
+
+[__datetime__](https://github.com/DerekTBrown/inquirer-datepicker-prompt)<br>
+Customizable date/time selector using both number pad and arrow keys<br>
+<br>
+![Datetime Prompt](https://github.com/DerekTBrown/inquirer-datepicker-prompt/raw/master/example/datetime-prompt.png)
+
+[__inquirer-select-line__](https://github.com/adam-golab/inquirer-select-line)<br>
+Prompt for selecting index in array where add new element<br>
+<br>
+![inquirer-select-line gif](https://media.giphy.com/media/xUA7b1MxpngddUvdHW/giphy.gif)
+
+[__command__](https://github.com/sullof/inquirer-command-prompt)<br>
+<br>
+Simple prompt with command history and dynamic autocomplete
+
+[__inquirer-chalk-pipe__](https://github.com/LitoMore/inquirer-chalk-pipe)<br>
+Prompt for input chalk-pipe style strings<br>
+<br>
+![inquirer-chalk-pipe](https://github.com/LitoMore/inquirer-chalk-pipe/raw/master/screenshot.gif)
