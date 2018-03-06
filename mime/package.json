@@ -16,7 +16,6 @@
     "fetchSpec": "1.3.4"
   },
   "_requiredBy": [
-    "/gulp-less/less",
     "/send",
     "/serve-static/send"
   ],

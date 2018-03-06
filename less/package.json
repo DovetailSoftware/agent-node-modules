@@ -16,7 +16,8 @@
     "fetchSpec": ">=1.4.1"
   },
   "_requiredBy": [
-    "/beautiful-docs"
+    "/beautiful-docs",
+    "/gulp-less"
   ],
   "_resolved": "https://registry.npmjs.org/less/-/less-3.0.1.tgz",
   "_shasum": "ba2fea24a5632ccb8c84230d6043c0bf91855e37",

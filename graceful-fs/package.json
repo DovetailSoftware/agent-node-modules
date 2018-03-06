@@ -22,7 +22,6 @@
     "/flat-cache",
     "/fs-extra",
     "/fs-write-stream-atomic",
-    "/gulp-less/less",
     "/jsonfile",
     "/klaw",
     "/less",

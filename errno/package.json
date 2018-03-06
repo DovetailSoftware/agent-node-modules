@@ -16,7 +16,6 @@
     "fetchSpec": "^0.1.1"
   },
   "_requiredBy": [
-    "/gulp-less/less",
     "/less",
     "/memory-fs",
     "/worker-farm"

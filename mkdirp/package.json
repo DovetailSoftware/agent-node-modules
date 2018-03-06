@@ -23,7 +23,6 @@
     "/copy-concurrently",
     "/eslint",
     "/express",
-    "/gulp-less/less",
     "/istanbul",
     "/less",
     "/mem-fs-editor",

@@ -17,7 +17,6 @@
   },
   "_requiredBy": [
     "/codecov",
-    "/gulp-less/less",
     "/iedriver",
     "/less",
     "/phantomjs-prebuilt"
