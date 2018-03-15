@@ -1,8 +1,8 @@
 {
   "_from": "flow-parser@^0.*",
-  "_id": "flow-parser@0.67.1",
+  "_id": "flow-parser@0.68.0",
   "_inBundle": false,
-  "_integrity": "sha1-GR/tVsz9jQl9ydSH8to7Da50WEk=",
+  "_integrity": "sha1-nMlmIKEC4xajFLa81WIFzqzoYtg=",
   "_location": "/flow-parser",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "/jscodeshift",
     "/webpack-addons/jscodeshift"
   ],
-  "_resolved": "https://registry.npmjs.org/flow-parser/-/flow-parser-0.67.1.tgz",
-  "_shasum": "191fed56ccfd8d097dc9d487f2da3b0dae745849",
+  "_resolved": "https://registry.npmjs.org/flow-parser/-/flow-parser-0.68.0.tgz",
+  "_shasum": "9cc96620a102e316a314b6bcd56205ceace862d8",
   "_spec": "flow-parser@^0.*",
   "_where": "C:\\Github\\agent\\node_modules\\jscodeshift",
   "author": {
@@ -58,5 +58,5 @@
     "prepublish": "make js",
     "test": "node test/run_tests.js"
   },
-  "version": "0.67.1"
+  "version": "0.68.0"
 }

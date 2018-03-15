@@ -15,7 +15,7 @@
     "core-js": "2.5.3",
     "expand-range": "1.8.2",
     "filename-regex": "2.0.1",
-    "flow-parser": "0.67.1",
+    "flow-parser": "0.68.0",
     "is-buffer": "1.1.6",
     "is-posix-bracket": "0.1.1",
     "lodash": "4.17.4",

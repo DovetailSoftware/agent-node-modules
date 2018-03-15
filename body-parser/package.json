@@ -18,7 +18,7 @@
   "_requiredBy": [
     "/connect"
   ],
-  "_resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.13.3.tgz",
+  "_resolved": "http://registry.npmjs.org/body-parser/-/body-parser-1.13.3.tgz",
   "_shasum": "c08cf330c3358e151016a05746f13f029c97fa97",
   "_spec": "body-parser@~1.13.3",
   "_where": "C:\\Github\\agent\\node_modules\\connect",
