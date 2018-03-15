@@ -19,6 +19,8 @@
     "/browserify-aes",
     "/chromedriver/request",
     "/cipher-base",
+    "/cloneable-readable/readable-stream",
+    "/cloneable-readable/string_decoder",
     "/concat-stream/readable-stream",
     "/concat-stream/string_decoder",
     "/create-hmac",

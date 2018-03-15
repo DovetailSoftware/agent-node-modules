@@ -33,10 +33,9 @@
     "/inquirer",
     "/jscodeshift",
     "/table",
+    "/webpack-addons/jscodeshift",
     "/yeoman-environment",
-    "/yeoman-generator",
-    "/yeoman-generator/inquirer",
-    "/yeoman-generator/yeoman-environment"
+    "/yeoman-generator"
   ],
   "_resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz",
   "_shasum": "78203a4d1c328ae1d86dca6460e369b57f4055ae",

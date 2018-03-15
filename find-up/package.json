@@ -19,7 +19,7 @@
     "/babel-plugin-istanbul",
     "/eslint-plugin-import/read-pkg-up",
     "/pkg-dir",
-    "/webpack-cli/read-pkg-up",
+    "/webpack-cli/yargs",
     "/yeoman-generator",
     "/yeoman-generator/read-pkg-up"
   ],

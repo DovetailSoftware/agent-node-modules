@@ -203,6 +203,11 @@
 			group: DISPLAY_GROUP,
 			describe:
 				"Controls the output of lifecycle messaging e.g. Started watching files..."
+		},
+		"build-delimiter": {
+			type: "string",
+			group: DISPLAY_GROUP,
+			describe: "Display custom text after build output"
 		}
 	});
 
@@ -419,6 +424,10 @@
 				outputOptions.infoVerbosity = value;
 			});
 
+			ifArg("build-delimiter", function(value) {
+				outputOptions.buildDelimiter = value;
+			});
+
 			const webpack = require("webpack");
 
 			let lastHash = null;
@@ -441,11 +450,9 @@
 
 			if (argv.progress) {
 				const ProgressPlugin = require("webpack").ProgressPlugin;
-				compiler.apply(
-					new ProgressPlugin({
-						profile: argv.profile
-					})
-				);
+				new ProgressPlugin({
+					profile: argv.profile
+				}).apply(compiler);
 			}
 
 			if (outputOptions.infoVerbosity === "verbose") {
@@ -475,7 +482,8 @@
 				} else if (stats.hash !== lastHash) {
 					lastHash = stats.hash;
 					const statsString = stats.toString(outputOptions);
-					if (statsString) stdout.write(statsString + "\n");
+					const delimiter = outputOptions.buildDelimiter ? `${outputOptions.buildDelimiter}\n` : "";
+					if (statsString) stdout.write(`${statsString}\n${delimiter}`);
 				}
 				if (!options.watch && stats.hasErrors()) {
 					process.exitCode = 2;

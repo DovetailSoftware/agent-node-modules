@@ -1,26 +1,26 @@
 {
-  "_from": "webpack-livereload-plugin@^1.0.0",
-  "_id": "webpack-livereload-plugin@1.0.0",
+  "_from": "webpack-livereload-plugin@^2.0.0",
+  "_id": "webpack-livereload-plugin@2.0.0",
   "_inBundle": false,
-  "_integrity": "sha512-T9w7gXB2FLR2NaspTUdG/Qfy0lUwcTwD27NzaHcAflUG1P2tdhOmS4yBbOUwJRSQ4vXxex910k5sx9wfe9nMGg==",
+  "_integrity": "sha512-WKOZIEB95OXC63EgECF1JCRGxY1wGO8BESHlm2GUQYHXtMQvaPhOyW+l+clcxJghDE/pQgsQKP3ywYSbiUlVIQ==",
   "_location": "/webpack-livereload-plugin",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "webpack-livereload-plugin@^1.0.0",
+    "raw": "webpack-livereload-plugin@^2.0.0",
     "name": "webpack-livereload-plugin",
     "escapedName": "webpack-livereload-plugin",
-    "rawSpec": "^1.0.0",
+    "rawSpec": "^2.0.0",
     "saveSpec": null,
-    "fetchSpec": "^1.0.0"
+    "fetchSpec": "^2.0.0"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-1.0.0.tgz",
-  "_shasum": "c197397ebe2a922d91da81642e000eb52c949299",
-  "_spec": "webpack-livereload-plugin@^1.0.0",
+  "_resolved": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-2.0.0.tgz",
+  "_shasum": "a024ac6d62e6c85440e27a0744d892d87a090b7c",
+  "_spec": "webpack-livereload-plugin@^2.0.0",
   "_where": "C:\\Github\\agent",
   "author": {
     "name": "Jason Staten"
@@ -53,5 +53,5 @@
   "scripts": {
     "test": "faucet test.js"
   },
-  "version": "1.0.0"
+  "version": "2.0.0"
 }

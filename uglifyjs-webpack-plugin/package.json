@@ -1,8 +1,8 @@
 {
   "_from": "uglifyjs-webpack-plugin@^1.1.1",
-  "_id": "uglifyjs-webpack-plugin@1.2.2",
+  "_id": "uglifyjs-webpack-plugin@1.2.3",
   "_inBundle": false,
-  "_integrity": "sha512-CG/NvzXfemUAm5Y4Guh5eEaJYHtkG7kKNpXEJHp9QpxsFVB5/qKvYWoMaq4sa99ccZ0hM3MK8vQV9XPZB4357A==",
+  "_integrity": "sha512-as/50351uuJGiQbhVvE510SCqM/YOWghCzIFJeEOu5oVE0QOZ3/vu2QcnVvu0Lz+vNd0rKsiCFAlbcw0i/YH2w==",
   "_location": "/uglifyjs-webpack-plugin",
   "_phantomChildren": {},
   "_requested": {
@@ -16,11 +16,10 @@
     "fetchSpec": "^1.1.1"
   },
   "_requiredBy": [
-    "/webpack",
-    "/webpack-cli"
+    "/webpack"
   ],
-  "_resolved": "https://registry.npmjs.org/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.2.2.tgz",
-  "_shasum": "e7516d4367afdb715c3847841eb46f94c45ca2b9",
+  "_resolved": "https://registry.npmjs.org/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.2.3.tgz",
+  "_shasum": "bf23197b37a8fc953fecfbcbab66e506f9a0ae72",
   "_spec": "uglifyjs-webpack-plugin@^1.1.1",
   "_where": "C:\\Github\\agent\\node_modules\\webpack",
   "author": {
@@ -31,9 +30,9 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "cacache": "^10.0.1",
+    "cacache": "^10.0.4",
     "find-cache-dir": "^1.0.0",
-    "schema-utils": "^0.4.2",
+    "schema-utils": "^0.4.5",
     "serialize-javascript": "^1.4.0",
     "source-map": "^0.6.1",
     "uglify-es": "^3.3.4",
@@ -112,5 +111,5 @@
     "travis:test": "npm run test -- --runInBand",
     "webpack-defaults": "webpack-defaults"
   },
-  "version": "1.2.2"
+  "version": "1.2.3"
 }

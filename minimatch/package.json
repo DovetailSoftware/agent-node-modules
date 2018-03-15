@@ -24,8 +24,7 @@
     "/mocha/glob",
     "/multimatch",
     "/readdirp",
-    "/remap-istanbul",
-    "/yeoman-generator/glob"
+    "/remap-istanbul"
   ],
   "_resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.0.4.tgz",
   "_shasum": "5166e286457f03306064be5497e8dbb0c3d32083",

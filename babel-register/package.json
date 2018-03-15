@@ -17,7 +17,8 @@
   },
   "_requiredBy": [
     "/babel-core",
-    "/jscodeshift"
+    "/jscodeshift",
+    "/webpack-addons/jscodeshift"
   ],
   "_resolved": "https://registry.npmjs.org/babel-register/-/babel-register-6.26.0.tgz",
   "_shasum": "6ed021173e2fcb486d7acb45c6009a856f647071",

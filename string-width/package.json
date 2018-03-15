@@ -18,6 +18,7 @@
   "_requiredBy": [
     "/inquirer",
     "/table",
+    "/webpack-cli/cliui",
     "/webpack-cli/inquirer",
     "/webpack-cli/yargs"
   ],

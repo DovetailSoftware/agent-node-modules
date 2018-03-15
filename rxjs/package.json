@@ -1,8 +1,8 @@
 {
   "_from": "rxjs@^5.5.2",
-  "_id": "rxjs@5.5.6",
+  "_id": "rxjs@5.5.7",
   "_inBundle": false,
-  "_integrity": "sha512-v4Q5HDC0FHAQ7zcBX7T2IL6O5ltl1a2GX4ENjPXg6SjDY69Cmx9v4113C99a4wGF16ClPv5Z8mghuYorVkg/kg==",
+  "_integrity": "sha512-Hxo2ac8gRQjwjtKgukMIwBRbq5+KAeEV5hXM4obYBOAghev41bDQWgFH4svYiU9UnQ5kNww2LgfyBdevCd2HXA==",
   "_location": "/rxjs",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "/listr",
     "/webpack-cli/inquirer"
   ],
-  "_resolved": "https://registry.npmjs.org/rxjs/-/rxjs-5.5.6.tgz",
-  "_shasum": "e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02",
+  "_resolved": "https://registry.npmjs.org/rxjs/-/rxjs-5.5.7.tgz",
+  "_shasum": "afb3d1642b069b2fbf203903d6501d1acb4cda27",
   "_spec": "rxjs@^5.5.2",
   "_where": "C:\\Github\\agent\\node_modules\\webpack-cli\\node_modules\\inquirer",
   "author": {
@@ -195,5 +195,5 @@
     "watch": "Watch codebase, trigger compile when source code changes"
   },
   "typings": "./Rx.d.ts",
-  "version": "5.5.6"
+  "version": "5.5.7"
 }

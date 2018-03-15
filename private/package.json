@@ -17,9 +17,9 @@
   },
   "_requiredBy": [
     "/babel-core",
-    "/jscodeshift/recast",
     "/recast",
-    "/regenerator-transform"
+    "/regenerator-transform",
+    "/webpack-addons/recast"
   ],
   "_resolved": "https://registry.npmjs.org/private/-/private-0.1.8.tgz",
   "_shasum": "2381edb3689f7a53d653190060fcf822d2f368ff",

@@ -21,7 +21,8 @@
     "/log-symbols/ansi-styles",
     "/table/ansi-styles",
     "/webpack-cli/ansi-styles",
-    "/yeoman-environment/ansi-styles"
+    "/yeoman-environment/ansi-styles",
+    "/yeoman-generator/ansi-styles"
   ],
   "_resolved": "https://registry.npmjs.org/color-convert/-/color-convert-1.9.1.tgz",
   "_shasum": "c1261107aeb2f294ebffec9ed9ecad529a6097ed",

@@ -26,8 +26,7 @@
     "/mocha/glob",
     "/pump",
     "/pump/end-of-stream",
-    "/stream-each/end-of-stream",
-    "/yeoman-generator/glob"
+    "/stream-each/end-of-stream"
   ],
   "_resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
   "_shasum": "583b1aa775961d4b113ac17d9c50baef9dd76bd1",

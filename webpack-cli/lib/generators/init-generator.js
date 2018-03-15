@@ -22,7 +22,7 @@ const tooltip = require("./utils/tooltip");
  *
  * Generator for initializing a webpack config
  *
- * @class InitGenerator
+ * @class 	InitGenerator
  * @extends Generator
  * @returns {Void} After execution, transforms are triggered
  *
@@ -39,9 +39,10 @@ module.exports = class InitGenerator extends Generator {
 			}
 		};
 	}
+
 	prompting() {
-		let done = this.async();
-		let self = this;
+		const done = this.async();
+		const self = this;
 		let oneOrMoreEntries;
 		let regExpForStyles;
 		let ExtractUseProps;
@@ -114,26 +115,20 @@ module.exports = class InitGenerator extends Generator {
 					Confirm("prodConfirm", "Are you going to use this in production?")
 				]);
 			})
-			.then(prodAnswer => {
-				if (prodAnswer["prodConfirm"] === true) {
-					this.isProd = true;
-				} else {
-					this.isProd = false;
-				}
-			})
+			.then(prodConfirmAnswer => this.isProd = prodConfirmAnswer["prodConfirm"])
 			.then(() => {
 				return this.prompt([
 					Confirm("babelConfirm", "Will you be using ES2015?")
 				]);
 			})
-			.then(ans => {
-				if (ans["babelConfirm"] === true) {
+			.then(babelConfirmAnswer => {
+				if (babelConfirmAnswer["babelConfirm"] === true) {
 					this.configuration.config.webpackOptions.module.rules.push(
 						getBabelPlugin()
 					);
 					this.dependencies.push(
-						"babel-loader",
 						"babel-core",
+						"babel-loader",
 						"babel-preset-env"
 					);
 				}
@@ -149,11 +144,11 @@ module.exports = class InitGenerator extends Generator {
 					])
 				]);
 			})
-			.then(stylingAnswer => {
+			.then(stylingTypeAnswer => {
 				if (!this.isProd) {
 					ExtractUseProps = [];
 				}
-				switch (stylingAnswer["stylingType"]) {
+				switch (stylingTypeAnswer["stylingType"]) {
 					case "SASS":
 						this.dependencies.push(
 							"sass-loader",
@@ -161,7 +156,7 @@ module.exports = class InitGenerator extends Generator {
 							"style-loader",
 							"css-loader"
 						);
-						regExpForStyles = new RegExp(/\.(scss|css)$/);
+						regExpForStyles = `${new RegExp(/\.(scss|css)$/)}`;
 						if (this.isProd) {
 							ExtractUseProps = `
 								use: [{
@@ -192,7 +187,7 @@ module.exports = class InitGenerator extends Generator {
 						}
 						break;
 					case "LESS":
-						regExpForStyles = new RegExp(/\.(less|css)$/);
+						regExpForStyles = `${new RegExp(/\.(less|css)$/)}`;
 						this.dependencies.push(
 							"less-loader",
 							"less",
@@ -245,7 +240,7 @@ module.exports = class InitGenerator extends Generator {
 							"precss",
 							"autoprefixer"
 						);
-						regExpForStyles = new RegExp(/\.css$/);
+						regExpForStyles = `${new RegExp(/\.css$/)}`;
 						if (this.isProd) {
 							ExtractUseProps = `
 								use: [{
@@ -297,7 +292,7 @@ module.exports = class InitGenerator extends Generator {
 						break;
 					case "CSS":
 						this.dependencies.push("style-loader", "css-loader");
-						regExpForStyles = new RegExp(/\.css$/);
+						regExpForStyles = `${new RegExp(/\.css$/)}`;
 						if (this.isProd) {
 							ExtractUseProps = `
 								use: [{
@@ -335,12 +330,13 @@ module.exports = class InitGenerator extends Generator {
 					)
 				]);
 			})
-			.then(extractAnswer => {
-				const cssBundleName = extractAnswer.extractPlugin;
+			.then(extractPluginAnswer => {
+				const cssBundleName = extractPluginAnswer["extractPlugin"];
 				if (regExpForStyles) {
 					if (this.isProd) {
 						this.configuration.config.topScope.push(tooltip.cssPlugin());
-						this.dependencies.push("extract-text-webpack-plugin");
+						// TODO: Replace with regular version once v.4 is out
+						this.dependencies.push("extract-text-webpack-plugin@next");
 
 						if (cssBundleName.length !== 0) {
 							this.configuration.config.webpackOptions.plugins.push(
@@ -387,21 +383,19 @@ module.exports = class InitGenerator extends Generator {
 				done();
 			});
 	}
+
 	installPlugins() {
-		let asyncNamePrompt = this.async();
-		let defaultName = this.isProd ? "prod" : "config";
+		const asyncNamePrompt = this.async();
+		const defaultName = this.isProd ? "prod" : "config";
 		this.prompt([
 			Input(
 				"nameType",
 				`Name your 'webpack.[name].js?' [default: '${defaultName}']:`
 			)
 		])
-			.then(nameAnswer => {
-				if (nameAnswer["nameType"].length) {
-					this.configuration.config.configName = nameAnswer["nameType"];
-				} else {
-					this.configuration.config.configName = defaultName;
-				}
+			.then(nameTypeAnswer => {
+				this.configuration.config.configName = nameTypeAnswer["nameType"].length ?
+					nameTypeAnswer["nameType"] : defaultName;
 			})
 			.then(() => {
 				asyncNamePrompt();
@@ -409,5 +403,9 @@ module.exports = class InitGenerator extends Generator {
 					"save-dev": true
 				});
 			});
+	}
+
+	writing() {
+		this.config.set("configuration", this.configuration);
 	}
 };

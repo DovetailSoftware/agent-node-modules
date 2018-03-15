@@ -30,7 +30,6 @@
     "/readdirp",
     "/vinyl-file",
     "/watchpack",
-    "/webpack-cli/load-json-file",
     "/write-file-atomic",
     "/yeoman-generator/load-json-file"
   ],

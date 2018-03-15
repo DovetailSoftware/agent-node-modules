@@ -8,7 +8,7 @@ const _ = require('lodash');
 const findUp = require('find-up');
 const readPkgUp = require('read-pkg-up');
 const chalk = require('chalk');
-const mkdirp = require('mkdirp');
+const makeDir = require('make-dir');
 const minimist = require('minimist');
 const runAsync = require('run-async');
 const through = require('through2');
@@ -133,7 +133,6 @@ class Generator extends EventEmitter {
     this.appname = this.determineAppname();
     this.config = this._getStorage();
     this._globalConfig = this._getGlobalStorage();
-    this.orginalArgs = _.clone(this);
 
     // Ensure source/destination path, can be configured from subclasses
     this.sourceRoot(path.join(path.dirname(this.resolved), 'templates'));
@@ -374,18 +373,6 @@ class Generator extends EventEmitter {
     this._running = true;
     this.emit('run');
 
-    const restArgs = Object.keys(_.clone(this)).filter(orginalArg => {
-      return !this.orginalArgs[orginalArg] && this[orginalArg] &&
-        (orginalArg.substring(0, 1) !== '_') && (orginalArg !== 'orginalArgs');
-    });
-
-    this.env.getArgument = function (name) {
-      if (restArgs.includes(name)) {
-        const query = name.toString();
-        return self[query];
-      }
-    };
-
     const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(this));
     const validMethods = methods.filter(methodIsValid);
     assert(validMethods.length, 'This Generator is empty. Add at least one method for it to run.');
@@ -581,7 +568,7 @@ class Generator extends EventEmitter {
       this._destinationRoot = path.resolve(rootPath);
 
       if (!fs.existsSync(rootPath)) {
-        mkdirp.sync(rootPath);
+        makeDir.sync(rootPath);
       }
 
       process.chdir(rootPath);

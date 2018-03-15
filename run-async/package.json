@@ -18,8 +18,7 @@
   "_requiredBy": [
     "/inquirer",
     "/webpack-cli/inquirer",
-    "/yeoman-generator",
-    "/yeoman-generator/inquirer"
+    "/yeoman-generator"
   ],
   "_resolved": "https://registry.npmjs.org/run-async/-/run-async-2.3.0.tgz",
   "_shasum": "0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0",

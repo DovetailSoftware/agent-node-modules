@@ -16,7 +16,8 @@
     "fetchSpec": "^1.0.0"
   },
   "_requiredBy": [
-    "/find-cache-dir"
+    "/find-cache-dir",
+    "/yeoman-generator"
   ],
   "_resolved": "https://registry.npmjs.org/make-dir/-/make-dir-1.2.0.tgz",
   "_shasum": "6d6a49eead4aae296c53bbf3a1a008bd6c89469b",

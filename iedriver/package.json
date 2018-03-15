@@ -1,8 +1,8 @@
 {
   "_from": "iedriver@^3.3.0",
-  "_id": "iedriver@3.9.1",
+  "_id": "iedriver@3.9.2",
   "_inBundle": false,
-  "_integrity": "sha512-+h+Dd3PLu/UHznErBWEF3kFwWf/vTo9ThDKNsmdef6NCkYDtJTHrHSH7tpt2DwjPb+7PO4UKVLOi7J9MSRFeQA==",
+  "_integrity": "sha512-4rO+FQVuUsjkUCFy02jq5wYX8ZTVHD/nCbg1iz9S2q8/ZEwBgSHGn4g4/PV5293LJNOStNqC3nSLypmDXP2CiA==",
   "_location": "/iedriver",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.9.1.tgz",
-  "_shasum": "7ae10db5cec7651c86aa380fdb3859bac47d405a",
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.9.2.tgz",
+  "_shasum": "3781322371da20493415e79e96c57e71de5f059c",
   "_spec": "iedriver@^3.3.0",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -36,6 +36,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "adm-zip": "0.2.1",
+    "extract-zip": "1.6.6",
     "kew": "~0.1.7",
     "md5-file": "^1.1.4",
     "mkdirp": "0.3.5",
@@ -66,5 +67,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "3.9.1"
+  "version": "3.9.2"
 }

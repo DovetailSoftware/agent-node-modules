@@ -1,8 +1,8 @@
 {
   "_from": "expose-loader@^0.7.0",
-  "_id": "expose-loader@0.7.4",
+  "_id": "expose-loader@0.7.5",
   "_inBundle": false,
-  "_integrity": "sha512-lweINkewAXcQtNjd7j1gO3cd8O/8lNYijsEwH4YZ+Dv3gT2Kh9/YvJov5Mdp2A75QIhgOvsSyRa/ZG3wYjNZpA==",
+  "_integrity": "sha512-iPowgKUZkTPX5PznYsmifVj9Bob0w2wTHVkt/eYNPSzyebkUgIedmskf/kcfEIWpiWjg3JRjnW+a17XypySMuw==",
   "_location": "/expose-loader",
   "_phantomChildren": {},
   "_requested": {
@@ -18,8 +18,8 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.4.tgz",
-  "_shasum": "9bcdd3878b5da9107930b55a03f65afe90b3314a",
+  "_resolved": "https://registry.npmjs.org/expose-loader/-/expose-loader-0.7.5.tgz",
+  "_shasum": "e29ea2d9aeeed3254a3faa1b35f502db9f9c3f6f",
   "_spec": "expose-loader@^0.7.0",
   "_where": "C:\\Github\\agent",
   "author": {
@@ -43,7 +43,7 @@
   "main": "index.js",
   "name": "expose-loader",
   "peerDependencies": {
-    "webpack": "^2.0.0 || ^3.0.0"
+    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
   },
   "repository": {
     "type": "git",
@@ -52,5 +52,5 @@
   "scripts": {
     "release": "standard-version"
   },
-  "version": "0.7.4"
+  "version": "0.7.5"
 }

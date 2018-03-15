@@ -6,7 +6,7 @@
   "_location": "/gulp-concat",
   "_phantomChildren": {
     "clone-buffer": "1.0.0",
-    "cloneable-readable": "1.0.0",
+    "cloneable-readable": "1.1.2",
     "remove-trailing-separator": "1.1.0"
   },
   "_requested": {

@@ -16,6 +16,8 @@
     "fetchSpec": "~2.0.0"
   },
   "_requiredBy": [
+    "/cloneable-readable",
+    "/cloneable-readable/readable-stream",
     "/concat-stream/readable-stream",
     "/duplexify/readable-stream",
     "/flush-write-stream/readable-stream",

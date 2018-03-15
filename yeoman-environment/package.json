@@ -21,7 +21,8 @@
     "fetchSpec": "^2.0.0"
   },
   "_requiredBy": [
-    "/webpack-cli"
+    "/webpack-cli",
+    "/yeoman-generator"
   ],
   "_resolved": "https://registry.npmjs.org/yeoman-environment/-/yeoman-environment-2.0.5.tgz",
   "_shasum": "84f22bafa84088971fe99ea85f654a3a3dd2b693",

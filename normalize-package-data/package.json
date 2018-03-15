@@ -19,7 +19,6 @@
     "/eslint-plugin-import/read-pkg",
     "/meow",
     "/read-pkg",
-    "/webpack-cli/read-pkg",
     "/yeoman-generator/read-pkg"
   ],
   "_resolved": "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.4.0.tgz",

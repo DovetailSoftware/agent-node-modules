@@ -1,5 +1,5 @@
 {
-  "_from": "cacache@^10.0.1",
+  "_from": "cacache@^10.0.4",
   "_id": "cacache@10.0.4",
   "_inBundle": false,
   "_integrity": "sha512-Dph0MzuH+rTQzGPNT9fAnrPmMmjKfST6trxJeK7NQuHRaVw24VzPRWTmg9MpcwOVQZO0E1FBICUlFeNaKPIfHA==",
@@ -8,19 +8,19 @@
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "cacache@^10.0.1",
+    "raw": "cacache@^10.0.4",
     "name": "cacache",
     "escapedName": "cacache",
-    "rawSpec": "^10.0.1",
+    "rawSpec": "^10.0.4",
     "saveSpec": null,
-    "fetchSpec": "^10.0.1"
+    "fetchSpec": "^10.0.4"
   },
   "_requiredBy": [
     "/uglifyjs-webpack-plugin"
   ],
-  "_resolved": "https://registry.npmjs.org/cacache/-/cacache-10.0.4.tgz",
+  "_resolved": "http://registry.npmjs.org/cacache/-/cacache-10.0.4.tgz",
   "_shasum": "6452367999eff9d4188aefd9a14e9d7c6a263460",
-  "_spec": "cacache@^10.0.1",
+  "_spec": "cacache@^10.0.4",
   "_where": "C:\\Github\\agent\\node_modules\\uglifyjs-webpack-plugin",
   "author": {
     "name": "Kat Marchán",

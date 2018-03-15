@@ -158,8 +158,8 @@ function createIdentifierOrLiteral(j, val) {
 
 /**
  *
- * Findes or creates a node for a given plugin name string with options object
- * If plugin decalaration already exist, options are merged.
+ * Finds or creates a node for a given plugin name string with options object
+ * If plugin declaration already exist, options are merged.
  *
  * @param {any} j — jscodeshift API
  * @param {Node} rootNodePath - `plugins: []` NodePath where plugin should be added. See https://github.com/facebook/jscodeshift/wiki/jscodeshift-Documentation#nodepaths
@@ -234,7 +234,7 @@ function createOrUpdatePluginByName(j, rootNodePath, pluginName, options) {
  * @param {any} j — jscodeshift API
  * @param {Node} rootNode - `plugins: []` Root Node. See https://github.com/facebook/jscodeshift/wiki/jscodeshift-Documentation#nodepaths
  * @param {String} pluginPackageName - ex. `extract-text-plugin`
- * @returns {String} variable name - ex. 'var s = require(s) gives "s"`
+ * @returns {String} variable name - ex. 'const s = require(s) gives "s"`
  */
 
 function findVariableToPlugin(j, rootNode, pluginPackageName) {

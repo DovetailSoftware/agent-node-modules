@@ -1,30 +1,30 @@
 {
-  "_from": "mem-fs-editor@^3.0.0",
+  "_from": "mem-fs-editor@^3.0.2",
   "_id": "mem-fs-editor@3.0.2",
   "_inBundle": false,
   "_integrity": "sha1-3Qpuryu4prN3QAZ6pUnrUwEFr58=",
   "_location": "/mem-fs-editor",
   "_phantomChildren": {
     "clone-buffer": "1.0.0",
-    "cloneable-readable": "1.0.0",
+    "cloneable-readable": "1.1.2",
     "remove-trailing-separator": "1.1.0"
   },
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "mem-fs-editor@^3.0.0",
+    "raw": "mem-fs-editor@^3.0.2",
     "name": "mem-fs-editor",
     "escapedName": "mem-fs-editor",
-    "rawSpec": "^3.0.0",
+    "rawSpec": "^3.0.2",
     "saveSpec": null,
-    "fetchSpec": "^3.0.0"
+    "fetchSpec": "^3.0.2"
   },
   "_requiredBy": [
     "/yeoman-generator"
   ],
   "_resolved": "https://registry.npmjs.org/mem-fs-editor/-/mem-fs-editor-3.0.2.tgz",
   "_shasum": "dd0a6eaf2bb8a6b37740067aa549eb530105af9f",
-  "_spec": "mem-fs-editor@^3.0.0",
+  "_spec": "mem-fs-editor@^3.0.2",
   "_where": "C:\\Github\\agent\\node_modules\\yeoman-generator",
   "author": {
     "name": "Simon Boudrias"

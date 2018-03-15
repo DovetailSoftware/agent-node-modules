@@ -21,7 +21,8 @@
     "/log-symbols/supports-color",
     "/table/supports-color",
     "/webpack-cli/supports-color",
-    "/yeoman-environment/supports-color"
+    "/yeoman-environment/supports-color",
+    "/yeoman-generator/supports-color"
   ],
   "_resolved": "https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz",
   "_shasum": "b5d454dc2199ae225699f3467e5a07f3b955bafd",

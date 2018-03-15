@@ -19,7 +19,9 @@
     "/del",
     "/got",
     "/make-dir",
-    "/read-chunk"
+    "/read-chunk",
+    "/yeoman-generator/load-json-file",
+    "/yeoman-generator/path-type"
   ],
   "_resolved": "https://registry.npmjs.org/pify/-/pify-3.0.0.tgz",
   "_shasum": "e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176",

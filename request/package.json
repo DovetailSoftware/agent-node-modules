@@ -16,7 +16,6 @@
     "fetchSpec": "2.81.0"
   },
   "_requiredBy": [
-    "/codecov",
     "/iedriver",
     "/less",
     "/phantomjs-prebuilt"

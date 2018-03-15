@@ -17,8 +17,7 @@
   },
   "_requiredBy": [
     "/inquirer",
-    "/webpack-cli/inquirer",
-    "/yeoman-generator/inquirer"
+    "/webpack-cli/inquirer"
   ],
   "_resolved": "https://registry.npmjs.org/cli-width/-/cli-width-2.2.0.tgz",
   "_shasum": "ff19ede8a9a5e579324147b0c11f0fbcbabed639",

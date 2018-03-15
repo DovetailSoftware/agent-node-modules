@@ -13,7 +13,6 @@
     "is-stream": "1.1.0",
     "isurl": "1.0.0",
     "lowercase-keys": "1.0.0",
-    "p-cancelable": "0.3.0",
     "p-finally": "1.0.0",
     "safe-buffer": "5.1.1",
     "timed-out": "4.0.1",

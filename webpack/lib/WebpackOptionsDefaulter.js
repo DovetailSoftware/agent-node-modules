@@ -128,6 +128,8 @@ class WebpackOptionsDefaulter extends OptionsDefaulter {
 			}
 		});
 		this.set("output.devtoolNamespace", "make", options => {
+			if (Array.isArray(options.output.library))
+				return options.output.library.join(".");
 			return options.output.library || "";
 		});
 		this.set("output.libraryTarget", "var");
@@ -264,10 +266,14 @@ class WebpackOptionsDefaulter extends OptionsDefaulter {
 				apply: compiler => {
 					// Lazy load the uglifyjs plugin
 					const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+					const SourceMapDevToolPlugin = require("./SourceMapDevToolPlugin");
 					new UglifyJsPlugin({
 						cache: true,
 						parallel: true,
-						sourceMap: options.devtool && /source-?map/.test(options.devtool)
+						sourceMap:
+							(options.devtool && /source-?map/.test(options.devtool)) ||
+							(options.plugins &&
+								options.plugins.some(p => p instanceof SourceMapDevToolPlugin))
 					}).apply(compiler);
 				}
 			}

@@ -16,8 +16,7 @@
     "fetchSpec": "^0.3.3"
   },
   "_requiredBy": [
-    "/yeoman-environment",
-    "/yeoman-generator/yeoman-environment"
+    "/yeoman-environment"
   ],
   "_resolved": "https://registry.npmjs.org/grouped-queue/-/grouped-queue-0.3.3.tgz",
   "_shasum": "c167d2a5319c5a0e0964ef6a25b7c2df8996c85c",

@@ -16,8 +16,7 @@
     "fetchSpec": "^2.0.0"
   },
   "_requiredBy": [
-    "/gulp-util",
-    "/yeoman-generator"
+    "/gulp-util"
   ],
   "_resolved": "https://registry.npmjs.org/dateformat/-/dateformat-2.2.0.tgz",
   "_shasum": "4065e2013cf9fb916ddfd82efb506ad4c6769062",
