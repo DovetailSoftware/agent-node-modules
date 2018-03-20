@@ -66,7 +66,7 @@ var UglifyJsPlugin = function () {
     var _options$uglifyOption = options.uglifyOptions,
         uglifyOptions = _options$uglifyOption === undefined ? {} : _options$uglifyOption,
         _options$test = options.test,
-        test = _options$test === undefined ? /\.(js?)(\?.+)?$/i : _options$test,
+        test = _options$test === undefined ? /\.js(\?.*)?$/i : _options$test,
         _options$warningsFilt = options.warningsFilter,
         warningsFilter = _options$warningsFilt === undefined ? function () {
       return true;
@@ -94,7 +94,7 @@ var UglifyJsPlugin = function () {
       exclude,
       uglifyOptions: Object.assign({
         output: {
-          comments: false
+          comments: extractComments ? false : /^\**!|@preserve|@license|@cc_on/
         }
       }, uglifyOptions)
     };

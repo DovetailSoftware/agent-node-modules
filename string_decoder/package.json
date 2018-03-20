@@ -16,6 +16,7 @@
     "fetchSpec": "~0.10.x"
   },
   "_requiredBy": [
+    "/body/raw-body",
     "/glob-stream/readable-stream",
     "/gulp-mocha-phantomjs/readable-stream",
     "/readable-stream",

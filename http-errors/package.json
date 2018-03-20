@@ -23,8 +23,7 @@
     "/mini-lr/body-parser",
     "/send",
     "/serve-index",
-    "/serve-static/send",
-    "/tiny-lr/body-parser"
+    "/serve-static/send"
   ],
   "_resolved": "https://registry.npmjs.org/http-errors/-/http-errors-1.3.1.tgz",
   "_shasum": "197e22cdebd4198585e8694ef6786197b91ed942",

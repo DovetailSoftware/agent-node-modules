@@ -16,6 +16,7 @@
     "fetchSpec": "^7.0.2"
   },
   "_requiredBy": [
+    "/body",
     "/yeoman-generator"
   ],
   "_resolved": "https://registry.npmjs.org/error/-/error-7.0.2.tgz",

@@ -19,6 +19,7 @@
     "/debug",
     "/eslint/debug",
     "/mocha/debug",
+    "/tiny-lr/debug",
     "/yeoman-environment/debug",
     "/yeoman-generator/debug"
   ],

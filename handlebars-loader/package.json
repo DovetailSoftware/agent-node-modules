@@ -1,7 +1,8 @@
 {
-  "_from": "github:Waavi/handlebars-loader",
-  "_id": "handlebars-loader@1.6.0",
+  "_from": "handlebars-loader@^1.7.0",
+  "_id": "handlebars-loader@1.7.0",
   "_inBundle": false,
+  "_integrity": "sha512-tfS3n+PrDB2gnDnrx0/DGvdb4wF4JqV7CEiVof3RymOIWYrcmD+ZiaXTlZ/f7fZ7+aQPEv6JRG0HS7nTlyvGlQ==",
   "_location": "/handlebars-loader",
   "_phantomChildren": {
     "big.js": "3.2.0",
@@ -9,20 +10,21 @@
     "json5": "0.5.1"
   },
   "_requested": {
-    "type": "git",
-    "raw": "handlebars-loader@github:Waavi/handlebars-loader",
+    "type": "range",
+    "registry": true,
+    "raw": "handlebars-loader@^1.7.0",
     "name": "handlebars-loader",
     "escapedName": "handlebars-loader",
-    "rawSpec": "github:Waavi/handlebars-loader",
-    "saveSpec": "github:Waavi/handlebars-loader",
-    "fetchSpec": null,
-    "gitCommittish": null
+    "rawSpec": "^1.7.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.7.0"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "github:Waavi/handlebars-loader#c51b8354b0cd42bbe4a86b58f264f820443dca7f",
-  "_spec": "handlebars-loader@github:Waavi/handlebars-loader",
+  "_resolved": "https://registry.npmjs.org/handlebars-loader/-/handlebars-loader-1.7.0.tgz",
+  "_shasum": "4f750bc62c350fb922e52d8564d667887e909723",
+  "_spec": "handlebars-loader@^1.7.0",
   "_where": "C:\\Github\\agent",
   "author": "",
   "bugs": {
@@ -92,5 +94,5 @@
     "lint": "eslint lib/ test/ index.js",
     "test": "mocha"
   },
-  "version": "1.6.0"
+  "version": "1.7.0"
 }
