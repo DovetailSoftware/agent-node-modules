@@ -7,7 +7,7 @@
   <!-- replace with accurate logo e.g from https://worldvectorlogo.com/ -->
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200" vspace="" hspace="25"
-      src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon.svg">
+      src="https://cdn.jsdelivr.net/gh/webpack/media@e7485eb2/logo/icon.svg">
   </a>
   <h1>Imports Loader</h1>
   <p>The imports loader allows you to use modules that depend on specific global variables.<p>

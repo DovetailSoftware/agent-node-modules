@@ -6,7 +6,7 @@
   <!-- replace with accurate logo e.g from https://worldvectorlogo.com/ -->
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200" vspace="" hspace="25"
-      src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon.svg">
+      src="https://cdn.jsdelivr.net/gh/webpack/media@e7485eb2/logo/icon.svg">
   </a>
   <h1>Expose Loader</h1>
   <p>The expose loader adds modules to the global object. This is useful for debugging, or <a href="https://webpack.js.org/guides/shimming/">supporting libraries that depend on libraries in globals</a>.<p>

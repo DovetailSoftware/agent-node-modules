@@ -2,7 +2,7 @@
 	<br>
 	<br>
 	<br>
-	<img width="380" src="https://rawgit.com/sindresorhus/hasha/master/media/logo.svg" alt="hasha">
+	<img width="380" src="https://cdn.jsdelivr.net/gh/sindresorhus/hasha@master/media/logo.svg" alt="hasha">
 	<br>
 	<br>
 	<br>
