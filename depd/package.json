@@ -26,7 +26,7 @@
   "_resolved": "https://registry.npmjs.org/depd/-/depd-1.0.1.tgz",
   "_shasum": "80aec64c9d6d97e65cc2a9caa93c0aa6abf73aaa",
   "_spec": "depd@~1.0.1",
-  "_where": "C:\\Github\\agent\\node_modules\\express",
+  "_where": "C:\\github\\agent\\node_modules\\express",
   "author": {
     "name": "Douglas Christopher Wilson",
     "email": "doug@somethingdoug.com"

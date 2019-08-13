@@ -25,7 +25,7 @@
   "_resolved": "https://registry.npmjs.org/lodash._reunescapedhtml/-/lodash._reunescapedhtml-2.4.1.tgz",
   "_shasum": "747c4fc40103eb3bb8a0976e571f7a2659e93ba7",
   "_spec": "lodash._reunescapedhtml@~2.4.1",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\lodash.escape",
+  "_where": "C:\\github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\lodash.escape",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",

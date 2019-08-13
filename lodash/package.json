@@ -17,7 +17,6 @@
   },
   "_requiredBy": [
     "/",
-    "/async",
     "/babel-core",
     "/babel-generator",
     "/babel-helper-define-map",
@@ -28,19 +27,13 @@
     "/babel-traverse",
     "/babel-types",
     "/eslint",
-    "/eslint-plugin-import",
-    "/grouped-queue",
     "/inquirer",
-    "/jscodeshift",
-    "/table",
-    "/webpack-addons/jscodeshift",
-    "/yeoman-environment",
-    "/yeoman-generator"
+    "/table"
   ],
   "_resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz",
   "_shasum": "78203a4d1c328ae1d86dca6460e369b57f4055ae",
   "_spec": "lodash@4.17.4",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",

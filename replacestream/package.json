@@ -6,10 +6,10 @@
   "_location": "/replacestream",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
-    "inherits": "2.0.3",
+    "inherits": "2.0.4",
     "isarray": "1.0.0",
-    "process-nextick-args": "2.0.0",
-    "safe-buffer": "5.1.1",
+    "process-nextick-args": "2.0.1",
+    "safe-buffer": "5.1.2",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
@@ -28,7 +28,7 @@
   "_resolved": "https://registry.npmjs.org/replacestream/-/replacestream-4.0.3.tgz",
   "_shasum": "3ee5798092be364b1cdb1484308492cb3dff2f36",
   "_spec": "replacestream@^4.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-replace",
+  "_where": "C:\\github\\agent\\node_modules\\gulp-replace",
   "author": {
     "name": "Eugene Ware",
     "email": "eugene@noblesamurai.com"

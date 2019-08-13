@@ -11,8 +11,10 @@
     "ctype": "0.5.3",
     "escape-string-regexp": "1.0.5",
     "get-stdin": "4.0.1",
-    "inherits": "2.0.3",
+    "hawk": "1.0.0",
+    "inherits": "2.0.4",
     "json-stringify-safe": "5.0.1",
+    "kew": "0.1.7",
     "lodash._escapehtmlchar": "2.4.1",
     "lodash._escapestringchar": "2.4.1",
     "lodash._isnative": "2.4.1",
@@ -25,10 +27,9 @@
     "multipipe": "0.1.2",
     "ncp": "0.4.2",
     "npmconf": "0.0.24",
-    "object-keys": "0.4.0",
     "request-progress": "0.3.1",
     "string_decoder": "0.10.31",
-    "tough-cookie": "2.3.4"
+    "tough-cookie": "2.4.3"
   },
   "_requested": {
     "type": "range",
@@ -46,7 +47,7 @@
   "_resolved": "https://registry.npmjs.org/gulp-mocha-phantomjs/-/gulp-mocha-phantomjs-0.10.1.tgz",
   "_shasum": "ec97f566539a234fe8104ab32e64ea7264af8bc0",
   "_spec": "gulp-mocha-phantomjs@^0.10.1",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "Rui Hu",
     "email": "ruihu.pvt@gmail.com"

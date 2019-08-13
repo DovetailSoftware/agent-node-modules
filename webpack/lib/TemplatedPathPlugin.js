@@ -7,17 +7,20 @@
 const REGEXP_HASH = /\[hash(?::(\d+))?\]/gi,
 	REGEXP_CHUNKHASH = /\[chunkhash(?::(\d+))?\]/gi,
 	REGEXP_MODULEHASH = /\[modulehash(?::(\d+))?\]/gi,
+	REGEXP_CONTENTHASH = /\[contenthash(?::(\d+))?\]/gi,
 	REGEXP_NAME = /\[name\]/gi,
 	REGEXP_ID = /\[id\]/gi,
 	REGEXP_MODULEID = /\[moduleid\]/gi,
 	REGEXP_FILE = /\[file\]/gi,
 	REGEXP_QUERY = /\[query\]/gi,
-	REGEXP_FILEBASE = /\[filebase\]/gi;
+	REGEXP_FILEBASE = /\[filebase\]/gi,
+	REGEXP_URL = /\[url\]/gi;
 
 // Using global RegExp for .test is dangerous
 // We use a normal RegExp instead of .test
 const REGEXP_HASH_FOR_TEST = new RegExp(REGEXP_HASH.source, "i"),
 	REGEXP_CHUNKHASH_FOR_TEST = new RegExp(REGEXP_CHUNKHASH.source, "i"),
+	REGEXP_CONTENTHASH_FOR_TEST = new RegExp(REGEXP_CONTENTHASH.source, "i"),
 	REGEXP_NAME_FOR_TEST = new RegExp(REGEXP_NAME.source, "i");
 
 const withHashLength = (replacer, handlerFn) => {
@@ -37,16 +40,23 @@ const getReplacer = (value, allowEmpty) => {
 		// last argument in replacer is the entire input string
 		const input = args[args.length - 1];
 		if (value === null || value === undefined) {
-			if (!allowEmpty)
+			if (!allowEmpty) {
 				throw new Error(
 					`Path variable ${match} not implemented in this context: ${input}`
 				);
+			}
 			return "";
 		} else {
-			return `${value}`;
+			return `${escapePathVariables(value)}`;
 		}
 	};
 	return fn;
+};
+
+const escapePathVariables = value => {
+	return typeof value === "string"
+		? value.replace(/\[(\\*[\w:]+\\*)\]/gi, "[\\$1\\]")
+		: value;
 };
 
 const replacePathVariables = (path, data) => {
@@ -55,6 +65,15 @@ const replacePathVariables = (path, data) => {
 	const chunkName = chunk && (chunk.name || chunk.id);
 	const chunkHash = chunk && (chunk.renderedHash || chunk.hash);
 	const chunkHashWithLength = chunk && chunk.hashWithLength;
+	const contentHashType = data.contentHashType;
+	const contentHash =
+		(chunk && chunk.contentHash && chunk.contentHash[contentHashType]) ||
+		data.contentHash;
+	const contentHashWithLength =
+		(chunk &&
+			chunk.contentHashWithLength &&
+			chunk.contentHashWithLength[contentHashType]) ||
+		data.contentHashWithLength;
 	const module = data.module;
 	const moduleId = module && module.id;
 	const moduleHash = module && (module.renderedHash || module.hash);
@@ -64,9 +83,13 @@ const replacePathVariables = (path, data) => {
 		path = path(data);
 	}
 
-	if (data.noChunkHash && REGEXP_CHUNKHASH_FOR_TEST.test(path)) {
+	if (
+		data.noChunkHash &&
+		(REGEXP_CHUNKHASH_FOR_TEST.test(path) ||
+			REGEXP_CONTENTHASH_FOR_TEST.test(path))
+	) {
 		throw new Error(
-			`Cannot use [chunkhash] for chunk in '${path}' (use [hash] instead)`
+			`Cannot use [chunkhash] or [contenthash] for chunk in '${path}' (use [hash] instead)`
 		);
 	}
 
@@ -81,6 +104,10 @@ const replacePathVariables = (path, data) => {
 				withHashLength(getReplacer(chunkHash), chunkHashWithLength)
 			)
 			.replace(
+				REGEXP_CONTENTHASH,
+				withHashLength(getReplacer(contentHash), contentHashWithLength)
+			)
+			.replace(
 				REGEXP_MODULEHASH,
 				withHashLength(getReplacer(moduleHash), moduleHashWithLength)
 			)
@@ -91,6 +118,9 @@ const replacePathVariables = (path, data) => {
 			.replace(REGEXP_FILEBASE, getReplacer(data.basename))
 			// query is optional, it's OK if it's in a path but there's nothing to replace it with
 			.replace(REGEXP_QUERY, getReplacer(data.query, true))
+			// only available in sourceMappingURLComment
+			.replace(REGEXP_URL, getReplacer(data.url))
+			.replace(/\[\\(\\*[\w:]+\\*)\\\]/gi, "[$1]")
 	);
 };
 
@@ -115,6 +145,7 @@ class TemplatedPathPlugin {
 					if (
 						REGEXP_HASH_FOR_TEST.test(publicPath) ||
 						REGEXP_CHUNKHASH_FOR_TEST.test(publicPath) ||
+						REGEXP_CONTENTHASH_FOR_TEST.test(publicPath) ||
 						REGEXP_NAME_FOR_TEST.test(publicPath)
 					)
 						return true;
@@ -130,10 +161,19 @@ class TemplatedPathPlugin {
 					const outputOptions = mainTemplate.outputOptions;
 					const chunkFilename =
 						outputOptions.chunkFilename || outputOptions.filename;
-					if (REGEXP_CHUNKHASH_FOR_TEST.test(chunkFilename))
+					if (REGEXP_CHUNKHASH_FOR_TEST.test(chunkFilename)) {
 						hash.update(JSON.stringify(chunk.getChunkMaps(true).hash));
-					if (REGEXP_NAME_FOR_TEST.test(chunkFilename))
+					}
+					if (REGEXP_CONTENTHASH_FOR_TEST.test(chunkFilename)) {
+						hash.update(
+							JSON.stringify(
+								chunk.getChunkMaps(true).contentHash.javascript || {}
+							)
+						);
+					}
+					if (REGEXP_NAME_FOR_TEST.test(chunkFilename)) {
 						hash.update(JSON.stringify(chunk.getChunkMaps(true).name));
+					}
 				}
 			);
 		});

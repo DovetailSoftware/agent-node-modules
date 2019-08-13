@@ -17,13 +17,12 @@
   },
   "_requiredBy": [
     "/gulp",
-    "/gulp-append-prepend",
     "/gulp-livereload"
   ],
   "_resolved": "https://registry.npmjs.org/gulp-util/-/gulp-util-3.0.8.tgz",
   "_shasum": "0054e1e744502e27c04c187c3ecc505dd54bbb4f",
   "_spec": "gulp-util@^3.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp",
+  "_where": "C:\\github\\agent\\node_modules\\gulp",
   "author": {
     "name": "Fractal",
     "email": "contact@wearefractal.com",

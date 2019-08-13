@@ -16,13 +16,12 @@
     "fetchSpec": "0.2.1"
   },
   "_requiredBy": [
-    "/gulp-mocha-phantomjs/phantomjs",
-    "/iedriver"
+    "/gulp-mocha-phantomjs/phantomjs"
   ],
   "_resolved": "https://registry.npmjs.org/adm-zip/-/adm-zip-0.2.1.tgz",
   "_shasum": "e801cedeb5bd9a4e98d699c5c0f4239e2731dcbf",
   "_spec": "adm-zip@0.2.1",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs",
+  "_where": "C:\\github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\phantomjs",
   "author": {
     "name": "Nasca Iacob",
     "email": "sy@another-d-mention.ro",

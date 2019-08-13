@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/sifter/-/sifter-0.5.3.tgz",
   "_shasum": "5e6507fe8c114b2b28d90b6bf4e5b636e611e48b",
   "_spec": "sifter@^0.5.1",
-  "_where": "C:\\Github\\agent\\node_modules\\selectize",
+  "_where": "C:\\github\\agent\\node_modules\\selectize",
   "author": {
     "name": "Brian Reavis",
     "email": "brian@thirdroute.com"

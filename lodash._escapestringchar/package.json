@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/lodash._escapestringchar/-/lodash._escapestringchar-2.4.1.tgz",
   "_shasum": "ecfe22618a2ade50bfeea43937e51df66f0edb72",
   "_spec": "lodash._escapestringchar@~2.4.1",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\lodash.template",
+  "_where": "C:\\github\\agent\\node_modules\\gulp-mocha-phantomjs\\node_modules\\lodash.template",
   "author": {
     "name": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",

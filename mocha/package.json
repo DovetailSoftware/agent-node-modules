@@ -8,7 +8,7 @@
     "fs.realpath": "1.0.0",
     "graceful-readlink": "1.0.1",
     "inflight": "1.0.6",
-    "inherits": "2.0.3",
+    "inherits": "2.0.4",
     "minimatch": "3.0.4",
     "ms": "2.0.0",
     "once": "1.4.0",
@@ -30,7 +30,7 @@
   "_resolved": "https://registry.npmjs.org/mocha/-/mocha-3.5.3.tgz",
   "_shasum": "1e0480fe36d2da5858d1eb6acc38418b26eaa20d",
   "_spec": "mocha@^3.2.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"

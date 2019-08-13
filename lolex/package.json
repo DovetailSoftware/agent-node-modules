@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/lolex/-/lolex-1.6.0.tgz",
   "_shasum": "3a9a0283452a47d7439e72731b9e07d7386e49f6",
   "_spec": "lolex@^1.6.0",
-  "_where": "C:\\Github\\agent\\node_modules\\sinon",
+  "_where": "C:\\github\\agent\\node_modules\\sinon",
   "author": {
     "name": "Christian Johansen"
   },

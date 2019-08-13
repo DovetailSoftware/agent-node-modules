@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.0.tgz",
   "_shasum": "4284fe6ae0630874639e44e80a418c2934135e9e",
   "_spec": "content-disposition@0.5.0",
-  "_where": "C:\\Github\\agent\\node_modules\\express",
+  "_where": "C:\\github\\agent\\node_modules\\express",
   "bugs": {
     "url": "https://github.com/jshttp/content-disposition/issues"
   },

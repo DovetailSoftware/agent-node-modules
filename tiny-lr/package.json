@@ -5,8 +5,7 @@
   "_integrity": "sha512-44yhA3tsaRoMOjQQ+5v5mVdqef+kH6Qze9jTpqtVufgYjYt08zyZAwNwwVBj3i1rJMnR52IxOW0LK0vBzgAkuA==",
   "_location": "/tiny-lr",
   "_phantomChildren": {
-    "ms": "2.0.0",
-    "websocket-driver": "0.7.0"
+    "websocket-driver": "0.7.3"
   },
   "_requested": {
     "type": "range",
@@ -24,7 +23,7 @@
   "_resolved": "https://registry.npmjs.org/tiny-lr/-/tiny-lr-1.1.1.tgz",
   "_shasum": "9fa547412f238fedb068ee295af8b682c98b2aab",
   "_spec": "tiny-lr@^1.1.1",
-  "_where": "C:\\Github\\agent\\node_modules\\webpack-livereload-plugin",
+  "_where": "C:\\github\\agent\\node_modules\\webpack-livereload-plugin",
   "author": {
     "name": "mklabs"
   },

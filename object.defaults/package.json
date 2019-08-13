@@ -4,7 +4,9 @@
   "_inBundle": false,
   "_integrity": "sha1-On+GgzS0B96gbaFtiNXNKeQ1/s8=",
   "_location": "/object.defaults",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "for-in": "1.0.2"
+  },
   "_requested": {
     "type": "range",
     "registry": true,
@@ -21,7 +23,7 @@
   "_resolved": "https://registry.npmjs.org/object.defaults/-/object.defaults-1.1.0.tgz",
   "_shasum": "3a7f868334b407dea06da16d88d5cd29e435fecf",
   "_spec": "object.defaults@^1.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\fined",
+  "_where": "C:\\github\\agent\\node_modules\\fined",
   "author": {
     "name": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert"

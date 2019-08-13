@@ -1,100 +1,25 @@
-
 /**
  * An object representing a "promise" for a future value
  *
- * @param {?function(T, ?)=} onSuccess a function to handle successful
+ * @param {function(Object)} onSuccess a function to handle successful
  *     resolution of this promise
- * @param {?function(!Error, ?)=} onFail a function to handle failed
+ * @param {function(Error)} onFail a function to handle failed
  *     resolution of this promise
  * @constructor
- * @template T
  */
 function Promise(onSuccess, onFail) {
   this.promise = this
   this._isPromise = true
   this._successFn = onSuccess
   this._failFn = onFail
-  this._scope = this
-  this._boundArgs = null
   this._hasContext = false
   this._nextContext = undefined
   this._currentContext = undefined
 }
 
 /**
- * @param {function()} callback
- */
-function nextTick (callback) {
-  callback()
-}
-
-if (typeof process !== 'undefined' && typeof process.nextTick === 'function') {
-  nextTick = process.nextTick
-}
-
-/**
- * All callback execution should go through this function.  While the
- * implementation below is simple, it can be replaced with more sophisticated
- * implementations that enforce QoS on the event loop.
- *
- * @param {Promise} defer
- * @param {Function} callback
- * @param {Object|undefined} scope
- * @param {Array} args
- */
-function nextTickCallback (defer, callback, scope, args) {
-  try {
-    defer.resolve(callback.apply(scope, args))
-  } catch (thrown) {
-    defer.reject(thrown)
-  }
-}
-
-/**
- * Used for accessing the nextTick function from outside the kew module.
- *
- * @return {Function}
- */
-function getNextTickFunction () {
-  return nextTick
-}
-
-/**
- * Used for overriding the nextTick function from outside the kew module so that
- * the user can plug and play lower level schedulers
- * @param {!Function} fn
- */
-function setNextTickFunction (fn) {
-  nextTick = fn
-}
-
-/**
- * Keep track of the number of promises that are rejected along side
- * the number of rejected promises we call _failFn on so we can look
- * for leaked rejections.
- * @constructor
- */
-function PromiseStats() {
-  /** @type {number} */
-  this.errorsEmitted = 0
-
-  /** @type {number} */
-  this.errorsHandled = 0
-}
-
-var stats = new PromiseStats()
-
-Promise.prototype._handleError = function () {
-  if (!this._errorHandled) {
-    stats.errorsHandled++
-    this._errorHandled = true
-  }
-}
-
-/**
  * Specify that the current promise should have a specified context
- * @param  {*} context context
- * @private
+ * @param  {Object} context context
  */
 Promise.prototype._useContext = function (context) {
   this._nextContext = this._currentContext = context
@@ -110,12 +35,7 @@ Promise.prototype.clearContext = function () {
 
 /**
  * Set the context for all promise handlers to follow
- *
- * NOTE(dpup): This should be considered deprecated.  It does not do what most
- * people would expect.  The context will be passed as a second argument to all
- * subsequent callbacks.
- *
- * @param {*} context An arbitrary context
+ * @param {context} context An arbitrary context
  */
 Promise.prototype.setContext = function (context) {
   this._nextContext = context
@@ -125,7 +45,7 @@ Promise.prototype.setContext = function (context) {
 
 /**
  * Get the context for a promise
- * @return {*} the context set by setContext
+ * @return {Object} the context set by setContext
  */
 Promise.prototype.getContext = function () {
   return this._nextContext
@@ -134,66 +54,59 @@ Promise.prototype.getContext = function () {
 /**
  * Resolve this promise with a specified value
  *
- * @param {*=} data
+ * @param {Object} data
  */
 Promise.prototype.resolve = function (data) {
   if (this._error || this._hasData) throw new Error("Unable to resolve or reject the same promise twice")
 
   var i
-  if (data && isPromise(data)) {
+  if (data && data._isPromise) {
     this._child = data
     if (this._promises) {
-      for (i = 0; i < this._promises.length; i += 1) {
+      for (var i = 0; i < this._promises.length; i += 1) {
         data._chainPromise(this._promises[i])
       }
       delete this._promises
     }
 
     if (this._onComplete) {
-      for (i = 0; i < this._onComplete.length; i+= 1) {
+      for (var i = 0; i < this._onComplete.length; i+= 1) {
         data.fin(this._onComplete[i])
       }
       delete this._onComplete
     }
-  } else if (data && isPromiseLike(data)) {
-    data.then(
-      function(data) { this.resolve(data) }.bind(this),
-      function(err) { this.reject(err) }.bind(this)
-    )
-  } else {
-    this._hasData = true
-    this._data = data
+    return
+  }
 
-    if (this._onComplete) {
-      for (i = 0; i < this._onComplete.length; i++) {
-        this._onComplete[i]()
-      }
-    }
+  this._hasData = true
+  this._data = data
 
-    if (this._promises) {
-      for (i = 0; i < this._promises.length; i += 1) {
-        this._promises[i]._useContext(this._nextContext)
-        this._promises[i]._withInput(data)
-      }
-      delete this._promises
+  if (this._onComplete) {
+    for (i = 0; i < this._onComplete.length; i++) {
+      this._onComplete[i]()
     }
+  }
+
+  if (this._promises) {
+    for (i = 0; i < this._promises.length; i += 1) {
+      this._promises[i]._withInput(data)
+    }
+    delete this._promises
   }
 }
 
 /**
  * Reject this promise with an error
  *
- * @param {!Error} e
+ * @param {Error} e
  */
 Promise.prototype.reject = function (e) {
   if (this._error || this._hasData) throw new Error("Unable to resolve or reject the same promise twice")
 
   var i
   this._error = e
-  stats.errorsEmitted++
 
   if (this._ended) {
-    this._handleError()
     process.nextTick(function onPromiseThrow() {
       throw e
     })
@@ -206,9 +119,7 @@ Promise.prototype.reject = function (e) {
   }
 
   if (this._promises) {
-    this._handleError()
     for (i = 0; i < this._promises.length; i += 1) {
-      this._promises[i]._useContext(this._nextContext)
       this._promises[i]._withError(e)
     }
     delete this._promises
@@ -220,11 +131,10 @@ Promise.prototype.reject = function (e) {
  * resolves. Allows for an optional second callback to handle the failure
  * case.
  *
- * @param {?function(this:void, T, ?): RESULT|undefined} onSuccess
- * @param {?function(this:void, !Error, ?): RESULT=} onFail
- * @return {!Promise.<RESULT>} returns a new promise with the output of the onSuccess or
+ * @param {function(Object)} onSuccess
+ * @param {?function(Error)} onFail
+ * @return {Promise} returns a new promise with the output of the onSuccess or
  *     onFail handler
- * @template RESULT
  */
 Promise.prototype.then = function (onSuccess, onFail) {
   var promise = new Promise(onSuccess, onFail)
@@ -237,95 +147,13 @@ Promise.prototype.then = function (onSuccess, onFail) {
 }
 
 /**
- * Provide a callback to be called whenever this promise successfully
- * resolves. The callback will be executed in the context of the provided scope.
- *
- * @param {function(this:SCOPE, ...): RESULT} onSuccess
- * @param {SCOPE} scope Object whose context callback will be executed in.
- * @param {...*} var_args Additional arguments to be passed to the promise callback.
- * @return {!Promise.<RESULT>} returns a new promise with the output of the onSuccess
- * @template SCOPE, RESULT
- */
-Promise.prototype.thenBound = function (onSuccess, scope, var_args) {
-  var promise = new Promise(onSuccess)
-  if (this._nextContext) promise._useContext(this._nextContext)
-
-  promise._scope = scope
-  if (arguments.length > 2) {
-    promise._boundArgs = Array.prototype.slice.call(arguments, 2)
-  }
-
-  // Chaining must happen after setting args and scope since it may fire callback.
-  if (this._child) this._child._chainPromise(promise)
-  else this._chainPromise(promise)
-
-  return promise
-}
-
-/**
  * Provide a callback to be called whenever this promise is rejected
  *
- * @param {function(this:void, !Error, ?)} onFail
- * @return {!Promise.<T>} returns a new promise with the output of the onFail handler
+ * @param {function(Error)} onFail
+ * @return {Promise} returns a new promise with the output of the onFail handler
  */
 Promise.prototype.fail = function (onFail) {
   return this.then(null, onFail)
-}
-
-/**
- * Provide a callback to be called whenever this promise is rejected.
- * The callback will be executed in the context of the provided scope.
- *
- * @param {function(this:SCOPE, ...)} onFail
- * @param {SCOPE} scope Object whose context callback will be executed in.
- * @param {...?} var_args
- * @return {!Promise.<T>} returns a new promise with the output of the onSuccess
- * @template SCOPE
- */
-Promise.prototype.failBound = function (onFail, scope, var_args) {
-  var promise = new Promise(null, onFail)
-  if (this._nextContext) promise._useContext(this._nextContext)
-
-  promise._scope = scope
-  if (arguments.length > 2) {
-    promise._boundArgs = Array.prototype.slice.call(arguments, 2)
-  }
-
-  // Chaining must happen after setting args and scope since it may fire callback.
-  if (this._child) this._child._chainPromise(promise)
-  else this._chainPromise(promise)
-
-  return promise
-}
-
-/**
- * Spread a promises outputs to the functions arguments.
- * @param {?function(this:void, ...): RESULT|undefined} onSuccess
- * @return {!Promise.<RESULT>} returns a new promise with the output of the onSuccess or
- *     onFail handler
- * @template RESULT
- */
-Promise.prototype.spread = function (onSuccess) {
-  return this.then(allInternal)
-  .then(function (array) {
-    return onSuccess.apply(null, array)
-  })
-}
-
-/**
- * Spread a promises outputs to the functions arguments.
- * @param {function(this:SCOPE, ...): RESULT} onSuccess
- * @param {SCOPE} scope Object whose context callback will be executed in.
- * @param {...*} var_args Additional arguments to be passed to the promise callback.
- * @return {!Promise.<RESULT>} returns a new promise with the output of the onSuccess
- * @template SCOPE, RESULT
- */
-Promise.prototype.spreadBound = function (onSuccess, scope, var_args) {
-  var args = Array.prototype.slice.call(arguments, 2)
-  return this.then(allInternal)
-  .then(function (array) {
-    return onSuccess.apply(scope, args.concat(array))
-  })
 }
 
 /**
@@ -333,7 +161,7 @@ Promise.prototype.spreadBound = function (onSuccess, scope, var_args) {
  * or rejected.
  *
  * @param {function()} onComplete
- * @return {!Promise.<T>} returns the current promise
+ * @return {Promise} returns the current promise
  */
 Promise.prototype.fin = function (onComplete) {
   if (this._hasData || this._error) {
@@ -355,22 +183,10 @@ Promise.prototype.fin = function (onComplete) {
  * Mark this promise as "ended". If the promise is rejected, this will throw an
  * error in whatever scope it happens to be in
  *
- * @return {!Promise.<T>} returns the current promise
- * @deprecated Prefer done(), because it's consistent with Q.
+ * @return {Promise} returns the current promise
  */
 Promise.prototype.end = function () {
-  this._end()
-  return this
-}
-
-
-/**
- * Mark this promise as "ended".
- * @private
- */
-Promise.prototype._end = function () {
   if (this._error) {
-    this._handleError()
     throw this._error
   }
   this._ended = true
@@ -378,67 +194,18 @@ Promise.prototype._end = function () {
 }
 
 /**
- * Close the promise. Any errors after this completes will be thrown to the global handler.
- *
- * @param {?function(this:void, T, ?)=} onSuccess a function to handle successful
- *     resolution of this promise
- * @param {?function(this:void, !Error, ?)=} onFailure a function to handle failed
- *     resolution of this promise
- * @return {void}
- */
-Promise.prototype.done = function (onSuccess, onFailure) {
-  var self = this
-  if (onSuccess || onFailure) {
-    self = self.then(onSuccess, onFailure)
-  }
-  self._end()
-}
-
-/**
- * Return a new promise that behaves the same as the current promise except
- * that it will be rejected if the current promise does not get fulfilled
- * after a certain amount of time.
- *
- * @param {number} timeoutMs The timeout threshold in msec
- * @param {string=} timeoutMsg error message
- * @return {!Promise.<T>} a new promise with timeout
- */
- Promise.prototype.timeout = function (timeoutMs, timeoutMsg) {
-  var deferred = new Promise()
-  var isTimeout = false
-
-  var timeout = setTimeout(function() {
-    deferred.reject(new Error(timeoutMsg || 'Promise timeout after ' + timeoutMs + ' ms.'))
-    isTimeout = true
-  }, timeoutMs)
-
-  this.then(function (data) {
-    if (!isTimeout) {
-      clearTimeout(timeout)
-      deferred.resolve(data)
-    }
-  },
-  function (err) {
-    if (!isTimeout) {
-      clearTimeout(timeout)
-      deferred.reject(err)
-    }
-  })
-
-  return deferred.promise
-}
-
-/**
  * Attempt to resolve this promise with the specified input
  *
- * @param {*} data the input
+ * @param {Object} data the input
  */
 Promise.prototype._withInput = function (data) {
   if (this._successFn) {
-    this._nextTick(this._successFn, [data, this._currentContext])
-  } else {
-    this.resolve(data)
-  }
+    try {
+      this.resolve(this._successFn(data, this._currentContext))
+    } catch (e) {
+      this.reject(e)
+    }
+  } else this.resolve(data)
 
   // context is no longer needed
   delete this._currentContext
@@ -447,38 +214,25 @@ Promise.prototype._withInput = function (data) {
 /**
  * Attempt to reject this promise with the specified error
  *
- * @param {!Error} e
- * @private
+ * @param {Error} e
  */
 Promise.prototype._withError = function (e) {
   if (this._failFn) {
-    this._nextTick(this._failFn, [e, this._currentContext])
-  } else {
-    this.reject(e)
-  }
+    try {
+      this.resolve(this._failFn(e, this._currentContext))
+    } catch (e) {
+      this.reject(e)
+    }
+  } else this.reject(e)
 
   // context is no longer needed
   delete this._currentContext
 }
 
 /**
- * Calls a function in the correct scope, and includes bound arguments.
- * @param {Function} fn
- * @param {Array} args
- * @private
- */
-Promise.prototype._nextTick = function (fn, args) {
-  if (this._boundArgs) {
-    args = this._boundArgs.concat(args)
-  }
-  nextTick(nextTickCallback.bind(null, this, fn, this._scope, args))
-}
-
-/**
  * Chain a promise to the current promise
  *
- * @param {!Promise} promise the promise to chain
- * @private
+ * @param {Promise} the promise to chain
  */
 Promise.prototype._chainPromise = function (promise) {
   var i
@@ -489,9 +243,6 @@ Promise.prototype._chainPromise = function (promise) {
   } else if (this._hasData) {
     promise._withInput(this._data)
   } else if (this._error) {
-    // We can't rely on _withError() because it's called on the chained promises
-    // and we need to use the source's _errorHandled state
-    this._handleError()
     promise._withError(this._error)
   } else if (!this._promises) {
     this._promises = [promise]
@@ -504,9 +255,9 @@ Promise.prototype._chainPromise = function (promise) {
  * Utility function used for creating a node-style resolver
  * for deferreds
  *
- * @param {!Promise} deferred a promise that looks like a deferred
- * @param {Error=} err an optional error
- * @param {*=} data optional data
+ * @param {Promise} deferred a promise that looks like a deferred
+ * @param {Error} err an optional error
+ * @param {Object} data optional data
  */
 function resolver(deferred, err, data) {
   if (err) deferred.reject(err)
@@ -517,45 +268,17 @@ function resolver(deferred, err, data) {
  * Creates a node-style resolver for a deferred by wrapping
  * resolver()
  *
- * @return {function(?Error, *)} node-style callback
+ * @return {function(Error, Object)} node-style callback
  */
 Promise.prototype.makeNodeResolver = function () {
   return resolver.bind(null, this)
 }
 
 /**
- * Return true iff the given object is a promise of this library.
- *
- * Because kew's API is slightly different than other promise libraries,
- * it's important that we have a test for its promise type. If you want
- * to test for a more general A+ promise, you should do a cap test for
- * the features you want.
- *
- * @param {*} obj The object to test
- * @return {boolean} Whether the object is a promise
- */
-function isPromise(obj) {
-  return !!obj._isPromise
-}
-
-/**
- * Return true iff the given object is a promise-like object, e.g. appears to
- * implement Promises/A+ specification
- *
- * @param {*} obj The object to test
- * @return {boolean} Whether the object is a promise-like object
- */
-function isPromiseLike(obj) {
-  return (typeof obj === 'object' || typeof obj === 'function') &&
-    typeof obj.then === 'function'
-}
-
-/**
  * Static function which creates and resolves a promise immediately
  *
- * @param {T} data data to resolve the promise with
- * @return {!Promise.<T>}
- * @template T
+ * @param {Object} data data to resolve the promise with
+ * @return {Promise}
  */
 function resolve(data) {
   var promise = new Promise()
@@ -566,8 +289,8 @@ function resolve(data) {
 /**
  * Static function which creates and rejects a promise immediately
  *
- * @param {!Error} e error to reject the promise with
- * @return {!Promise}
+ * @param {Error} e error to reject the promise with
+ * @return {Promise}
  */
 function reject(e) {
   var promise = new Promise()
@@ -579,10 +302,10 @@ function reject(e) {
  * Replace an element in an array with a new value. Used by .all() to
  * call from .then()
  *
- * @param {!Array} arr
+ * @param {Array.<Object>} arr
  * @param {number} idx
- * @param {*} val
- * @return {*} the val that's being injected into the array
+ * @param {Object} val
+ * @return {Object} the val that's being injected into the array
  */
 function replaceEl(arr, idx, val) {
   arr[idx] = val
@@ -590,69 +313,26 @@ function replaceEl(arr, idx, val) {
 }
 
 /**
- * Replace an element in an array as it is resolved with its value.
- * Used by .allSettled().
- *
- * @param {!Array} arr
- * @param {number} idx
- * @param {*} value The value from a resolved promise.
- * @return {*} the data that's being passed in
- */
-function replaceElFulfilled(arr, idx, value) {
-  arr[idx] = {
-    state: 'fulfilled',
-    value: value
-  }
-  return value
-}
-
-/**
- * Replace an element in an array as it is rejected with the reason.
- * Used by .allSettled().
- *
- * @param {!Array} arr
- * @param {number} idx
- * @param {*} reason The reason why the original promise is rejected
- * @return {*} the data that's being passed in
- */
-function replaceElRejected(arr, idx, reason) {
-  arr[idx] = {
-    state: 'rejected',
-    reason: reason
-  }
-  return reason
-}
-
-/**
  * Takes in an array of promises or literals and returns a promise which returns
  * an array of values when all have resolved. If any fail, the promise fails.
  *
- * @param {!Array.<!Promise>} promises
- * @return {!Promise.<!Array>}
+ * @param {Array.<Promise|Object>} promises
+ * @return {Promise.<Array.<Object>>}
  */
 function all(promises) {
   if (arguments.length != 1 || !Array.isArray(promises)) {
     promises = Array.prototype.slice.call(arguments, 0)
   }
-  return allInternal(promises)
-}
-
-/**
- * A version of all() that does not accept var_args
- *
- * @param {!Array.<!Promise>} promises
- * @return {!Promise.<!Array>}
- */
-function allInternal(promises) {
   if (!promises.length) return resolve([])
 
   var outputs = []
+  var counter = 0
   var finished = false
   var promise = new Promise()
   var counter = promises.length
 
   for (var i = 0; i < promises.length; i += 1) {
-    if (!promises[i] || !isPromiseLike(promises[i])) {
+    if (!promises[i] || !promises[i]._isPromise) {
       outputs[i] = promises[i]
       counter -= 1
     } else {
@@ -681,54 +361,9 @@ function allInternal(promises) {
 }
 
 /**
- * Takes in an array of promises or values and returns a promise that is
- * fulfilled with an array of state objects when all have resolved or
- * rejected. If a promise is resolved, its corresponding state object is
- * {state: 'fulfilled', value: Object}; whereas if a promise is rejected, its
- * corresponding state object is {state: 'rejected', reason: Object}.
- *
- * @param {!Array} promises or values
- * @return {!Promise.<!Array>} Promise fulfilled with state objects for each input
- */
-function allSettled(promises) {
-  if (!Array.isArray(promises)) {
-    throw Error('The input to "allSettled()" should be an array of Promise or values')
-  }
-  if (!promises.length) return resolve([])
-
-  var outputs = []
-  var promise = new Promise()
-  var counter = promises.length
-
-  for (var i = 0; i < promises.length; i += 1) {
-    if (!promises[i] || !isPromiseLike(promises[i])) {
-      replaceElFulfilled(outputs, i, promises[i])
-      if ((--counter) === 0) promise.resolve(outputs)
-    } else {
-      promises[i]
-        .then(replaceElFulfilled.bind(null, outputs, i), replaceElRejected.bind(null, outputs, i))
-        .then(function () {
-          if ((--counter) === 0) promise.resolve(outputs)
-        })
-    }
-  }
-
-  return promise
-}
-
-/**
- * Takes an array of results and spreads them to the arguments of a function.
- * @param {!Array} array
- * @param {!Function} fn
- */
-function spread(array, fn) {
-  resolve(array).spread(fn)
-}
-
-/**
  * Create a new Promise which looks like a deferred
  *
- * @return {!Promise}
+ * @return {Promise}
  */
 function defer() {
   return new Promise()
@@ -737,23 +372,11 @@ function defer() {
 /**
  * Return a promise which will wait a specified number of ms to resolve
  *
- * @param {*} delayMsOrVal A delay (in ms) if this takes one argument, or ther
- *     return value if it takes two.
- * @param {number=} opt_delayMs
- * @return {!Promise}
+ * @param {number} delayMs
+ * @param {Object} returnVal
+ * @return {Promise.<Object>} returns returnVal
  */
-function delay(delayMsOrVal, opt_delayMs) {
-  var returnVal = undefined
-  var delayMs = delayMsOrVal
-  if (typeof opt_delayMs != 'undefined') {
-    delayMs = opt_delayMs
-    returnVal = delayMsOrVal
-  }
-
-  if (typeof delayMs != 'number') {
-    throw new Error('Bad delay value ' + delayMs)
-  }
-
+function delay(delayMs, returnVal) {
   var defer = new Promise()
   setTimeout(function onDelay() {
     defer.resolve(returnVal)
@@ -762,99 +385,42 @@ function delay(delayMsOrVal, opt_delayMs) {
 }
 
 /**
- * Returns a promise that has the same result as `this`, but fulfilled
- * after at least ms milliseconds
- * @param {number} ms
- */
-Promise.prototype.delay = function (ms) {
-  return this.then(function (val) {
-    return delay(val, ms)
-  })
-}
-
-/**
- * Return a promise which will evaluate the function fn in a future turn with
- * the provided args
+ * Return a promise which will evaluate the function fn with the provided args
  *
- * @param {function(...)} fn
- * @param {...*} var_args a variable number of arguments
- * @return {!Promise}
+ * @param {function} fn
+ * @param {Object} var_args a variable number of arguments
+ * @return {Promise}
  */
 function fcall(fn, var_args) {
-  var rootArgs = Array.prototype.slice.call(arguments, 1)
   var defer = new Promise()
-  nextTick(nextTickCallback.bind(null, defer, fn, undefined, rootArgs))
+  defer.resolve(fn.apply(null, Array.prototype.slice.call(arguments, 1)))
   return defer
 }
-
-
-/**
- * Returns a promise that will be invoked with the result of a node style
- * callback. All args to fn should be given except for the final callback arg
- *
- * @param {function(...)} fn
- * @param {...*} var_args a variable number of arguments
- * @return {!Promise}
- */
-function nfcall(fn, var_args) {
-  // Insert an undefined argument for scope and let bindPromise() do the work.
-  var args = Array.prototype.slice.call(arguments, 0)
-  args.splice(1, 0, undefined)
-  return ncall.apply(undefined, args)
-}
-
-
-/**
- * Like `nfcall`, but permits passing a `this` context for the call.
- *
- * @param {function(...)} fn
- * @param {Object} scope
- * @param {...*} var_args
- * @return {!Promise}
- */
-function ncall(fn, scope, var_args) {
-  return bindPromise.apply(null, arguments)()
-}
-
 
 /**
  * Binds a function to a scope with an optional number of curried arguments. Attaches
  * a node style callback as the last argument and returns a promise
  *
- * @param {function(...)} fn
+ * @param {function} fn
  * @param {Object} scope
- * @param {...*} var_args a variable number of arguments
- * @return {function(...)}: !Promise}
+ * @param {Object} var_args a variable number of arguments
+ * @return {Promise}
  */
 function bindPromise(fn, scope, var_args) {
   var rootArgs = Array.prototype.slice.call(arguments, 2)
   return function onBoundPromise(var_args) {
     var defer = new Promise()
-    try {
-      fn.apply(scope, rootArgs.concat(Array.prototype.slice.call(arguments, 0), defer.makeNodeResolver()))
-    } catch (e) {
-      defer.reject(e)
-    }
+    fn.apply(scope, rootArgs.concat(Array.prototype.slice.call(arguments, 0), defer.makeNodeResolver()))
     return defer
   }
 }
 
 module.exports = {
-  all: all,
-  bindPromise: bindPromise,
-  defer: defer,
-  delay: delay,
-  fcall: fcall,
-  isPromise: isPromise,
-  isPromiseLike: isPromiseLike,
-  ncall: ncall,
-  nfcall: nfcall,
-  resolve: resolve,
-  reject: reject,
-  spread: spread,
-  stats: stats,
-  allSettled: allSettled,
-  Promise: Promise,
-  getNextTickFunction: getNextTickFunction,
-  setNextTickFunction: setNextTickFunction,
+    all: all
+  , bindPromise: bindPromise
+  , defer: defer
+  , delay: delay
+  , fcall: fcall
+  , resolve: resolve
+  , reject: reject
 }

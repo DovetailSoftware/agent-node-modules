@@ -1,10 +1,27 @@
 {
   "_from": "iedriver@^3.3.0",
-  "_id": "iedriver@3.9.2",
+  "_id": "iedriver@3.14.1",
   "_inBundle": false,
-  "_integrity": "sha512-4rO+FQVuUsjkUCFy02jq5wYX8ZTVHD/nCbg1iz9S2q8/ZEwBgSHGn4g4/PV5293LJNOStNqC3nSLypmDXP2CiA==",
+  "_integrity": "sha512-YyCi703BGK7R37A8QlSe2B87xgwDGGoPqBrlXe4Q68o/MNLJrR53/IpTs6J1+KKk51MLiTbWa57N7P3KZ11tow==",
   "_location": "/iedriver",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "abbrev": "1.1.1",
+    "config-chain": "1.1.12",
+    "core-util-is": "1.0.2",
+    "debug": "2.6.9",
+    "inherits": "2.0.4",
+    "ini": "1.3.5",
+    "isarray": "1.0.0",
+    "os-homedir": "1.0.2",
+    "os-tmpdir": "1.0.2",
+    "process-nextick-args": "2.0.1",
+    "safe-buffer": "5.1.2",
+    "typedarray": "0.0.6",
+    "uid-number": "0.0.5",
+    "util-deprecate": "1.0.2",
+    "wrappy": "1.0.2",
+    "yauzl": "2.4.1"
+  },
   "_requested": {
     "type": "range",
     "registry": true,
@@ -18,10 +35,10 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.9.2.tgz",
-  "_shasum": "3781322371da20493415e79e96c57e71de5f059c",
+  "_resolved": "https://registry.npmjs.org/iedriver/-/iedriver-3.14.1.tgz",
+  "_shasum": "447c49be83c62d3f2f158283d58ccf7b35002be8",
   "_spec": "iedriver@^3.3.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "Barrett Sonntag",
     "email": "barrett@sosuke.com",
@@ -35,13 +52,13 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "adm-zip": "0.2.1",
+    "adm-zip": "^0.4.13",
     "extract-zip": "1.6.6",
     "kew": "~0.1.7",
     "md5-file": "^1.1.4",
     "mkdirp": "0.3.5",
-    "npmconf": "0.0.24",
-    "request": "^2.81.0",
+    "npmconf": "^2.1.3",
+    "request": "^2.88.0",
     "rimraf": "~2.0.2"
   },
   "deprecated": false,
@@ -52,12 +69,7 @@
     "iedriverserver",
     "selenium"
   ],
-  "licenses": [
-    {
-      "type": "Apache 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-    }
-  ],
+  "license": "Apache-2.0",
   "main": "lib/iedriver",
   "name": "iedriver",
   "repository": {
@@ -67,5 +79,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "3.9.2"
+  "version": "3.14.1"
 }

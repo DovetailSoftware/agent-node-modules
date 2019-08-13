@@ -17,13 +17,12 @@
   },
   "_requiredBy": [
     "/gulp-concat/vinyl",
-    "/mem-fs-editor/vinyl",
     "/normalize-path"
   ],
   "_resolved": "https://registry.npmjs.org/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz",
   "_shasum": "c24bce2a283adad5bc3f58e0d48249b92379d8ef",
   "_spec": "remove-trailing-separator@^1.0.1",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-concat\\node_modules\\vinyl",
+  "_where": "C:\\github\\agent\\node_modules\\normalize-path",
   "author": {
     "name": "darsain"
   },

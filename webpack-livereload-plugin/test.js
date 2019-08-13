@@ -28,6 +28,37 @@ test('running after start', function(t) {
   });
 });
 
+test('finds available ports', function(t) {
+  var plugin1 = new LiveReloadPlugin({port: 0});
+  var plugin2 = new LiveReloadPlugin({port: 0});
+
+  var count = 0;
+  var tryEnd = function() {
+    count++;
+    if(count === 2) {
+      t.notEqual(plugin1.port, plugin2.port);
+      t.end();
+    }
+  }
+
+  var startPlugin = function(p) {
+    p.start(null, function() {
+      t.notLooseEqual(p.server, null);
+      t.ok(p.server !== undefined)
+      t.ok(p.isRunning);
+      p.server.on('close', function() {
+        tryEnd();
+      });
+      setTimeout(function() {
+        p.server.close();
+      });
+    });
+  }
+
+  startPlugin(plugin1);
+  startPlugin(plugin2);
+});
+
 test('notifies when done', function(t) {
   var plugin = new LiveReloadPlugin();
   var stats = {
@@ -95,5 +126,18 @@ test('autoloadJs hostname defaults to location.hostname', function(t) {
 test('autoloadJs contains hostname option', function(t) {
   var plugin = new LiveReloadPlugin({hostname: 'example.com'});
   t.assert(plugin.autoloadJs().match(/example.com/));
+  t.end();
+});
+
+test('every instance has random id', function(t) {
+  var plugin = new LiveReloadPlugin();
+  var plugin2 = new LiveReloadPlugin();
+  t.notEqual(plugin.instanceId, plugin2.instanceId);
+  t.end();
+});
+
+test('autoloadJs contains instanceId', function(t) {
+  var plugin = new LiveReloadPlugin();
+  t.assert(plugin.autoloadJs().match(plugin.instanceId));
   t.end();
 });

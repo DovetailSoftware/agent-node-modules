@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/accord/-/accord-0.29.0.tgz",
   "_shasum": "b741c176d00435c5929d466dfe8cf6bee933b1e4",
   "_spec": "accord@^0.29.0",
-  "_where": "C:\\Github\\agent\\node_modules\\gulp-less",
+  "_where": "C:\\github\\agent\\node_modules\\gulp-less",
   "author": {
     "name": "Jeff Escalante"
   },

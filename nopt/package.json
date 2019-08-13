@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/nopt/-/nopt-2.2.1.tgz",
   "_shasum": "2aa09b7d1768487b3b89a9c5aa52335bff0baea7",
   "_spec": "nopt@2",
-  "_where": "C:\\Github\\agent\\node_modules\\npmconf",
+  "_where": "C:\\github\\agent\\node_modules\\npmconf",
   "author": {
     "name": "Isaac Z. Schlueter",
     "email": "i@izs.me",

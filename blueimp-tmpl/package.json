@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/blueimp-tmpl/-/blueimp-tmpl-3.6.0.tgz",
   "_shasum": "a4910975d042e2bc03ba77f0e62d04f1548a524c",
   "_spec": "blueimp-tmpl@3.6.0",
-  "_where": "C:\\Github\\agent\\node_modules\\blueimp-file-upload",
+  "_where": "C:\\github\\agent\\node_modules\\blueimp-file-upload",
   "author": {
     "name": "Sebastian Tschan",
     "url": "https://blueimp.net"

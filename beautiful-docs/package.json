@@ -2,6 +2,7 @@
   "_from": "github:styson/beautiful-docs#52ca509",
   "_id": "beautiful-docs@1.0.3",
   "_inBundle": false,
+  "_integrity": "",
   "_location": "/beautiful-docs",
   "_phantomChildren": {},
   "_requested": {
@@ -19,7 +20,7 @@
   ],
   "_resolved": "github:styson/beautiful-docs#52ca50988cbfb8552349bc9df0130b61f10b8697",
   "_spec": "beautiful-docs@github:styson/beautiful-docs#52ca509",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "Maxime Bouroumeau-Fuseau",
     "url": "http://maximebf.com"

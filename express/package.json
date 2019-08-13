@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/express/-/express-3.21.2.tgz",
   "_shasum": "0c2903ee5c54e63d65a96170764703550665a3de",
   "_spec": "express@>=3.3.4 <4.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\github\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"

@@ -17,15 +17,12 @@
   },
   "_requiredBy": [
     "/inquirer",
-    "/table",
-    "/webpack-cli/cliui",
-    "/webpack-cli/inquirer",
-    "/webpack-cli/yargs"
+    "/table"
   ],
   "_resolved": "https://registry.npmjs.org/string-width/-/string-width-2.1.1.tgz",
   "_shasum": "ab93f27a8dc13d28cac815c462143a6d9012ae9e",
   "_spec": "string-width@^2.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\inquirer",
+  "_where": "C:\\github\\agent\\node_modules\\inquirer",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",

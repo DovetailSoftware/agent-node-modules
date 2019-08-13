@@ -1,8 +1,8 @@
 {
   "_from": "webpack-livereload-plugin@^2.0.0",
-  "_id": "webpack-livereload-plugin@2.1.1",
+  "_id": "webpack-livereload-plugin@2.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-W7Q55QbPvVJotpIZSjjwzmqQ22333ExYxWM3WFlHKkbPStQqVRSmJkjntUqXF9jtpdeXi8r8HLkA1RVnAP0SQA==",
+  "_integrity": "sha512-sx9xA5mHoNOUgLQI0PmXT3KV9ecsVmUaTgr+fsoL69qAOHw/7VzkL1+ZMDQ8n0dPbWounswK6cBRSgMod7Nhgg==",
   "_location": "/webpack-livereload-plugin",
   "_phantomChildren": {},
   "_requested": {
@@ -18,10 +18,10 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-2.1.1.tgz",
-  "_shasum": "d2cb90d5d839b5c04259f7eaf02581ceac67a107",
+  "_resolved": "https://registry.npmjs.org/webpack-livereload-plugin/-/webpack-livereload-plugin-2.2.0.tgz",
+  "_shasum": "47a19f318f9e83733c26265c445f80eb0a4436c6",
   "_spec": "webpack-livereload-plugin@^2.0.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "Jason Staten"
   },
@@ -30,13 +30,14 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "portfinder": "^1.0.17",
     "tiny-lr": "^1.1.1"
   },
   "deprecated": false,
   "description": "Livereload for webpack",
   "devDependencies": {
     "faucet": "0.0.1",
-    "tape": "^4.4.0"
+    "tape": "^4.9.1"
   },
   "homepage": "https://github.com/statianzo/webpack-livereload-plugin#readme",
   "keywords": [
@@ -53,5 +54,5 @@
   "scripts": {
     "test": "faucet test.js"
   },
-  "version": "2.1.1"
+  "version": "2.2.0"
 }

@@ -1,8 +1,6 @@
 kew: a lightweight (and super fast) promise/deferred framework for node.js
 ==================================
 
-[![Build Status](https://travis-ci.org/Medium/kew.svg)](https://travis-ci.org/Medium/kew)
-
 **kew** is a lightweight promise framework with an aim of providing a base set of functionality similar to that provided by the [Q library](https://github.com/kriskowal/q "Q").
 
 A few answers (for a few questions)
@@ -32,7 +30,7 @@ var tagsPromise = htmlPromise.then(parseHtml)
 var linksPromise = tagsPromise.then(getLinks)
 
 // and then parses the actual urls from the links (using parseUrlsFromLinks())
-var urlsPromise = linksPromise.then(parseUrlsFromLinks)
+var urlsPromise = linksPromise.then(linksPromise)
 
 // finally, we have a promise that should only provide us with the urls and will run once all the previous steps have ran
 urlsPromise.then(function (urls) {
@@ -188,6 +186,8 @@ var itemPromise = db.getItem(itemId)
 Other utility methods
 -------
 
+There's only one utility method as of now:
+
 ### `.all()` for many things
 
 If you're waiting for multiple promises to return, you may pass them (mixed in with literals if you desire) into `.all()` which will create a promise that resolves successfully with an array of the results of the promises:
@@ -219,77 +219,6 @@ Q.all(promises)
     console.log("Failed retrieving a url", e)
   })
 ```
-
-### `.delay()` for future promises
-
-If you need a little bit of delay (such as retrying a method call to a service that is "eventually consistent") before doing something else, ``Q.delay()`` is your friend:
-
-```javascript
-getUrlContent(url1)
-.fail(function () {
-  // Retry again after 200 milisseconds
-  return Q.delay(200).then(function () {
-    return getUrlContent(url1)
-  })
-})
-```
-
-If two arguments are passed, the first will be used as the return value, and the
-second will be the delay in milliseconds.
-
-```javascript
-Q.delay(obj, 20).then(function (result) {
-  console.log(result) // logs `obj` after 20ms
-})
-```
-
-### `.fcall()` for delaying a function invocation until the next tick:
-```javascript
-// Assume someFn() is a synchronous 2 argument function you want to delay.
-Q.fcall(someFn, arg1, arg2)
-  .then(function (result) {
-    console.log('someFn(' + arg1 + ', ' + arg2 + ') = ' + result)
-  })
-```
-
-You can also use ``Q.fcall()`` with functions that return promises.
-
-### `.ncall()` and `.nfcall()` for Node.js callbacks
-
-``Q.nfcall()`` can be used to convert node-style callbacks into promises:
-
-```javascript
-Q.nfcall(fs.writeFile, '/tmp/myFile', 'content')
-  .then(function () {
-    console.log('File written successfully')
-  })
-  .fail(function (err) {
-    console.log('Failed to write file', err)
-  })
-```
-
-If your Node-style callback needs a `this` context, you can use `Q.ncall`:
-
-```js
-Q.ncall(redis.del, redis, 'my-key')
-  .then(function () { return true })
-  .fail(function () { return false })
-```
-
-
-### `.spread()` for arrays of promises
-
-``()`` can be used to convert node-style callbacks into promises:
-
-```javascript
-Q.nfcall(function () {
-  return ['a', Q.resolve('b')]
-})
-.spread(function (a, b) { 
-  // ...
-})
-```
-
 
 Contributing
 ------------

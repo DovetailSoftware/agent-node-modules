@@ -6,10 +6,10 @@
   "_location": "/from2",
   "_phantomChildren": {
     "core-util-is": "1.0.2",
-    "inherits": "2.0.3",
+    "inherits": "2.0.4",
     "isarray": "1.0.0",
-    "process-nextick-args": "2.0.0",
-    "safe-buffer": "5.1.1",
+    "process-nextick-args": "2.0.1",
+    "safe-buffer": "5.1.2",
     "util-deprecate": "1.0.2"
   },
   "_requested": {
@@ -23,13 +23,12 @@
     "fetchSpec": "^2.1.0"
   },
   "_requiredBy": [
-    "/into-stream",
     "/mississippi"
   ],
   "_resolved": "https://registry.npmjs.org/from2/-/from2-2.3.0.tgz",
   "_shasum": "8bfb5502bde4a4d36cfdeea007fcca21d7e382af",
   "_spec": "from2@^2.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\mississippi",
+  "_where": "C:\\github\\agent\\node_modules\\mississippi",
   "author": {
     "name": "Hugh Kennedy",
     "email": "hughskennedy@gmail.com",

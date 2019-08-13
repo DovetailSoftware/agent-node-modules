@@ -16,13 +16,12 @@
     "fetchSpec": "^2.0.0"
   },
   "_requiredBy": [
-    "/inquirer",
-    "/webpack-cli/inquirer"
+    "/inquirer"
   ],
   "_resolved": "https://registry.npmjs.org/figures/-/figures-2.0.0.tgz",
   "_shasum": "3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962",
   "_spec": "figures@^2.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\inquirer",
+  "_where": "C:\\github\\agent\\node_modules\\inquirer",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",

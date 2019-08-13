@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/eco/-/eco-1.0.3.tgz",
   "_shasum": "624eacd09c9795ed65d83da865375dc52464e56d",
   "_spec": "eco@>=1.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\beautiful-docs",
+  "_where": "C:\\github\\agent\\node_modules\\beautiful-docs",
   "author": {
     "name": "Sam Stephenson"
   },

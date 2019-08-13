@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/backbone.babysitter/-/backbone.babysitter-0.1.12.tgz",
   "_shasum": "7ca946434eeefbde1a553605c74b7049b6dfafc1",
   "_spec": "backbone.babysitter@^0.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\backbone.marionette",
+  "_where": "C:\\github\\agent\\node_modules\\backbone.marionette",
   "author": {
     "name": "Derick Bailey",
     "email": "marionettejs@gmail.com",

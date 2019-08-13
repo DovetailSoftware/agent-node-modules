@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/connect/-/connect-2.30.2.tgz",
   "_shasum": "8da9bcbe8a054d3d318d74dfec903b5c39a1b609",
   "_spec": "connect@2.30.2",
-  "_where": "C:\\Github\\agent\\node_modules\\express",
+  "_where": "C:\\github\\agent\\node_modules\\express",
   "author": {
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca",

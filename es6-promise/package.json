@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-4.1.0.tgz",
   "_shasum": "dda03ca8f9f89bc597e689842929de7ba8cebdf0",
   "_spec": "es6-promise@4.1.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "Yehuda Katz, Tom Dale, Stefan Penner and contributors",
     "url": "Conversion to ES6 API by Jake Archibald"

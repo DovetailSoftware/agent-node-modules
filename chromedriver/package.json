@@ -1,33 +1,10 @@
 {
   "_from": "chromedriver@^2.18.0",
-  "_id": "chromedriver@2.36.0",
+  "_id": "chromedriver@2.46.0",
   "_inBundle": false,
-  "_integrity": "sha512-Lq2HrigCJ4RVdIdCmchenv1rVrejNSJ7EUCQojycQo12ww3FedQx4nb+GgTdqMhjbOMTqq5+ziaiZlrEN2z1gQ==",
+  "_integrity": "sha512-dLtKIJW3y/PuFrPmcw6Mb8Nh+HwSqgVrK1rWgTARXhHfWvV822X2VRkx2meU/tg2+YQL6/nNgT6n5qWwIDHbwg==",
   "_location": "/chromedriver",
-  "_phantomChildren": {
-    "asynckit": "0.4.0",
-    "aws4": "1.6.0",
-    "caseless": "0.12.0",
-    "co": "4.6.0",
-    "combined-stream": "1.0.6",
-    "extend": "3.0.1",
-    "fast-deep-equal": "1.1.0",
-    "fast-json-stable-stringify": "2.0.0",
-    "forever-agent": "0.6.1",
-    "is-typedarray": "1.0.0",
-    "isstream": "0.1.2",
-    "json-schema-traverse": "0.3.1",
-    "json-stringify-safe": "5.0.1",
-    "jsprim": "1.4.1",
-    "mime-types": "2.1.18",
-    "oauth-sign": "0.8.2",
-    "safe-buffer": "5.1.1",
-    "sshpk": "1.14.1",
-    "stringstream": "0.0.5",
-    "tough-cookie": "2.3.4",
-    "tunnel-agent": "0.6.0",
-    "uuid": "3.2.1"
-  },
+  "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
@@ -41,10 +18,10 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.36.0.tgz",
-  "_shasum": "6a9473e11b50e7181ef8cd6476680e7f167374cd",
+  "_resolved": "https://registry.npmjs.org/chromedriver/-/chromedriver-2.46.0.tgz",
+  "_shasum": "3d78e7eb9bb65dd804fe327a6bf76fced12be053",
   "_spec": "chromedriver@^2.18.0",
-  "_where": "C:\\Github\\agent",
+  "_where": "C:\\github\\agent",
   "author": {
     "name": "Giovanni Bassi",
     "email": "giggio@giggio.net",
@@ -59,10 +36,10 @@
   "bundleDependencies": false,
   "dependencies": {
     "del": "^3.0.0",
-    "extract-zip": "^1.6.5",
-    "kew": "^0.7.0",
+    "extract-zip": "^1.6.7",
     "mkdirp": "^0.5.1",
-    "request": "^2.83.0"
+    "request": "^2.88.0",
+    "tcp-port-used": "^1.0.1"
   },
   "deprecated": false,
   "description": "ChromeDriver for Selenium",
@@ -81,5 +58,5 @@
   "scripts": {
     "install": "node install.js"
   },
-  "version": "2.36.0"
+  "version": "2.46.0"
 }

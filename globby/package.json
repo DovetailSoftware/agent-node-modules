@@ -16,14 +16,12 @@
     "fetchSpec": "^6.1.0"
   },
   "_requiredBy": [
-    "/del",
-    "/mem-fs-editor",
-    "/yeoman-environment"
+    "/del"
   ],
   "_resolved": "https://registry.npmjs.org/globby/-/globby-6.1.0.tgz",
   "_shasum": "f5a6d70e8395e21c858fb0489d64df02424d506c",
   "_spec": "globby@^6.1.0",
-  "_where": "C:\\Github\\agent\\node_modules\\del",
+  "_where": "C:\\github\\agent\\node_modules\\del",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",

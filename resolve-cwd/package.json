@@ -16,12 +16,12 @@
     "fetchSpec": "^2.0.0"
   },
   "_requiredBy": [
-    "/webpack-cli"
+    "/import-local"
   ],
   "_resolved": "https://registry.npmjs.org/resolve-cwd/-/resolve-cwd-2.0.0.tgz",
   "_shasum": "00a9f7387556e27038eae232caa372a6a59b665a",
   "_spec": "resolve-cwd@^2.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\webpack-cli",
+  "_where": "C:\\github\\agent\\node_modules\\import-local",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",

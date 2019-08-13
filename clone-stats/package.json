@@ -17,15 +17,13 @@
   },
   "_requiredBy": [
     "/gulp-mocha-phantomjs/vinyl",
-    "/mem-fs/vinyl",
     "/vinyl",
-    "/vinyl-file/vinyl",
     "/vinyl-fs/vinyl"
   ],
   "_resolved": "https://registry.npmjs.org/clone-stats/-/clone-stats-0.0.1.tgz",
   "_shasum": "b88f94a82cf38b8791d58046ea4029ad88ca99d1",
   "_spec": "clone-stats@^0.0.1",
-  "_where": "C:\\Github\\agent\\node_modules\\vinyl",
+  "_where": "C:\\github\\agent\\node_modules\\vinyl",
   "author": {
     "name": "Hugh Kennedy",
     "email": "hughskennedy@gmail.com",

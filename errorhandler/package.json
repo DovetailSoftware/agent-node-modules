@@ -5,7 +5,7 @@
   "_integrity": "sha1-t7cO2PNZ6duICS8tIMD4MUIK2D8=",
   "_location": "/errorhandler",
   "_phantomChildren": {
-    "mime-types": "2.1.18"
+    "mime-types": "2.1.24"
   },
   "_requested": {
     "type": "range",
@@ -23,7 +23,7 @@
   "_resolved": "https://registry.npmjs.org/errorhandler/-/errorhandler-1.4.3.tgz",
   "_shasum": "b7b70ed8f359e9db88092f2d20c0f831420ad83f",
   "_spec": "errorhandler@~1.4.2",
-  "_where": "C:\\Github\\agent\\node_modules\\connect",
+  "_where": "C:\\github\\agent\\node_modules\\connect",
   "bugs": {
     "url": "https://github.com/expressjs/errorhandler/issues"
   },

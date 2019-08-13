@@ -1,6 +1,46 @@
 
 # Changelog
 
+## Version 2.5.0
+
+* typescript: make definition header more relevant
+
+## Version 2.4.1
+
+* to: ignore future records when to is reached
+
+## Version 2.4.0
+
+* trim: after and before quote
+* tests: compatibility with Node.js 10
+* trim: handle quote followed by escape
+* parser: set nextChar to null instead of empty
+* travis: run against node 8 and 10
+
+## Version 2.3.0
+
+* cast: pass the header property
+* auto_parse: deprecated message on tests
+* cast: inject lines property
+
+## Version 2.2.0
+
+* cast: deprecate auto_parse
+* auto_parse: function get context as second argument
+
+## Version 2.1.0
+
+* skip_lines_with_error: DRYed implementation
+* skip_lines_with_error: Go process the next line on error
+* events: register and write not blocking
+* test: prefix names by group membership
+* events: emit record
+* raw: test to ensure it preserve columns
+* package: latest dependencies (28 march 2018)
+* raw: ensure tests call and success
+* package: ignore npm and yarn lock files
+* sync: handle errors on last line
+
 ## Version 2.0.4
 
 * package: move babel to dev dependencies

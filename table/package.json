@@ -6,12 +6,10 @@
   "_location": "/table",
   "_phantomChildren": {
     "co": "4.6.0",
-    "color-convert": "1.9.1",
+    "color-convert": "1.9.3",
     "escape-string-regexp": "1.0.5",
-    "fast-deep-equal": "1.1.0",
     "fast-json-stable-stringify": "2.0.0",
-    "has-flag": "3.0.0",
-    "json-schema-traverse": "0.3.1"
+    "has-flag": "3.0.0"
   },
   "_requested": {
     "type": "version",
@@ -29,7 +27,7 @@
   "_resolved": "https://registry.npmjs.org/table/-/table-4.0.2.tgz",
   "_shasum": "a33447375391e766ad34d3486e6e2aedc84d2e36",
   "_spec": "table@4.0.2",
-  "_where": "C:\\Github\\agent\\node_modules\\eslint",
+  "_where": "C:\\github\\agent\\node_modules\\eslint",
   "author": {
     "name": "Gajus Kuizinas",
     "email": "gajus@gajus.com",

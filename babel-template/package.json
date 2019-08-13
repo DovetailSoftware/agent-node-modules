@@ -18,12 +18,8 @@
   "_requiredBy": [
     "/babel-core",
     "/babel-helper-function-name",
-    "/babel-helper-remap-async-to-generator",
     "/babel-helper-replace-supers",
     "/babel-helpers",
-    "/babel-plugin-transform-class-constructor-call",
-    "/babel-plugin-transform-class-properties",
-    "/babel-plugin-transform-decorators",
     "/babel-plugin-transform-es2015-block-scoping",
     "/babel-plugin-transform-es2015-classes",
     "/babel-plugin-transform-es2015-computed-properties",
@@ -37,7 +33,7 @@
   "_resolved": "https://registry.npmjs.org/babel-template/-/babel-template-6.26.0.tgz",
   "_shasum": "de03e2d16396b069f46dd9fff8521fb1a0e35e02",
   "_spec": "babel-template@^6.26.0",
-  "_where": "C:\\Github\\agent\\node_modules\\babel-core",
+  "_where": "C:\\github\\agent\\node_modules\\babel-core",
   "author": {
     "name": "Sebastian McKenzie",
     "email": "sebmck@gmail.com"

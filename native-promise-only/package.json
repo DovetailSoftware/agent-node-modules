@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/native-promise-only/-/native-promise-only-0.8.1.tgz",
   "_shasum": "20a318c30cb45f71fe7adfbf7b21c99c1472ef11",
   "_spec": "native-promise-only@^0.8.1",
-  "_where": "C:\\Github\\agent\\node_modules\\sinon",
+  "_where": "C:\\github\\agent\\node_modules\\sinon",
   "author": {
     "name": "Kyle Simpson",
     "email": "getify@gmail.com"

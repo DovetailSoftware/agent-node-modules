@@ -1,5 +1,4 @@
 var Q = require('../kew')
-var originalQ = require('q')
 
 // test that fin() works with a synchronous resolve
 exports.testSynchronousThenAndFin = function (test) {
@@ -243,21 +242,15 @@ exports.testChainedPromises = function (test) {
 
 // test .end() is called with no parent scope (causing an uncaught exception)
 exports.testChainedEndUncaught = function (test) {
-  var uncaughtErrors = 0
   var errs = []
   errs.push(new Error('nope 1'))
   errs.push(new Error('nope 2'))
   errs.push(new Error('nope 3'))
 
-  var cb = function (e) {
-    uncaughtErrors++
-    if (e === errs[2]) {
-      test.equal(uncaughtErrors, 3, "Errors should be uncaught")
-      process.removeListener('uncaughtException', cb)
-      test.done()
-    }
-  }
-  process.on('uncaughtException', cb)
+  process.on('uncaughtException', function (e) {
+    test.equal(e, errs.shift(), "Error should be uncaught")
+    if (errs.length === 0) test.done()
+  })
 
   var defer = Q.defer()
   defer.promise.end()
@@ -339,96 +332,6 @@ exports.testChainedMixed = function (test) {
   ])
   .then(function (data) {
     test.equal(data[0] && data[1] && data[2] && data[3] && data[4] && data[5], true, "All values should return true")
-    test.done()
-  })
-}
-
-exports.testInteroperabilityWithOtherPromises = function(test) {
-  var promise1 = Q.defer()
-  promise1.then(function(value) {
-    return originalQ(1 + value)
-  }).then(function(result) {
-    test.equal(result, 11)
-  })
-
-  var promise2 = Q.defer(),
-      errToThrow = new Error('error')
-  promise2.then(function() {
-    return originalQ.reject(errToThrow)
-  }).fail(function(err) {
-    test.equal(err, errToThrow)
-  })
-
-  promise1.resolve(10)
-  promise2.resolve()
-
-  Q.all([promise1, promise2]).then(function() {
-    test.done()
-  })
-}
-
-exports.testAllSettled = function(test) {
-  var promise1 = Q.resolve('woot')
-  var promise2 = Q.reject(new Error('oops'))
-
-  Q.allSettled([promise1, promise2, 'just a string'])
-    .then(function (data) {
-      test.equals('fulfilled', data[0].state)
-      test.equals('woot', data[0].value)
-      test.equals('rejected', data[1].state)
-      test.equals('oops', data[1].reason.message)
-      test.equals('fulfilled', data[2].state)
-      test.equals('just a string', data[2].value)
-    })
-
-  Q.allSettled([])
-    .then(function (data) {
-      test.equals(0, data.length)
-      test.done()
-    })
-}
-
-exports.testTimeout = function(test) {
-  var promise = Q.delay(50).timeout(45, 'Timeout message')
-  promise.then(function () {
-    test.fail('The promise is supposed to be timeout')
-  })
-  .fail(function (e) {
-    test.equals('Timeout message', e.message, 'The error message should be the one passed into timeout()')
-  })
-  .fin(test.done)
-}
-
-exports.testNotTimeout = function(test) {
-  var promise = Q.delay('expected data', 40).timeout(45, 'Timeout message')
-  promise.then(function (data) {
-    test.equals('expected data', data, 'The data should be the data from the original promise')
-  })
-  .fail(function (e) {
-    test.fail('The promise is supposed to be resolved before the timeout')
-  })
-  .fin(test.done)
-}
-
-exports.testNotTimeoutButReject = function(test) {
-  var promise = Q.delay(40).then(function() {throw new Error('Reject message')}).timeout(45, 'Timeout message')
-  promise.then(function (data) {
-    test.fail('The promise is supposed to be rejected')
-  })
-  .fail(function (e) {
-    test.equals('Reject message', e.message, 'The error message should be from the original promise')
-  })
-  .fin(test.done)
-}
-
-exports.testDelay = function (test) {
-  var timePassed = false
-  setTimeout(function () {
-    timePassed = true
-  }, 10)
-  Q.resolve('expected').delay(20).then(function (result) {
-    test.equal('expected', result)
-    test.ok(timePassed)
     test.done()
   })
 }

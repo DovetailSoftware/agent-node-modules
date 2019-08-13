@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/samsam/-/samsam-1.3.0.tgz",
   "_shasum": "8d1d9350e25622da30de3e44ba692b5221ab7c50",
   "_spec": "samsam@^1.1.3",
-  "_where": "C:\\Github\\agent\\node_modules\\sinon",
+  "_where": "C:\\github\\agent\\node_modules\\sinon",
   "author": {
     "name": "Christian Johansen"
   },
@@ -47,7 +47,7 @@
       "url": "https://github.com/dwittner"
     }
   ],
-  "deprecated": false,
+  "deprecated": "This package has been deprecated in favour of @sinonjs/samsam",
   "description": "Value identification and comparison functions",
   "devDependencies": {
     "buster": "0.7.x",

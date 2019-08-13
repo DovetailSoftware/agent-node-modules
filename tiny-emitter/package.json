@@ -1,8 +1,8 @@
 {
   "_from": "tiny-emitter@^2.0.0",
-  "_id": "tiny-emitter@2.0.2",
+  "_id": "tiny-emitter@2.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-2NM0auVBGft5tee/OxP4PI3d8WItkDM+fPnaRAVo6xTDI2knbz9eC5ArWGqtGlYqiH3RU5yMpdyTTO7MguC4ow==",
+  "_integrity": "sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==",
   "_location": "/tiny-emitter",
   "_phantomChildren": {},
   "_requested": {
@@ -18,10 +18,10 @@
   "_requiredBy": [
     "/clipboard"
   ],
-  "_resolved": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.0.2.tgz",
-  "_shasum": "82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c",
+  "_resolved": "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.1.0.tgz",
+  "_shasum": "1d1a56edfc51c43e863cbb5382a72330e3555423",
   "_spec": "tiny-emitter@^2.0.0",
-  "_where": "C:\\Github\\agent\\node_modules\\clipboard",
+  "_where": "C:\\github\\agent\\node_modules\\clipboard",
   "author": {
     "name": "Scott Corgan"
   },
@@ -77,5 +77,5 @@
       "android-browser/4.2..latest"
     ]
   },
-  "version": "2.0.2"
+  "version": "2.1.0"
 }

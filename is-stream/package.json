@@ -17,14 +17,12 @@
   },
   "_requiredBy": [
     "/execa",
-    "/gh-got/got",
-    "/hasha",
-    "/listr"
+    "/hasha"
   ],
   "_resolved": "https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz",
   "_shasum": "12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44",
   "_spec": "is-stream@^1.0.1",
-  "_where": "C:\\Github\\agent\\node_modules\\hasha",
+  "_where": "C:\\github\\agent\\node_modules\\hasha",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
